@@ -1,0 +1,908 @@
+38.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+17:04:41.0 (55505)|USER_INFO|[EXTERNAL]|00524000001e3Uj|bedrijfsbureau@gsa.nl.sandbox|Midden-Europese standaardtijd|GMT+01:00
+17:04:41.0 (74894)|EXECUTION_STARTED
+17:04:41.0 (77568)|CODE_UNIT_STARTED|[EXTERNAL]|TRIGGERS
+17:04:41.0 (764552)|CODE_UNIT_STARTED|[EXTERNAL]|01q2400000133Bx|WWWDetailTrigger on WWW_Detail trigger event BeforeDelete for [a0s0E0000004KPG]
+17:04:41.0 (801522)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:04:41.0 (1150238)|HEAP_ALLOCATE|[72]|Bytes:3
+17:04:41.0 (1175551)|HEAP_ALLOCATE|[77]|Bytes:152
+17:04:41.0 (1188019)|HEAP_ALLOCATE|[342]|Bytes:408
+17:04:41.0 (1202271)|HEAP_ALLOCATE|[355]|Bytes:408
+17:04:41.0 (1214815)|HEAP_ALLOCATE|[467]|Bytes:48
+17:04:41.0 (1237394)|HEAP_ALLOCATE|[139]|Bytes:6
+17:04:41.0 (1257038)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (1261207)|VARIABLE_SCOPE_BEGIN|[1]|this|WWWDetailTrigger|true|false
+17:04:41.0 (1283170)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x39bd5e18
+17:04:41.0 (1301920)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (1305143)|VARIABLE_SCOPE_BEGIN|[1]|this|WWWDetailTrigger|true|false
+17:04:41.0 (1310919)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x39bd5e18
+17:04:41.0 (1314468)|STATEMENT_EXECUTE|[1]
+17:04:41.0 (1315929)|STATEMENT_EXECUTE|[3]
+17:04:41.0 (1882657)|HEAP_ALLOCATE|[3]|Bytes:2
+17:04:41.0 (1914666)|METHOD_ENTRY|[1]|01p2400000Cr9rX|TriggerParams.TriggerParams()
+17:04:41.0 (1917428)|STATEMENT_EXECUTE|[1]
+17:04:41.0 (1920469)|STATEMENT_EXECUTE|[1]
+17:04:41.0 (1949071)|HEAP_ALLOCATE|[50]|Bytes:5
+17:04:41.0 (1969635)|HEAP_ALLOCATE|[56]|Bytes:5
+17:04:41.0 (1975907)|HEAP_ALLOCATE|[64]|Bytes:7
+17:04:41.0 (1993090)|HEAP_ALLOCATE|[3]|Bytes:5
+17:04:41.0 (2000882)|METHOD_EXIT|[1]|TriggerParams
+17:04:41.0 (2005520)|HEAP_ALLOCATE|[3]|Bytes:44
+17:04:41.0 (2165093)|CONSTRUCTOR_ENTRY|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+17:04:41.0 (2191634)|VARIABLE_SCOPE_BEGIN|[13]|this|TriggerParams|true|false
+17:04:41.0 (2212279)|VARIABLE_ASSIGNMENT|[13]|this|{}|0x2b45d111
+17:04:41.0 (2216901)|VARIABLE_SCOPE_BEGIN|[13]|isBefore|Boolean|false|false
+17:04:41.0 (2220964)|VARIABLE_ASSIGNMENT|[13]|isBefore|true
+17:04:41.0 (2223093)|VARIABLE_SCOPE_BEGIN|[13]|isAfter|Boolean|false|false
+17:04:41.0 (2225235)|VARIABLE_ASSIGNMENT|[13]|isAfter|false
+17:04:41.0 (2227080)|VARIABLE_SCOPE_BEGIN|[13]|isInsert|Boolean|false|false
+17:04:41.0 (2229093)|VARIABLE_ASSIGNMENT|[13]|isInsert|false
+17:04:41.0 (2230806)|VARIABLE_SCOPE_BEGIN|[13]|isUpdate|Boolean|false|false
+17:04:41.0 (2232749)|VARIABLE_ASSIGNMENT|[13]|isUpdate|false
+17:04:41.0 (2234426)|VARIABLE_SCOPE_BEGIN|[13]|isDelete|Boolean|false|false
+17:04:41.0 (2236248)|VARIABLE_ASSIGNMENT|[13]|isDelete|true
+17:04:41.0 (2237923)|VARIABLE_SCOPE_BEGIN|[13]|isUndelete|Boolean|false|false
+17:04:41.0 (2240145)|VARIABLE_ASSIGNMENT|[13]|isUndelete|false
+17:04:41.0 (2241673)|VARIABLE_SCOPE_BEGIN|[13]|triggerNew|List<SObject>|true|false
+17:04:41.0 (2244385)|VARIABLE_ASSIGNMENT|[13]|triggerNew|null|
+17:04:41.0 (2245833)|VARIABLE_SCOPE_BEGIN|[13]|triggerOld|List<SObject>|true|false
+17:04:41.0 (21078899)|VARIABLE_ASSIGNMENT|[13]|triggerOld|[{"LastModifiedDate":"2017-02-16T14:04:59.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10110","Arrival_Truck_On_Hub (3 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4MAAS","beschadiging_pakket_ (2 more) ...":"Nee","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Foto__c":false,"SystemModstamp":"2017-02-16T14:04:59.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:04:59.000Z","Id":"a0s0E0000004KPGQA2","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}]|0x6a5e333a
+17:04:41.0 (21092874)|VARIABLE_SCOPE_BEGIN|[13]|newMap|Map<Id,SObject>|true|false
+17:04:41.0 (21097699)|VARIABLE_ASSIGNMENT|[13]|newMap|null|
+17:04:41.0 (21099626)|VARIABLE_SCOPE_BEGIN|[13]|oldMap|Map<Id,SObject>|true|false
+17:04:41.0 (22107685)|VARIABLE_ASSIGNMENT|[13]|oldMap|{"a0s0E0000004KPGQA2":{"LastModifiedDate":"2017-02-16T14:04:59.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10110","Arrival_Truck_On_Hub (3 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4MAAS","beschadiging_pakket_ (2 more) ...":"Nee","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Foto__c":false,"SystemModstamp":"2017-02-16T14:04:59.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:04:59.000Z","Id":"a0s0E0000004KPGQA2","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}}|0x695a9da1
+17:04:41.0 (22125132)|HEAP_ALLOCATE|[16]|Bytes:5
+17:04:41.0 (22129827)|STATEMENT_EXECUTE|[1]
+17:04:41.0 (22132295)|HEAP_ALLOCATE|[16]|Bytes:5
+17:04:41.0 (22134056)|STATEMENT_EXECUTE|[2]
+17:04:41.0 (22135572)|STATEMENT_EXECUTE|[3]
+17:04:41.0 (22136511)|STATEMENT_EXECUTE|[4]
+17:04:41.0 (22137500)|STATEMENT_EXECUTE|[5]
+17:04:41.0 (22138489)|STATEMENT_EXECUTE|[6]
+17:04:41.0 (22139441)|STATEMENT_EXECUTE|[7]
+17:04:41.0 (22140364)|STATEMENT_EXECUTE|[8]
+17:04:41.0 (22141408)|STATEMENT_EXECUTE|[9]
+17:04:41.0 (22142333)|STATEMENT_EXECUTE|[10]
+17:04:41.0 (22143529)|STATEMENT_EXECUTE|[11]
+17:04:41.0 (22155036)|HEAP_ALLOCATE|[16]|Bytes:6
+17:04:41.0 (22177164)|STATEMENT_EXECUTE|[15]
+17:04:41.0 (22178648)|STATEMENT_EXECUTE|[16]
+17:04:41.0 (22182330)|HEAP_ALLOCATE|[16]|Bytes:5
+17:04:41.0 (22190048)|VARIABLE_ASSIGNMENT|[16]|this.isBefore|true|0x2b45d111
+17:04:41.0 (22191875)|STATEMENT_EXECUTE|[17]
+17:04:41.0 (22194073)|HEAP_ALLOCATE|[17]|Bytes:5
+17:04:41.0 (22197112)|VARIABLE_ASSIGNMENT|[17]|this.isAfter|false|0x2b45d111
+17:04:41.0 (22198614)|STATEMENT_EXECUTE|[18]
+17:04:41.0 (22200610)|HEAP_ALLOCATE|[18]|Bytes:5
+17:04:41.0 (22204211)|VARIABLE_ASSIGNMENT|[18]|this.isInsert|false|0x2b45d111
+17:04:41.0 (22205623)|STATEMENT_EXECUTE|[19]
+17:04:41.0 (22207436)|HEAP_ALLOCATE|[19]|Bytes:5
+17:04:41.0 (22210738)|VARIABLE_ASSIGNMENT|[19]|this.isUpdate|false|0x2b45d111
+17:04:41.0 (22211959)|STATEMENT_EXECUTE|[20]
+17:04:41.0 (22213900)|HEAP_ALLOCATE|[20]|Bytes:5
+17:04:41.0 (22216564)|VARIABLE_ASSIGNMENT|[20]|this.isDelete|true|0x2b45d111
+17:04:41.0 (22217775)|STATEMENT_EXECUTE|[21]
+17:04:41.0 (22219535)|HEAP_ALLOCATE|[21]|Bytes:5
+17:04:41.0 (22222316)|VARIABLE_ASSIGNMENT|[21]|this.isUndelete|false|0x2b45d111
+17:04:41.0 (22223826)|STATEMENT_EXECUTE|[22]
+17:04:41.0 (22227746)|VARIABLE_ASSIGNMENT|[22]|this.triggerNew|null|0x2b45d111
+17:04:41.0 (22229084)|STATEMENT_EXECUTE|[23]
+17:04:41.0 (23217596)|VARIABLE_ASSIGNMENT|[23]|this.triggerOld|[{"LastModifiedDate":"2017-02-16T14:04:59.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10110","Arrival_Truck_On_Hub (3 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4MAAS","beschadiging_pakket_ (2 more) ...":"Nee","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Foto__c":false,"SystemModstamp":"2017-02-16T14:04:59.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:04:59.000Z","Id":"a0s0E0000004KPGQA2","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}]|0x2b45d111
+17:04:41.0 (23227961)|STATEMENT_EXECUTE|[24]
+17:04:41.0 (23238069)|VARIABLE_ASSIGNMENT|[24]|this.newMap|null|0x2b45d111
+17:04:41.0 (23239982)|STATEMENT_EXECUTE|[25]
+17:04:41.0 (24203759)|VARIABLE_ASSIGNMENT|[25]|this.oldMap|{"a0s0E0000004KPGQA2":{"LastModifiedDate":"2017-02-16T14:04:59.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10110","Arrival_Truck_On_Hub (3 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4MAAS","beschadiging_pakket_ (2 more) ...":"Nee","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Foto__c":false,"SystemModstamp":"2017-02-16T14:04:59.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:04:59.000Z","Id":"a0s0E0000004KPGQA2","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}}|0x2b45d111
+17:04:41.0 (24234291)|CONSTRUCTOR_EXIT|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+17:04:41.0 (24821355)|VARIABLE_SCOPE_BEGIN|[2]|WWWDetailUtil.subLocDet|List<SublocationDetail__c>|true|true
+17:04:41.0 (24833125)|HEAP_ALLOCATE|[3]|Bytes:16
+17:04:41.0 (24838036)|HEAP_ALLOCATE|[3]|Bytes:61
+17:04:41.0 (24895571)|METHOD_ENTRY|[1]|01p2400000DV2tl|WWWDetailUtil.WWWDetailUtil()
+17:04:41.0 (24898807)|STATEMENT_EXECUTE|[1]
+17:04:41.0 (24902060)|STATEMENT_EXECUTE|[1]
+17:04:41.0 (24903269)|STATEMENT_EXECUTE|[2]
+17:04:41.0 (24908327)|HEAP_ALLOCATE|[2]|Bytes:4
+17:04:41.0 (24974685)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (24984493)|VARIABLE_ASSIGNMENT|[2]|WWWDetailUtil.subLocDet|[]|0x41c5257b
+17:04:41.0 (24990506)|METHOD_EXIT|[1]|WWWDetailUtil
+17:04:41.0 (25000383)|METHOD_ENTRY|[3]|01p2400000DV2tl|WWWDetailUtil.entry(TriggerParams)
+17:04:41.0 (25004961)|VARIABLE_SCOPE_BEGIN|[4]|triggerParams|TriggerParams|true|false
+17:04:41.0 (25032505)|VARIABLE_ASSIGNMENT|[4]|triggerParams|{"isAfter":false,"isBefore":true,"isDelete":true,"isInsert":false,"isUndelete":false,"isUpdate":false,"oldMap":"0x695a9da1","triggerOld":"0x6a5e333a"}|0x2b45d111
+17:04:41.0 (25039681)|STATEMENT_EXECUTE|[4]
+17:04:41.0 (25040960)|STATEMENT_EXECUTE|[5]
+17:04:41.0 (25047845)|VARIABLE_SCOPE_BEGIN|[5]|triggerNew|List<WWW_Detail__c>|true|false
+17:04:41.0 (25052136)|VARIABLE_ASSIGNMENT|[5]|triggerNew|null|
+17:04:41.0 (25053745)|STATEMENT_EXECUTE|[6]
+17:04:41.0 (25057757)|VARIABLE_SCOPE_BEGIN|[6]|triggerOld|List<WWW_Detail__c>|true|false
+17:04:41.0 (26173109)|VARIABLE_ASSIGNMENT|[6]|triggerOld|[{"LastModifiedDate":"2017-02-16T14:04:59.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10110","Arrival_Truck_On_Hub (3 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4MAAS","beschadiging_pakket_ (2 more) ...":"Nee","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Foto__c":false,"SystemModstamp":"2017-02-16T14:04:59.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:04:59.000Z","Id":"a0s0E0000004KPGQA2","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}]|0x6a5e333a
+17:04:41.0 (26183344)|STATEMENT_EXECUTE|[7]
+17:04:41.0 (26194984)|VARIABLE_SCOPE_BEGIN|[7]|oldMap|Map<Id,WWW_Detail__c>|true|false
+17:04:41.0 (27164355)|VARIABLE_ASSIGNMENT|[7]|oldMap|{"a0s0E0000004KPGQA2":{"LastModifiedDate":"2017-02-16T14:04:59.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10110","Arrival_Truck_On_Hub (3 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4MAAS","beschadiging_pakket_ (2 more) ...":"Nee","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Foto__c":false,"SystemModstamp":"2017-02-16T14:04:59.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:04:59.000Z","Id":"a0s0E0000004KPGQA2","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}}|0x695a9da1
+17:04:41.0 (27174767)|STATEMENT_EXECUTE|[8]
+17:04:41.0 (27182010)|VARIABLE_SCOPE_BEGIN|[8]|newMap|Map<Id,WWW_Detail__c>|true|false
+17:04:41.0 (27187271)|VARIABLE_ASSIGNMENT|[8]|newMap|null|
+17:04:41.0 (27190967)|STATEMENT_EXECUTE|[11]
+17:04:41.0 (27194488)|STATEMENT_EXECUTE|[12]
+17:04:41.0 (27196266)|STATEMENT_EXECUTE|[16]
+17:04:41.0 (27197218)|STATEMENT_EXECUTE|[17]
+17:04:41.0 (27201976)|HEAP_ALLOCATE|[17]|Bytes:4
+17:04:41.0 (27246950)|METHOD_ENTRY|[17]|01p2400000DV2tl|WWWDetailUtil.calculateRollupSum(List<WWW_Detail__c>, List<WWW_Detail__c>, TriggerParams)
+17:04:41.0 (27252153)|VARIABLE_SCOPE_BEGIN|[44]|newDetails|List<WWW_Detail__c>|true|false
+17:04:41.0 (27257063)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (27262846)|VARIABLE_ASSIGNMENT|[44]|newDetails|[]|0x6dbcffbc
+17:04:41.0 (27264602)|VARIABLE_SCOPE_BEGIN|[44]|oldDetails|List<WWW_Detail__c>|true|false
+17:04:41.0 (28245236)|VARIABLE_ASSIGNMENT|[44]|oldDetails|[{"LastModifiedDate":"2017-02-16T14:04:59.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10110","Arrival_Truck_On_Hub (3 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4MAAS","beschadiging_pakket_ (2 more) ...":"Nee","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Foto__c":false,"SystemModstamp":"2017-02-16T14:04:59.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:04:59.000Z","Id":"a0s0E0000004KPGQA2","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}]|0x6a5e333a
+17:04:41.0 (28255941)|VARIABLE_SCOPE_BEGIN|[44]|triggerParams|TriggerParams|true|false
+17:04:41.0 (28280251)|VARIABLE_ASSIGNMENT|[44]|triggerParams|{"isAfter":false,"isBefore":true,"isDelete":true,"isInsert":false,"isUndelete":false,"isUpdate":false,"oldMap":"0x695a9da1","triggerOld":"0x6a5e333a"}|0x2b45d111
+17:04:41.0 (28286073)|STATEMENT_EXECUTE|[44]
+17:04:41.0 (28287805)|STATEMENT_EXECUTE|[45]
+17:04:41.0 (28332996)|HEAP_ALLOCATE|[45]|Bytes:4
+17:04:41.0 (28339118)|HEAP_ALLOCATE|[45]|Bytes:76
+17:04:41.0 (28343029)|HEAP_ALLOCATE|[45]|Bytes:4
+17:04:41.0 (28537682)|SOQL_EXECUTE_BEGIN|[45]|Aggregations:0|SELECT Id, developerName FROM RecordType WHERE sObjectType = 'WWW_detail__c'
+17:04:41.0 (34770877)|SOQL_EXECUTE_END|[45]|Rows:5
+17:04:41.0 (34784587)|HEAP_ALLOCATE|[45]|Bytes:24
+17:04:41.0 (34801525)|HEAP_ALLOCATE|[45]|Bytes:287
+17:04:41.0 (34839321)|HEAP_ALLOCATE|[45]|Bytes:24
+17:04:41.0 (34883091)|HEAP_ALLOCATE|[45]|Bytes:12
+17:04:41.0 (34890763)|HEAP_ALLOCATE|[45]|Bytes:4
+17:04:41.0 (34897332)|HEAP_ALLOCATE|[45]|Bytes:12
+17:04:41.0 (34900818)|HEAP_ALLOCATE|[45]|Bytes:4
+17:04:41.0 (34905422)|HEAP_ALLOCATE|[45]|Bytes:12
+17:04:41.0 (34908510)|HEAP_ALLOCATE|[45]|Bytes:4
+17:04:41.0 (34912516)|HEAP_ALLOCATE|[45]|Bytes:12
+17:04:41.0 (34915452)|HEAP_ALLOCATE|[45]|Bytes:4
+17:04:41.0 (34919336)|HEAP_ALLOCATE|[45]|Bytes:12
+17:04:41.0 (34922285)|HEAP_ALLOCATE|[45]|Bytes:4
+17:04:41.0 (34928735)|VARIABLE_SCOPE_BEGIN|[45]|recordTypes|Map<Id,RecordType>|true|false
+17:04:41.0 (34954539)|VARIABLE_ASSIGNMENT|[45]|recordTypes|{"01224000000Sn4NAAS":{"Id":"01224000000Sn4NAAS","DeveloperName":"Delivered_2_Project"},"01224000000Sn4OAAS":{"Id":"01224000000Sn4OAAS","DeveloperName":"Invoked"},"01224000000Sn4PAAS":{"Id":"01224000000Sn4PAAS","DeveloperName":"Rejected"},"01224000000Sn4MAAS":{"Id":"01224000000Sn4MAAS","DeveloperName":"Delivered_2_Hub"},"01224000000Sn4QAAS":{"Id":"01224000000Sn4QAAS","DeveloperName":"Reserved"}}|0x7f01b659
+17:04:41.0 (34959356)|STATEMENT_EXECUTE|[46]
+17:04:41.0 (34968096)|HEAP_ALLOCATE|[46]|Bytes:4
+17:04:41.0 (34995537)|VARIABLE_SCOPE_BEGIN|[46]|wwwIds|Set<Id>|true|false
+17:04:41.0 (35018625)|VARIABLE_ASSIGNMENT|[46]|wwwIds|[]|0x412e4457
+17:04:41.0 (35021735)|STATEMENT_EXECUTE|[47]
+17:04:41.0 (35025020)|HEAP_ALLOCATE|[47]|Bytes:35
+17:04:41.0 (35064706)|USER_DEBUG|[47]|DEBUG|*** - - IS ENTER calculateRollupSum
+17:04:41.0 (35201640)|HEAP_ALLOCATE|[49]|Bytes:5
+17:04:41.0 (35216432)|VARIABLE_ASSIGNMENT|[49]|detail|null|
+17:04:41.0 (35219557)|STATEMENT_EXECUTE|[49]
+17:04:41.0 (35221780)|STATEMENT_EXECUTE|[52]
+17:04:41.0 (35241654)|HEAP_ALLOCATE|[53]|Bytes:5
+17:04:41.0 (35255160)|VARIABLE_SCOPE_BEGIN|[53]|detail|WWW_Detail__c|true|false
+17:04:41.0 (36304944)|VARIABLE_ASSIGNMENT|[53]|detail|{"LastModifiedDate":"2017-02-16T14:04:59.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10110","Arrival_Truck_On_Hub (3 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4MAAS","beschadiging_pakket_ (2 more) ...":"Nee","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Foto__c":false,"SystemModstamp":"2017-02-16T14:04:59.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:04:59.000Z","Id":"a0s0E0000004KPGQA2","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}|0x54a68566
+17:04:41.0 (36315883)|STATEMENT_EXECUTE|[53]
+17:04:41.0 (36317460)|STATEMENT_EXECUTE|[54]
+17:04:41.0 (36379762)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (36394715)|HEAP_ALLOCATE|[53]|Bytes:5
+17:04:41.0 (36407226)|VARIABLE_ASSIGNMENT|[53]|detail|null|
+17:04:41.0 (36410264)|STATEMENT_EXECUTE|[58]
+17:04:41.0 (36450343)|HEAP_ALLOCATE|[58]|Bytes:4
+17:04:41.0 (36455296)|HEAP_ALLOCATE|[58]|Bytes:303
+17:04:41.0 (36458154)|HEAP_ALLOCATE|[58]|Bytes:4
+17:04:41.0 (36463090)|HEAP_ALLOCATE|[58]|Bytes:7
+17:04:41.0 (36484545)|HEAP_ALLOCATE|[58]|Bytes:8
+17:04:41.0 (36489606)|HEAP_ALLOCATE|[58]|Bytes:8
+17:04:41.0 (36785170)|SOQL_EXECUTE_BEGIN|[58]|Aggregations:0|SELECT Id, Toename_Aantal_palletplaatsen1__c, Total_Items_Invoked__c, Total_Items_Delivered_Hub__c, Total_Items_Delivered_Project__c, Total_Items_Rejected_Hub__c, Total_Items_Rejected_Project__c, Total_Items_Reserved__c, Totale_afname_aantal_palletplaatsen1__c, Total1__c FROM WWW__c WHERE id = :tmpVar1
+17:04:41.0 (38228739)|SOQL_EXECUTE_END|[58]|Rows:1
+17:04:41.0 (38242874)|HEAP_ALLOCATE|[58]|Bytes:8
+17:04:41.0 (38256679)|HEAP_ALLOCATE|[58]|Bytes:633
+17:04:41.0 (38288112)|HEAP_ALLOCATE|[58]|Bytes:8
+17:04:41.0 (38326371)|HEAP_ALLOCATE|[58]|Bytes:44
+17:04:41.0 (38334199)|HEAP_ALLOCATE|[58]|Bytes:4
+17:04:41.0 (38341348)|VARIABLE_SCOPE_BEGIN|[58]|wwwById|Map<Id,WWW__c>|true|false
+17:04:41.0 (38368130)|VARIABLE_ASSIGNMENT|[58]|wwwById|{"a0t0E0000004UUSQA2":{"Id":"a0t0E0000004UUSQA2","Toename_Aantal_palle (13 more) ...":0,"Total_Items_Invoked_ (2 more) ...":0,"Total_Items_Delivere (8 more) ...":10,"Total_Items_Delivere (12 more) ...":0,"Total_Items_Rejected (7 more) ...":0,"Total_Items_Rejected (11 more) ...":0,"Total_Items_Reserved (3 more) ...":0,"Totale_afname_aantal (19 more) ...":0,"Total1__c":0}}|0x3dfd150c
+17:04:41.0 (38372905)|STATEMENT_EXECUTE|[63]
+17:04:41.0 (38376012)|HEAP_ALLOCATE|[63]|Bytes:35
+17:04:41.0 (38419704)|HEAP_ALLOCATE|[63]|Bytes:4
+17:04:41.0 (38434318)|HEAP_ALLOCATE|[63]|Bytes:39
+17:04:41.0 (38444642)|USER_DEBUG|[63]|DEBUG|*** - - triggerParams.isDelete - - true
+17:04:41.0 (38450956)|STATEMENT_EXECUTE|[64]
+17:04:41.0 (38476654)|HEAP_ALLOCATE|[65]|Bytes:5
+17:04:41.0 (38489758)|VARIABLE_SCOPE_BEGIN|[65]|detail|WWW_Detail__c|true|false
+17:04:41.0 (39545043)|VARIABLE_ASSIGNMENT|[65]|detail|{"LastModifiedDate":"2017-02-16T14:04:59.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10110","Arrival_Truck_On_Hub (3 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4MAAS","beschadiging_pakket_ (2 more) ...":"Nee","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Foto__c":false,"SystemModstamp":"2017-02-16T14:04:59.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:04:59.000Z","Id":"a0s0E0000004KPGQA2","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}|0x54a68566
+17:04:41.0 (39555746)|STATEMENT_EXECUTE|[65]
+17:04:41.0 (39557347)|STATEMENT_EXECUTE|[66]
+17:04:41.0 (39561080)|HEAP_ALLOCATE|[66]|Bytes:17
+17:04:41.0 (39586361)|USER_DEBUG|[66]|DEBUG|*** - - IS DELETE
+17:04:41.0 (39627458)|STATEMENT_EXECUTE|[67]
+17:04:41.0 (39641447)|STATEMENT_EXECUTE|[69]
+17:04:41.0 (39708775)|HEAP_ALLOCATE|[72]|Bytes:15
+17:04:41.0 (39730815)|STATEMENT_EXECUTE|[72]
+17:04:41.0 (39732532)|STATEMENT_EXECUTE|[73]
+17:04:41.0 (39823234)|HEAP_ALLOCATE|[73]|Bytes:28
+17:04:41.0 (39826767)|HEAP_ALLOCATE|[73]|Bytes:28
+17:04:41.0 (39875253)|VARIABLE_ASSIGNMENT|[73]|this.Total_Items_Delivered_Hub__c|0|0x7567d945
+17:04:41.0 (39914961)|HEAP_ALLOCATE|[75]|Bytes:19
+17:04:41.0 (39930091)|STATEMENT_EXECUTE|[75]
+17:04:41.0 (39956420)|HEAP_ALLOCATE|[78]|Bytes:7
+17:04:41.0 (39963796)|STATEMENT_EXECUTE|[78]
+17:04:41.0 (39986408)|HEAP_ALLOCATE|[81]|Bytes:8
+17:04:41.0 (39993239)|STATEMENT_EXECUTE|[81]
+17:04:41.0 (40018588)|STATEMENT_EXECUTE|[84]
+17:04:41.0 (40046738)|HEAP_ALLOCATE|[87]|Bytes:8
+17:04:41.0 (40054407)|STATEMENT_EXECUTE|[87]
+17:04:41.0 (40071520)|STATEMENT_EXECUTE|[90]
+17:04:41.0 (40078540)|STATEMENT_EXECUTE|[93]
+17:04:41.0 (40080224)|STATEMENT_EXECUTE|[97]
+17:04:41.0 (40082355)|HEAP_ALLOCATE|[97]|Bytes:40
+17:04:41.0 (40112799)|HEAP_ALLOCATE|[97]|Bytes:28
+17:04:41.0 (40123845)|HEAP_ALLOCATE|[97]|Bytes:1
+17:04:41.0 (40131074)|HEAP_ALLOCATE|[97]|Bytes:41
+17:04:41.0 (40138912)|USER_DEBUG|[97]|DEBUG| *** - Total_Items_Delivered_Hub__c 1 + 0
+17:04:41.0 (40143074)|STATEMENT_EXECUTE|[98]
+17:04:41.0 (40144979)|HEAP_ALLOCATE|[98]|Bytes:34
+17:04:41.0 (40184483)|HEAP_ALLOCATE|[98]|Bytes:28
+17:04:41.0 (40195221)|HEAP_ALLOCATE|[98]|Bytes:1
+17:04:41.0 (40201551)|HEAP_ALLOCATE|[98]|Bytes:35
+17:04:41.0 (40208102)|USER_DEBUG|[98]|DEBUG| *** - Total_Items_Invoked__c 1 + 0
+17:04:41.0 (40211768)|STATEMENT_EXECUTE|[99]
+17:04:41.0 (40213682)|HEAP_ALLOCATE|[99]|Bytes:39
+17:04:41.0 (40248056)|HEAP_ALLOCATE|[99]|Bytes:28
+17:04:41.0 (40257228)|HEAP_ALLOCATE|[99]|Bytes:1
+17:04:41.0 (40263267)|HEAP_ALLOCATE|[99]|Bytes:40
+17:04:41.0 (40269353)|USER_DEBUG|[99]|DEBUG| *** - Total_Items_Rejected_Hub__c 1 + 0
+17:04:41.0 (40282935)|HEAP_ALLOCATE|[65]|Bytes:5
+17:04:41.0 (40298642)|VARIABLE_ASSIGNMENT|[65]|detail|null|
+17:04:41.0 (40332731)|HEAP_ALLOCATE|[103]|Bytes:5
+17:04:41.0 (40349130)|VARIABLE_SCOPE_BEGIN|[103]|detail|WWW_Detail__c|true|false
+17:04:41.0 (41666262)|VARIABLE_ASSIGNMENT|[103]|detail|{"LastModifiedDate":"2017-02-16T14:04:59.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10110","Arrival_Truck_On_Hub (3 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4MAAS","beschadiging_pakket_ (2 more) ...":"Nee","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Foto__c":false,"SystemModstamp":"2017-02-16T14:04:59.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:04:59.000Z","Id":"a0s0E0000004KPGQA2","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}|0x54a68566
+17:04:41.0 (41677868)|STATEMENT_EXECUTE|[103]
+17:04:41.0 (41744714)|HEAP_ALLOCATE|[104]|Bytes:28
+17:04:41.0 (41757886)|HEAP_ALLOCATE|[104]|Bytes:28
+17:04:41.0 (41759727)|HEAP_ALLOCATE|[104]|Bytes:28
+17:04:41.0 (41783551)|STATEMENT_EXECUTE|[104]
+17:04:41.0 (41817328)|HEAP_ALLOCATE|[107]|Bytes:28
+17:04:41.0 (41823147)|HEAP_ALLOCATE|[107]|Bytes:28
+17:04:41.0 (41824743)|HEAP_ALLOCATE|[107]|Bytes:28
+17:04:41.0 (41838913)|STATEMENT_EXECUTE|[107]
+17:04:41.0 (41863354)|HEAP_ALLOCATE|[111]|Bytes:28
+17:04:41.0 (41868754)|HEAP_ALLOCATE|[111]|Bytes:28
+17:04:41.0 (41870301)|HEAP_ALLOCATE|[111]|Bytes:28
+17:04:41.0 (41883089)|STATEMENT_EXECUTE|[111]
+17:04:41.0 (41905417)|HEAP_ALLOCATE|[116]|Bytes:28
+17:04:41.0 (41910118)|HEAP_ALLOCATE|[116]|Bytes:28
+17:04:41.0 (41911537)|HEAP_ALLOCATE|[116]|Bytes:28
+17:04:41.0 (41923823)|STATEMENT_EXECUTE|[116]
+17:04:41.0 (41944981)|HEAP_ALLOCATE|[119]|Bytes:28
+17:04:41.0 (41951184)|HEAP_ALLOCATE|[119]|Bytes:28
+17:04:41.0 (41953531)|HEAP_ALLOCATE|[119]|Bytes:28
+17:04:41.0 (41967625)|STATEMENT_EXECUTE|[119]
+17:04:41.0 (42004325)|HEAP_ALLOCATE|[122]|Bytes:28
+17:04:41.0 (42011082)|HEAP_ALLOCATE|[122]|Bytes:28
+17:04:41.0 (42012529)|HEAP_ALLOCATE|[122]|Bytes:28
+17:04:41.0 (42026293)|STATEMENT_EXECUTE|[122]
+17:04:41.0 (42066406)|HEAP_ALLOCATE|[125]|Bytes:28
+17:04:41.0 (42072269)|HEAP_ALLOCATE|[125]|Bytes:28
+17:04:41.0 (42073875)|HEAP_ALLOCATE|[125]|Bytes:28
+17:04:41.0 (42087284)|STATEMENT_EXECUTE|[125]
+17:04:41.0 (42119729)|HEAP_ALLOCATE|[128]|Bytes:28
+17:04:41.0 (42125369)|HEAP_ALLOCATE|[128]|Bytes:28
+17:04:41.0 (42126828)|HEAP_ALLOCATE|[128]|Bytes:28
+17:04:41.0 (42139883)|STATEMENT_EXECUTE|[128]
+17:04:41.0 (42171486)|HEAP_ALLOCATE|[131]|Bytes:28
+17:04:41.0 (42176788)|HEAP_ALLOCATE|[131]|Bytes:28
+17:04:41.0 (42178310)|HEAP_ALLOCATE|[131]|Bytes:28
+17:04:41.0 (42191331)|STATEMENT_EXECUTE|[131]
+17:04:41.0 (42192814)|STATEMENT_EXECUTE|[134]
+17:04:41.0 (42195120)|HEAP_ALLOCATE|[134]|Bytes:40
+17:04:41.0 (42218656)|HEAP_ALLOCATE|[134]|Bytes:28
+17:04:41.0 (42227707)|HEAP_ALLOCATE|[134]|Bytes:1
+17:04:41.0 (42234457)|HEAP_ALLOCATE|[134]|Bytes:41
+17:04:41.0 (42243462)|USER_DEBUG|[134]|DEBUG| *** - Total_Items_Delivered_Hub__c 2 + 0
+17:04:41.0 (42247752)|STATEMENT_EXECUTE|[135]
+17:04:41.0 (42249995)|HEAP_ALLOCATE|[135]|Bytes:34
+17:04:41.0 (42273028)|HEAP_ALLOCATE|[135]|Bytes:28
+17:04:41.0 (42280932)|HEAP_ALLOCATE|[135]|Bytes:1
+17:04:41.0 (42286904)|HEAP_ALLOCATE|[135]|Bytes:35
+17:04:41.0 (42292872)|USER_DEBUG|[135]|DEBUG| *** - Total_Items_Invoked__c 2 + 0
+17:04:41.0 (42296552)|STATEMENT_EXECUTE|[136]
+17:04:41.0 (42298189)|HEAP_ALLOCATE|[136]|Bytes:39
+17:04:41.0 (42319137)|HEAP_ALLOCATE|[136]|Bytes:28
+17:04:41.0 (42326910)|HEAP_ALLOCATE|[136]|Bytes:1
+17:04:41.0 (42332534)|HEAP_ALLOCATE|[136]|Bytes:40
+17:04:41.0 (42338114)|USER_DEBUG|[136]|DEBUG| *** - Total_Items_Rejected_Hub__c 2 + 0
+17:04:41.0 (42347328)|HEAP_ALLOCATE|[103]|Bytes:5
+17:04:41.0 (42358665)|VARIABLE_ASSIGNMENT|[103]|detail|null|
+17:04:41.0 (42379372)|HEAP_ALLOCATE|[141]|Bytes:5
+17:04:41.0 (42386173)|VARIABLE_ASSIGNMENT|[141]|detail|null|
+17:04:41.0 (42388375)|STATEMENT_EXECUTE|[141]
+17:04:41.0 (42401337)|HEAP_ALLOCATE|[173]|Bytes:5
+17:04:41.0 (42410319)|VARIABLE_ASSIGNMENT|[173]|detail|null|
+17:04:41.0 (42412741)|STATEMENT_EXECUTE|[173]
+17:04:41.0 (42428420)|STATEMENT_EXECUTE|[243]
+17:04:41.0 (42440757)|HEAP_ALLOCATE|[244]|Bytes:5
+17:04:41.0 (42447637)|VARIABLE_ASSIGNMENT|[244]|oldDetail|null|
+17:04:41.0 (42449710)|STATEMENT_EXECUTE|[244]
+17:04:41.0 (42451233)|STATEMENT_EXECUTE|[276]
+17:04:41.0 (42452321)|STATEMENT_EXECUTE|[277]
+17:04:41.0 (42453390)|STATEMENT_EXECUTE|[278]
+17:04:41.0 (42468242)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:04:41.0 (42477455)|HEAP_ALLOCATE|[278]|Bytes:640
+17:04:41.0 (42512214)|DML_BEGIN|[278]|Op:Update|Type:WWW__c|Rows:1
+17:04:41.0 (42529163)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:04:41.0 (67835013)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:01I24000001DBlX
+17:04:41.0 (76471607)|WF_RULE_EVAL_BEGIN|Workflow
+17:04:41.0 (76496381)|WF_CRITERIA_BEGIN|[WWW: WWW-13541 a0t0E0000004UUS]|Set unique field|01Q24000000bj9y|ON_ALL_CHANGES|0
+17:04:41.0 (78005665)|WF_RULE_FILTER|[WWW : Created By not equal to ]
+17:04:41.0 (78027432)|WF_RULE_EVAL_VALUE|00524000001e3Uj
+17:04:41.0 (78036247)|WF_CRITERIA_END|true
+17:04:41.0 (78455263)|WF_SPOOL_ACTION_BEGIN|Workflow
+17:04:41.0 (78779874)|WF_ACTION| Field Update: 1;
+17:04:41.0 (78783381)|WF_RULE_EVAL_END
+17:04:41.0 (78838034)|WF_ACTIONS_END| Field Update: 1;
+17:04:41.0 (78843582)|CODE_UNIT_FINISHED|Workflow:01I24000001DBlX
+17:04:41.0 (85537452)|DML_END|[278]
+17:04:41.0 (85593403)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:04:41.0 (85608569)|METHOD_EXIT|[17]|01p2400000DV2tl|WWWDetailUtil.calculateRollupSum(List<WWW_Detail__c>, List<WWW_Detail__c>, TriggerParams)
+17:04:41.0 (85613093)|STATEMENT_EXECUTE|[18]
+17:04:41.0 (85624776)|METHOD_ENTRY|[18]|01p2400000DV2tl|WWWDetailUtil.getSubLocDet(List<WWW_Detail__c>)
+17:04:41.0 (85641803)|VARIABLE_SCOPE_BEGIN|[311]|triggerOld|List<WWW_Detail__c>|true|false
+17:04:41.0 (86728758)|VARIABLE_ASSIGNMENT|[311]|triggerOld|[{"LastModifiedDate":"2017-02-16T14:04:59.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10110","Arrival_Truck_On_Hub (3 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4MAAS","beschadiging_pakket_ (2 more) ...":"Nee","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Foto__c":false,"SystemModstamp":"2017-02-16T14:04:59.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:04:59.000Z","Id":"a0s0E0000004KPGQA2","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}]|0x6a5e333a
+17:04:41.0 (86742540)|STATEMENT_EXECUTE|[311]
+17:04:41.0 (86744460)|STATEMENT_EXECUTE|[312]
+17:04:41.0 (86750280)|HEAP_ALLOCATE|[312]|Bytes:4
+17:04:41.0 (86778787)|VARIABLE_SCOPE_BEGIN|[312]|wwwDetIds|Set<Id>|true|false
+17:04:41.0 (86791233)|VARIABLE_ASSIGNMENT|[312]|wwwDetIds|[]|0x5e12a85d
+17:04:41.0 (86822492)|HEAP_ALLOCATE|[314]|Bytes:5
+17:04:41.0 (86836861)|VARIABLE_SCOPE_BEGIN|[314]|wwwd|WWW_Detail__c|true|false
+17:04:41.0 (87831625)|VARIABLE_ASSIGNMENT|[314]|wwwd|{"LastModifiedDate":"2017-02-16T14:04:59.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10110","Arrival_Truck_On_Hub (3 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4MAAS","beschadiging_pakket_ (2 more) ...":"Nee","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Foto__c":false,"SystemModstamp":"2017-02-16T14:04:59.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:04:59.000Z","Id":"a0s0E0000004KPGQA2","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}|0x54a68566
+17:04:41.0 (87842519)|STATEMENT_EXECUTE|[314]
+17:04:41.0 (87844070)|STATEMENT_EXECUTE|[315]
+17:04:41.0 (87894743)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (87909306)|HEAP_ALLOCATE|[314]|Bytes:5
+17:04:41.0 (87921141)|VARIABLE_ASSIGNMENT|[314]|wwwd|null|
+17:04:41.0 (87923860)|STATEMENT_EXECUTE|[317]
+17:04:41.0 (87926804)|HEAP_ALLOCATE|[317]|Bytes:81
+17:04:41.0 (87932310)|HEAP_ALLOCATE|[317]|Bytes:4
+17:04:41.0 (87957773)|HEAP_ALLOCATE|[317]|Bytes:8
+17:04:41.0 (87962409)|HEAP_ALLOCATE|[317]|Bytes:8
+17:04:41.0 (89292548)|SOQL_EXECUTE_BEGIN|[317]|Aggregations:0|SELECT Id, WWW_Detail__c FROM SubLocationDetail__c WHERE WWW_Detail__c = :tmpVar1
+17:04:41.0 (91535055)|SOQL_EXECUTE_END|[317]|Rows:2
+17:04:41.0 (91549720)|HEAP_ALLOCATE|[317]|Bytes:12
+17:04:41.0 (91561766)|HEAP_ALLOCATE|[317]|Bytes:128
+17:04:41.0 (91585296)|HEAP_ALLOCATE|[317]|Bytes:12
+17:04:41.0 (91592607)|VARIABLE_SCOPE_BEGIN|[317]|subLocDet2|List<SublocationDetail__c>|true|false
+17:04:41.0 (91610949)|VARIABLE_ASSIGNMENT|[317]|subLocDet2|[{"Id":"a080E000000EwlkQAC","WWW_Detail__c":"a0s0E0000004KPGQA2"},{"Id":"a080E000000EwllQAC","WWW_Detail__c":"a0s0E0000004KPGQA2"}]|0x5056e8c0
+17:04:41.0 (91614273)|STATEMENT_EXECUTE|[318]
+17:04:41.0 (91620809)|METHOD_EXIT|[18]|01p2400000DV2tl|WWWDetailUtil.getSubLocDet(List<WWW_Detail__c>)
+17:04:41.0 (91639243)|VARIABLE_ASSIGNMENT|[18]|WWWDetailUtil.subLocDet|[{"Id":"a080E000000EwlkQAC","WWW_Detail__c":"a0s0E0000004KPGQA2"},{"Id":"a080E000000EwllQAC","WWW_Detail__c":"a0s0E0000004KPGQA2"}]|0x5056e8c0
+17:04:41.0 (91643337)|STATEMENT_EXECUTE|[19]
+17:04:41.0 (91644703)|STATEMENT_EXECUTE|[20]
+17:04:41.0 (91653614)|METHOD_ENTRY|[20]|01p2400000DV2tl|WWWDetailUtil.deleteSubD(List<SublocationDetail__c>)
+17:04:41.0 (91667265)|VARIABLE_SCOPE_BEGIN|[306]|SubDetToDelete|List<SublocationDetail__c>|true|false
+17:04:41.0 (91675363)|VARIABLE_ASSIGNMENT|[306]|SubDetToDelete|[{"Id":"a080E000000EwlkQAC","WWW_Detail__c":"a0s0E0000004KPGQA2"},{"Id":"a080E000000EwllQAC","WWW_Detail__c":"a0s0E0000004KPGQA2"}]|0x5056e8c0
+17:04:41.0 (91679838)|STATEMENT_EXECUTE|[306]
+17:04:41.0 (91681070)|STATEMENT_EXECUTE|[307]
+17:04:41.0 (91683889)|HEAP_ALLOCATE|[307]|Bytes:22
+17:04:41.0 (91757128)|HEAP_ALLOCATE|[307]|Bytes:160
+17:04:41.0 (91769664)|HEAP_ALLOCATE|[307]|Bytes:182
+17:04:41.0 (91782399)|USER_DEBUG|[307]|DEBUG|[***] SubDetToDelete +(SublocationDetail__c:{Id=a080E000000EwlkQAC, WWW_Detail__c=a0s0E0000004KPGQA2}, SublocationDetail__c:{Id=a080E000000EwllQAC, WWW_Detail__c=a0s0E0000004KPGQA2})
+17:04:41.0 (91787810)|STATEMENT_EXECUTE|[308]
+17:04:41.0 (91821471)|DML_BEGIN|[308]|Op:Delete|Type:SublocationDetail__c|Rows:2
+17:04:41.0 (91836737)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+17:04:41.0 (97766445)|CODE_UNIT_STARTED|[EXTERNAL]|01q2400000131KI|SubLocationDetailTrigger on SublocationDetail trigger event BeforeDelete for [a080E000000Ewlk, a080E000000Ewll]
+17:04:41.0 (97799656)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+17:04:41.0 (97867274)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (97874168)|VARIABLE_SCOPE_BEGIN|[1]|this|SubLocationDetailTrigger|true|false
+17:04:41.0 (97891874)|VARIABLE_ASSIGNMENT|[1]|this|{}|0xe3e045
+17:04:41.0 (97915878)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (97919322)|VARIABLE_SCOPE_BEGIN|[1]|this|SubLocationDetailTrigger|true|false
+17:04:41.0 (97925692)|VARIABLE_ASSIGNMENT|[1]|this|{}|0xe3e045
+17:04:41.0 (97928636)|STATEMENT_EXECUTE|[1]
+17:04:41.0 (97930051)|STATEMENT_EXECUTE|[10]
+17:04:41.0 (97935489)|HEAP_ALLOCATE|[10]|Bytes:44
+17:04:41.0 (98017681)|CONSTRUCTOR_ENTRY|[10]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+17:04:41.0 (98045572)|VARIABLE_SCOPE_BEGIN|[13]|this|TriggerParams|true|false
+17:04:41.0 (98063315)|VARIABLE_ASSIGNMENT|[13]|this|{}|0x14fbf76b
+17:04:41.0 (98067922)|VARIABLE_SCOPE_BEGIN|[13]|isBefore|Boolean|false|false
+17:04:41.0 (98071576)|VARIABLE_ASSIGNMENT|[13]|isBefore|true
+17:04:41.0 (98073803)|VARIABLE_SCOPE_BEGIN|[13]|isAfter|Boolean|false|false
+17:04:41.0 (98075959)|VARIABLE_ASSIGNMENT|[13]|isAfter|false
+17:04:41.0 (98077744)|VARIABLE_SCOPE_BEGIN|[13]|isInsert|Boolean|false|false
+17:04:41.0 (98079920)|VARIABLE_ASSIGNMENT|[13]|isInsert|false
+17:04:41.0 (98081730)|VARIABLE_SCOPE_BEGIN|[13]|isUpdate|Boolean|false|false
+17:04:41.0 (98083688)|VARIABLE_ASSIGNMENT|[13]|isUpdate|false
+17:04:41.0 (98085302)|VARIABLE_SCOPE_BEGIN|[13]|isDelete|Boolean|false|false
+17:04:41.0 (98087096)|VARIABLE_ASSIGNMENT|[13]|isDelete|true
+17:04:41.0 (98088782)|VARIABLE_SCOPE_BEGIN|[13]|isUndelete|Boolean|false|false
+17:04:41.0 (98090782)|VARIABLE_ASSIGNMENT|[13]|isUndelete|false
+17:04:41.0 (98092262)|VARIABLE_SCOPE_BEGIN|[13]|triggerNew|List<SObject>|true|false
+17:04:41.0 (98094768)|VARIABLE_ASSIGNMENT|[13]|triggerNew|null|
+17:04:41.0 (98096433)|VARIABLE_SCOPE_BEGIN|[13]|triggerOld|List<SObject>|true|false
+17:04:41.0 (103551878)|VARIABLE_ASSIGNMENT|[13]|triggerOld|[{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6387","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBKUA2","To_sum__c":true,"Id":"a080E000000EwlkQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"},{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6388","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBUUA2","To_sum__c":true,"Id":"a080E000000EwllQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"}]|0x55358d83
+17:04:41.0 (103562704)|VARIABLE_SCOPE_BEGIN|[13]|newMap|Map<Id,SObject>|true|false
+17:04:41.0 (103567164)|VARIABLE_ASSIGNMENT|[13]|newMap|null|
+17:04:41.0 (103569176)|VARIABLE_SCOPE_BEGIN|[13]|oldMap|Map<Id,SObject>|true|false
+17:04:41.0 (103702521)|VARIABLE_ASSIGNMENT|[13]|oldMap|{"a080E000000EwlkQAC":{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6387","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBKUA2","To_sum__c":true,"Id":"a080E000000EwlkQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"},"a080E000000EwllQAC":{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6388","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBUUA2","To_sum__c":true,"Id":"a080E000000EwllQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"}}|0x5769d9b2
+17:04:41.0 (103716847)|HEAP_ALLOCATE|[16]|Bytes:5
+17:04:41.0 (103721085)|STATEMENT_EXECUTE|[1]
+17:04:41.0 (103723568)|HEAP_ALLOCATE|[16]|Bytes:5
+17:04:41.0 (103725131)|STATEMENT_EXECUTE|[2]
+17:04:41.0 (103726694)|STATEMENT_EXECUTE|[3]
+17:04:41.0 (103727637)|STATEMENT_EXECUTE|[4]
+17:04:41.0 (103728719)|STATEMENT_EXECUTE|[5]
+17:04:41.0 (103729727)|STATEMENT_EXECUTE|[6]
+17:04:41.0 (103730642)|STATEMENT_EXECUTE|[7]
+17:04:41.0 (103731571)|STATEMENT_EXECUTE|[8]
+17:04:41.0 (103732565)|STATEMENT_EXECUTE|[9]
+17:04:41.0 (103733493)|STATEMENT_EXECUTE|[10]
+17:04:41.0 (103734758)|STATEMENT_EXECUTE|[11]
+17:04:41.0 (103755609)|STATEMENT_EXECUTE|[15]
+17:04:41.0 (103757040)|STATEMENT_EXECUTE|[16]
+17:04:41.0 (103759953)|HEAP_ALLOCATE|[16]|Bytes:5
+17:04:41.0 (103768302)|VARIABLE_ASSIGNMENT|[16]|this.isBefore|true|0x14fbf76b
+17:04:41.0 (103770319)|STATEMENT_EXECUTE|[17]
+17:04:41.0 (103772286)|HEAP_ALLOCATE|[17]|Bytes:5
+17:04:41.0 (103775487)|VARIABLE_ASSIGNMENT|[17]|this.isAfter|false|0x14fbf76b
+17:04:41.0 (103777047)|STATEMENT_EXECUTE|[18]
+17:04:41.0 (103778768)|HEAP_ALLOCATE|[18]|Bytes:5
+17:04:41.0 (103781939)|VARIABLE_ASSIGNMENT|[18]|this.isInsert|false|0x14fbf76b
+17:04:41.0 (103783469)|STATEMENT_EXECUTE|[19]
+17:04:41.0 (103785155)|HEAP_ALLOCATE|[19]|Bytes:5
+17:04:41.0 (103788396)|VARIABLE_ASSIGNMENT|[19]|this.isUpdate|false|0x14fbf76b
+17:04:41.0 (103789838)|STATEMENT_EXECUTE|[20]
+17:04:41.0 (103791543)|HEAP_ALLOCATE|[20]|Bytes:5
+17:04:41.0 (103794591)|VARIABLE_ASSIGNMENT|[20]|this.isDelete|true|0x14fbf76b
+17:04:41.0 (103795793)|STATEMENT_EXECUTE|[21]
+17:04:41.0 (103797600)|HEAP_ALLOCATE|[21]|Bytes:5
+17:04:41.0 (103800398)|VARIABLE_ASSIGNMENT|[21]|this.isUndelete|false|0x14fbf76b
+17:04:41.0 (103801945)|STATEMENT_EXECUTE|[22]
+17:04:41.0 (103805683)|VARIABLE_ASSIGNMENT|[22]|this.triggerNew|null|0x14fbf76b
+17:04:41.0 (103807182)|STATEMENT_EXECUTE|[23]
+17:04:41.0 (103935193)|VARIABLE_ASSIGNMENT|[23]|this.triggerOld|[{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6387","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBKUA2","To_sum__c":true,"Id":"a080E000000EwlkQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"},{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6388","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBUUA2","To_sum__c":true,"Id":"a080E000000EwllQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"}]|0x14fbf76b
+17:04:41.0 (103942674)|STATEMENT_EXECUTE|[24]
+17:04:41.0 (103948519)|VARIABLE_ASSIGNMENT|[24]|this.newMap|null|0x14fbf76b
+17:04:41.0 (103950068)|STATEMENT_EXECUTE|[25]
+17:04:41.0 (104072469)|VARIABLE_ASSIGNMENT|[25]|this.oldMap|{"a080E000000EwlkQAC":{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6387","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBKUA2","To_sum__c":true,"Id":"a080E000000EwlkQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"},"a080E000000EwllQAC":{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6388","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBUUA2","To_sum__c":true,"Id":"a080E000000EwllQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"}}|0x14fbf76b
+17:04:41.0 (104097707)|CONSTRUCTOR_EXIT|[10]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+17:04:41.0 (104736131)|HEAP_ALLOCATE|[10]|Bytes:28
+17:04:41.0 (104743266)|HEAP_ALLOCATE|[10]|Bytes:34
+17:04:41.0 (104753556)|METHOD_ENTRY|[1]|01p2400000DUoK9|SubLocationDetailUtil.SubLocationDetailUtil()
+17:04:41.0 (104756205)|STATEMENT_EXECUTE|[1]
+17:04:41.0 (104759575)|STATEMENT_EXECUTE|[1]
+17:04:41.0 (105102657)|SYSTEM_MODE_ENTER|false
+17:04:41.0 (105110957)|HEAP_ALLOCATE|[10]|Bytes:5
+17:04:41.0 (105116846)|SYSTEM_MODE_EXIT|false
+17:04:41.0 (105125248)|METHOD_EXIT|[1]|SubLocationDetailUtil
+17:04:41.0 (105141786)|METHOD_ENTRY|[10]|01p2400000DUoK9|SubLocationDetailUtil.entry(TriggerParams)
+17:04:41.0 (105146342)|VARIABLE_SCOPE_BEGIN|[3]|triggerParams|TriggerParams|true|false
+17:04:41.0 (105173425)|VARIABLE_ASSIGNMENT|[3]|triggerParams|{"isAfter":false,"isBefore":true,"isDelete":true,"isInsert":false,"isUndelete":false,"isUpdate":false,"oldMap":"0x5769d9b2","triggerOld":"0x55358d83"}|0x14fbf76b
+17:04:41.0 (105181703)|SYSTEM_MODE_ENTER|false
+17:04:41.0 (105185266)|HEAP_ALLOCATE|[4]|Bytes:5
+17:04:41.0 (105188971)|STATEMENT_EXECUTE|[3]
+17:04:41.0 (105190122)|STATEMENT_EXECUTE|[4]
+17:04:41.0 (105195560)|VARIABLE_SCOPE_BEGIN|[4]|triggerNew|List<SublocationDetail__c>|true|false
+17:04:41.0 (105199962)|VARIABLE_ASSIGNMENT|[4]|triggerNew|null|
+17:04:41.0 (105201815)|STATEMENT_EXECUTE|[5]
+17:04:41.0 (105205757)|VARIABLE_SCOPE_BEGIN|[5]|triggerOld|List<SublocationDetail__c>|true|false
+17:04:41.0 (105386530)|VARIABLE_ASSIGNMENT|[5]|triggerOld|[{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6387","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBKUA2","To_sum__c":true,"Id":"a080E000000EwlkQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"},{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6388","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBUUA2","To_sum__c":true,"Id":"a080E000000EwllQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"}]|0x55358d83
+17:04:41.0 (105394390)|STATEMENT_EXECUTE|[6]
+17:04:41.0 (105402933)|VARIABLE_SCOPE_BEGIN|[6]|oldMap|Map<Id,SublocationDetail__c>|true|false
+17:04:41.0 (105556198)|VARIABLE_ASSIGNMENT|[6]|oldMap|{"a080E000000EwlkQAC":{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6387","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBKUA2","To_sum__c":true,"Id":"a080E000000EwlkQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"},"a080E000000EwllQAC":{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6388","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBUUA2","To_sum__c":true,"Id":"a080E000000EwllQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"}}|0x5769d9b2
+17:04:41.0 (105566097)|STATEMENT_EXECUTE|[7]
+17:04:41.0 (105572131)|VARIABLE_SCOPE_BEGIN|[7]|newMap|Map<Id,SublocationDetail__c>|true|false
+17:04:41.0 (105576808)|VARIABLE_ASSIGNMENT|[7]|newMap|null|
+17:04:41.0 (105579988)|STATEMENT_EXECUTE|[8]
+17:04:41.0 (105581560)|STATEMENT_EXECUTE|[9]
+17:04:41.0 (105583623)|STATEMENT_EXECUTE|[13]
+17:04:41.0 (105587292)|SYSTEM_MODE_EXIT|false
+17:04:41.0 (105595230)|METHOD_EXIT|[10]|01p2400000DUoK9|SubLocationDetailUtil.entry(TriggerParams)
+17:04:41.105 (105603786)|CUMULATIVE_LIMIT_USAGE
+17:04:41.105 (105603786)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 3 out of 100
+  Number of query rows: 8 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:04:41.105 (105603786)|CUMULATIVE_LIMIT_USAGE_END
+
+17:04:41.0 (106612408)|CODE_UNIT_FINISHED|SubLocationDetailTrigger on SublocationDetail trigger event BeforeDelete for [a080E000000Ewlk, a080E000000Ewll]
+17:04:41.0 (191418853)|CODE_UNIT_STARTED|[EXTERNAL]|01q2400000131KI|SubLocationDetailTrigger on SublocationDetail trigger event AfterDelete for [a080E000000Ewlk, a080E000000Ewll]
+17:04:41.0 (191440080)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+17:04:41.0 (191494504)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (191500120)|VARIABLE_SCOPE_BEGIN|[1]|this|SubLocationDetailTrigger|true|false
+17:04:41.0 (191514275)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x610edd3a
+17:04:41.0 (191530781)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (191534385)|VARIABLE_SCOPE_BEGIN|[1]|this|SubLocationDetailTrigger|true|false
+17:04:41.0 (191540312)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x610edd3a
+17:04:41.0 (191543418)|STATEMENT_EXECUTE|[1]
+17:04:41.0 (191544891)|STATEMENT_EXECUTE|[10]
+17:04:41.0 (191549847)|HEAP_ALLOCATE|[10]|Bytes:44
+17:04:41.0 (191595255)|CONSTRUCTOR_ENTRY|[10]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+17:04:41.0 (191600664)|VARIABLE_SCOPE_BEGIN|[13]|this|TriggerParams|true|false
+17:04:41.0 (191615270)|VARIABLE_ASSIGNMENT|[13]|this|{}|0x4e6f5b5f
+17:04:41.0 (191620208)|VARIABLE_SCOPE_BEGIN|[13]|isBefore|Boolean|false|false
+17:04:41.0 (191623820)|VARIABLE_ASSIGNMENT|[13]|isBefore|false
+17:04:41.0 (191625952)|VARIABLE_SCOPE_BEGIN|[13]|isAfter|Boolean|false|false
+17:04:41.0 (191628273)|VARIABLE_ASSIGNMENT|[13]|isAfter|true
+17:04:41.0 (191630538)|VARIABLE_SCOPE_BEGIN|[13]|isInsert|Boolean|false|false
+17:04:41.0 (191632413)|VARIABLE_ASSIGNMENT|[13]|isInsert|false
+17:04:41.0 (191634052)|VARIABLE_SCOPE_BEGIN|[13]|isUpdate|Boolean|false|false
+17:04:41.0 (191635835)|VARIABLE_ASSIGNMENT|[13]|isUpdate|false
+17:04:41.0 (191637516)|VARIABLE_SCOPE_BEGIN|[13]|isDelete|Boolean|false|false
+17:04:41.0 (191639265)|VARIABLE_ASSIGNMENT|[13]|isDelete|true
+17:04:41.0 (191640979)|VARIABLE_SCOPE_BEGIN|[13]|isUndelete|Boolean|false|false
+17:04:41.0 (191642941)|VARIABLE_ASSIGNMENT|[13]|isUndelete|false
+17:04:41.0 (191644494)|VARIABLE_SCOPE_BEGIN|[13]|triggerNew|List<SObject>|true|false
+17:04:41.0 (191646966)|VARIABLE_ASSIGNMENT|[13]|triggerNew|null|
+17:04:41.0 (191648489)|VARIABLE_SCOPE_BEGIN|[13]|triggerOld|List<SObject>|true|false
+17:04:41.0 (192472988)|VARIABLE_ASSIGNMENT|[13]|triggerOld|[{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6387","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBKUA2","To_sum__c":true,"Id":"a080E000000EwlkQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"},{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6388","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBUUA2","To_sum__c":true,"Id":"a080E000000EwllQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"}]|0x507d250a
+17:04:41.0 (192482667)|VARIABLE_SCOPE_BEGIN|[13]|newMap|Map<Id,SObject>|true|false
+17:04:41.0 (192486975)|VARIABLE_ASSIGNMENT|[13]|newMap|null|
+17:04:41.0 (192488900)|VARIABLE_SCOPE_BEGIN|[13]|oldMap|Map<Id,SObject>|true|false
+17:04:41.0 (192621437)|VARIABLE_ASSIGNMENT|[13]|oldMap|{"a080E000000EwlkQAC":{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6387","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBKUA2","To_sum__c":true,"Id":"a080E000000EwlkQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"},"a080E000000EwllQAC":{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6388","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBUUA2","To_sum__c":true,"Id":"a080E000000EwllQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"}}|0x31d16545
+17:04:41.0 (192635366)|HEAP_ALLOCATE|[16]|Bytes:5
+17:04:41.0 (192639219)|STATEMENT_EXECUTE|[1]
+17:04:41.0 (192641578)|HEAP_ALLOCATE|[16]|Bytes:5
+17:04:41.0 (192643175)|STATEMENT_EXECUTE|[2]
+17:04:41.0 (192644648)|STATEMENT_EXECUTE|[3]
+17:04:41.0 (192645629)|STATEMENT_EXECUTE|[4]
+17:04:41.0 (192646620)|STATEMENT_EXECUTE|[5]
+17:04:41.0 (192647568)|STATEMENT_EXECUTE|[6]
+17:04:41.0 (192648505)|STATEMENT_EXECUTE|[7]
+17:04:41.0 (192649499)|STATEMENT_EXECUTE|[8]
+17:04:41.0 (192650487)|STATEMENT_EXECUTE|[9]
+17:04:41.0 (192651424)|STATEMENT_EXECUTE|[10]
+17:04:41.0 (192652565)|STATEMENT_EXECUTE|[11]
+17:04:41.0 (192669918)|STATEMENT_EXECUTE|[15]
+17:04:41.0 (192671284)|STATEMENT_EXECUTE|[16]
+17:04:41.0 (192674300)|HEAP_ALLOCATE|[16]|Bytes:5
+17:04:41.0 (192681857)|VARIABLE_ASSIGNMENT|[16]|this.isBefore|false|0x4e6f5b5f
+17:04:41.0 (192683740)|STATEMENT_EXECUTE|[17]
+17:04:41.0 (192685575)|HEAP_ALLOCATE|[17]|Bytes:5
+17:04:41.0 (192688576)|VARIABLE_ASSIGNMENT|[17]|this.isAfter|true|0x4e6f5b5f
+17:04:41.0 (192690177)|STATEMENT_EXECUTE|[18]
+17:04:41.0 (192691900)|HEAP_ALLOCATE|[18]|Bytes:5
+17:04:41.0 (192694957)|VARIABLE_ASSIGNMENT|[18]|this.isInsert|false|0x4e6f5b5f
+17:04:41.0 (192696266)|STATEMENT_EXECUTE|[19]
+17:04:41.0 (192697895)|HEAP_ALLOCATE|[19]|Bytes:5
+17:04:41.0 (192700861)|VARIABLE_ASSIGNMENT|[19]|this.isUpdate|false|0x4e6f5b5f
+17:04:41.0 (192702364)|STATEMENT_EXECUTE|[20]
+17:04:41.0 (192704073)|HEAP_ALLOCATE|[20]|Bytes:5
+17:04:41.0 (192706753)|VARIABLE_ASSIGNMENT|[20]|this.isDelete|true|0x4e6f5b5f
+17:04:41.0 (192708087)|STATEMENT_EXECUTE|[21]
+17:04:41.0 (192709710)|HEAP_ALLOCATE|[21]|Bytes:5
+17:04:41.0 (192712562)|VARIABLE_ASSIGNMENT|[21]|this.isUndelete|false|0x4e6f5b5f
+17:04:41.0 (192714145)|STATEMENT_EXECUTE|[22]
+17:04:41.0 (192717887)|VARIABLE_ASSIGNMENT|[22]|this.triggerNew|null|0x4e6f5b5f
+17:04:41.0 (192719295)|STATEMENT_EXECUTE|[23]
+17:04:41.0 (192845958)|VARIABLE_ASSIGNMENT|[23]|this.triggerOld|[{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6387","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBKUA2","To_sum__c":true,"Id":"a080E000000EwlkQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"},{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6388","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBUUA2","To_sum__c":true,"Id":"a080E000000EwllQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"}]|0x4e6f5b5f
+17:04:41.0 (192853214)|STATEMENT_EXECUTE|[24]
+17:04:41.0 (192858764)|VARIABLE_ASSIGNMENT|[24]|this.newMap|null|0x4e6f5b5f
+17:04:41.0 (192860305)|STATEMENT_EXECUTE|[25]
+17:04:41.0 (192974442)|VARIABLE_ASSIGNMENT|[25]|this.oldMap|{"a080E000000EwlkQAC":{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6387","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBKUA2","To_sum__c":true,"Id":"a080E000000EwlkQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"},"a080E000000EwllQAC":{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6388","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBUUA2","To_sum__c":true,"Id":"a080E000000EwllQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"}}|0x4e6f5b5f
+17:04:41.0 (192998283)|CONSTRUCTOR_EXIT|[10]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+17:04:41.0 (193007320)|METHOD_ENTRY|[10]|01p2400000DUoK9|SubLocationDetailUtil.entry(TriggerParams)
+17:04:41.0 (193011490)|VARIABLE_SCOPE_BEGIN|[3]|triggerParams|TriggerParams|true|false
+17:04:41.0 (193039293)|VARIABLE_ASSIGNMENT|[3]|triggerParams|{"isAfter":true,"isBefore":false,"isDelete":true,"isInsert":false,"isUndelete":false,"isUpdate":false,"oldMap":"0x31d16545","triggerOld":"0x507d250a"}|0x4e6f5b5f
+17:04:41.0 (193369343)|SYSTEM_MODE_ENTER|false
+17:04:41.0 (193376351)|HEAP_ALLOCATE|[4]|Bytes:5
+17:04:41.0 (193380932)|STATEMENT_EXECUTE|[3]
+17:04:41.0 (193382274)|STATEMENT_EXECUTE|[4]
+17:04:41.0 (193388342)|VARIABLE_SCOPE_BEGIN|[4]|triggerNew|List<SublocationDetail__c>|true|false
+17:04:41.0 (193393784)|VARIABLE_ASSIGNMENT|[4]|triggerNew|null|
+17:04:41.0 (193395488)|STATEMENT_EXECUTE|[5]
+17:04:41.0 (193399592)|VARIABLE_SCOPE_BEGIN|[5]|triggerOld|List<SublocationDetail__c>|true|false
+17:04:41.0 (193542775)|VARIABLE_ASSIGNMENT|[5]|triggerOld|[{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6387","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBKUA2","To_sum__c":true,"Id":"a080E000000EwlkQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"},{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6388","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBUUA2","To_sum__c":true,"Id":"a080E000000EwllQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"}]|0x507d250a
+17:04:41.0 (193550905)|STATEMENT_EXECUTE|[6]
+17:04:41.0 (193556075)|VARIABLE_SCOPE_BEGIN|[6]|oldMap|Map<Id,SublocationDetail__c>|true|false
+17:04:41.0 (193675904)|VARIABLE_ASSIGNMENT|[6]|oldMap|{"a080E000000EwlkQAC":{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6387","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBKUA2","To_sum__c":true,"Id":"a080E000000EwlkQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"},"a080E000000EwllQAC":{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6388","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBUUA2","To_sum__c":true,"Id":"a080E000000EwllQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"}}|0x31d16545
+17:04:41.0 (193683555)|STATEMENT_EXECUTE|[7]
+17:04:41.0 (193687349)|VARIABLE_SCOPE_BEGIN|[7]|newMap|Map<Id,SublocationDetail__c>|true|false
+17:04:41.0 (193691243)|VARIABLE_ASSIGNMENT|[7]|newMap|null|
+17:04:41.0 (193693794)|STATEMENT_EXECUTE|[8]
+17:04:41.0 (193695608)|STATEMENT_EXECUTE|[13]
+17:04:41.0 (193699441)|STATEMENT_EXECUTE|[14]
+17:04:41.0 (193700924)|STATEMENT_EXECUTE|[19]
+17:04:41.0 (193702242)|STATEMENT_EXECUTE|[24]
+17:04:41.0 (193703557)|STATEMENT_EXECUTE|[30]
+17:04:41.0 (193704545)|STATEMENT_EXECUTE|[31]
+17:04:41.0 (193721065)|METHOD_ENTRY|[31]|01p2400000DUoK9|SubLocationDetailUtil.updateRecordsForReportBeforeDelete(List<SublocationDetail__c>)
+17:04:41.0 (193748514)|VARIABLE_SCOPE_BEGIN|[223]|triggerOld|List<SublocationDetail__c>|true|false
+17:04:41.0 (193874471)|VARIABLE_ASSIGNMENT|[223]|triggerOld|[{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6387","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBKUA2","To_sum__c":true,"Id":"a080E000000EwlkQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"},{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6388","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBUUA2","To_sum__c":true,"Id":"a080E000000EwllQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"}]|0x507d250a
+17:04:41.0 (193888402)|HEAP_ALLOCATE|[225]|Bytes:5
+17:04:41.0 (193891855)|STATEMENT_EXECUTE|[224]
+17:04:41.0 (193893207)|STATEMENT_EXECUTE|[225]
+17:04:41.0 (193897982)|HEAP_ALLOCATE|[225]|Bytes:4
+17:04:41.0 (193925005)|VARIABLE_SCOPE_BEGIN|[225]|locationsIds|Set<Id>|true|false
+17:04:41.0 (193937088)|VARIABLE_ASSIGNMENT|[225]|locationsIds|[]|0x26a19948
+17:04:41.0 (193939369)|STATEMENT_EXECUTE|[226]
+17:04:41.0 (193946603)|HEAP_ALLOCATE|[226]|Bytes:4
+17:04:41.0 (193963327)|VARIABLE_SCOPE_BEGIN|[226]|projectIds|Set<String>|true|false
+17:04:41.0 (193982400)|VARIABLE_ASSIGNMENT|[226]|projectIds|[]|0x12a08b60
+17:04:41.0 (194107152)|HEAP_ALLOCATE|[228]|Bytes:5
+17:04:41.0 (194126385)|VARIABLE_SCOPE_BEGIN|[228]|sd|SublocationDetail__c|true|false
+17:04:41.0 (194208986)|VARIABLE_ASSIGNMENT|[228]|sd|{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6387","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBKUA2","To_sum__c":true,"Id":"a080E000000EwlkQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"}|0x3b4cba8a
+17:04:41.0 (194214673)|STATEMENT_EXECUTE|[229]
+17:04:41.0 (194215928)|STATEMENT_EXECUTE|[230]
+17:04:41.0 (194279390)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (194286435)|STATEMENT_EXECUTE|[231]
+17:04:41.0 (194320657)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (194332548)|HEAP_ALLOCATE|[228]|Bytes:5
+17:04:41.0 (194344636)|VARIABLE_SCOPE_BEGIN|[228]|sd|SublocationDetail__c|true|false
+17:04:41.0 (194421304)|VARIABLE_ASSIGNMENT|[228]|sd|{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6388","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBUUA2","To_sum__c":true,"Id":"a080E000000EwllQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"}|0x2d21dd08
+17:04:41.0 (194426741)|STATEMENT_EXECUTE|[229]
+17:04:41.0 (194428010)|STATEMENT_EXECUTE|[230]
+17:04:41.0 (194438420)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (194442547)|STATEMENT_EXECUTE|[231]
+17:04:41.0 (194448011)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (194456433)|HEAP_ALLOCATE|[228]|Bytes:5
+17:04:41.0 (194464296)|VARIABLE_ASSIGNMENT|[228]|sd|null|
+17:04:41.0 (194466559)|STATEMENT_EXECUTE|[234]
+17:04:41.0 (194506554)|HEAP_ALLOCATE|[234]|Bytes:4
+17:04:41.0 (194558088)|VARIABLE_SCOPE_BEGIN|[234]|toDelete|List<ProjectLocation__c>|true|false
+17:04:41.0 (194563648)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (194569138)|VARIABLE_ASSIGNMENT|[234]|toDelete|[]|0x63e93f06
+17:04:41.0 (194571207)|STATEMENT_EXECUTE|[235]
+17:04:41.0 (194574038)|HEAP_ALLOCATE|[235]|Bytes:4
+17:04:41.0 (194583396)|VARIABLE_SCOPE_BEGIN|[235]|projectLocations|List<ProjectLocation__c>|true|false
+17:04:41.0 (194586742)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (194589635)|VARIABLE_ASSIGNMENT|[235]|projectLocations|[]|0x1acc358b
+17:04:41.0 (194591225)|STATEMENT_EXECUTE|[237]
+17:04:41.0 (194594267)|HEAP_ALLOCATE|[237]|Bytes:82
+17:04:41.0 (194599708)|HEAP_ALLOCATE|[237]|Bytes:4
+17:04:41.0 (194627661)|HEAP_ALLOCATE|[237]|Bytes:8
+17:04:41.0 (194632608)|HEAP_ALLOCATE|[237]|Bytes:8
+17:04:41.0 (195575655)|SOQL_EXECUTE_BEGIN|[237]|Aggregations:0|SELECT Project__c, Location__c FROM ProjectLocation__c WHERE Project__c = :tmpVar1
+17:04:41.0 (197881866)|SOQL_EXECUTE_END|[237]|Rows:2
+17:04:41.0 (197896572)|HEAP_ALLOCATE|[237]|Bytes:12
+17:04:41.0 (197910425)|HEAP_ALLOCATE|[237]|Bytes:188
+17:04:41.0 (197934211)|HEAP_ALLOCATE|[237]|Bytes:12
+17:04:41.0 (197941796)|VARIABLE_SCOPE_BEGIN|[237]|tempProjectLocations|List<ProjectLocation__c>|true|false
+17:04:41.0 (197961360)|VARIABLE_ASSIGNMENT|[237]|tempProjectLocations|[{"Project__c":"a0q0E0000008ahlQAA","Location__c":"a0B0E0000009YBKUA2","Id":"a0D0E000000BWTuUAO"},{"Project__c":"a0q0E0000008ahlQAA","Location__c":"a0B0E0000009YBUUA2","Id":"a0D0E000000BWTvUAO"}]|0x61ad816c
+17:04:41.0 (198052187)|HEAP_ALLOCATE|[238]|Bytes:5
+17:04:41.0 (198083099)|HEAP_ALLOCATE|[238]|Bytes:16
+17:04:41.0 (198090287)|VARIABLE_SCOPE_BEGIN|[238]|pl|ProjectLocation__c|true|false
+17:04:41.0 (198102498)|VARIABLE_ASSIGNMENT|[238]|pl|{"Project__c":"a0q0E0000008ahlQAA","Location__c":"a0B0E0000009YBKUA2","Id":"a0D0E000000BWTuUAO"}|0x63537a49
+17:04:41.0 (198106256)|STATEMENT_EXECUTE|[239]
+17:04:41.0 (198158993)|STATEMENT_EXECUTE|[241]
+17:04:41.0 (198161087)|STATEMENT_EXECUTE|[242]
+17:04:41.0 (198177093)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (198188140)|HEAP_ALLOCATE|[238]|Bytes:5
+17:04:41.0 (198207392)|HEAP_ALLOCATE|[238]|Bytes:16
+17:04:41.0 (198213160)|VARIABLE_SCOPE_BEGIN|[238]|pl|ProjectLocation__c|true|false
+17:04:41.0 (198223203)|VARIABLE_ASSIGNMENT|[238]|pl|{"Project__c":"a0q0E0000008ahlQAA","Location__c":"a0B0E0000009YBUUA2","Id":"a0D0E000000BWTvUAO"}|0x6ef821ae
+17:04:41.0 (198225713)|STATEMENT_EXECUTE|[239]
+17:04:41.0 (198238360)|STATEMENT_EXECUTE|[241]
+17:04:41.0 (198239728)|STATEMENT_EXECUTE|[242]
+17:04:41.0 (198243893)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (198251379)|HEAP_ALLOCATE|[238]|Bytes:5
+17:04:41.0 (198258258)|VARIABLE_ASSIGNMENT|[238]|pl|null|
+17:04:41.0 (198260351)|STATEMENT_EXECUTE|[246]
+17:04:41.0 (198262591)|HEAP_ALLOCATE|[246]|Bytes:98
+17:04:41.0 (198267242)|HEAP_ALLOCATE|[246]|Bytes:4
+17:04:41.0 (198289568)|HEAP_ALLOCATE|[246]|Bytes:8
+17:04:41.0 (198294378)|HEAP_ALLOCATE|[246]|Bytes:8
+17:04:41.0 (198463799)|SOQL_EXECUTE_BEGIN|[246]|Aggregations:0|SELECT Id, Name, Location__c, ProjectId__c FROM SublocationDetail__c WHERE ProjectId__c = :tmpVar1
+17:04:41.0 (205534005)|SOQL_EXECUTE_END|[246]|Rows:0
+17:04:41.0 (205550954)|HEAP_ALLOCATE|[246]|Bytes:4
+17:04:41.0 (205558583)|HEAP_ALLOCATE|[246]|Bytes:0
+17:04:41.0 (205571351)|HEAP_ALLOCATE|[246]|Bytes:4
+17:04:41.0 (205578948)|VARIABLE_SCOPE_BEGIN|[246]|subLocs|List<SublocationDetail__c>|true|false
+17:04:41.0 (205589032)|VARIABLE_ASSIGNMENT|[246]|subLocs|[]|0x181ae36f
+17:04:41.0 (205615592)|STATEMENT_EXECUTE|[266]
+17:04:41.0 (205617511)|STATEMENT_EXECUTE|[267]
+17:04:41.0 (205640838)|HEAP_ALLOCATE|[267]|Bytes:16
+17:04:41.0 (205644205)|HEAP_ALLOCATE|[267]|Bytes:16
+17:04:41.0 (205646511)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (205648835)|HEAP_ALLOCATE|[267]|Bytes:16
+17:04:41.0 (205650371)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (205651644)|HEAP_ALLOCATE|[267]|Bytes:8
+17:04:41.0 (205666205)|STATEMENT_EXECUTE|[271]
+17:04:41.0 (205667512)|STATEMENT_EXECUTE|[272]
+17:04:41.0 (205698937)|DML_BEGIN|[272]|Op:Delete|Type:ProjectLocation__c|Rows:2
+17:04:41.0 (205714756)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+17:04:41.0 (253214814)|DML_END|[272]
+17:04:41.0 (253269583)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+17:04:41.0 (253297873)|METHOD_EXIT|[31]|01p2400000DUoK9|SubLocationDetailUtil.updateRecordsForReportBeforeDelete(List<SublocationDetail__c>)
+17:04:41.0 (253302369)|STATEMENT_EXECUTE|[32]
+17:04:41.0 (253320111)|METHOD_ENTRY|[32]|01p2400000DUoK9|SubLocationDetailUtil.upateSubLocation(List<SublocationDetail__c>)
+17:04:41.0 (253341975)|VARIABLE_SCOPE_BEGIN|[37]|triggerNew|List<SublocationDetail__c>|true|false
+17:04:41.0 (253533560)|VARIABLE_ASSIGNMENT|[37]|triggerNew|[{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6387","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBKUA2","To_sum__c":true,"Id":"a080E000000EwlkQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"},{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6388","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBUUA2","To_sum__c":true,"Id":"a080E000000EwllQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"}]|0x507d250a
+17:04:41.0 (253549425)|HEAP_ALLOCATE|[38]|Bytes:5
+17:04:41.0 (253553226)|STATEMENT_EXECUTE|[37]
+17:04:41.0 (253554574)|STATEMENT_EXECUTE|[38]
+17:04:41.0 (253557456)|HEAP_ALLOCATE|[38]|Bytes:23
+17:04:41.0 (253587085)|USER_DEBUG|[38]|DEBUG|[****] upateSubLocation
+17:04:41.0 (253593053)|STATEMENT_EXECUTE|[39]
+17:04:41.0 (253644192)|HEAP_ALLOCATE|[39]|Bytes:4
+17:04:41.0 (253676309)|VARIABLE_SCOPE_BEGIN|[39]|locationsToUpdateMap|Map<Id,Location__c>|true|false
+17:04:41.0 (253688734)|VARIABLE_ASSIGNMENT|[39]|locationsToUpdateMap|{}|0x2664cd04
+17:04:41.0 (253691295)|STATEMENT_EXECUTE|[40]
+17:04:41.0 (253695836)|HEAP_ALLOCATE|[40]|Bytes:4
+17:04:41.0 (253718389)|VARIABLE_SCOPE_BEGIN|[40]|locationsToUpdateIds|Set<Id>|true|false
+17:04:41.0 (253730085)|VARIABLE_ASSIGNMENT|[40]|locationsToUpdateIds|[]|0x70a182a0
+17:04:41.0 (253758204)|HEAP_ALLOCATE|[42]|Bytes:5
+17:04:41.0 (253772296)|VARIABLE_SCOPE_BEGIN|[42]|subL|SublocationDetail__c|true|false
+17:04:41.0 (253860152)|VARIABLE_ASSIGNMENT|[42]|subL|{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6387","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBKUA2","To_sum__c":true,"Id":"a080E000000EwlkQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"}|0x3b4cba8a
+17:04:41.0 (253866050)|STATEMENT_EXECUTE|[42]
+17:04:41.0 (253904917)|STATEMENT_EXECUTE|[43]
+17:04:41.0 (253906604)|STATEMENT_EXECUTE|[44]
+17:04:41.0 (253923145)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (253934967)|HEAP_ALLOCATE|[42]|Bytes:5
+17:04:41.0 (253946763)|VARIABLE_SCOPE_BEGIN|[42]|subL|SublocationDetail__c|true|false
+17:04:41.0 (254028385)|VARIABLE_ASSIGNMENT|[42]|subL|{"LastModifiedDate":"2017-02-16T14:04:59.000Z","ProjectId__c":"a0q0E0000008ahl","WWWid__c":"a0t0E0000004UUS","IsDeleted":false,"ProjectCode__c":"1111","Name":"SD-6388","SystemModstamp":"2017-02-16T14:04:59.000Z","Number_of_items__c":10,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-02-16T14:04:59.000Z","Location__c":"a0B0E0000009YBUUA2","To_sum__c":true,"Id":"a080E000000EwllQAC","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004KPGQA2","LastModifiedById":"00524000001e3UjAAI"}|0x2d21dd08
+17:04:41.0 (254040024)|STATEMENT_EXECUTE|[42]
+17:04:41.0 (254054594)|STATEMENT_EXECUTE|[43]
+17:04:41.0 (254055743)|STATEMENT_EXECUTE|[44]
+17:04:41.0 (254061686)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (254071062)|HEAP_ALLOCATE|[42]|Bytes:5
+17:04:41.0 (254080253)|VARIABLE_ASSIGNMENT|[42]|subL|null|
+17:04:41.0 (254082600)|STATEMENT_EXECUTE|[48]
+17:04:41.0 (254103333)|HEAP_ALLOCATE|[48]|Bytes:4
+17:04:41.0 (254155736)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (254160030)|HEAP_ALLOCATE|[48]|Bytes:4
+17:04:41.0 (254169429)|HEAP_ALLOCATE|[48]|Bytes:0
+17:04:41.0 (254173966)|VARIABLE_SCOPE_BEGIN|[48]|locationsToUpdate|List<Location__c>|true|false
+17:04:41.0 (254178779)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (254183577)|VARIABLE_ASSIGNMENT|[48]|locationsToUpdate|[]|0x15540891
+17:04:41.0 (254185917)|STATEMENT_EXECUTE|[50]
+17:04:41.0 (254188974)|HEAP_ALLOCATE|[50]|Bytes:4
+17:04:41.0 (254192555)|HEAP_ALLOCATE|[50]|Bytes:46
+17:04:41.0 (254195479)|HEAP_ALLOCATE|[50]|Bytes:4
+17:04:41.0 (254219115)|HEAP_ALLOCATE|[50]|Bytes:12
+17:04:41.0 (254224031)|HEAP_ALLOCATE|[50]|Bytes:12
+17:04:41.0 (254389583)|SOQL_EXECUTE_BEGIN|[50]|Aggregations:0|SELECT Id FROM Location__c WHERE id = :tmpVar1
+17:04:41.0 (255672031)|SOQL_EXECUTE_END|[50]|Rows:2
+17:04:41.0 (255685962)|HEAP_ALLOCATE|[50]|Bytes:12
+17:04:41.0 (255697571)|HEAP_ALLOCATE|[50]|Bytes:58
+17:04:41.0 (255718038)|HEAP_ALLOCATE|[50]|Bytes:12
+17:04:41.0 (255745507)|HEAP_ALLOCATE|[50]|Bytes:8
+17:04:41.0 (255753422)|HEAP_ALLOCATE|[50]|Bytes:4
+17:04:41.0 (255760230)|HEAP_ALLOCATE|[50]|Bytes:8
+17:04:41.0 (255763865)|HEAP_ALLOCATE|[50]|Bytes:4
+17:04:41.0 (255768872)|VARIABLE_SCOPE_BEGIN|[50]|locationsById|Map<Id,Location__c>|true|false
+17:04:41.0 (255787423)|VARIABLE_ASSIGNMENT|[50]|locationsById|{"a0B0E0000009YBKUA2":{"Id":"a0B0E0000009YBKUA2"},"a0B0E0000009YBUUA2":{"Id":"a0B0E0000009YBUUA2"}}|0x1fa852cc
+17:04:41.0 (255791295)|STATEMENT_EXECUTE|[51]
+17:04:41.0 (255794448)|HEAP_ALLOCATE|[51]|Bytes:127
+17:04:41.0 (255799497)|HEAP_ALLOCATE|[51]|Bytes:4
+17:04:41.0 (255822359)|HEAP_ALLOCATE|[51]|Bytes:12
+17:04:41.0 (255827084)|HEAP_ALLOCATE|[51]|Bytes:12
+17:04:41.0 (256020350)|SOQL_EXECUTE_BEGIN|[51]|Aggregations:0|SELECT Id, Name, Location__c, Reserved__c, To_Sum__c, Number_of_items__c FROM SubLocationDetail__c WHERE Location__c = :tmpVar1
+17:04:41.0 (258985543)|SOQL_EXECUTE_END|[51]|Rows:0
+17:04:41.0 (259002222)|HEAP_ALLOCATE|[51]|Bytes:4
+17:04:41.0 (259010604)|HEAP_ALLOCATE|[51]|Bytes:0
+17:04:41.0 (259023551)|HEAP_ALLOCATE|[51]|Bytes:4
+17:04:41.0 (259035830)|VARIABLE_SCOPE_BEGIN|[51]|details|List<SublocationDetail__c>|true|false
+17:04:41.0 (259046041)|VARIABLE_ASSIGNMENT|[51]|details|[]|0x6e1156
+17:04:41.0 (259048825)|STATEMENT_EXECUTE|[52]
+17:04:41.0 (259051367)|VARIABLE_SCOPE_BEGIN|[52]|subNotSum|List<SublocationDetail__c>|true|false
+17:04:41.0 (259055954)|VARIABLE_ASSIGNMENT|[52]|subNotSum|null|
+17:04:41.0 (259057450)|STATEMENT_EXECUTE|[54]
+17:04:41.0 (259064242)|HEAP_ALLOCATE|[54]|Bytes:4
+17:04:41.0 (259072514)|VARIABLE_SCOPE_BEGIN|[54]|detByLocId|Map<Id,Decimal>|true|false
+17:04:41.0 (259079595)|VARIABLE_ASSIGNMENT|[54]|detByLocId|{}|0x1ab94c0c
+17:04:41.0 (259081484)|STATEMENT_EXECUTE|[55]
+17:04:41.0 (259083697)|HEAP_ALLOCATE|[55]|Bytes:4
+17:04:41.0 (259086917)|VARIABLE_SCOPE_BEGIN|[55]|detRedByLocId|Map<Id,Decimal>|true|false
+17:04:41.0 (259091258)|VARIABLE_ASSIGNMENT|[55]|detRedByLocId|{}|0x3871f51a
+17:04:41.0 (259092889)|STATEMENT_EXECUTE|[56]
+17:04:41.0 (259120319)|HEAP_ALLOCATE|[56]|Bytes:4
+17:04:41.0 (259140926)|VARIABLE_SCOPE_BEGIN|[56]|subLocsBylocId|Map<Id,List<SublocationDetail__c>>|true|false
+17:04:41.0 (259147524)|VARIABLE_ASSIGNMENT|[56]|subLocsBylocId|{}|0x6fb6bd2f
+17:04:41.0 (259181611)|HEAP_ALLOCATE|[57]|Bytes:5
+17:04:41.0 (259192477)|VARIABLE_ASSIGNMENT|[57]|det|null|
+17:04:41.0 (259195246)|STATEMENT_EXECUTE|[57]
+17:04:41.0 (259211968)|HEAP_ALLOCATE|[89]|Bytes:5
+17:04:41.0 (259218591)|VARIABLE_ASSIGNMENT|[89]|subNull|null|
+17:04:41.0 (259220564)|STATEMENT_EXECUTE|[89]
+17:04:41.0 (259222677)|STATEMENT_EXECUTE|[95]
+17:04:41.0 (259236828)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+17:04:41.0 (259242969)|HEAP_ALLOCATE|[96]|Bytes:68
+17:04:41.0 (259328327)|HEAP_ALLOCATE|[96]|Bytes:5
+17:04:41.0 (259337718)|HEAP_ALLOCATE|[96]|Bytes:8
+17:04:41.0 (259343412)|VARIABLE_SCOPE_BEGIN|[96]|loc|Location__c|true|false
+17:04:41.0 (259353725)|VARIABLE_ASSIGNMENT|[96]|loc|{"Id":"a0B0E0000009YBKUA2"}|0x851ae31
+17:04:41.0 (259356569)|STATEMENT_EXECUTE|[96]
+17:04:41.0 (259357722)|STATEMENT_EXECUTE|[97]
+17:04:41.0 (259417303)|HEAP_ALLOCATE|[97]|Bytes:-4
+17:04:41.0 (259426445)|VARIABLE_ASSIGNMENT|[97]|this.Current_amount__c|null|0x851ae31
+17:04:41.0 (259428844)|STATEMENT_EXECUTE|[98]
+17:04:41.0 (259449106)|HEAP_ALLOCATE|[98]|Bytes:-4
+17:04:41.0 (259453941)|VARIABLE_ASSIGNMENT|[98]|this.Available_amount__c|null|0x851ae31
+17:04:41.0 (259455853)|STATEMENT_EXECUTE|[99]
+17:04:41.0 (259482487)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (259493748)|HEAP_ALLOCATE|[96]|Bytes:5
+17:04:41.0 (259501290)|HEAP_ALLOCATE|[96]|Bytes:8
+17:04:41.0 (259506664)|VARIABLE_SCOPE_BEGIN|[96]|loc|Location__c|true|false
+17:04:41.0 (259514950)|VARIABLE_ASSIGNMENT|[96]|loc|{"Id":"a0B0E0000009YBUUA2"}|0x22cf9c
+17:04:41.0 (259517336)|STATEMENT_EXECUTE|[96]
+17:04:41.0 (259518348)|STATEMENT_EXECUTE|[97]
+17:04:41.0 (259544088)|HEAP_ALLOCATE|[97]|Bytes:-4
+17:04:41.0 (259549522)|VARIABLE_ASSIGNMENT|[97]|this.Current_amount__c|null|0x22cf9c
+17:04:41.0 (259551510)|STATEMENT_EXECUTE|[98]
+17:04:41.0 (259563803)|HEAP_ALLOCATE|[98]|Bytes:-4
+17:04:41.0 (259567413)|VARIABLE_ASSIGNMENT|[98]|this.Available_amount__c|null|0x22cf9c
+17:04:41.0 (259568931)|STATEMENT_EXECUTE|[99]
+17:04:41.0 (259575162)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (259584003)|HEAP_ALLOCATE|[96]|Bytes:5
+17:04:41.0 (259590942)|VARIABLE_ASSIGNMENT|[96]|loc|null|
+17:04:41.0 (259609103)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+17:04:41.0 (259616107)|HEAP_ALLOCATE|[103]|Bytes:156
+17:04:41.0 (259630086)|HEAP_ALLOCATE|[103]|Bytes:5
+17:04:41.0 (259636372)|HEAP_ALLOCATE|[103]|Bytes:16
+17:04:41.0 (259640899)|VARIABLE_SCOPE_BEGIN|[103]|loc|Location__c|true|false
+17:04:41.0 (259648395)|VARIABLE_ASSIGNMENT|[103]|loc|{"Id":"a0B0E0000009YBKUA2"}|0x851ae31
+17:04:41.0 (259650901)|STATEMENT_EXECUTE|[103]
+17:04:41.0 (259652000)|STATEMENT_EXECUTE|[104]
+17:04:41.0 (259654873)|VARIABLE_SCOPE_BEGIN|[104]|added|Boolean|false|false
+17:04:41.0 (259658117)|HEAP_ALLOCATE|[104]|Bytes:5
+17:04:41.0 (259661715)|VARIABLE_ASSIGNMENT|[104]|added|false
+17:04:41.0 (259704127)|STATEMENT_EXECUTE|[105]
+17:04:41.0 (259724544)|STATEMENT_EXECUTE|[113]
+17:04:41.0 (259726049)|STATEMENT_EXECUTE|[114]
+17:04:41.0 (259750306)|VARIABLE_ASSIGNMENT|[114]|this.Current_amount__c|null|0x851ae31
+17:04:41.0 (259752487)|STATEMENT_EXECUTE|[115]
+17:04:41.0 (259765919)|VARIABLE_ASSIGNMENT|[115]|this.Available_amount__c|null|0x851ae31
+17:04:41.0 (259769188)|STATEMENT_EXECUTE|[117]
+17:04:41.0 (259770521)|STATEMENT_EXECUTE|[118]
+17:04:41.0 (259788457)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (259798758)|HEAP_ALLOCATE|[103]|Bytes:5
+17:04:41.0 (259806240)|HEAP_ALLOCATE|[103]|Bytes:16
+17:04:41.0 (259810936)|VARIABLE_SCOPE_BEGIN|[103]|loc|Location__c|true|false
+17:04:41.0 (259818816)|VARIABLE_ASSIGNMENT|[103]|loc|{"Id":"a0B0E0000009YBUUA2"}|0x22cf9c
+17:04:41.0 (259821198)|STATEMENT_EXECUTE|[103]
+17:04:41.0 (259822237)|STATEMENT_EXECUTE|[104]
+17:04:41.0 (259824664)|VARIABLE_SCOPE_BEGIN|[104]|added|Boolean|false|false
+17:04:41.0 (259827084)|HEAP_ALLOCATE|[104]|Bytes:5
+17:04:41.0 (259830354)|VARIABLE_ASSIGNMENT|[104]|added|false
+17:04:41.0 (259841108)|STATEMENT_EXECUTE|[105]
+17:04:41.0 (259847063)|STATEMENT_EXECUTE|[113]
+17:04:41.0 (259848211)|STATEMENT_EXECUTE|[114]
+17:04:41.0 (259871523)|VARIABLE_ASSIGNMENT|[114]|this.Current_amount__c|null|0x22cf9c
+17:04:41.0 (259873721)|STATEMENT_EXECUTE|[115]
+17:04:41.0 (259886282)|VARIABLE_ASSIGNMENT|[115]|this.Available_amount__c|null|0x22cf9c
+17:04:41.0 (259889155)|STATEMENT_EXECUTE|[117]
+17:04:41.0 (259890521)|STATEMENT_EXECUTE|[118]
+17:04:41.0 (259896489)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:04:41.0 (259904953)|HEAP_ALLOCATE|[103]|Bytes:5
+17:04:41.0 (259912407)|VARIABLE_ASSIGNMENT|[103]|loc|null|
+17:04:41.0 (259914849)|STATEMENT_EXECUTE|[122]
+17:04:41.0 (259917204)|HEAP_ALLOCATE|[122]|Bytes:34
+17:04:41.0 (259997307)|HEAP_ALLOCATE|[122]|Bytes:348
+17:04:41.0 (260011180)|HEAP_ALLOCATE|[122]|Bytes:382
+17:04:41.0 (260022332)|USER_DEBUG|[122]|DEBUG|upateSubLocation locationsToUpdate(Location__c:{Id=a0B0E0000009YBKUA2, Current_amount__c=null, Available_amount__c=null}, Location__c:{Id=a0B0E0000009YBUUA2, Current_amount__c=null, Available_amount__c=null}, Location__c:{Id=a0B0E0000009YBKUA2, Current_amount__c=null, Available_amount__c=null}, Location__c:{Id=a0B0E0000009YBUUA2, Current_amount__c=null, Available_amount__c=null})
+17:04:41.0 (260028281)|STATEMENT_EXECUTE|[123]
+17:04:41.0 (260059234)|DML_BEGIN|[123]|Op:Update|Type:Location__c|Rows:4
+17:04:41.0 (260076978)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:20
+17:04:41.0 (260345949)|EXCEPTION_THROWN|[123]|System.ListException: Duplicate id in list: a0B0E0000009YBKUA2
+17:04:41.0 (260364223)|DML_END|[123]
+17:04:41.0 (260766307)|HEAP_ALLOCATE|[123]|Bytes:44
+17:04:41.0 (260783886)|METHOD_EXIT|[32]|01p2400000DUoK9|SubLocationDetailUtil.upateSubLocation(List<SublocationDetail__c>)
+17:04:41.0 (260789410)|SYSTEM_MODE_EXIT|false
+17:04:41.0 (260795487)|METHOD_EXIT|[10]|01p2400000DUoK9|SubLocationDetailUtil.entry(TriggerParams)
+17:04:41.0 (261000203)|FATAL_ERROR|System.ListException: Duplicate id in list: a0B0E0000009YBKUA2
+
+Class.SubLocationDetailUtil.upateSubLocation: line 123, column 1
+Class.SubLocationDetailUtil.entry: line 32, column 1
+Trigger.SubLocationDetailTrigger: line 10, column 1
+17:04:41.0 (261010148)|FATAL_ERROR|System.ListException: Duplicate id in list: a0B0E0000009YBKUA2
+
+Class.SubLocationDetailUtil.upateSubLocation: line 123, column 1
+Class.SubLocationDetailUtil.entry: line 32, column 1
+Trigger.SubLocationDetailTrigger: line 10, column 1
+17:04:41.261 (261067918)|CUMULATIVE_LIMIT_USAGE
+17:04:41.261 (261067918)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 7 out of 100
+  Number of query rows: 12 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 4 out of 150
+  Number of DML rows: 9 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:04:41.261 (261067918)|CUMULATIVE_LIMIT_USAGE_END
+
+17:04:41.0 (262126556)|CODE_UNIT_FINISHED|SubLocationDetailTrigger on SublocationDetail trigger event AfterDelete for [a080E000000Ewlk, a080E000000Ewll]

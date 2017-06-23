@@ -1,0 +1,130 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 6
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "AfleverenSublocs",
+            "parameters": [
+                {
+                    "name": "locsLabel",
+                    "type": "String"
+                },
+                {
+                    "name": "locations",
+                    "type": "LIST"
+                },
+                {
+                    "name": "isChecked",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p9E000000EARpQAO",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p9E000000EARpQAO",
+    "methods": [],
+    "name": "AfleverenSublocs",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 2
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "locsLabel",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "locations",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "isChecked",
+            "references": [],
+            "type": "Boolean"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "AfleverenSublocs",
+        "references": [],
+        "type": "AfleverenSublocs"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "locsLabel",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "locations",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 85,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "isChecked",
+            "references": [],
+            "type": "Boolean"
+        }
+    ]
+}

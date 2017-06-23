@@ -1,0 +1,511 @@
+38.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+16:51:36.0 (67933)|USER_INFO|[EXTERNAL]|00524000001e3Uj|bedrijfsbureau@gsa.nl.sandbox|Midden-Europese standaardtijd|GMT+01:00
+16:51:36.0 (91512)|EXECUTION_STARTED
+16:51:36.0 (95215)|CODE_UNIT_STARTED|[EXTERNAL]|TRIGGERS
+16:51:36.0 (863181)|CODE_UNIT_STARTED|[EXTERNAL]|01q2400000133Bx|WWWDetailTrigger on WWW_Detail trigger event BeforeDelete for [a0s0E0000004KPu]
+16:51:36.0 (924770)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+16:51:36.0 (1407452)|HEAP_ALLOCATE|[72]|Bytes:3
+16:51:36.0 (1448901)|HEAP_ALLOCATE|[77]|Bytes:152
+16:51:36.0 (1462926)|HEAP_ALLOCATE|[342]|Bytes:408
+16:51:36.0 (1477852)|HEAP_ALLOCATE|[355]|Bytes:408
+16:51:36.0 (1491058)|HEAP_ALLOCATE|[467]|Bytes:48
+16:51:36.0 (1517777)|HEAP_ALLOCATE|[139]|Bytes:6
+16:51:36.0 (1532072)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:51:36.0 (1537921)|VARIABLE_SCOPE_BEGIN|[1]|this|WWWDetailTrigger|true|false
+16:51:36.0 (1576399)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x13bb7df4
+16:51:36.0 (1603993)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:51:36.0 (1608290)|VARIABLE_SCOPE_BEGIN|[1]|this|WWWDetailTrigger|true|false
+16:51:36.0 (1614197)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x13bb7df4
+16:51:36.0 (1619095)|STATEMENT_EXECUTE|[1]
+16:51:36.0 (1620675)|STATEMENT_EXECUTE|[3]
+16:51:36.0 (2540671)|HEAP_ALLOCATE|[3]|Bytes:2
+16:51:36.0 (2576529)|METHOD_ENTRY|[1]|01p2400000Cr9rX|TriggerParams.TriggerParams()
+16:51:36.0 (2580164)|STATEMENT_EXECUTE|[1]
+16:51:36.0 (2583888)|STATEMENT_EXECUTE|[1]
+16:51:36.0 (2620214)|HEAP_ALLOCATE|[50]|Bytes:5
+16:51:36.0 (2645828)|HEAP_ALLOCATE|[56]|Bytes:5
+16:51:36.0 (2653188)|HEAP_ALLOCATE|[64]|Bytes:7
+16:51:36.0 (2676315)|HEAP_ALLOCATE|[3]|Bytes:5
+16:51:36.0 (2685386)|METHOD_EXIT|[1]|TriggerParams
+16:51:36.0 (2690331)|HEAP_ALLOCATE|[3]|Bytes:44
+16:51:36.0 (2885077)|CONSTRUCTOR_ENTRY|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+16:51:36.0 (2918106)|VARIABLE_SCOPE_BEGIN|[13]|this|TriggerParams|true|false
+16:51:36.0 (2948848)|VARIABLE_ASSIGNMENT|[13]|this|{}|0x4ba57ad4
+16:51:36.0 (2953912)|VARIABLE_SCOPE_BEGIN|[13]|isBefore|Boolean|false|false
+16:51:36.0 (2959838)|VARIABLE_ASSIGNMENT|[13]|isBefore|true
+16:51:36.0 (2962068)|VARIABLE_SCOPE_BEGIN|[13]|isAfter|Boolean|false|false
+16:51:36.0 (2964335)|VARIABLE_ASSIGNMENT|[13]|isAfter|false
+16:51:36.0 (2966150)|VARIABLE_SCOPE_BEGIN|[13]|isInsert|Boolean|false|false
+16:51:36.0 (2968184)|VARIABLE_ASSIGNMENT|[13]|isInsert|false
+16:51:36.0 (2970048)|VARIABLE_SCOPE_BEGIN|[13]|isUpdate|Boolean|false|false
+16:51:36.0 (2972109)|VARIABLE_ASSIGNMENT|[13]|isUpdate|false
+16:51:36.0 (2973818)|VARIABLE_SCOPE_BEGIN|[13]|isDelete|Boolean|false|false
+16:51:36.0 (2975639)|VARIABLE_ASSIGNMENT|[13]|isDelete|true
+16:51:36.0 (2977504)|VARIABLE_SCOPE_BEGIN|[13]|isUndelete|Boolean|false|false
+16:51:36.0 (2979714)|VARIABLE_ASSIGNMENT|[13]|isUndelete|false
+16:51:36.0 (2981751)|VARIABLE_SCOPE_BEGIN|[13]|triggerNew|List<SObject>|true|false
+16:51:36.0 (2985122)|VARIABLE_ASSIGNMENT|[13]|triggerNew|null|
+16:51:36.0 (2986786)|VARIABLE_SCOPE_BEGIN|[13]|triggerOld|List<SObject>|true|false
+16:51:36.0 (23287940)|VARIABLE_ASSIGNMENT|[13]|triggerOld|[{"LastModifiedDate":"2017-02-16T15:40:16.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10118","Arrival_Truck_On_Pro (7 more) ...":"2017-02-16T08:30:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4NAAS","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Compleet_klaargezet_ (2 more) ...":"Ja","Foto__c":false,"SystemModstamp":"2017-02-16T15:40:16.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T15:40:16.000Z","Id":"a0s0E0000004KPuQAM","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}]|0x3a3af8e6
+16:51:36.0 (23317270)|VARIABLE_SCOPE_BEGIN|[13]|newMap|Map<Id,SObject>|true|false
+16:51:36.0 (23324303)|VARIABLE_ASSIGNMENT|[13]|newMap|null|
+16:51:36.0 (23326869)|VARIABLE_SCOPE_BEGIN|[13]|oldMap|Map<Id,SObject>|true|false
+16:51:36.0 (24301806)|VARIABLE_ASSIGNMENT|[13]|oldMap|{"a0s0E0000004KPuQAM":{"LastModifiedDate":"2017-02-16T15:40:16.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10118","Arrival_Truck_On_Pro (7 more) ...":"2017-02-16T08:30:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4NAAS","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Compleet_klaargezet_ (2 more) ...":"Ja","Foto__c":false,"SystemModstamp":"2017-02-16T15:40:16.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T15:40:16.000Z","Id":"a0s0E0000004KPuQAM","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}}|0x48032322
+16:51:36.0 (24329989)|HEAP_ALLOCATE|[16]|Bytes:5
+16:51:36.0 (24338938)|STATEMENT_EXECUTE|[1]
+16:51:36.0 (24341545)|HEAP_ALLOCATE|[16]|Bytes:5
+16:51:36.0 (24343193)|STATEMENT_EXECUTE|[2]
+16:51:36.0 (24344706)|STATEMENT_EXECUTE|[3]
+16:51:36.0 (24345825)|STATEMENT_EXECUTE|[4]
+16:51:36.0 (24346949)|STATEMENT_EXECUTE|[5]
+16:51:36.0 (24347969)|STATEMENT_EXECUTE|[6]
+16:51:36.0 (24349050)|STATEMENT_EXECUTE|[7]
+16:51:36.0 (24350133)|STATEMENT_EXECUTE|[8]
+16:51:36.0 (24351308)|STATEMENT_EXECUTE|[9]
+16:51:36.0 (24352186)|STATEMENT_EXECUTE|[10]
+16:51:36.0 (24353336)|STATEMENT_EXECUTE|[11]
+16:51:36.0 (24379775)|HEAP_ALLOCATE|[16]|Bytes:6
+16:51:36.0 (24438683)|STATEMENT_EXECUTE|[15]
+16:51:36.0 (24441598)|STATEMENT_EXECUTE|[16]
+16:51:36.0 (24448801)|HEAP_ALLOCATE|[16]|Bytes:5
+16:51:36.0 (24463851)|VARIABLE_ASSIGNMENT|[16]|this.isBefore|true|0x4ba57ad4
+16:51:36.0 (24467061)|STATEMENT_EXECUTE|[17]
+16:51:36.0 (24470900)|HEAP_ALLOCATE|[17]|Bytes:5
+16:51:36.0 (24477490)|VARIABLE_ASSIGNMENT|[17]|this.isAfter|false|0x4ba57ad4
+16:51:36.0 (24479989)|STATEMENT_EXECUTE|[18]
+16:51:36.0 (24483938)|HEAP_ALLOCATE|[18]|Bytes:5
+16:51:36.0 (24490517)|VARIABLE_ASSIGNMENT|[18]|this.isInsert|false|0x4ba57ad4
+16:51:36.0 (24493249)|STATEMENT_EXECUTE|[19]
+16:51:36.0 (24496428)|HEAP_ALLOCATE|[19]|Bytes:5
+16:51:36.0 (24503510)|VARIABLE_ASSIGNMENT|[19]|this.isUpdate|false|0x4ba57ad4
+16:51:36.0 (24505568)|STATEMENT_EXECUTE|[20]
+16:51:36.0 (24508650)|HEAP_ALLOCATE|[20]|Bytes:5
+16:51:36.0 (24513543)|VARIABLE_ASSIGNMENT|[20]|this.isDelete|true|0x4ba57ad4
+16:51:36.0 (24515823)|STATEMENT_EXECUTE|[21]
+16:51:36.0 (24518825)|HEAP_ALLOCATE|[21]|Bytes:5
+16:51:36.0 (24523972)|VARIABLE_ASSIGNMENT|[21]|this.isUndelete|false|0x4ba57ad4
+16:51:36.0 (24526125)|STATEMENT_EXECUTE|[22]
+16:51:36.0 (24533092)|VARIABLE_ASSIGNMENT|[22]|this.triggerNew|null|0x4ba57ad4
+16:51:36.0 (24535328)|STATEMENT_EXECUTE|[23]
+16:51:36.0 (25547134)|VARIABLE_ASSIGNMENT|[23]|this.triggerOld|[{"LastModifiedDate":"2017-02-16T15:40:16.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10118","Arrival_Truck_On_Pro (7 more) ...":"2017-02-16T08:30:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4NAAS","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Compleet_klaargezet_ (2 more) ...":"Ja","Foto__c":false,"SystemModstamp":"2017-02-16T15:40:16.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T15:40:16.000Z","Id":"a0s0E0000004KPuQAM","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}]|0x4ba57ad4
+16:51:36.0 (25557435)|STATEMENT_EXECUTE|[24]
+16:51:36.0 (25567297)|VARIABLE_ASSIGNMENT|[24]|this.newMap|null|0x4ba57ad4
+16:51:36.0 (25569160)|STATEMENT_EXECUTE|[25]
+16:51:36.0 (26481720)|VARIABLE_ASSIGNMENT|[25]|this.oldMap|{"a0s0E0000004KPuQAM":{"LastModifiedDate":"2017-02-16T15:40:16.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10118","Arrival_Truck_On_Pro (7 more) ...":"2017-02-16T08:30:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4NAAS","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Compleet_klaargezet_ (2 more) ...":"Ja","Foto__c":false,"SystemModstamp":"2017-02-16T15:40:16.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T15:40:16.000Z","Id":"a0s0E0000004KPuQAM","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}}|0x4ba57ad4
+16:51:36.0 (26521725)|CONSTRUCTOR_EXIT|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+16:51:36.0 (27706159)|VARIABLE_SCOPE_BEGIN|[2]|WWWDetailUtil.subLocDet|List<SublocationDetail__c>|true|true
+16:51:36.0 (27722956)|HEAP_ALLOCATE|[3]|Bytes:16
+16:51:36.0 (27730463)|HEAP_ALLOCATE|[3]|Bytes:61
+16:51:36.0 (27740908)|METHOD_ENTRY|[1]|01p2400000DV2tl|WWWDetailUtil.WWWDetailUtil()
+16:51:36.0 (27745122)|STATEMENT_EXECUTE|[1]
+16:51:36.0 (27749076)|STATEMENT_EXECUTE|[1]
+16:51:36.0 (27750973)|STATEMENT_EXECUTE|[2]
+16:51:36.0 (27761265)|HEAP_ALLOCATE|[2]|Bytes:4
+16:51:36.0 (27864176)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:51:36.0 (27878035)|VARIABLE_ASSIGNMENT|[2]|WWWDetailUtil.subLocDet|[]|0x58c06f7a
+16:51:36.0 (27886233)|METHOD_EXIT|[1]|WWWDetailUtil
+16:51:36.0 (27912516)|METHOD_ENTRY|[3]|01p2400000DV2tl|WWWDetailUtil.entry(TriggerParams)
+16:51:36.0 (27919498)|VARIABLE_SCOPE_BEGIN|[4]|triggerParams|TriggerParams|true|false
+16:51:36.0 (27963938)|VARIABLE_ASSIGNMENT|[4]|triggerParams|{"isAfter":false,"isBefore":true,"isDelete":true,"isInsert":false,"isUndelete":false,"isUpdate":false,"oldMap":"0x48032322","triggerOld":"0x3a3af8e6"}|0x4ba57ad4
+16:51:36.0 (27973025)|STATEMENT_EXECUTE|[4]
+16:51:36.0 (27974969)|STATEMENT_EXECUTE|[5]
+16:51:36.0 (27984649)|VARIABLE_SCOPE_BEGIN|[5]|triggerNew|List<WWW_Detail__c>|true|false
+16:51:36.0 (27991225)|VARIABLE_ASSIGNMENT|[5]|triggerNew|null|
+16:51:36.0 (27993549)|STATEMENT_EXECUTE|[6]
+16:51:36.0 (27999784)|VARIABLE_SCOPE_BEGIN|[6]|triggerOld|List<WWW_Detail__c>|true|false
+16:51:36.0 (29666086)|VARIABLE_ASSIGNMENT|[6]|triggerOld|[{"LastModifiedDate":"2017-02-16T15:40:16.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10118","Arrival_Truck_On_Pro (7 more) ...":"2017-02-16T08:30:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4NAAS","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Compleet_klaargezet_ (2 more) ...":"Ja","Foto__c":false,"SystemModstamp":"2017-02-16T15:40:16.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T15:40:16.000Z","Id":"a0s0E0000004KPuQAM","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}]|0x3a3af8e6
+16:51:36.0 (29680000)|STATEMENT_EXECUTE|[7]
+16:51:36.0 (29694572)|VARIABLE_SCOPE_BEGIN|[7]|oldMap|Map<Id,WWW_Detail__c>|true|false
+16:51:36.0 (30790394)|VARIABLE_ASSIGNMENT|[7]|oldMap|{"a0s0E0000004KPuQAM":{"LastModifiedDate":"2017-02-16T15:40:16.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10118","Arrival_Truck_On_Pro (7 more) ...":"2017-02-16T08:30:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4NAAS","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Compleet_klaargezet_ (2 more) ...":"Ja","Foto__c":false,"SystemModstamp":"2017-02-16T15:40:16.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T15:40:16.000Z","Id":"a0s0E0000004KPuQAM","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}}|0x48032322
+16:51:36.0 (30800691)|STATEMENT_EXECUTE|[8]
+16:51:36.0 (30807842)|VARIABLE_SCOPE_BEGIN|[8]|newMap|Map<Id,WWW_Detail__c>|true|false
+16:51:36.0 (30813448)|VARIABLE_ASSIGNMENT|[8]|newMap|null|
+16:51:36.0 (30818889)|STATEMENT_EXECUTE|[11]
+16:51:36.0 (30823565)|STATEMENT_EXECUTE|[12]
+16:51:36.0 (30825354)|STATEMENT_EXECUTE|[16]
+16:51:36.0 (30826366)|STATEMENT_EXECUTE|[17]
+16:51:36.0 (30831470)|HEAP_ALLOCATE|[17]|Bytes:4
+16:51:36.0 (30884967)|METHOD_ENTRY|[17]|01p2400000DV2tl|WWWDetailUtil.calculateRollupSum(List<WWW_Detail__c>, List<WWW_Detail__c>, TriggerParams)
+16:51:36.0 (30891222)|VARIABLE_SCOPE_BEGIN|[44]|newDetails|List<WWW_Detail__c>|true|false
+16:51:36.0 (30896883)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:51:36.0 (30902839)|VARIABLE_ASSIGNMENT|[44]|newDetails|[]|0x321815a1
+16:51:36.0 (30904991)|VARIABLE_SCOPE_BEGIN|[44]|oldDetails|List<WWW_Detail__c>|true|false
+16:51:36.0 (31840516)|VARIABLE_ASSIGNMENT|[44]|oldDetails|[{"LastModifiedDate":"2017-02-16T15:40:16.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10118","Arrival_Truck_On_Pro (7 more) ...":"2017-02-16T08:30:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4NAAS","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Compleet_klaargezet_ (2 more) ...":"Ja","Foto__c":false,"SystemModstamp":"2017-02-16T15:40:16.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T15:40:16.000Z","Id":"a0s0E0000004KPuQAM","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}]|0x3a3af8e6
+16:51:36.0 (31852628)|VARIABLE_SCOPE_BEGIN|[44]|triggerParams|TriggerParams|true|false
+16:51:36.0 (31876158)|VARIABLE_ASSIGNMENT|[44]|triggerParams|{"isAfter":false,"isBefore":true,"isDelete":true,"isInsert":false,"isUndelete":false,"isUpdate":false,"oldMap":"0x48032322","triggerOld":"0x3a3af8e6"}|0x4ba57ad4
+16:51:36.0 (31882335)|STATEMENT_EXECUTE|[44]
+16:51:36.0 (31883951)|STATEMENT_EXECUTE|[45]
+16:51:36.0 (31940922)|HEAP_ALLOCATE|[45]|Bytes:4
+16:51:36.0 (31948197)|HEAP_ALLOCATE|[45]|Bytes:76
+16:51:36.0 (31953399)|HEAP_ALLOCATE|[45]|Bytes:4
+16:51:36.0 (32213184)|SOQL_EXECUTE_BEGIN|[45]|Aggregations:0|SELECT Id, developerName FROM RecordType WHERE sObjectType = 'WWW_detail__c'
+16:51:36.0 (55357658)|SOQL_EXECUTE_END|[45]|Rows:5
+16:51:36.0 (55385630)|HEAP_ALLOCATE|[45]|Bytes:24
+16:51:36.0 (55412854)|HEAP_ALLOCATE|[45]|Bytes:287
+16:51:36.0 (55491824)|HEAP_ALLOCATE|[45]|Bytes:24
+16:51:36.0 (55569989)|HEAP_ALLOCATE|[45]|Bytes:12
+16:51:36.0 (55580596)|HEAP_ALLOCATE|[45]|Bytes:4
+16:51:36.0 (55587437)|HEAP_ALLOCATE|[45]|Bytes:12
+16:51:36.0 (55590702)|HEAP_ALLOCATE|[45]|Bytes:4
+16:51:36.0 (55594952)|HEAP_ALLOCATE|[45]|Bytes:12
+16:51:36.0 (55597937)|HEAP_ALLOCATE|[45]|Bytes:4
+16:51:36.0 (55601539)|HEAP_ALLOCATE|[45]|Bytes:12
+16:51:36.0 (55604498)|HEAP_ALLOCATE|[45]|Bytes:4
+16:51:36.0 (55607845)|HEAP_ALLOCATE|[45]|Bytes:12
+16:51:36.0 (55610692)|HEAP_ALLOCATE|[45]|Bytes:4
+16:51:36.0 (55622117)|VARIABLE_SCOPE_BEGIN|[45]|recordTypes|Map<Id,RecordType>|true|false
+16:51:36.0 (55667267)|VARIABLE_ASSIGNMENT|[45]|recordTypes|{"01224000000Sn4NAAS":{"Id":"01224000000Sn4NAAS","DeveloperName":"Delivered_2_Project"},"01224000000Sn4OAAS":{"Id":"01224000000Sn4OAAS","DeveloperName":"Invoked"},"01224000000Sn4PAAS":{"Id":"01224000000Sn4PAAS","DeveloperName":"Rejected"},"01224000000Sn4MAAS":{"Id":"01224000000Sn4MAAS","DeveloperName":"Delivered_2_Hub"},"01224000000Sn4QAAS":{"Id":"01224000000Sn4QAAS","DeveloperName":"Reserved"}}|0x2c05077f
+16:51:36.0 (55674344)|STATEMENT_EXECUTE|[46]
+16:51:36.0 (55685861)|HEAP_ALLOCATE|[46]|Bytes:4
+16:51:36.0 (55736337)|VARIABLE_SCOPE_BEGIN|[46]|wwwIds|Set<Id>|true|false
+16:51:36.0 (55762444)|VARIABLE_ASSIGNMENT|[46]|wwwIds|[]|0x2ed2086b
+16:51:36.0 (55764961)|STATEMENT_EXECUTE|[47]
+16:51:36.0 (55768688)|HEAP_ALLOCATE|[47]|Bytes:35
+16:51:36.0 (55815758)|USER_DEBUG|[47]|DEBUG|*** - - IS ENTER calculateRollupSum
+16:51:36.0 (56004051)|HEAP_ALLOCATE|[49]|Bytes:5
+16:51:36.0 (56024239)|VARIABLE_ASSIGNMENT|[49]|detail|null|
+16:51:36.0 (56027724)|STATEMENT_EXECUTE|[49]
+16:51:36.0 (56030072)|STATEMENT_EXECUTE|[52]
+16:51:36.0 (56051152)|HEAP_ALLOCATE|[53]|Bytes:5
+16:51:36.0 (56067301)|VARIABLE_SCOPE_BEGIN|[53]|detail|WWW_Detail__c|true|false
+16:51:36.0 (57316620)|VARIABLE_ASSIGNMENT|[53]|detail|{"LastModifiedDate":"2017-02-16T15:40:16.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10118","Arrival_Truck_On_Pro (7 more) ...":"2017-02-16T08:30:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4NAAS","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Compleet_klaargezet_ (2 more) ...":"Ja","Foto__c":false,"SystemModstamp":"2017-02-16T15:40:16.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T15:40:16.000Z","Id":"a0s0E0000004KPuQAM","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}|0x7abd03ef
+16:51:36.0 (57328060)|STATEMENT_EXECUTE|[53]
+16:51:36.0 (57329679)|STATEMENT_EXECUTE|[54]
+16:51:36.0 (57400090)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:51:36.0 (57416862)|HEAP_ALLOCATE|[53]|Bytes:5
+16:51:36.0 (57428701)|VARIABLE_ASSIGNMENT|[53]|detail|null|
+16:51:36.0 (57431706)|STATEMENT_EXECUTE|[58]
+16:51:36.0 (57481075)|HEAP_ALLOCATE|[58]|Bytes:4
+16:51:36.0 (57486179)|HEAP_ALLOCATE|[58]|Bytes:303
+16:51:36.0 (57489561)|HEAP_ALLOCATE|[58]|Bytes:4
+16:51:36.0 (57495225)|HEAP_ALLOCATE|[58]|Bytes:7
+16:51:36.0 (57518997)|HEAP_ALLOCATE|[58]|Bytes:8
+16:51:36.0 (57523696)|HEAP_ALLOCATE|[58]|Bytes:8
+16:51:36.0 (57896721)|SOQL_EXECUTE_BEGIN|[58]|Aggregations:0|SELECT Id, Toename_Aantal_palletplaatsen1__c, Total_Items_Invoked__c, Total_Items_Delivered_Hub__c, Total_Items_Delivered_Project__c, Total_Items_Rejected_Hub__c, Total_Items_Rejected_Project__c, Total_Items_Reserved__c, Totale_afname_aantal_palletplaatsen1__c, Total1__c FROM WWW__c WHERE id = :tmpVar1
+16:51:36.0 (59534138)|SOQL_EXECUTE_END|[58]|Rows:1
+16:51:36.0 (59548331)|HEAP_ALLOCATE|[58]|Bytes:8
+16:51:36.0 (59565300)|HEAP_ALLOCATE|[58]|Bytes:633
+16:51:36.0 (59599688)|HEAP_ALLOCATE|[58]|Bytes:8
+16:51:36.0 (59640953)|HEAP_ALLOCATE|[58]|Bytes:44
+16:51:36.0 (59648777)|HEAP_ALLOCATE|[58]|Bytes:4
+16:51:36.0 (59656020)|VARIABLE_SCOPE_BEGIN|[58]|wwwById|Map<Id,WWW__c>|true|false
+16:51:36.0 (59683327)|VARIABLE_ASSIGNMENT|[58]|wwwById|{"a0t0E0000004UUSQA2":{"Id":"a0t0E0000004UUSQA2","Toename_Aantal_palle (13 more) ...":0,"Total_Items_Invoked_ (2 more) ...":10,"Total_Items_Delivere (8 more) ...":10,"Total_Items_Delivere (12 more) ...":10,"Total_Items_Rejected (7 more) ...":0,"Total_Items_Rejected (11 more) ...":0,"Total_Items_Reserved (3 more) ...":0,"Totale_afname_aantal (19 more) ...":0,"Total1__c":0}}|0x588b309c
+16:51:36.0 (59688017)|STATEMENT_EXECUTE|[63]
+16:51:36.0 (59690945)|HEAP_ALLOCATE|[63]|Bytes:35
+16:51:36.0 (59748599)|HEAP_ALLOCATE|[63]|Bytes:4
+16:51:36.0 (59763705)|HEAP_ALLOCATE|[63]|Bytes:39
+16:51:36.0 (59774904)|USER_DEBUG|[63]|DEBUG|*** - - triggerParams.isDelete - - true
+16:51:36.0 (59781075)|STATEMENT_EXECUTE|[64]
+16:51:36.0 (59806810)|HEAP_ALLOCATE|[65]|Bytes:5
+16:51:36.0 (59819986)|VARIABLE_SCOPE_BEGIN|[65]|detail|WWW_Detail__c|true|false
+16:51:36.0 (60826625)|VARIABLE_ASSIGNMENT|[65]|detail|{"LastModifiedDate":"2017-02-16T15:40:16.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10118","Arrival_Truck_On_Pro (7 more) ...":"2017-02-16T08:30:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4NAAS","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Compleet_klaargezet_ (2 more) ...":"Ja","Foto__c":false,"SystemModstamp":"2017-02-16T15:40:16.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T15:40:16.000Z","Id":"a0s0E0000004KPuQAM","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}|0x7abd03ef
+16:51:36.0 (60837055)|STATEMENT_EXECUTE|[65]
+16:51:36.0 (60838827)|STATEMENT_EXECUTE|[66]
+16:51:36.0 (60842442)|HEAP_ALLOCATE|[66]|Bytes:17
+16:51:36.0 (60866840)|USER_DEBUG|[66]|DEBUG|*** - - IS DELETE
+16:51:36.0 (60910699)|STATEMENT_EXECUTE|[67]
+16:51:36.0 (60923285)|STATEMENT_EXECUTE|[69]
+16:51:36.0 (60992993)|HEAP_ALLOCATE|[72]|Bytes:15
+16:51:36.0 (61014749)|STATEMENT_EXECUTE|[72]
+16:51:36.0 (61050928)|HEAP_ALLOCATE|[75]|Bytes:19
+16:51:36.0 (61065270)|STATEMENT_EXECUTE|[75]
+16:51:36.0 (61066491)|STATEMENT_EXECUTE|[76]
+16:51:36.0 (61149348)|HEAP_ALLOCATE|[76]|Bytes:28
+16:51:36.0 (61152569)|HEAP_ALLOCATE|[76]|Bytes:28
+16:51:36.0 (61208247)|VARIABLE_ASSIGNMENT|[76]|this.Total_Items_Delivered_Project__c|0|0x711c81af
+16:51:36.0 (61246781)|HEAP_ALLOCATE|[78]|Bytes:7
+16:51:36.0 (61257843)|STATEMENT_EXECUTE|[78]
+16:51:36.0 (61283294)|HEAP_ALLOCATE|[81]|Bytes:8
+16:51:36.0 (61290602)|STATEMENT_EXECUTE|[81]
+16:51:36.0 (61316233)|STATEMENT_EXECUTE|[84]
+16:51:36.0 (61337524)|HEAP_ALLOCATE|[87]|Bytes:8
+16:51:36.0 (61343809)|STATEMENT_EXECUTE|[87]
+16:51:36.0 (61360464)|STATEMENT_EXECUTE|[90]
+16:51:36.0 (61367513)|STATEMENT_EXECUTE|[93]
+16:51:36.0 (61369080)|STATEMENT_EXECUTE|[97]
+16:51:36.0 (61371317)|HEAP_ALLOCATE|[97]|Bytes:40
+16:51:36.0 (61415335)|HEAP_ALLOCATE|[97]|Bytes:2
+16:51:36.0 (61423096)|HEAP_ALLOCATE|[97]|Bytes:42
+16:51:36.0 (61431511)|USER_DEBUG|[97]|DEBUG| *** - Total_Items_Delivered_Hub__c 1 + 10
+16:51:36.0 (61435517)|STATEMENT_EXECUTE|[98]
+16:51:36.0 (61437622)|HEAP_ALLOCATE|[98]|Bytes:34
+16:51:36.0 (61480798)|HEAP_ALLOCATE|[98]|Bytes:2
+16:51:36.0 (61487780)|HEAP_ALLOCATE|[98]|Bytes:36
+16:51:36.0 (61494026)|USER_DEBUG|[98]|DEBUG| *** - Total_Items_Invoked__c 1 + 10
+16:51:36.0 (61497456)|STATEMENT_EXECUTE|[99]
+16:51:36.0 (61499279)|HEAP_ALLOCATE|[99]|Bytes:39
+16:51:36.0 (61533619)|HEAP_ALLOCATE|[99]|Bytes:28
+16:51:36.0 (61543398)|HEAP_ALLOCATE|[99]|Bytes:1
+16:51:36.0 (61549621)|HEAP_ALLOCATE|[99]|Bytes:40
+16:51:36.0 (61555931)|USER_DEBUG|[99]|DEBUG| *** - Total_Items_Rejected_Hub__c 1 + 0
+16:51:36.0 (61566319)|HEAP_ALLOCATE|[65]|Bytes:5
+16:51:36.0 (61577433)|VARIABLE_ASSIGNMENT|[65]|detail|null|
+16:51:36.0 (61600982)|HEAP_ALLOCATE|[103]|Bytes:5
+16:51:36.0 (61612197)|VARIABLE_SCOPE_BEGIN|[103]|detail|WWW_Detail__c|true|false
+16:51:36.0 (62589447)|VARIABLE_ASSIGNMENT|[103]|detail|{"LastModifiedDate":"2017-02-16T15:40:16.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10118","Arrival_Truck_On_Pro (7 more) ...":"2017-02-16T08:30:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4NAAS","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Compleet_klaargezet_ (2 more) ...":"Ja","Foto__c":false,"SystemModstamp":"2017-02-16T15:40:16.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T15:40:16.000Z","Id":"a0s0E0000004KPuQAM","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}|0x7abd03ef
+16:51:36.0 (62600459)|STATEMENT_EXECUTE|[103]
+16:51:36.0 (62661186)|HEAP_ALLOCATE|[104]|Bytes:28
+16:51:36.0 (62673822)|HEAP_ALLOCATE|[104]|Bytes:28
+16:51:36.0 (62675587)|HEAP_ALLOCATE|[104]|Bytes:28
+16:51:36.0 (62700359)|STATEMENT_EXECUTE|[104]
+16:51:36.0 (62741061)|HEAP_ALLOCATE|[107]|Bytes:28
+16:51:36.0 (62743660)|HEAP_ALLOCATE|[107]|Bytes:28
+16:51:36.0 (62758928)|STATEMENT_EXECUTE|[107]
+16:51:36.0 (62786766)|HEAP_ALLOCATE|[111]|Bytes:28
+16:51:36.0 (62789028)|HEAP_ALLOCATE|[111]|Bytes:28
+16:51:36.0 (62800983)|STATEMENT_EXECUTE|[111]
+16:51:36.0 (62823519)|HEAP_ALLOCATE|[116]|Bytes:28
+16:51:36.0 (62828283)|HEAP_ALLOCATE|[116]|Bytes:28
+16:51:36.0 (62829654)|HEAP_ALLOCATE|[116]|Bytes:28
+16:51:36.0 (62841578)|STATEMENT_EXECUTE|[116]
+16:51:36.0 (62862084)|HEAP_ALLOCATE|[119]|Bytes:28
+16:51:36.0 (62866845)|HEAP_ALLOCATE|[119]|Bytes:28
+16:51:36.0 (62868360)|HEAP_ALLOCATE|[119]|Bytes:28
+16:51:36.0 (62879925)|STATEMENT_EXECUTE|[119]
+16:51:36.0 (62913411)|HEAP_ALLOCATE|[122]|Bytes:28
+16:51:36.0 (62919111)|HEAP_ALLOCATE|[122]|Bytes:28
+16:51:36.0 (62920647)|HEAP_ALLOCATE|[122]|Bytes:28
+16:51:36.0 (62933606)|STATEMENT_EXECUTE|[122]
+16:51:36.0 (62965071)|HEAP_ALLOCATE|[125]|Bytes:28
+16:51:36.0 (62970993)|HEAP_ALLOCATE|[125]|Bytes:28
+16:51:36.0 (62972390)|HEAP_ALLOCATE|[125]|Bytes:28
+16:51:36.0 (62985066)|STATEMENT_EXECUTE|[125]
+16:51:36.0 (63015111)|HEAP_ALLOCATE|[128]|Bytes:28
+16:51:36.0 (63021179)|HEAP_ALLOCATE|[128]|Bytes:28
+16:51:36.0 (63022562)|HEAP_ALLOCATE|[128]|Bytes:28
+16:51:36.0 (63035015)|STATEMENT_EXECUTE|[128]
+16:51:36.0 (63065092)|HEAP_ALLOCATE|[131]|Bytes:28
+16:51:36.0 (63070496)|HEAP_ALLOCATE|[131]|Bytes:28
+16:51:36.0 (63071940)|HEAP_ALLOCATE|[131]|Bytes:28
+16:51:36.0 (63083954)|STATEMENT_EXECUTE|[131]
+16:51:36.0 (63085234)|STATEMENT_EXECUTE|[134]
+16:51:36.0 (63087619)|HEAP_ALLOCATE|[134]|Bytes:40
+16:51:36.0 (63115751)|HEAP_ALLOCATE|[134]|Bytes:2
+16:51:36.0 (63123246)|HEAP_ALLOCATE|[134]|Bytes:42
+16:51:36.0 (63132112)|USER_DEBUG|[134]|DEBUG| *** - Total_Items_Delivered_Hub__c 2 + 10
+16:51:36.0 (63136363)|STATEMENT_EXECUTE|[135]
+16:51:36.0 (63138694)|HEAP_ALLOCATE|[135]|Bytes:34
+16:51:36.0 (63164827)|HEAP_ALLOCATE|[135]|Bytes:2
+16:51:36.0 (63171016)|HEAP_ALLOCATE|[135]|Bytes:36
+16:51:36.0 (63176676)|USER_DEBUG|[135]|DEBUG| *** - Total_Items_Invoked__c 2 + 10
+16:51:36.0 (63180184)|STATEMENT_EXECUTE|[136]
+16:51:36.0 (63182102)|HEAP_ALLOCATE|[136]|Bytes:39
+16:51:36.0 (63202838)|HEAP_ALLOCATE|[136]|Bytes:28
+16:51:36.0 (63210398)|HEAP_ALLOCATE|[136]|Bytes:1
+16:51:36.0 (63216128)|HEAP_ALLOCATE|[136]|Bytes:40
+16:51:36.0 (63221555)|USER_DEBUG|[136]|DEBUG| *** - Total_Items_Rejected_Hub__c 2 + 0
+16:51:36.0 (63231659)|HEAP_ALLOCATE|[103]|Bytes:5
+16:51:36.0 (63242503)|VARIABLE_ASSIGNMENT|[103]|detail|null|
+16:51:36.0 (63263050)|HEAP_ALLOCATE|[141]|Bytes:5
+16:51:36.0 (63270087)|VARIABLE_ASSIGNMENT|[141]|detail|null|
+16:51:36.0 (63272249)|STATEMENT_EXECUTE|[141]
+16:51:36.0 (63285393)|HEAP_ALLOCATE|[173]|Bytes:5
+16:51:36.0 (63291287)|VARIABLE_ASSIGNMENT|[173]|detail|null|
+16:51:36.0 (63293173)|STATEMENT_EXECUTE|[173]
+16:51:36.0 (63304950)|STATEMENT_EXECUTE|[243]
+16:51:36.0 (63316564)|HEAP_ALLOCATE|[244]|Bytes:5
+16:51:36.0 (63323311)|VARIABLE_ASSIGNMENT|[244]|oldDetail|null|
+16:51:36.0 (63325641)|STATEMENT_EXECUTE|[244]
+16:51:36.0 (63327231)|STATEMENT_EXECUTE|[276]
+16:51:36.0 (63328240)|STATEMENT_EXECUTE|[277]
+16:51:36.0 (63329321)|STATEMENT_EXECUTE|[278]
+16:51:36.0 (63346522)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+16:51:36.0 (63357032)|HEAP_ALLOCATE|[278]|Bytes:640
+16:51:36.0 (63394033)|DML_BEGIN|[278]|Op:Update|Type:WWW__c|Rows:1
+16:51:36.0 (63416615)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+16:51:36.0 (101477276)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:01I24000001DBlX
+16:51:36.0 (110400691)|WF_RULE_EVAL_BEGIN|Workflow
+16:51:36.0 (110431929)|WF_CRITERIA_BEGIN|[WWW: WWW-13541 a0t0E0000004UUS]|Set unique field|01Q24000000bj9y|ON_ALL_CHANGES|0
+16:51:36.0 (112021697)|WF_RULE_FILTER|[WWW : Created By not equal to ]
+16:51:36.0 (112042666)|WF_RULE_EVAL_VALUE|00524000001e3Uj
+16:51:36.0 (112045688)|WF_CRITERIA_END|true
+16:51:36.0 (112466669)|WF_SPOOL_ACTION_BEGIN|Workflow
+16:51:36.0 (112856352)|WF_ACTION| Field Update: 1;
+16:51:36.0 (112859404)|WF_RULE_EVAL_END
+16:51:36.0 (112906497)|WF_ACTIONS_END| Field Update: 1;
+16:51:36.0 (112912657)|CODE_UNIT_FINISHED|Workflow:01I24000001DBlX
+16:51:36.0 (116531519)|DML_END|[278]
+16:51:36.0 (116615238)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+16:51:36.0 (116648530)|METHOD_EXIT|[17]|01p2400000DV2tl|WWWDetailUtil.calculateRollupSum(List<WWW_Detail__c>, List<WWW_Detail__c>, TriggerParams)
+16:51:36.0 (116655845)|STATEMENT_EXECUTE|[18]
+16:51:36.0 (116684159)|METHOD_ENTRY|[18]|01p2400000DV2tl|WWWDetailUtil.getSubLocDet(List<WWW_Detail__c>)
+16:51:36.0 (116714502)|VARIABLE_SCOPE_BEGIN|[311]|triggerOld|List<WWW_Detail__c>|true|false
+16:51:36.0 (117913336)|VARIABLE_ASSIGNMENT|[311]|triggerOld|[{"LastModifiedDate":"2017-02-16T15:40:16.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10118","Arrival_Truck_On_Pro (7 more) ...":"2017-02-16T08:30:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4NAAS","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Compleet_klaargezet_ (2 more) ...":"Ja","Foto__c":false,"SystemModstamp":"2017-02-16T15:40:16.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T15:40:16.000Z","Id":"a0s0E0000004KPuQAM","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}]|0x3a3af8e6
+16:51:36.0 (117928888)|STATEMENT_EXECUTE|[311]
+16:51:36.0 (117930583)|STATEMENT_EXECUTE|[312]
+16:51:36.0 (117941895)|HEAP_ALLOCATE|[312]|Bytes:4
+16:51:36.0 (117981221)|VARIABLE_SCOPE_BEGIN|[312]|wwwDetIds|Set<Id>|true|false
+16:51:36.0 (117998944)|VARIABLE_ASSIGNMENT|[312]|wwwDetIds|[]|0x68b1fec7
+16:51:36.0 (118047582)|HEAP_ALLOCATE|[314]|Bytes:5
+16:51:36.0 (118071560)|VARIABLE_SCOPE_BEGIN|[314]|wwwd|WWW_Detail__c|true|false
+16:51:36.0 (119005396)|VARIABLE_ASSIGNMENT|[314]|wwwd|{"LastModifiedDate":"2017-02-16T15:40:16.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10118","Arrival_Truck_On_Pro (7 more) ...":"2017-02-16T08:30:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4NAAS","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Compleet_klaargezet_ (2 more) ...":"Ja","Foto__c":false,"SystemModstamp":"2017-02-16T15:40:16.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T15:40:16.000Z","Id":"a0s0E0000004KPuQAM","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}|0x7abd03ef
+16:51:36.0 (119016378)|STATEMENT_EXECUTE|[314]
+16:51:36.0 (119018014)|STATEMENT_EXECUTE|[315]
+16:51:36.0 (119081847)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:51:36.0 (119098041)|HEAP_ALLOCATE|[314]|Bytes:5
+16:51:36.0 (119110919)|VARIABLE_ASSIGNMENT|[314]|wwwd|null|
+16:51:36.0 (119114260)|STATEMENT_EXECUTE|[317]
+16:51:36.0 (119118530)|HEAP_ALLOCATE|[317]|Bytes:81
+16:51:36.0 (119126337)|HEAP_ALLOCATE|[317]|Bytes:4
+16:51:36.0 (119163507)|HEAP_ALLOCATE|[317]|Bytes:8
+16:51:36.0 (119168498)|HEAP_ALLOCATE|[317]|Bytes:8
+16:51:36.0 (119516613)|SOQL_EXECUTE_BEGIN|[317]|Aggregations:0|SELECT Id, WWW_Detail__c FROM SubLocationDetail__c WHERE WWW_Detail__c = :tmpVar1
+16:51:36.0 (122112915)|SOQL_EXECUTE_END|[317]|Rows:0
+16:51:36.0 (122132754)|HEAP_ALLOCATE|[317]|Bytes:4
+16:51:36.0 (122142516)|HEAP_ALLOCATE|[317]|Bytes:0
+16:51:36.0 (122169297)|HEAP_ALLOCATE|[317]|Bytes:4
+16:51:36.0 (122176978)|VARIABLE_SCOPE_BEGIN|[317]|subLocDet2|List<SublocationDetail__c>|true|false
+16:51:36.0 (122187609)|VARIABLE_ASSIGNMENT|[317]|subLocDet2|[]|0x6b48cc48
+16:51:36.0 (122190382)|STATEMENT_EXECUTE|[318]
+16:51:36.0 (122198192)|METHOD_EXIT|[18]|01p2400000DV2tl|WWWDetailUtil.getSubLocDet(List<WWW_Detail__c>)
+16:51:36.0 (122214759)|VARIABLE_ASSIGNMENT|[18]|WWWDetailUtil.subLocDet|[]|0x6b48cc48
+16:51:36.0 (122219832)|STATEMENT_EXECUTE|[19]
+16:51:36.0 (122221366)|STATEMENT_EXECUTE|[20]
+16:51:36.0 (122233155)|METHOD_ENTRY|[20]|01p2400000DV2tl|WWWDetailUtil.deleteSubD(List<SublocationDetail__c>)
+16:51:36.0 (122254810)|VARIABLE_SCOPE_BEGIN|[306]|SubDetToDelete|List<SublocationDetail__c>|true|false
+16:51:36.0 (122260218)|VARIABLE_ASSIGNMENT|[306]|SubDetToDelete|[]|0x6b48cc48
+16:51:36.0 (122264179)|STATEMENT_EXECUTE|[306]
+16:51:36.0 (122265427)|STATEMENT_EXECUTE|[307]
+16:51:36.0 (122269035)|HEAP_ALLOCATE|[307]|Bytes:22
+16:51:36.0 (122304208)|HEAP_ALLOCATE|[307]|Bytes:2
+16:51:36.0 (122314704)|HEAP_ALLOCATE|[307]|Bytes:24
+16:51:36.0 (122331176)|USER_DEBUG|[307]|DEBUG|[***] SubDetToDelete +()
+16:51:36.0 (122335444)|STATEMENT_EXECUTE|[308]
+16:51:36.0 (122413320)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:51:36.0 (122422762)|METHOD_EXIT|[20]|01p2400000DV2tl|WWWDetailUtil.deleteSubD(List<SublocationDetail__c>)
+16:51:36.0 (122431032)|STATEMENT_EXECUTE|[25]
+16:51:36.0 (122435853)|METHOD_EXIT|[3]|01p2400000DV2tl|WWWDetailUtil.entry(TriggerParams)
+16:51:36.122 (122445318)|CUMULATIVE_LIMIT_USAGE
+16:51:36.122 (122445318)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 3 out of 100
+  Number of query rows: 6 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+16:51:36.122 (122445318)|CUMULATIVE_LIMIT_USAGE_END
+
+16:51:36.0 (123598311)|CODE_UNIT_FINISHED|WWWDetailTrigger on WWW_Detail trigger event BeforeDelete for [a0s0E0000004KPu]
+16:51:36.0 (206691012)|CODE_UNIT_STARTED|[EXTERNAL]|01q2400000133Bx|WWWDetailTrigger on WWW_Detail trigger event AfterDelete for [a0s0E0000004KPu]
+16:51:36.0 (206731038)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+16:51:36.0 (206844748)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:51:36.0 (206855416)|VARIABLE_SCOPE_BEGIN|[1]|this|WWWDetailTrigger|true|false
+16:51:36.0 (206885340)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x24700d92
+16:51:36.0 (206913254)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+16:51:36.0 (206917741)|VARIABLE_SCOPE_BEGIN|[1]|this|WWWDetailTrigger|true|false
+16:51:36.0 (206923360)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x24700d92
+16:51:36.0 (206928686)|STATEMENT_EXECUTE|[1]
+16:51:36.0 (206930150)|STATEMENT_EXECUTE|[3]
+16:51:36.0 (206936849)|HEAP_ALLOCATE|[3]|Bytes:44
+16:51:36.0 (207020220)|CONSTRUCTOR_ENTRY|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+16:51:36.0 (207027456)|VARIABLE_SCOPE_BEGIN|[13]|this|TriggerParams|true|false
+16:51:36.0 (207046725)|VARIABLE_ASSIGNMENT|[13]|this|{}|0x977bfd8
+16:51:36.0 (207054466)|VARIABLE_SCOPE_BEGIN|[13]|isBefore|Boolean|false|false
+16:51:36.0 (207060707)|VARIABLE_ASSIGNMENT|[13]|isBefore|false
+16:51:36.0 (207062946)|VARIABLE_SCOPE_BEGIN|[13]|isAfter|Boolean|false|false
+16:51:36.0 (207065038)|VARIABLE_ASSIGNMENT|[13]|isAfter|true
+16:51:36.0 (207067200)|VARIABLE_SCOPE_BEGIN|[13]|isInsert|Boolean|false|false
+16:51:36.0 (207069389)|VARIABLE_ASSIGNMENT|[13]|isInsert|false
+16:51:36.0 (207071133)|VARIABLE_SCOPE_BEGIN|[13]|isUpdate|Boolean|false|false
+16:51:36.0 (207072847)|VARIABLE_ASSIGNMENT|[13]|isUpdate|false
+16:51:36.0 (207075240)|VARIABLE_SCOPE_BEGIN|[13]|isDelete|Boolean|false|false
+16:51:36.0 (207077037)|VARIABLE_ASSIGNMENT|[13]|isDelete|true
+16:51:36.0 (207078902)|VARIABLE_SCOPE_BEGIN|[13]|isUndelete|Boolean|false|false
+16:51:36.0 (207080867)|VARIABLE_ASSIGNMENT|[13]|isUndelete|false
+16:51:36.0 (207082559)|VARIABLE_SCOPE_BEGIN|[13]|triggerNew|List<SObject>|true|false
+16:51:36.0 (207085732)|VARIABLE_ASSIGNMENT|[13]|triggerNew|null|
+16:51:36.0 (207087454)|VARIABLE_SCOPE_BEGIN|[13]|triggerOld|List<SObject>|true|false
+16:51:36.0 (209058027)|VARIABLE_ASSIGNMENT|[13]|triggerOld|[{"LastModifiedDate":"2017-02-16T15:40:16.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10118","Arrival_Truck_On_Pro (7 more) ...":"2017-02-16T08:30:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4NAAS","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Compleet_klaargezet_ (2 more) ...":"Ja","Foto__c":false,"SystemModstamp":"2017-02-16T15:40:16.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T15:40:16.000Z","Id":"a0s0E0000004KPuQAM","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}]|0x1d28d79e
+16:51:36.0 (209069614)|VARIABLE_SCOPE_BEGIN|[13]|newMap|Map<Id,SObject>|true|false
+16:51:36.0 (209073908)|VARIABLE_ASSIGNMENT|[13]|newMap|null|
+16:51:36.0 (209075889)|VARIABLE_SCOPE_BEGIN|[13]|oldMap|Map<Id,SObject>|true|false
+16:51:36.0 (209995541)|VARIABLE_ASSIGNMENT|[13]|oldMap|{"a0s0E0000004KPuQAM":{"LastModifiedDate":"2017-02-16T15:40:16.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10118","Arrival_Truck_On_Pro (7 more) ...":"2017-02-16T08:30:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4NAAS","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Compleet_klaargezet_ (2 more) ...":"Ja","Foto__c":false,"SystemModstamp":"2017-02-16T15:40:16.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T15:40:16.000Z","Id":"a0s0E0000004KPuQAM","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}}|0x149328c5
+16:51:36.0 (210012934)|HEAP_ALLOCATE|[16]|Bytes:5
+16:51:36.0 (210018059)|STATEMENT_EXECUTE|[1]
+16:51:36.0 (210020216)|HEAP_ALLOCATE|[16]|Bytes:5
+16:51:36.0 (210021655)|STATEMENT_EXECUTE|[2]
+16:51:36.0 (210022801)|STATEMENT_EXECUTE|[3]
+16:51:36.0 (210023851)|STATEMENT_EXECUTE|[4]
+16:51:36.0 (210024998)|STATEMENT_EXECUTE|[5]
+16:51:36.0 (210026045)|STATEMENT_EXECUTE|[6]
+16:51:36.0 (210027319)|STATEMENT_EXECUTE|[7]
+16:51:36.0 (210028819)|STATEMENT_EXECUTE|[8]
+16:51:36.0 (210030003)|STATEMENT_EXECUTE|[9]
+16:51:36.0 (210030922)|STATEMENT_EXECUTE|[10]
+16:51:36.0 (210031929)|STATEMENT_EXECUTE|[11]
+16:51:36.0 (210060286)|STATEMENT_EXECUTE|[15]
+16:51:36.0 (210061569)|STATEMENT_EXECUTE|[16]
+16:51:36.0 (210065329)|HEAP_ALLOCATE|[16]|Bytes:5
+16:51:36.0 (210073879)|VARIABLE_ASSIGNMENT|[16]|this.isBefore|false|0x977bfd8
+16:51:36.0 (210075942)|STATEMENT_EXECUTE|[17]
+16:51:36.0 (210077753)|HEAP_ALLOCATE|[17]|Bytes:5
+16:51:36.0 (210081164)|VARIABLE_ASSIGNMENT|[17]|this.isAfter|true|0x977bfd8
+16:51:36.0 (210083139)|STATEMENT_EXECUTE|[18]
+16:51:36.0 (210084848)|HEAP_ALLOCATE|[18]|Bytes:5
+16:51:36.0 (210088134)|VARIABLE_ASSIGNMENT|[18]|this.isInsert|false|0x977bfd8
+16:51:36.0 (210089569)|STATEMENT_EXECUTE|[19]
+16:51:36.0 (210091178)|HEAP_ALLOCATE|[19]|Bytes:5
+16:51:36.0 (210094292)|VARIABLE_ASSIGNMENT|[19]|this.isUpdate|false|0x977bfd8
+16:51:36.0 (210095465)|STATEMENT_EXECUTE|[20]
+16:51:36.0 (210097196)|HEAP_ALLOCATE|[20]|Bytes:5
+16:51:36.0 (210100103)|VARIABLE_ASSIGNMENT|[20]|this.isDelete|true|0x977bfd8
+16:51:36.0 (210101588)|STATEMENT_EXECUTE|[21]
+16:51:36.0 (210103284)|HEAP_ALLOCATE|[21]|Bytes:5
+16:51:36.0 (210106291)|VARIABLE_ASSIGNMENT|[21]|this.isUndelete|false|0x977bfd8
+16:51:36.0 (210107833)|STATEMENT_EXECUTE|[22]
+16:51:36.0 (210111488)|VARIABLE_ASSIGNMENT|[22]|this.triggerNew|null|0x977bfd8
+16:51:36.0 (210112854)|STATEMENT_EXECUTE|[23]
+16:51:36.0 (211051949)|VARIABLE_ASSIGNMENT|[23]|this.triggerOld|[{"LastModifiedDate":"2017-02-16T15:40:16.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10118","Arrival_Truck_On_Pro (7 more) ...":"2017-02-16T08:30:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4NAAS","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Compleet_klaargezet_ (2 more) ...":"Ja","Foto__c":false,"SystemModstamp":"2017-02-16T15:40:16.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T15:40:16.000Z","Id":"a0s0E0000004KPuQAM","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}]|0x977bfd8
+16:51:36.0 (211062333)|STATEMENT_EXECUTE|[24]
+16:51:36.0 (211071147)|VARIABLE_ASSIGNMENT|[24]|this.newMap|null|0x977bfd8
+16:51:36.0 (211072933)|STATEMENT_EXECUTE|[25]
+16:51:36.0 (211989172)|VARIABLE_ASSIGNMENT|[25]|this.oldMap|{"a0s0E0000004KPuQAM":{"LastModifiedDate":"2017-02-16T15:40:16.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10118","Arrival_Truck_On_Pro (7 more) ...":"2017-02-16T08:30:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4NAAS","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Compleet_klaargezet_ (2 more) ...":"Ja","Foto__c":false,"SystemModstamp":"2017-02-16T15:40:16.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T15:40:16.000Z","Id":"a0s0E0000004KPuQAM","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}}|0x977bfd8
+16:51:36.0 (212018098)|CONSTRUCTOR_EXIT|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+16:51:36.0 (212032211)|METHOD_ENTRY|[3]|01p2400000DV2tl|WWWDetailUtil.entry(TriggerParams)
+16:51:36.0 (212036762)|VARIABLE_SCOPE_BEGIN|[4]|triggerParams|TriggerParams|true|false
+16:51:36.0 (212060987)|VARIABLE_ASSIGNMENT|[4]|triggerParams|{"isAfter":true,"isBefore":false,"isDelete":true,"isInsert":false,"isUndelete":false,"isUpdate":false,"oldMap":"0x149328c5","triggerOld":"0x1d28d79e"}|0x977bfd8
+16:51:36.0 (212067196)|STATEMENT_EXECUTE|[4]
+16:51:36.0 (212068532)|STATEMENT_EXECUTE|[5]
+16:51:36.0 (212073782)|VARIABLE_SCOPE_BEGIN|[5]|triggerNew|List<WWW_Detail__c>|true|false
+16:51:36.0 (212077996)|VARIABLE_ASSIGNMENT|[5]|triggerNew|null|
+16:51:36.0 (212079625)|STATEMENT_EXECUTE|[6]
+16:51:36.0 (212083796)|VARIABLE_SCOPE_BEGIN|[6]|triggerOld|List<WWW_Detail__c>|true|false
+16:51:36.0 (213018203)|VARIABLE_ASSIGNMENT|[6]|triggerOld|[{"LastModifiedDate":"2017-02-16T15:40:16.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10118","Arrival_Truck_On_Pro (7 more) ...":"2017-02-16T08:30:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4NAAS","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Compleet_klaargezet_ (2 more) ...":"Ja","Foto__c":false,"SystemModstamp":"2017-02-16T15:40:16.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T15:40:16.000Z","Id":"a0s0E0000004KPuQAM","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}]|0x1d28d79e
+16:51:36.0 (213028526)|STATEMENT_EXECUTE|[7]
+16:51:36.0 (213036691)|VARIABLE_SCOPE_BEGIN|[7]|oldMap|Map<Id,WWW_Detail__c>|true|false
+16:51:36.0 (213950453)|VARIABLE_ASSIGNMENT|[7]|oldMap|{"a0s0E0000004KPuQAM":{"LastModifiedDate":"2017-02-16T15:40:16.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUSQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bas Brandenburg","Project__c":"a0q0E0000008ahlQAA","Name":"WWW-D-10118","Arrival_Truck_On_Pro (7 more) ...":"2017-02-16T08:30:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4NAAS","Location__c":"a0B0E0000009YBFUA2","Number_Of_Items__c":10,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Stuks","Project_Number__c":"TEST2","Breakable__c":"Yes","Compleet_klaargezet_ (2 more) ...":"Ja","Foto__c":false,"SystemModstamp":"2017-02-16T15:40:16.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T15:40:16.000Z","Id":"a0s0E0000004KPuQAM","Projectbeschrijving_ (2 more) ...":"TEST2","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Detector t.b.v. vloe (8 more) ...","LastModifiedById":"00524000001e3UjAAI"}}|0x149328c5
+16:51:36.0 (213960083)|STATEMENT_EXECUTE|[8]
+16:51:36.0 (213965830)|VARIABLE_SCOPE_BEGIN|[8]|newMap|Map<Id,WWW_Detail__c>|true|false
+16:51:36.0 (213970843)|VARIABLE_ASSIGNMENT|[8]|newMap|null|
+16:51:36.0 (213974974)|STATEMENT_EXECUTE|[11]
+16:51:36.0 (213976830)|STATEMENT_EXECUTE|[25]
+16:51:36.0 (213981453)|STATEMENT_EXECUTE|[26]
+16:51:36.0 (213983142)|STATEMENT_EXECUTE|[37]
+16:51:36.0 (213991220)|METHOD_EXIT|[3]|01p2400000DV2tl|WWWDetailUtil.entry(TriggerParams)
+16:51:36.213 (213999641)|CUMULATIVE_LIMIT_USAGE
+16:51:36.213 (213999641)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 3 out of 100
+  Number of query rows: 6 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+16:51:36.213 (213999641)|CUMULATIVE_LIMIT_USAGE_END
+
+16:51:36.0 (214805879)|CODE_UNIT_FINISHED|WWWDetailTrigger on WWW_Detail trigger event AfterDelete for [a0s0E0000004KPu]
+16:51:36.0 (224010641)|CODE_UNIT_FINISHED|TRIGGERS
+16:51:36.0 (224017627)|EXECUTION_FINISHED

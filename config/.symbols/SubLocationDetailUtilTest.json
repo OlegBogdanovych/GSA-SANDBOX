@@ -1,0 +1,229 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p2400000DUoKAAA1",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p2400000DUoKAAA1",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "TestSetup"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "setup",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 8
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test_method_one",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "SubLocationDetailUtilTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "SubLocationDetailUtilTest",
+        "references": [],
+        "type": "SubLocationDetailUtilTest"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "contact",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "project",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "member",
+            "references": [],
+            "type": "Projectmember__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "buldingSite",
+            "references": [],
+            "type": "Hub_Building_Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "item",
+            "references": [],
+            "type": "Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "hublocationParent",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "hublocationChilds",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "www",
+            "references": [],
+            "type": "WWW__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "project2",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "www2",
+            "references": [],
+            "type": "WWW__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "det2",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "subDets",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "sd",
+            "references": [],
+            "type": "SublocationDetail__c"
+        }
+    ]
+}

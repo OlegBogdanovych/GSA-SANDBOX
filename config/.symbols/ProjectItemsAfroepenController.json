@@ -1,0 +1,1039 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 74
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "ProjectItemsAfroepenController",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p9E0000005aW6QAI",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p9E0000005aW6QAI",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 78
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "searchProjects",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 87
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selectItems",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 113
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "afroepenItems",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 125
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "finishAfroepenItems",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 193
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "validateDateField",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 204
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "makeDatetime",
+            "parameters": [
+                {
+                    "name": "dateVal",
+                    "type": "Date"
+                },
+                {
+                    "name": "timeStr",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Datetime",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 220
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getTimes",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 226
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sortByFiledItem",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 239
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "addFiltersToItems",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 310
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getStaatPicklistValues",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 325
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getMaterialPicklistValues",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 340
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getKleurPicklistValues",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 355
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getKindOfPackagesPicklistValues",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "ProjectItemsAfroepenController",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 2
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "projectsFound",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 11
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "showItems",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 20
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "showItemsForAfroepen",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 29
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "deliveryDate",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 38
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selectedTime",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 48
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "listOfItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 49
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "listForAfroepen",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 51
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "searchline",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 52
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "projectId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 53
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "extraRemark",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 54
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sortDirection",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 55
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sortField",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 58
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "seacrhByItemName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 59
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selectedStaat",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 60
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "seacrhByItemSize",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 61
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "seacrhByItemDiameter",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 62
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "seacrhByItemMerk",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 63
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selectedMaterial",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 64
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selectedKleur",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 65
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selectedKindOfPackages",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 66
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "seacrhByHub",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 68
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "showSuccessPopup",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 70
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "projectsById",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [
+                {
+                    "name": "TestVisible"
+                }
+            ],
+            "location": {
+                "column": 22,
+                "line": 72
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "fieldsValidationError",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "ProjectItemsAfroepenController",
+        "references": [],
+        "type": "ProjectItemsAfroepenController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 81
+            },
+            "modifiers": [],
+            "name": "searchString",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "wwws",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "www",
+            "references": [],
+            "type": "WWW__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 118
+            },
+            "modifiers": [],
+            "name": "il",
+            "references": [],
+            "type": "ItemsList"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 129
+            },
+            "modifiers": [],
+            "name": "il",
+            "references": [],
+            "type": "ItemsList"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 139
+            },
+            "modifiers": [],
+            "name": "myMsg",
+            "references": [],
+            "type": "Message"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 143
+            },
+            "modifiers": [],
+            "name": "toInsert",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 145
+            },
+            "modifiers": [],
+            "name": "recType",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 147
+            },
+            "modifiers": [],
+            "name": "dateOfDelivery",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 150
+            },
+            "modifiers": [],
+            "name": "itemsAfroepen",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 151
+            },
+            "modifiers": [],
+            "name": "itemsAfroepenLinks",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 153
+            },
+            "modifiers": [],
+            "name": "fullURL",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 155
+            },
+            "modifiers": [],
+            "name": "il",
+            "references": [],
+            "type": "ItemsList"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 156
+            },
+            "modifiers": [],
+            "name": "det",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 174
+            },
+            "modifiers": [],
+            "name": "afroepenAgenda",
+            "references": [],
+            "type": "AfroepenAgenda__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 194
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 204
+            },
+            "modifiers": [],
+            "name": "dateVal",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 54,
+                "line": 204
+            },
+            "modifiers": [],
+            "name": "timeStr",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 205
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 208
+            },
+            "modifiers": [],
+            "name": "hours",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 209
+            },
+            "modifiers": [],
+            "name": "min",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 211
+            },
+            "modifiers": [],
+            "name": "dateStr",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 221
+            },
+            "modifiers": [],
+            "name": "options",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 275
+            },
+            "modifiers": [],
+            "name": "il",
+            "references": [],
+            "type": "ItemsList"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 276
+            },
+            "modifiers": [],
+            "name": "diameterString",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 277
+            },
+            "modifiers": [],
+            "name": "merkString",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 278
+            },
+            "modifiers": [],
+            "name": "hubString",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 311
+            },
+            "modifiers": [],
+            "name": "options",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 315
+            },
+            "modifiers": [],
+            "name": "fieldResult",
+            "references": [],
+            "type": "DescribeFieldResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 316
+            },
+            "modifiers": [],
+            "name": "ple",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 318
+            },
+            "modifiers": [],
+            "name": "f",
+            "references": [],
+            "type": "PicklistEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 326
+            },
+            "modifiers": [],
+            "name": "options",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 330
+            },
+            "modifiers": [],
+            "name": "fieldResult",
+            "references": [],
+            "type": "DescribeFieldResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 331
+            },
+            "modifiers": [],
+            "name": "ple",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 333
+            },
+            "modifiers": [],
+            "name": "f",
+            "references": [],
+            "type": "PicklistEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 341
+            },
+            "modifiers": [],
+            "name": "options",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 345
+            },
+            "modifiers": [],
+            "name": "fieldResult",
+            "references": [],
+            "type": "DescribeFieldResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 346
+            },
+            "modifiers": [],
+            "name": "ple",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 348
+            },
+            "modifiers": [],
+            "name": "f",
+            "references": [],
+            "type": "PicklistEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 356
+            },
+            "modifiers": [],
+            "name": "options",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 360
+            },
+            "modifiers": [],
+            "name": "fieldResult",
+            "references": [],
+            "type": "DescribeFieldResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 361
+            },
+            "modifiers": [],
+            "name": "ple",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 363
+            },
+            "modifiers": [],
+            "name": "f",
+            "references": [],
+            "type": "PicklistEntry"
+        }
+    ]
+}

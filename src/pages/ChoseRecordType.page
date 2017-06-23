@@ -1,0 +1,76 @@
+<apex:page standardController="WWW_Detail__c" extensions="NewDeliveredExtension" docType="html-5.0" standardStylesheets="false">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <head>
+            <apex:includeScript value="{!URLFOR($Resource.qrcode, 'jquery.min.js')}" />
+            <apex:stylesheet value="{!URLFOR($Resource.SLDS080, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+            <style type="text/css">
+                .slds-form-element slds-size--1-of-2 {
+                    float:left;
+                }
+
+                .slds-form-element slds-size--2-of-2 {
+                    float:right;
+                    width:50% !important;
+                }
+
+                .slds .slds-form-element__label {
+                    display: inherit;
+                }
+
+                .slds-form-element__row {
+                    display: -webkit-box !important;
+                }
+
+                .slds .slds-size--1-of-2, .slds .slds-select {
+                    width: 50% !important;
+                }
+
+                .slds .slds-input {
+                    width:50%;
+                }
+
+                .slds .slds-size--2-of-2 {
+                    width: 50%;
+                }
+                .slds-form-element__row{
+                  /*display: inline-flex;*/
+                }
+
+                a input {
+                    display:none;
+                }
+            </style>
+        </head>
+        <body>
+            <apex:form styleClass="slds-form--stacked">
+                <apex:pageMessages />
+
+                <div class="slds">
+                    <apex:actionFunction name="getSubsACT" action="{!getSubs}" reRender="subLocation,subLocation1, subLocation2, subLocation3"/>
+                    <div class="slds-page-header" role="banner">
+                    <!-- LAYOUT GRID -->
+                        <div class="slds-grid">
+                        <!-- GRID COL -->
+                            <div class="slds-col">
+                                <fieldset class="slds-form-element">
+                                    <legend class="slds-form-element__legend slds-form-element__label">{!$Label.Select_WWW_Detail_Record_Type}</legend>
+
+                                    <div class="slds-form-element__control">
+                                        <apex:selectRadio value="{!isChecked}" layout="pageDirection">
+                                            <apex:selectOptions value="{!recordTypes}"/> <br/>
+                                        </apex:selectRadio>
+                                    </div>
+                                </fieldset>
+
+                                <br/>
+
+                                <apex:commandButton action="{!goToNewView}" value="Opslaan" styleClass="slds-button slds-button--brand slds-m-right--xx-large"/>
+                                <apex:commandButton action="{!cancel}" value="Annuleren" styleClass="slds-button slds-button--neutral"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </apex:form>
+        </body>
+    </html>
+</apex:page>

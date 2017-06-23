@@ -1,0 +1,715 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p2400000DMxSiAAL",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p2400000DMxSiAAL",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 2
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "entry",
+            "parameters": [
+                {
+                    "name": "triggerParams",
+                    "type": "TriggerParams"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 32
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "shareToForceUsers",
+            "parameters": [
+                {
+                    "name": "locById",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 81
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "updateParentLocations",
+            "parameters": [
+                {
+                    "name": "locations",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 169
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "recalculateLocationsCount",
+            "parameters": [
+                {
+                    "name": "triggerNew",
+                    "type": "LIST"
+                },
+                {
+                    "name": "oldMap",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "Future"
+                }
+            ],
+            "location": {
+                "column": 24,
+                "line": 194
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "updateParentLocationsNoChild",
+            "parameters": [
+                {
+                    "name": "locations",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "LocationUtil",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "LocationUtil",
+        "references": [],
+        "type": "LocationUtil"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 2
+            },
+            "modifiers": [],
+            "name": "triggerParams",
+            "references": [],
+            "type": "TriggerParams"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "triggerNew",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "triggerOld",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "oldMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "newMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "parentLocationIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "loc",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "locById",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "tickets",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "hubIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "loc",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "accHubs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "accIds1",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "acH",
+            "references": [],
+            "type": "AccountHub__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "accIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "t",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 52
+            },
+            "modifiers": [],
+            "name": "users",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "userById",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "sharingTicket",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "shareByUserByTicket",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "sh",
+            "references": [],
+            "type": "Location__Share"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "shByUser",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "newSharings",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "t",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 81
+            },
+            "modifiers": [],
+            "name": "locations",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 82
+            },
+            "modifiers": [],
+            "name": "parentLocationIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "loc",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 88
+            },
+            "modifiers": [],
+            "name": "parentLocations",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 89
+            },
+            "modifiers": [],
+            "name": "wwwDs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 93
+            },
+            "modifiers": [],
+            "name": "delToHubByLocationId",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "delToProjectByLocationId",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "wwwD",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 113
+            },
+            "modifiers": [],
+            "name": "parent",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 116
+            },
+            "modifiers": [],
+            "name": "wwwD",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 123
+            },
+            "modifiers": [],
+            "name": "wwwD",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 169
+            },
+            "modifiers": [],
+            "name": "triggerNew",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 101,
+                "line": 169
+            },
+            "modifiers": [],
+            "name": "oldMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 171
+            },
+            "modifiers": [],
+            "name": "locationIdsTorecalculate",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 172
+            },
+            "modifiers": [],
+            "name": "locationsToRecalculate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 174
+            },
+            "modifiers": [],
+            "name": "loc",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 176
+            },
+            "modifiers": [],
+            "name": "oldLoc",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 187
+            },
+            "modifiers": [],
+            "name": "subLocDetails",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 194
+            },
+            "modifiers": [],
+            "name": "locations",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 195
+            },
+            "modifiers": [],
+            "name": "parentLocations",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 196
+            },
+            "modifiers": [],
+            "name": "childLocations",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 197
+            },
+            "modifiers": [],
+            "name": "toUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 198
+            },
+            "modifiers": [],
+            "name": "toSkipIds",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 199
+            },
+            "modifiers": [],
+            "name": "loc",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 204
+            },
+            "modifiers": [],
+            "name": "toSkip",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 205
+            },
+            "modifiers": [],
+            "name": "skip",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 210
+            },
+            "modifiers": [],
+            "name": "loc2Up",
+            "references": [],
+            "type": "Location__c"
+        }
+    ]
+}

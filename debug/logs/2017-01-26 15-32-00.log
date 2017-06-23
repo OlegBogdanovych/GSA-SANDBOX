@@ -1,0 +1,1035 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+14:31:58.0 (63037)|USER_INFO|[EXTERNAL]|00524000001e3Uj|bedrijfsbureau@gsa.nl.sandbox|Midden-Europese standaardtijd|GMT+01:00
+14:31:58.0 (94963)|EXECUTION_STARTED
+14:31:58.0 (98953)|CODE_UNIT_STARTED|[EXTERNAL]|TRIGGERS
+14:31:58.0 (128513)|CODE_UNIT_STARTED|[EXTERNAL]|01q2400000131KI|SubLocationDetailTrigger on SublocationDetail trigger event BeforeUpdate for [a080E000000EdB0]
+14:31:58.0 (182689)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:31:58.0 (263349)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:31:58.0 (569773)|HEAP_ALLOCATE|[72]|Bytes:3
+14:31:58.0 (604683)|HEAP_ALLOCATE|[77]|Bytes:152
+14:31:58.0 (618647)|HEAP_ALLOCATE|[342]|Bytes:408
+14:31:58.0 (630432)|HEAP_ALLOCATE|[355]|Bytes:408
+14:31:58.0 (640752)|HEAP_ALLOCATE|[467]|Bytes:48
+14:31:58.0 (666792)|HEAP_ALLOCATE|[139]|Bytes:6
+14:31:58.0 (689059)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (694204)|VARIABLE_SCOPE_BEGIN|[1]|this|SubLocationDetailTrigger|true|false
+14:31:58.0 (727387)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x368453cb
+14:31:58.0 (746800)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (750908)|VARIABLE_SCOPE_BEGIN|[1]|this|SubLocationDetailTrigger|true|false
+14:31:58.0 (756367)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x368453cb
+14:31:58.0 (760319)|STATEMENT_EXECUTE|[1]
+14:31:58.0 (761902)|STATEMENT_EXECUTE|[10]
+14:31:58.0 (18244909)|HEAP_ALLOCATE|[10]|Bytes:2
+14:31:58.0 (18280183)|METHOD_ENTRY|[1]|01p2400000Cr9rX|TriggerParams.TriggerParams()
+14:31:58.0 (18284416)|STATEMENT_EXECUTE|[1]
+14:31:58.0 (18288501)|STATEMENT_EXECUTE|[1]
+14:31:58.0 (18322417)|HEAP_ALLOCATE|[50]|Bytes:5
+14:31:58.0 (18348228)|HEAP_ALLOCATE|[56]|Bytes:5
+14:31:58.0 (18354574)|HEAP_ALLOCATE|[64]|Bytes:7
+14:31:58.0 (18374736)|HEAP_ALLOCATE|[10]|Bytes:5
+14:31:58.0 (18383007)|METHOD_EXIT|[1]|TriggerParams
+14:31:58.0 (18424908)|HEAP_ALLOCATE|[10]|Bytes:44
+14:31:58.0 (18590651)|CONSTRUCTOR_ENTRY|[10]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+14:31:58.0 (18626353)|VARIABLE_SCOPE_BEGIN|[13]|this|TriggerParams|true|false
+14:31:58.0 (18660574)|VARIABLE_ASSIGNMENT|[13]|this|{}|0x22411bd8
+14:31:58.0 (18665774)|VARIABLE_SCOPE_BEGIN|[13]|isBefore|Boolean|false|false
+14:31:58.0 (18670865)|VARIABLE_ASSIGNMENT|[13]|isBefore|true
+14:31:58.0 (18673086)|VARIABLE_SCOPE_BEGIN|[13]|isAfter|Boolean|false|false
+14:31:58.0 (18675224)|VARIABLE_ASSIGNMENT|[13]|isAfter|false
+14:31:58.0 (18676970)|VARIABLE_SCOPE_BEGIN|[13]|isInsert|Boolean|false|false
+14:31:58.0 (18679031)|VARIABLE_ASSIGNMENT|[13]|isInsert|false
+14:31:58.0 (18680972)|VARIABLE_SCOPE_BEGIN|[13]|isUpdate|Boolean|false|false
+14:31:58.0 (18682785)|VARIABLE_ASSIGNMENT|[13]|isUpdate|true
+14:31:58.0 (18684502)|VARIABLE_SCOPE_BEGIN|[13]|isDelete|Boolean|false|false
+14:31:58.0 (18686237)|VARIABLE_ASSIGNMENT|[13]|isDelete|false
+14:31:58.0 (18688538)|VARIABLE_SCOPE_BEGIN|[13]|isUndelete|Boolean|false|false
+14:31:58.0 (18690445)|VARIABLE_ASSIGNMENT|[13]|isUndelete|false
+14:31:58.0 (18692439)|VARIABLE_SCOPE_BEGIN|[13]|triggerNew|List<SObject>|true|false
+14:31:58.0 (27288496)|VARIABLE_ASSIGNMENT|[13]|triggerNew|{"s":1,"v":[{"LastModifiedDate":"2017-01-26T13:30:53.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:30:53.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":false,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Project","WWW_Detail__c":"a0s0E0000004E33QAE","LastModifiedById":"00524000001e3UjAAI"}]}|0x6e96a75a
+14:31:58.0 (27299279)|VARIABLE_SCOPE_BEGIN|[13]|triggerOld|List<SObject>|true|false
+14:31:58.0 (30754427)|VARIABLE_ASSIGNMENT|[13]|triggerOld|{"s":1,"v":[{"LastModifiedDate":"2017-01-26T13:30:53.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:30:53.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":true,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004E2yQAE","LastModifiedById":"00524000001e3UjAAI"}]}|0x6582877b
+14:31:58.0 (30764456)|VARIABLE_SCOPE_BEGIN|[13]|newMap|Map<Id,SObject>|true|false
+14:31:58.0 (30879138)|VARIABLE_ASSIGNMENT|[13]|newMap|{"s":1,"v":{"a080E000000EdB0QAK":{"LastModifiedDate":"2017-01-26T13:30:53.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:30:53.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":false,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Project","WWW_Detail__c":"a0s0E0000004E33QAE","LastModifiedById":"00524000001e3UjAAI"}}}|0x31f0591a
+14:31:58.0 (30886517)|VARIABLE_SCOPE_BEGIN|[13]|oldMap|Map<Id,SObject>|true|false
+14:31:58.0 (30981333)|VARIABLE_ASSIGNMENT|[13]|oldMap|{"s":1,"v":{"a080E000000EdB0QAK":{"LastModifiedDate":"2017-01-26T13:30:53.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:30:53.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":true,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004E2yQAE","LastModifiedById":"00524000001e3UjAAI"}}}|0x307fb9aa
+14:31:58.0 (30995685)|HEAP_ALLOCATE|[16]|Bytes:5
+14:31:58.0 (31001052)|STATEMENT_EXECUTE|[1]
+14:31:58.0 (31003890)|HEAP_ALLOCATE|[16]|Bytes:5
+14:31:58.0 (31005531)|STATEMENT_EXECUTE|[2]
+14:31:58.0 (31007336)|STATEMENT_EXECUTE|[3]
+14:31:58.0 (31008423)|STATEMENT_EXECUTE|[4]
+14:31:58.0 (31009696)|STATEMENT_EXECUTE|[5]
+14:31:58.0 (31010770)|STATEMENT_EXECUTE|[6]
+14:31:58.0 (31011940)|STATEMENT_EXECUTE|[7]
+14:31:58.0 (31012875)|STATEMENT_EXECUTE|[8]
+14:31:58.0 (31013931)|STATEMENT_EXECUTE|[9]
+14:31:58.0 (31015056)|STATEMENT_EXECUTE|[10]
+14:31:58.0 (31016207)|STATEMENT_EXECUTE|[11]
+14:31:58.0 (31029187)|HEAP_ALLOCATE|[16]|Bytes:6
+14:31:58.0 (31054576)|STATEMENT_EXECUTE|[15]
+14:31:58.0 (31056204)|STATEMENT_EXECUTE|[16]
+14:31:58.0 (31060956)|HEAP_ALLOCATE|[16]|Bytes:5
+14:31:58.0 (31069619)|VARIABLE_ASSIGNMENT|[16]|this.isBefore|true|0x22411bd8
+14:31:58.0 (31071316)|STATEMENT_EXECUTE|[17]
+14:31:58.0 (31073264)|HEAP_ALLOCATE|[17]|Bytes:5
+14:31:58.0 (31077088)|VARIABLE_ASSIGNMENT|[17]|this.isAfter|false|0x22411bd8
+14:31:58.0 (31078479)|STATEMENT_EXECUTE|[18]
+14:31:58.0 (31080238)|HEAP_ALLOCATE|[18]|Bytes:5
+14:31:58.0 (31084595)|VARIABLE_ASSIGNMENT|[18]|this.isInsert|false|0x22411bd8
+14:31:58.0 (31086086)|STATEMENT_EXECUTE|[19]
+14:31:58.0 (31087892)|HEAP_ALLOCATE|[19]|Bytes:5
+14:31:58.0 (31092411)|VARIABLE_ASSIGNMENT|[19]|this.isUpdate|true|0x22411bd8
+14:31:58.0 (31093696)|STATEMENT_EXECUTE|[20]
+14:31:58.0 (31095526)|HEAP_ALLOCATE|[20]|Bytes:5
+14:31:58.0 (31098763)|VARIABLE_ASSIGNMENT|[20]|this.isDelete|false|0x22411bd8
+14:31:58.0 (31100140)|STATEMENT_EXECUTE|[21]
+14:31:58.0 (31101856)|HEAP_ALLOCATE|[21]|Bytes:5
+14:31:58.0 (31105582)|VARIABLE_ASSIGNMENT|[21]|this.isUndelete|false|0x22411bd8
+14:31:58.0 (31106995)|STATEMENT_EXECUTE|[22]
+14:31:58.0 (31206285)|VARIABLE_ASSIGNMENT|[22]|this.triggerNew|{"s":1,"v":[{"LastModifiedDate":"2017-01-26T13:30:53.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:30:53.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":false,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Project","WWW_Detail__c":"a0s0E0000004E33QAE","LastModifiedById":"00524000001e3UjAAI"}]}|0x22411bd8
+14:31:58.0 (31211438)|STATEMENT_EXECUTE|[23]
+14:31:58.0 (31299477)|VARIABLE_ASSIGNMENT|[23]|this.triggerOld|{"s":1,"v":[{"LastModifiedDate":"2017-01-26T13:30:53.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:30:53.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":true,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004E2yQAE","LastModifiedById":"00524000001e3UjAAI"}]}|0x22411bd8
+14:31:58.0 (31303728)|STATEMENT_EXECUTE|[24]
+14:31:58.0 (31391770)|VARIABLE_ASSIGNMENT|[24]|this.newMap|{"s":1,"v":{"a080E000000EdB0QAK":{"LastModifiedDate":"2017-01-26T13:30:53.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:30:53.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":false,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Project","WWW_Detail__c":"a0s0E0000004E33QAE","LastModifiedById":"00524000001e3UjAAI"}}}|0x22411bd8
+14:31:58.0 (31396645)|STATEMENT_EXECUTE|[25]
+14:31:58.0 (31481609)|VARIABLE_ASSIGNMENT|[25]|this.oldMap|{"s":1,"v":{"a080E000000EdB0QAK":{"LastModifiedDate":"2017-01-26T13:30:53.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:30:53.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":true,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004E2yQAE","LastModifiedById":"00524000001e3UjAAI"}}}|0x22411bd8
+14:31:58.0 (31503814)|CONSTRUCTOR_EXIT|[10]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+14:31:58.0 (114796235)|HEAP_ALLOCATE|[10]|Bytes:31
+14:31:58.0 (114809881)|HEAP_ALLOCATE|[10]|Bytes:64
+14:31:58.0 (114830191)|METHOD_ENTRY|[1]|01p2400000DUoK9|SubLocationDetailUtil.SubLocationDetailUtil()
+14:31:58.0 (114839584)|STATEMENT_EXECUTE|[1]
+14:31:58.0 (114845721)|STATEMENT_EXECUTE|[1]
+14:31:58.0 (115219303)|SYSTEM_MODE_ENTER|false
+14:31:58.0 (115233364)|HEAP_ALLOCATE|[10]|Bytes:5
+14:31:58.0 (115240538)|SYSTEM_MODE_EXIT|false
+14:31:58.0 (115251787)|METHOD_EXIT|[1]|SubLocationDetailUtil
+14:31:58.0 (115288069)|METHOD_ENTRY|[10]|01p2400000DUoK9|SubLocationDetailUtil.entry(TriggerParams)
+14:31:58.0 (115296237)|VARIABLE_SCOPE_BEGIN|[2]|triggerParams|TriggerParams|true|false
+14:31:58.0 (115354705)|VARIABLE_ASSIGNMENT|[2]|triggerParams|{"isAfter":false,"isBefore":true,"isDelete":false,"isInsert":false,"isUndelete":false,"isUpdate":true,"newMap":"0x31f0591a","oldMap":"0x307fb9aa","triggerNew":"0x6e96a75a","triggerOld":"0x6582877b"}|0x22411bd8
+14:31:58.0 (115365486)|SYSTEM_MODE_ENTER|false
+14:31:58.0 (115369475)|HEAP_ALLOCATE|[3]|Bytes:5
+14:31:58.0 (115373052)|STATEMENT_EXECUTE|[2]
+14:31:58.0 (115374252)|STATEMENT_EXECUTE|[3]
+14:31:58.0 (115388034)|VARIABLE_SCOPE_BEGIN|[3]|triggerNew|List<SublocationDetail__c>|true|false
+14:31:58.0 (115616090)|VARIABLE_ASSIGNMENT|[3]|triggerNew|{"s":1,"v":[{"LastModifiedDate":"2017-01-26T13:30:53.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:30:53.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":false,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Project","WWW_Detail__c":"a0s0E0000004E33QAE","LastModifiedById":"00524000001e3UjAAI"}]}|0x6e96a75a
+14:31:58.0 (115622860)|STATEMENT_EXECUTE|[4]
+14:31:58.0 (115629967)|VARIABLE_SCOPE_BEGIN|[4]|triggerOld|List<SublocationDetail__c>|true|false
+14:31:58.0 (115735033)|VARIABLE_ASSIGNMENT|[4]|triggerOld|{"s":1,"v":[{"LastModifiedDate":"2017-01-26T13:30:53.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:30:53.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":true,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004E2yQAE","LastModifiedById":"00524000001e3UjAAI"}]}|0x6582877b
+14:31:58.0 (115740437)|STATEMENT_EXECUTE|[5]
+14:31:58.0 (115751061)|VARIABLE_SCOPE_BEGIN|[5]|oldMap|Map<Id,SublocationDetail__c>|true|false
+14:31:58.0 (115867420)|VARIABLE_ASSIGNMENT|[5]|oldMap|{"s":1,"v":{"a080E000000EdB0QAK":{"LastModifiedDate":"2017-01-26T13:30:53.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:30:53.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":true,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004E2yQAE","LastModifiedById":"00524000001e3UjAAI"}}}|0x307fb9aa
+14:31:58.0 (115872375)|STATEMENT_EXECUTE|[6]
+14:31:58.0 (115877877)|VARIABLE_SCOPE_BEGIN|[6]|newMap|Map<Id,SublocationDetail__c>|true|false
+14:31:58.0 (115967775)|VARIABLE_ASSIGNMENT|[6]|newMap|{"s":1,"v":{"a080E000000EdB0QAK":{"LastModifiedDate":"2017-01-26T13:30:53.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:30:53.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":false,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Project","WWW_Detail__c":"a0s0E0000004E33QAE","LastModifiedById":"00524000001e3UjAAI"}}}|0x31f0591a
+14:31:58.0 (115977115)|STATEMENT_EXECUTE|[9]
+14:31:58.0 (115980614)|SYSTEM_MODE_EXIT|false
+14:31:58.0 (115989387)|METHOD_EXIT|[10]|01p2400000DUoK9|SubLocationDetailUtil.entry(TriggerParams)
+14:31:58.115 (115998633)|CUMULATIVE_LIMIT_USAGE
+14:31:58.115 (115998633)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+14:31:58.115 (115998633)|CUMULATIVE_LIMIT_USAGE_END
+
+14:31:58.0 (117117659)|CODE_UNIT_FINISHED|SubLocationDetailTrigger on SublocationDetail trigger event BeforeUpdate for [a080E000000EdB0]
+14:31:58.0 (155616965)|CODE_UNIT_STARTED|[EXTERNAL]|01q2400000131KI|SubLocationDetailTrigger on SublocationDetail trigger event AfterUpdate for [a080E000000EdB0]
+14:31:58.0 (155645906)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:31:58.0 (155671852)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:31:58.0 (155718084)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (155725068)|VARIABLE_SCOPE_BEGIN|[1]|this|SubLocationDetailTrigger|true|false
+14:31:58.0 (155744152)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x45b8d7a9
+14:31:58.0 (155764114)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (155768187)|VARIABLE_SCOPE_BEGIN|[1]|this|SubLocationDetailTrigger|true|false
+14:31:58.0 (155773785)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x45b8d7a9
+14:31:58.0 (155777317)|STATEMENT_EXECUTE|[1]
+14:31:58.0 (155778760)|STATEMENT_EXECUTE|[10]
+14:31:58.0 (155784306)|HEAP_ALLOCATE|[10]|Bytes:44
+14:31:58.0 (155858311)|CONSTRUCTOR_ENTRY|[10]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+14:31:58.0 (155863867)|VARIABLE_SCOPE_BEGIN|[13]|this|TriggerParams|true|false
+14:31:58.0 (155882139)|VARIABLE_ASSIGNMENT|[13]|this|{}|0x38bb5ae1
+14:31:58.0 (155887671)|VARIABLE_SCOPE_BEGIN|[13]|isBefore|Boolean|false|false
+14:31:58.0 (155892278)|VARIABLE_ASSIGNMENT|[13]|isBefore|false
+14:31:58.0 (155894279)|VARIABLE_SCOPE_BEGIN|[13]|isAfter|Boolean|false|false
+14:31:58.0 (155896455)|VARIABLE_ASSIGNMENT|[13]|isAfter|true
+14:31:58.0 (155898747)|VARIABLE_SCOPE_BEGIN|[13]|isInsert|Boolean|false|false
+14:31:58.0 (155900633)|VARIABLE_ASSIGNMENT|[13]|isInsert|false
+14:31:58.0 (155902670)|VARIABLE_SCOPE_BEGIN|[13]|isUpdate|Boolean|false|false
+14:31:58.0 (155904510)|VARIABLE_ASSIGNMENT|[13]|isUpdate|true
+14:31:58.0 (155906475)|VARIABLE_SCOPE_BEGIN|[13]|isDelete|Boolean|false|false
+14:31:58.0 (155908343)|VARIABLE_ASSIGNMENT|[13]|isDelete|false
+14:31:58.0 (155910024)|VARIABLE_SCOPE_BEGIN|[13]|isUndelete|Boolean|false|false
+14:31:58.0 (155912073)|VARIABLE_ASSIGNMENT|[13]|isUndelete|false
+14:31:58.0 (155914105)|VARIABLE_SCOPE_BEGIN|[13]|triggerNew|List<SObject>|true|false
+14:31:58.0 (156371347)|VARIABLE_ASSIGNMENT|[13]|triggerNew|{"s":1,"v":[{"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:31:58.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":false,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Project","WWW_Detail__c":"a0s0E0000004E33QAE","LastModifiedById":"00524000001e3UjAAI"}]}|0x4e40e9bc
+14:31:58.0 (156379100)|VARIABLE_SCOPE_BEGIN|[13]|triggerOld|List<SObject>|true|false
+14:31:58.0 (156686374)|VARIABLE_ASSIGNMENT|[13]|triggerOld|{"s":1,"v":[{"LastModifiedDate":"2017-01-26T13:30:53.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:30:53.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":true,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004E2yQAE","LastModifiedById":"00524000001e3UjAAI"}]}|0x5c4da0df
+14:31:58.0 (156692597)|VARIABLE_SCOPE_BEGIN|[13]|newMap|Map<Id,SObject>|true|false
+14:31:58.0 (156790339)|VARIABLE_ASSIGNMENT|[13]|newMap|{"s":1,"v":{"a080E000000EdB0QAK":{"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:31:58.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":false,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Project","WWW_Detail__c":"a0s0E0000004E33QAE","LastModifiedById":"00524000001e3UjAAI"}}}|0x5fcb3160
+14:31:58.0 (156795224)|VARIABLE_SCOPE_BEGIN|[13]|oldMap|Map<Id,SObject>|true|false
+14:31:58.0 (156885460)|VARIABLE_ASSIGNMENT|[13]|oldMap|{"s":1,"v":{"a080E000000EdB0QAK":{"LastModifiedDate":"2017-01-26T13:30:53.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:30:53.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":true,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004E2yQAE","LastModifiedById":"00524000001e3UjAAI"}}}|0x3dc5142a
+14:31:58.0 (156896985)|HEAP_ALLOCATE|[16]|Bytes:5
+14:31:58.0 (156901051)|STATEMENT_EXECUTE|[1]
+14:31:58.0 (156903329)|HEAP_ALLOCATE|[16]|Bytes:5
+14:31:58.0 (156905073)|STATEMENT_EXECUTE|[2]
+14:31:58.0 (156906328)|STATEMENT_EXECUTE|[3]
+14:31:58.0 (156907399)|STATEMENT_EXECUTE|[4]
+14:31:58.0 (156908362)|STATEMENT_EXECUTE|[5]
+14:31:58.0 (156909353)|STATEMENT_EXECUTE|[6]
+14:31:58.0 (156910395)|STATEMENT_EXECUTE|[7]
+14:31:58.0 (156911339)|STATEMENT_EXECUTE|[8]
+14:31:58.0 (156912361)|STATEMENT_EXECUTE|[9]
+14:31:58.0 (156913620)|STATEMENT_EXECUTE|[10]
+14:31:58.0 (156914701)|STATEMENT_EXECUTE|[11]
+14:31:58.0 (156936220)|STATEMENT_EXECUTE|[15]
+14:31:58.0 (156937889)|STATEMENT_EXECUTE|[16]
+14:31:58.0 (156941626)|HEAP_ALLOCATE|[16]|Bytes:5
+14:31:58.0 (156949241)|VARIABLE_ASSIGNMENT|[16]|this.isBefore|false|0x38bb5ae1
+14:31:58.0 (156951031)|STATEMENT_EXECUTE|[17]
+14:31:58.0 (156952897)|HEAP_ALLOCATE|[17]|Bytes:5
+14:31:58.0 (156956233)|VARIABLE_ASSIGNMENT|[17]|this.isAfter|true|0x38bb5ae1
+14:31:58.0 (156957799)|STATEMENT_EXECUTE|[18]
+14:31:58.0 (156959732)|HEAP_ALLOCATE|[18]|Bytes:5
+14:31:58.0 (156963339)|VARIABLE_ASSIGNMENT|[18]|this.isInsert|false|0x38bb5ae1
+14:31:58.0 (156964552)|STATEMENT_EXECUTE|[19]
+14:31:58.0 (156966244)|HEAP_ALLOCATE|[19]|Bytes:5
+14:31:58.0 (156969642)|VARIABLE_ASSIGNMENT|[19]|this.isUpdate|true|0x38bb5ae1
+14:31:58.0 (156970954)|STATEMENT_EXECUTE|[20]
+14:31:58.0 (156972820)|HEAP_ALLOCATE|[20]|Bytes:5
+14:31:58.0 (156975650)|VARIABLE_ASSIGNMENT|[20]|this.isDelete|false|0x38bb5ae1
+14:31:58.0 (156976997)|STATEMENT_EXECUTE|[21]
+14:31:58.0 (156978875)|HEAP_ALLOCATE|[21]|Bytes:5
+14:31:58.0 (156981965)|VARIABLE_ASSIGNMENT|[21]|this.isUndelete|false|0x38bb5ae1
+14:31:58.0 (156983538)|STATEMENT_EXECUTE|[22]
+14:31:58.0 (157077724)|VARIABLE_ASSIGNMENT|[22]|this.triggerNew|{"s":1,"v":[{"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:31:58.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":false,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Project","WWW_Detail__c":"a0s0E0000004E33QAE","LastModifiedById":"00524000001e3UjAAI"}]}|0x38bb5ae1
+14:31:58.0 (157082828)|STATEMENT_EXECUTE|[23]
+14:31:58.0 (157168221)|VARIABLE_ASSIGNMENT|[23]|this.triggerOld|{"s":1,"v":[{"LastModifiedDate":"2017-01-26T13:30:53.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:30:53.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":true,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004E2yQAE","LastModifiedById":"00524000001e3UjAAI"}]}|0x38bb5ae1
+14:31:58.0 (157173026)|STATEMENT_EXECUTE|[24]
+14:31:58.0 (157256261)|VARIABLE_ASSIGNMENT|[24]|this.newMap|{"s":1,"v":{"a080E000000EdB0QAK":{"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:31:58.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":false,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Project","WWW_Detail__c":"a0s0E0000004E33QAE","LastModifiedById":"00524000001e3UjAAI"}}}|0x38bb5ae1
+14:31:58.0 (157261215)|STATEMENT_EXECUTE|[25]
+14:31:58.0 (157341918)|VARIABLE_ASSIGNMENT|[25]|this.oldMap|{"s":1,"v":{"a080E000000EdB0QAK":{"LastModifiedDate":"2017-01-26T13:30:53.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:30:53.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":true,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004E2yQAE","LastModifiedById":"00524000001e3UjAAI"}}}|0x38bb5ae1
+14:31:58.0 (157362872)|CONSTRUCTOR_EXIT|[10]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+14:31:58.0 (157371865)|METHOD_ENTRY|[10]|01p2400000DUoK9|SubLocationDetailUtil.entry(TriggerParams)
+14:31:58.0 (157376167)|VARIABLE_SCOPE_BEGIN|[2]|triggerParams|TriggerParams|true|false
+14:31:58.0 (157400432)|VARIABLE_ASSIGNMENT|[2]|triggerParams|{"isAfter":true,"isBefore":false,"isDelete":false,"isInsert":false,"isUndelete":false,"isUpdate":true,"newMap":"0x5fcb3160","oldMap":"0x3dc5142a","triggerNew":"0x4e40e9bc","triggerOld":"0x5c4da0df"}|0x38bb5ae1
+14:31:58.0 (157689986)|SYSTEM_MODE_ENTER|false
+14:31:58.0 (157696516)|HEAP_ALLOCATE|[3]|Bytes:5
+14:31:58.0 (157700413)|STATEMENT_EXECUTE|[2]
+14:31:58.0 (157701782)|STATEMENT_EXECUTE|[3]
+14:31:58.0 (157708922)|VARIABLE_SCOPE_BEGIN|[3]|triggerNew|List<SublocationDetail__c>|true|false
+14:31:58.0 (157816511)|VARIABLE_ASSIGNMENT|[3]|triggerNew|{"s":1,"v":[{"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:31:58.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":false,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Project","WWW_Detail__c":"a0s0E0000004E33QAE","LastModifiedById":"00524000001e3UjAAI"}]}|0x4e40e9bc
+14:31:58.0 (157822107)|STATEMENT_EXECUTE|[4]
+14:31:58.0 (157827131)|VARIABLE_SCOPE_BEGIN|[4]|triggerOld|List<SublocationDetail__c>|true|false
+14:31:58.0 (157921704)|VARIABLE_ASSIGNMENT|[4]|triggerOld|{"s":1,"v":[{"LastModifiedDate":"2017-01-26T13:30:53.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:30:53.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":true,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004E2yQAE","LastModifiedById":"00524000001e3UjAAI"}]}|0x5c4da0df
+14:31:58.0 (157926632)|STATEMENT_EXECUTE|[5]
+14:31:58.0 (157934391)|VARIABLE_SCOPE_BEGIN|[5]|oldMap|Map<Id,SublocationDetail__c>|true|false
+14:31:58.0 (158041000)|VARIABLE_ASSIGNMENT|[5]|oldMap|{"s":1,"v":{"a080E000000EdB0QAK":{"LastModifiedDate":"2017-01-26T13:30:53.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:30:53.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":true,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004E2yQAE","LastModifiedById":"00524000001e3UjAAI"}}}|0x3dc5142a
+14:31:58.0 (158047165)|STATEMENT_EXECUTE|[6]
+14:31:58.0 (158051918)|VARIABLE_SCOPE_BEGIN|[6]|newMap|Map<Id,SublocationDetail__c>|true|false
+14:31:58.0 (158155209)|VARIABLE_ASSIGNMENT|[6]|newMap|{"s":1,"v":{"a080E000000EdB0QAK":{"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:31:58.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":false,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Project","WWW_Detail__c":"a0s0E0000004E33QAE","LastModifiedById":"00524000001e3UjAAI"}}}|0x5fcb3160
+14:31:58.0 (158162723)|STATEMENT_EXECUTE|[9]
+14:31:58.0 (158169700)|STATEMENT_EXECUTE|[10]
+14:31:58.0 (158171002)|STATEMENT_EXECUTE|[11]
+14:31:58.0 (158200706)|METHOD_ENTRY|[11]|01p2400000DUoK9|SubLocationDetailUtil.upateSubLocation(List<SublocationDetail__c>)
+14:31:58.0 (158282668)|VARIABLE_SCOPE_BEGIN|[31]|triggerNew|List<SublocationDetail__c>|true|false
+14:31:58.0 (158385496)|VARIABLE_ASSIGNMENT|[31]|triggerNew|{"s":1,"v":[{"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:31:58.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":false,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Project","WWW_Detail__c":"a0s0E0000004E33QAE","LastModifiedById":"00524000001e3UjAAI"}]}|0x4e40e9bc
+14:31:58.0 (158396948)|HEAP_ALLOCATE|[32]|Bytes:5
+14:31:58.0 (158400618)|STATEMENT_EXECUTE|[31]
+14:31:58.0 (158401847)|STATEMENT_EXECUTE|[32]
+14:31:58.0 (158458224)|HEAP_ALLOCATE|[32]|Bytes:4
+14:31:58.0 (158516670)|VARIABLE_SCOPE_BEGIN|[32]|locationsToUpdate|List<Location__c>|true|false
+14:31:58.0 (158522458)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (158530713)|VARIABLE_ASSIGNMENT|[32]|locationsToUpdate|{"s":1,"v":[]}|0x45fb0a30
+14:31:58.0 (158532943)|STATEMENT_EXECUTE|[33]
+14:31:58.0 (158541330)|HEAP_ALLOCATE|[33]|Bytes:4
+14:31:58.0 (158564316)|VARIABLE_SCOPE_BEGIN|[33]|locationsToUpdateIds|Set<Id>|true|false
+14:31:58.0 (158590994)|VARIABLE_ASSIGNMENT|[33]|locationsToUpdateIds|{"s":1,"v":[]}|0x433d63de
+14:31:58.0 (158769604)|HEAP_ALLOCATE|[34]|Bytes:5
+14:31:58.0 (158795381)|VARIABLE_SCOPE_BEGIN|[34]|subL|SublocationDetail__c|true|false
+14:31:58.0 (158910795)|VARIABLE_ASSIGNMENT|[34]|subL|{"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:31:58.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":false,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Project","WWW_Detail__c":"a0s0E0000004E33QAE","LastModifiedById":"00524000001e3UjAAI"}|0x373ff3fd
+14:31:58.0 (158916922)|STATEMENT_EXECUTE|[34]
+14:31:58.0 (158918369)|STATEMENT_EXECUTE|[35]
+14:31:58.0 (158982589)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (158996750)|HEAP_ALLOCATE|[34]|Bytes:5
+14:31:58.0 (159007594)|VARIABLE_ASSIGNMENT|[34]|subL|null|
+14:31:58.0 (159011588)|STATEMENT_EXECUTE|[37]
+14:31:58.0 (159041437)|HEAP_ALLOCATE|[37]|Bytes:4
+14:31:58.0 (159047612)|HEAP_ALLOCATE|[37]|Bytes:46
+14:31:58.0 (159052508)|HEAP_ALLOCATE|[37]|Bytes:4
+14:31:58.0 (159061153)|HEAP_ALLOCATE|[37]|Bytes:7
+14:31:58.0 (159094406)|HEAP_ALLOCATE|[37]|Bytes:8
+14:31:58.0 (159099134)|HEAP_ALLOCATE|[37]|Bytes:8
+14:31:58.0 (159286811)|SOQL_EXECUTE_BEGIN|[37]|Aggregations:0|SELECT Id FROM Location__c WHERE id = :tmpVar1
+14:31:58.0 (160987021)|SOQL_EXECUTE_END|[37]|Rows:1
+14:31:58.0 (161000392)|HEAP_ALLOCATE|[37]|Bytes:8
+14:31:58.0 (161013001)|HEAP_ALLOCATE|[37]|Bytes:29
+14:31:58.0 (161036942)|HEAP_ALLOCATE|[37]|Bytes:8
+14:31:58.0 (161076186)|HEAP_ALLOCATE|[37]|Bytes:8
+14:31:58.0 (161083273)|HEAP_ALLOCATE|[37]|Bytes:4
+14:31:58.0 (161090526)|VARIABLE_SCOPE_BEGIN|[37]|locationsById|Map<Id,Location__c>|true|false
+14:31:58.0 (161114991)|VARIABLE_ASSIGNMENT|[37]|locationsById|{"s":1,"v":{"a0B0E0000009Mj1UAE":{"s":2,"v":{"Id":"a0B0E0000009Mj1UAE"}}}}|0x7b71bd22
+14:31:58.0 (161118734)|STATEMENT_EXECUTE|[38]
+14:31:58.0 (161121789)|HEAP_ALLOCATE|[38]|Bytes:121
+14:31:58.0 (161126837)|HEAP_ALLOCATE|[38]|Bytes:4
+14:31:58.0 (161149259)|HEAP_ALLOCATE|[38]|Bytes:8
+14:31:58.0 (161153564)|HEAP_ALLOCATE|[38]|Bytes:8
+14:31:58.0 (161339598)|SOQL_EXECUTE_BEGIN|[38]|Aggregations:0|SELECT Id, Location__c, Reserved__c, To_Sum__c, Number_of_items__c FROM SubLocationDetail__c WHERE Location__c = :tmpVar1
+14:31:58.0 (171401962)|SOQL_EXECUTE_END|[38]|Rows:2
+14:31:58.0 (171415715)|HEAP_ALLOCATE|[38]|Bytes:12
+14:31:58.0 (171431936)|HEAP_ALLOCATE|[38]|Bytes:312
+14:31:58.0 (171444577)|HEAP_ALLOCATE|[38]|Bytes:12
+14:31:58.0 (171452576)|VARIABLE_SCOPE_BEGIN|[38]|details|List<SublocationDetail__c>|true|false
+14:31:58.0 (171482645)|VARIABLE_ASSIGNMENT|[38]|details|{"s":1,"v":[{"s":2,"v":{"Id":"a080E000000EclNQAS","Location__c":"a0B0E0000009Mj1UAE","Reserved__c":false,"To_sum__c":false,"Number_of_items__c":0}},{"s":3,"v":{"Id":"a080E000000EdB0QAK","Location__c":"a0B0E0000009Mj1UAE","Reserved__c":false,"To_sum__c":false,"Number_of_items__c":1}}]}|0x4f6a7921
+14:31:58.0 (171487525)|STATEMENT_EXECUTE|[39]
+14:31:58.0 (171494661)|HEAP_ALLOCATE|[39]|Bytes:4
+14:31:58.0 (171503714)|VARIABLE_SCOPE_BEGIN|[39]|detByLocId|Map<Id,Decimal>|true|false
+14:31:58.0 (171513750)|VARIABLE_ASSIGNMENT|[39]|detByLocId|{"s":1,"v":{}}|0x7c3bbd68
+14:31:58.0 (171515658)|STATEMENT_EXECUTE|[40]
+14:31:58.0 (171518461)|HEAP_ALLOCATE|[40]|Bytes:4
+14:31:58.0 (171521510)|VARIABLE_SCOPE_BEGIN|[40]|detRedByLocId|Map<Id,Decimal>|true|false
+14:31:58.0 (171526828)|VARIABLE_ASSIGNMENT|[40]|detRedByLocId|{"s":1,"v":{}}|0x608460bf
+14:31:58.0 (171559838)|HEAP_ALLOCATE|[41]|Bytes:5
+14:31:58.0 (171585625)|HEAP_ALLOCATE|[41]|Bytes:24
+14:31:58.0 (171591991)|VARIABLE_SCOPE_BEGIN|[41]|det|SublocationDetail__c|true|false
+14:31:58.0 (171604152)|VARIABLE_ASSIGNMENT|[41]|det|{"s":1,"v":{"Id":"a080E000000EclNQAS","Location__c":"a0B0E0000009Mj1UAE","Reserved__c":false,"To_sum__c":false,"Number_of_items__c":0}}|0x8bc3934
+14:31:58.0 (171608036)|STATEMENT_EXECUTE|[41]
+14:31:58.0 (171649386)|STATEMENT_EXECUTE|[53]
+14:31:58.0 (171672927)|STATEMENT_EXECUTE|[56]
+14:31:58.0 (171707488)|STATEMENT_EXECUTE|[60]
+14:31:58.0 (171709234)|STATEMENT_EXECUTE|[61]
+14:31:58.0 (171745795)|HEAP_ALLOCATE|[61]|Bytes:28
+14:31:58.0 (171772559)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+14:31:58.0 (171784119)|HEAP_ALLOCATE|[41]|Bytes:5
+14:31:58.0 (171801834)|HEAP_ALLOCATE|[41]|Bytes:24
+14:31:58.0 (171806614)|VARIABLE_SCOPE_BEGIN|[41]|det|SublocationDetail__c|true|false
+14:31:58.0 (171819497)|VARIABLE_ASSIGNMENT|[41]|det|{"s":1,"v":{"Id":"a080E000000EdB0QAK","Location__c":"a0B0E0000009Mj1UAE","Reserved__c":false,"To_sum__c":false,"Number_of_items__c":1}}|0x5f896574
+14:31:58.0 (171822677)|STATEMENT_EXECUTE|[41]
+14:31:58.0 (171835359)|STATEMENT_EXECUTE|[53]
+14:31:58.0 (171841247)|STATEMENT_EXECUTE|[56]
+14:31:58.0 (171851866)|STATEMENT_EXECUTE|[58]
+14:31:58.0 (171853186)|STATEMENT_EXECUTE|[59]
+14:31:58.0 (171883302)|HEAP_ALLOCATE|[59]|Bytes:28
+14:31:58.0 (171893207)|HEAP_ALLOCATE|[41]|Bytes:5
+14:31:58.0 (171901402)|VARIABLE_ASSIGNMENT|[41]|det|null|
+14:31:58.0 (171903981)|STATEMENT_EXECUTE|[67]
+14:31:58.0 (171906469)|HEAP_ALLOCATE|[67]|Bytes:27
+14:31:58.0 (171955714)|HEAP_ALLOCATE|[67]|Bytes:2
+14:31:58.0 (171970388)|HEAP_ALLOCATE|[67]|Bytes:29
+14:31:58.0 (171991465)|USER_DEBUG|[67]|DEBUG|upateSubLocation detByLocId{}
+14:31:58.0 (171996012)|STATEMENT_EXECUTE|[68]
+14:31:58.0 (171998373)|HEAP_ALLOCATE|[68]|Bytes:30
+14:31:58.0 (172019878)|HEAP_ALLOCATE|[68]|Bytes:22
+14:31:58.0 (172028405)|HEAP_ALLOCATE|[68]|Bytes:52
+14:31:58.0 (172034805)|USER_DEBUG|[68]|DEBUG|upateSubLocation detRedByLocId{a0B0E0000009Mj1UAE=1}
+14:31:58.0 (172057709)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:31:58.0 (172064859)|HEAP_ALLOCATE|[69]|Bytes:36
+14:31:58.0 (172146462)|HEAP_ALLOCATE|[69]|Bytes:5
+14:31:58.0 (172155335)|HEAP_ALLOCATE|[69]|Bytes:8
+14:31:58.0 (172160278)|VARIABLE_SCOPE_BEGIN|[69]|loc|Location__c|true|false
+14:31:58.0 (172172032)|VARIABLE_ASSIGNMENT|[69]|loc|{"s":1,"v":{"Id":"a0B0E0000009Mj1UAE"}}|0x2c91711f
+14:31:58.0 (172174886)|STATEMENT_EXECUTE|[69]
+14:31:58.0 (172220876)|STATEMENT_EXECUTE|[70]
+14:31:58.0 (172228598)|HEAP_ALLOCATE|[69]|Bytes:5
+14:31:58.0 (172237047)|VARIABLE_ASSIGNMENT|[69]|loc|null|
+14:31:58.0 (172238988)|STATEMENT_EXECUTE|[76]
+14:31:58.0 (172240962)|HEAP_ALLOCATE|[76]|Bytes:34
+14:31:58.0 (172261990)|HEAP_ALLOCATE|[76]|Bytes:2
+14:31:58.0 (172269680)|HEAP_ALLOCATE|[76]|Bytes:36
+14:31:58.0 (172277931)|USER_DEBUG|[76]|DEBUG|upateSubLocation locationsToUpdate()
+14:31:58.0 (172281431)|STATEMENT_EXECUTE|[77]
+14:31:58.0 (172347485)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (172357734)|METHOD_EXIT|[11]|01p2400000DUoK9|SubLocationDetailUtil.upateSubLocation(List<SublocationDetail__c>)
+14:31:58.0 (172361039)|STATEMENT_EXECUTE|[12]
+14:31:58.0 (172372435)|METHOD_ENTRY|[12]|01p2400000DUoK9|SubLocationDetailUtil.calculateSublocationsForProject(List<SublocationDetail__c>)
+14:31:58.0 (172390659)|VARIABLE_SCOPE_BEGIN|[80]|triggerNew|List<SublocationDetail__c>|true|false
+14:31:58.0 (172514916)|VARIABLE_ASSIGNMENT|[80]|triggerNew|{"s":1,"v":[{"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:31:58.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":false,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Project","WWW_Detail__c":"a0s0E0000004E33QAE","LastModifiedById":"00524000001e3UjAAI"}]}|0x4e40e9bc
+14:31:58.0 (172526389)|HEAP_ALLOCATE|[81]|Bytes:5
+14:31:58.0 (172529773)|STATEMENT_EXECUTE|[80]
+14:31:58.0 (172530877)|STATEMENT_EXECUTE|[81]
+14:31:58.0 (172535785)|HEAP_ALLOCATE|[81]|Bytes:4
+14:31:58.0 (172556616)|VARIABLE_SCOPE_BEGIN|[81]|wwwDetailIds|Set<Id>|true|false
+14:31:58.0 (172569296)|VARIABLE_ASSIGNMENT|[81]|wwwDetailIds|{"s":1,"v":[]}|0x5838ab42
+14:31:58.0 (172571533)|STATEMENT_EXECUTE|[82]
+14:31:58.0 (172574315)|HEAP_ALLOCATE|[82]|Bytes:4
+14:31:58.0 (172585536)|VARIABLE_SCOPE_BEGIN|[82]|projectIds|Set<Id>|true|false
+14:31:58.0 (172592673)|VARIABLE_ASSIGNMENT|[82]|projectIds|{"s":1,"v":[]}|0x1ae0623d
+14:31:58.0 (172594255)|STATEMENT_EXECUTE|[84]
+14:31:58.0 (172628297)|HEAP_ALLOCATE|[84]|Bytes:4
+14:31:58.0 (172661585)|VARIABLE_SCOPE_BEGIN|[84]|projects|List<Projecten__c>|true|false
+14:31:58.0 (172666510)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (172673456)|VARIABLE_ASSIGNMENT|[84]|projects|{"s":1,"v":[]}|0xb5c7a5b
+14:31:58.0 (172675603)|STATEMENT_EXECUTE|[85]
+14:31:58.0 (172678457)|HEAP_ALLOCATE|[85]|Bytes:4
+14:31:58.0 (172686832)|VARIABLE_SCOPE_BEGIN|[85]|projToUpdate|List<Projecten__c>|true|false
+14:31:58.0 (172690331)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (172693901)|VARIABLE_ASSIGNMENT|[85]|projToUpdate|{"s":1,"v":[]}|0x7feb91f4
+14:31:58.0 (172695765)|STATEMENT_EXECUTE|[87]
+14:31:58.0 (172742869)|HEAP_ALLOCATE|[87]|Bytes:4
+14:31:58.0 (172761677)|VARIABLE_SCOPE_BEGIN|[87]|wwwDetailsByProjectId|Map<Id,List<WWW_Detail__c>>|true|false
+14:31:58.0 (172772442)|VARIABLE_ASSIGNMENT|[87]|wwwDetailsByProjectId|{"s":1,"v":{}}|0x7b7c2005
+14:31:58.0 (172774841)|STATEMENT_EXECUTE|[88]
+14:31:58.0 (172794848)|HEAP_ALLOCATE|[88]|Bytes:4
+14:31:58.0 (172807721)|VARIABLE_SCOPE_BEGIN|[88]|sublocDetailByWwwDetailId|Map<Id,List<SublocationDetail__c>>|true|false
+14:31:58.0 (172815885)|VARIABLE_ASSIGNMENT|[88]|sublocDetailByWwwDetailId|{"s":1,"v":{}}|0x30dd4435
+14:31:58.0 (172845510)|HEAP_ALLOCATE|[90]|Bytes:5
+14:31:58.0 (172859682)|VARIABLE_SCOPE_BEGIN|[90]|sd|SublocationDetail__c|true|false
+14:31:58.0 (172980018)|VARIABLE_ASSIGNMENT|[90]|sd|{"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:31:58.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":false,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Project","WWW_Detail__c":"a0s0E0000004E33QAE","LastModifiedById":"00524000001e3UjAAI"}|0x373ff3fd
+14:31:58.0 (172985870)|STATEMENT_EXECUTE|[91]
+14:31:58.0 (172987118)|STATEMENT_EXECUTE|[92]
+14:31:58.0 (173038376)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (173052418)|HEAP_ALLOCATE|[90]|Bytes:5
+14:31:58.0 (173062527)|VARIABLE_ASSIGNMENT|[90]|sd|null|
+14:31:58.0 (173065290)|STATEMENT_EXECUTE|[95]
+14:31:58.0 (173067910)|HEAP_ALLOCATE|[95]|Bytes:66
+14:31:58.0 (173072537)|HEAP_ALLOCATE|[95]|Bytes:4
+14:31:58.0 (173093888)|HEAP_ALLOCATE|[95]|Bytes:8
+14:31:58.0 (173098146)|HEAP_ALLOCATE|[95]|Bytes:8
+14:31:58.0 (173271010)|SOQL_EXECUTE_BEGIN|[95]|Aggregations:0|SELECT Id, Name, Project__c FROM WWW_Detail__c WHERE Id = :tmpVar1
+14:31:58.0 (174592847)|SOQL_EXECUTE_END|[95]|Rows:1
+14:31:58.0 (174606323)|HEAP_ALLOCATE|[95]|Bytes:8
+14:31:58.0 (174617359)|HEAP_ALLOCATE|[95]|Bytes:79
+14:31:58.0 (174640870)|HEAP_ALLOCATE|[95]|Bytes:8
+14:31:58.0 (174647942)|VARIABLE_SCOPE_BEGIN|[95]|wwwDetails|List<WWW_Detail__c>|true|false
+14:31:58.0 (174667823)|VARIABLE_ASSIGNMENT|[95]|wwwDetails|{"s":1,"v":[{"s":2,"v":{"Id":"a0s0E0000004E33QAE","Name":"WWW-D-9958","Project__c":"a0q0E0000008S3WQAU"}}]}|0x7ff2ea30
+14:31:58.0 (174712785)|STATEMENT_EXECUTE|[97]
+14:31:58.0 (174783578)|HEAP_ALLOCATE|[98]|Bytes:5
+14:31:58.0 (174812704)|HEAP_ALLOCATE|[98]|Bytes:16
+14:31:58.0 (174819590)|VARIABLE_SCOPE_BEGIN|[98]|wd|WWW_Detail__c|true|false
+14:31:58.0 (174833364)|VARIABLE_ASSIGNMENT|[98]|wd|{"s":1,"v":{"Id":"a0s0E0000004E33QAE","Name":"WWW-D-9958","Project__c":"a0q0E0000008S3WQAU"}}|0x5486f3a2
+14:31:58.0 (174841638)|STATEMENT_EXECUTE|[99]
+14:31:58.0 (174843209)|STATEMENT_EXECUTE|[100]
+14:31:58.0 (174887659)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (174900201)|HEAP_ALLOCATE|[98]|Bytes:5
+14:31:58.0 (174909998)|VARIABLE_ASSIGNMENT|[98]|wd|null|
+14:31:58.0 (174912927)|STATEMENT_EXECUTE|[102]
+14:31:58.0 (174915919)|HEAP_ALLOCATE|[102]|Bytes:53
+14:31:58.0 (174920769)|HEAP_ALLOCATE|[102]|Bytes:4
+14:31:58.0 (174942248)|HEAP_ALLOCATE|[102]|Bytes:8
+14:31:58.0 (174946439)|HEAP_ALLOCATE|[102]|Bytes:8
+14:31:58.0 (175081708)|SOQL_EXECUTE_BEGIN|[102]|Aggregations:0|SELECT Id, Name FROM Projecten__c WHERE Id = :tmpVar1
+14:31:58.0 (176287500)|SOQL_EXECUTE_END|[102]|Rows:1
+14:31:58.0 (176300299)|HEAP_ALLOCATE|[102]|Bytes:8
+14:31:58.0 (176310924)|HEAP_ALLOCATE|[102]|Bytes:41
+14:31:58.0 (176332281)|HEAP_ALLOCATE|[102]|Bytes:8
+14:31:58.0 (176354128)|VARIABLE_ASSIGNMENT|[102]|projects|{"s":1,"v":[{"s":2,"v":{"Id":"a0q0E0000008S3WQAU","Name":"5700"}}]}|0x2286045e
+14:31:58.0 (176357288)|STATEMENT_EXECUTE|[103]
+14:31:58.0 (176360689)|HEAP_ALLOCATE|[103]|Bytes:74
+14:31:58.0 (176366032)|HEAP_ALLOCATE|[103]|Bytes:4
+14:31:58.0 (176389786)|HEAP_ALLOCATE|[103]|Bytes:8
+14:31:58.0 (176394207)|HEAP_ALLOCATE|[103]|Bytes:8
+14:31:58.0 (176551224)|SOQL_EXECUTE_BEGIN|[103]|Aggregations:0|SELECT Id, Name, Project__c FROM WWW_Detail__c WHERE Project__c = :tmpVar1
+14:31:58.0 (178247296)|SOQL_EXECUTE_END|[103]|Rows:2
+14:31:58.0 (178259751)|HEAP_ALLOCATE|[103]|Bytes:12
+14:31:58.0 (178271429)|HEAP_ALLOCATE|[103]|Bytes:158
+14:31:58.0 (178283763)|HEAP_ALLOCATE|[103]|Bytes:12
+14:31:58.0 (178310882)|VARIABLE_ASSIGNMENT|[103]|wwwDetails|{"s":1,"v":[{"s":2,"v":{"Id":"a0s0E0000004E2yQAE","Name":"WWW-D-9957","Project__c":"a0q0E0000008S3WQAU"}},{"s":3,"v":{"Id":"a0s0E0000004E33QAE","Name":"WWW-D-9958","Project__c":"a0q0E0000008S3WQAU"}}]}|0x4f38e7f3
+14:31:58.0 (178339335)|STATEMENT_EXECUTE|[105]
+14:31:58.0 (178341209)|STATEMENT_EXECUTE|[106]
+14:31:58.0 (178345514)|HEAP_ALLOCATE|[106]|Bytes:4
+14:31:58.0 (178370851)|VARIABLE_ASSIGNMENT|[106]|wwwDetailIds|{"s":1,"v":[]}|0x204f4785
+14:31:58.0 (178394196)|HEAP_ALLOCATE|[108]|Bytes:5
+14:31:58.0 (178417534)|HEAP_ALLOCATE|[108]|Bytes:16
+14:31:58.0 (178423887)|VARIABLE_SCOPE_BEGIN|[108]|wd|WWW_Detail__c|true|false
+14:31:58.0 (178435679)|VARIABLE_ASSIGNMENT|[108]|wd|{"s":1,"v":{"Id":"a0s0E0000004E2yQAE","Name":"WWW-D-9957","Project__c":"a0q0E0000008S3WQAU"}}|0x13f27712
+14:31:58.0 (178438681)|STATEMENT_EXECUTE|[109]
+14:31:58.0 (178474396)|STATEMENT_EXECUTE|[111]
+14:31:58.0 (178476011)|STATEMENT_EXECUTE|[112]
+14:31:58.0 (178482738)|HEAP_ALLOCATE|[112]|Bytes:4
+14:31:58.0 (178500959)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (178504441)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+14:31:58.0 (178508156)|STATEMENT_EXECUTE|[114]
+14:31:58.0 (178536173)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (178539771)|STATEMENT_EXECUTE|[115]
+14:31:58.0 (178573212)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (178583947)|HEAP_ALLOCATE|[108]|Bytes:5
+14:31:58.0 (178601055)|HEAP_ALLOCATE|[108]|Bytes:16
+14:31:58.0 (178606069)|VARIABLE_SCOPE_BEGIN|[108]|wd|WWW_Detail__c|true|false
+14:31:58.0 (178618502)|VARIABLE_ASSIGNMENT|[108]|wd|{"s":1,"v":{"Id":"a0s0E0000004E33QAE","Name":"WWW-D-9958","Project__c":"a0q0E0000008S3WQAU"}}|0x13ae1b89
+14:31:58.0 (178621236)|STATEMENT_EXECUTE|[109]
+14:31:58.0 (178638155)|STATEMENT_EXECUTE|[110]
+14:31:58.0 (178639660)|STATEMENT_EXECUTE|[114]
+14:31:58.0 (178650363)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (178653342)|STATEMENT_EXECUTE|[115]
+14:31:58.0 (178658948)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (178666748)|HEAP_ALLOCATE|[108]|Bytes:5
+14:31:58.0 (178674715)|VARIABLE_ASSIGNMENT|[108]|wd|null|
+14:31:58.0 (178677130)|STATEMENT_EXECUTE|[118]
+14:31:58.0 (178680020)|HEAP_ALLOCATE|[118]|Bytes:223
+14:31:58.0 (178684666)|HEAP_ALLOCATE|[118]|Bytes:4
+14:31:58.0 (178704924)|HEAP_ALLOCATE|[118]|Bytes:12
+14:31:58.0 (178709415)|HEAP_ALLOCATE|[118]|Bytes:12
+14:31:58.0 (179063325)|SOQL_EXECUTE_BEGIN|[118]|Aggregations:0|SELECT Id, Name, Location__r.Occupied__c, Location__r.Parent_Location__c, WWW_Detail__c FROM SublocationDetail__c WHERE (Location__r.Occupied__c = TRUE AND Location__r.Parent_Location__c = NULL AND WWW_Detail__c = :tmpVar1)
+14:31:58.0 (181933257)|SOQL_EXECUTE_END|[118]|Rows:0
+14:31:58.0 (181949987)|HEAP_ALLOCATE|[118]|Bytes:4
+14:31:58.0 (181958998)|HEAP_ALLOCATE|[118]|Bytes:0
+14:31:58.0 (181971545)|HEAP_ALLOCATE|[118]|Bytes:4
+14:31:58.0 (181978709)|VARIABLE_SCOPE_BEGIN|[118]|subLocDetails|List<SublocationDetail__c>|true|false
+14:31:58.0 (181991496)|VARIABLE_ASSIGNMENT|[118]|subLocDetails|{"s":1,"v":[]}|0x2f222ec7
+14:31:58.0 (182018549)|STATEMENT_EXECUTE|[121]
+14:31:58.0 (182092994)|HEAP_ALLOCATE|[135]|Bytes:5
+14:31:58.0 (182122517)|HEAP_ALLOCATE|[135]|Bytes:12
+14:31:58.0 (182129248)|VARIABLE_SCOPE_BEGIN|[135]|pr|Projecten__c|true|false
+14:31:58.0 (182143022)|VARIABLE_ASSIGNMENT|[135]|pr|{"s":1,"v":{"Id":"a0q0E0000008S3WQAU","Name":"5700"}}|0x2680fdcb
+14:31:58.0 (182146534)|STATEMENT_EXECUTE|[136]
+14:31:58.0 (182148235)|STATEMENT_EXECUTE|[137]
+14:31:58.0 (182151380)|VARIABLE_SCOPE_BEGIN|[137]|subLocCount|Integer|false|false
+14:31:58.0 (182154176)|HEAP_ALLOCATE|[137]|Bytes:4
+14:31:58.0 (182158220)|VARIABLE_ASSIGNMENT|[137]|subLocCount|0
+14:31:58.0 (182159748)|STATEMENT_EXECUTE|[138]
+14:31:58.0 (182214060)|VARIABLE_SCOPE_BEGIN|[138]|currWwwDetails|List<WWW_Detail__c>|true|false
+14:31:58.0 (182233648)|VARIABLE_ASSIGNMENT|[138]|currWwwDetails|{"s":1,"v":[{"s":2,"v":{"Id":"a0s0E0000004E2yQAE","Name":"WWW-D-9957","Project__c":"a0q0E0000008S3WQAU"}},{"s":3,"v":{"Id":"a0s0E0000004E33QAE","Name":"WWW-D-9958","Project__c":"a0q0E0000008S3WQAU"}}]}|0x5c584589
+14:31:58.0 (182257912)|HEAP_ALLOCATE|[139]|Bytes:5
+14:31:58.0 (182266436)|HEAP_ALLOCATE|[139]|Bytes:16
+14:31:58.0 (182270893)|VARIABLE_SCOPE_BEGIN|[139]|wd|WWW_Detail__c|true|false
+14:31:58.0 (182279541)|VARIABLE_ASSIGNMENT|[139]|wd|{"s":1,"v":{"Id":"a0s0E0000004E2yQAE","Name":"WWW-D-9957","Project__c":"a0q0E0000008S3WQAU"}}|0x13f27712
+14:31:58.0 (182282689)|STATEMENT_EXECUTE|[140]
+14:31:58.0 (182284210)|STATEMENT_EXECUTE|[141]
+14:31:58.0 (182311772)|VARIABLE_SCOPE_BEGIN|[141]|subLocs|List<SublocationDetail__c>|true|false
+14:31:58.0 (182316568)|VARIABLE_ASSIGNMENT|[141]|subLocs|null|
+14:31:58.0 (182318456)|STATEMENT_EXECUTE|[142]
+14:31:58.0 (182323340)|HEAP_ALLOCATE|[142]|Bytes:4
+14:31:58.0 (182327365)|VARIABLE_ASSIGNMENT|[142]|subLocCount|0
+14:31:58.0 (182334690)|HEAP_ALLOCATE|[139]|Bytes:5
+14:31:58.0 (182341294)|HEAP_ALLOCATE|[139]|Bytes:16
+14:31:58.0 (182344750)|VARIABLE_SCOPE_BEGIN|[139]|wd|WWW_Detail__c|true|false
+14:31:58.0 (182352795)|VARIABLE_ASSIGNMENT|[139]|wd|{"s":1,"v":{"Id":"a0s0E0000004E33QAE","Name":"WWW-D-9958","Project__c":"a0q0E0000008S3WQAU"}}|0x13ae1b89
+14:31:58.0 (182355129)|STATEMENT_EXECUTE|[140]
+14:31:58.0 (182356190)|STATEMENT_EXECUTE|[141]
+14:31:58.0 (182366235)|VARIABLE_SCOPE_BEGIN|[141]|subLocs|List<SublocationDetail__c>|true|false
+14:31:58.0 (182369613)|VARIABLE_ASSIGNMENT|[141]|subLocs|null|
+14:31:58.0 (182371141)|STATEMENT_EXECUTE|[142]
+14:31:58.0 (182374316)|HEAP_ALLOCATE|[142]|Bytes:4
+14:31:58.0 (182377442)|VARIABLE_ASSIGNMENT|[142]|subLocCount|0
+14:31:58.0 (182383090)|HEAP_ALLOCATE|[139]|Bytes:5
+14:31:58.0 (182389041)|VARIABLE_ASSIGNMENT|[139]|wd|null|
+14:31:58.0 (182391344)|STATEMENT_EXECUTE|[144]
+14:31:58.0 (182406166)|HEAP_ALLOCATE|[144]|Bytes:28
+14:31:58.0 (182408379)|HEAP_ALLOCATE|[144]|Bytes:28
+14:31:58.0 (182460585)|HEAP_ALLOCATE|[144]|Bytes:-4
+14:31:58.0 (182470276)|VARIABLE_ASSIGNMENT|[144]|this.Aantal_palletplaatsen__c|0|0x2680fdcb
+14:31:58.0 (182472723)|STATEMENT_EXECUTE|[145]
+14:31:58.0 (182475474)|HEAP_ALLOCATE|[145]|Bytes:23
+14:31:58.0 (182501915)|HEAP_ALLOCATE|[145]|Bytes:1
+14:31:58.0 (182511215)|HEAP_ALLOCATE|[145]|Bytes:24
+14:31:58.0 (182520658)|USER_DEBUG|[145]|DEBUG|OBdeb subLocCount -->> 0
+14:31:58.0 (182531046)|HEAP_ALLOCATE|[135]|Bytes:5
+14:31:58.0 (182539883)|VARIABLE_ASSIGNMENT|[135]|pr|null|
+14:31:58.0 (182542006)|STATEMENT_EXECUTE|[148]
+14:31:58.0 (182570758)|DML_BEGIN|[148]|Op:Update|Type:Projecten__c|Rows:1
+14:31:58.0 (182590445)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:31:58.0 (186819028)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000qIfI|ProjectTrigger on Projecten trigger event BeforeUpdate for [a0q0E0000008S3W]
+14:31:58.0 (186857288)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:31:58.0 (186877918)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:31:58.0 (186914580)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (186920626)|VARIABLE_SCOPE_BEGIN|[1]|this|ProjectTrigger|true|false
+14:31:58.0 (186935260)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x610fe314
+14:31:58.0 (186953785)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (186958033)|VARIABLE_SCOPE_BEGIN|[1]|this|ProjectTrigger|true|false
+14:31:58.0 (186963530)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x610fe314
+14:31:58.0 (186966075)|STATEMENT_EXECUTE|[1]
+14:31:58.0 (186967542)|STATEMENT_EXECUTE|[3]
+14:31:58.0 (186972512)|HEAP_ALLOCATE|[3]|Bytes:44
+14:31:58.0 (187050944)|CONSTRUCTOR_ENTRY|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+14:31:58.0 (187070717)|VARIABLE_SCOPE_BEGIN|[13]|this|TriggerParams|true|false
+14:31:58.0 (187088802)|VARIABLE_ASSIGNMENT|[13]|this|{}|0x6b49e22
+14:31:58.0 (187093238)|VARIABLE_SCOPE_BEGIN|[13]|isBefore|Boolean|false|false
+14:31:58.0 (187096483)|VARIABLE_ASSIGNMENT|[13]|isBefore|true
+14:31:58.0 (187098350)|VARIABLE_SCOPE_BEGIN|[13]|isAfter|Boolean|false|false
+14:31:58.0 (187100387)|VARIABLE_ASSIGNMENT|[13]|isAfter|false
+14:31:58.0 (187102644)|VARIABLE_SCOPE_BEGIN|[13]|isInsert|Boolean|false|false
+14:31:58.0 (187104735)|VARIABLE_ASSIGNMENT|[13]|isInsert|false
+14:31:58.0 (187106663)|VARIABLE_SCOPE_BEGIN|[13]|isUpdate|Boolean|false|false
+14:31:58.0 (187108590)|VARIABLE_ASSIGNMENT|[13]|isUpdate|true
+14:31:58.0 (187110398)|VARIABLE_SCOPE_BEGIN|[13]|isDelete|Boolean|false|false
+14:31:58.0 (187112265)|VARIABLE_ASSIGNMENT|[13]|isDelete|false
+14:31:58.0 (187113904)|VARIABLE_SCOPE_BEGIN|[13]|isUndelete|Boolean|false|false
+14:31:58.0 (187115844)|VARIABLE_ASSIGNMENT|[13]|isUndelete|false
+14:31:58.0 (187117580)|VARIABLE_SCOPE_BEGIN|[13]|triggerNew|List<SObject>|true|false
+14:31:58.0 (187655470)|VARIABLE_ASSIGNMENT|[13]|triggerNew|{"s":1,"v":[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]}|0x523965b0
+14:31:58.0 (187662287)|VARIABLE_SCOPE_BEGIN|[13]|triggerOld|List<SObject>|true|false
+14:31:58.0 (187786676)|VARIABLE_ASSIGNMENT|[13]|triggerOld|{"s":1,"v":[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]}|0x2ac19efd
+14:31:58.0 (187791934)|VARIABLE_SCOPE_BEGIN|[13]|newMap|Map<Id,SObject>|true|false
+14:31:58.0 (187881335)|VARIABLE_ASSIGNMENT|[13]|newMap|{"s":1,"v":{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}}|0x34c8cff2
+14:31:58.0 (187886794)|VARIABLE_SCOPE_BEGIN|[13]|oldMap|Map<Id,SObject>|true|false
+14:31:58.0 (187957258)|VARIABLE_ASSIGNMENT|[13]|oldMap|{"s":1,"v":{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}}|0x162f02c7
+14:31:58.0 (187966515)|SYSTEM_MODE_ENTER|true
+14:31:58.0 (187972213)|HEAP_ALLOCATE|[16]|Bytes:5
+14:31:58.0 (187976068)|STATEMENT_EXECUTE|[1]
+14:31:58.0 (187978582)|HEAP_ALLOCATE|[16]|Bytes:5
+14:31:58.0 (187980109)|STATEMENT_EXECUTE|[2]
+14:31:58.0 (187981445)|STATEMENT_EXECUTE|[3]
+14:31:58.0 (187982450)|STATEMENT_EXECUTE|[4]
+14:31:58.0 (187983448)|STATEMENT_EXECUTE|[5]
+14:31:58.0 (187984538)|STATEMENT_EXECUTE|[6]
+14:31:58.0 (187985629)|STATEMENT_EXECUTE|[7]
+14:31:58.0 (187986629)|STATEMENT_EXECUTE|[8]
+14:31:58.0 (187987654)|STATEMENT_EXECUTE|[9]
+14:31:58.0 (187988750)|STATEMENT_EXECUTE|[10]
+14:31:58.0 (187989875)|STATEMENT_EXECUTE|[11]
+14:31:58.0 (188008599)|STATEMENT_EXECUTE|[15]
+14:31:58.0 (188010598)|STATEMENT_EXECUTE|[16]
+14:31:58.0 (188013860)|HEAP_ALLOCATE|[16]|Bytes:5
+14:31:58.0 (188020951)|VARIABLE_ASSIGNMENT|[16]|this.isBefore|true|0x6b49e22
+14:31:58.0 (188022631)|STATEMENT_EXECUTE|[17]
+14:31:58.0 (188024561)|HEAP_ALLOCATE|[17]|Bytes:5
+14:31:58.0 (188027968)|VARIABLE_ASSIGNMENT|[17]|this.isAfter|false|0x6b49e22
+14:31:58.0 (188029307)|STATEMENT_EXECUTE|[18]
+14:31:58.0 (188031169)|HEAP_ALLOCATE|[18]|Bytes:5
+14:31:58.0 (188034576)|VARIABLE_ASSIGNMENT|[18]|this.isInsert|false|0x6b49e22
+14:31:58.0 (188035944)|STATEMENT_EXECUTE|[19]
+14:31:58.0 (188037898)|HEAP_ALLOCATE|[19]|Bytes:5
+14:31:58.0 (188041169)|VARIABLE_ASSIGNMENT|[19]|this.isUpdate|true|0x6b49e22
+14:31:58.0 (188042490)|STATEMENT_EXECUTE|[20]
+14:31:58.0 (188044279)|HEAP_ALLOCATE|[20]|Bytes:5
+14:31:58.0 (188047016)|VARIABLE_ASSIGNMENT|[20]|this.isDelete|false|0x6b49e22
+14:31:58.0 (188048291)|STATEMENT_EXECUTE|[21]
+14:31:58.0 (188049904)|HEAP_ALLOCATE|[21]|Bytes:5
+14:31:58.0 (188052945)|VARIABLE_ASSIGNMENT|[21]|this.isUndelete|false|0x6b49e22
+14:31:58.0 (188054289)|STATEMENT_EXECUTE|[22]
+14:31:58.0 (188157564)|VARIABLE_ASSIGNMENT|[22]|this.triggerNew|{"s":1,"v":[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]}|0x6b49e22
+14:31:58.0 (188162671)|STATEMENT_EXECUTE|[23]
+14:31:58.0 (188238186)|VARIABLE_ASSIGNMENT|[23]|this.triggerOld|{"s":1,"v":[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]}|0x6b49e22
+14:31:58.0 (188243957)|STATEMENT_EXECUTE|[24]
+14:31:58.0 (188318114)|VARIABLE_ASSIGNMENT|[24]|this.newMap|{"s":1,"v":{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}}|0x6b49e22
+14:31:58.0 (188322816)|STATEMENT_EXECUTE|[25]
+14:31:58.0 (188391734)|VARIABLE_ASSIGNMENT|[25]|this.oldMap|{"s":1,"v":{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}}|0x6b49e22
+14:31:58.0 (188398726)|SYSTEM_MODE_EXIT|true
+14:31:58.0 (188416025)|CONSTRUCTOR_EXIT|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+14:31:58.0 (188508294)|HEAP_ALLOCATE|[3]|Bytes:14
+14:31:58.0 (188513947)|HEAP_ALLOCATE|[3]|Bytes:23
+14:31:58.0 (188521124)|METHOD_ENTRY|[1]|01p2400000DcTyQ|ProjectUtil.ProjectUtil()
+14:31:58.0 (188523239)|STATEMENT_EXECUTE|[1]
+14:31:58.0 (188525490)|STATEMENT_EXECUTE|[1]
+14:31:58.0 (188529931)|METHOD_EXIT|[1]|ProjectUtil
+14:31:58.0 (188537700)|METHOD_ENTRY|[3]|01p2400000DcTyQ|ProjectUtil.entry(TriggerParams)
+14:31:58.0 (188541332)|VARIABLE_SCOPE_BEGIN|[2]|triggerParams|TriggerParams|true|false
+14:31:58.0 (188568343)|VARIABLE_ASSIGNMENT|[2]|triggerParams|{"isAfter":false,"isBefore":true,"isDelete":false,"isInsert":false,"isUndelete":false,"isUpdate":true,"newMap":"0x34c8cff2","oldMap":"0x162f02c7","triggerNew":"0x523965b0","triggerOld":"0x2ac19efd"}|0x6b49e22
+14:31:58.0 (188573374)|STATEMENT_EXECUTE|[2]
+14:31:58.0 (188574633)|STATEMENT_EXECUTE|[3]
+14:31:58.0 (188581393)|VARIABLE_SCOPE_BEGIN|[3]|triggerNew|List<Projecten__c>|true|false
+14:31:58.0 (188689516)|VARIABLE_ASSIGNMENT|[3]|triggerNew|{"s":1,"v":[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]}|0x523965b0
+14:31:58.0 (188694403)|STATEMENT_EXECUTE|[4]
+14:31:58.0 (188699859)|VARIABLE_SCOPE_BEGIN|[4]|triggerOld|List<Projecten__c>|true|false
+14:31:58.0 (188774048)|VARIABLE_ASSIGNMENT|[4]|triggerOld|{"s":1,"v":[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]}|0x2ac19efd
+14:31:58.0 (188778525)|STATEMENT_EXECUTE|[5]
+14:31:58.0 (188784607)|VARIABLE_SCOPE_BEGIN|[5]|oldMap|Map<Id,Projecten__c>|true|false
+14:31:58.0 (188863862)|VARIABLE_ASSIGNMENT|[5]|oldMap|{"s":1,"v":{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}}|0x162f02c7
+14:31:58.0 (188869445)|STATEMENT_EXECUTE|[6]
+14:31:58.0 (188873718)|VARIABLE_SCOPE_BEGIN|[6]|newMap|Map<Id,Projecten__c>|true|false
+14:31:58.0 (188944583)|VARIABLE_ASSIGNMENT|[6]|newMap|{"s":1,"v":{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}}|0x34c8cff2
+14:31:58.0 (188951725)|STATEMENT_EXECUTE|[9]
+14:31:58.0 (188954090)|STATEMENT_EXECUTE|[10]
+14:31:58.0 (188955277)|STATEMENT_EXECUTE|[11]
+14:31:58.0 (188964227)|METHOD_ENTRY|[11]|01p2400000DcTyQ|ProjectUtil.checkName(List<Projecten__c>)
+14:31:58.0 (188975955)|VARIABLE_SCOPE_BEGIN|[84]|projects|List<Projecten__c>|true|false
+14:31:58.0 (189052654)|VARIABLE_ASSIGNMENT|[84]|projects|{"s":1,"v":[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]}|0x523965b0
+14:31:58.0 (189059663)|STATEMENT_EXECUTE|[84]
+14:31:58.0 (189060972)|STATEMENT_EXECUTE|[85]
+14:31:58.0 (189068373)|HEAP_ALLOCATE|[85]|Bytes:4
+14:31:58.0 (189093874)|VARIABLE_SCOPE_BEGIN|[85]|names|Set<String>|true|false
+14:31:58.0 (189116635)|VARIABLE_ASSIGNMENT|[85]|names|{"s":1,"v":[]}|0xfa2e157
+14:31:58.0 (189145010)|HEAP_ALLOCATE|[86]|Bytes:5
+14:31:58.0 (189157459)|HEAP_ALLOCATE|[86]|Bytes:4
+14:31:58.0 (189162622)|VARIABLE_SCOPE_BEGIN|[86]|p|Projecten__c|true|false
+14:31:58.0 (189247879)|VARIABLE_ASSIGNMENT|[86]|p|{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}|0x29b2a028
+14:31:58.0 (189253647)|STATEMENT_EXECUTE|[86]
+14:31:58.0 (189254740)|STATEMENT_EXECUTE|[87]
+14:31:58.0 (189295739)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (189308654)|HEAP_ALLOCATE|[86]|Bytes:5
+14:31:58.0 (189317741)|VARIABLE_ASSIGNMENT|[86]|p|null|
+14:31:58.0 (189320222)|STATEMENT_EXECUTE|[89]
+14:31:58.0 (189322588)|HEAP_ALLOCATE|[89]|Bytes:51
+14:31:58.0 (189327351)|HEAP_ALLOCATE|[89]|Bytes:4
+14:31:58.0 (189348098)|HEAP_ALLOCATE|[89]|Bytes:8
+14:31:58.0 (189352202)|HEAP_ALLOCATE|[89]|Bytes:8
+14:31:58.0 (189469016)|SOQL_EXECUTE_BEGIN|[89]|Aggregations:0|SELECT Name FROM Projecten__c WHERE Name = :tmpVar1
+14:31:58.0 (192070890)|SOQL_EXECUTE_END|[89]|Rows:1
+14:31:58.0 (192083838)|HEAP_ALLOCATE|[89]|Bytes:8
+14:31:58.0 (192094683)|HEAP_ALLOCATE|[89]|Bytes:41
+14:31:58.0 (192106577)|HEAP_ALLOCATE|[89]|Bytes:8
+14:31:58.0 (192113539)|VARIABLE_SCOPE_BEGIN|[89]|oldprojects|List<Projecten__c>|true|false
+14:31:58.0 (192132023)|VARIABLE_ASSIGNMENT|[89]|oldprojects|{"s":1,"v":[{"s":2,"v":{"Name":"5700","Id":"a0q0E0000008S3WQAU"}}]}|0x5c475a83
+14:31:58.0 (192135314)|STATEMENT_EXECUTE|[90]
+14:31:58.0 (192158692)|HEAP_ALLOCATE|[90]|Bytes:4
+14:31:58.0 (192179338)|VARIABLE_SCOPE_BEGIN|[90]|byName|Map<String,Projecten__c>|true|false
+14:31:58.0 (192190790)|VARIABLE_ASSIGNMENT|[90]|byName|{"s":1,"v":{}}|0x3d45e870
+14:31:58.0 (192222579)|HEAP_ALLOCATE|[91]|Bytes:5
+14:31:58.0 (192248043)|HEAP_ALLOCATE|[91]|Bytes:12
+14:31:58.0 (192254053)|VARIABLE_SCOPE_BEGIN|[91]|pr|Projecten__c|true|false
+14:31:58.0 (192265101)|VARIABLE_ASSIGNMENT|[91]|pr|{"s":1,"v":{"Name":"5700","Id":"a0q0E0000008S3WQAU"}}|0x6e59609c
+14:31:58.0 (192268199)|STATEMENT_EXECUTE|[91]
+14:31:58.0 (192269325)|STATEMENT_EXECUTE|[92]
+14:31:58.0 (192305102)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+14:31:58.0 (192316875)|HEAP_ALLOCATE|[91]|Bytes:5
+14:31:58.0 (192325191)|VARIABLE_ASSIGNMENT|[91]|pr|null|
+14:31:58.0 (192342834)|HEAP_ALLOCATE|[94]|Bytes:5
+14:31:58.0 (192350230)|HEAP_ALLOCATE|[94]|Bytes:4
+14:31:58.0 (192354027)|VARIABLE_SCOPE_BEGIN|[94]|p|Projecten__c|true|false
+14:31:58.0 (192463525)|VARIABLE_ASSIGNMENT|[94]|p|{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}|0x29b2a028
+14:31:58.0 (192469353)|STATEMENT_EXECUTE|[94]
+14:31:58.0 (192533425)|STATEMENT_EXECUTE|[95]
+14:31:58.0 (192542078)|HEAP_ALLOCATE|[94]|Bytes:5
+14:31:58.0 (192551289)|VARIABLE_ASSIGNMENT|[94]|p|null|
+14:31:58.0 (192556153)|METHOD_EXIT|[11]|01p2400000DcTyQ|ProjectUtil.checkName(List<Projecten__c>)
+14:31:58.0 (192560434)|STATEMENT_EXECUTE|[13]
+14:31:58.0 (192563427)|METHOD_EXIT|[3]|01p2400000DcTyQ|ProjectUtil.entry(TriggerParams)
+14:31:58.192 (192568845)|CUMULATIVE_LIMIT_USAGE
+14:31:58.192 (192568845)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 7 out of 100
+  Number of query rows: 8 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+14:31:58.192 (192568845)|CUMULATIVE_LIMIT_USAGE_END
+
+14:31:58.0 (193377294)|CODE_UNIT_FINISHED|ProjectTrigger on Projecten trigger event BeforeUpdate for [a0q0E0000008S3W]
+14:31:58.0 (200552154)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000qIfI|ProjectTrigger on Projecten trigger event AfterUpdate for [a0q0E0000008S3W]
+14:31:58.0 (200568224)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:31:58.0 (200586704)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:31:58.0 (200613898)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (200618560)|VARIABLE_SCOPE_BEGIN|[1]|this|ProjectTrigger|true|false
+14:31:58.0 (200631409)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x48c88648
+14:31:58.0 (200646077)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (200649060)|VARIABLE_SCOPE_BEGIN|[1]|this|ProjectTrigger|true|false
+14:31:58.0 (200654325)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x48c88648
+14:31:58.0 (200656868)|STATEMENT_EXECUTE|[1]
+14:31:58.0 (200658248)|STATEMENT_EXECUTE|[3]
+14:31:58.0 (200662119)|HEAP_ALLOCATE|[3]|Bytes:44
+14:31:58.0 (200704361)|CONSTRUCTOR_ENTRY|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+14:31:58.0 (200708493)|VARIABLE_SCOPE_BEGIN|[13]|this|TriggerParams|true|false
+14:31:58.0 (200722001)|VARIABLE_ASSIGNMENT|[13]|this|{}|0x2b456b4d
+14:31:58.0 (200726295)|VARIABLE_SCOPE_BEGIN|[13]|isBefore|Boolean|false|false
+14:31:58.0 (200730212)|VARIABLE_ASSIGNMENT|[13]|isBefore|false
+14:31:58.0 (200732068)|VARIABLE_SCOPE_BEGIN|[13]|isAfter|Boolean|false|false
+14:31:58.0 (200734193)|VARIABLE_ASSIGNMENT|[13]|isAfter|true
+14:31:58.0 (200735877)|VARIABLE_SCOPE_BEGIN|[13]|isInsert|Boolean|false|false
+14:31:58.0 (200738150)|VARIABLE_ASSIGNMENT|[13]|isInsert|false
+14:31:58.0 (200739749)|VARIABLE_SCOPE_BEGIN|[13]|isUpdate|Boolean|false|false
+14:31:58.0 (200741787)|VARIABLE_ASSIGNMENT|[13]|isUpdate|true
+14:31:58.0 (200743334)|VARIABLE_SCOPE_BEGIN|[13]|isDelete|Boolean|false|false
+14:31:58.0 (200745029)|VARIABLE_ASSIGNMENT|[13]|isDelete|false
+14:31:58.0 (200746419)|VARIABLE_SCOPE_BEGIN|[13]|isUndelete|Boolean|false|false
+14:31:58.0 (200748359)|VARIABLE_ASSIGNMENT|[13]|isUndelete|false
+14:31:58.0 (200749671)|VARIABLE_SCOPE_BEGIN|[13]|triggerNew|List<SObject>|true|false
+14:31:58.0 (200906750)|VARIABLE_ASSIGNMENT|[13]|triggerNew|{"s":1,"v":[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:31:58.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]}|0x798f7872
+14:31:58.0 (200912534)|VARIABLE_SCOPE_BEGIN|[13]|triggerOld|List<SObject>|true|false
+14:31:58.0 (201029157)|VARIABLE_ASSIGNMENT|[13]|triggerOld|{"s":1,"v":[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]}|0x38f12777
+14:31:58.0 (201034921)|VARIABLE_SCOPE_BEGIN|[13]|newMap|Map<Id,SObject>|true|false
+14:31:58.0 (201114369)|VARIABLE_ASSIGNMENT|[13]|newMap|{"s":1,"v":{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:31:58.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}}|0x34870ce7
+14:31:58.0 (201119069)|VARIABLE_SCOPE_BEGIN|[13]|oldMap|Map<Id,SObject>|true|false
+14:31:58.0 (201188567)|VARIABLE_ASSIGNMENT|[13]|oldMap|{"s":1,"v":{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}}|0x34181639
+14:31:58.0 (201197157)|SYSTEM_MODE_ENTER|true
+14:31:58.0 (201202276)|HEAP_ALLOCATE|[16]|Bytes:5
+14:31:58.0 (201206071)|STATEMENT_EXECUTE|[1]
+14:31:58.0 (201208345)|HEAP_ALLOCATE|[16]|Bytes:5
+14:31:58.0 (201209812)|STATEMENT_EXECUTE|[2]
+14:31:58.0 (201211072)|STATEMENT_EXECUTE|[3]
+14:31:58.0 (201212066)|STATEMENT_EXECUTE|[4]
+14:31:58.0 (201213085)|STATEMENT_EXECUTE|[5]
+14:31:58.0 (201214163)|STATEMENT_EXECUTE|[6]
+14:31:58.0 (201215211)|STATEMENT_EXECUTE|[7]
+14:31:58.0 (201216210)|STATEMENT_EXECUTE|[8]
+14:31:58.0 (201217228)|STATEMENT_EXECUTE|[9]
+14:31:58.0 (201218440)|STATEMENT_EXECUTE|[10]
+14:31:58.0 (201219596)|STATEMENT_EXECUTE|[11]
+14:31:58.0 (201233507)|STATEMENT_EXECUTE|[15]
+14:31:58.0 (201234932)|STATEMENT_EXECUTE|[16]
+14:31:58.0 (201237371)|HEAP_ALLOCATE|[16]|Bytes:5
+14:31:58.0 (201243812)|VARIABLE_ASSIGNMENT|[16]|this.isBefore|false|0x2b456b4d
+14:31:58.0 (201245621)|STATEMENT_EXECUTE|[17]
+14:31:58.0 (201247438)|HEAP_ALLOCATE|[17]|Bytes:5
+14:31:58.0 (201250826)|VARIABLE_ASSIGNMENT|[17]|this.isAfter|true|0x2b456b4d
+14:31:58.0 (201252380)|STATEMENT_EXECUTE|[18]
+14:31:58.0 (201254003)|HEAP_ALLOCATE|[18]|Bytes:5
+14:31:58.0 (201257388)|VARIABLE_ASSIGNMENT|[18]|this.isInsert|false|0x2b456b4d
+14:31:58.0 (201258660)|STATEMENT_EXECUTE|[19]
+14:31:58.0 (201260256)|HEAP_ALLOCATE|[19]|Bytes:5
+14:31:58.0 (201263688)|VARIABLE_ASSIGNMENT|[19]|this.isUpdate|true|0x2b456b4d
+14:31:58.0 (201265002)|STATEMENT_EXECUTE|[20]
+14:31:58.0 (201266640)|HEAP_ALLOCATE|[20]|Bytes:5
+14:31:58.0 (201270154)|VARIABLE_ASSIGNMENT|[20]|this.isDelete|false|0x2b456b4d
+14:31:58.0 (201271488)|STATEMENT_EXECUTE|[21]
+14:31:58.0 (201273119)|HEAP_ALLOCATE|[21]|Bytes:5
+14:31:58.0 (201276101)|VARIABLE_ASSIGNMENT|[21]|this.isUndelete|false|0x2b456b4d
+14:31:58.0 (201277440)|STATEMENT_EXECUTE|[22]
+14:31:58.0 (201360768)|VARIABLE_ASSIGNMENT|[22]|this.triggerNew|{"s":1,"v":[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:31:58.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]}|0x2b456b4d
+14:31:58.0 (201365484)|STATEMENT_EXECUTE|[23]
+14:31:58.0 (201443374)|VARIABLE_ASSIGNMENT|[23]|this.triggerOld|{"s":1,"v":[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]}|0x2b456b4d
+14:31:58.0 (201448366)|STATEMENT_EXECUTE|[24]
+14:31:58.0 (201522592)|VARIABLE_ASSIGNMENT|[24]|this.newMap|{"s":1,"v":{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:31:58.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}}|0x2b456b4d
+14:31:58.0 (201528161)|STATEMENT_EXECUTE|[25]
+14:31:58.0 (201597702)|VARIABLE_ASSIGNMENT|[25]|this.oldMap|{"s":1,"v":{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}}|0x2b456b4d
+14:31:58.0 (201605068)|SYSTEM_MODE_EXIT|true
+14:31:58.0 (201621152)|CONSTRUCTOR_EXIT|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+14:31:58.0 (201628113)|METHOD_ENTRY|[3]|01p2400000DcTyQ|ProjectUtil.entry(TriggerParams)
+14:31:58.0 (201631509)|VARIABLE_SCOPE_BEGIN|[2]|triggerParams|TriggerParams|true|false
+14:31:58.0 (201654923)|VARIABLE_ASSIGNMENT|[2]|triggerParams|{"isAfter":true,"isBefore":false,"isDelete":false,"isInsert":false,"isUndelete":false,"isUpdate":true,"newMap":"0x34870ce7","oldMap":"0x34181639","triggerNew":"0x798f7872","triggerOld":"0x38f12777"}|0x2b456b4d
+14:31:58.0 (201659378)|STATEMENT_EXECUTE|[2]
+14:31:58.0 (201660621)|STATEMENT_EXECUTE|[3]
+14:31:58.0 (201665562)|VARIABLE_SCOPE_BEGIN|[3]|triggerNew|List<Projecten__c>|true|false
+14:31:58.0 (201746804)|VARIABLE_ASSIGNMENT|[3]|triggerNew|{"s":1,"v":[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:31:58.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]}|0x798f7872
+14:31:58.0 (201751494)|STATEMENT_EXECUTE|[4]
+14:31:58.0 (201755760)|VARIABLE_SCOPE_BEGIN|[4]|triggerOld|List<Projecten__c>|true|false
+14:31:58.0 (201825707)|VARIABLE_ASSIGNMENT|[4]|triggerOld|{"s":1,"v":[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]}|0x38f12777
+14:31:58.0 (201830132)|STATEMENT_EXECUTE|[5]
+14:31:58.0 (201834596)|VARIABLE_SCOPE_BEGIN|[5]|oldMap|Map<Id,Projecten__c>|true|false
+14:31:58.0 (201911319)|VARIABLE_ASSIGNMENT|[5]|oldMap|{"s":1,"v":{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}}|0x34181639
+14:31:58.0 (201916651)|STATEMENT_EXECUTE|[6]
+14:31:58.0 (201920135)|VARIABLE_SCOPE_BEGIN|[6]|newMap|Map<Id,Projecten__c>|true|false
+14:31:58.0 (201990257)|VARIABLE_ASSIGNMENT|[6]|newMap|{"s":1,"v":{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:31:58.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}}|0x34870ce7
+14:31:58.0 (201997477)|STATEMENT_EXECUTE|[16]
+14:31:58.0 (201999890)|STATEMENT_EXECUTE|[17]
+14:31:58.0 (202000894)|STATEMENT_EXECUTE|[18]
+14:31:58.0 (202004607)|HEAP_ALLOCATE|[18]|Bytes:11
+14:31:58.0 (202010059)|HEAP_ALLOCATE|[18]|Bytes:9
+14:31:58.0 (202015630)|HEAP_ALLOCATE|[18]|Bytes:4
+14:31:58.0 (202071590)|HEAP_ALLOCATE|[18]|Bytes:26
+14:31:58.0 (202084278)|HEAP_ALLOCATE|[18]|Bytes:4
+14:31:58.0 (202090898)|HEAP_ALLOCATE|[18]|Bytes:7
+14:31:58.0 (202116662)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:31:58.0 (202123785)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:31:58.0 (221578440)|STATEMENT_EXECUTE|[19]
+14:31:58.0 (221591965)|METHOD_ENTRY|[19]|01p2400000DcTyQ|ProjectUtil.calculateRollupSum(List<Projecten__c>, List<Projecten__c>)
+14:31:58.0 (221605613)|VARIABLE_SCOPE_BEGIN|[44]|newPr|List<Projecten__c>|true|false
+14:31:58.0 (221720598)|VARIABLE_ASSIGNMENT|[44]|newPr|{"s":1,"v":[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:31:58.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]}|0x798f7872
+14:31:58.0 (221726693)|VARIABLE_SCOPE_BEGIN|[44]|oldPr|List<Projecten__c>|true|false
+14:31:58.0 (221806536)|VARIABLE_ASSIGNMENT|[44]|oldPr|{"s":1,"v":[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]}|0x38f12777
+14:31:58.0 (221814113)|STATEMENT_EXECUTE|[44]
+14:31:58.0 (221815635)|STATEMENT_EXECUTE|[45]
+14:31:58.0 (221985402)|USER_DEBUG|[45]|DEBUG|(Projecten__c:{Id=a0q0E0000008S3WQAU, OwnerId=00524000001e3UjAAI, IsDeleted=false, Name=5700, CreatedDate=2017-01-10 12:22:32, CreatedById=00524000001e3UjAAI, LastModifiedDate=2017-01-26 13:31:58, LastModifiedById=00524000001e3UjAAI, SystemModstamp=2017-01-26 13:31:58, LastActivityDate=null, LastViewedDate=null, LastReferencedDate=null, Account__c=0010E000002eEwIQAU, Project_omschrijving__c=Opslag security assets, SF_ID__c=null, Actueel_aantal_palletplaatsen__c=0, Aantal_palletplaatsen__c=0, Projectleider__c=Bedrijfsbureau, Project_amscheyving__c=null})
+14:31:58.0 (221996130)|STATEMENT_EXECUTE|[46]
+14:31:58.0 (222001569)|HEAP_ALLOCATE|[46]|Bytes:4
+14:31:58.0 (222024381)|VARIABLE_SCOPE_BEGIN|[46]|accIds|Set<Id>|true|false
+14:31:58.0 (222038735)|VARIABLE_ASSIGNMENT|[46]|accIds|{"s":1,"v":[]}|0x4ee54ac
+14:31:58.0 (222067005)|HEAP_ALLOCATE|[48]|Bytes:5
+14:31:58.0 (222080126)|VARIABLE_SCOPE_BEGIN|[48]|pr|Projecten__c|true|false
+14:31:58.0 (222174808)|VARIABLE_ASSIGNMENT|[48]|pr|{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:31:58.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}|0x2775902f
+14:31:58.0 (222180237)|STATEMENT_EXECUTE|[48]
+14:31:58.0 (222182008)|STATEMENT_EXECUTE|[49]
+14:31:58.0 (222222489)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (222235280)|HEAP_ALLOCATE|[48]|Bytes:5
+14:31:58.0 (222245304)|VARIABLE_ASSIGNMENT|[48]|pr|null|
+14:31:58.0 (222248256)|STATEMENT_EXECUTE|[51]
+14:31:58.0 (222266241)|HEAP_ALLOCATE|[52]|Bytes:5
+14:31:58.0 (222276065)|VARIABLE_SCOPE_BEGIN|[52]|pr|Projecten__c|true|false
+14:31:58.0 (222362224)|VARIABLE_ASSIGNMENT|[52]|pr|{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:30:54.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:30:54.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}|0x17213c94
+14:31:58.0 (222366998)|STATEMENT_EXECUTE|[52]
+14:31:58.0 (222368377)|STATEMENT_EXECUTE|[53]
+14:31:58.0 (222393161)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (222404341)|HEAP_ALLOCATE|[52]|Bytes:5
+14:31:58.0 (222412500)|VARIABLE_ASSIGNMENT|[52]|pr|null|
+14:31:58.0 (222415110)|STATEMENT_EXECUTE|[57]
+14:31:58.0 (222468298)|HEAP_ALLOCATE|[57]|Bytes:4
+14:31:58.0 (222475503)|HEAP_ALLOCATE|[57]|Bytes:77
+14:31:58.0 (222480811)|HEAP_ALLOCATE|[57]|Bytes:4
+14:31:58.0 (222511482)|HEAP_ALLOCATE|[57]|Bytes:8
+14:31:58.0 (222518552)|HEAP_ALLOCATE|[57]|Bytes:8
+14:31:58.0 (222942894)|SOQL_EXECUTE_BEGIN|[57]|Aggregations:0|SELECT Id, Actueel_aantal_palletplaatsen1__c FROM Account WHERE id = :tmpVar1
+14:31:58.0 (224472638)|SOQL_EXECUTE_END|[57]|Rows:1
+14:31:58.0 (224486635)|HEAP_ALLOCATE|[57]|Bytes:8
+14:31:58.0 (224497547)|HEAP_ALLOCATE|[57]|Bytes:102
+14:31:58.0 (224532203)|HEAP_ALLOCATE|[57]|Bytes:8
+14:31:58.0 (224569396)|HEAP_ALLOCATE|[57]|Bytes:12
+14:31:58.0 (224576254)|HEAP_ALLOCATE|[57]|Bytes:4
+14:31:58.0 (224583000)|VARIABLE_SCOPE_BEGIN|[57]|accById|Map<Id,Account>|true|false
+14:31:58.0 (224605994)|VARIABLE_ASSIGNMENT|[57]|accById|{"s":1,"v":{"0010E000002eEwIQAU":{"s":2,"v":{"Id":"0010E000002eEwIQAU","Actueel_aantal_palle (13 more) ...":0}}}}|0x5202ab14
+14:31:58.0 (224640649)|HEAP_ALLOCATE|[59]|Bytes:5
+14:31:58.0 (224654249)|VARIABLE_SCOPE_BEGIN|[59]|pr|Projecten__c|true|false
+14:31:58.0 (224763394)|VARIABLE_ASSIGNMENT|[59]|pr|{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:31:58.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}|0x2775902f
+14:31:58.0 (224769628)|STATEMENT_EXECUTE|[59]
+14:31:58.0 (224832529)|HEAP_ALLOCATE|[60]|Bytes:28
+14:31:58.0 (224852845)|STATEMENT_EXECUTE|[60]
+14:31:58.0 (224866799)|HEAP_ALLOCATE|[59]|Bytes:5
+14:31:58.0 (224882254)|VARIABLE_ASSIGNMENT|[59]|pr|null|
+14:31:58.0 (224909066)|HEAP_ALLOCATE|[65]|Bytes:5
+14:31:58.0 (224919864)|VARIABLE_SCOPE_BEGIN|[65]|pr|Projecten__c|true|false
+14:31:58.0 (225026934)|VARIABLE_ASSIGNMENT|[65]|pr|{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-01-26T13:31:58.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}|0x2775902f
+14:31:58.0 (225033669)|STATEMENT_EXECUTE|[65]
+14:31:58.0 (225053312)|STATEMENT_EXECUTE|[66]
+14:31:58.0 (225054993)|STATEMENT_EXECUTE|[67]
+14:31:58.0 (225091119)|HEAP_ALLOCATE|[67]|Bytes:28
+14:31:58.0 (225141137)|HEAP_ALLOCATE|[67]|Bytes:28
+14:31:58.0 (225143994)|HEAP_ALLOCATE|[67]|Bytes:28
+14:31:58.0 (225196521)|VARIABLE_ASSIGNMENT|[67]|this.Actueel_aantal_palletplaatsen1__c|0|0xd915b29
+14:31:58.0 (225208683)|HEAP_ALLOCATE|[65]|Bytes:5
+14:31:58.0 (225218374)|VARIABLE_ASSIGNMENT|[65]|pr|null|
+14:31:58.0 (225238621)|STATEMENT_EXECUTE|[72]
+14:31:58.0 (225240071)|STATEMENT_EXECUTE|[80]
+14:31:58.0 (225253492)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:31:58.0 (225261256)|HEAP_ALLOCATE|[80]|Bytes:109
+14:31:58.0 (225299571)|USER_DEBUG|[80]|DEBUG|(Account:{Id=0010E000002eEwIQAU, Actueel_aantal_palletplaatsen1__c=0})
+14:31:58.0 (225305385)|STATEMENT_EXECUTE|[81]
+14:31:58.0 (225320905)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:31:58.0 (225326241)|HEAP_ALLOCATE|[81]|Bytes:109
+14:31:58.0 (225352682)|DML_BEGIN|[81]|Op:Update|Type:Account|Rows:1
+14:31:58.0 (225371108)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:31:58.0 (242432722)|DML_END|[81]
+14:31:58.0 (242456400)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:31:58.0 (242467604)|METHOD_EXIT|[19]|01p2400000DcTyQ|ProjectUtil.calculateRollupSum(List<Projecten__c>, List<Projecten__c>)
+14:31:58.0 (242476134)|STATEMENT_EXECUTE|[22]
+14:31:58.0 (242480575)|METHOD_EXIT|[3]|01p2400000DcTyQ|ProjectUtil.entry(TriggerParams)
+14:31:58.242 (242488326)|CUMULATIVE_LIMIT_USAGE
+14:31:58.242 (242488326)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 8 out of 100
+  Number of query rows: 9 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 1 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+14:31:58.242 (242488326)|CUMULATIVE_LIMIT_USAGE_END
+
+14:31:58.0 (243416148)|CODE_UNIT_FINISHED|ProjectTrigger on Projecten trigger event AfterUpdate for [a0q0E0000008S3W]
+14:31:58.0 (243522227)|DML_END|[148]
+14:31:58.0 (243535652)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+14:31:58.0 (243551879)|METHOD_EXIT|[12]|01p2400000DUoK9|SubLocationDetailUtil.calculateSublocationsForProject(List<SublocationDetail__c>)
+14:31:58.0 (243560669)|STATEMENT_EXECUTE|[15]
+14:31:58.0 (243564286)|STATEMENT_EXECUTE|[21]
+14:31:58.0 (243565448)|STATEMENT_EXECUTE|[22]
+14:31:58.0 (243583586)|METHOD_ENTRY|[22]|01p2400000DUoK9|SubLocationDetailUtil.updateRecordsForReport(List<SublocationDetail__c>, Map<Id,SublocationDetail__c>)
+14:31:58.0 (243607432)|VARIABLE_SCOPE_BEGIN|[160]|triggerNew|List<SublocationDetail__c>|true|false
+14:31:58.0 (243764373)|VARIABLE_ASSIGNMENT|[160]|triggerNew|{"s":1,"v":[{"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:31:58.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":false,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Project","WWW_Detail__c":"a0s0E0000004E33QAE","LastModifiedById":"00524000001e3UjAAI"}]}|0x4e40e9bc
+14:31:58.0 (243771593)|VARIABLE_SCOPE_BEGIN|[160]|oldMap|Map<Id,SublocationDetail__c>|true|false
+14:31:58.0 (243881360)|VARIABLE_ASSIGNMENT|[160]|oldMap|{"s":1,"v":{"a080E000000EdB0QAK":{"LastModifiedDate":"2017-01-26T13:30:53.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:30:53.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":true,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004E2yQAE","LastModifiedById":"00524000001e3UjAAI"}}}|0x3dc5142a
+14:31:58.0 (243894202)|HEAP_ALLOCATE|[162]|Bytes:5
+14:31:58.0 (243898240)|STATEMENT_EXECUTE|[161]
+14:31:58.0 (243899541)|STATEMENT_EXECUTE|[162]
+14:31:58.0 (243913669)|METHOD_ENTRY|[162]|01p2400000DUoK9|SubLocationDetailUtil.prepareRecordsForUpdate(Map<Id,SublocationDetail__c>, List<SublocationDetail__c>)
+14:31:58.0 (243970233)|VARIABLE_SCOPE_BEGIN|[343]|oldSubLocDetails|Map<Id,SublocationDetail__c>|true|false
+14:31:58.0 (244073535)|VARIABLE_ASSIGNMENT|[343]|oldSubLocDetails|{"s":1,"v":{"a080E000000EdB0QAK":{"LastModifiedDate":"2017-01-26T13:30:53.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:30:53.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":true,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Hub","WWW_Detail__c":"a0s0E0000004E2yQAE","LastModifiedById":"00524000001e3UjAAI"}}}|0x3dc5142a
+14:31:58.0 (244081236)|VARIABLE_SCOPE_BEGIN|[343]|newSubLocDetailList|List<SublocationDetail__c>|true|false
+14:31:58.0 (244169747)|VARIABLE_ASSIGNMENT|[343]|newSubLocDetailList|{"s":1,"v":[{"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:31:58.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":false,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Project","WWW_Detail__c":"a0s0E0000004E33QAE","LastModifiedById":"00524000001e3UjAAI"}]}|0x4e40e9bc
+14:31:58.0 (244180432)|HEAP_ALLOCATE|[345]|Bytes:5
+14:31:58.0 (244184484)|STATEMENT_EXECUTE|[344]
+14:31:58.0 (244185879)|STATEMENT_EXECUTE|[345]
+14:31:58.0 (244188869)|HEAP_ALLOCATE|[345]|Bytes:29
+14:31:58.0 (244218480)|USER_DEBUG|[345]|DEBUG|OBDEB prepareRecordsForUpdate
+14:31:58.0 (244224423)|STATEMENT_EXECUTE|[346]
+14:31:58.0 (244229221)|HEAP_ALLOCATE|[346]|Bytes:4
+14:31:58.0 (244247466)|VARIABLE_SCOPE_BEGIN|[346]|whereLocationChanged|List<SublocationDetail__c>|true|false
+14:31:58.0 (244252507)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (244260164)|VARIABLE_ASSIGNMENT|[346]|whereLocationChanged|{"s":1,"v":[]}|0x4c6510f6
+14:31:58.0 (244262324)|STATEMENT_EXECUTE|[347]
+14:31:58.0 (244266326)|HEAP_ALLOCATE|[347]|Bytes:4
+14:31:58.0 (244281363)|VARIABLE_SCOPE_BEGIN|[347]|oldWwwDetailIds|Set<Id>|true|false
+14:31:58.0 (244292883)|VARIABLE_ASSIGNMENT|[347]|oldWwwDetailIds|{"s":1,"v":[]}|0x23608adc
+14:31:58.0 (244294805)|STATEMENT_EXECUTE|[348]
+14:31:58.0 (244297004)|HEAP_ALLOCATE|[348]|Bytes:4
+14:31:58.0 (244307318)|VARIABLE_SCOPE_BEGIN|[348]|newWwwDetailIds|Set<Id>|true|false
+14:31:58.0 (244314245)|VARIABLE_ASSIGNMENT|[348]|newWwwDetailIds|{"s":1,"v":[]}|0x8bb39f6
+14:31:58.0 (244316067)|STATEMENT_EXECUTE|[349]
+14:31:58.0 (244318135)|HEAP_ALLOCATE|[349]|Bytes:4
+14:31:58.0 (244326427)|VARIABLE_SCOPE_BEGIN|[349]|changedSubLocsIds|Set<Id>|true|false
+14:31:58.0 (244332520)|VARIABLE_ASSIGNMENT|[349]|changedSubLocsIds|{"s":1,"v":[]}|0x305f338e
+14:31:58.0 (244358137)|HEAP_ALLOCATE|[351]|Bytes:5
+14:31:58.0 (244372849)|VARIABLE_SCOPE_BEGIN|[351]|sld|SublocationDetail__c|true|false
+14:31:58.0 (244476252)|VARIABLE_ASSIGNMENT|[351]|sld|{"LastModifiedDate":"2017-01-26T13:31:58.000Z","IsDeleted":false,"ProjectCode__c":"5700","Name":"SD-6273","SystemModstamp":"2017-01-26T13:31:58.000Z","Number_of_items__c":1,"CreatedById":"00524000001e3UjAAI","Reserved__c":false,"CreatedDate":"2017-01-21T15:26:01.000Z","Location__c":"a0B0E0000009Mj1UAE","To_sum__c":false,"Id":"a080E000000EdB0QAK","WWW_Detail_r_RecordT (20 more) ...":"Delivered_2_Project","WWW_Detail__c":"a0s0E0000004E33QAE","LastModifiedById":"00524000001e3UjAAI"}|0x373ff3fd
+14:31:58.0 (244482762)|STATEMENT_EXECUTE|[352]
+14:31:58.0 (244629122)|STATEMENT_EXECUTE|[354]
+14:31:58.0 (244631410)|STATEMENT_EXECUTE|[355]
+14:31:58.0 (244651874)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (244657425)|STATEMENT_EXECUTE|[356]
+14:31:58.0 (244684210)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (244688009)|STATEMENT_EXECUTE|[357]
+14:31:58.0 (244700396)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (244703946)|STATEMENT_EXECUTE|[358]
+14:31:58.0 (244714639)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (244725834)|HEAP_ALLOCATE|[351]|Bytes:5
+14:31:58.0 (244736519)|VARIABLE_ASSIGNMENT|[351]|sld|null|
+14:31:58.0 (244753938)|STATEMENT_EXECUTE|[363]
+14:31:58.0 (244755265)|STATEMENT_EXECUTE|[365]
+14:31:58.0 (244758830)|HEAP_ALLOCATE|[365]|Bytes:4
+14:31:58.0 (244795167)|VARIABLE_SCOPE_BEGIN|[365]|oldProjectLocations|List<ProjectLocation__c>|true|false
+14:31:58.0 (244799933)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (244807839)|VARIABLE_ASSIGNMENT|[365]|oldProjectLocations|{"s":1,"v":[]}|0x73c821fe
+14:31:58.0 (244810761)|STATEMENT_EXECUTE|[366]
+14:31:58.0 (244842192)|HEAP_ALLOCATE|[366]|Bytes:4
+14:31:58.0 (244846811)|HEAP_ALLOCATE|[366]|Bytes:4
+14:31:58.0 (244872010)|HEAP_ALLOCATE|[366]|Bytes:8
+14:31:58.0 (244876616)|HEAP_ALLOCATE|[366]|Bytes:8
+14:31:58.0 (245048634)|SOQL_EXECUTE_BEGIN|[366]|Aggregations:0|SELECT Id, Name, Project__c FROM WWW_Detail__c WHERE Id = :tmpVar1
+14:31:58.0 (255167695)|SOQL_EXECUTE_END|[366]|Rows:1
+14:31:58.0 (255182510)|HEAP_ALLOCATE|[366]|Bytes:8
+14:31:58.0 (255194725)|HEAP_ALLOCATE|[366]|Bytes:79
+14:31:58.0 (255208480)|HEAP_ALLOCATE|[366]|Bytes:8
+14:31:58.0 (255243840)|HEAP_ALLOCATE|[366]|Bytes:16
+14:31:58.0 (255250796)|HEAP_ALLOCATE|[366]|Bytes:4
+14:31:58.0 (255258783)|VARIABLE_SCOPE_BEGIN|[366]|wwwDetailsById|Map<Id,WWW_Detail__c>|true|false
+14:31:58.0 (255284008)|VARIABLE_ASSIGNMENT|[366]|wwwDetailsById|{"s":1,"v":{"a0s0E0000004E2yQAE":{"s":2,"v":{"Id":"a0s0E0000004E2yQAE","Name":"WWW-D-9957","Project__c":"a0q0E0000008S3WQAU"}}}}|0x57fca33f
+14:31:58.0 (255293379)|HEAP_ALLOCATE|[368]|Bytes:4
+14:31:58.0 (255325441)|HEAP_ALLOCATE|[368]|Bytes:4
+14:31:58.0 (255347803)|HEAP_ALLOCATE|[368]|Bytes:5
+14:31:58.0 (255378585)|HEAP_ALLOCATE|[368]|Bytes:4
+14:31:58.0 (255382010)|VARIABLE_SCOPE_BEGIN|[368]|sdId|Id|false|false
+14:31:58.0 (255496893)|VARIABLE_ASSIGNMENT|[368]|sdId|"a080E000000EdB0QAK"
+14:31:58.0 (255501928)|STATEMENT_EXECUTE|[369]
+14:31:58.0 (255503372)|STATEMENT_EXECUTE|[370]
+14:31:58.0 (255521504)|HEAP_ALLOCATE|[370]|Bytes:4
+14:31:58.0 (255617395)|VARIABLE_SCOPE_BEGIN|[370]|pl|ProjectLocation__c|true|false
+14:31:58.0 (255627608)|VARIABLE_ASSIGNMENT|[370]|pl|{}|0x36abc5f2
+14:31:58.0 (255629959)|STATEMENT_EXECUTE|[371]
+14:31:58.0 (255749009)|VARIABLE_ASSIGNMENT|[371]|this.Location__c|"a0B0E0000009Mj1UAE"|0x36abc5f2
+14:31:58.0 (255752331)|STATEMENT_EXECUTE|[372]
+14:31:58.0 (255845198)|VARIABLE_ASSIGNMENT|[372]|this.Project__c|"a0q0E0000008S3WQAU"|0x36abc5f2
+14:31:58.0 (255848692)|STATEMENT_EXECUTE|[373]
+14:31:58.0 (255872794)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:31:58.0 (255877974)|STATEMENT_EXECUTE|[375]
+14:31:58.0 (255881586)|HEAP_ALLOCATE|[375]|Bytes:31
+14:31:58.0 (255907004)|HEAP_ALLOCATE|[375]|Bytes:1
+14:31:58.0 (255913605)|HEAP_ALLOCATE|[375]|Bytes:6
+14:31:58.0 (255946411)|HEAP_ALLOCATE|[375]|Bytes:84
+14:31:58.0 (255962649)|HEAP_ALLOCATE|[375]|Bytes:122
+14:31:58.0 (255972928)|USER_DEBUG|[375]|DEBUG|OBDEB oldProjectLocations -->> 1 -->> (ProjectLocation__c:{Location__c=a0B0E0000009Mj1UAE, Project__c=a0q0E0000008S3WQAU})
+14:31:58.0 (255985479)|HEAP_ALLOCATE|[368]|Bytes:5
+14:31:58.0 (255995188)|VARIABLE_ASSIGNMENT|[368]|sdId|null
+14:31:58.0 (255997996)|STATEMENT_EXECUTE|[378]
+14:31:58.0 (256006187)|METHOD_EXIT|[162]|01p2400000DUoK9|SubLocationDetailUtil.prepareRecordsForUpdate(Map<Id,SublocationDetail__c>, List<SublocationDetail__c>)
+14:31:58.0 (256011152)|VARIABLE_SCOPE_BEGIN|[162]|prepareDataForUpdate|List<ProjectLocation__c>|true|false
+14:31:58.0 (256015595)|VARIABLE_ASSIGNMENT|[162]|prepareDataForUpdate|null|
+14:31:58.0 (256020666)|METHOD_EXIT|[22]|01p2400000DUoK9|SubLocationDetailUtil.updateRecordsForReport(List<SublocationDetail__c>, Map<Id,SublocationDetail__c>)
+14:31:58.0 (256028052)|STATEMENT_EXECUTE|[25]
+14:31:58.0 (256030856)|SYSTEM_MODE_EXIT|false
+14:31:58.0 (256036884)|METHOD_EXIT|[10]|01p2400000DUoK9|SubLocationDetailUtil.entry(TriggerParams)
+14:31:58.256 (256043985)|CUMULATIVE_LIMIT_USAGE
+14:31:58.256 (256043985)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 9 out of 100
+  Number of query rows: 10 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 1 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+14:31:58.256 (256043985)|CUMULATIVE_LIMIT_USAGE_END
+
+14:31:58.0 (257191215)|CODE_UNIT_FINISHED|SubLocationDetailTrigger on SublocationDetail trigger event AfterUpdate for [a080E000000EdB0]
+14:31:58.0 (264931441)|CODE_UNIT_FINISHED|TRIGGERS
+14:31:58.0 (264937030)|EXECUTION_FINISHED

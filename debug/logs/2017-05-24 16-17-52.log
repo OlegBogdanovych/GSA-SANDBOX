@@ -1,0 +1,49 @@
+39.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+15:17:50.0 (296713)|USER_INFO|[EXTERNAL]|00524000001e3Uj|bedrijfsbureau@gsa.nl.sandbox|Midden-Europese standaardtijd|GMT+02:00
+15:17:50.0 (323077)|EXECUTION_STARTED
+15:17:50.0 (327372)|CODE_UNIT_STARTED|[EXTERNAL]|0669E0000000KhW|VF: /apex/ProjectItemsAfroepen
+15:17:50.0 (766488)|VF_DESERIALIZE_VIEWSTATE_BEGIN|0669E0000000KhW
+15:17:50.0 (7119635)|VF_DESERIALIZE_VIEWSTATE_END
+15:17:50.0 (7610059)|SYSTEM_MODE_ENTER|true
+15:17:50.0 (7887262)|SYSTEM_MODE_ENTER|false
+15:17:50.0 (7892645)|SYSTEM_MODE_EXIT|false
+15:17:50.0 (7903927)|SYSTEM_MODE_ENTER|false
+15:17:50.0 (7908549)|SYSTEM_MODE_EXIT|false
+15:17:50.0 (8034572)|SYSTEM_MODE_ENTER|true
+15:17:50.0 (8061032)|SYSTEM_MODE_ENTER|false
+15:17:50.0 (8066012)|SYSTEM_MODE_EXIT|false
+15:17:50.0 (8248185)|SYSTEM_MODE_ENTER|true
+15:17:50.0 (8414554)|SYSTEM_MODE_ENTER|false
+15:17:50.0 (8482522)|USER_DEBUG|[40]|DEBUG|OBDEB PROJ ID -->> a0q9E0000006AJvQAM
+15:17:50.0 (12665139)|SOQL_EXECUTE_BEGIN|[45]|Aggregations:0|SELECT Id, Name, Project__c, Hub_Building_Site__c, Hub_Building_Site__r.Name, Curr_Items_To_Invoke__c, Item__c, Item__r.Name, Item__r.Staat__c, Item__r.Sizes__c, Item__r.Diameter__c, Item__r.Merk__c, Item__r.Materiaal__c, Item__r.Kleur__c, Item__r.Kind_Of_Packages__c FROM WWW__c WHERE Project__c = :tmpVar1
+15:17:50.0 (23564223)|SOQL_EXECUTE_END|[45]|Rows:2
+15:17:50.0 (24348410)|USER_DEBUG|[58]|DEBUG|(ItemsList:[isSelected=false, wwwRecord=WWW__c:{Id=a0t9E0000001c7AQAQ, Name=WWW-13998, Project__c=a0q9E0000006AJvQAM, Hub_Building_Site__c=a029E000001WpiQQAS, Curr_Items_To_Invoke__c=104, Item__c=a0A9E000000h4EwUAI}], ItemsList:[isSelected=false, wwwRecord=WWW__c:{Id=a0t9E0000002HlfQAE, Name=WWW-14004, Project__c=a0q9E0000006AJvQAM, Hub_Building_Site__c=a029E000001WpiQQAS, Curr_Items_To_Invoke__c=30, Item__c=a0A9E000000kAI3UAM}])
+15:17:50.0 (24361721)|SYSTEM_MODE_EXIT|false
+15:17:50.0 (29146923)|SYSTEM_MODE_ENTER|true
+15:17:50.0 (29193903)|SYSTEM_MODE_ENTER|false
+15:17:50.0 (29199733)|SYSTEM_MODE_EXIT|false
+15:17:50.0 (29338448)|SYSTEM_MODE_ENTER|true
+15:17:50.0 (29362596)|SYSTEM_MODE_ENTER|false
+15:17:50.0 (29366676)|SYSTEM_MODE_EXIT|false
+15:17:50.0 (29432299)|SYSTEM_MODE_ENTER|true
+15:17:50.0 (36071761)|VF_SERIALIZE_VIEWSTATE_BEGIN|0669E0000000KhW
+15:17:50.0 (38512404)|VF_SERIALIZE_VIEWSTATE_END
+15:17:50.40 (40847978)|CUMULATIVE_LIMIT_USAGE
+15:17:50.40 (40847978)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:17:50.40 (40847978)|CUMULATIVE_LIMIT_USAGE_END
+
+15:17:50.0 (40887168)|CODE_UNIT_FINISHED|VF: /apex/ProjectItemsAfroepen
+15:17:50.0 (41641598)|EXECUTION_FINISHED

@@ -1,0 +1,656 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 172
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "NewDeliveredExtension",
+            "parameters": [
+                {
+                    "name": "controller",
+                    "type": "StandardController"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p2400000DUtXTAA1",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p2400000DUtXTAA1",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 193
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getProjects",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 208
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getTimes",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 214
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getrecordTypes",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 220
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getSubs",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 224
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getOccupiedSubs",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 239
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "goToNewView",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 245
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "redBack",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 251
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getLocationsForDelToPr",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 257
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "setWWW",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 262
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "saveDetail",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        }
+    ],
+    "name": "NewDeliveredExtension",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "www",
+            "references": [],
+            "type": "WWW__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 12
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 23
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selectedTime",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 32
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selectedTime2",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 41
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selectedTime3",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 50
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selectedTime4",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 68
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selectedTime6",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 77
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selectedTime7",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 87
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "invoked",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 95
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "rejected",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 103
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "reserved",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 111
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "delToProj",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 120
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "delToHub",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 138
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sublocations1",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 147
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "occupiedSublocs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 156
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "wwwById",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 165
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "wwwId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 166
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "projectId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 168
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "isChecked",
+            "references": [],
+            "type": "Id"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "NewDeliveredExtension",
+        "references": [],
+        "type": "NewDeliveredExtension"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 172
+            },
+            "modifiers": [],
+            "name": "controller",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 175
+            },
+            "modifiers": [],
+            "name": "recByNames",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 194
+            },
+            "modifiers": [],
+            "name": "options",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 195
+            },
+            "modifiers": [],
+            "name": "prById",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 198
+            },
+            "modifiers": [],
+            "name": "rec",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 209
+            },
+            "modifiers": [],
+            "name": "options",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 215
+            },
+            "modifiers": [],
+            "name": "options",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 240
+            },
+            "modifiers": [],
+            "name": "pr",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 246
+            },
+            "modifiers": [],
+            "name": "pr",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 252
+            },
+            "modifiers": [],
+            "name": "options",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 264
+            },
+            "modifiers": [],
+            "name": "paramDateOfDelivery",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 283
+            },
+            "modifiers": [],
+            "name": "fieldsValidationError",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 285
+            },
+            "modifiers": [],
+            "name": "myMsg",
+            "references": [],
+            "type": "Message"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 290
+            },
+            "modifiers": [],
+            "name": "locationWithSubs",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 298
+            },
+            "modifiers": [],
+            "name": "fullURL",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 301
+            },
+            "modifiers": [],
+            "name": "afroepenAgenda",
+            "references": [],
+            "type": "AfroepenAgenda__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 312
+            },
+            "modifiers": [],
+            "name": "locDets",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 317
+            },
+            "modifiers": [],
+            "name": "message",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 319
+            },
+            "modifiers": [],
+            "name": "myMsg",
+            "references": [],
+            "type": "Message"
+        }
+    ]
+}

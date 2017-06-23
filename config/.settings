@@ -1,0 +1,17 @@
+{
+    "projectName": "GSA-SANDBOX",
+    "username": "bedrijfsbureau@gsa.nl.sandbox",
+    "id": "2493f350-7b1e-11e6-adbf-f7185e162630",
+    "namespace": "",
+    "environment": "sandbox",
+    "loginUrl": "",
+    "workspace": "C:\\Projects",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "CustomObject",
+        "StaticResource"
+    ]
+}

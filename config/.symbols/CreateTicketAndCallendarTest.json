@@ -1,0 +1,1129 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p2400000Cr9rUAAR",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p2400000Cr9rUAAR",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 3
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test_createTicket",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 117
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test_cloneTicket",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 152
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test_negativeDeliveryTime",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 216
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test_negativeArrivalTime",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 287
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test_negativeDurationTime",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "CreateTicketAndCallendarTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "CreateTicketAndCallendarTest",
+        "references": [],
+        "type": "CreateTicketAndCallendarTest"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "contact",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "project",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "member",
+            "references": [],
+            "type": "Projectmember__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "buldingSite",
+            "references": [],
+            "type": "Hub_Building_Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "gate",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "siteL",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "verTr",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "st",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "ct",
+            "references": [],
+            "type": "CreateTicketExtension"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "CreateTicketExtension"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "minutes",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "hours",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "accs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "forceUser",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "calendatCtrl",
+            "references": [],
+            "type": "CalendarComponentController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "t",
+            "references": [],
+            "type": "Building_Ticket__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "tickets",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 75
+            },
+            "modifiers": [],
+            "name": "ctrl1",
+            "references": [],
+            "type": "CalendarExtension"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "ctrl2",
+            "references": [],
+            "type": "CalendarComponentController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 88
+            },
+            "modifiers": [],
+            "name": "count",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "pdfCtrl",
+            "references": [],
+            "type": "TicketPDFExtension"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 100
+            },
+            "modifiers": [],
+            "name": "init",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 102
+            },
+            "modifiers": [],
+            "name": "buldingSite1",
+            "references": [],
+            "type": "Hub_Building_Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 104
+            },
+            "modifiers": [],
+            "name": "acH",
+            "references": [],
+            "type": "AccountHub__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 120
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 121
+            },
+            "modifiers": [],
+            "name": "contact",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 123
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 128
+            },
+            "modifiers": [],
+            "name": "project",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 129
+            },
+            "modifiers": [],
+            "name": "member",
+            "references": [],
+            "type": "Projectmember__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 130
+            },
+            "modifiers": [],
+            "name": "buldingSite",
+            "references": [],
+            "type": "Hub_Building_Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 131
+            },
+            "modifiers": [],
+            "name": "gate",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 132
+            },
+            "modifiers": [],
+            "name": "siteL",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 133
+            },
+            "modifiers": [],
+            "name": "verTr",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 135
+            },
+            "modifiers": [],
+            "name": "t",
+            "references": [],
+            "type": "Building_Ticket__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 139
+            },
+            "modifiers": [],
+            "name": "pageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 144
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 145
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "CreateTicketExtension"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 155
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 156
+            },
+            "modifiers": [],
+            "name": "contact",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 158
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 163
+            },
+            "modifiers": [],
+            "name": "project",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 164
+            },
+            "modifiers": [],
+            "name": "member",
+            "references": [],
+            "type": "Projectmember__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 165
+            },
+            "modifiers": [],
+            "name": "buldingSite",
+            "references": [],
+            "type": "Hub_Building_Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 166
+            },
+            "modifiers": [],
+            "name": "gate",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 167
+            },
+            "modifiers": [],
+            "name": "siteL",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 168
+            },
+            "modifiers": [],
+            "name": "verTr",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 170
+            },
+            "modifiers": [],
+            "name": "st",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 171
+            },
+            "modifiers": [],
+            "name": "ct",
+            "references": [],
+            "type": "CreateTicketExtension"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 172
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "CreateTicketExtension"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 178
+            },
+            "modifiers": [],
+            "name": "minutes",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 179
+            },
+            "modifiers": [],
+            "name": "hours",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 180
+            },
+            "modifiers": [],
+            "name": "accs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 182
+            },
+            "modifiers": [],
+            "name": "forceUser",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 193
+            },
+            "modifiers": [],
+            "name": "calendatCtrl",
+            "references": [],
+            "type": "CalendarComponentController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 219
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 220
+            },
+            "modifiers": [],
+            "name": "contact",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 222
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 227
+            },
+            "modifiers": [],
+            "name": "project",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 228
+            },
+            "modifiers": [],
+            "name": "member",
+            "references": [],
+            "type": "Projectmember__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 229
+            },
+            "modifiers": [],
+            "name": "buldingSite",
+            "references": [],
+            "type": "Hub_Building_Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 230
+            },
+            "modifiers": [],
+            "name": "gate",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 231
+            },
+            "modifiers": [],
+            "name": "siteL",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 232
+            },
+            "modifiers": [],
+            "name": "verTr",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 234
+            },
+            "modifiers": [],
+            "name": "st",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 235
+            },
+            "modifiers": [],
+            "name": "ct",
+            "references": [],
+            "type": "CreateTicketExtension"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 236
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "CreateTicketExtension"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 242
+            },
+            "modifiers": [],
+            "name": "minutes",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 243
+            },
+            "modifiers": [],
+            "name": "hours",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 244
+            },
+            "modifiers": [],
+            "name": "accs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 246
+            },
+            "modifiers": [],
+            "name": "forceUser",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 257
+            },
+            "modifiers": [],
+            "name": "calendatCtrl",
+            "references": [],
+            "type": "CalendarComponentController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 290
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 291
+            },
+            "modifiers": [],
+            "name": "contact",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 293
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 298
+            },
+            "modifiers": [],
+            "name": "project",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 299
+            },
+            "modifiers": [],
+            "name": "member",
+            "references": [],
+            "type": "Projectmember__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 300
+            },
+            "modifiers": [],
+            "name": "buldingSite",
+            "references": [],
+            "type": "Hub_Building_Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 301
+            },
+            "modifiers": [],
+            "name": "gate",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 302
+            },
+            "modifiers": [],
+            "name": "siteL",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 303
+            },
+            "modifiers": [],
+            "name": "verTr",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 305
+            },
+            "modifiers": [],
+            "name": "st",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 306
+            },
+            "modifiers": [],
+            "name": "ct",
+            "references": [],
+            "type": "CreateTicketExtension"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 307
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "CreateTicketExtension"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 313
+            },
+            "modifiers": [],
+            "name": "minutes",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 314
+            },
+            "modifiers": [],
+            "name": "hours",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 315
+            },
+            "modifiers": [],
+            "name": "accs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 317
+            },
+            "modifiers": [],
+            "name": "forceUser",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 328
+            },
+            "modifiers": [],
+            "name": "calendatCtrl",
+            "references": [],
+            "type": "CalendarComponentController"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+39.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+13:53:22.0 (395648)|USER_INFO|[EXTERNAL]|00524000001e3Uj|bedrijfsbureau@gsa.nl.sandbox|Midden-Europese standaardtijd|GMT+02:00
+13:53:22.0 (422655)|EXECUTION_STARTED
+13:53:22.0 (427820)|CODE_UNIT_STARTED|[EXTERNAL]|0669E0000000KhW|VF: /apex/ProjectItemsAfroepen
+13:53:22.0 (944907)|VF_DESERIALIZE_VIEWSTATE_BEGIN|0669E0000000KhW
+13:53:22.0 (7728028)|VF_DESERIALIZE_VIEWSTATE_END
+13:53:22.0 (8345225)|SYSTEM_MODE_ENTER|true
+13:53:22.0 (8641836)|SYSTEM_MODE_ENTER|false
+13:53:22.0 (8651683)|SYSTEM_MODE_EXIT|false
+13:53:22.0 (8670358)|SYSTEM_MODE_ENTER|false
+13:53:22.0 (8679331)|SYSTEM_MODE_EXIT|false
+13:53:22.0 (8832159)|SYSTEM_MODE_ENTER|true
+13:53:22.0 (8865519)|SYSTEM_MODE_ENTER|false
+13:53:22.0 (8873213)|SYSTEM_MODE_EXIT|false
+13:53:22.0 (9151768)|SYSTEM_MODE_ENTER|false
+13:53:22.0 (9237716)|USER_DEBUG|[47]|DEBUG|OBDEB PROJ ID -->> null
+13:53:22.0 (13192820)|SOQL_EXECUTE_BEGIN|[51]|Aggregations:0|SELECT Id, Name, Project__c, Hub_Building_Site__c, Hub_Building_Site__r.Name, Curr_Items_To_Invoke__c, Item__c, Item__r.Name, Item__r.Staat__c, Item__r.Sizes__c, Item__r.Diameter__c, Item__r.Merk__c, Item__r.Materiaal__c, Item__r.Kleur__c, Item__r.Kind_Of_Packages__c FROM WWW__c WHERE Project__c = :tmpVar1
+13:53:22.0 (15814775)|SOQL_EXECUTE_END|[51]|Rows:0
+13:53:22.0 (15937834)|SYSTEM_MODE_EXIT|false
+13:53:22.0 (19913804)|SYSTEM_MODE_ENTER|true
+13:53:22.0 (19958151)|SYSTEM_MODE_ENTER|false
+13:53:22.0 (19966141)|SYSTEM_MODE_EXIT|false
+13:53:22.0 (20102470)|SYSTEM_MODE_ENTER|true
+13:53:22.0 (20134622)|SYSTEM_MODE_ENTER|false
+13:53:22.0 (20139940)|SYSTEM_MODE_EXIT|false
+13:53:22.0 (21139119)|VF_SERIALIZE_VIEWSTATE_BEGIN|0669E0000000KhW
+13:53:22.0 (23060848)|VF_SERIALIZE_VIEWSTATE_END
+13:53:22.24 (24855935)|CUMULATIVE_LIMIT_USAGE
+13:53:22.24 (24855935)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:53:22.24 (24855935)|CUMULATIVE_LIMIT_USAGE_END
+
+13:53:22.0 (24891766)|CODE_UNIT_FINISHED|VF: /apex/ProjectItemsAfroepen
+13:53:22.0 (25665839)|EXECUTION_FINISHED

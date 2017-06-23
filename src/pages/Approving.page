@@ -1,0 +1,13 @@
+<apex:page showHeader="true" sidebar="true" standardController="Building_Ticket__c" action="{!runScript}" extensions="ApprovingExtension">
+	<!--var rec= new sforce.SObject("Building_Ticket__c");
+rec.Id = '{!Building_Ticket__c.Id}';
+rec.Status__c='Assigned';
+var result = sforce.connection.update([rec]);
+if(result[0].getBoolean("success")){
+console.log('{!Building_Ticket__c.Hub_Building_Site__c}');
+var hubcheck = sforce.connection.query("SELECT Hub_Building_Site__c, Arrival_Time__c FROM Building_Ticket__c Where id = '{!Building_Ticket__c.Id}'");
+records = hubcheck.getArray("records");
+
+console.log(records + ' '+records[0].Hub_Building_Site__c );
+parent.window.location.href = "https://c.cs87.visual.force.com/apex/Calendar?id="+records[0].Hub_Building_Site__c+"&dateFrom="+records[0].Arrival_Time__c;-->
+</apex:page>

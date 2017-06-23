@@ -1,0 +1,321 @@
+<apex:component controller="CalendarComponentController" >
+    <apex:attribute name="date" type="String" assignTo="{!dateFrom}" description="Date." required="true"/>
+    <apex:attribute name="buildingSite" type="String" assignTo="{!buildingSiteId}" description="buildingSite." required="true"/>
+    <apex:attribute name="compData" type="ComponentData" assignTo="{!componentData}" description="data."/>
+    <head>
+        <apex:stylesheet value="{!URLFOR($Resource.calendar, '/fullcalendar-2.6.1/fullcalendar.css')}" />
+        <!--apex:stylesheet value="{!URLFOR($Resource.calendar, '/fullcalendar-2.5.0/fullcalendar.print.css')}" /-->
+        
+        <apex:includeScript value="{!URLFOR($Resource.calendar, '/fullcalendar-2.6.1/lib/moment.min.js')}"/ >
+        <apex:includeScript value="{!URLFOR($Resource.calendar, '/fullcalendar-2.6.1/lib/jquery.min.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.calendar, '/fullcalendar-2.6.1/fullcalendar.min.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.calendar, '/fullcalendar-2.6.1/lang-all.js')}"/>
+        <script>
+            $(document).ready(function() {
+                console.log('{!componentData.dateSelected}');
+
+                var currUrl = window.location.href;
+                console.log(currUrl);
+                var n = currUrl.lastIndexOf("dateFrom=");
+                console.log(n);
+                var dateFromUrl = currUrl.substring(n+9, currUrl.length);
+                console.log(dateFromUrl);
+                var d = '{!dateFrom}';
+                if (n!=-1) {
+                    d = dateFromUrl;
+                }
+                if ('{!componentData.dateSelected}' != null && '{!componentData.dateSelected}' != '') {
+                    d = '{!componentData.dateSelected}';
+                }
+                if (d=='' || d == null) {
+                    var today = new Date();
+                    var dd = today.getDate();
+                    var mm = today.getMonth()+1; //January is 0!
+
+                    var yyyy = today.getFullYear();
+                    if(dd<10){
+                        dd='0'+dd
+                    } 
+                    if(mm<10){
+                        mm='0'+mm
+                    } 
+                    d = yyyy+'-'+mm+'-'+dd;
+                }
+                console.log('{!dateFrom}');
+                console.log(d);
+                $('#calendar').fullCalendar({
+                    header:{
+                        left:   '',
+                        center: 'title',
+                        right:  'today, prev, next'
+                    },
+                    
+                    defaultDate: d,
+                    //hiddenDays: [ 0, 6 ],
+                    lang: 'nl',
+                    editable: false,
+                    eventLimit: true, // allow "more" link when too many events-
+                    events: {!jsonForCalendar},
+                    timeFormat:'H:mm', 
+                    slotDuration:'00:15:00',
+                    slotLabelFormat:'H:mm',
+                    slotLabelInterval :'00:15:00',
+                    eventMouseover: function(data, event, view) {
+                        var tooltip = '<div class="tooltipevent" style="width:auto;height:auto;background:#ccc;position:absolute;z-index:10001; padding: 5px; border-radius: 5px;">' +
+                                        'Status: ' + data.status +
+                                        '<br/> Aankomsttijd: ' + data.arrival +
+                                        '<br/> Gemaakt door: ' + data.createdBy +
+                                        '<br/> Laad en los tijd: ' + data.loadAndUnload +
+                                        '<br/> Hub/Bouwplaats: ' + data.hub +
+                                        '<br/> Beschrijving van de levering: ' + data.descr +
+                                        '<br/> Locatie: ' + data.location +
+                                        '<br/> Eindpunt: ' + data.endPoint +'</div>';
+                        $("body").append(tooltip);
+                        $(this).mouseover(function(e) {
+                            $(this).css('z-index', 10000);
+                            $('.tooltipevent').fadeIn('500');
+                            $('.tooltipevent').fadeTo('10', 1.9);
+                        }).mousemove(function(e) {
+                            $('.tooltipevent').css('top', e.pageY + 10);
+                            $('.tooltipevent').css('left', e.pageX + 20);
+                        });
+                    },
+
+                    eventMouseout: function(data, event, view) {
+                         $(this).css('z-index', 8);
+                         $('.tooltipevent').remove();
+                    }
+                });
+                $('#calendar').fullCalendar( 'changeView', 'agendaWeek' );
+                $('#day').append('{!bodyForTable}');
+            });
+        </script>
+        <style>
+            body {
+                margin: 40px 10px;
+                padding: 0;
+                font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+                //font-size: 14px;
+            }
+            ul li, ol li {
+                margin-left: 0em;
+            }
+            #calendar {
+                min-height: 700px;
+                max-width: 80%;
+                margin: 0 auto;
+            }
+            .legend { list-style: none; }
+            .legend li { float: left;  }
+            .legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px;  }
+            .legend .location { background-color: #9ACD32; color: black; padding: 3px;}
+            .legend .vertransport { background-color: #FB7D1D; color: black; padding: 3px;}
+            
+            table tbody tr{
+                height:30px !important;
+            }
+            
+            table  tr  {
+                height:30px !important;
+            }
+            .full-size {
+                height:100% !important;
+                width:100%;
+                position:absolute;
+               
+            }
+            .dayColTable, .dayColTable th, .dayColTable td {
+                border: 1px solid #ddd;
+                border-collapse: collapse;
+            }
+            .dayColTable tbody div{
+                overflow:scroll;
+                height:100px;
+            }
+            .dayColTable table {
+                border: 1px solid #ddd;
+                border-collapse: collapse;
+            }
+            .dayColTable table, .dayColTable table th, .dayColTable table td {
+                border: 1px solid #ddd;
+                border-collapse: collapse;
+            }
+            .noVis {
+                visibility: hidden;
+            }
+            .dayColTable table td {
+                padding-left:15px;
+                //padding-top:15px;
+                padding-right:15px;
+            }
+        </style>
+    </head>
+    <body>
+            
+        <apex:form id="form">
+        
+        <!--apex:actionFunction name="update" action="{!getJsonPerDate}" reRender="loc"/-->
+
+            <table width="100%">
+                <tr>
+                    <td width="85%" id="calTdId">
+                        <apex:outputPanel id="calToRerender">
+                            <div id='calendar'></div>
+                        </apex:outputPanel>
+                    </td>
+                    <td width="15%" id="ledTdId">
+                        
+                            <input value="{!$Label.Full_size_calendar}" onclick="showHide();" type="button" id="btnFull" />
+                            <input value="X" onclick="showHide1();" type="button" id="btnClose" />
+                        <br/><br/>
+                        <input type="button" onclick="gototheColumns();" value="{!$Label.Detail_view}"/><br/><br/>
+                        {!$Label.Legend}:
+                        <!-- class="legend">
+                            <li><span class="location"></span> {!$Label.Location}</li><br/><br/>
+                            <li><span class="vertransport"></span> {!$Label.Vertical_transport}</li><br/>
+                        </ul-->
+                        <br/>
+                        
+                        <ul class="legend">
+                            <li class="location">{!$Label.Approved} </li><br/><br/>
+                            <li class="vertransport">{!$Label.Need_approval} </li><br/>
+                        </ul>
+                        <br/>
+                        <apex:repeat value="{!typeNames}" var="name" id="loc">
+                        {!name}: <br/><br/>
+                            <apex:repeat value="{!locationsForSelect[name]}" var="location" >
+                                <apex:inputCheckbox value="{!location.isChecked}" />
+                                <apex:outputText value="{!location.loc.Name}"/>
+                                <br/>
+                            </apex:repeat>
+                        <br/>
+                        </apex:repeat>
+                        <br/><br/>
+                        <br/>
+                        <apex:commandButton value="{!$Label.Change}" action="{!change}" reRender="calendarInfo"/>
+                        
+                    </td>
+                </tr>
+            </table>
+            <apex:componentBody />
+        </apex:form>
+        <apex:form id="colDay">
+            <apex:actionFunction name="changeDate" action="{!changeDate}" oncomplete="fillDiv();"  rerender="correctCol">
+                <apex:param assignTo="{!count}" name="count" value=""/>
+            </apex:actionFunction>
+           
+            <apex:actionFunction name="changeDateMinus" action="{!changeDateMinus}" rerender="correctCol" oncomplete="fillDiv();">
+                <apex:param assignTo="{!count}" name="count" value=""/>
+            </apex:actionFunction>
+            <table width="100%">
+                <tr>
+                    <td width="90%">
+                        
+                        <apex:outputPanel id="correctCol">
+                       
+                            <div id="day"></div>
+                            
+                            <apex:outputText id="testId" value="{!b}" styleClass="noVis"/>
+                        </apex:outputPanel>
+                    </td>
+                    <td width="10%">
+                    <br/>
+                        
+                            <input value="{!$Label.Full_size_calendar}" onclick="showHide();" type="button" id="btnFull" />
+                            <input value="X" onclick="showHide1();" type="button" id="btnClose" />
+                        <br/><br/>
+                        <input value="Week" onclick="gototheWeek();" type="button"/>
+                        <br/>
+                        Legend:
+                        <!--ul class="legend">
+                            <li><span class="location"></span> Location</li><br/><br/>
+                            <li><span class="vertransport"></span> {!$Label.Vertical_transport}</li><br/>
+                        </ul-->
+                        <br/>
+                        
+                        <ul class="legend">
+                            <li class="location">Approved </li><br/><br/>
+                            <li class="vertransport">Need approval </li><br/>
+                        </ul>
+                        <br/>
+                    </td>
+                </tr>
+            </table>
+        </apex:form>
+                <script>
+                    $("[id$='btnClose']").hide();
+                    function showHide() {
+                        console.log('here');
+                        //$("[id$='ledTdId']").hide();
+                        $(".slds-form--stacked").hide();
+                        $(".fullSize").show();
+                        $("[id$='btnFull']").hide();
+                        $("[id$='btnClose']").show();
+                        
+                    }
+                    function showHide1() {
+                        console.log('here');
+                        //$("[id$='ledTdId']").show();
+                        $(".slds-form--stacked").show();
+                        $(".fullSize").show();
+                        $("[id$='btnFull']").show();
+                        $("[id$='btnClose']").hide();
+                        
+                    }
+                </script>
+        <script>
+            var count = 0;
+            
+            console.log($("[id$='datepicker']").val());
+            console.log($("[id$='datepicker']").text());
+            console.log($("[id$='datepicker']").val);
+            //$('#day').append('{!bodyForTable}');
+            $("[id$='colDay']").hide();
+            $("[id$='testId']").hide();
+            
+            function addDay() {
+                //$('#day').html("");
+                $("[id$='dayColTable']").html('');
+                console.log ('{!curentDate}');
+                count++;
+                console.log('count ' + count);
+                changeDate(count);
+                console.log('{!b}');
+                $('#day').append('{!bodyForTable}');
+            }
+            function minusDay() {
+                //$('#day').html("");
+                $("[id$='dayColTable']").html('');
+                console.log ('{!curentDate}');
+                count--;
+                console.log('count ' + count);
+                changeDateMinus(count);
+                console.log('{!b}');
+                $('#day').append('{!bodyForTable}');
+            }
+            function gototheColumns () {
+                $("[id$='form']").hide();
+                $("[id$='colDay']").show();
+                /*$("[id$='btnClose']").hide();
+                
+                $("[id$='btnFull']").show();*/
+            }
+            function gototheWeek () {
+                $("[id$='form']").show();
+                $("[id$='colDay']").hide();
+               /* $("[id$='btnClose']").show();
+                $("[id$='btnFull']").show();*/
+            }
+           function fillDiv() {
+                //$('#day').html("");
+                console.log('');
+                console.log('fillDIV'+'{!bodyForTable}');
+                
+                $('#day').append($("[id$='testId']").text());
+               
+           }
+            
+            
+        </script>
+    </body>
+</apex:component>

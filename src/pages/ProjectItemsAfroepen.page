@@ -1,0 +1,704 @@
+<!-- <apex:page showHeader="true" standardStylesheets="false" sidebar="false" docType="html-5.0"> -->
+<apex:page showHeader="true" standardStylesheets="false" sidebar="false" docType="html-5.0" applyBodyTag="False" controller="ProjectItemsAfroepenController">
+	<head>
+		<apex:includeLightning />
+		<apex:slds />
+
+		<!-- jQuery CDN -->
+		<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+
+		<style type="text/css">
+			input[type=number]::-webkit-inner-spin-button,
+	        input[type=number]::-webkit-outer-spin-button {
+	            -webkit-appearance: none;
+	            margin: 0;
+	        }
+
+	        input[type="number"] {
+	            -moz-appearance: textfield;
+	        }
+
+			.slds-scope .slds-lookup {
+				width: 25%;
+			}
+
+			.slds-scope .slds-page-header {
+				margin-top: 25px;
+			}
+
+			.max-width-150 {
+				max-width: 150px;
+			}
+
+			.down, .up {
+                margin-bottom: 4px;
+            }
+
+            .filter-input {
+            	max-width: 75%;
+            }
+
+            /* SPINNER */
+            .waitingSearchDiv {
+                position: fixed;
+                text-align: center;
+                top: 0;
+                z-index: 80;
+                /*left: 0;*/
+                left: -30%;
+            }
+
+            .waitingSearchDiv .waitingHolder, .waitingSearchDiv .waitingSearchHolder {
+                border: none;
+                background-color: transparent;
+                font-size: 1em;
+                font-weight: normal;
+                padding: 0;
+            }
+
+            .waitingSearchDiv .waitingHolder {
+                position: relative;
+                padding: .5em;
+                white-space: nowrap;
+                width: 40%;
+                top: 45%;
+                margin: auto;
+            }
+            /* SPINNER */
+		</style>
+	</head>
+
+	<!-- REQUIRED SLDS WRAPPER -->
+	<body>
+	<div class="slds-scope">
+		<!-- <div class="slds-scrollable--y"> -->
+			<div class="myapp">
+				<apex:form styleClass="slds-form--stacked" id="mainForm">
+				<div class="slds-scrollable--y">
+				<div class="insideForm">
+
+					<apex:outputpanel >
+			            <apex:actionstatus id="status">
+			                <apex:facet name="start">
+			                    <div class="waitingSearchDiv" id="el_loading" style="background-color: #fbfbfb;
+			                          height: 100%;opacity:0.65;width:100%;"> 
+			                       <div class="waitingHolder slds-spinner slds-spinner--small">
+			                           <img class="waitingImage" src="{!URLFOR($Asset.SLDS, '/assets/images/spinners/slds_spinner_brand.gif')}" title="Please Wait..." width="50px"/>
+			                           <span class="waitingDescription"></span>
+			                       </div>
+			                   </div>
+			                </apex:facet>
+			            </apex:actionstatus>
+			        </apex:outputpanel>
+
+					<apex:pageMessages id="msg" escape="false"/>
+
+					<apex:actionFunction name="searchProjects" action="{!searchProjects}" rerender="projectResults" oncomplete="">
+				        <apex:param name="searchVal" assignTo="{!searchline}" value="" />
+				    </apex:actionFunction>
+
+				    <apex:actionFunction name="searchItems" action="{!selectItems}" rerender="availableItemsList, afroepenItemsList, msg" oncomplete="" status="status">
+				        <apex:param name="projId" assignTo="{!projectId}" value="" />
+				    </apex:actionFunction>
+
+				    <apex:actionFunction name="afroepenItems" action="{!afroepenItems}" reRender="afroepenItemsList" oncomplete="setFocusAfterAfroepenPress();" focus="{!$Component.mainForm.date}" status="status"/>
+
+				    <apex:actionFunction name="finishAfroepenItems" action="{!finishAfroepenItems}" reRender="msg, afroepenItemsList, availableItemsList, showPopupScript" oncomplete="openpopup();" status="status"/>
+
+				    <apex:actionFunction name="sortByFiledItemAct" action="{!sortByFiledItem}" rerender="availableItemsList" oncomplete="addArrow();" status="status">
+	                    <apex:param value="" name="sortDirection" assignTo="{!sortDirection}"/>
+	                    <apex:param value="" name="sortField" assignTo="{!sortField}"/>
+	                </apex:actionFunction>
+
+	                <apex:actionFunction name="filterItemsAct" action="{!addFiltersToItems}" reRender="availableItemsList" onbeforedomupdate="captureFocus();" oncomplete="setFocusOnFilterField();" status="status">
+	                	<apex:param value="" name="seacrhByItemName" assignTo="{!seacrhByItemName}"/>
+	                	<apex:param value="" name="seacrhByItemSize" assignTo="{!seacrhByItemSize}"/>
+	                	<apex:param value="" name="seacrhByItemDiameter" assignTo="{!seacrhByItemDiameter}"/>
+	                	<apex:param value="" name="seacrhByItemMerk" assignTo="{!seacrhByItemMerk}"/>
+	                	<apex:param value="" name="seacrhByHub" assignTo="{!seacrhByHub}"/>
+	                </apex:actionFunction>
+
+					<center>
+						<div class="slds-lookup" data-select="multi" data-scope="single" data-typeahead="true">
+	  						<div class="slds-form-element">
+	    						<label class="slds-form-element__label" for="lookup"></label>
+	     						<div class="slds-form-element__control slds-input-has-icon slds-input-has-icon--right">
+	       							<svg aria-hidden="true" class="slds-input__icon slds-icon-text-default">
+	         							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#search')}"></use>
+	       							</svg>
+
+	      							<input id="searchInput" class="slds-input" type="text" placeholder="{!$Label.Search_Projects}" onkeyup="searchActs(j$(this))" aria-autocomplete="list" role="combobox" aria-expanded="true" aria-activedescendant="SrchDrpDwn" />
+	      						</div>
+	     					</div>
+
+	  						<div class="slds-lookup__menu" role="listbox" id="SrchDrpDwn" style="display:none;">
+
+	     						<ul class="slds-lookup__list" role="presentation" id="searchResultsUL" style="max-height: 240px;">
+	     							<apex:outputPanel id="projectResults">
+		     							<apex:repeat value="{!projectsFound}" var="proj">
+		     								<li onclick="projInfo('{!proj.Id}', '{!proj.Name}');" class="slds-lookup__item">
+		     									<a id="{!proj.Id}" href="#" role="option">
+		     										<svg aria-hidden="true" class="slds-icon slds-icon-custom-custom19 slds-icon--small">
+		     											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/custom-sprite/svg/symbols.svg#custom19')}"></use>
+		     										</svg>
+		     										{!proj.Name}
+		     									</a>
+		     								</li>
+		     							</apex:repeat>
+	     							</apex:outputPanel>
+	     						</ul>
+
+	    					</div>
+	  					</div>
+  					</center>
+
+					<apex:outputPanel id="availableItemsList">
+						<apex:outputPanel rendered="{!showItems}">
+							<div class="slds-page-header" role="banner">
+								<table class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal">
+									<thead>
+	            						<tr class="slds-text-heading--label">
+	            							<th scope="col">
+	                                            <div class="slds-truncate">
+	                                            	<!-- <input type="checkbox" name="options" disabled="true" /> -->
+	                                            	<div class="slds-form-element">
+                                                        <div class="slds-form-element__control">
+                                                            <span class="slds-checkbox">
+                                                                <input type="checkbox" name="options" disabled="true" id="cusCheckbox" />
+                                                                <label class="slds-checkbox__label" for="cusCheckbox">
+                                                                    <span class="slds-checkbox--faux"></span>
+                                                                    <span class="slds-form-element__label"></span>
+                                                                </label>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+	                                            </div>
+	                                        </th>
+	                                        <th scope="col">
+	                                            <div class="slds-truncate">
+	                                            	<a href="#" id="Name" class="link-as-text" onclick="sortByFiledItemScr('Name');">Item naam</a>
+	                                            </div>
+	                                        </th>
+	                                        <th scope ="col">
+	                                            <div class="slds-truncate">
+	                                            	<a href="#" id="Staat" class="link-as-text" onclick="sortByFiledItemScr('Staat');">Staat</a>
+	                                            </div>
+	                                        </th>
+	                                        <th scope ="col">
+	                                            <div class="slds-truncate">
+	                                            	<a href="#" id="Maten" class="link-as-text" onclick="sortByFiledItemScr('Maten');">Maten</a>
+	                                            </div>
+	                                        </th>
+	                                        <th scope="col" >
+	                                            <div class="slds-truncate">
+	                                            	<a href="#" id="Diameter" class="link-as-text" onclick="sortByFiledItemScr('Diameter');">Diameter</a>
+	                                            </div>
+	                                        </th>
+	                                        <th scope="col" >
+	                                            <div class="slds-truncate">
+	                                            	<a href="#" id="Merk" class="link-as-text" onclick="sortByFiledItemScr('Merk');">Merk</a>
+	                                            </div>
+	                                        </th>
+	                                        <th scope="col" >
+	                                            <div class="slds-truncate">
+	                                            	<a href="#" id="Material" class="link-as-text" onclick="sortByFiledItemScr('Material');">Material</a>
+	                                            </div>
+	                                        </th>
+
+	                                        <th scope="col" >
+	                                            <div class="slds-truncate">
+	                                            	<a href="#" id="Kleur" class="link-as-text" onclick="sortByFiledItemScr('Kleur');">Kleur</a>
+	                                            </div>
+	                                        </th>
+
+	                                        <th scope="col" >
+	                                            <div class="slds-truncate">
+	                                            	<a href="#" id="Type_verpakking" class="link-as-text" onclick="sortByFiledItemScr('Type_verpakking');">Type verpakking</a>
+	                                            </div>
+	                                        </th>
+
+	                                        <th scope="col" >
+	                                            <div class="slds-truncate">
+	                                            	<a href="#" id="wat_nog_op_te_roepen_is" class="link-as-text" onclick="sortByFiledItemScr('wat_nog_op_te_roepen_is');"># wat nog op te roepen is</a>
+	                                            </div>
+	                                        </th>
+
+	                                        <th scope="col" >
+	                                            <div class="slds-truncate">
+	                                            	<a href="#" id="Loods/HUB" class="link-as-text" onclick="sortByFiledItemScr('Loods/HUB');">Loods/HUB</a>
+	                                            </div>
+	                                        </th>
+	            						</tr>
+
+	            						<tr class="slds-text-heading--label">
+	            							<th scope="col"> </th>
+
+	            							<th scope="col">
+                                            	<apex:inputText styleclass="slds-input filter-input" value="{!seacrhByItemName}" onkeyUp="filterItems();" id="searchItemName"/>
+                                            </th>
+
+                                            <th scope="col">
+                                            	<apex:selectList value="{!selectedStaat}" styleclass="slds-select" size="1" onchange="filterItems();">
+                                                    <apex:selectOptions value="{!staatPicklistValues}"/>
+                                                </apex:selectList>
+                                            </th>
+
+                                            <th scope="col">
+                                            	<apex:inputText styleclass="slds-input filter-input" value="{!seacrhByItemSize}" onkeyUp="filterItems();" id="seacrhByItemSize"/>
+                                            </th>
+
+                                            <th scope="col">
+                                            	<apex:inputText styleclass="slds-input filter-input" value="{!seacrhByItemDiameter}" onkeyUp="filterItems();" id="seacrhByItemDiameter"/>
+                                            </th>
+
+                                            <th scope="col">
+                                            	<apex:inputText styleclass="slds-input filter-input" value="{!seacrhByItemMerk}" onkeyUp="filterItems();" id="seacrhByItemMerk"/>
+                                            </th>
+
+                                            <th scope="col">
+                                            	<apex:selectList value="{!selectedMaterial}" styleclass="slds-select" size="1" onchange="filterItems();">
+                                                    <apex:selectOptions value="{!materialPicklistValues}"/>
+                                                </apex:selectList>
+                                            </th>
+
+                                            <th scope="col">
+                                            	<apex:selectList value="{!selectedKleur}" styleclass="slds-select" size="1" onchange="filterItems();">
+                                                    <apex:selectOptions value="{!kleurPicklistValues}"/>
+                                                </apex:selectList>
+                                            </th>
+
+                                            <th scope="col">
+                                            	<apex:selectList value="{!selectedKindOfPackages}" styleclass="slds-select" size="1" onchange="filterItems();">
+                                                    <apex:selectOptions value="{!kindOfPackagesPicklistValues}"/>
+                                                </apex:selectList>
+                                            </th>
+
+                                            <th scope="col"> </th>
+
+                                            <th scope="col">
+                                            	<apex:inputText styleclass="slds-input filter-input" value="{!seacrhByHub}" onkeyUp="filterItems();" id="seacrhByHub"/>
+                                            </th>
+	            						</tr>
+	            					</thead>
+
+	            					<tbody>
+	            						<apex:repeat value="{!listOfItems}" var="li">
+	            							<tr class="slds-hint-parent" style="display: {!IF(li.show, 'table-row', 'none')}">
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <!-- <apex:inputCheckbox value="{!li.isSelected}" styleClass="itemSelected" onclick="checkForSelectedItems();"/> -->
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control">
+                                                            <span class="slds-checkbox">
+                                                                <!-- <apex:inputCheckbox value="{!contractTypeCheckbox}" id="contractTypeCheckbox" onchange="changeMogelickFilter();" /> -->
+                                                                <apex:inputCheckbox value="{!li.isSelected}" styleClass="itemSelected" onclick="checkForSelectedItems();" id="itemCheckbox"/>
+                                                                <label class="slds-checkbox__label" for="{!$Component.itemCheckbox}">
+                                                                    <span class="slds-checkbox--faux"></span>
+                                                                    <span class="slds-form-element__label"></span>
+                                                                </label>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <apex:outputText value="{!li.wwwRecord.Item__r.Name}" />
+                                                </td>
+
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <apex:outputText value="{!li.wwwRecord.Item__r.Staat__c}" />
+                                                </td>
+
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <apex:outputText value="{!li.wwwRecord.Item__r.Sizes__c}" />
+                                                </td>
+
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <apex:outputText value="{!li.wwwRecord.Item__r.Diameter__c}" />
+                                                </td>
+
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <apex:outputText value="{!li.wwwRecord.Item__r.Merk__c}" />
+                                                </td>
+
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <apex:outputText value="{!li.wwwRecord.Item__r.Materiaal__c}" />
+                                                </td>
+
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <apex:outputText value="{!li.wwwRecord.Item__r.Kleur__c}" />
+                                                </td>
+
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <apex:outputText value="{!li.wwwRecord.Item__r.Kind_Of_Packages__c}" />
+                                                </td>
+
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <apex:outputText value="{!li.wwwRecord.Curr_Items_To_Invoke__c}" />
+                                                </td>
+
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <apex:outputText value="{!li.wwwRecord.Hub_Building_Site__r.Name}" />
+                                                </td>
+                                            </tr>
+	            						</apex:repeat>
+	            					</tbody>
+								</table>
+
+								<!-- <input class="slds-button slds-button--brand slds-m-left--xx-large slds-m-top--medium afroepen-button" type="button" value="Afroepen" style="font-size: 13px;" onclick="afroepenItems();" disabled="true" /> -->
+							</div>
+						</apex:outputPanel>
+					</apex:outputPanel>
+
+					<apex:outputPanel id="afroepenItemsList">
+						<apex:outputPanel rendered="{!showItemsForAfroepen}" id="secAfrLst">
+							<div class="slds-page-header" role="banner">
+								<table class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal endTable" id="endTable">
+									<thead>
+	            						<tr class="slds-text-heading--label">
+	            							<th scope="col">
+	            								<div class="slds-truncate">
+	                                            	<a href="#" id="antalItemsAfroepen" class="link-as-text">Aantal items afroepen</a>
+	                                            </div>
+	                                        </th>
+
+	                                        <th scope="col">
+	                                            <div class="slds-truncate">
+	                                            	<a href="#" id="Name2" class="link-as-text">Item naam</a>
+	                                            </div>
+	                                        </th>
+	                                        <th scope ="col">
+	                                            <div class="slds-truncate">
+	                                            	<a href="#" id="Staat2" class="link-as-text">Staat</a>
+	                                            </div>
+	                                        </th>
+	                                        <th scope ="col">
+	                                            <div class="slds-truncate">
+	                                            	<a href="#" id="Maten2" class="link-as-text">Maten</a>
+	                                            </div>
+	                                        </th>
+	                                        <th scope="col" >
+	                                            <div class="slds-truncate">
+	                                            	<a href="#" id="Diameter2" class="link-as-text">Diameter</a>
+	                                            </div>
+	                                        </th>
+	                                        <th scope="col" >
+	                                            <div class="slds-truncate">
+	                                            	<a href="#" id="Merk2" class="link-as-text">Merk</a>
+	                                            </div>
+	                                        </th>
+	                                        <th scope="col" >
+	                                            <div class="slds-truncate">
+	                                            	<a href="#" id="Material2" class="link-as-text">Material</a>
+	                                            </div>
+	                                        </th>
+
+	                                        <th scope="col" >
+	                                            <div class="slds-truncate">
+	                                            	<a href="#" id="Kleur2" class="link-as-text">Kleur</a>
+	                                            </div>
+	                                        </th>
+
+	                                        <th scope="col" >
+	                                            <div class="slds-truncate">
+	                                            	<a href="#" id="Type_verpakking2" class="link-as-text">Type verpakking</a>
+	                                            </div>
+	                                        </th>
+
+	                                        <th scope="col" >
+	                                            <div class="slds-truncate">
+	                                            	<a href="#" id="wat_nog_op_te_roepen_is2" class="link-as-text"># wat nog op te roepen is</a>
+	                                            </div>
+	                                        </th>
+
+	                                        <th scope="col" >
+	                                            <div class="slds-truncate">
+	                                            	<a href="#" id="Loods/HUB2" class="link-as-text">Loods/HUB</a>
+	                                            </div>
+	                                        </th>
+	            						</tr>
+	            					</thead>
+
+	            					<tbody>
+	            						<apex:repeat value="{!listForAfroepen}" var="la">
+	            							<tr class="slds-hint-parent">
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <div class="slds-form-element">
+  														<div class="slds-form-element__control">
+    														<!-- <input type="text" id="text-input-id-1" class="slds-input" placeholder="Placeholder Text"> -->
+    														<apex:input styleclass="slds-input max-width-150 itemsToInvoke {!la.wwwRecord.Id}" value="{!la.itemsToInvoke}" type="number" onchange="checkAvailability(this, {!la.wwwRecord.Curr_Items_To_Invoke__c}, '{!la.wwwRecord.Id}');"/>
+  														</div>
+													</div>
+                                                </td>
+
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <apex:outputText value="{!la.wwwRecord.Item__r.Name}" />
+                                                </td>
+
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <apex:outputText value="{!la.wwwRecord.Item__r.Staat__c}" />
+                                                </td>
+
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <apex:outputText value="{!la.wwwRecord.Item__r.Sizes__c}" />
+                                                </td>
+
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <apex:outputText value="{!la.wwwRecord.Item__r.Diameter__c}" />
+                                                </td>
+
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <apex:outputText value="{!la.wwwRecord.Item__r.Merk__c}" />
+                                                </td>
+
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <apex:outputText value="{!la.wwwRecord.Item__r.Materiaal__c}" />
+                                                </td>
+
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <apex:outputText value="{!la.wwwRecord.Item__r.Kleur__c}" />
+                                                </td>
+
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <apex:outputText value="{!la.wwwRecord.Item__r.Kind_Of_Packages__c}" />
+                                                </td>
+
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <apex:outputText value="{!la.wwwRecord.Curr_Items_To_Invoke__c}" id="currItemsToInvoke"/>
+                                                </td>
+
+                                                <td class="slds-cell-shrink" data-label="Select Row">
+                                                    <apex:outputText value="{!la.wwwRecord.Hub_Building_Site__r.Name}" />
+                                                </td>
+                                            </tr>
+	            						</apex:repeat>
+	            					</tbody>
+								</table>
+
+								<div class="slds-form-element slds-m-left--xx-large slds-m-top--large" style="width: 250px;">
+                          			<label class="slds-form-element__label" for="date">{!$Label.Preferred_Delivery_Time}<span style="color:red">*</span></label>
+
+                          			<div class="slds-form-element__control">
+                           				<!-- <div class="slds-input-has-icon slds-input-has-icon--right"> -->
+                           				<div class="">
+                            				<!-- <svg aria-hidden="true" class="slds-input__icon slds-icon-text-default">
+                             					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#event')}"></use>
+                            				</svg> -->
+                             				<!-- <input id="date" class="slds-input" type="text" name="Preferred_Delivery_Time__c" value="{!deliveryDate}" /> -->
+                             				<!-- <input id="date" class="slds-input" type="text" placeholder="Pick a Date" label="Date Picker Label" /> -->
+                             				<apex:input id="date" styleclass="slds-input" type="date" value="{!deliveryDate}" style="width: 170px; margin-right: 15px;"/>
+
+                             				<apex:selectList value="{!selectedTime}" size="1" styleclass="slds-select" style="width:25% !important;">
+		                        				<apex:selectOptions value="{!times}"> </apex:selectOptions>
+		                    				</apex:selectList>
+                           				</div>
+                          			</div>
+                        		</div>
+
+                        		<div class="slds-form-element__group slds-m-left--xx-large slds-m-top--large" style="width: 250px;">
+                      				<div class="slds-form-element__row">
+                        				<div class="slds-form-element slds-size--1-of-1">
+                          					<label class="slds-form-element__label" for="input-01">{!$Label.Extra_Remarks}</label>
+                          					<apex:inputTextarea id="newDesc" styleclass="slds-input" value="{!extraRemark}"/>
+                        				</div>
+                      				</div>
+                    			</div>
+
+								<input class="slds-button slds-button--brand slds-m-left--xx-large slds-m-top--medium finish-afroepen-button" type="button" value="Opslaan" style="font-size: 13px;" onclick="finishAfroepenItems();"/>
+							</div>
+						</apex:outputPanel>
+					</apex:outputPanel>
+
+					<div class="records-created-popup" style="display:none;">
+			            <div role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open">
+			                <div class="slds-modal__container">
+			                    <div class="slds-modal__header slds-modal__header--empty">
+			                        <!-- EMPTY DOM ELEMENT, COULD BE HEADER -->
+			                    </div>
+			                    <div class="slds-modal__content slds-p-around--medium">
+			                        <p class="slds-text-align--center slds-text-heading--small" style="padding: 25px 0;">{!$Label.Records_created_successfully}</p>
+			                    </div>
+			                    <div class="slds-modal__footer slds-modal__footer--horizontal" style="text-align:center">
+			                        <!-- <div class="slds-button slds-button--brand" id="unsaved-tabchange-continue" style="cursor: pointer;">Ja</div> -->
+			                        <div class="slds-button slds-button--neutral" id="records-created-close" style="cursor: pointer;">OK</div>
+			                    </div>
+			                </div>
+			            </div>
+            <div class="slds-backdrop slds-backdrop--open"></div>
+			        </div>
+			    </div>
+			    </div>
+
+			    <div style="height: 50px; width: 100%;">
+			    	<input class="slds-button slds-button--brand slds-m-left--xx-large slds-m-top--medium afroepen-button" type="button" value="Afroepen" style="font-size: 13px;" onclick="afroepenItems();" disabled="true" />
+			    </div>
+				</apex:form>
+			</div>
+		<!-- </div> -->
+	</div>
+	<!-- / REQUIRED SLDS WRAPPER -->
+
+	<script type="text/javascript">
+		var j$ = jQuery.noConflict();
+
+		j$(window).on('load resize', function(){
+            j$('.insideForm').height(j$(this).height()*0.85);
+        });
+
+        j$(document).ready(function() {
+        });
+
+
+        j$('#records-created-close').click(function(e){
+            e.preventDefault();
+            j$('.records-created-popup').hide();
+        });
+
+        function searchActs(key) {
+    		j$('#'+key.attr('aria-activedescendant')).show();
+			//Grabbing The Input Field Value
+    		searchKey = key.val();
+    		if(searchKey == '') {
+    			j$('#'+key.attr('aria-activedescendant')).hide();
+    		}
+
+    		j$('#searchText').text(searchKey);
+
+    		searchProjects(searchKey);
+		}
+
+		//Function To Get Account Record's Details on Record Click
+		function projInfo(projId, projName) {
+   			j$('#SrchDrpDwn').fadeOut();
+   			j$('#searchInput').val(projName);
+
+   			searchItems(projId);
+		}
+
+		function checkForSelectedItems() {
+			if (j$('.itemSelected:checkbox:checked').length > 0) {
+				j$('.afroepen-button').removeAttr('disabled');
+			} else {
+				j$('.afroepen-button').attr('disabled', 'disabled');
+			}
+		}
+
+		function checkAvailability(currInput, maxItems, recordId) {
+			if (currInput.value > maxItems || currInput.value < 1 ) {
+				j$('.'+recordId).parent().parent().addClass('slds-has-error');
+				j$('.finish-afroepen-button').attr('disabled', 'disabled');
+			} else {
+				j$('.'+recordId).parent().parent().removeClass('slds-has-error'); //finish-afroepen-button
+				j$('.finish-afroepen-button').removeAttr('disabled');
+			}
+		}
+
+		var clicks = 0;
+		var lastClicked;
+
+		function sortByFiledItemScr(param) {
+            lastClicked = param;
+            console.log(param);
+            clicks++;
+            if (clicks % 2) {
+                console.log('ASCENDING');
+                sortByFiledItemAct('ASCENDING', param);
+            } else {
+                console.log('DESCENDING');
+                sortByFiledItemAct('DESCENDING', param);
+            }
+        }
+
+        function addArrow() {
+            var sortDirection = '';
+
+            if (clicks % 2) {
+                sortDirection = 'ASCENDING';
+            } else {
+                sortDirection = 'DESCENDING';
+            }
+
+            console.log('addArrow -->> ' + lastClicked);
+            if (sortDirection == 'ASCENDING') {
+                j$("#"+lastClicked).after('<apex:image styleClass="down" value="{!$Resource.DownArrow}" width="15px" height="20px"/>');
+            } else {
+                j$("#"+lastClicked).after('<apex:image styleClass="up" value="{!$Resource.UpArrow}" width="15px" height="20px"/>');
+            }
+            setFocusAndSort();
+        }
+
+        function filterItems() {
+        	var searchedName = j$("[id$='searchItemName']").val();
+        	var searchedSize = j$("[id$='seacrhByItemSize']").val();
+        	var searchedDiameter = j$("[id$='seacrhByItemDiameter']").val();
+        	var searchedMerk = j$("[id$='seacrhByItemMerk']").val();
+        	var searchedHub = j$("[id$='seacrhByHub']").val();
+
+            filterItemsAct(searchedName, searchedSize, searchedDiameter, searchedMerk, searchedHub);
+        }
+
+        var capturedFieldId = null;
+        function captureFocus() {
+            if (document.activeElement != null) {
+                capturedFieldId = document.activeElement.id;
+            } else {
+                capturedFieldId = null;
+            }
+            console.log('capturedFieldId -->> ', capturedFieldId);
+        }
+
+        function setFocusOnFilterField() {
+        	console.log('setFocusOnFilterField');
+        	if (capturedFieldId) {
+                if (capturedFieldId != null) {
+                    var focusedElement = document.getElementById(capturedFieldId);
+                    console.log('focusedElement -->> ' + focusedElement);
+
+                    if (focusedElement) {
+                        SetCaretAtEnd(document.getElementById(capturedFieldId));
+                       	console.log('2capturedFieldId -->> ' + capturedFieldId);
+                    }
+                } else {
+                    console.log('NULL -->> ' + capturedFieldId);
+                }
+            }
+        }
+
+        function SetCaretAtEnd(elem) {
+            console.log('SetCaretAtEnd -->> ' + elem );
+            var elemLen = elem.value.length;
+            // For IE Only
+            if (document.selection) {
+                // Set focus
+                elem.focus();
+                // Use IE Ranges
+                var oSel = document.selection.createRange();
+                // Reset position to 0 & then set at end
+                oSel.moveStart('character', -elemLen);
+                oSel.moveStart('character', elemLen);
+                oSel.moveEnd('character', 0);
+                oSel.select();
+            } else if (elem.selectionStart || elem.selectionStart == '0') {
+                // Firefox/Chrome
+                elem.selectionStart = elemLen;
+                elem.selectionEnd = elemLen;
+                elem.focus();
+            }
+        }
+
+        function setFocusAfterAfroepenPress() {
+        	j$('.afroepen-button').attr('disabled', 'disabled');
+        }
+	</script>
+
+	<apex:outputPanel id="showPopupScript">
+		<script type="text/javascript">
+			function openpopup() {
+				console.log('showSuccessPopup -->> ' + {!showSuccessPopup});
+				if ('{!showSuccessPopup}' == 'true' || {!showSuccessPopup} == true) {
+					j$('.records-created-popup').removeAttr('style');
+				}
+			}
+		</script>
+	</apex:outputPanel>
+	</body>
+</apex:page>

@@ -1,0 +1,777 @@
+<apex:page standardController="WWW__c" extensions="WWWDetailExtension"  docType="html-5.0" standardStylesheets="false" >
+  <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">   
+  
+    <head>
+     <apex:includeScript value="{!URLFOR($Resource.qrcode, 'jquery.min.js')}" />
+      <apex:stylesheet value="{!URLFOR($Resource.SLDS080, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+
+      <!-- MomentJS CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.js"></script>
+      <script src="{!URLFOR($Resource.aljs, '/jquery.aljs-all-with-moment.min.js')}"></script>
+
+      <style type="text/css">
+        
+        .slds-form-element slds-size--1-of-2 {
+          float:left;
+        }
+        .slds-form-element slds-size--2-of-2 {
+          float:right;
+          width:50% !important;
+        }
+        .slds .slds-form-element__label {
+          display: inherit;
+         
+        }
+        .slds-form-element__row{
+          //display: inline-flex;
+        }
+        a input {
+          display:none;
+        }
+        .slds-form-element__row { 
+                  display: -webkit-box !important;      
+          }     
+          .slds .slds-size--1-of-2, .slds .slds-select {      
+      width: 50% !important;      
+      }     
+      .slds .slds-input{      
+          width:50%;      
+    }     
+      .slds .slds-size--2-of-2 {      
+      width: 50%;     
+       }
+
+       .buttons-section {
+          padding-top: 10px;
+        }
+      </style>
+    </head>
+    <body>
+      
+      <apex:form styleClass="slds-form--stacked" id="form">
+        <apex:pageMessages id="msg" escape="false"/>
+        <div class="slds">   
+          <apex:actionFunction name="getSubsACT" action="{!getSubs}" reRender="subLocation,subLocation1, subLocation2, subLocation3"/>
+          <apex:actionFunction name="getOccupiedSubsACT" action="{!getOccupiedSubs}" reRender="subLocation,subLocation1, subLocation2, subLocation3">
+              <!-- <apex:param name="amountOfItems" value="" assignTo="{!numberOfItems}" /> -->
+          </apex:actionFunction>
+
+            <div class="slds-page-header" role="banner">
+            <div class="slds-scrollable--y">
+
+              <!-- LAYOUT GRID -->
+              <div class="slds-grid">
+                
+                <!-- GRID COL -->
+                <div class="slds-col">
+                  <!-- HEADING AREA -->
+                  <apex:outputPanel rendered="{!invoked}">
+                    <p class="slds-text-heading--label">Nieuw afroepen&nbsp;{!www.Item__r.Name}</p>
+                    
+                    <fieldset class="slds-form--compound" style="width: 45%;">
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-01">Aantal<span style="color:red">*</span></label>
+                          <apex:inputField id="input-01" styleclass="slds-input" value="{!detail.Number_Of_Items__c}" style="width:65% !important;" />
+                        </div>
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-02">{!$Label.Preferred_Delivery_Time}<span style="color:red">*</span></label>
+
+                          <div class="slds-form-element__control">
+                           <div class="slds-input-has-icon slds-input-has-icon--right">
+                            <svg aria-hidden="true" class="slds-input__icon slds-icon-text-default">
+                             <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#event')}"></use>
+                            </svg> 
+                             <input id="date" class="slds-input" type="text"  name="Preferred_Delivery_Time__c" value="{!detail.Preferred_Delivery_Time__c}" style="width: 100%;" />
+                           </div>
+                          </div>
+
+                            <apex:selectList value="{!selectedTime6}" size="1" styleclass="slds-select" style="width:25% !important;">
+                                <apex:selectOptions value="{!times}"> </apex:selectOptions>
+                            </apex:selectList>
+              
+                        </div>
+                      </div>
+                    </div>
+
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size--1-of-1">
+                          <label class="slds-form-element__label" for="input-01">{!$Label.Extra_Remarks}</label>
+                          <apex:inputField id="input-011" styleclass="slds-input" value="{!detail.Extra_Remarks__c}" />
+                        </div>
+                     
+                      </div>
+                    </div>
+                  </fieldset>
+
+                    
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!delToHub}">
+                  <p class="slds-text-heading--label">Nieuw ontvangen&nbsp;{!www.Item__r.Name}</p>
+                
+                    <!-- /HEADING AREA -->
+
+                    <fieldset class="slds-form--compound" style="width: 75%;">
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-01">Aantal ontvangen items<span style="color:red">*</span></label>
+                          <apex:inputField styleclass="slds-input" value="{!detail.Number_Of_Items__c}" />
+                        </div>
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-02">Beschadigd<span style="color:red">*</span></label>
+                          <apex:inputField styleclass="slds-input" value="{!detail.Damage_Package__c}" />
+                        </div>
+                      </div>
+                    </div>
+<!--                     <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size--1-of-2">
+
+                           <label class="slds-form-element__label" for="input-04">Aankomst datum en tijd</label>                              
+                         <apex:inputField styleclass="slds-input lookupW" value="{!detail.Arrival_Truck_On_Hub__c}" />
+                        </div>
+                        <div class="slds-form-element slds-size--1-of-2">
+
+                        </div>
+                      </div>
+                    </div> -->
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-04">Aankomst datum en tijd<span style="color:red">*</span></label>
+                          <!-- <input type="date" value="{!detail.Arrival_Truck_On_Hub__c}" class="slds-input" style="width:25% !important;" name="Arrival_Truck_On_Hub__c"/> -->
+
+                          <div class="slds-form-element__control">
+                           <div class="slds-input-has-icon slds-input-has-icon--right">
+                            <svg aria-hidden="true" class="slds-input__icon slds-icon-text-default">
+                             <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#event')}"></use>
+                            </svg>
+                             <input id="date" class="slds-input" type="text"  name="Arrival_Truck_On_Hub__c" value="{!detail.Arrival_Truck_On_Hub__c}" style="width: 100%;" />
+                           </div>
+                          </div>
+
+                            <apex:selectList value="{!selectedTime3}" size="1" styleclass="slds-select" style="width:25% !important;">
+                                <apex:selectOptions value="{!times}"> </apex:selectOptions>
+                            </apex:selectList>
+
+                        </div>
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-04">Einddatum opslag<span style="color:red">*</span></label>
+
+                          <div class="slds-form-element__control">
+                           <div class="slds-input-has-icon slds-input-has-icon--right">
+                            <svg aria-hidden="true" class="slds-input__icon slds-icon-text-default">
+                             <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#event')}"></use>
+                            </svg>
+                             <input id="date2" class="slds-input" type="text"  name="Einddatum_opslag__c" value="{!detail.Einddatum_opslag__c}" style="width: 100%;" />
+                           </div>
+                          </div>
+
+                            <!-- <apex:selectList value="{!selectedTime7}" size="1" styleclass="slds-select" style="width:25% !important;">
+                                <apex:selectOptions value="{!times}"> </apex:selectOptions>
+                            </apex:selectList> -->
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-01">{!$Label.Location}<span style="color:red">*</span></label>
+                          <apex:inputField styleclass="slds-input lookupW" value="{!detail.Location__c}" onchange="getSubs();"/>
+                        </div>
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-01">Sublocatie<span style="color:red">*</span></label>
+                          <apex:outputPanel id="subLocation1">
+                            <apex:repeat value="{!sublocations1}" var="sublocation">
+                                <div class="checkbox__holder">
+                                 
+                                    <apex:inputCheckbox styleclass="slds-checkbox" value="{!sublocation.isChecked}"/>
+                                    
+                                    <label for="nederlands">{!sublocation.sub.Name}</label>
+                                </div>
+                            </apex:repeat>
+                          </apex:outputPanel>
+                        </div>
+                      </div>
+                    </div>
+
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-02">Bouwticket</label>
+                          <apex:inputField styleclass="slds-input" value="{!detail.Bouwticket__c}" />
+                        </div>
+                      </div>
+                    </div>
+                  
+                    
+                 
+                    <!--legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-01">Temporary Location</label>
+                          <apex:inputField styleclass="slds-input" value="{!detail.Temporary_Location__c}" />
+                        </div>
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-02">Arrival Truck On HUB</label>
+                         
+                           <input type="date" value="{!detail.Arrival_Truck_On_Hub__c}" class="slds-input" style="width:50% !important;" name="Arrival_Truck_On_Hub__c"/>
+                            <apex:selectList value="{!selectedTime3}" size="1" styleclass="slds-select" style="width:50% !important;">
+                                <apex:selectOptions value="{!times}"> </apex:selectOptions>
+                            </apex:selectList>
+                        </div>
+                      </div>
+                    </div-->
+                 
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      
+                        <div class="slds-form-element slds-size--1-of-2">
+                          
+                           <label class="slds-form-element__label" for="input-02">Opmerkingen</label>
+                           <apex:inputField styleclass="slds-input" value="{!detail.Extra_Remarks__c}" />
+                        </div>
+                      </div>
+                    
+                  
+                  
+                
+                    <!--legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size--1-of-1">
+                          <label class="slds-form-element__label" for="input-01">Extra Remarks</label>
+                          <apex:inputField styleclass="slds-input" value="{!detail.Extra_Remarks__c}" />
+                        </div>
+                      
+                      </div>
+                    </div-->
+                  </fieldset>
+                </apex:outputPanel>
+                <!-- <apex:outputPanel rendered="{!rejected}">
+                   <p class="slds-text-heading--label">New 2 Rejected</p>
+
+                    <fieldset class="slds-form--compound" style="width: 45%;">
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-01">Number of items</label>
+                          <apex:inputField styleclass="slds-input" value="{!detail.Number_Of_Items__c}" />
+                        </div>
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-02">Number Of Packages</label>
+                          <apex:inputField styleclass="slds-input" value="{!detail.Number_Of_Packages__c}" />
+                        </div>
+                      </div>
+                    </div>
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size--1-of-2">
+                         <label class="slds-form-element__label" for="input-03">Transportation Unit Packages</label>
+                          <apex:inputField styleclass="slds-input lookupW" value="{!detail.Transportation_Unit_Packages__c}" />
+                        </div>
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-04">Number Of Packages On Transportion Unit</label>
+                          <apex:inputField styleclass="slds-input lookupW" value="{!detail.Number_Of_Packages_On__c}" />
+                        </div>
+                      </div>
+                    </div>
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size--1-of-2">
+                         <label class="slds-form-element__label" for="input-03">Number Of Pallets</label>
+                          <apex:inputField styleclass="slds-input lookupW" value="{!detail.Number_Of_Pallets__c}" />
+                        </div>
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-04">Currency In Euro's</label>
+                          <apex:inputField styleclass="slds-input lookupW" value="{!detail.Currency_In_Euro_s__c}" />
+                        </div>
+                      </div>
+                    </div>
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size--1-of-2">
+                         <label class="slds-form-element__label" for="input-03">Damage Package</label>
+                          <apex:inputField styleclass="slds-input lookupW" value="{!detail.Damage_Package__c}" />
+                        </div>
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-04">Date Of Delivery</label>
+                          <apex:inputField styleclass="slds-input lookupW" value="{!detail.Date_Of_Delivery__c}" />
+                        </div>
+                      </div>
+                    </div>
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size--1-of-2">
+                         <label class="slds-form-element__label" for="input-03">Arrival Truck On Hub</label>
+                          <apex:inputField styleclass="slds-input lookupW" value="{!detail.Arrival_Truck_On_Hub__c}" />
+                        </div>
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-04">Departure Truck</label>
+                          <apex:inputField styleclass="slds-input lookupW" value="{!detail.Departure_Truck__c}" />
+                        </div>
+                      </div>
+                    </div>
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size--1-of-2">
+                         <label class="slds-form-element__label" for="input-03">Entry Date And Time</label>
+                          <apex:inputField styleclass="slds-input lookupW" value="{!detail.Entry_Date_And_Time__c}" />
+                        </div>
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-04">Transporter</label>
+                          <apex:inputField styleclass="slds-input lookupW" value="{!detail.Transporter__c}" />
+                        </div>
+                      </div>
+                    </div>
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size--1-of-2">
+                         <label class="slds-form-element__label" for="input-03">Transporter Contact</label>
+                          <apex:inputField styleclass="slds-input lookupW" value="{!detail.Transporter_Contact__c}" />
+                        </div>
+                      
+                      </div>
+                    </div>
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-01">{!$Label.Location}</label>
+                          <apex:inputField styleclass="slds-input lookupW" value="{!detail.Location__c}" onchange="getSubs();"/>
+                        </div>
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-01">SubLocation</label>
+                          <apex:outputPanel id="subLocation2">
+                            <apex:repeat value="{!sublocations1}" var="sublocation">
+                                <div class="checkbox__holder">
+                                 
+                                    <apex:inputCheckbox styleclass="slds-checkbox" value="{!sublocation.isChecked}"/>
+                                    
+                                    <label for="nederlands">{!sublocation.sub.Name}</label>
+                                </div>
+                            </apex:repeat>
+                          </apex:outputPanel>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    
+                 
+                    
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-02">Remarks</label>
+                          <apex:inputField styleclass="slds-input" value="{!detail.Remarks__c}" />
+                        </div>
+                     
+                        <div class="slds-form-element slds-size--2-of-2">
+                          <label class="slds-form-element__label" for="input-01">{!$Label.Extra_Remarks}</label>
+                          <apex:inputField styleclass="slds-input" value="{!detail.Extra_Remarks__c}" />
+                        </div>
+                      
+                      </div>
+                 
+                  </fieldset>
+                </apex:outputPanel> -->
+
+                <!-- NIEUV VERWACHTEN -->
+
+                <apex:outputPanel rendered="{!reserved}">
+                <p class="slds-text-heading--label">Nieuw verwachten&nbsp;{!www.Item__r.Name}</p>
+                  <fieldset class="slds-form--compound" style="width:75%;">
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-01">Projectcode<span style="color:red">*</span></label>
+                          <!-- <apex:selectList value="{!detail.Project__c}" size="1" styleclass="slds-select">
+                               <apex:selectOptions value="{!projects}"></apex:selectOptions>
+                           </apex:selectList> -->
+                           <apex:inputField styleclass="slds-input lookupW " value="{!www.Project__c}"/>
+                        </div>
+                       <div class="slds-form-element slds-size--2-of-2">
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        
+                        <div class="slds-form-element slds-size--1-of-2" style=" width:50% !important;">
+                          <label class="slds-form-element__label" for="input-01">Grootste verpakking<span style="color:red">*</span></label>
+                          <apex:inputField styleclass="slds-input lookupW" value="{!detail.Grootte_verpakking__c}" />
+                           
+                        </div>
+                        <div class="slds-form-element slds-size--2-of-2">
+                          <label class="slds-form-element__label" for="input-01">Aantal<span style="color:red">*</span></label>
+                          <apex:inputField styleclass="slds-input lookupW " value="{!detail.Number_Of_Items__c}" />
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                          
+                        <div class="slds-form-element slds-size--1-of-2">
+                           <label class="slds-form-element__label" for="input-02">Aanleverdatum<span style="color:red">*</span></label>
+
+                           <div class="slds-form-element__control">
+                           <div class="slds-input-has-icon slds-input-has-icon--right">
+                            <svg aria-hidden="true" class="slds-input__icon slds-icon-text-default">
+                             <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#event')}"></use>
+                            </svg> 
+                             <input id="date" class="slds-input" type="text"  name="Date_Of_Delivery" value="{!detail.Date_Of_Delivery__c}" style="width: 100%;" />
+                           </div>
+                          </div>
+
+                            <apex:selectList value="{!selectedTime}" size="1" styleclass="slds-select" style="width:25% !important;">
+                                <apex:selectOptions value="{!times}"> </apex:selectOptions>
+                            </apex:selectList>
+                        </div>
+                        <div class="slds-form-element slds-size--2-of-2" style=" width:50% !important;">
+                          <label class="slds-form-element__label" for="input-02">Opslagduur<span style="color:red">*</span></label>
+
+                          <div class="slds-form-element__control">
+                           <div class="slds-input-has-icon slds-input-has-icon--right">
+                            <svg aria-hidden="true" class="slds-input__icon slds-icon-text-default">
+                             <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#event')}"></use>
+                            </svg> 
+                             <input id="date1" class="slds-input" type="text"  name="Opslagduur__c" value="{!detail.Opslagduur__c}" style="width: 100%;" />
+                           </div>
+                          </div>
+
+                            <apex:selectList value="{!selectedTime2}" size="1" styleclass="slds-select" style="width:25% !important;">
+                                <apex:selectOptions value="{!times}"> </apex:selectOptions>
+                            </apex:selectList>
+                      
+                        </div>
+                      </div>
+                    </div>
+                 
+
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-02">Afroepeenheid<span style="color:red">*</span></label>
+                          <apex:inputField styleclass="slds-input" value="{!detail.Afroepeenheid__c}" />
+                        </div>
+                    
+                        <div class="slds-form-element slds-size--2-of-2" style=" width:50% !important;">
+                          <label class="slds-form-element__label" for="input-01">Foto wenselijk</label>
+                          <apex:inputField styleclass="" value="{!detail.Foto__c}" />
+                        </div>
+                      
+                      </div>
+                    </div>
+
+
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-02">Opmerkingen</label>
+                      <apex:inputField styleclass="" value="{!detail.Extra_Remarks__c}" />
+                        </div>
+                    
+                       
+                      
+                      </div>
+                    </div>
+                  </fieldset>
+
+                </apex:outputPanel>
+
+                <apex:outputPanel rendered="{!delToProj}">
+                <p class="slds-text-heading--label">Nieuw Afleveren&nbsp;{!www.Item__r.Name}</p>
+                  <fieldset class="slds-form--compound" style="width: 75%;">
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-01">Aantal items<span style="color:red">*</span></label>
+                          <apex:inputField styleclass="slds-input" value="{!detail.Number_Of_Items__c}" />
+                        </div>
+                        <div class="slds-form-element slds-size--2-of-2">
+                          <!-- <label class="slds-form-element__label" for="input-02">Damage Package</label> -->
+                          <!-- <apex:inputField styleclass="slds-select" value="{!detail.Damage_Package__c}" /> -->
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size--1-of-2">
+                           
+                          <label class="slds-form-element__label" for="input-01">{!$Label.Location}<span style="color:red">*</span></label>
+                          <!--apex:inputField styleclass="slds-input lookupW" value="{!detail.Location__c}" onchange="getSubs();"/-->
+                          <apex:selectList value="{!detail.Location__c}" onchange="getOccupiedSubs();" size="1" styleclass="slds-select">
+                            <apex:selectOptions value="{!locationsForDelToPr}"/>
+                          </apex:selectList>
+                        </div>
+                        <div class="slds-form-element slds-size--2-of-2">
+                          <label class="slds-form-element__label" for="input-01">Sublocatie<span style="color:red">*</span></label>
+                            <apex:outputPanel id="subLocation3">
+                              <!-- <apex:repeat value="{!sublocations1}" var="sublocation">
+                                  <div class="checkbox__holder">
+                                   
+                                      <apex:inputCheckbox styleclass="slds-checkbox" value="{!sublocation.isChecked}" disabled="true"/>
+                                      
+                                      <label for="nederlands">{!sublocation.sub.Name}</label>
+                                  </div>
+                              </apex:repeat> -->
+                              <apex:repeat value="{!occupiedSublocs}" var="sublocation">
+                                  <div class="checkbox__holder">
+                                   
+                                      <apex:inputCheckbox styleclass="slds-checkbox afleveren-check" value="{!sublocation.isChecked}" onclick="checkChecked(this);"/>
+                                      
+                                      <label for="nederlands">{!sublocation.locsLabel}</label>
+                                  </div>
+                              </apex:repeat>
+                            </apex:outputPanel>
+                        </div>
+                      </div>
+                    </div>
+                   <!-- <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size--1-of-2">
+                           <label class="slds-form-element__label" for="input-02">Transporteur</label>
+                          <apex:inputField styleclass="slds-input lookupW" value="{!detail.Transporteur__c}" />
+                        </div>
+                        <div class="slds-form-element slds-size--2-of-2">
+                          <label class="slds-form-element__label" for="input-02">Contactpersoon transporteur</label>
+                          <apex:inputField styleclass="slds-select" value="{!detail.Contactpersoon_transporteur__c}" />
+                        </div>
+                      </div>
+                    </div> -->
+                 
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-02">Compleet klaargezet<span style="color:red">*</span></label>
+                          <apex:inputField styleclass="slds-input" value="{!detail.Compleet_klaargezet__c}" id="theCompleet" onchange="addReqToReden();"/>
+                        </div>
+                    
+                        <div class="slds-form-element slds-size--2-of-2">
+                          <label class="slds-form-element__label" for="input-01">Datum en tijd klaargezet<span style="color:red">*</span></label>
+                          <!-- <input type="date" value="{!detail.Arrival_Truck_On_Project__c}" class="slds-input" style="width:25% !important;" name="Arrival_Truck_On_Project__c"/>
+                            <apex:selectList value="{!selectedTime4}" size="1" styleclass="slds-select" style="width:25% !important;">
+                                <apex:selectOptions value="{!times}"> </apex:selectOptions>
+                            </apex:selectList> -->
+                            <div class="slds-form-element__control">
+                             <div class="slds-input-has-icon slds-input-has-icon--right">
+                              <svg aria-hidden="true" class="slds-input__icon slds-icon-text-default">
+                               <use xlink:href="{!URLFOR($Resource.SLDS080, '/assets/icons/utility-sprite/svg/symbols.svg#event')}"></use>
+                              </svg> 
+                               <input id="date" class="slds-input" type="text"  name="Arrival_Truck_On_Project__c" value="{!detail.Arrival_Truck_On_Project__c}" style="width: 100%;" />
+                             </div>
+                            </div>
+
+                            <apex:selectList value="{!selectedTime4}" size="1" styleclass="slds-select" style="width:25% !important;">
+                                <apex:selectOptions value="{!times}"> </apex:selectOptions>
+                            </apex:selectList>
+                        </div>
+                      
+                      </div>
+                    </div>
+<!--                     <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-02">Reden niet compleet uigevoerd</label>
+                          <apex:inputField styleclass="slds-input" value="{!detail.Reden_niet_compleet_uigevoerd__c}" />
+                        </div>
+                    
+                        <div class="slds-form-element slds-size--2-of-2">
+                          <label class="slds-form-element__label" for="input-01">Toelichting</label>
+                          <apex:inputField styleclass="slds-input" value="{!detail.Toelichting__c}" />
+                        </div>
+                      
+                      </div>
+                    </div> -->
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-02">Reden niet compleet uitgevoerd</label>
+                          <apex:inputField styleclass="slds-input slds-hidden redenAflv" id="redenAfleveren" value="{!detail.Reden_niet_compleet_uigevoerd__c}" />
+                        </div>
+                         <div class="slds-form-element slds-size--1-of-2">
+                          <!-- <label class="slds-form-element__label" for="input-02">Bouwticket</label> -->
+                          <!-- <apex:inputField styleclass="slds-input" value="{!detail.Bouwticket__c}" /> -->
+                        </div>
+                    </div>
+                    </div>
+                    <div class="slds-form-element__group">
+                    <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size--1-of-1" style=" width:50% !important;">
+                          <label class="slds-form-element__label" for="input-01">Opmerkingen</label>
+                          <apex:inputField styleclass="" value="{!detail.Toelichting__c}" />
+                        </div>
+                      
+                      </div>
+                    </div>
+
+                    <!--legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size--1-of-2">
+                           <label class="slds-form-element__label" for="input-02">Afname palletplaatsen</label>
+                          <apex:inputField styleclass="slds-input lookupW" value="{!detail.Afname_palletplaatsen__c}" />
+                        </div>
+                        <div class="slds-form-element slds-size--2-of-2">
+                          <label class="slds-form-element__label" for="input-02">Envrionmental Class Truck</label>
+                          <apex:inputField styleclass="slds-select" value="{!detail.Envrionmental_Class_Truck__c}" />
+                        </div>
+                      </div>
+                    </div>
+                 
+                    <legend class="slds-form-element__label slds-text-title--caps"></legend>
+                    <div class="slds-form-element__group">
+                      <div class="slds-form-element__row">
+                        
+                        <div class="slds-form-element slds-size--1-of-2">
+                          <label class="slds-form-element__label" for="input-02">Arrival Truck On Project</label>
+                          <input type="date" value="{!detail.Arrival_Truck_On_Project__c}" class="slds-input" style="width:25% !important;" name="Arrival_Truck_On_Project__c"/>
+                            <apex:selectList value="{!selectedTime4}" size="1" styleclass="slds-select" style="width:25% !important;">
+                                <apex:selectOptions value="{!times}"> </apex:selectOptions>
+                            </apex:selectList>
+                        </div>
+                    
+                        <div class="slds-form-element slds-size--2-of-2">
+                          <label class="slds-form-element__label" for="input-01">Extra Remarks</label>
+                          <apex:inputField styleclass="slds-input" value="{!detail.Extra_Remarks__c}" />
+                        </div>
+                      
+                      </div>
+                    </div-->
+                    
+                  </fieldset>
+
+                </apex:outputPanel>
+                </div>
+                <br/>
+                
+                </div>
+              </div>
+               <apex:outputpanel >
+                    <apex:actionstatus id="status">
+                        <apex:facet name="start">
+                            <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.75; z-index: 500; background-color: #696969;">
+                                &nbsp;
+                            </div>
+                            <div style="position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 501; margin: 15% 50%">
+                                <img src="/img/loading.gif" />
+                            </div>
+                        </apex:facet>
+                    </apex:actionstatus>
+                </apex:outputpanel> 
+              <div class="buttons-section">
+                <apex:commandButton value="Opslaan" action="{!saveDetail}" styleClass="slds-button slds-button--brand slds-m-right--xx-large" onclick="disableButton();" status="status" oncomplete="enableButton();" reRender="msg"/>
+                <apex:commandButton value="Annuleren" action="{!cancel}" styleClass="slds-button slds-button--neutral"/>
+              </div>
+          </div>
+        </div>                
+      </apex:form>
+         <script>
+            function addReqToReden() {
+              var currVal = document.getElementById('{!$Component.form.theCompleet}').value;
+
+              if( currVal == 'Nee' ) {
+                $(".redenAflv").removeClass('slds-hidden');
+              } else {
+                $(".redenAflv").addClass('slds-hidden');
+              }
+            }
+
+            function checkChecked(ch) {
+                $('.afleveren-check').not(ch).prop('checked', false);
+            }
+
+             function disableButton () {
+                $('input[type="submit"]').prop('disabled', true);
+             }
+             function enableButton () {
+                $('input[type="submit"]').prop('disabled', false);
+             }
+             function getSubs () {
+                 getSubsACT();
+             }
+             function getOccupiedSubs() {
+                // var numberOfItems = {!detail.Number_Of_Items__c};
+                getOccupiedSubsACT();
+             }
+             console.log($(".lookupW"));
+            
+             $(".lookupInput a").each(function(index){
+                 $(this).removeClass('slds-input').addClass('lookupIconCustom');
+            });
+
+             //Assigning SLDS Static Resource Path To A Variable To Use It With ALJS Initialization
+            var assetsLoc = '{!URLFOR($Resource.SLDS080)}';
+            $.aljsInit({
+              assetsLocation: assetsLoc, //SLDS Static Resource Path
+              scoped: true
+            });
+
+            $(document).ready(function() {
+            //Initializing Datepicker with options To The SLDS Input on document ready.
+             
+             $('#date').datepicker({
+                initDate: moment(), //Today Date
+                format: 'DD.MM.YYYY', //Date Format Of Datepicker Input Field
+              });
+
+             $('#date1').datepicker({
+                initDate: moment(), //Today Date
+                format: 'DD.MM.YYYY', //Date Format Of Datepicker Input Field
+              });
+
+             $('#date2').datepicker({
+                initDate: moment(), //Today Date
+                format: 'DD.MM.YYYY', //Date Format Of Datepicker Input Field
+              });
+            });
+
+            $(window).on('load resize', function(){
+                $('.slds-grid').height($(this).height()*0.8);
+            });
+         </script>  
+    </body>
+  </html>
+</apex:page>

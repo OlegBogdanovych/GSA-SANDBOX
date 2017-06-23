@@ -1,0 +1,405 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 2
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "ComponentData",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p2400000Cr9rTAAR",
+    "innerClasses": [
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 12,
+                        "line": 19
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "Wrap",
+                    "parameters": [
+                        {
+                            "name": "location",
+                            "type": "String"
+                        },
+                        {
+                            "name": "project",
+                            "type": "String"
+                        },
+                        {
+                            "name": "aantal",
+                            "type": "String"
+                        },
+                        {
+                            "name": "product",
+                            "type": "String"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "Wrap",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 19,
+                        "line": 13
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "project",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 19,
+                        "line": 14
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "product",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 19,
+                        "line": 15
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "location",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 19,
+                        "line": 16
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "aantal",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 20,
+                        "line": 17
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "checked",
+                    "references": [],
+                    "type": "Boolean"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 14,
+                    "line": 12
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "Wrap",
+                "references": [],
+                "type": "Wrap"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 25,
+                        "line": 19
+                    },
+                    "modifiers": [],
+                    "name": "location",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 42,
+                        "line": 19
+                    },
+                    "modifiers": [],
+                    "name": "project",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 59,
+                        "line": 19
+                    },
+                    "modifiers": [],
+                    "name": "aantal",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 74,
+                        "line": 19
+                    },
+                    "modifiers": [],
+                    "name": "product",
+                    "references": [],
+                    "type": "String"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01p2400000Cr9rTAAR",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 27
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "runScript",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "ComponentData",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 5
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "hubSelected",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 6
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "dateSelected",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 7
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "cloneFrom",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 10
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "wrap",
+            "references": [],
+            "type": "LIST"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "ComponentData",
+        "references": [],
+        "type": "ComponentData"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 316
+            },
+            "modifiers": [],
+            "name": "productNames",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 317
+            },
+            "modifiers": [],
+            "name": "projectNames",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 318
+            },
+            "modifiers": [],
+            "name": "locationNames",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 320
+            },
+            "modifiers": [],
+            "name": "wrapL",
+            "references": [],
+            "type": "Wrap"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 325
+            },
+            "modifiers": [],
+            "name": "details",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 327
+            },
+            "modifiers": [],
+            "name": "setD",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 328
+            },
+            "modifiers": [],
+            "name": "ids",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 329
+            },
+            "modifiers": [],
+            "name": "toUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 330
+            },
+            "modifiers": [],
+            "name": "det",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 331
+            },
+            "modifiers": [],
+            "name": "wrapL",
+            "references": [],
+            "type": "Wrap"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 347
+            },
+            "modifiers": [],
+            "name": "wrapL",
+            "references": [],
+            "type": "Wrap"
+        }
+    ]
+}

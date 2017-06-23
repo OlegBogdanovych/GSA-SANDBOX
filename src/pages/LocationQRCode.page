@@ -1,0 +1,35 @@
+<apex:page showHeader="true" sidebar="true" standardController="Location__c">
+	<apex:stylesheet value="{!URLFOR($Resource.SLDS080, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+	<style>
+		img {
+			width: 189px !important;
+			height: 189px !important;
+			
+		}
+	</style>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+	<div id="divButtons" name="divButtons" style="align:right;">
+		<input type="button" value = "Print" onclick="printPage()" style="position:absolute;" class="slds-button slds-button--neutral slds-not-selected"/>
+	</div>
+	<br/><br/><br/>
+	<h2>{!Location__c.Name}</h2>
+	
+	<c:QRCode sId="{!Location__c.Id}" />
+
+	
+	<script language="JavaScript">
+		function printPage() {
+			if(document.all) {
+				document.all.divButtons.style.visibility = 'hidden';
+				window.print();
+				document.all.divButtons.style.visibility = 'visible';
+			} else {
+				document.getElementById('divButtons').style.visibility = 'hidden';
+				window.print();
+				document.getElementById('divButtons').style.visibility = 'visible';
+			}
+		}
+	</script>
+ 
+</apex:page>

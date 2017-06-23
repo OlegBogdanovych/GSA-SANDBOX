@@ -1,0 +1,719 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p9E000000EJZTQA4",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p9E000000EJZTQA4",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "TestSetup"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "setup",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 22,
+                "line": 22
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test_createOntvangen",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 22,
+                "line": 65
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test_createOntvangenNegative",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 22,
+                "line": 101
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test_createAfleveren",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 22,
+                "line": 165
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test_createVerwachten",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 198
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test_createAfroepen",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 225
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test_failCreateRecvords",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "WWWDetailExtensionTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "WWWDetailExtensionTest",
+        "references": [],
+        "type": "WWWDetailExtensionTest"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "contact",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "project",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "member",
+            "references": [],
+            "type": "Projectmember__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "buldingSite",
+            "references": [],
+            "type": "Hub_Building_Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "item",
+            "references": [],
+            "type": "Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "hublocationParent",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "hublocationChilds",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "www",
+            "references": [],
+            "type": "WWW__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "www",
+            "references": [],
+            "type": "WWW__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "hublocationParent",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "WWWDetailExtension"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "tpageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "subLoc",
+            "references": [],
+            "type": "SubLocation"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "toCheck",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "www",
+            "references": [],
+            "type": "WWW__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "hublocationParent",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "WWWDetailExtension"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 74
+            },
+            "modifiers": [],
+            "name": "tpageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 90
+            },
+            "modifiers": [],
+            "name": "subLoc",
+            "references": [],
+            "type": "SubLocation"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 102
+            },
+            "modifiers": [],
+            "name": "www",
+            "references": [],
+            "type": "WWW__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "hublocationParent",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 110
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "WWWDetailExtension"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 113
+            },
+            "modifiers": [],
+            "name": "tpageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 121
+            },
+            "modifiers": [],
+            "name": "locsForAfleveren",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 127
+            },
+            "modifiers": [],
+            "name": "subLoc",
+            "references": [],
+            "type": "AfleverenSublocs"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 153
+            },
+            "modifiers": [],
+            "name": "subLoc",
+            "references": [],
+            "type": "AfleverenSublocs"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 166
+            },
+            "modifiers": [],
+            "name": "www",
+            "references": [],
+            "type": "WWW__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 167
+            },
+            "modifiers": [],
+            "name": "hublocationParent",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 174
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 175
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "WWWDetailExtension"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 178
+            },
+            "modifiers": [],
+            "name": "tpageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 199
+            },
+            "modifiers": [],
+            "name": "www",
+            "references": [],
+            "type": "WWW__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 200
+            },
+            "modifiers": [],
+            "name": "hublocationParent",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 207
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 208
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "WWWDetailExtension"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 211
+            },
+            "modifiers": [],
+            "name": "tpageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 226
+            },
+            "modifiers": [],
+            "name": "item",
+            "references": [],
+            "type": "Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 227
+            },
+            "modifiers": [],
+            "name": "buldingSite",
+            "references": [],
+            "type": "Hub_Building_Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 228
+            },
+            "modifiers": [],
+            "name": "project",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 229
+            },
+            "modifiers": [],
+            "name": "www",
+            "references": [],
+            "type": "WWW__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 231
+            },
+            "modifiers": [],
+            "name": "hublocationParent",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 234
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 235
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "WWWDetailExtension"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 238
+            },
+            "modifiers": [],
+            "name": "tpageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 255
+            },
+            "modifiers": [],
+            "name": "subLoc",
+            "references": [],
+            "type": "SubLocation"
+        }
+    ]
+}

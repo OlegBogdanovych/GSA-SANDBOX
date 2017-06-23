@@ -1,0 +1,50 @@
+38.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+11:04:55.0 (281757)|USER_INFO|[EXTERNAL]|00524000001e3Uj|bedrijfsbureau@gsa.nl.sandbox|Midden-Europese standaardtijd|GMT+02:00
+11:04:55.0 (310392)|EXECUTION_STARTED
+11:04:55.0 (314427)|CODE_UNIT_STARTED|[EXTERNAL]|06624000003h0Dq|VF: /apex/ChoseRecordType
+11:04:55.0 (834078)|VF_DESERIALIZE_VIEWSTATE_BEGIN|06624000003h0Dq
+11:04:55.0 (6709186)|VF_DESERIALIZE_VIEWSTATE_END
+11:04:55.7 (7267682)|SYSTEM_MODE_ENTER|true
+11:04:55.8 (8214200)|SYSTEM_MODE_ENTER|true
+11:04:55.0 (8583349)|SYSTEM_MODE_ENTER|true
+11:04:55.0 (9478075)|SYSTEM_MODE_ENTER|false
+11:04:55.0 (9486883)|SYSTEM_MODE_EXIT|false
+11:04:55.0 (9518016)|SYSTEM_MODE_ENTER|false
+11:04:55.0 (9915817)|SOQL_EXECUTE_BEGIN|[23]|Aggregations:0|SELECT Id, Name, DeveloperName FROM RecordType WHERE sObjectType = :tmpVar1
+11:04:55.0 (22140902)|SOQL_EXECUTE_END|[23]|Rows:5
+11:04:55.0 (22806572)|SYSTEM_MODE_EXIT|false
+11:04:55.0 (22989050)|SYSTEM_MODE_ENTER|true
+11:04:55.23 (23257373)|SYSTEM_MODE_ENTER|true
+11:04:55.0 (23358937)|SYSTEM_MODE_ENTER|true
+11:04:55.25 (25925513)|CUMULATIVE_LIMIT_USAGE
+11:04:55.25 (25925513)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 5 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+11:04:55.25 (25925513)|CUMULATIVE_LIMIT_USAGE_END
+
+11:04:55.0 (25956615)|CODE_UNIT_FINISHED|VF: /apex/ChoseRecordType
+11:04:55.0 (26910763)|EXECUTION_FINISHED
+ 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+11:04:55.73 (73658673)|CUMULATIVE_LIMIT_USAGE_END
+
+11:04:55.0 (73695152)|CODE_UNIT_FINISHED|VF: /apex/New_delivered_detail
+11:04:55.0 (74470848)|EXECUTION_FINISHED

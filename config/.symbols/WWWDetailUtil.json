@@ -1,0 +1,747 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p2400000DV2tlAAD",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p2400000DV2tlAAD",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "entry",
+            "parameters": [
+                {
+                    "name": "triggerParams",
+                    "type": "TriggerParams"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 58
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "updateParentLocations",
+            "parameters": [
+                {
+                    "name": "triggerOld",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 111
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "calculateRollupSum",
+            "parameters": [
+                {
+                    "name": "newDetails",
+                    "type": "LIST"
+                },
+                {
+                    "name": "oldDetails",
+                    "type": "LIST"
+                },
+                {
+                    "name": "triggerParams",
+                    "type": "TriggerParams"
+                },
+                {
+                    "name": "oldMap",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 337
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "checkAvailability",
+            "parameters": [
+                {
+                    "name": "details",
+                    "type": "LIST"
+                },
+                {
+                    "name": "oldMap",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 406
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "deleteSubD",
+            "parameters": [
+                {
+                    "name": "SubDetToDelete",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 411
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getSubLocDet",
+            "parameters": [
+                {
+                    "name": "triggerOld",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "WWWDetailUtil",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 2
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "subLocDet",
+            "references": [],
+            "type": "LIST"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "WWWDetailUtil",
+        "references": [],
+        "type": "WWWDetailUtil"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "triggerParams",
+            "references": [],
+            "type": "TriggerParams"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "triggerNew",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "triggerOld",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "oldMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "newMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "updated",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "det",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "triggerOld",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "parentLocationIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 60
+            },
+            "modifiers": [],
+            "name": "wwwD",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "parentLocations",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "wwwDs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "delToHubByLocationId",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 72
+            },
+            "modifiers": [],
+            "name": "delToProjectByLocationId",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 74
+            },
+            "modifiers": [],
+            "name": "wwwD",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 91
+            },
+            "modifiers": [],
+            "name": "parent",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "wwwD",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "wwwD",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "newDetails",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 96,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "oldDetails",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 122,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "triggerParams",
+            "references": [],
+            "type": "TriggerParams"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 161,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "oldMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 112
+            },
+            "modifiers": [],
+            "name": "recordTypes",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 113
+            },
+            "modifiers": [],
+            "name": "wwwIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 115
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 120
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 125
+            },
+            "modifiers": [],
+            "name": "wwwById",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 132
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 165
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 200
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 232
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 295
+            },
+            "modifiers": [],
+            "name": "oldDetail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 337
+            },
+            "modifiers": [],
+            "name": "details",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 94,
+                "line": 337
+            },
+            "modifiers": [],
+            "name": "oldMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 338
+            },
+            "modifiers": [],
+            "name": "hasChanges",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 339
+            },
+            "modifiers": [],
+            "name": "updated",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 345
+            },
+            "modifiers": [],
+            "name": "det",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 354
+            },
+            "modifiers": [],
+            "name": "wwwIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 355
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 358
+            },
+            "modifiers": [],
+            "name": "rT",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 359
+            },
+            "modifiers": [],
+            "name": "rTdelToProj",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 360
+            },
+            "modifiers": [],
+            "name": "rTdelToHub",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 362
+            },
+            "modifiers": [],
+            "name": "wwwsById",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 365
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 380
+            },
+            "modifiers": [],
+            "name": "items",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 387
+            },
+            "modifiers": [],
+            "name": "items",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 406
+            },
+            "modifiers": [],
+            "name": "SubDetToDelete",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 81,
+                "line": 411
+            },
+            "modifiers": [],
+            "name": "triggerOld",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 412
+            },
+            "modifiers": [],
+            "name": "wwwDetIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 414
+            },
+            "modifiers": [],
+            "name": "wwwd",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 417
+            },
+            "modifiers": [],
+            "name": "subLocDet2",
+            "references": [],
+            "type": "LIST"
+        }
+    ]
+}

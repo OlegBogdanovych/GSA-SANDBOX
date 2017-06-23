@@ -1,0 +1,1346 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "CalendarComponentController",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p2400000Cr9rRAAR",
+    "innerClasses": [
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "LocationWrap",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 279
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "isChecked",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 28,
+                        "line": 287
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "loc",
+                    "references": [],
+                    "type": "Location__c"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 278
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "LocationWrap",
+                "references": [],
+                "type": "LocationWrap"
+            },
+            "variables": []
+        },
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "RecordTypeException",
+            "namespace": null,
+            "parentClass": "Exception",
+            "properties": [],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 697
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "RecordTypeException",
+                "references": [],
+                "type": "RecordTypeException"
+            },
+            "variables": []
+        }
+    ],
+    "interfaces": [],
+    "key": "01p2400000Cr9rRAAR",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 58
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getJsonForCalendar",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 263
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "change",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 290
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getbodyForTable",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 686
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "changeDate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 690
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "changeDateMinus",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 694
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "load",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "CalendarComponentController",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 6
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "componentData",
+            "references": [],
+            "type": "ComponentData"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 7
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "buildingSiteId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 8
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "dateFrom",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 9
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "dateFromStr",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 11
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "ticketsPerDay",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 19
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "dateSelected",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 20
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "locationsForSelect",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 41
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "leftIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 50
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "typeNames",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 241
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "colorsSR",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 249
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "backColors",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 289
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "b",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 658
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "curentDate",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 678
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "count",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "CalendarComponentController",
+        "references": [],
+        "type": "CalendarComponentController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "locationsByIds",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 73
+            },
+            "modifiers": [],
+            "name": "namesSet",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 74
+            },
+            "modifiers": [],
+            "name": "recTypes",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 75
+            },
+            "modifiers": [],
+            "name": "loc",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 81
+            },
+            "modifiers": [],
+            "name": "locWrap",
+            "references": [],
+            "type": "LocationWrap"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 89
+            },
+            "modifiers": [],
+            "name": "goaway",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 95
+            },
+            "modifiers": [],
+            "name": "locsToAdd",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "locsToAdd",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 137
+            },
+            "modifiers": [],
+            "name": "userIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 138
+            },
+            "modifiers": [],
+            "name": "t",
+            "references": [],
+            "type": "Building_Ticket__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 141
+            },
+            "modifiers": [],
+            "name": "usersByIds",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 142
+            },
+            "modifiers": [],
+            "name": "forJson",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 144
+            },
+            "modifiers": [],
+            "name": "colorsPerTicket",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 145
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 146
+            },
+            "modifiers": [],
+            "name": "tt",
+            "references": [],
+            "type": "Building_Ticket__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 149
+            },
+            "modifiers": [],
+            "name": "color",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 157
+            },
+            "modifiers": [],
+            "name": "ticketPerDay",
+            "references": [],
+            "type": "Building_Ticket__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 166
+            },
+            "modifiers": [],
+            "name": "valueByKey",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 167
+            },
+            "modifiers": [],
+            "name": "output",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 187
+            },
+            "modifiers": [],
+            "name": "minutes",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 201
+            },
+            "modifiers": [],
+            "name": "bgcolor",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 202
+            },
+            "modifiers": [],
+            "name": "textColor",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 203
+            },
+            "modifiers": [],
+            "name": "url",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 213
+            },
+            "modifiers": [],
+            "name": "color",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 265
+            },
+            "modifiers": [],
+            "name": "lWs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 266
+            },
+            "modifiers": [],
+            "name": "lW",
+            "references": [],
+            "type": "LocationWrap"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 292
+            },
+            "modifiers": [],
+            "name": "d",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 295
+            },
+            "modifiers": [],
+            "name": "times",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 296
+            },
+            "modifiers": [],
+            "name": "t",
+            "references": [],
+            "type": "Time"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 297
+            },
+            "modifiers": [],
+            "name": "dead",
+            "references": [],
+            "type": "Time"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 309
+            },
+            "modifiers": [],
+            "name": "tickets",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 326
+            },
+            "modifiers": [],
+            "name": "userIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 327
+            },
+            "modifiers": [],
+            "name": "colorsPerTicket",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 328
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 329
+            },
+            "modifiers": [],
+            "name": "tickById",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 330
+            },
+            "modifiers": [],
+            "name": "tt",
+            "references": [],
+            "type": "Building_Ticket__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 333
+            },
+            "modifiers": [],
+            "name": "color",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 341
+            },
+            "modifiers": [],
+            "name": "locsIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 343
+            },
+            "modifiers": [],
+            "name": "usersByIds",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 344
+            },
+            "modifiers": [],
+            "name": "locationsByIds",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 346
+            },
+            "modifiers": [],
+            "name": "ticketsByLoc",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 347
+            },
+            "modifiers": [],
+            "name": "ticket",
+            "references": [],
+            "type": "Building_Ticket__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 352
+            },
+            "modifiers": [],
+            "name": "ticToAdd",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 361
+            },
+            "modifiers": [],
+            "name": "ticToAdd",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 370
+            },
+            "modifiers": [],
+            "name": "ticToAdd",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 377
+            },
+            "modifiers": [],
+            "name": "ticketsByLocByTime",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 381
+            },
+            "modifiers": [],
+            "name": "body",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 388
+            },
+            "modifiers": [],
+            "name": "loc",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 397
+            },
+            "modifiers": [],
+            "name": "time1",
+            "references": [],
+            "type": "Time"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 399
+            },
+            "modifiers": [],
+            "name": "loc",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 402
+            },
+            "modifiers": [],
+            "name": "tick",
+            "references": [],
+            "type": "Building_Ticket__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 403
+            },
+            "modifiers": [],
+            "name": "minutes",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 407
+            },
+            "modifiers": [],
+            "name": "st",
+            "references": [],
+            "type": "Time"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 410
+            },
+            "modifiers": [],
+            "name": "ed",
+            "references": [],
+            "type": "Time"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 412
+            },
+            "modifiers": [],
+            "name": "timeLine",
+            "references": [],
+            "type": "Time"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 54,
+                "line": 421
+            },
+            "modifiers": [],
+            "name": "firstInLoc",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 59,
+                "line": 426
+            },
+            "modifiers": [],
+            "name": "tickByLoc",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 427
+            },
+            "modifiers": [],
+            "name": "firstInLoc",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 439
+            },
+            "modifiers": [],
+            "name": "idByOrder",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 440
+            },
+            "modifiers": [],
+            "name": "time1",
+            "references": [],
+            "type": "Time"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 443
+            },
+            "modifiers": [],
+            "name": "loc",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 445
+            },
+            "modifiers": [],
+            "name": "timeLine",
+            "references": [],
+            "type": "Time"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 448
+            },
+            "modifiers": [],
+            "name": "tick",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 449
+            },
+            "modifiers": [],
+            "name": "minutes",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 453
+            },
+            "modifiers": [],
+            "name": "st",
+            "references": [],
+            "type": "Time"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 456
+            },
+            "modifiers": [],
+            "name": "ed",
+            "references": [],
+            "type": "Time"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 469
+            },
+            "modifiers": [],
+            "name": "time1",
+            "references": [],
+            "type": "Time"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 471
+            },
+            "modifiers": [],
+            "name": "timeStr",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 478
+            },
+            "modifiers": [],
+            "name": "loc",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 480
+            },
+            "modifiers": [],
+            "name": "orderedIdMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 481
+            },
+            "modifiers": [],
+            "name": "orderedId",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 482
+            },
+            "modifiers": [],
+            "name": "orderedIdSet",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 483
+            },
+            "modifiers": [],
+            "name": "tick",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 487
+            },
+            "modifiers": [],
+            "name": "tick",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 504
+            },
+            "modifiers": [],
+            "name": "j",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 505
+            },
+            "modifiers": [],
+            "name": "tick",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 508
+            },
+            "modifiers": [],
+            "name": "textColor",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 509
+            },
+            "modifiers": [],
+            "name": "color",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 521
+            },
+            "modifiers": [],
+            "name": "output",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 533
+            },
+            "modifiers": [],
+            "name": "st",
+            "references": [],
+            "type": "Time"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 536
+            },
+            "modifiers": [],
+            "name": "lastTd",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 537
+            },
+            "modifiers": [],
+            "name": "everythingBefore",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 538
+            },
+            "modifiers": [],
+            "name": "everythingAfter",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 541
+            },
+            "modifiers": [],
+            "name": "url",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 543
+            },
+            "modifiers": [],
+            "name": "counter",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 549
+            },
+            "modifiers": [],
+            "name": "counter",
+            "references": [],
+            "type": "Integer"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+<apex:page showHeader="true" sidebar="true" standardController="Hub_Building_Site__c" standardStylesheets="false" applyBodyTag="false" extensions="CalendarExtension">
+    <apex:includeScript value="{!URLFOR($Resource.calendar, '/fullcalendar-2.5.0/lib/jquery.min.js')}"/>
+    <style>
+        .BackDiv {
+            margin-left: 9%;
+        }
+         .BackDiv a {
+            color: rgb(0, 112, 210);
+         }
+         
+    </style>
+    <div class="BackDiv">
+        <apex:outputLink value="/{!Hub_Building_Site__c.Id}" styleClass="button" id="theLink"><button type="button">Back to {!Hub_Building_Site__c.Name}</button></apex:outputLink>
+    </div>
+    
+    <apex:outputPanel id="calendarInfo">
+        <c:Calendar date="{!dateFromStr}" buildingSite="{!ticket.Hub_Building_Site__c}" compData="{!componentData}">
+        
+        </c:Calendar>
+    </apex:outputPanel>
+    <script type="text/javascript">
+        $("[id$='btnClose']").hide();
+        $("[id$='btnFull']").hide();
+    </script>
+</apex:page>

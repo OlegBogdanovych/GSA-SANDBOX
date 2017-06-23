@@ -1,0 +1,35 @@
+39.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+15:46:37.0 (65918)|USER_INFO|[EXTERNAL]|00524000001e3Uj|bedrijfsbureau@gsa.nl.sandbox|Midden-Europese standaardtijd|GMT+01:00
+15:46:37.0 (95682)|EXECUTION_STARTED
+15:46:37.0 (100198)|CODE_UNIT_STARTED|[EXTERNAL]|VisualForce View State
+15:46:37.0 (5927794)|HEAP_ALLOCATE|[72]|Bytes:3
+15:46:37.0 (5973031)|HEAP_ALLOCATE|[77]|Bytes:152
+15:46:37.0 (5987651)|HEAP_ALLOCATE|[342]|Bytes:408
+15:46:37.0 (6004234)|HEAP_ALLOCATE|[355]|Bytes:408
+15:46:37.0 (6017424)|HEAP_ALLOCATE|[467]|Bytes:48
+15:46:37.0 (6045271)|HEAP_ALLOCATE|[139]|Bytes:6
+15:46:37.0 (10164007)|CODE_UNIT_FINISHED|VisualForce View State
+15:46:37.0 (11013592)|EXECUTION_FINISHED
+15:46:37.627 (627692518)|USER_INFO|[EXTERNAL]|00524000001e3Uj|bedrijfsbureau@gsa.nl.sandbox|Midden-Europese standaardtijd|GMT+01:00
+15:46:37.627 (628380101)|SYSTEM_MODE_ENTER|true
+15:46:37.627 (630115953)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:120
+15:46:37.627 (630131518)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:10
+15:46:37.627 (630147412)|SYSTEM_METHOD_ENTRY|[1]|pagemessagecomponentcontroller.pagemessagecomponentcontroller()
+15:46:37.627 (630151107)|STATEMENT_EXECUTE|[1]
+15:46:38.392 (1392400526)|CUMULATIVE_LIMIT_USAGE
+15:46:38.392 (1392400526)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:46:38.392 (1392400526)|CUMULATIVE_LIMIT_USAGE_END
+

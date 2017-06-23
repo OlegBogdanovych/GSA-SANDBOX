@@ -1,0 +1,571 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p2400000DcTyQAAV",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p2400000DcTyQAAV",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 2
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "entry",
+            "parameters": [
+                {
+                    "name": "triggerParams",
+                    "type": "TriggerParams"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 29
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "deleteReportData",
+            "parameters": [
+                {
+                    "name": "triggerOld",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 44
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "calculateRollupSum",
+            "parameters": [
+                {
+                    "name": "newPr",
+                    "type": "LIST"
+                },
+                {
+                    "name": "oldPr",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 84
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "checkName",
+            "parameters": [
+                {
+                    "name": "projects",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "Future"
+                }
+            ],
+            "location": {
+                "column": 24,
+                "line": 104
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "addShares",
+            "parameters": [
+                {
+                    "name": "projectsIds",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "ProjectUtil",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "ProjectUtil",
+        "references": [],
+        "type": "ProjectUtil"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 2
+            },
+            "modifiers": [],
+            "name": "triggerParams",
+            "references": [],
+            "type": "TriggerParams"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "triggerNew",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "triggerOld",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "oldMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "newMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "triggerOld",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "projectIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "pr",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "projectLocations",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "newPr",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 89,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "oldPr",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "accIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "pr",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 52
+            },
+            "modifiers": [],
+            "name": "pr",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "accById",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "pr",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "pr",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 73
+            },
+            "modifiers": [],
+            "name": "oldP",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 54,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "projects",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 85
+            },
+            "modifiers": [],
+            "name": "names",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 86
+            },
+            "modifiers": [],
+            "name": "p",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 89
+            },
+            "modifiers": [],
+            "name": "oldprojects",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 90
+            },
+            "modifiers": [],
+            "name": "byName",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 91
+            },
+            "modifiers": [],
+            "name": "pr",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "p",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 104
+            },
+            "modifiers": [],
+            "name": "projectsIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "projects",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 106
+            },
+            "modifiers": [],
+            "name": "accIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 107
+            },
+            "modifiers": [],
+            "name": "prIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 108
+            },
+            "modifiers": [],
+            "name": "pr",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 112
+            },
+            "modifiers": [],
+            "name": "users",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 113
+            },
+            "modifiers": [],
+            "name": "userByAccId",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 114
+            },
+            "modifiers": [],
+            "name": "usersIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 115
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 123
+            },
+            "modifiers": [],
+            "name": "shares",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 130
+            },
+            "modifiers": [],
+            "name": "toInsert",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 131
+            },
+            "modifiers": [],
+            "name": "pr",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 134
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 136
+            },
+            "modifiers": [],
+            "name": "addShare",
+            "references": [],
+            "type": "Projecten__Share"
+        }
+    ]
+}

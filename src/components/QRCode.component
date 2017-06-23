@@ -1,0 +1,50 @@
+<apex:component >
+    
+    <apex:attribute name="sId" description="Salesforce Id of url" type="Id" required="true"/>
+    
+        <apex:includeScript value="{!URLFOR($Resource.qrcode, 'jquery.min.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.qrcode, 'qrcode.js')}" />
+
+        <input id="text{!sId}" type="hidden" value="http://login.salesforce.com/{!sId}" style="width:80%" /><br />
+
+        <!-- <input id="text{!sId}" type="hidden" value="https://eu5.lightning.force.com/one/one.app#/sObject/{!sId}/view" style="width:80%" /><br />  -->
+        <!---->
+
+        <div id="qrcode{!sId}" style="width:189px; height:189px; margin-top:15px;"></div>
+        
+        <script type="text/javascript">
+            console.log("qrcode{!sId}");
+            var qrcode = new QRCode(document.getElementById("qrcode{!sId}"), {
+                width : 189,
+                height : 189
+            });
+
+            function makeCode () {      
+                var elText = document.getElementById("text{!sId}");
+                console.log('{!sId}');
+                if (!elText.value) {
+                    alert("Input a text");
+                    elText.focus();
+                    return;
+                }
+                
+                qrcode.makeCode(elText.value);
+            }
+
+            makeCode();
+            
+            $("#text{!sId}").
+                on("blur", function () {
+                    makeCode();
+                }).
+                on("keydown", function (e) {
+                    if (e.keyCode == 13) {
+                        makeCode();
+                    }
+                });
+        </script>
+        
+
+        
+    
+</apex:component>

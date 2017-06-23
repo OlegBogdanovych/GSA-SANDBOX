@@ -1,0 +1,231 @@
+<apex:page showHeader="true" sidebar="true" standardController="WWW_Detail__c" > 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <apex:includeScript value="{!URLFOR($Resource.qrcode, 'jquery.min.js')}" />
+    <style>
+        body {
+            font-size: 12px;
+        }
+        .names {
+            font-weight: bold;
+            
+        }
+        .section {
+            background-color: #ccc;
+        }
+        .pbButton, .pbButtonb, .pageDescription, .pageType {
+            display:none;
+        }
+        .content, .mainTitle, .links {
+            display:none !important;
+        }
+        tr td{
+            //border-bottom:1pt solid black;
+        }
+        .Custom24Tab .tertiaryPalette, .individualPalette .Custom24Block .tertiaryPalette, .layoutEdit .individualPalette .Custom24Block .tertiaryPalette {
+            border-color:black;
+        }
+        
+    </style>
+    <div id="divButtons" name="divButtons" style="align:right;">
+        <input type="button" value = "Print" onclick="printPage()" style="position:absolute;" class="slds-button slds-button--neutral slds-not-selected"/>
+    </div>
+    <br/>
+    <br/>
+    <!--table width="100%">
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Number_Of_Items__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.Number_Of_Items__c}
+            </td>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Project__c.Label}"/>
+            </td>
+            <td >{!WWW_Detail__c.Project__r.Name }
+            </td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Currency_In_Euro_s__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.Currency_In_Euro_s__c }
+            </td>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.WWW__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.WWW__r.Name }
+            </td>
+        </tr>
+        <tr>
+            <td class="names">
+            </td>
+            <td>
+            </td>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.RecordTypeId.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.RecordType.Name }
+            </td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Date_Of_Delivery__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.Date_Of_Delivery__c }
+            </td>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Name.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.Name }
+            </td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.SF_ID__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.SF_ID__c }
+            </td>
+            <td class="names">
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <Td  class="section" colspan="4">
+                <h2>Extra Information</h2>
+            </Td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Supplier__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.Supplier__r.Name }
+            </td>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Projectmember_Name__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.Projectmember_Name__c }
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Supplier_Phone__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.Supplier_Phone__c }
+            </td>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Projectmember__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.Projectmember__r.Name }
+            </td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Supplier_City__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.Supplier_City__c }
+            </td>
+            <td class="names">
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Supplier_Country__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.Supplier_Country__c }
+            </td>
+            <td class="names">
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td class="section" colspan="4">
+                <h2> Item Information </h2>
+            </td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Item_Name__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.Item_Name__c }
+            </td>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Kind_Of_Packages__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.Kind_Of_Packages__c }
+            </td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Description_Item__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.Description_Item__c }
+            </td>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Number_Of_Units_Per_Package__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.Number_Of_Units_Per_Package__c }
+            </td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Breakable__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.Breakable__c }
+            </td>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Weight__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.Weight__c }
+            </td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Sizes__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.Sizes__c }
+            </td>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Transport_kar__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.Transport_kar__c }
+            </td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Remarks_Item__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.Remarks_Item__c }
+            </td>
+            <td class="names">
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td class="section" colspan="4">
+                <h2> Remarks </h2>
+            </td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Remarks__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.Remarks__c }
+            </td>
+            <td class="names">
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW_Detail__c.fields.Extra_Remarks__c.Label}"/>
+            </td>
+            <td>{!WWW_Detail__c.Extra_Remarks__c }
+            </td>
+            <td class="names">
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table--><apex:detail relatedList="false"/>
+    <!--c:QRCode sId="{!WWW_Detail__c.Id}" /-->
+    
+    
+    <script language="JavaScript">
+        function printPage() {
+            if(document.all) {
+                document.all.divButtons.style.visibility = 'hidden';
+                window.print();
+                document.all.divButtons.style.visibility = 'visible';
+            } else {
+                document.getElementById('divButtons').style.visibility = 'hidden';
+                $("[id$='filter']").hide();
+                window.print();
+                document.getElementById('divButtons').style.visibility = 'visible';
+                $("[id$='filter']").show();
+            }
+        }
+    </script>
+</apex:page>

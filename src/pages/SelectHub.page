@@ -1,0 +1,99 @@
+<apex:page showHeader="true" sidebar="true" standardController="Building_Ticket__c" extensions="CreateTicketExtension" standardStylesheets="false"   docType="html-5.0">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">   
+        <head>
+            
+            <apex:includeLightning />
+            <apex:stylesheet value="{!URLFOR($Resource.SLDS080, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+            <apex:stylesheet value="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css"  />
+            <apex:stylesheet value="{!URLFOR($Resource.calendar, '/fullcalendar-2.5.0/fullcalendar.css')}" />
+            <!--apex:stylesheet value="{!URLFOR($Resource.calendar, '/fullcalendar-2.5.0/fullcalendar.print.css')}" /-->
+            <!--apex:includeScript value="{!URLFOR($Resource.calendar, '/fullcalendar-2.5.0/lang/nl.js')}"/-->
+            <apex:includeScript value="{!URLFOR($Resource.calendar, '/fullcalendar-2.5.0/lib/moment.min.js')}"/ >
+            <apex:includeScript value="{!URLFOR($Resource.calendar, '/fullcalendar-2.6.1/lib/jquery.min.js')}"/>
+            <apex:includeScript value="{!URLFOR($Resource.calendar, '/fullcalendar-2.5.0/fullcalendar.min.js')}"/>
+            
+        </head>
+        <body>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+        <style>
+            .slds-form-element__control {
+                width:50% !important;
+            }
+            .slds-col, .slds-size--2-of-2 {
+                width:50% !important;
+            }
+            .slds .slds-container--medium {
+                max-width: 50% !important;
+            }
+            .js-example-basic-single {
+                
+            }
+            .select2-container .select2-selection--single, .select2-hidden-accessible, .select2-container--open {
+                border: 1px solid #d8dde6;
+                height: 35px;
+            }
+            span [aria-expanded="true"] {
+                border: 1px solid #d8dde6;
+                max-height: 80px;
+                
+            } 
+            .select2-container--open .select2-dropdown--below, .select2-container--open .select2-dropdown--above {
+                left: 9px;
+                border: 1px solid #d8dde6;
+            }
+            
+            .select2-search__field {
+                border: 1px solid #d8dde6;
+            }
+            /*.selection {
+                padding: 5px 10px;
+                height: 40px;
+                width: 132px; 
+                font-size: 1.2em; 
+                color:'#6CA6CD'; 
+            }*/
+        </style>
+            <apex:form >
+                <div class="slds">   
+                    <div class="slds-page-header" role="banner">
+                        <div class="slds-grid">
+
+                            
+                            <div class="slds-col">
+                              <p class="slds-text-heading--label">{!$Label.Select_Hub}</p>
+                              <h1 class="slds-text-heading--medium">{!$Label.NewTicket}</h1>
+                            </div>
+                            <div class="slds-col slds-no-flex slds-align-middle">
+                              <div class="slds-button-group" role="group">
+                                <apex:commandButton action="{!step2}" value="{!$Label.Next}" styleClass="slds-button slds-button--neutral"/>
+                                
+                                
+                              </div>
+
+                            </div>
+                            </div>
+                            <div class="slds-grid">
+                                <div class="slds-col slds-container--medium">
+
+                                      <label class="slds-form-element__label" for="hubBuildingSite">{!$ObjectType.Building_Ticket__c.Fields.Hub_Building_Site__c.Label}</label>
+                                      <div class="slds-form-element__control">
+                                        <apex:selectList value="{!hubSelected}" styleClass="slds-select js-example-basic-single" size="1">
+                                            <apex:selectOptions value="{!hubs}"/>
+                                        </apex:selectList>
+                                      </div>            
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+
+            </apex:form>
+            <script>
+                    $(document).ready(function() {
+                      $(".js-example-basic-single").select2();
+                    });
+
+                 </script>
+        </body>
+    </html>
+</apex:page>

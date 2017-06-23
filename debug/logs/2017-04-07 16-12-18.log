@@ -1,0 +1,1125 @@
+31.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+15:12:11.0 (315491)|USER_INFO|[EXTERNAL]|00524000001e3Uj|bedrijfsbureau@gsa.nl.sandbox|Midden-Europese standaardtijd|GMT+02:00
+15:12:11.0 (345163)|EXECUTION_STARTED
+15:12:11.0 (348027)|CODE_UNIT_STARTED|[EXTERNAL]|01p2400000Cr9rU|CreateTicketAndCallendarTest.test_createTicket
+15:12:11.0 (1024943)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (1033833)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (1087113)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (1983742)|DML_BEGIN|[28]|Op:Insert|Type:ActiveTrigger__c|Rows:9
+15:12:11.0 (41445360)|DML_END|[28]
+15:12:11.0 (41518799)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (41593029)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (41798703)|SOQL_EXECUTE_BEGIN|[56]|Aggregations:0|SELECT Id, Name FROM RecordType WHERE Name = 'Client'
+15:12:11.0 (43593168)|SOQL_EXECUTE_END|[56]|Rows:1
+15:12:11.0 (43956156)|DML_BEGIN|[59]|Op:Insert|Type:Account|Rows:1
+15:12:11.0 (131609560)|DML_END|[59]
+15:12:11.0 (131635995)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (131730881)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (131955140)|SOQL_EXECUTE_BEGIN|[32]|Aggregations:0|SELECT Id FROM Profile WHERE Name = 'Bouwticket account'
+15:12:11.0 (134065082)|SOQL_EXECUTE_END|[32]|Rows:1
+15:12:11.0 (134536448)|DML_BEGIN|[50]|Op:Insert|Type:User|Rows:1
+15:12:11.0 (141394014)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000PhJT|UserTrigger on User trigger event BeforeInsert for [new]
+15:12:11.0 (142236934)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (142243952)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (142272655)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (142312074)|SYSTEM_MODE_EXIT|false
+15:12:11.142 (142321680)|CUMULATIVE_LIMIT_USAGE
+15:12:11.142 (142321680)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 3 out of 150
+  Number of DML rows: 11 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:11.142 (142321680)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:11.0 (143325548)|CODE_UNIT_FINISHED|UserTrigger on User trigger event BeforeInsert for [new]
+15:12:11.0 (331026798)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000PhJT|UserTrigger on User trigger event AfterInsert for [0059E000000XTn4]
+15:12:11.0 (331852770)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (332179133)|SOQL_EXECUTE_BEGIN|[11]|Aggregations:0|SELECT Id FROM Profile WHERE (Name = 'Bouwticket account' OR Name = 'Bouwmanager')
+15:12:11.0 (334232701)|SOQL_EXECUTE_END|[11]|Rows:2
+15:12:11.0 (334466351)|USER_DEBUG|[13]|DEBUG|profilesById {00e24000000YX5iAAG=Profile:{Id=00e24000000YX5iAAG}, 00e24000000YX5jAAG=Profile:{Id=00e24000000YX5jAAG}}
+15:12:11.0 (334713478)|USER_DEBUG|[15]|DEBUG|00e24000000YX5jAAG
+15:12:11.0 (334730478)|USER_DEBUG|[16]|DEBUG|false
+15:12:11.0 (334738912)|USER_DEBUG|[17]|DEBUG|false
+15:12:11.0 (334798446)|USER_DEBUG|[22]|DEBUG|0059E000000XTn4QAG
+15:12:11.0 (334845898)|USER_DEBUG|[23]|DEBUG|0019E0000087FZBQA2
+15:12:11.0 (335058383)|SYSTEM_MODE_EXIT|false
+15:12:11.335 (335070918)|CUMULATIVE_LIMIT_USAGE
+15:12:11.335 (335070918)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 3 out of 100
+  Number of query rows: 4 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 3 out of 150
+  Number of DML rows: 11 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 1 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:11.335 (335070918)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:11.0 (336261880)|CODE_UNIT_FINISHED|UserTrigger on User trigger event AfterInsert for [0059E000000XTn4]
+15:12:11.0 (337004194)|DML_END|[50]
+15:12:11.0 (337023268)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (337091785)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (337236562)|DML_BEGIN|[66]|Op:Insert|Type:Contact|Rows:1
+15:12:11.0 (394119236)|DML_END|[66]
+15:12:11.0 (394180501)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (394427769)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (394857640)|DML_BEGIN|[73]|Op:Insert|Type:Projecten__c|Rows:1
+15:12:11.0 (400469922)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000qIfI|ProjectTrigger on Projecten trigger event BeforeInsert for [new]
+15:12:11.0 (401622917)|SOQL_EXECUTE_BEGIN|[89]|Aggregations:0|SELECT Name FROM Projecten__c WHERE Name = :tmpVar1
+15:12:11.0 (402920937)|SOQL_EXECUTE_END|[89]|Rows:0
+15:12:11.403 (403148680)|CUMULATIVE_LIMIT_USAGE
+15:12:11.403 (403148680)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 4 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 5 out of 150
+  Number of DML rows: 13 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 1 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:11.403 (403148680)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:11.0 (404242538)|CODE_UNIT_FINISHED|ProjectTrigger on Projecten trigger event BeforeInsert for [new]
+15:12:11.0 (444660879)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000qIfI|ProjectTrigger on Projecten trigger event AfterInsert for [a0q9E0000006OUi]
+15:12:11.0 (445536361)|USER_DEBUG|[45]|DEBUG|(Projecten__c:{Id=a0q9E0000006OUiQAM, OwnerId=00524000001e3UjAAI, IsDeleted=false, Name=testestest, CreatedDate=2017-04-07 13:12:12, CreatedById=00524000001e3UjAAI, LastModifiedDate=2017-04-07 13:12:12, LastModifiedById=00524000001e3UjAAI, SystemModstamp=2017-04-07 13:12:12, LastActivityDate=null, LastViewedDate=null, LastReferencedDate=null, Account__c=0019E0000087FZBQA2, Project_omschrijving__c=null, SF_ID__c=null, Actueel_aantal_palletplaatsen__c=0, Aantal_palletplaatsen__c=null, Projectleider__c=null, Project_amscheyving__c=null})
+15:12:11.0 (445921048)|SOQL_EXECUTE_BEGIN|[57]|Aggregations:0|SELECT Id, Actueel_aantal_palletplaatsen1__c FROM Account WHERE id = :tmpVar1
+15:12:11.0 (448349001)|SOQL_EXECUTE_END|[57]|Rows:1
+15:12:11.0 (448995377)|USER_DEBUG|[80]|DEBUG|(Account:{Id=0019E0000087FZBQA2, Actueel_aantal_palletplaatsen1__c=0})
+15:12:11.0 (449046966)|DML_BEGIN|[81]|Op:Update|Type:Account|Rows:1
+15:12:11.0 (463684996)|DML_END|[81]
+15:12:11.463 (463727200)|CUMULATIVE_LIMIT_USAGE
+15:12:11.463 (463727200)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 5 out of 100
+  Number of query rows: 5 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 6 out of 150
+  Number of DML rows: 14 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:11.463 (463727200)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:11.0 (464566156)|CODE_UNIT_FINISHED|ProjectTrigger on Projecten trigger event AfterInsert for [a0q9E0000006OUi]
+15:12:11.0 (465673060)|DML_END|[73]
+15:12:11.0 (465696058)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (465783845)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (465959319)|DML_BEGIN|[80]|Op:Insert|Type:Projectmember__c|Rows:1
+15:12:11.0 (485772500)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:01I24000001DBlV
+15:12:11.0 (496113596)|WF_RULE_EVAL_BEGIN|Workflow
+15:12:11.0 (496141916)|WF_CRITERIA_BEGIN|[Projectmember: a0r9E000001Ntft a0r9E000001Ntft]|Projectmember and company name|01Q24000000Uct1|ON_CREATE_ONLY|0
+15:12:11.0 (496249269)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]1=1|Values:
+15:12:11.0 (496253100)|WF_CRITERIA_END|true
+15:12:11.0 (496772461)|WF_SPOOL_ACTION_BEGIN|Workflow
+15:12:11.0 (499513849)|WF_FIELD_UPDATE|[Projectmember: a0r9E000001Ntft a0r9E000001Ntft]|Field:Projectmember: Projectmember Name|Value: Test testAccount|Id=04Y24000000UD6r|CurrentRule:Projectmember and company name (Id=01Q24000000Uct1)
+15:12:11.0 (499534615)|WF_ACTION| Field Update: 1;
+15:12:11.0 (499537290)|WF_RULE_EVAL_END
+15:12:11.0 (509818759)|WF_ACTIONS_END| Field Update: 1;
+15:12:11.0 (509831693)|CODE_UNIT_FINISHED|Workflow:01I24000001DBlV
+15:12:11.0 (510336369)|DML_END|[80]
+15:12:11.0 (510361059)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (510466773)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (510620463)|SOQL_EXECUTE_BEGIN|[86]|Aggregations:0|SELECT Id, Name FROM RecordType WHERE Name = 'Building Site'
+15:12:11.0 (512070662)|SOQL_EXECUTE_END|[86]|Rows:1
+15:12:11.0 (512309685)|DML_BEGIN|[96]|Op:Insert|Type:Hub_Building_Site__c|Rows:1
+15:12:11.0 (515181103)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000PhJR|HubTrigger on Hub_Building_Site trigger event BeforeInsert for [new]
+15:12:11.515 (515649426)|CUMULATIVE_LIMIT_USAGE
+15:12:11.515 (515649426)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 6 out of 100
+  Number of query rows: 6 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 8 out of 150
+  Number of DML rows: 16 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:11.515 (515649426)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:11.0 (516402229)|CODE_UNIT_FINISHED|HubTrigger on Hub_Building_Site trigger event BeforeInsert for [new]
+15:12:11.0 (533306068)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000PhJR|HubTrigger on Hub_Building_Site trigger event AfterInsert for [a029E000001YaQ5]
+15:12:11.0 (534144531)|SOQL_EXECUTE_BEGIN|[14]|Aggregations:0|SELECT Id, Project__r.Account__c, OwnerId FROM Hub_building_site__c WHERE id = :tmpVar1
+15:12:11.0 (537318673)|SOQL_EXECUTE_END|[14]|Rows:1
+15:12:11.0 (537711892)|USER_DEBUG|[22]|DEBUG|accs {0019E0000087FZBQA2}
+15:12:11.0 (537902562)|SOQL_EXECUTE_BEGIN|[23]|Aggregations:0|SELECT Id, isActive FROM User WHERE (AccountId__c = :tmpVar1 AND isActive = TRUE)
+15:12:11.0 (540440573)|SOQL_EXECUTE_END|[23]|Rows:1
+15:12:11.0 (540633506)|USER_DEBUG|[25]|DEBUG|users1 (User:{Id=0059E000000XTn4QAG, IsActive=true})
+15:12:11.0 (541001636)|SOQL_EXECUTE_BEGIN|[26]|Aggregations:0|SELECT ParentId, Id, UserOrGroupId FROM Hub_building_site__Share WHERE ParentId = :tmpVar1
+15:12:11.0 (544148468)|SOQL_EXECUTE_END|[26]|Rows:1
+15:12:11.0 (544327119)|USER_DEBUG|[28]|DEBUG|1 (Hub_Building_Site__Share:{ParentId=a029E000001YaQ5QAK, Id=02c9E00000HahypQAB, UserOrGroupId=00524000001e3UjAAI})
+15:12:11.0 (544660961)|USER_DEBUG|[38]|DEBUG|shareByUserByTicket1 {a029E000001YaQ5QAK={}}
+15:12:11.0 (544786609)|USER_DEBUG|[42]|DEBUG|shareByUserByTicket.get(t.id){} 0059E000000XTn4QAG
+15:12:11.0 (545088330)|USER_DEBUG|[48]|DEBUG|add sharings 1 (Hub_Building_Site__Share:{ParentId=a029E000001YaQ5QAK, UserOrGroupId=0059E000000XTn4QAG, AccessLevel=Edit})
+15:12:11.0 (545123282)|DML_BEGIN|[49]|Op:Insert|Type:Hub_Building_Site__Share|Rows:1
+15:12:11.0 (556820610)|DML_END|[49]
+15:12:11.556 (556870838)|CUMULATIVE_LIMIT_USAGE
+15:12:11.556 (556870838)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 9 out of 100
+  Number of query rows: 9 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 9 out of 150
+  Number of DML rows: 17 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:11.556 (556870838)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:11.0 (558096401)|CODE_UNIT_FINISHED|HubTrigger on Hub_Building_Site trigger event AfterInsert for [a029E000001YaQ5]
+15:12:11.0 (559507184)|DML_END|[96]
+15:12:11.0 (559528287)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (559602445)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (559739983)|SOQL_EXECUTE_BEGIN|[102]|Aggregations:0|SELECT Id, Name FROM RecordType WHERE Name = 'Gate'
+15:12:11.0 (561014832)|SOQL_EXECUTE_END|[102]|Rows:1
+15:12:11.0 (561189342)|DML_BEGIN|[105]|Op:Insert|Type:Location__c|Rows:1
+15:12:11.0 (565097119)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000PhJS|LocationTrigger on Location trigger event BeforeInsert for [new]
+15:12:11.0 (565901919)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (565909378)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (565943835)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (565999176)|SYSTEM_MODE_EXIT|false
+15:12:11.566 (566016179)|CUMULATIVE_LIMIT_USAGE
+15:12:11.566 (566016179)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 10 out of 100
+  Number of query rows: 10 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 10 out of 150
+  Number of DML rows: 18 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:11.566 (566016179)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:11.0 (567533979)|CODE_UNIT_FINISHED|LocationTrigger on Location trigger event BeforeInsert for [new]
+15:12:11.0 (569386636)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Location:new
+15:12:11.0 (569396817)|VALIDATION_RULE|03d24000000aMAV|Amount_can_t_be_less_then_0
+15:12:11.0 (569562987)|VALIDATION_FORMULA|OR( Available_amount__c <0,  Current_amount__c <0)|Current_amount__c=null , Available_amount__c=null
+15:12:11.0 (569567358)|VALIDATION_PASS
+15:12:11.0 (569592281)|CODE_UNIT_FINISHED|Validation:Location:new
+15:12:11.0 (585938521)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000PhJS|LocationTrigger on Location trigger event AfterInsert for [a0B9E000000VXuB]
+15:12:11.0 (586564707)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (587181768)|SOQL_EXECUTE_BEGIN|[88]|Aggregations:0|SELECT Id FROM Location__c WHERE id = :tmpVar1
+15:12:11.0 (588201270)|SOQL_EXECUTE_END|[88]|Rows:0
+15:12:11.0 (588654468)|SOQL_EXECUTE_BEGIN|[89]|Aggregations:0|SELECT Id, RecordType.DeveloperName, Location__c, Number_Of_Items__c FROM WWW_Detail__c WHERE ((RecordType.DeveloperName = 'Delivered_2_Hub' OR RecordType.DeveloperName = 'Delivered_2_Project') AND Location__c = :tmpVar1 AND IsDeleted = FALSE)
+15:12:11.0 (589712493)|SOQL_EXECUTE_END|[89]|Rows:0
+15:12:11.0 (589954417)|USER_DEBUG|[129]|DEBUG|parentLocations 0 {}
+15:12:11.0 (590389405)|SOQL_EXECUTE_BEGIN|[33]|Aggregations:0|SELECT Id, Hub_Building_Site__r.Project__r.Account__c, OwnerId, Hub_Building_Site__c FROM Location__c WHERE id = :tmpVar1
+15:12:11.0 (592221587)|SOQL_EXECUTE_END|[33]|Rows:1
+15:12:11.0 (592645933)|SOQL_EXECUTE_BEGIN|[39]|Aggregations:0|SELECT Id, Account__c FROM AccountHub__c WHERE Hub_Building_Site__c = :tmpVar1
+15:12:11.0 (613914541)|SOQL_EXECUTE_END|[39]|Rows:0
+15:12:11.0 (614828299)|USER_DEBUG|[51]|DEBUG|accs {}
+15:12:11.0 (615228522)|SOQL_EXECUTE_BEGIN|[52]|Aggregations:0|SELECT isActive, Id FROM User WHERE (AccountId__c = :tmpVar1 AND isActive = TRUE)
+15:12:11.0 (616828546)|SOQL_EXECUTE_END|[52]|Rows:0
+15:12:11.0 (616945768)|USER_DEBUG|[54]|DEBUG|users0 ()
+15:12:11.0 (617253213)|SOQL_EXECUTE_BEGIN|[55]|Aggregations:0|SELECT ParentId, Id, UserOrGroupId FROM Location__Share WHERE ParentId = :tmpVar1
+15:12:11.0 (620857437)|SOQL_EXECUTE_END|[55]|Rows:1
+15:12:11.0 (621050278)|USER_DEBUG|[57]|DEBUG|1 (Location__Share:{ParentId=a0B9E000000VXuBUAW, Id=02c9E00000HaiBhQAJ, UserOrGroupId=00524000001e3UjAAI})
+15:12:11.0 (621390419)|USER_DEBUG|[67]|DEBUG|shareByUserByTicket1 {a0B9E000000VXuBUAW={}}
+15:12:11.0 (621493798)|USER_DEBUG|[77]|DEBUG|add sharings 0 ()
+15:12:11.0 (621555340)|SYSTEM_MODE_EXIT|false
+15:12:11.621 (621571057)|CUMULATIVE_LIMIT_USAGE
+15:12:11.621 (621571057)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 16 out of 100
+  Number of query rows: 12 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 10 out of 150
+  Number of DML rows: 18 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:11.621 (621571057)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:11.0 (622765471)|CODE_UNIT_FINISHED|LocationTrigger on Location trigger event AfterInsert for [a0B9E000000VXuB]
+15:12:11.0 (624043187)|DML_END|[105]
+15:12:11.0 (624060522)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (624121403)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (624254850)|SOQL_EXECUTE_BEGIN|[111]|Aggregations:0|SELECT Id, Name FROM RecordType WHERE Name = 'Site Location'
+15:12:11.0 (625543720)|SOQL_EXECUTE_END|[111]|Rows:1
+15:12:11.0 (625760486)|DML_BEGIN|[114]|Op:Insert|Type:Location__c|Rows:1
+15:12:11.0 (628651501)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000PhJS|LocationTrigger on Location trigger event BeforeInsert for [new]
+15:12:11.0 (629268503)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (629283648)|SYSTEM_MODE_EXIT|false
+15:12:11.629 (629295043)|CUMULATIVE_LIMIT_USAGE
+15:12:11.629 (629295043)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 17 out of 100
+  Number of query rows: 13 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 11 out of 150
+  Number of DML rows: 19 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:11.629 (629295043)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:11.0 (630307082)|CODE_UNIT_FINISHED|LocationTrigger on Location trigger event BeforeInsert for [new]
+15:12:11.0 (633302156)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Location:new
+15:12:11.0 (633310256)|VALIDATION_RULE|03d24000000aMAV|Amount_can_t_be_less_then_0
+15:12:11.0 (633433281)|VALIDATION_FORMULA|OR( Available_amount__c <0,  Current_amount__c <0)|Current_amount__c=null , Available_amount__c=null
+15:12:11.0 (633438715)|VALIDATION_PASS
+15:12:11.0 (633465690)|CODE_UNIT_FINISHED|Validation:Location:new
+15:12:11.0 (648367864)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000PhJS|LocationTrigger on Location trigger event AfterInsert for [a0B9E000000VXuC]
+15:12:11.0 (649770420)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (650542801)|SOQL_EXECUTE_BEGIN|[88]|Aggregations:0|SELECT Id FROM Location__c WHERE id = :tmpVar1
+15:12:11.0 (652401330)|SOQL_EXECUTE_END|[88]|Rows:0
+15:12:11.0 (652845066)|SOQL_EXECUTE_BEGIN|[89]|Aggregations:0|SELECT Id, RecordType.DeveloperName, Location__c, Number_Of_Items__c FROM WWW_Detail__c WHERE ((RecordType.DeveloperName = 'Delivered_2_Hub' OR RecordType.DeveloperName = 'Delivered_2_Project') AND Location__c = :tmpVar1 AND IsDeleted = FALSE)
+15:12:11.0 (653963341)|SOQL_EXECUTE_END|[89]|Rows:0
+15:12:11.0 (654101216)|USER_DEBUG|[129]|DEBUG|parentLocations 0 {}
+15:12:11.0 (654628851)|SOQL_EXECUTE_BEGIN|[33]|Aggregations:0|SELECT Id, Hub_Building_Site__r.Project__r.Account__c, OwnerId, Hub_Building_Site__c FROM Location__c WHERE id = :tmpVar1
+15:12:11.0 (661340338)|SOQL_EXECUTE_END|[33]|Rows:1
+15:12:11.0 (661664542)|SOQL_EXECUTE_BEGIN|[39]|Aggregations:0|SELECT Id, Account__c FROM AccountHub__c WHERE Hub_Building_Site__c = :tmpVar1
+15:12:11.0 (662726135)|SOQL_EXECUTE_END|[39]|Rows:0
+15:12:11.0 (663073177)|USER_DEBUG|[51]|DEBUG|accs {0019E0000087FZBQA2}
+15:12:11.0 (663308144)|SOQL_EXECUTE_BEGIN|[52]|Aggregations:0|SELECT isActive, Id FROM User WHERE (AccountId__c = :tmpVar1 AND isActive = TRUE)
+15:12:11.0 (666442308)|SOQL_EXECUTE_END|[52]|Rows:1
+15:12:11.0 (666598303)|USER_DEBUG|[54]|DEBUG|users1 (User:{IsActive=true, Id=0059E000000XTn4QAG})
+15:12:11.0 (666891617)|SOQL_EXECUTE_BEGIN|[55]|Aggregations:0|SELECT ParentId, Id, UserOrGroupId FROM Location__Share WHERE ParentId = :tmpVar1
+15:12:11.0 (669691959)|SOQL_EXECUTE_END|[55]|Rows:1
+15:12:11.0 (669813447)|USER_DEBUG|[57]|DEBUG|1 (Location__Share:{ParentId=a0B9E000000VXuCUAW, Id=02c9E00000HaiBiQAJ, UserOrGroupId=00524000001e3UjAAI})
+15:12:11.0 (669931111)|USER_DEBUG|[67]|DEBUG|shareByUserByTicket1 {a0B9E000000VXuCUAW={}}
+15:12:11.0 (670047783)|USER_DEBUG|[71]|DEBUG|shareByUserByTicket.get(t.id){} 0059E000000XTn4QAG
+15:12:11.0 (670414635)|USER_DEBUG|[77]|DEBUG|add sharings 1 (Location__Share:{ParentId=a0B9E000000VXuCUAW, UserOrGroupId=0059E000000XTn4QAG, AccessLevel=Read})
+15:12:11.0 (670454129)|DML_BEGIN|[78]|Op:Insert|Type:Location__Share|Rows:1
+15:12:11.0 (681953490)|DML_END|[78]
+15:12:11.0 (681996634)|SYSTEM_MODE_EXIT|false
+15:12:11.682 (682011832)|CUMULATIVE_LIMIT_USAGE
+15:12:11.682 (682011832)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 23 out of 100
+  Number of query rows: 16 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 12 out of 150
+  Number of DML rows: 20 out of 10000
+  Maximum CPU time: 13 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:11.682 (682011832)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:11.0 (683989239)|CODE_UNIT_FINISHED|LocationTrigger on Location trigger event AfterInsert for [a0B9E000000VXuC]
+15:12:11.0 (684882502)|DML_END|[114]
+15:12:11.0 (684898925)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (684959975)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (685133232)|SOQL_EXECUTE_BEGIN|[120]|Aggregations:0|SELECT Id, Name FROM RecordType WHERE Name = 'Vertical Transport'
+15:12:11.0 (686640617)|SOQL_EXECUTE_END|[120]|Rows:1
+15:12:11.0 (686781112)|DML_BEGIN|[123]|Op:Insert|Type:Location__c|Rows:1
+15:12:11.0 (689532501)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000PhJS|LocationTrigger on Location trigger event BeforeInsert for [new]
+15:12:11.0 (690123831)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (690140473)|SYSTEM_MODE_EXIT|false
+15:12:11.690 (690151663)|CUMULATIVE_LIMIT_USAGE
+15:12:11.690 (690151663)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 24 out of 100
+  Number of query rows: 17 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 13 out of 150
+  Number of DML rows: 21 out of 10000
+  Maximum CPU time: 13 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:11.690 (690151663)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:11.0 (691422691)|CODE_UNIT_FINISHED|LocationTrigger on Location trigger event BeforeInsert for [new]
+15:12:11.0 (693742416)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Location:new
+15:12:11.0 (693753717)|VALIDATION_RULE|03d24000000aMAV|Amount_can_t_be_less_then_0
+15:12:11.0 (693959138)|VALIDATION_FORMULA|OR( Available_amount__c <0,  Current_amount__c <0)|Current_amount__c=null , Available_amount__c=null
+15:12:11.0 (693966263)|VALIDATION_PASS
+15:12:11.0 (694000302)|CODE_UNIT_FINISHED|Validation:Location:new
+15:12:11.0 (708064307)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000PhJS|LocationTrigger on Location trigger event AfterInsert for [a0B9E000000VXuD]
+15:12:11.0 (708654880)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (708980799)|SOQL_EXECUTE_BEGIN|[88]|Aggregations:0|SELECT Id FROM Location__c WHERE id = :tmpVar1
+15:12:11.0 (709903710)|SOQL_EXECUTE_END|[88]|Rows:0
+15:12:11.0 (710254841)|SOQL_EXECUTE_BEGIN|[89]|Aggregations:0|SELECT Id, RecordType.DeveloperName, Location__c, Number_Of_Items__c FROM WWW_Detail__c WHERE ((RecordType.DeveloperName = 'Delivered_2_Hub' OR RecordType.DeveloperName = 'Delivered_2_Project') AND Location__c = :tmpVar1 AND IsDeleted = FALSE)
+15:12:11.0 (712595358)|SOQL_EXECUTE_END|[89]|Rows:0
+15:12:11.0 (712741914)|USER_DEBUG|[129]|DEBUG|parentLocations 0 {}
+15:12:11.0 (713190567)|SOQL_EXECUTE_BEGIN|[33]|Aggregations:0|SELECT Id, Hub_Building_Site__r.Project__r.Account__c, OwnerId, Hub_Building_Site__c FROM Location__c WHERE id = :tmpVar1
+15:12:11.0 (715022998)|SOQL_EXECUTE_END|[33]|Rows:1
+15:12:11.0 (715335016)|SOQL_EXECUTE_BEGIN|[39]|Aggregations:0|SELECT Id, Account__c FROM AccountHub__c WHERE Hub_Building_Site__c = :tmpVar1
+15:12:11.0 (717298116)|SOQL_EXECUTE_END|[39]|Rows:0
+15:12:11.0 (717453153)|USER_DEBUG|[51]|DEBUG|accs {}
+15:12:11.0 (717641092)|SOQL_EXECUTE_BEGIN|[52]|Aggregations:0|SELECT isActive, Id FROM User WHERE (AccountId__c = :tmpVar1 AND isActive = TRUE)
+15:12:11.0 (718890101)|SOQL_EXECUTE_END|[52]|Rows:0
+15:12:11.0 (718973735)|USER_DEBUG|[54]|DEBUG|users0 ()
+15:12:11.0 (719277754)|SOQL_EXECUTE_BEGIN|[55]|Aggregations:0|SELECT ParentId, Id, UserOrGroupId FROM Location__Share WHERE ParentId = :tmpVar1
+15:12:11.0 (722042445)|SOQL_EXECUTE_END|[55]|Rows:1
+15:12:11.0 (722151055)|USER_DEBUG|[57]|DEBUG|1 (Location__Share:{ParentId=a0B9E000000VXuDUAW, Id=02c9E00000HaiBkQAJ, UserOrGroupId=00524000001e3UjAAI})
+15:12:11.0 (722261114)|USER_DEBUG|[67]|DEBUG|shareByUserByTicket1 {a0B9E000000VXuDUAW={}}
+15:12:11.0 (722318808)|USER_DEBUG|[77]|DEBUG|add sharings 0 ()
+15:12:11.0 (722358408)|SYSTEM_MODE_EXIT|false
+15:12:11.722 (722369023)|CUMULATIVE_LIMIT_USAGE
+15:12:11.722 (722369023)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 30 out of 100
+  Number of query rows: 19 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 13 out of 150
+  Number of DML rows: 21 out of 10000
+  Maximum CPU time: 13 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:11.722 (722369023)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:11.0 (723522156)|CODE_UNIT_FINISHED|LocationTrigger on Location trigger event AfterInsert for [a0B9E000000VXuD]
+15:12:11.0 (724272481)|DML_END|[123]
+15:12:11.0 (724291471)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (724612378)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (724618934)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (724706789)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (725117223)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (725147335)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (725328724)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (725354557)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (725966849)|SOQL_EXECUTE_BEGIN|[274]|Aggregations:0|SELECT Activity_Description__c, Box_Number__c, CreatedById, CreatedDate, IsDeleted, Depth__c, M2_Height__c, Hub_Building_Site__c, LastActivityDate, LastModifiedById, LastModifiedDate, Level__c, Name, Max_Weight_p_m2__c, OwnerId, Pallet_Place__c, Id, RecordTypeId, SF_ID__c, Section__c, Shelving_Subdivision__c, SystemModstamp, Warehouse__c, Width__c FROM Location__c WHERE (RecordType.Name = 'Gate' AND Hub_Building_Site__c = :tmpVar1)
+15:12:11.0 (729201215)|SOQL_EXECUTE_END|[274]|Rows:1
+15:12:11.0 (729432212)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (729490435)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (729993519)|SOQL_EXECUTE_BEGIN|[294]|Aggregations:0|SELECT City__c, CreatedById, CreatedDate, IsDeleted, Description_Hub__c, Name, LastActivityDate, LastModifiedById, LastModifiedDate, OwnerId, Postalcode__c, Id, RecordTypeId, SF_ID__c, Street__c, SystemModstamp FROM Hub_Building_Site__c WHERE RecordType.Name = 'Building Site'
+15:12:11.0 (733654980)|SOQL_EXECUTE_END|[294]|Rows:1
+15:12:11.0 (733913960)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (733959928)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (734571752)|SOQL_EXECUTE_BEGIN|[221]|Aggregations:0|SELECT Activity_Description__c, Box_Number__c, CreatedById, CreatedDate, IsDeleted, Depth__c, M2_Height__c, Hub_Building_Site__c, LastActivityDate, LastModifiedById, LastModifiedDate, Level__c, Name, Max_Weight_p_m2__c, OwnerId, Pallet_Place__c, Id, RecordTypeId, SF_ID__c, Section__c, Shelving_Subdivision__c, SystemModstamp, Warehouse__c, Width__c FROM Location__c WHERE (RecordType.Name = 'Site Location' AND Hub_Building_Site__c = :tmpVar1)
+15:12:11.0 (737578136)|SOQL_EXECUTE_END|[221]|Rows:0
+15:12:11.0 (737693053)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (737744906)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (737877351)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (737901823)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (738534844)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (738566613)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (738727568)|SOQL_EXECUTE_BEGIN|[260]|Aggregations:0|SELECT Id, Name FROM Account
+15:12:11.0 (741418954)|SOQL_EXECUTE_END|[260]|Rows:1
+15:12:11.0 (741702533)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (748671023)|SOQL_EXECUTE_BEGIN|[16]|Aggregations:0|SELECT Id, AccountId__c, Profile.Name FROM User WHERE id = :tmpVar1
+15:12:11.0 (753772410)|SOQL_EXECUTE_END|[16]|Rows:1
+15:12:11.0 (758504027)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (758634261)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (758665295)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (759428562)|SOQL_EXECUTE_BEGIN|[312]|Aggregations:0|SELECT Activity_Description__c, Box_Number__c, CreatedById, CreatedDate, IsDeleted, Depth__c, M2_Height__c, Hub_Building_Site__c, LastActivityDate, LastModifiedById, LastModifiedDate, Level__c, Name, Max_Weight_p_m2__c, OwnerId, Pallet_Place__c, Id, RecordTypeId, SF_ID__c, Section__c, Shelving_Subdivision__c, SystemModstamp, Warehouse__c, Width__c FROM Location__c WHERE (RecordType.Name = 'Vertical Transport' AND Hub_Building_Site__c = :tmpVar1)
+15:12:11.0 (764472402)|SOQL_EXECUTE_END|[312]|Rows:1
+15:12:11.0 (764823832)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (764929760)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (765231936)|SOQL_EXECUTE_BEGIN|[242]|Aggregations:0|SELECT Project__c FROM Hub_Building_Site__c WHERE id = :tmpVar1
+15:12:11.0 (767110727)|SOQL_EXECUTE_END|[242]|Rows:1
+15:12:11.0 (767542367)|SOQL_EXECUTE_BEGIN|[245]|Aggregations:0|SELECT Id, Project_Member_Name__c FROM Projectmember__c WHERE Project__c = :tmpVar1
+15:12:11.0 (780367704)|SOQL_EXECUTE_END|[245]|Rows:1
+15:12:11.0 (780713394)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (780814977)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (780819858)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (780953949)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (780971774)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (780987345)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (781003055)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (781100193)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (781580972)|SOQL_EXECUTE_BEGIN|[70]|Aggregations:0|SELECT Id, Name, Hub_Building_Site__c, RecordType.Name FROM Location__c WHERE Hub_Building_Site__c = :tmpVar1
+15:12:11.0 (785944135)|SOQL_EXECUTE_END|[70]|Rows:1
+15:12:11.0 (787083230)|USER_DEBUG|[110]|ERROR|locationsForSelect {Site Location=(LocationWrap:[isChecked=false, loc=Location__c:{Id=a0B9E000000VXuCUAW, Name=Test Site Location, Hub_Building_Site__c=a029E000001YaQ5QAK, RecordTypeId=01224000000B1dHAAS}])}
+15:12:11.0 (788369887)|SOQL_EXECUTE_BEGIN|[128]|Aggregations:0|SELECT Id, Name, Location__c, Vertical_Transport__c, Delivery_Date__c, Arrival_Time__c, End_Point__c, Location__r.Name, Loading_And_Unloading_Time__c, Status__c, Hub_Building_Site__c, Content_Delivery__c, Requestor__c, Vertical_Transport__r.Name, Gate__c, Account__r.Name, CreatedBy.Name, Hub_Building_Site__r.Name, Description_Of_Delivery__c FROM Building_Ticket__c WHERE (Hub_Building_Site__c = :tmpVar1 AND (Location__c = :tmpVar2 OR Gate__c = :tmpVar3 OR Vertical_Transport__c = :tmpVar4) AND Status__c != 'Rejected' AND Status__c != 'Afgewezen' AND Status__c != 'Cancelled')
+15:12:11.0 (794403070)|SOQL_EXECUTE_END|[128]|Rows:0
+15:12:11.0 (794867088)|SOQL_EXECUTE_BEGIN|[141]|Aggregations:0|SELECT Id, Name, CompanyName FROM User WHERE id = :tmpVar1
+15:12:11.0 (796536279)|SOQL_EXECUTE_END|[141]|Rows:0
+15:12:11.0 (797021990)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (797758893)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (798325922)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (798365518)|SYSTEM_MODE_ENTER|false
+15:12:11.0 (799994086)|DML_BEGIN|[170]|Op:Insert|Type:Building_Ticket__c|Rows:1
+15:12:11.0 (803645741)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000yLcS|BuldingTicketTrigger on Building_Ticket trigger event BeforeInsert for [new]
+15:12:11.0 (804352816)|SOQL_EXECUTE_BEGIN|[23]|Aggregations:0|SELECT Name, Number__c FROM UniqueNumber__c
+15:12:11.0 (805635694)|SOQL_EXECUTE_END|[23]|Rows:0
+15:12:11.0 (805998395)|DML_BEGIN|[28]|Op:Insert|Type:UniqueNumber__c|Rows:1
+15:12:11.0 (829025468)|DML_END|[28]
+15:12:11.0 (829203767)|SOQL_EXECUTE_BEGIN|[39]|Aggregations:0|SELECT Name, Number__c FROM UniqueNumber__c
+15:12:11.0 (831390238)|SOQL_EXECUTE_END|[39]|Rows:1
+15:12:11.0 (831891824)|SOQL_EXECUTE_BEGIN|[44]|Aggregations:0|SELECT Id, Name FROM Hub_Building_Site__c WHERE id = :tmpVar1
+15:12:11.0 (833390488)|SOQL_EXECUTE_END|[44]|Rows:1
+15:12:11.833 (833637543)|CUMULATIVE_LIMIT_USAGE
+15:12:11.833 (833637543)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 44 out of 100
+  Number of query rows: 29 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 16 out of 150
+  Number of DML rows: 24 out of 10000
+  Maximum CPU time: 13 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:11.833 (833637543)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:11.0 (834534266)|CODE_UNIT_FINISHED|BuldingTicketTrigger on Building_Ticket trigger event BeforeInsert for [new]
+15:12:11.0 (875127240)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000yLcS|BuldingTicketTrigger on Building_Ticket trigger event AfterInsert for [a019E000001U05E]
+15:12:11.0 (876036462)|SOQL_EXECUTE_BEGIN|[55]|Aggregations:0|SELECT Id, Hub_Building_Site__r.Project__r.Account__c, OwnerId FROM Building_Ticket__c WHERE id = :tmpVar1
+15:12:11.0 (880952007)|SOQL_EXECUTE_END|[55]|Rows:1
+15:12:11.0 (881230112)|USER_DEBUG|[61]|DEBUG|accs {0019E0000087FZBQA2}
+15:12:11.0 (881450093)|SOQL_EXECUTE_BEGIN|[62]|Aggregations:0|SELECT Id FROM User WHERE (AccountId__c = :tmpVar1 AND IsActive = TRUE)
+15:12:11.0 (884278583)|SOQL_EXECUTE_END|[62]|Rows:1
+15:12:11.0 (884402974)|USER_DEBUG|[63]|DEBUG|users1 (User:{Id=0059E000000XTn4QAG})
+15:12:11.0 (884691129)|SOQL_EXECUTE_BEGIN|[64]|Aggregations:0|SELECT ParentId, Id, UserOrGroupId FROM Building_Ticket__Share WHERE ParentId = :tmpVar1
+15:12:11.0 (888479474)|SOQL_EXECUTE_END|[64]|Rows:1
+15:12:11.0 (888697108)|USER_DEBUG|[66]|DEBUG|1 (Building_Ticket__Share:{ParentId=a019E000001U05EQAS, Id=02c9E00000HaiBlQAJ, UserOrGroupId=00524000001e3UjAAI})
+15:12:11.0 (889064337)|USER_DEBUG|[76]|DEBUG|shareByUserByTicket1 {a019E000001U05EQAS={}}
+15:12:11.0 (889204429)|USER_DEBUG|[80]|DEBUG|shareByUserByTicket.get(t.id){} 0059E000000XTn4QAG
+15:12:11.0 (889516208)|USER_DEBUG|[86]|DEBUG|add sharings 1 (Building_Ticket__Share:{ParentId=a019E000001U05EQAS, UserOrGroupId=0059E000000XTn4QAG, AccessLevel=Edit})
+15:12:11.0 (889552974)|DML_BEGIN|[87]|Op:Insert|Type:Building_Ticket__Share|Rows:1
+15:12:11.0 (899265846)|DML_END|[87]
+15:12:11.899 (899317022)|CUMULATIVE_LIMIT_USAGE
+15:12:11.899 (899317022)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 47 out of 100
+  Number of query rows: 32 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 17 out of 150
+  Number of DML rows: 25 out of 10000
+  Maximum CPU time: 13 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:11.899 (899317022)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:11.0 (900199964)|CODE_UNIT_FINISHED|BuldingTicketTrigger on Building_Ticket trigger event AfterInsert for [a019E000001U05E]
+15:12:11.0 (901997172)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:01I24000001VbKM
+15:12:11.0 (907911504)|WF_RULE_EVAL_BEGIN|Workflow
+15:12:11.0 (907942347)|WF_CRITERIA_BEGIN|[Bouwticket: BT-00342 a019E000001U05E]|Afkeuring_bouwticket3012400000025pV|01Q24000000bejr|ON_ALL_CHANGES|0
+15:12:11.0 (908056495)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]true|Values:
+15:12:11.0 (908062272)|WF_CRITERIA_END|true
+15:12:11.0 (908815134)|WF_CRITERIA_BEGIN|[Bouwticket: BT-00342 a019E000001U05E]|Set user who change status to Assigned|01Q24000000DUr6|ON_CREATE_OR_TRIGGERING_UPDATE|0
+15:12:11.0 (910391498)|WF_RULE_FILTER|[Bouwticket : Status equals Assigned]
+15:12:11.0 (910413896)|WF_RULE_EVAL_VALUE|1
+15:12:11.0 (910417840)|WF_CRITERIA_END|false
+15:12:11.0 (910428973)|WF_CRITERIA_BEGIN|[Bouwticket: BT-00342 a019E000001U05E]|Goedkeuring_bouwticket3012400000025w7|01Q24000000bezz|ON_ALL_CHANGES|0
+15:12:11.0 (910469684)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]true|Values:
+15:12:11.0 (910472734)|WF_CRITERIA_END|true
+15:12:11.0 (910486613)|WF_SPOOL_ACTION_BEGIN|Workflow
+15:12:11.0 (910515009)|WF_ACTION| Flow Trigger: 2;
+15:12:11.0 (910518177)|WF_RULE_EVAL_END
+15:12:11.0 (911102817)|WF_FLOW_ACTION_BEGIN|09L24000000Trdl
+15:12:11.911 (911985226)|FLOW_CREATE_INTERVIEW_BEGIN|00D9E000000D6H4|300240000004gC2|3012400000025w7
+15:12:11.911 (913539466)|FLOW_CREATE_INTERVIEW_END|25981ccc09384b7aa71c1642ff7015b487ebad-2deb|Goedkeuring bouwticket
+15:12:11.914 (914672942)|FLOW_START_INTERVIEWS_BEGIN|1
+15:12:11.914 (915414879)|FLOW_START_INTERVIEW_BEGIN|25981ccc09384b7aa71c1642ff7015b487ebad-2deb|Goedkeuring bouwticket
+15:12:11.914 (916251847)|FLOW_START_INTERVIEW_END|25981ccc09384b7aa71c1642ff7015b487ebad-2deb|Goedkeuring bouwticket
+15:12:11.914 (916259587)|FLOW_START_INTERVIEWS_END|1
+15:12:11.0 (917538533)|WF_FLOW_ACTION_END|09L24000000Trdl
+15:12:11.0 (917554311)|WF_FLOW_ACTION_BEGIN|09L24000000Trc9
+15:12:11.918 (918407659)|FLOW_CREATE_INTERVIEW_BEGIN|00D9E000000D6H4|300240000004gBJ|3012400000025pV
+15:12:11.918 (920009422)|FLOW_CREATE_INTERVIEW_END|25991ccc09384b7aa71c1642ff7015b487ebad-2dec|Afkeuring bouwticket
+15:12:11.921 (921045510)|FLOW_START_INTERVIEWS_BEGIN|1
+15:12:11.921 (921740598)|FLOW_START_INTERVIEW_BEGIN|25991ccc09384b7aa71c1642ff7015b487ebad-2dec|Afkeuring bouwticket
+15:12:11.921 (922499571)|FLOW_START_INTERVIEW_END|25991ccc09384b7aa71c1642ff7015b487ebad-2dec|Afkeuring bouwticket
+15:12:11.921 (922508483)|FLOW_START_INTERVIEWS_END|1
+15:12:11.0 (923021613)|WF_FLOW_ACTION_END|09L24000000Trc9
+15:12:11.0 (923100522)|WF_ACTIONS_END| Flow Trigger: 2;
+15:12:11.0 (923108514)|CODE_UNIT_FINISHED|Workflow:01I24000001VbKM
+15:12:11.0 (924267327)|DML_END|[170]
+15:12:11.0 (924453156)|SYSTEM_MODE_EXIT|false
+15:12:11.0 (924867092)|DML_BEGIN|[66]|Op:Insert|Type:Building_Ticket__c|Rows:1
+15:12:11.0 (927747952)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000yLcS|BuldingTicketTrigger on Building_Ticket trigger event BeforeInsert for [new]
+15:12:11.0 (928246163)|SOQL_EXECUTE_BEGIN|[23]|Aggregations:0|SELECT Name, Number__c FROM UniqueNumber__c
+15:12:11.0 (930906458)|SOQL_EXECUTE_END|[23]|Rows:1
+15:12:11.0 (931342344)|DML_BEGIN|[37]|Op:Update|Type:UniqueNumber__c|Rows:1
+15:12:11.0 (943084858)|DML_END|[37]
+15:12:11.0 (943313929)|SOQL_EXECUTE_BEGIN|[39]|Aggregations:0|SELECT Name, Number__c FROM UniqueNumber__c
+15:12:11.0 (945011511)|SOQL_EXECUTE_END|[39]|Rows:1
+15:12:11.0 (945446325)|SOQL_EXECUTE_BEGIN|[44]|Aggregations:0|SELECT Id, Name FROM Hub_Building_Site__c WHERE id = :tmpVar1
+15:12:11.0 (946728059)|SOQL_EXECUTE_END|[44]|Rows:1
+15:12:11.946 (946914099)|CUMULATIVE_LIMIT_USAGE
+15:12:11.946 (946914099)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 50 out of 100
+  Number of query rows: 35 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 19 out of 150
+  Number of DML rows: 27 out of 10000
+  Maximum CPU time: 13 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:11.946 (946914099)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:11.0 (947769855)|CODE_UNIT_FINISHED|BuldingTicketTrigger on Building_Ticket trigger event BeforeInsert for [new]
+15:12:11.0 (979648389)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000yLcS|BuldingTicketTrigger on Building_Ticket trigger event AfterInsert for [a019E000001U05F]
+15:12:11.0 (980428656)|SOQL_EXECUTE_BEGIN|[55]|Aggregations:0|SELECT Id, Hub_Building_Site__r.Project__r.Account__c, OwnerId FROM Building_Ticket__c WHERE id = :tmpVar1
+15:12:11.0 (985282287)|SOQL_EXECUTE_END|[55]|Rows:1
+15:12:11.0 (985517423)|USER_DEBUG|[61]|DEBUG|accs {0019E0000087FZBQA2}
+15:12:11.0 (985745727)|SOQL_EXECUTE_BEGIN|[62]|Aggregations:0|SELECT Id FROM User WHERE (AccountId__c = :tmpVar1 AND IsActive = TRUE)
+15:12:11.0 (989764287)|SOQL_EXECUTE_END|[62]|Rows:1
+15:12:11.0 (989893460)|USER_DEBUG|[63]|DEBUG|users1 (User:{Id=0059E000000XTn4QAG})
+15:12:11.0 (990282302)|SOQL_EXECUTE_BEGIN|[64]|Aggregations:0|SELECT ParentId, Id, UserOrGroupId FROM Building_Ticket__Share WHERE ParentId = :tmpVar1
+15:12:11.0 (992928963)|SOQL_EXECUTE_END|[64]|Rows:1
+15:12:11.0 (993047551)|USER_DEBUG|[66]|DEBUG|1 (Building_Ticket__Share:{ParentId=a019E000001U05FQAS, Id=02c9E00000HaiBnQAJ, UserOrGroupId=00524000001e3UjAAI})
+15:12:11.0 (993210193)|USER_DEBUG|[76]|DEBUG|shareByUserByTicket1 {a019E000001U05FQAS={}}
+15:12:11.0 (993319880)|USER_DEBUG|[80]|DEBUG|shareByUserByTicket.get(t.id){} 0059E000000XTn4QAG
+15:12:11.0 (993540802)|USER_DEBUG|[86]|DEBUG|add sharings 1 (Building_Ticket__Share:{ParentId=a019E000001U05FQAS, UserOrGroupId=0059E000000XTn4QAG, AccessLevel=Edit})
+15:12:11.0 (993574215)|DML_BEGIN|[87]|Op:Insert|Type:Building_Ticket__Share|Rows:1
+15:12:12.0 (1000708485)|DML_END|[87]
+15:12:12.0 (1000764626)|CUMULATIVE_LIMIT_USAGE
+15:12:12.0 (1000764626)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 53 out of 100 ******* CLOSE TO LIMIT
+  Number of query rows: 38 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 20 out of 150
+  Number of DML rows: 28 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:12.0 (1000764626)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:12.0 (1001551646)|CODE_UNIT_FINISHED|BuldingTicketTrigger on Building_Ticket trigger event AfterInsert for [a019E000001U05F]
+15:12:12.0 (1002488743)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:01I24000001VbKM
+15:12:12.0 (1005764179)|WF_RULE_EVAL_BEGIN|Workflow
+15:12:12.0 (1005988059)|WF_CRITERIA_BEGIN|[Bouwticket: BT-00343 a019E000001U05F]|Afkeuring_bouwticket3012400000025pV|01Q24000000bejr|ON_ALL_CHANGES|0
+15:12:12.0 (1006049324)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]true|Values:
+15:12:12.0 (1006055453)|WF_CRITERIA_END|true
+15:12:12.0 (1006081290)|WF_CRITERIA_BEGIN|[Bouwticket: BT-00343 a019E000001U05F]|Set user who change status to Assigned|01Q24000000DUr6|ON_CREATE_OR_TRIGGERING_UPDATE|0
+15:12:12.0 (1006116265)|WF_RULE_FILTER|[Bouwticket : Status equals Assigned]
+15:12:12.0 (1006138515)|WF_RULE_EVAL_VALUE|1
+15:12:12.0 (1006142766)|WF_CRITERIA_END|false
+15:12:12.0 (1006153931)|WF_CRITERIA_BEGIN|[Bouwticket: BT-00343 a019E000001U05F]|Goedkeuring_bouwticket3012400000025w7|01Q24000000bezz|ON_ALL_CHANGES|0
+15:12:12.0 (1006167973)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]true|Values:
+15:12:12.0 (1006170757)|WF_CRITERIA_END|true
+15:12:12.0 (1006185350)|WF_SPOOL_ACTION_BEGIN|Workflow
+15:12:12.0 (1006210290)|WF_ACTION| Flow Trigger: 2;
+15:12:12.0 (1006213135)|WF_RULE_EVAL_END
+15:12:12.0 (1006278696)|WF_FLOW_ACTION_BEGIN|09L24000000Trdl
+15:12:12.7 (1007050875)|FLOW_CREATE_INTERVIEW_BEGIN|00D9E000000D6H4|300240000004gC2|3012400000025w7
+15:12:12.7 (1027377113)|FLOW_CREATE_INTERVIEW_END|26001ccc09384b7aa71c1642ff7015b487ebad-2ded|Goedkeuring bouwticket
+15:12:12.28 (1028575508)|FLOW_START_INTERVIEWS_BEGIN|1
+15:12:12.28 (1029505792)|FLOW_START_INTERVIEW_BEGIN|26001ccc09384b7aa71c1642ff7015b487ebad-2ded|Goedkeuring bouwticket
+15:12:12.28 (1030847232)|FLOW_START_INTERVIEW_END|26001ccc09384b7aa71c1642ff7015b487ebad-2ded|Goedkeuring bouwticket
+15:12:12.28 (1030903601)|FLOW_START_INTERVIEWS_END|1
+15:12:12.0 (1031427815)|WF_FLOW_ACTION_END|09L24000000Trdl
+15:12:12.0 (1031447647)|WF_FLOW_ACTION_BEGIN|09L24000000Trc9
+15:12:12.32 (1032573314)|FLOW_CREATE_INTERVIEW_BEGIN|00D9E000000D6H4|300240000004gBJ|3012400000025pV
+15:12:12.32 (1033602809)|FLOW_CREATE_INTERVIEW_END|26011ccc09384b7aa71c1642ff7015b487ebad-2dee|Afkeuring bouwticket
+15:12:12.34 (1034488152)|FLOW_START_INTERVIEWS_BEGIN|1
+15:12:12.34 (1035345169)|FLOW_START_INTERVIEW_BEGIN|26011ccc09384b7aa71c1642ff7015b487ebad-2dee|Afkeuring bouwticket
+15:12:12.34 (1036179141)|FLOW_START_INTERVIEW_END|26011ccc09384b7aa71c1642ff7015b487ebad-2dee|Afkeuring bouwticket
+15:12:12.34 (1036189264)|FLOW_START_INTERVIEWS_END|1
+15:12:12.0 (1036829051)|WF_FLOW_ACTION_END|09L24000000Trc9
+15:12:12.0 (1036913246)|WF_ACTIONS_END| Flow Trigger: 2;
+15:12:12.0 (1036920917)|CODE_UNIT_FINISHED|Workflow:01I24000001VbKM
+15:12:12.0 (1037582903)|DML_END|[66]
+15:12:12.0 (1037786290)|SOQL_EXECUTE_BEGIN|[68]|Aggregations:0|SELECT Id FROM Building_Ticket__c LIMIT 1
+15:12:12.0 (1050623083)|SOQL_EXECUTE_END|[68]|Rows:1
+15:12:12.0 (1051324597)|SYSTEM_MODE_ENTER|false
+15:12:12.0 (1051334451)|SYSTEM_MODE_EXIT|false
+15:12:12.0 (1051405914)|SYSTEM_MODE_ENTER|false
+15:12:12.0 (1051624161)|SYSTEM_MODE_EXIT|false
+15:12:12.0 (1051646668)|SYSTEM_MODE_ENTER|false
+15:12:12.0 (1051656740)|SYSTEM_MODE_EXIT|false
+15:12:12.0 (1051667256)|SYSTEM_MODE_ENTER|false
+15:12:12.0 (1051677674)|SYSTEM_MODE_EXIT|false
+15:12:12.0 (1051742164)|SYSTEM_MODE_ENTER|false
+15:12:12.0 (1052049693)|SOQL_EXECUTE_BEGIN|[70]|Aggregations:0|SELECT Id, Name, Hub_Building_Site__c, RecordType.Name FROM Location__c WHERE Hub_Building_Site__c = :tmpVar1
+15:12:12.0 (1055666063)|SOQL_EXECUTE_END|[70]|Rows:1
+15:12:12.0 (1056087834)|USER_DEBUG|[110]|ERROR|locationsForSelect {Site Location=(LocationWrap:[isChecked=false, loc=Location__c:{Id=a0B9E000000VXuCUAW, Name=Test Site Location, Hub_Building_Site__c=a029E000001YaQ5QAK, RecordTypeId=01224000000B1dHAAS}])}
+15:12:12.0 (1056931598)|SOQL_EXECUTE_BEGIN|[128]|Aggregations:0|SELECT Id, Name, Location__c, Vertical_Transport__c, Delivery_Date__c, Arrival_Time__c, End_Point__c, Location__r.Name, Loading_And_Unloading_Time__c, Status__c, Hub_Building_Site__c, Content_Delivery__c, Requestor__c, Vertical_Transport__r.Name, Gate__c, Account__r.Name, CreatedBy.Name, Hub_Building_Site__r.Name, Description_Of_Delivery__c FROM Building_Ticket__c WHERE (Hub_Building_Site__c = :tmpVar1 AND (Location__c = :tmpVar2 OR Gate__c = :tmpVar3 OR Vertical_Transport__c = :tmpVar4) AND Status__c != 'Rejected' AND Status__c != 'Afgewezen' AND Status__c != 'Cancelled')
+15:12:12.0 (1067955642)|SOQL_EXECUTE_END|[128]|Rows:2
+15:12:12.0 (1068424373)|SOQL_EXECUTE_BEGIN|[141]|Aggregations:0|SELECT Id, Name, CompanyName FROM User WHERE id = :tmpVar1
+15:12:12.0 (1070808748)|SOQL_EXECUTE_END|[141]|Rows:1
+15:12:12.0 (1073750588)|SYSTEM_MODE_EXIT|false
+15:12:12.0 (1073776406)|SYSTEM_MODE_ENTER|false
+15:12:12.0 (1073781107)|SYSTEM_MODE_EXIT|false
+15:12:12.0 (1073816904)|SYSTEM_MODE_ENTER|false
+15:12:12.0 (1074077386)|SOQL_EXECUTE_BEGIN|[70]|Aggregations:0|SELECT Id, Name, Hub_Building_Site__c, RecordType.Name FROM Location__c WHERE Hub_Building_Site__c = :tmpVar1
+15:12:12.0 (1077321937)|SOQL_EXECUTE_END|[70]|Rows:1
+15:12:12.0 (1077730587)|USER_DEBUG|[110]|ERROR|locationsForSelect {Site Location=(LocationWrap:[isChecked=true, loc=Location__c:{Id=a0B9E000000VXuCUAW, Name=Test Site Location, Hub_Building_Site__c=a029E000001YaQ5QAK, RecordTypeId=01224000000B1dHAAS}])}
+15:12:12.0 (1078766450)|SOQL_EXECUTE_BEGIN|[128]|Aggregations:0|SELECT Id, Name, Location__c, Vertical_Transport__c, Delivery_Date__c, Arrival_Time__c, End_Point__c, Location__r.Name, Loading_And_Unloading_Time__c, Status__c, Hub_Building_Site__c, Content_Delivery__c, Requestor__c, Vertical_Transport__r.Name, Gate__c, Account__r.Name, CreatedBy.Name, Hub_Building_Site__r.Name, Description_Of_Delivery__c FROM Building_Ticket__c WHERE (Hub_Building_Site__c = :tmpVar1 AND (Location__c = :tmpVar2 OR Gate__c = :tmpVar3 OR Vertical_Transport__c = :tmpVar4) AND Status__c != 'Rejected' AND Status__c != 'Afgewezen' AND Status__c != 'Cancelled')
+15:12:12.0 (1091145458)|SOQL_EXECUTE_END|[128]|Rows:2
+15:12:12.0 (1091588356)|SOQL_EXECUTE_BEGIN|[141]|Aggregations:0|SELECT Id, Name, CompanyName FROM User WHERE id = :tmpVar1
+15:12:12.0 (1093475427)|SOQL_EXECUTE_END|[141]|Rows:1
+15:12:12.0 (1095670574)|SYSTEM_MODE_EXIT|false
+15:12:12.0 (1095722275)|SYSTEM_MODE_ENTER|false
+15:12:12.0 (1096208630)|SYSTEM_MODE_EXIT|false
+15:12:12.0 (1096255905)|SYSTEM_MODE_ENTER|false
+15:12:12.0 (1099178716)|SOQL_EXECUTE_BEGIN|[316]|Aggregations:0|SELECT Id, Name, Location__c, Vertical_Transport__c, Delivery_Date__c, Arrival_Time__c, End_Point__c, Location__r.Name, Loading_And_Unloading_Time__c, Status__c, Hub_Building_Site__c, Content_Delivery__c, Requestor__c, Vertical_Transport__r.Name, Gate__c, Account__r.Name FROM Building_Ticket__c WHERE (Hub_Building_Site__c = :tmpVar1 AND (Location__c = :tmpVar2 OR Gate__c = :tmpVar3 OR Vertical_Transport__c = :tmpVar4) AND Status__c != 'Rejected' AND Status__c != 'Afgewezen' AND Status__c != 'Cancelled' AND Delivery_Date__c = :tmpVar5) ORDER BY Location__c DESC NULLS FIRST
+15:12:12.0 (1107309000)|SOQL_EXECUTE_END|[316]|Rows:1
+15:12:12.0 (1107774127)|SOQL_EXECUTE_BEGIN|[341]|Aggregations:0|SELECT Id, Name, CompanyName FROM User WHERE id = :tmpVar1
+15:12:12.0 (1109403413)|SOQL_EXECUTE_END|[341]|Rows:1
+15:12:12.0 (1109796452)|SOQL_EXECUTE_BEGIN|[342]|Aggregations:0|SELECT Id, Name, Hub_Building_Site__c, RecordType.Name FROM Location__c WHERE Hub_Building_Site__c = :tmpVar1
+15:12:12.0 (1113396760)|SOQL_EXECUTE_END|[342]|Rows:1
+15:12:12.0 (1114036395)|SOQL_EXECUTE_BEGIN|[378]|Aggregations:0|SELECT Id, Name FROM Location__c WHERE id = :tmpVar1
+15:12:12.0 (1115592835)|SOQL_EXECUTE_END|[378]|Rows:3
+15:12:12.0 (1165206831)|USER_DEBUG|[486]|DEBUG|ALREADY IN(a019E000001U05EQAS)
+15:12:12.0 (1165227012)|USER_DEBUG|[487]|DEBUG|a019E000001U05EQAS
+15:12:12.0 (1165257891)|USER_DEBUG|[488]|DEBUG|{a0B9E000000VXuBUAW={a019E000001U05EQAS=0}, a0B9E000000VXuCUAW={a019E000001U05EQAS=0}, a0B9E000000VXuDUAW={a019E000001U05EQAS=0}}
+15:12:12.0 (1165289702)|USER_DEBUG|[489]|DEBUG|{a019E000001U05EQAS=0}
+15:12:12.0 (1165317360)|USER_DEBUG|[490]|DEBUG|0
+15:12:12.0 (1165399391)|USER_DEBUG|[494]|DEBUG|TO ADD: 0 a019E000001U05EQAS
+15:12:12.0 (1165599781)|USER_DEBUG|[505]|DEBUG|ALREADY IN LIST01:15:00.000Z Test Site Location (a019E000001U05EQAS) {0=a019E000001U05EQAS}
+15:12:12.0 (1167005674)|USER_DEBUG|[546]|DEBUG| time1= 01:15:00.000Z st= 01:15:00.000Z
+15:12:12.0 (1167227506)|USER_DEBUG|[486]|DEBUG|ALREADY IN(a019E000001U05EQAS)
+15:12:12.0 (1167234868)|USER_DEBUG|[487]|DEBUG|a019E000001U05EQAS
+15:12:12.0 (1167248478)|USER_DEBUG|[488]|DEBUG|{a0B9E000000VXuBUAW={a019E000001U05EQAS=0}, a0B9E000000VXuCUAW={a019E000001U05EQAS=0}, a0B9E000000VXuDUAW={a019E000001U05EQAS=0}}
+15:12:12.0 (1167264508)|USER_DEBUG|[489]|DEBUG|{a019E000001U05EQAS=0}
+15:12:12.0 (1167278804)|USER_DEBUG|[490]|DEBUG|0
+15:12:12.0 (1167322356)|USER_DEBUG|[494]|DEBUG|TO ADD: 0 a019E000001U05EQAS
+15:12:12.0 (1167489731)|USER_DEBUG|[505]|DEBUG|ALREADY IN LIST01:15:00.000Z TestGate (a019E000001U05EQAS) {0=a019E000001U05EQAS}
+15:12:12.0 (1167995494)|USER_DEBUG|[546]|DEBUG| time1= 01:15:00.000Z st= 01:15:00.000Z
+15:12:12.0 (1168152513)|USER_DEBUG|[486]|DEBUG|ALREADY IN(a019E000001U05EQAS)
+15:12:12.0 (1168158839)|USER_DEBUG|[487]|DEBUG|a019E000001U05EQAS
+15:12:12.0 (1168171745)|USER_DEBUG|[488]|DEBUG|{a0B9E000000VXuBUAW={a019E000001U05EQAS=0}, a0B9E000000VXuCUAW={a019E000001U05EQAS=0}, a0B9E000000VXuDUAW={a019E000001U05EQAS=0}}
+15:12:12.0 (1168188221)|USER_DEBUG|[489]|DEBUG|{a019E000001U05EQAS=0}
+15:12:12.0 (1168202403)|USER_DEBUG|[490]|DEBUG|0
+15:12:12.0 (1168245130)|USER_DEBUG|[494]|DEBUG|TO ADD: 0 a019E000001U05EQAS
+15:12:12.0 (1168327316)|USER_DEBUG|[505]|DEBUG|ALREADY IN LIST01:15:00.000Z Test Vertical Transport (a019E000001U05EQAS) {0=a019E000001U05EQAS}
+15:12:12.0 (1168496622)|USER_DEBUG|[546]|DEBUG| time1= 01:15:00.000Z st= 01:15:00.000Z
+15:12:12.0 (1168696425)|USER_DEBUG|[486]|DEBUG|ALREADY IN(a019E000001U05EQAS)
+15:12:12.0 (1168701550)|USER_DEBUG|[487]|DEBUG|a019E000001U05EQAS
+15:12:12.0 (1168715644)|USER_DEBUG|[488]|DEBUG|{a0B9E000000VXuBUAW={a019E000001U05EQAS=0}, a0B9E000000VXuCUAW={a019E000001U05EQAS=0}, a0B9E000000VXuDUAW={a019E000001U05EQAS=0}}
+15:12:12.0 (1168731882)|USER_DEBUG|[489]|DEBUG|{a019E000001U05EQAS=0}
+15:12:12.0 (1168746022)|USER_DEBUG|[490]|DEBUG|0
+15:12:12.0 (1168788878)|USER_DEBUG|[494]|DEBUG|TO ADD: 0 a019E000001U05EQAS
+15:12:12.0 (1168868740)|USER_DEBUG|[505]|DEBUG|ALREADY IN LIST01:30:00.000Z Test Site Location (a019E000001U05EQAS) {0=a019E000001U05EQAS}
+15:12:12.0 (1169036123)|USER_DEBUG|[546]|DEBUG| time1= 01:30:00.000Z st= 01:15:00.000Z
+15:12:12.0 (1169170176)|USER_DEBUG|[486]|DEBUG|ALREADY IN(a019E000001U05EQAS)
+15:12:12.0 (1169175057)|USER_DEBUG|[487]|DEBUG|a019E000001U05EQAS
+15:12:12.0 (1169187018)|USER_DEBUG|[488]|DEBUG|{a0B9E000000VXuBUAW={a019E000001U05EQAS=0}, a0B9E000000VXuCUAW={a019E000001U05EQAS=0}, a0B9E000000VXuDUAW={a019E000001U05EQAS=0}}
+15:12:12.0 (1169201887)|USER_DEBUG|[489]|DEBUG|{a019E000001U05EQAS=0}
+15:12:12.0 (1169214909)|USER_DEBUG|[490]|DEBUG|0
+15:12:12.0 (1169256473)|USER_DEBUG|[494]|DEBUG|TO ADD: 0 a019E000001U05EQAS
+15:12:12.0 (1169335635)|USER_DEBUG|[505]|DEBUG|ALREADY IN LIST01:30:00.000Z TestGate (a019E000001U05EQAS) {0=a019E000001U05EQAS}
+15:12:12.0 (1169544325)|USER_DEBUG|[546]|DEBUG| time1= 01:30:00.000Z st= 01:15:00.000Z
+15:12:12.0 (1169688656)|USER_DEBUG|[486]|DEBUG|ALREADY IN(a019E000001U05EQAS)
+15:12:12.0 (1169693703)|USER_DEBUG|[487]|DEBUG|a019E000001U05EQAS
+15:12:12.0 (1169707140)|USER_DEBUG|[488]|DEBUG|{a0B9E000000VXuBUAW={a019E000001U05EQAS=0}, a0B9E000000VXuCUAW={a019E000001U05EQAS=0}, a0B9E000000VXuDUAW={a019E000001U05EQAS=0}}
+15:12:12.0 (1169722382)|USER_DEBUG|[489]|DEBUG|{a019E000001U05EQAS=0}
+15:12:12.0 (1169736100)|USER_DEBUG|[490]|DEBUG|0
+15:12:12.0 (1169812107)|USER_DEBUG|[494]|DEBUG|TO ADD: 0 a019E000001U05EQAS
+15:12:12.0 (1169912398)|USER_DEBUG|[505]|DEBUG|ALREADY IN LIST01:30:00.000Z Test Vertical Transport (a019E000001U05EQAS) {0=a019E000001U05EQAS}
+15:12:12.0 (1170150697)|USER_DEBUG|[546]|DEBUG| time1= 01:30:00.000Z st= 01:15:00.000Z
+15:12:12.0 (1170374048)|USER_DEBUG|[486]|DEBUG|ALREADY IN(a019E000001U05EQAS)
+15:12:12.0 (1170379430)|USER_DEBUG|[487]|DEBUG|a019E000001U05EQAS
+15:12:12.0 (1170395013)|USER_DEBUG|[488]|DEBUG|{a0B9E000000VXuBUAW={a019E000001U05EQAS=0}, a0B9E000000VXuCUAW={a019E000001U05EQAS=0}, a0B9E000000VXuDUAW={a019E000001U05EQAS=0}}
+15:12:12.0 (1170412088)|USER_DEBUG|[489]|DEBUG|{a019E000001U05EQAS=0}
+15:12:12.0 (1170426372)|USER_DEBUG|[490]|DEBUG|0
+15:12:12.0 (1170469678)|USER_DEBUG|[494]|DEBUG|TO ADD: 0 a019E000001U05EQAS
+15:12:12.0 (1170555262)|USER_DEBUG|[505]|DEBUG|ALREADY IN LIST01:45:00.000Z Test Site Location (a019E000001U05EQAS) {0=a019E000001U05EQAS}
+15:12:12.0 (1170772896)|USER_DEBUG|[546]|DEBUG| time1= 01:45:00.000Z st= 01:15:00.000Z
+15:12:12.0 (1170928296)|USER_DEBUG|[486]|DEBUG|ALREADY IN(a019E000001U05EQAS)
+15:12:12.0 (1170933268)|USER_DEBUG|[487]|DEBUG|a019E000001U05EQAS
+15:12:12.0 (1170945513)|USER_DEBUG|[488]|DEBUG|{a0B9E000000VXuBUAW={a019E000001U05EQAS=0}, a0B9E000000VXuCUAW={a019E000001U05EQAS=0}, a0B9E000000VXuDUAW={a019E000001U05EQAS=0}}
+15:12:12.0 (1170961650)|USER_DEBUG|[489]|DEBUG|{a019E000001U05EQAS=0}
+15:12:12.0 (1170975074)|USER_DEBUG|[490]|DEBUG|0
+15:12:12.0 (1171017374)|USER_DEBUG|[494]|DEBUG|TO ADD: 0 a019E000001U05EQAS
+15:12:12.0 (1171099120)|USER_DEBUG|[505]|DEBUG|ALREADY IN LIST01:45:00.000Z TestGate (a019E000001U05EQAS) {0=a019E000001U05EQAS}
+15:12:12.0 (1171267526)|USER_DEBUG|[546]|DEBUG| time1= 01:45:00.000Z st= 01:15:00.000Z
+15:12:12.0 (1171402470)|USER_DEBUG|[486]|DEBUG|ALREADY IN(a019E000001U05EQAS)
+15:12:12.0 (1171407597)|USER_DEBUG|[487]|DEBUG|a019E000001U05EQAS
+15:12:12.0 (1171419355)|USER_DEBUG|[488]|DEBUG|{a0B9E000000VXuBUAW={a019E000001U05EQAS=0}, a0B9E000000VXuCUAW={a019E000001U05EQAS=0}, a0B9E000000VXuDUAW={a019E000001U05EQAS=0}}
+15:12:12.0 (1171434454)|USER_DEBUG|[489]|DEBUG|{a019E000001U05EQAS=0}
+15:12:12.0 (1171448009)|USER_DEBUG|[490]|DEBUG|0
+15:12:12.0 (1171490391)|USER_DEBUG|[494]|DEBUG|TO ADD: 0 a019E000001U05EQAS
+15:12:12.0 (1171592990)|USER_DEBUG|[505]|DEBUG|ALREADY IN LIST01:45:00.000Z Test Vertical Transport (a019E000001U05EQAS) {0=a019E000001U05EQAS}
+15:12:12.0 (1171773175)|USER_DEBUG|[546]|DEBUG| time1= 01:45:00.000Z st= 01:15:00.000Z
+15:12:12.0 (1171998691)|USER_DEBUG|[486]|DEBUG|ALREADY IN(a019E000001U05EQAS)
+15:12:12.0 (1172003983)|USER_DEBUG|[487]|DEBUG|a019E000001U05EQAS
+15:12:12.0 (1172019834)|USER_DEBUG|[488]|DEBUG|{a0B9E000000VXuBUAW={a019E000001U05EQAS=0}, a0B9E000000VXuCUAW={a019E000001U05EQAS=0}, a0B9E000000VXuDUAW={a019E000001U05EQAS=0}}
+15:12:12.0 (1172036962)|USER_DEBUG|[489]|DEBUG|{a019E000001U05EQAS=0}
+15:12:12.0 (1172051401)|USER_DEBUG|[490]|DEBUG|0
+15:12:12.0 (1172094199)|USER_DEBUG|[494]|DEBUG|TO ADD: 0 a019E000001U05EQAS
+15:12:12.0 (1172185054)|USER_DEBUG|[505]|DEBUG|ALREADY IN LIST02:00:00.000Z Test Site Location (a019E000001U05EQAS) {0=a019E000001U05EQAS}
+15:12:12.0 (1172354285)|USER_DEBUG|[546]|DEBUG| time1= 02:00:00.000Z st= 01:15:00.000Z
+15:12:12.0 (1172489015)|USER_DEBUG|[486]|DEBUG|ALREADY IN(a019E000001U05EQAS)
+15:12:12.0 (1172493849)|USER_DEBUG|[487]|DEBUG|a019E000001U05EQAS
+15:12:12.0 (1172507499)|USER_DEBUG|[488]|DEBUG|{a0B9E000000VXuBUAW={a019E000001U05EQAS=0}, a0B9E000000VXuCUAW={a019E000001U05EQAS=0}, a0B9E000000VXuDUAW={a019E000001U05EQAS=0}}
+15:12:12.0 (1172523428)|USER_DEBUG|[489]|DEBUG|{a019E000001U05EQAS=0}
+15:12:12.0 (1172537147)|USER_DEBUG|[490]|DEBUG|0
+15:12:12.0 (1172594563)|USER_DEBUG|[494]|DEBUG|TO ADD: 0 a019E000001U05EQAS
+15:12:12.0 (1172678947)|USER_DEBUG|[505]|DEBUG|ALREADY IN LIST02:00:00.000Z TestGate (a019E000001U05EQAS) {0=a019E000001U05EQAS}
+15:12:12.0 (1172846078)|USER_DEBUG|[546]|DEBUG| time1= 02:00:00.000Z st= 01:15:00.000Z
+15:12:12.0 (1172981275)|USER_DEBUG|[486]|DEBUG|ALREADY IN(a019E000001U05EQAS)
+15:12:12.0 (1172985906)|USER_DEBUG|[487]|DEBUG|a019E000001U05EQAS
+15:12:12.0 (1172997484)|USER_DEBUG|[488]|DEBUG|{a0B9E000000VXuBUAW={a019E000001U05EQAS=0}, a0B9E000000VXuCUAW={a019E000001U05EQAS=0}, a0B9E000000VXuDUAW={a019E000001U05EQAS=0}}
+15:12:12.0 (1173012296)|USER_DEBUG|[489]|DEBUG|{a019E000001U05EQAS=0}
+15:12:12.0 (1173026587)|USER_DEBUG|[490]|DEBUG|0
+15:12:12.0 (1173068114)|USER_DEBUG|[494]|DEBUG|TO ADD: 0 a019E000001U05EQAS
+15:12:12.0 (1173146791)|USER_DEBUG|[505]|DEBUG|ALREADY IN LIST02:00:00.000Z Test Vertical Transport (a019E000001U05EQAS) {0=a019E000001U05EQAS}
+15:12:12.0 (1173318904)|USER_DEBUG|[546]|DEBUG| time1= 02:00:00.000Z st= 01:15:00.000Z
+15:12:12.0 (1173514513)|USER_DEBUG|[486]|DEBUG|ALREADY IN(a019E000001U05EQAS)
+15:12:12.0 (1173520571)|USER_DEBUG|[487]|DEBUG|a019E000001U05EQAS
+15:12:12.0 (1173535428)|USER_DEBUG|[488]|DEBUG|{a0B9E000000VXuBUAW={a019E000001U05EQAS=0}, a0B9E000000VXuCUAW={a019E000001U05EQAS=0}, a0B9E000000VXuDUAW={a019E000001U05EQAS=0}}
+15:12:12.0 (1173552015)|USER_DEBUG|[489]|DEBUG|{a019E000001U05EQAS=0}
+15:12:12.0 (1173565568)|USER_DEBUG|[490]|DEBUG|0
+15:12:12.0 (1173612983)|USER_DEBUG|[494]|DEBUG|TO ADD: 0 a019E000001U05EQAS
+15:12:12.0 (1173694476)|USER_DEBUG|[505]|DEBUG|ALREADY IN LIST02:15:00.000Z Test Site Location (a019E000001U05EQAS) {0=a019E000001U05EQAS}
+15:12:12.0 (1173863591)|USER_DEBUG|[546]|DEBUG| time1= 02:15:00.000Z st= 01:15:00.000Z
+15:12:12.0 (1173997663)|USER_DEBUG|[486]|DEBUG|ALREADY IN(a019E000001U05EQAS)
+15:12:12.0 (1174002491)|USER_DEBUG|[487]|DEBUG|a019E000001U05EQAS
+15:12:12.0 (1174014496)|USER_DEBUG|[488]|DEBUG|{a0B9E000000VXuBUAW={a019E000001U05EQAS=0}, a0B9E000000VXuCUAW={a019E000001U05EQAS=0}, a0B9E000000VXuDUAW={a019E000001U05EQAS=0}}
+15:12:12.0 (1174029241)|USER_DEBUG|[489]|DEBUG|{a019E000001U05EQAS=0}
+15:12:12.0 (1174042829)|USER_DEBUG|[490]|DEBUG|0
+15:12:12.0 (1174103695)|USER_DEBUG|[494]|DEBUG|TO ADD: 0 a019E000001U05EQAS
+15:12:12.0 (1174188995)|USER_DEBUG|[505]|DEBUG|ALREADY IN LIST02:15:00.000Z TestGate (a019E000001U05EQAS) {0=a019E000001U05EQAS}
+15:12:12.0 (1174397071)|USER_DEBUG|[546]|DEBUG| time1= 02:15:00.000Z st= 01:15:00.000Z
+15:12:12.0 (1174554354)|USER_DEBUG|[486]|DEBUG|ALREADY IN(a019E000001U05EQAS)
+15:12:12.0 (1174559425)|USER_DEBUG|[487]|DEBUG|a019E000001U05EQAS
+15:12:12.0 (1174571392)|USER_DEBUG|[488]|DEBUG|{a0B9E000000VXuBUAW={a019E000001U05EQAS=0}, a0B9E000000VXuCUAW={a019E000001U05EQAS=0}, a0B9E000000VXuDUAW={a019E000001U05EQAS=0}}
+15:12:12.0 (1174590971)|USER_DEBUG|[489]|DEBUG|{a019E000001U05EQAS=0}
+15:12:12.0 (1174605323)|USER_DEBUG|[490]|DEBUG|0
+15:12:12.0 (1174647723)|USER_DEBUG|[494]|DEBUG|TO ADD: 0 a019E000001U05EQAS
+15:12:12.0 (1174729238)|USER_DEBUG|[505]|DEBUG|ALREADY IN LIST02:15:00.000Z Test Vertical Transport (a019E000001U05EQAS) {0=a019E000001U05EQAS}
+15:12:12.0 (1174911804)|USER_DEBUG|[546]|DEBUG| time1= 02:15:00.000Z st= 01:15:00.000Z
+15:12:12.0 (1200317242)|USER_DEBUG|[646]|DEBUG|body <table class="dayColTable" width="80%" align="center"><caption style="text-align: right;" width="100%"><input value="<&nbsp;" onclick="minusDay();" type="button"/>&nbsp;<input value="&nbsp;>" onclick="addDay();" type="button"/></caption><tr><td width="10%"><b>2015-12-25</b></td><td width="33%"><b><center>Test Site Location</center></b></td><td width="33%"><b><center>TestGate</center></b></td><td width="33%"><b><center>Test Vertical Transport</center></b></td></tr> <tr><td style="background-color:#ddd !important">00:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>00:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>00:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>00:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">01:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>01:15</td><td class="testClass" style="background-color:#1B48B1 !important;  border: 1px solid #1B48B1 !important" ><table width="100%" height="100%" style="position:relative"><tr> <td width="100%" style="background-color:#1B48B1 !important; color:black; border: 1px solid #1B48B1 !important"><a  href="/a019E000001U05EQAS" >BT-00342. GSA. Test Site Location. Test Vertical Transport. </a></td></td></tr></table><td class="testClass" style="background-color:#1B48B1 !important;  border: 1px solid #1B48B1 !important" ><table width="100%" height="100%" style="position:relative"><tr> <td width="100%" style="background-color:#1B48B1 !important; color:black; border: 1px solid #1B48B1 !important"><a  href="/a019E000001U05EQAS" >BT-00342. GSA. Test Site Location. Test Vertical Transport. </a></td></td></tr></table><td class="testClass" style="background-color:#1B48B1 !important;  border: 1px solid #1B48B1 !important" ><table width="100%" height="100%" style="position:relative"><tr> <td width="100%" style="background-color:#1B48B1 !important; color:black; border: 1px solid #1B48B1 !important"><a  href="/a019E000001U05EQAS" >BT-00342. GSA. Test Site Location. Test Vertical Transport. </a></td></td></tr></table></tr><tr><td>01:30</td><td class="testClass" style="background-color:#1B48B1 !important;  border: 1px solid #1B48B1 !important" ><table width="100%" height="100%" style="position:relative"><tr> <td width="100%" style="background-color:#1B48B1 !important; color:black; border: 1px solid #1B48B1 !important"><a  href="/a019E000001U05EQAS" ></a></td></td></tr></table><td class="testClass" style="background-color:#1B48B1 !important;  border: 1px solid #1B48B1 !important" ><table width="100%" height="100%" style="position:relative"><tr> <td width="100%" style="background-color:#1B48B1 !important; color:black; border: 1px solid #1B48B1 !important"><a  href="/a019E000001U05EQAS" ></a></td></td></tr></table><td class="testClass" style="background-color:#1B48B1 !important;  border: 1px solid #1B48B1 !important" ><table width="100%" height="100%" style="position:relative"><tr> <td width="100%" style="background-color:#1B48B1 !important; color:black; border: 1px solid #1B48B1 !important"><a  href="/a019E000001U05EQAS" ></a></td></td></tr></table></tr><tr><td>01:45</td><td class="testClass" style="background-color:#1B48B1 !important;  border: 1px solid #1B48B1 !important" ><table width="100%" height="100%" style="position:relative"><tr> <td width="100%" style="background-color:#1B48B1 !important; color:black; border: 1px solid #1B48B1 !important"><a  href="/a019E000001U05EQAS" ></a></td></td></tr></table><td class="testClass" style="background-color:#1B48B1 !important;  border: 1px solid #1B48B1 !important" ><table width="100%" height="100%" style="position:relative"><tr> <td width="100%" style="background-color:#1B48B1 !important; color:black; border: 1px solid #1B48B1 !important"><a  href="/a019E000001U05EQAS" ></a></td></td></tr></table><td class="testClass" style="background-color:#1B48B1 !important;  border: 1px solid #1B48B1 !important" ><table width="100%" height="100%" style="position:relative"><tr> <td width="100%" style="background-color:#1B48B1 !important; color:black; border: 1px solid #1B48B1 !important"><a  href="/a019E000001U05EQAS" ></a></td></td></tr></table></tr><tr><td style="background-color:#ddd !important">02:00</td><td class="testClass" style="background-color:#1B48B1 !important;  border: 1px solid #1B48B1 !important" ><table width="100%" height="100%" style="position:relative"><tr> <td width="100%" style="background-color:#1B48B1 !important; color:black; border: 1px solid #1B48B1 !important"><a  href="/a019E000001U05EQAS" ></a></td></td></tr></table><td class="testClass" style="background-color:#1B48B1 !important;  border: 1px solid #1B48B1 !important" ><table width="100%" height="100%" style="position:relative"><tr> <td width="100%" style="background-color:#1B48B1 !important; color:black; border: 1px solid #1B48B1 !important"><a  href="/a019E000001U05EQAS" ></a></td></td></tr></table><td class="testClass" style="background-color:#1B48B1 !important;  border: 1px solid #1B48B1 !important" ><table width="100%" height="100%" style="position:relative"><tr> <td width="100%" style="background-color:#1B48B1 !important; color:black; border: 1px solid #1B48B1 !important"><a  href="/a019E000001U05EQAS" ></a></td></td></tr></table></tr><tr><td>02:15</td><td class="testClass" style="background-color:#1B48B1 !important;  border: 1px solid #1B48B1 !important" ><table width="100%" height="100%" style="position:relative"><tr> <td width="100%" style="background-color:#1B48B1 !important; color:black; border: 1px solid #1B48B1 !important"><a  href="/a019E000001U05EQAS" ></a></td></td></tr></table><td class="testClass" style="background-color:#1B48B1 !important;  border: 1px solid #1B48B1 !important" ><table width="100%" height="100%" style="position:relative"><tr> <td width="100%" style="background-color:#1B48B1 !important; color:black; border: 1px solid #1B48B1 !important"><a  href="/a019E000001U05EQAS" ></a></td></td></tr></table><td class="testClass" style="background-color:#1B48B1 !important;  border: 1px solid #1B48B1 !important" ><table width="100%" height="100%" style="position:relative"><tr> <td width="100%" style="background-color:#1B48B1 !important; color:black; border: 1px solid #1B48B1 !important"><a  href="/a019E000001U05EQAS" ></a></td></td></tr></table></tr><tr><td>02:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>02:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">03:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>03:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>03:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>03:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">04:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>04:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>04:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>04:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">05:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>05:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>05:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>05:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">06:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>06:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>06:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>06:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">07:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>07:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>07:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>07:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">08:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>08:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>08:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>08:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">09:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>09:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>09:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>09:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">10:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>10:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>10:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>10:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">11:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>11:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>11:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>11:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">12:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>12:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>12:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>12:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">13:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>13:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>13:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>13:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">14:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>14:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>14:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>14:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">15:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>15:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>15:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>15:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">16:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>16:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>16:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>16:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">17:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>17:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>17:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>17:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">18:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>18:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>18:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>18:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">19:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>19:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>19:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>19:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">20:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>20:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>20:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>20:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">21:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>21:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>21:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>21:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">22:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>22:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>22:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>22:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td style="background-color:#ddd !important">23:00</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>23:15</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>23:30</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr><tr><td>23:45</td><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table><td><table width="100%" height="100%" style="position:relative"><tr> </td></tr></table></tr></table>
+15:12:12.0 (1200535477)|SYSTEM_MODE_EXIT|false
+15:12:12.0 (1200571440)|SYSTEM_MODE_ENTER|false
+15:12:12.0 (1200583168)|SYSTEM_MODE_EXIT|false
+15:12:12.0 (1200755813)|DML_BEGIN|[89]|Op:Update|Type:Building_Ticket__c|Rows:1
+15:12:12.0 (1208719552)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000yLcS|BuldingTicketTrigger on Building_Ticket trigger event BeforeUpdate for [a019E000001U05E]
+15:12:12.209 (1209058403)|CUMULATIVE_LIMIT_USAGE
+15:12:12.209 (1209058403)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 64 out of 100 ******* CLOSE TO LIMIT
+  Number of query rows: 53 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 21 out of 150
+  Number of DML rows: 29 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:12.209 (1209058403)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:12.0 (1209816797)|CODE_UNIT_FINISHED|BuldingTicketTrigger on Building_Ticket trigger event BeforeUpdate for [a019E000001U05E]
+15:12:12.0 (1229656761)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000yLcS|BuldingTicketTrigger on Building_Ticket trigger event AfterUpdate for [a019E000001U05E]
+15:12:12.0 (1230441384)|SOQL_EXECUTE_BEGIN|[55]|Aggregations:0|SELECT Id, Hub_Building_Site__r.Project__r.Account__c, OwnerId FROM Building_Ticket__c WHERE id = :tmpVar1
+15:12:12.0 (1234962930)|SOQL_EXECUTE_END|[55]|Rows:1
+15:12:12.0 (1235194642)|USER_DEBUG|[61]|DEBUG|accs {0019E0000087FZBQA2}
+15:12:12.0 (1235412029)|SOQL_EXECUTE_BEGIN|[62]|Aggregations:0|SELECT Id FROM User WHERE (AccountId__c = :tmpVar1 AND IsActive = TRUE)
+15:12:12.0 (1238455806)|SOQL_EXECUTE_END|[62]|Rows:1
+15:12:12.0 (1238583189)|USER_DEBUG|[63]|DEBUG|users1 (User:{Id=0059E000000XTn4QAG})
+15:12:12.0 (1238899348)|SOQL_EXECUTE_BEGIN|[64]|Aggregations:0|SELECT ParentId, Id, UserOrGroupId FROM Building_Ticket__Share WHERE ParentId = :tmpVar1
+15:12:12.0 (1241394067)|SOQL_EXECUTE_END|[64]|Rows:2
+15:12:12.0 (1241549006)|USER_DEBUG|[66]|DEBUG|2 (Building_Ticket__Share:{ParentId=a019E000001U05EQAS, Id=02c9E00000HaiBlQAJ, UserOrGroupId=00524000001e3UjAAI}, Building_Ticket__Share:{ParentId=a019E000001U05EQAS, Id=02c9E00000HaiBmQAJ, UserOrGroupId=0059E000000XTn4QAG})
+15:12:12.0 (1241849279)|USER_DEBUG|[76]|DEBUG|shareByUserByTicket1 {a019E000001U05EQAS={0059E000000XTn4QAG=Building_Ticket__Share:{ParentId=a019E000001U05EQAS, Id=02c9E00000HaiBmQAJ, UserOrGroupId=0059E000000XTn4QAG}}}
+15:12:12.0 (1241984648)|USER_DEBUG|[80]|DEBUG|shareByUserByTicket.get(t.id){0059E000000XTn4QAG=Building_Ticket__Share:{ParentId=a019E000001U05EQAS, Id=02c9E00000HaiBmQAJ, UserOrGroupId=0059E000000XTn4QAG}} 0059E000000XTn4QAG
+15:12:12.0 (1242066968)|USER_DEBUG|[86]|DEBUG|add sharings 0 ()
+15:12:12.242 (1242135739)|CUMULATIVE_LIMIT_USAGE
+15:12:12.242 (1242135739)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 67 out of 100 ******* CLOSE TO LIMIT
+  Number of query rows: 57 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 21 out of 150
+  Number of DML rows: 29 out of 10000
+  Maximum CPU time: 10 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:12.242 (1242135739)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:12.0 (1243029335)|CODE_UNIT_FINISHED|BuldingTicketTrigger on Building_Ticket trigger event AfterUpdate for [a019E000001U05E]
+15:12:12.0 (1244071814)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:01I24000001VbKM
+15:12:12.0 (1247399684)|WF_RULE_EVAL_BEGIN|Workflow
+15:12:12.0 (1247427722)|WF_CRITERIA_BEGIN|[Bouwticket: BT-00342 a019E000001U05E]|Afkeuring_bouwticket3012400000025pV|01Q24000000bejr|ON_ALL_CHANGES|0
+15:12:12.0 (1247480195)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]true|Values:
+15:12:12.0 (1247484789)|WF_CRITERIA_END|true
+15:12:12.0 (1247510571)|WF_CRITERIA_BEGIN|[Bouwticket: BT-00342 a019E000001U05E]|Set user who change status to Assigned|01Q24000000DUr6|ON_CREATE_OR_TRIGGERING_UPDATE|0
+15:12:12.0 (1247563186)|WF_RULE_FILTER|[Bouwticket : Status equals Assigned]
+15:12:12.0 (1247575950)|WF_RULE_EVAL_VALUE|2
+15:12:12.0 (1247579071)|WF_CRITERIA_END|true
+15:12:12.0 (1247593092)|WF_CRITERIA_BEGIN|[Bouwticket: BT-00342 a019E000001U05E]|Goedkeuring_bouwticket3012400000025w7|01Q24000000bezz|ON_ALL_CHANGES|0
+15:12:12.0 (1247606063)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]true|Values:
+15:12:12.0 (1247608611)|WF_CRITERIA_END|true
+15:12:12.0 (1247620386)|WF_SPOOL_ACTION_BEGIN|Workflow
+15:12:12.0 (1247971269)|WF_FIELD_UPDATE|[Bouwticket: BT-00342 a019E000001U05E]|Field:Bouwticket: UserId|Value:00524000001e3Uj|Id=04Y240000008y7M|CurrentRule:Set user who change status to Assigned (Id=01Q24000000DUr6)
+15:12:12.0 (1248000626)|WF_ACTION| Field Update: 1; Flow Trigger: 2;
+15:12:12.0 (1248004416)|WF_RULE_EVAL_END
+15:12:12.0 (1249895470)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000yLcS|BuldingTicketTrigger on Building_Ticket trigger event BeforeUpdate for [a019E000001U05E]
+15:12:12.250 (1250267781)|CUMULATIVE_LIMIT_USAGE
+15:12:12.250 (1250267781)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 67 out of 100 ******* CLOSE TO LIMIT
+  Number of query rows: 57 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 21 out of 150
+  Number of DML rows: 29 out of 10000
+  Maximum CPU time: 10 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:12.250 (1250267781)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:12.0 (1251031366)|CODE_UNIT_FINISHED|BuldingTicketTrigger on Building_Ticket trigger event BeforeUpdate for [a019E000001U05E]
+15:12:12.0 (1260173465)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000yLcS|BuldingTicketTrigger on Building_Ticket trigger event AfterUpdate for [a019E000001U05E]
+15:12:12.0 (1260775410)|SOQL_EXECUTE_BEGIN|[55]|Aggregations:0|SELECT Id, Hub_Building_Site__r.Project__r.Account__c, OwnerId FROM Building_Ticket__c WHERE id = :tmpVar1
+15:12:12.0 (1265026850)|SOQL_EXECUTE_END|[55]|Rows:1
+15:12:12.0 (1265206328)|USER_DEBUG|[61]|DEBUG|accs {0019E0000087FZBQA2}
+15:12:12.0 (1265393769)|SOQL_EXECUTE_BEGIN|[62]|Aggregations:0|SELECT Id FROM User WHERE (AccountId__c = :tmpVar1 AND IsActive = TRUE)
+15:12:12.0 (1267980352)|SOQL_EXECUTE_END|[62]|Rows:1
+15:12:12.0 (1268090428)|USER_DEBUG|[63]|DEBUG|users1 (User:{Id=0059E000000XTn4QAG})
+15:12:12.0 (1268340365)|SOQL_EXECUTE_BEGIN|[64]|Aggregations:0|SELECT ParentId, Id, UserOrGroupId FROM Building_Ticket__Share WHERE ParentId = :tmpVar1
+15:12:12.0 (1270558077)|SOQL_EXECUTE_END|[64]|Rows:2
+15:12:12.0 (1270681326)|USER_DEBUG|[66]|DEBUG|2 (Building_Ticket__Share:{ParentId=a019E000001U05EQAS, Id=02c9E00000HaiBlQAJ, UserOrGroupId=00524000001e3UjAAI}, Building_Ticket__Share:{ParentId=a019E000001U05EQAS, Id=02c9E00000HaiBmQAJ, UserOrGroupId=0059E000000XTn4QAG})
+15:12:12.0 (1270866917)|USER_DEBUG|[76]|DEBUG|shareByUserByTicket1 {a019E000001U05EQAS={0059E000000XTn4QAG=Building_Ticket__Share:{ParentId=a019E000001U05EQAS, Id=02c9E00000HaiBmQAJ, UserOrGroupId=0059E000000XTn4QAG}}}
+15:12:12.0 (1270970338)|USER_DEBUG|[80]|DEBUG|shareByUserByTicket.get(t.id){0059E000000XTn4QAG=Building_Ticket__Share:{ParentId=a019E000001U05EQAS, Id=02c9E00000HaiBmQAJ, UserOrGroupId=0059E000000XTn4QAG}} 0059E000000XTn4QAG
+15:12:12.0 (1271021598)|USER_DEBUG|[86]|DEBUG|add sharings 0 ()
+15:12:12.271 (1271078171)|CUMULATIVE_LIMIT_USAGE
+15:12:12.271 (1271078171)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 70 out of 100 ******* CLOSE TO LIMIT
+  Number of query rows: 61 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 21 out of 150
+  Number of DML rows: 29 out of 10000
+  Maximum CPU time: 10 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:12.271 (1271078171)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:12.0 (1271888029)|CODE_UNIT_FINISHED|BuldingTicketTrigger on Building_Ticket trigger event AfterUpdate for [a019E000001U05E]
+15:12:12.0 (1272267509)|WF_FLOW_ACTION_BEGIN|09L24000000Trdl
+15:12:12.273 (1273000842)|FLOW_CREATE_INTERVIEW_BEGIN|00D9E000000D6H4|300240000004gC2|3012400000025w7
+15:12:12.273 (1273043755)|FLOW_CREATE_INTERVIEW_END|26021ccc09384b7aa71c1642ff7015b487ebad-2def|Goedkeuring bouwticket
+15:12:12.274 (1274029939)|FLOW_START_INTERVIEWS_BEGIN|1
+15:12:12.274 (1274050588)|FLOW_START_INTERVIEW_BEGIN|26021ccc09384b7aa71c1642ff7015b487ebad-2def|Goedkeuring bouwticket
+15:12:12.274 (1274641587)|FLOW_START_INTERVIEW_END|26021ccc09384b7aa71c1642ff7015b487ebad-2def|Goedkeuring bouwticket
+15:12:12.274 (1325572428)|WF_EMAIL_SENT|Reference:Building_Ticket__c.Goedkeuring_bouwticket|Recipients:j.sietsema@gsa.nl |CcEmails:
+15:12:12.274 (1326099206)|FLOW_START_INTERVIEWS_END|1
+15:12:12.0 (1326682713)|WF_FLOW_ACTION_END|09L24000000Trdl
+15:12:12.0 (1326703811)|WF_FLOW_ACTION_BEGIN|09L24000000Trc9
+15:12:12.327 (1327551229)|FLOW_CREATE_INTERVIEW_BEGIN|00D9E000000D6H4|300240000004gBJ|3012400000025pV
+15:12:12.327 (1327615662)|FLOW_CREATE_INTERVIEW_END|26031ccc09384b7aa71c1642ff7015b487ebad-2df0|Afkeuring bouwticket
+15:12:12.328 (1328661855)|FLOW_START_INTERVIEWS_BEGIN|1
+15:12:12.328 (1328693751)|FLOW_START_INTERVIEW_BEGIN|26031ccc09384b7aa71c1642ff7015b487ebad-2df0|Afkeuring bouwticket
+15:12:12.328 (1329569144)|FLOW_START_INTERVIEW_END|26031ccc09384b7aa71c1642ff7015b487ebad-2df0|Afkeuring bouwticket
+15:12:12.328 (1329578149)|FLOW_START_INTERVIEWS_END|1
+15:12:12.0 (1330047903)|WF_FLOW_ACTION_END|09L24000000Trc9
+15:12:12.0 (1330086022)|WF_RULE_EVAL_BEGIN|Workflow
+15:12:12.0 (1330098477)|WF_SPOOL_ACTION_BEGIN|Workflow
+15:12:12.0 (1330105538)|WF_ACTION| None
+15:12:12.0 (1330108148)|WF_RULE_EVAL_END
+15:12:12.0 (1330183221)|WF_ACTIONS_END| Field Update: 1; Flow Trigger: 2;
+15:12:12.0 (1330190916)|CODE_UNIT_FINISHED|Workflow:01I24000001VbKM
+15:12:12.0 (1330343350)|DML_END|[89]
+15:12:12.0 (1330630344)|SOQL_EXECUTE_BEGIN|[91]|Aggregations:0|SELECT Id, UserId__c FROM Building_Ticket__c
+15:12:12.0 (1339190470)|SOQL_EXECUTE_END|[91]|Rows:2
+15:12:12.0 (1339901584)|SYSTEM_MODE_ENTER|false
+15:12:12.0 (1339912397)|SYSTEM_MODE_EXIT|false
+15:12:12.0 (1340006428)|SYSTEM_MODE_ENTER|false
+15:12:12.0 (1341573258)|SOQL_EXECUTE_BEGIN|[14]|Aggregations:0|SELECT Arrival_Time__c, Content_Delivery__c, CreatedById, CreatedDate, IsDeleted, Delivery_Date__c, Description_Of_Activity__c, Description_Of_Delivery__c, Account__r.Name, Account__c, End_Point__c, Gate__c, Gate__r.Name, Hub_Building_Site__c, LastActivityDate, LastModifiedById, LastModifiedDate, Loading_And_Unloading_Time__c, Location__c, Location__r.Name, Name, OwnerId, Id, Requestor__c, Status__c, SystemModstamp, Vertical_Transport__c, Vertical_Transport__r.Name, Hub_Building_Site__r.City__c, Hub_Building_Site__r.Postalcode__c, Hub_Building_Site__r.Street__c, Hub_Building_Site__r.Name, Hub_Building_Site__r.telefoonnummer_contactpersoon_bouwplaats__c, Hub_Building_Site__r.RecordType.Name, Requestor__r.Name, Number__c, UserId__c, Projectmember__c, Projectmember__r.Name FROM Building_Ticket__c WHERE Id = :tmpVar1
+15:12:12.0 (1354640981)|SOQL_EXECUTE_END|[14]|Rows:1
+15:12:12.0 (1355273666)|SOQL_EXECUTE_BEGIN|[36]|Aggregations:0|SELECT Id, Name FROM User WHERE Id = :tmpVar1
+15:12:12.0 (1357374319)|SOQL_EXECUTE_END|[36]|Rows:1
+15:12:12.0 (1357476705)|SYSTEM_MODE_EXIT|false
+15:12:12.0 (1357529250)|SYSTEM_MODE_ENTER|false
+15:12:12.0 (1357899354)|SOQL_EXECUTE_BEGIN|[86]|Aggregations:0|SELECT Id, Name FROM RecordType WHERE Name = 'Building Site'
+15:12:12.0 (1359833083)|SOQL_EXECUTE_END|[86]|Rows:1
+15:12:12.0 (1360038777)|DML_BEGIN|[96]|Op:Insert|Type:Hub_Building_Site__c|Rows:1
+15:12:12.0 (1363014332)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000PhJR|HubTrigger on Hub_Building_Site trigger event BeforeInsert for [new]
+15:12:12.363 (1363318023)|CUMULATIVE_LIMIT_USAGE
+15:12:12.363 (1363318023)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 74 out of 100 ******* CLOSE TO LIMIT
+  Number of query rows: 66 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 22 out of 150
+  Number of DML rows: 30 out of 10000
+  Maximum CPU time: 10 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:12.363 (1363318023)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:12.0 (1364152326)|CODE_UNIT_FINISHED|HubTrigger on Hub_Building_Site trigger event BeforeInsert for [new]
+15:12:12.0 (1380575579)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000PhJR|HubTrigger on Hub_Building_Site trigger event AfterInsert for [a029E000001YaQ6]
+15:12:12.0 (1381273508)|SOQL_EXECUTE_BEGIN|[14]|Aggregations:0|SELECT Id, Project__r.Account__c, OwnerId FROM Hub_building_site__c WHERE id = :tmpVar1
+15:12:12.0 (1383189164)|SOQL_EXECUTE_END|[14]|Rows:1
+15:12:12.0 (1383362187)|USER_DEBUG|[22]|DEBUG|accs {}
+15:12:12.0 (1383559743)|SOQL_EXECUTE_BEGIN|[23]|Aggregations:0|SELECT Id, isActive FROM User WHERE (AccountId__c = :tmpVar1 AND isActive = TRUE)
+15:12:12.0 (1385452955)|SOQL_EXECUTE_END|[23]|Rows:0
+15:12:12.0 (1385573567)|USER_DEBUG|[25]|DEBUG|users0 ()
+15:12:12.0 (1385882526)|SOQL_EXECUTE_BEGIN|[26]|Aggregations:0|SELECT ParentId, Id, UserOrGroupId FROM Hub_building_site__Share WHERE ParentId = :tmpVar1
+15:12:12.0 (1389800650)|SOQL_EXECUTE_END|[26]|Rows:1
+15:12:12.0 (1389920429)|USER_DEBUG|[28]|DEBUG|1 (Hub_Building_Site__Share:{ParentId=a029E000001YaQ6QAK, Id=02c9E00000HaiBpQAJ, UserOrGroupId=00524000001e3UjAAI})
+15:12:12.0 (1390087583)|USER_DEBUG|[38]|DEBUG|shareByUserByTicket1 {a029E000001YaQ6QAK={}}
+15:12:12.0 (1390175718)|USER_DEBUG|[48]|DEBUG|add sharings 0 ()
+15:12:12.390 (1390239121)|CUMULATIVE_LIMIT_USAGE
+15:12:12.390 (1390239121)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 77 out of 100 ******* CLOSE TO LIMIT
+  Number of query rows: 68 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 22 out of 150
+  Number of DML rows: 30 out of 10000
+  Maximum CPU time: 10 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:12.390 (1390239121)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:12.0 (1391109096)|CODE_UNIT_FINISHED|HubTrigger on Hub_Building_Site trigger event AfterInsert for [a029E000001YaQ6]
+15:12:12.0 (1391851821)|DML_END|[96]
+15:12:12.0 (1391869165)|SYSTEM_MODE_EXIT|false
+15:12:12.0 (1392066232)|DML_BEGIN|[99]|Op:Insert|Type:AccountHub__c|Rows:1
+15:12:12.0 (1395143888)|CODE_UNIT_STARTED|[EXTERNAL]|01q240000012zVv|AccountHubTrigger on AccountHub trigger event BeforeInsert for [new]
+15:12:12.395 (1395683193)|CUMULATIVE_LIMIT_USAGE
+15:12:12.395 (1395683193)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 77 out of 100 ******* CLOSE TO LIMIT
+  Number of query rows: 68 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 23 out of 150
+  Number of DML rows: 31 out of 10000
+  Maximum CPU time: 10 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:12.395 (1395683193)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:12.0 (1396467421)|CODE_UNIT_FINISHED|AccountHubTrigger on AccountHub trigger event BeforeInsert for [new]
+15:12:12.0 (1413201516)|CODE_UNIT_STARTED|[EXTERNAL]|01q240000012zVv|AccountHubTrigger on AccountHub trigger event AfterInsert for [a079E00000190S0]
+15:12:12.0 (1414379338)|SOQL_EXECUTE_BEGIN|[43]|Aggregations:0|SELECT Id, Project__r.Account__c, OwnerId FROM Hub_building_site__c WHERE id = :tmpVar1
+15:12:12.0 (1417275620)|SOQL_EXECUTE_END|[43]|Rows:1
+15:12:12.0 (1417417404)|USER_DEBUG|[47]|DEBUG|accs {0019E0000087FZBQA2}
+15:12:12.0 (1417676885)|SOQL_EXECUTE_BEGIN|[48]|Aggregations:0|SELECT Id, isActive FROM User WHERE (AccountId__c = :tmpVar1 AND isActive = TRUE)
+15:12:12.0 (1420767714)|SOQL_EXECUTE_END|[48]|Rows:1
+15:12:12.0 (1420926929)|USER_DEBUG|[50]|DEBUG|users1 (User:{Id=0059E000000XTn4QAG, IsActive=true})
+15:12:12.0 (1421155675)|SOQL_EXECUTE_BEGIN|[51]|Aggregations:0|SELECT ParentId, Id, UserOrGroupId FROM Hub_building_site__Share WHERE ParentId = :tmpVar1
+15:12:12.0 (1423437007)|SOQL_EXECUTE_END|[51]|Rows:1
+15:12:12.0 (1423567072)|USER_DEBUG|[53]|DEBUG|1 (Hub_Building_Site__Share:{ParentId=a029E000001YaQ6QAK, Id=02c9E00000HaiBpQAJ, UserOrGroupId=00524000001e3UjAAI})
+15:12:12.0 (1423751520)|USER_DEBUG|[63]|DEBUG|shareByUserByTicket1 {a029E000001YaQ6QAK={}}
+15:12:12.0 (1423874047)|USER_DEBUG|[67]|DEBUG|shareByUserByTicket.get(t.id){} 0059E000000XTn4QAG
+15:12:12.0 (1424110412)|USER_DEBUG|[73]|DEBUG|add sharings 1 (Hub_Building_Site__Share:{ParentId=a029E000001YaQ6QAK, UserOrGroupId=0059E000000XTn4QAG, AccessLevel=Edit})
+15:12:12.0 (1424148432)|DML_BEGIN|[74]|Op:Insert|Type:Hub_Building_Site__Share|Rows:1
+15:12:12.0 (1437627034)|DML_END|[74]
+15:12:12.0 (1438345502)|SOQL_EXECUTE_BEGIN|[75]|Aggregations:0|SELECT Id, Name FROM Location__c WHERE Hub_Building_Site__c = :tmpVar1
+15:12:12.0 (1443806727)|SOQL_EXECUTE_END|[75]|Rows:0
+15:12:12.0 (1444378469)|SOQL_EXECUTE_BEGIN|[77]|Aggregations:0|SELECT Id, ParentId FROM Location__Share WHERE (UserOrGroupId = :tmpVar1 AND ParentId = :tmpVar2 AND AccessLevel != 'All')
+15:12:12.0 (1446106138)|SOQL_EXECUTE_END|[77]|Rows:0
+15:12:12.446 (1446435711)|CUMULATIVE_LIMIT_USAGE
+15:12:12.446 (1446435711)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 82 out of 100 ******* CLOSE TO LIMIT
+  Number of query rows: 71 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 24 out of 150
+  Number of DML rows: 32 out of 10000
+  Maximum CPU time: 10 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:12.446 (1446435711)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:12.0 (1447352661)|CODE_UNIT_FINISHED|AccountHubTrigger on AccountHub trigger event AfterInsert for [a079E00000190S0]
+15:12:12.0 (1448437436)|DML_END|[99]
+15:12:12.0 (1448728208)|SOQL_EXECUTE_BEGIN|[101]|Aggregations:0|SELECT AccountId, Id, UserOrGroupId FROM AccountShare WHERE UserOrGroupId = :tmpVar1
+15:12:12.0 (1459365088)|SOQL_EXECUTE_END|[101]|Rows:0
+15:12:12.0 (1459651640)|EXCEPTION_THROWN|[101]|System.AssertException: Assertion Failed: Expected: 1, Actual: 0
+15:12:12.0 (1459855874)|FATAL_ERROR|System.AssertException: Assertion Failed: Expected: 1, Actual: 0
+
+Class.CreateTicketAndCallendarTest.test_createTicket: line 101, column 1
+15:12:12.0 (1459868256)|FATAL_ERROR|System.AssertException: Assertion Failed: Expected: 1, Actual: 0
+
+Class.CreateTicketAndCallendarTest.test_createTicket: line 101, column 1
+15:12:12.459 (1459874067)|CUMULATIVE_LIMIT_USAGE
+15:12:12.459 (1459874067)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 83 out of 100 ******* CLOSE TO LIMIT
+  Number of query rows: 71 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 24 out of 150
+  Number of DML rows: 32 out of 10000
+  Maximum CPU time: 10 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 2 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:12:12.459 (1459874067)|CUMULATIVE_LIMIT_USAGE_END
+
+15:12:12.0 (1459917767)|CODE_UNIT_FINISHED|CreateTicketAndCallendarTest.test_createTicket
+15:12:12.0 (1460846871)|EXECUTION_FINISHED

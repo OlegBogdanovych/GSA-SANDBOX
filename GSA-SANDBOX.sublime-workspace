@@ -1,0 +1,2104 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"out",
+				"apex:outputField"
+			],
+			[
+				"rea",
+				"ready\t(ProjectItemsAfroepen.page)"
+			],
+			[
+				"Tic",
+				"TicketPDFExtension"
+			],
+			[
+				"Bui",
+				"Building_Ticket__c"
+			],
+			[
+				"afro",
+				"afroepenAgenda"
+			],
+			[
+				"ite",
+				"itemsAfroepen"
+			],
+			[
+				"en",
+				"endTable"
+			],
+			[
+				"on",
+				"oncomplete"
+			],
+			[
+				"console",
+				"console.log('showSuccessPopup"
+			],
+			[
+				"cos",
+				"console"
+			],
+			[
+				"show",
+				"showSuccessPopup\t(ProjectItemsAfroepenController.cls)"
+			],
+			[
+				"subloc",
+				"subLocDet\t(WWWDetailUtil.cls)"
+			],
+			[
+				"WWW",
+				"WWW__c"
+			],
+			[
+				"a",
+				"assertNotEquals()"
+			],
+			[
+				"Page",
+				"PageReference"
+			],
+			[
+				"addDa",
+				"addDays\t(CalendarComponentController.cls)"
+			],
+			[
+				"list",
+				"PUBLIC listOfItems\tLIST"
+			],
+			[
+				"lis",
+				"listOfItems\t(ProjectItemsAfroepenController.cls)"
+			],
+			[
+				"pro",
+				"PUBLIC projectsFound\tLIST"
+			],
+			[
+				"Asse",
+				"assertNotEquals()"
+			],
+			[
+				"Project",
+				"ProjectItemsAfroepen\t[Visualforce Page]"
+			],
+			[
+				"dea",
+				"details"
+			],
+			[
+				"add",
+				"PUBLIC addAll(LIST elements) \tvoid"
+			],
+			[
+				"WWW_deta",
+				"WWW_Detail__c"
+			],
+			[
+				"Rec",
+				"RecordTypeId\t(WWWDetailUtil.cls)"
+			],
+			[
+				"Date",
+				"Datetime\t[Standard Apex Class]"
+			],
+			[
+				"WWW_Det",
+				"WWW_Detail__c"
+			],
+			[
+				"sty",
+				"styleclass"
+			],
+			[
+				"check",
+				"checkAvailability\t(WWWDetailUtil.cls)"
+			],
+			[
+				"Ite",
+				"ItemsList"
+			],
+			[
+				"www",
+				"wwws"
+			],
+			[
+				"slds-s",
+				"slds-size--1-of-2\t(New_Invoked.page)"
+			],
+			[
+				"is",
+				"isUpdate"
+			],
+			[
+				"tr",
+				"triggerParams"
+			],
+			[
+				"WWW_",
+				"WWW__c"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"Da",
+				"Damage_Package__c"
+			],
+			[
+				"A",
+				"Arrival_Truck_On_Hub__c"
+			],
+			[
+				"ont",
+				"ontvangenDetails"
+			],
+			[
+				"De",
+				"Delivered_2_Hub"
+			],
+			[
+				"red",
+				"redBack\t(NewDeliveredExtension.cls)"
+			],
+			[
+				"del",
+				"delToProj\t(WWWDetailExtension.cls)"
+			],
+			[
+				"asse",
+				"assertNotEquals()"
+			],
+			[
+				"go",
+				"PUBLIC goToNewView() \tPageReference"
+			],
+			[
+				"Ch",
+				"ChoseRecordType\t[Visualforce Page]"
+			],
+			[
+				"test_create",
+				"test_createOntvangen\t(WWWDetailExtensionTest.cls)"
+			],
+			[
+				"fie",
+				"fieldsValidationError\t(WWWDetailExtension.cls)"
+			],
+			[
+				"Proje",
+				"Projecten__c"
+			],
+			[
+				"Hub",
+				"Hub_Building_Site__c"
+			],
+			[
+				"Pa",
+				"Parent_Location__c"
+			],
+			[
+				"Nu",
+				"Number_Of_Items__c\t(WWWDetailExtensionTest.cls)"
+			],
+			[
+				"createTestW",
+				"PUBLIC createTestWwwDetailOntvangen(WWW__c www, Location__c location, Decimal numberOfItems) \tvoid"
+			],
+			[
+				"Afle",
+				"AfleverenSublocs\t(WWWDetailExtension.cls)"
+			],
+			[
+				"locs",
+				"locsForAfleveren"
+			],
+			[
+				"c",
+				"ctrl"
+			],
+			[
+				"to",
+				"toCheck"
+			],
+			[
+				"get",
+				"PUBLIC getTimes() \tLIST"
+			],
+			[
+				"de",
+				"PUBLIC detail\tWWW_Detail__c"
+			],
+			[
+				"NewDe",
+				"NewDeliveredToHub\t[Visualforce Page]"
+			],
+			[
+				"s",
+				"PUBLIC stopTest() \tvoid"
+			],
+			[
+				"bui",
+				"buldingSite"
+			],
+			[
+				"Hu",
+				"Hub_Building_Site__c"
+			],
+			[
+				"create",
+				"PUBLIC createTestItem(String itemName) \tItem__c"
+			],
+			[
+				"Test",
+				"TestDataGenerator"
+			],
+			[
+				"sublo",
+				"subLocations"
+			],
+			[
+				"sele",
+				"selectedSubs"
+			],
+			[
+				"locat",
+				"locationWithSubs"
+			],
+			[
+				"deta",
+				"detail"
+			],
+			[
+				"WWW_d",
+				"WWW_Detail__c"
+			],
+			[
+				"fiel",
+				"fieldsValidation"
+			],
+			[
+				"delTo",
+				"delToProj"
+			],
+			[
+				"para",
+				"paramDateOfDelivery"
+			],
+			[
+				"Sele",
+				"SelectOption\t[Standard Apex Class]"
+			],
+			[
+				"mana",
+				"managerSelected\t(CreateTicketExtension.cls)"
+			],
+			[
+				"Tes",
+				"TestDataGenerator\t(TestDataGenerator.cls)"
+			],
+			[
+				"creat",
+				"PUBLIC createTestVerticalTransport(String name) \tLocation__c"
+			],
+			[
+				"Location__",
+				"Location__c"
+			],
+			[
+				"createTes",
+				"createTestSiteLocation\t(TestDataGenerator.cls)"
+			],
+			[
+				"cre",
+				"PUBLIC createGateLocation(String name) \tLocation__c"
+			],
+			[
+				"Te",
+				"TestDataGenerator\t[Custom Apex Class]"
+			],
+			[
+				"test",
+				"TestDataGenerator"
+			],
+			[
+				"stat",
+				"static\t(CreateTicketExtension.cls)"
+			],
+			[
+				"Location",
+				"Location__c"
+			],
+			[
+				"loc",
+				"locAbbr"
+			],
+			[
+				"LOcat",
+				"Location__c"
+			],
+			[
+				"Number",
+				"Number_Of_Items__c"
+			],
+			[
+				"slds-button",
+				"slds-button--brand\t(New_Invoked.page)"
+			],
+			[
+				"d",
+				"disabled\t(Boolean)"
+			],
+			[
+				"conts",
+				"PUBLIC contains(ANY element) \tBoolean"
+			],
+			[
+				"Delive",
+				"Delivered_2_Project\t(NewDeliveredExtension.cls)"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"Subloc",
+				"SubLocationDetail__c"
+			],
+			[
+				"Sublo",
+				"SubLocationDetail__c"
+			],
+			[
+				"Se",
+				"PUBLIC setWWW() \tvoid"
+			],
+			[
+				"Stat",
+				"Status__c"
+			],
+			[
+				"St",
+				"String\t(NewDeliveredExtension.cls)"
+			],
+			[
+				"isE",
+				"isExist"
+			],
+			[
+				"Pro",
+				"Project__c"
+			],
+			[
+				"Locatio",
+				"Location__c"
+			],
+			[
+				"old",
+				"oldMap"
+			],
+			[
+				"Loca",
+				"Location__c"
+			],
+			[
+				"trigger",
+				"triggerParams"
+			],
+			[
+				"tri",
+				"triggerOld"
+			],
+			[
+				"keySe",
+				"PUBLIC keySet() \tSET<String>"
+			],
+			[
+				"ticket",
+				"ticketPerDay"
+			],
+			[
+				"Arri",
+				"Arrival_Time__c"
+			],
+			[
+				"loca",
+				"locationIdsTorecalculate"
+			],
+			[
+				"ol",
+				"oldLoc"
+			],
+			[
+				"input",
+				"apex:inputText"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"in",
+				"apex:inputField"
+			],
+			[
+				"cli",
+				"clientId"
+			],
+			[
+				"boolea",
+				"Boolean"
+			],
+			[
+				"edi",
+				"edit"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"do_",
+				"do_shortcode"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"max",
+				"max-width"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/pages/ProjectItemsAfroepen.page",
+			"settings":
+			{
+				"buffer_size": 38359,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/classes/ProjectItemsAfroepenController.cls",
+			"settings":
+			{
+				"buffer_size": 11890,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/classes/ItemsList.cls",
+			"settings":
+			{
+				"buffer_size": 7314,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/classes/ProjectItemsAfroepenControllerTest.cls",
+			"settings":
+			{
+				"buffer_size": 4803,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/pages/TicketPDF.page",
+			"settings":
+			{
+				"buffer_size": 217,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/components/TicketPDFComponent.component",
+			"settings":
+			{
+				"buffer_size": 9325,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "public with sharing class TicketPDFExtension {\n    public Building_Ticket__c ticketRecord {get; set;}\n    public String showPrintButton {get; set;}\n\n    public Building_Ticket__c ticket {get;set;}\n    public String excpectedDateTime {get;set;}\n    public String excpectedTime {get;set;}\n    public User user {\n        get {\n            if (user == null) {\n                user = new User();\n            }\n            return user;\n        } set;\n    }\n\n    TicketPDFExtension\n\n    public Boolean getInit() {\n        ticket = [SELECT Arrival_Time__c, Content_Delivery__c, CreatedById, CreatedDate, IsDeleted,\n                                            Delivery_Date__c, Description_Of_Activity__c, Description_Of_Delivery__c, Account__r.Name,Account__c,\n                                            End_Point__c, Gate__c, Gate__r.Name, Hub_Building_Site__c, LastActivityDate, LastModifiedById,\n                                            LastModifiedDate, Loading_And_Unloading_Time__c, Location__c, Location__r.Name, Name, OwnerId, Id,\n                                            Requestor__c, Status__c, SystemModstamp, Vertical_Transport__c, Vertical_Transport__r.Name,\n                                            Hub_Building_Site__r.City__c, Hub_Building_Site__r.Postalcode__c, Requestor__r.Name, QRcode__c,\n                                            Hub_Building_Site__r.Street__c, Hub_Building_Site__r.Name, Number__c, Hub_Building_Site__r.telefoonnummer_contactpersoon_bouwplaats__c,\n                                            Hub_Building_Site__r.RecordType.Name, UserId__c, Projectmember__c, Projectmember__r.Name\n                                    FROM Building_Ticket__c where Id =: ticketRecord.Id];\n\n        if (ticket.Arrival_Time__c!= null && ticket.Loading_And_Unloading_Time__c != null) {\n            excpectedDateTime = String.valueOf(ticket.Arrival_Time__c.addMinutes(Integer.valueOf(ticket.Loading_And_Unloading_Time__c)).hour())\n            +':' +String.valueOf(ticket.Arrival_Time__c.addMinutes(Integer.valueOf(ticket.Loading_And_Unloading_Time__c)).minute());\n\n            excpectedTime =  String.valueOf(ticket.Arrival_Time__c.hour())+':'+ String.valueOf(ticket.Arrival_Time__c.minute());\n        }\n        if (excpectedDateTime.contains(':') && excpectedDateTime.indexOf(':') != excpectedDateTime.length() - 3) {\n            excpectedDateTime+='0';\n        }\n        if (excpectedTime.contains(':') && excpectedTime.indexOf(':') != excpectedTime.length() - 3) {\n            excpectedTime +='0';\n        }\n        if (ticket.UserId__c != null) {\n            user = [select Id, Name from User where Id=:ticket.UserId__c ];\n        }\n\n        return true;\n    }\n\n}",
+			"file": "src/classes/TicketPDFExtension.cls",
+			"file_size": 2664,
+			"file_write_time": 131419878506355908,
+			"settings":
+			{
+				"buffer_size": 2688,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 106 files for \"TicketPDFExtension\"\n\nC:\\Projects\\GSA-SANDBOX\\src\\classes\\CreateTicketAndCallendarTest.cls:\n   94          System.assertNotEquals(null, tickets.get(0).UserId__c);\n   95  \n   96:         TicketPDFExtension pdfCtrl = new TicketPDFExtension(st);\n   97  \n   98          Hub_Building_Site__c buldingSite1 = TestDataGenerator.createTestHubBuildingSite('Test Building Site', null);\n\nC:\\Projects\\GSA-SANDBOX\\src\\classes\\TicketPDFExtension.cls:\n    1: public with sharing class TicketPDFExtension {\n    2      public Building_Ticket__c ticketRecord {get; set;}\n    3      public String showPrintButton {get; set;}\n\n3 matches across 2 files\n",
+			"settings":
+			{
+				"buffer_size": 655,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "src/classes/CreateTicketAndCallendarTest.cls",
+			"settings":
+			{
+				"buffer_size": 17190,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 259.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"Package Control: Install Package",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Projects/GSA-SANDBOX",
+		"/C/Projects/GSA-SANDBOX/src",
+		"/C/Projects/GSA-SANDBOX/src/classes",
+		"/C/Projects/GSA-SANDBOX/src/components",
+		"/C/Projects/GSA-SANDBOX/src/pages"
+	],
+	"file_history":
+	[
+		"/C/Projects/GSA-SANDBOX/src/components/QRCode.component",
+		"/C/Projects/GSA-SANDBOX/src/classes/BuildingTicketUtil.cls",
+		"/C/Projects/GSA-SANDBOX/src/pages/CreateTicket.page",
+		"/C/Projects/GSA-SANDBOX/src/classes/CreateTicketExtension.cls",
+		"/C/Projects/GSA-SANDBOX/src/classes/WWWDetailHelper.cls",
+		"/C/Projects/GSA-SANDBOX/src/pages/New_Invoked.page",
+		"/C/Projects/GSA-SANDBOX/src/classes/WWWDetailExtensionTest.cls",
+		"/C/Projects/GSA-SANDBOX/src/classes/CalendarComponentController.cls",
+		"/C/Projects/GSA-SANDBOX/src/components/Calendar.component",
+		"/C/Projects/GSA-SANDBOX/src/classes/WWWDetailUtil.cls",
+		"/C/Projects/GSA-SANDBOX/src/classes/WWWDetailExtension.cls",
+		"/C/Projects/GSA-SANDBOX/src/classes/UserUtil.cls",
+		"/C/Projects/GSA-SANDBOX/src/classes/SubLocationDetailUtilTest.cls",
+		"/C/Projects/GSA-SANDBOX/src/classes/TestDataGenerator.cls",
+		"/C/Projects/GSA-SANDBOX/src/classes/SubLocationDetailUtil.cls",
+		"/C/Projects/GSA-SANDBOX/src/classes/NewDeliveredExtensionTest.cls",
+		"/C/Projects/GSA-SANDBOX/src/classes/SubLocation.cls-meta.xml",
+		"/C/Projects/GSA-SANDBOX/src/pages/CalendarOnTicket.page",
+		"/C/Projects/GSA-SANDBOX/src/pages/Calendar.page",
+		"/C/Projects/GSA-SANDBOX/src/classes/CalendarOnTicketExtension.cls",
+		"/C/Projects/GSA-SANDBOX/src/classes/CalendarExtension.cls",
+		"/C/Projects/GSA-SANDBOX/src/objects/WWW_Detail__c.object",
+		"/C/Projects/GSA-SANDBOX/src/objects/WWW__c.object",
+		"/C/Projects/someCode.cls",
+		"/C/Projects/GSA-SANDBOX/src/pages/ProjectItemsAfroepen.page-meta.xml",
+		"/C/Projects/GSA-SANDBOX/src/classes/AccountHubUtil.cls",
+		"/C/Projects/GSA-SANDBOX/src/triggers/AccountHubTrigger.trigger",
+		"/C/Projects/GSA-SANDBOX/src/classes/HubUtil.cls",
+		"/C/Projects/GSA-SANDBOX/src/triggers/HubTrigger.trigger",
+		"/C/Projects/GSA-SANDBOX/src/pages/SelectHub.page",
+		"/C/Projects/GSA-SANDBOX/src/triggers/UserTrigger.trigger",
+		"/C/Projects/GSA-SANDBOX/src/classes/triggerHelper.cls",
+		"/C/Projects/GSA-SANDBOX/src/classes/LocationUtil.cls",
+		"/C/Projects/GSA-SANDBOX/src/classes/CreateTicketAndCallendarTest.cls",
+		"/C/Projects/GSA-SANDBOX/src/classes/NewDeliveredExtension.cls",
+		"/C/Projects/GSA-SANDBOX/src/pages/New_Delivered_detail.page",
+		"/C/Projects/GSA-SANDBOX/src/triggers/WWWDetailTrigger.trigger",
+		"/C/Projects/GSA-SANDBOX/src/classes/TriggerParams.cls",
+		"/C/Projects/ERASMUS-DEV/src/classes/EmailMessageUtil.cls",
+		"/C/Projects/GSA-SANDBOX/src/pages/ChoseRecordType.page",
+		"/C/Projects/GSA-SANDBOX/src/classes/AfleverenSublocs.cls",
+		"/C/Projects/GSA-SANDBOX/src/classes/SubLocation.cls",
+		"/C/Projects/GSA-SANDBOX/src/classes/SubLocationDetailUtil.cls-meta.xml",
+		"/C/Projects/GSA-SANDBOX/src/pages/NewDeliveredToHub.page",
+		"/C/Projects/GSA-SANDBOX/src/classes/CreateTicketAndCallendarTest.cls-meta.xml",
+		"/C/Projects/GSA-SANDBOX/src/classes/LocationPrintControllerTest.cls",
+		"/C/Projects/GSA-SANDBOX/src/pages/TicketPDF.page",
+		"/C/Projects/GSA-SANDBOX/'WWW-13998','WWW-14005', 'WWW-12139', 'WWW-12140',",
+		"/C/Projects/GSA-SANDBOX/src/classes/LocationsPrintController.cls-meta.xml",
+		"/C/Projects/GSA-SANDBOX/src/classes/LocationsPrintController.cls",
+		"/C/Projects/GSA-SANDBOX/src/classes/ChangePasswordControllerTest.cls",
+		"/C/Projects/GSA-SANDBOX/src/classes/UserUtilTest.cls",
+		"/C/Projects/GSA-SANDBOX/src/classes/ProductUtilTest.cls",
+		"/C/Projects/GSA-SANDBOX/src/classes/ProductUtil.cls",
+		"/C/Projects/GSA-SANDBOX/src/classes/ComponentData.cls",
+		"/C/Projects/GSA-SANDBOX/src/classes/CommunitiesLandingControllerTest.cls",
+		"/C/Projects/GSA-SANDBOX/src/pages/NewDeliveredToProject.page",
+		"/C/Projects/GSA-SANDBOX/src/classes/ProjectUtil.cls",
+		"/C/Users/User1/Desktop/photo/testServer/3.1/readme ru.txt",
+		"/C/Users/User1/Desktop/photo/testServer/Rawr.su_Savo.rar",
+		"/C/Projects/GSA-SANDBOX/src/triggers/ProjectTrigger.trigger",
+		"/C/Users/User1/Desktop/appiphony-lightning-js-master/dist/jquery.aljs-all-with-moment.min.js",
+		"/C/Projects/GSA-SANDBOX/src/pages/New_Delivered_detail.page-meta.xml",
+		"/C/Projects/GSA-SANDBOX/src/classes/TicketPDFExtension.cls",
+		"/C/Users/User1/AppData/Roaming/Skype/My Skype Received Files/TaskTakeOwnership.page",
+		"/C/Users/User1/AppData/Roaming/Skype/My Skype Received Files/TaskTakeOwnershipExtensionTest.cls",
+		"/C/Users/User1/AppData/Roaming/Skype/My Skype Received Files/TaskTakeOwnershipExtension.cls",
+		"/C/Projects/GSA-PACKAGE/src/classes/ComponentData.cls",
+		"/C/Projects/GSA-PACKAGE/src/classes/AccessCheck.cls",
+		"/C/Projects/GSA-PACKAGE/src/classes/SFDCEncoder.cls",
+		"/C/Projects/GSA-PACKAGE/src/classes/ESAPI.cls",
+		"/C/Projects/GSA-PACKAGE/src/classes/CalendarComponentController.cls",
+		"/C/Projects/Elabo-DEV/src/classes/MatchingExtension.cls",
+		"/C/Projects/Elabo-DEV/src/pages/CreateDossierProduct.page",
+		"/C/Projects/Elabo-DEV/src/classes/ApplicationException.cls",
+		"/C/Projects/Elabo-DEV/src/classes/CreateDossierProductExtension.cls",
+		"/C/Projects/Elabo-DEV/src/classes/ContactUtil.cls",
+		"/C/Projects/Elabo-DEV/src/pages/SendInvoice.page",
+		"/C/Users/User1/AppData/Roaming/Sublime Text 3/Packages/User/mavensmate.sublime-settings",
+		"/C/Projects/Kloppenberg-DEV/src/classes/Twinfield_Sync_Scheduler.cls",
+		"/C/Projects/Kloppenberg-DEV/src/classes/AdminPanelController_Tests.cls",
+		"/C/Projects/Kloppenberg-DEV/src/classes/Test_GoogleDriveService.cls",
+		"/C/Projects/Kloppenberg-DEV/src/classes/AdminPanelController.cls",
+		"/C/Projects/Kloppenberg-DEV/src/pages/authsub.page",
+		"/C/Projects/Kloppenberg-DEV/src/classes/AuthSubController.cls",
+		"/C/Projects/Kloppenberg-DEV/src/pages/EditDisbursement.page",
+		"/C/Projects/Kloppenberg-DEV/src/pages/EditLossClaim.page",
+		"/C/Projects/Kloppenberg-DEV/src/pages/EditWorkTask.page",
+		"/C/Projects/Kloppenberg-DEV/src/pages/ListGroups.page",
+		"/C/Projects/Kloppenberg-DEV/src/pages/MenuItem_DeclaratiesUren.page",
+		"/C/Projects/Kloppenberg-DEV/src/pages/MenuItem_Documenten.page",
+		"/C/Projects/Kloppenberg-DEV/src/pages/ViewDisbursement.page",
+		"/C/Projects/Kloppenberg-DEV/src/pages/ViewLossClaim.page",
+		"/C/Projects/Kloppenberg-DEV/src/pages/ViewWorkTask.page",
+		"/C/Projects/Kloppenberg-DEV/src/pages/AdminPanel.page",
+		"/C/Projects/Kloppenberg-DEV/src/classes/AuthSubUtil.cls",
+		"/C/Projects/Kloppenberg-DEV/src/classes/GroupGoogleAuthenticationService.cls",
+		"/C/Projects/Kloppenberg-DEV/resource-bundles/Assets.resource/js/cl-generate-letter/cl-generate-letter.js",
+		"/C/Projects/Kloppenberg-DEV/src/classes/LetterController.cls",
+		"/C/Projects/Kloppenberg-DEV/src/pages/MenuItem_Communications.page",
+		"/C/Projects/Kloppenberg-DEV/src/classes/RemoteUserServiceExtension.cls",
+		"/C/Projects/Kloppenberg-DEV/resource-bundles/Assets.resource/js/cl-google/cl-google-drive-api.js",
+		"/C/Projects/Kloppenberg-DEV/config/.symbols/CaseNine_Legal.LetterController.json",
+		"/C/Projects/Kloppenberg-DEV/resource-bundles/Assets.resource/js/cl-google-authentication/ClGoogleAuthenticationConnector.js",
+		"/C/Projects/Kloppenberg-DEV/resource-bundles/Assets.resource/js/cl-google-authentication/ClGroupDatabaseConnector.js",
+		"/C/Projects/Kloppenberg-DEV/resource-bundles/Assets.resource/js/cl-google-authentication/ClGoogleAuthenticationServiceProvider.js",
+		"/C/Projects/Kloppenberg-DEV/resource-bundles/Assets.resource/js/cl-google-authentication/ClGoogleAuthenticationService.js",
+		"/C/Projects/Kloppenberg-DEV/src/classes/DossierExtension.cls",
+		"/C/Projects/Kloppenberg-DEV/src/classes/LetterTemplateExtension.cls",
+		"/C/Projects/Kloppenberg-DEV/src/pages/ViewLetterTemplate.page",
+		"/C/Projects/Kloppenberg-DEV/resource-bundles/Assets.resource/build/cl-google-authentication.min.js",
+		"/C/Users/User1/Desktop/CaseNine_Legal__Assets~/build/cl-google-authentication.min.js",
+		"/C/Projects/Kloppenberg-DEV/src/staticresources/AngularGoogleAuthenticationJs.resource",
+		"/C/Projects/Kloppenberg-DEV/src/classes/DisbursementExtension.cls",
+		"/C/Projects/Salesforce Passwords.txt",
+		"/C/Projects/Kloppenberg-DEV/src/classes/GoogleDriveService.cls",
+		"/C/Projects/Kloppenberg-DEV/src/classes/GoogleAdminAuthenticationService.cls",
+		"/C/Projects/Kloppenberg-DEV/src/classes/GmailApiService.cls",
+		"/C/Projects/Kloppenberg-DEV/src/components/WorkTaskComponent.component",
+		"/C/Projects/Kloppenberg-DEV/src/triggers/preventUpdateLockedWorkTasks.trigger",
+		"/C/Projects/Kloppenberg-DEV/src/classes/Test_WorkTaskExtension.cls",
+		"/C/Projects/Kloppenberg-DEV/src/classes/WorkTaskExtension.cls",
+		"/C/Projects/Kloppenberg-DEV/src/classes/WorkTaskController.cls",
+		"/C/Projects/Kloppenberg-DEV/src/pages/MenuItem_Taken.page",
+		"/C/Projects/Kloppenberg-DEV/src/pages/EditDossier.page",
+		"/C/Projects/Kloppenberg-DEV/src/pages/MenuItem_General.page",
+		"/C/Projects/Kloppenberg-DEV/CaseNine_Legal__Assets~/js/write-time/cl-write-time-controller.js",
+		"/C/Projects/Kloppenberg-DEV/src/classes/CustomQuery.cls"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\Projects\\GSA-SANDBOX\\src\\classes",
+			"C:\\Projects\\GSA-SANDBOX\\src\\pages",
+			"C:\\Projects\\GSA-SANDBOX\\src\\classes",
+			"C:\\Projects\\GSA-SANDBOX",
+			"C:\\Projects\\GSA-SANDBOX\\src",
+			"C:\\Projects\\GSA-SANDBOX\\src\\classes",
+			"C:\\Projects\\GSA-SANDBOX\\src",
+			"C:\\Projects\\GSA-SANDBOX\\src\\classes",
+			"C:\\Projects\\GSA-SANDBOX\\src\\pages",
+			"C:\\Projects\\GSA-SANDBOX\\src\\classes",
+			"C:\\Projects\\GSA-SANDBOX\\src",
+			"C:\\Projects\\GSA-SANDBOX\\src\\classes",
+			"C:\\Projects\\GSA-SANDBOX\\src",
+			"C:\\Projects\\GSA-SANDBOX\\src\\classes",
+			"C:\\Projects\\GSA-SANDBOX",
+			"C:\\Projects\\GSA-PACKAGE\\src\\classes",
+			"C:\\Projects\\Kloppenberg-DEV\\src\\classes",
+			"C:\\Projects\\Kloppenberg-DEV",
+			"C:\\Projects\\Kloppenberg-DEV\\resource-bundles",
+			"C:\\Projects\\Kloppenberg-DEV",
+			"C:\\Projects\\Kloppenberg-DEV\\resource-bundles\\Assets.resource",
+			"C:\\Projects\\Kloppenberg-DEV",
+			"C:\\Projects\\Kloppenberg-DEV\\src\\classes",
+			"C:\\Projects\\Kloppenberg-DEV",
+			"C:\\Projects\\Kloppenberg-DEV\\src",
+			"C:\\Projects\\Kloppenberg-DEV",
+			"C:\\Projects\\redsystem\\wp-content\\plugins\\popup-maker",
+			"C:\\Projects\\redsystem\\wp-content\\themes\\tora",
+			"C:\\Projects\\redtag\\wp-content\\themes\\moesia",
+			"C:\\Projects\\redtag\\wp-content\\themes\\moesia\\js",
+			"C:\\Projects\\redtag\\wp-content\\themes\\moesia",
+			"C:\\Projects\\redtag\\wp-content\\themes\\moesia\\js",
+			"C:\\Projects\\redtag\\wp-content\\themes\\moesia"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"TicketPDFExtension",
+			"Building_Ticket__c",
+			"ticket",
+			"user",
+			"projectId",
+			"afroepen-button",
+			"setFocusAfterAfroepenPress",
+			"afroepenItems",
+			"setFocusAfterAfroepenPress",
+			"afroepenItems",
+			"Status",
+			"finishAfroepenItems",
+			"showSuccessPopup",
+			"id=\"Name\"",
+			"sortByFiledUserAct",
+			"sortByFiledItemScr",
+			"openpopup",
+			"records-created-popup",
+			"Legend",
+			"backColors",
+			"getbodyForTable",
+			"backColors",
+			"madeDateFromNewDatepicker",
+			"searchItems",
+			"projInfo",
+			"checkAvailability",
+			"Het aantal items dat je wilt reserveren is groter dan het beschikbare aantal items",
+			"validationRules",
+			"validation",
+			"reserveren",
+			"Het aantal items dat je wilt reserveren is groter dan het beschikbare aantal items",
+			"msg",
+			"fieldsValidationError",
+			"$Asset.SLDS",
+			"afroepenItemsList",
+			"checkForSelectedItems",
+			"projId",
+			"searchItems",
+			"projectId",
+			"slds-lookup__item",
+			"accInfo",
+			"aria-activedescendant",
+			"combobox-unique-id",
+			"searchInput",
+			"aria-activedescendant",
+			"slds-grid",
+			"dele",
+			"hubs",
+			"shareToForceUsers",
+			"share",
+			"getProjects",
+			"projectid",
+			"projectId",
+			"projectid",
+			"param",
+			"setCurrentPrIdACT",
+			"setProjectId",
+			"saveWWW",
+			"hideModal",
+			"showModal",
+			"setProjectId",
+			"setCurrentPrIdACT",
+			"setProjectId",
+			"wwwById",
+			"www",
+			"Project__c",
+			"prById",
+			"projects",
+			"accountShare",
+			"param",
+			"wwwById",
+			"setCurrentPrIdACT",
+			"setProjectId",
+			"setCurrentPrIdACT",
+			"setWWW",
+			"selectedTime5",
+			"WWWs",
+			"getWWWs",
+			"ChoseRecordType",
+			"ChooseReco",
+			"NewDeliveredExtension",
+			"slds-grid",
+			"numberOfItems",
+			"fillRecordTypesSelectListBySobject",
+			"Afleve",
+			"times",
+			"WWWDetailExtension",
+			"validateEnteredAmountForSubLOcationOnDelToProj",
+			"occupiedSublocs",
+			"hours",
+			"options",
+			"Managers",
+			"getManagers",
+			"managerSelected",
+			"onCh",
+			"locationsForSelect",
+			"locationsForSelect ",
+			"managerSelected",
+			"''",
+			"WWW__c",
+			"lAuTime",
+			"Datuum",
+			"CF00N8E000000HF5d_lkid",
+			"messageCut",
+			"getOcc",
+			"checkChecked",
+			"lAuTimeHours",
+			"hubNameById",
+			"setTicketInfo",
+			"getManagers",
+			"hubSelected",
+			"cloneTicket",
+			"getOccupiedSubsACT",
+			"getOccupiedSubs",
+			"class=\"slds\"",
+			"buttons-section",
+			"fixe",
+			"reserved",
+			"setCurrentPrIdACT",
+			"setProjectId",
+			"beschadiging_pakket__c",
+			"new User",
+			"Afleve",
+			"selectedTime4",
+			"Arrival_Truck_On_Project__c",
+			"invoked",
+			"Curr",
+			"Anuleren"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$Resource.SLDS080",
+			"', '"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/pages/ProjectItemsAfroepen.page",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 38359,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2376,
+								2376
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/MavensMate/sublime/lang/Visualforce.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 507.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/classes/ProjectItemsAfroepenController.cls",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11890,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5223,
+								5223
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										5625,
+										5626
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										4120,
+										4121
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2082.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/classes/ItemsList.cls",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7314,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4486,
+								4486
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										5000,
+										5001
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										4485,
+										4486
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2342.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/classes/ProjectItemsAfroepenControllerTest.cls",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4803,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1044,
+								1044
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1050,
+										1051
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1023,
+										1024
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/pages/TicketPDF.page",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 217,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								195,
+								195
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/MavensMate/sublime/lang/Visualforce.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/components/TicketPDFComponent.component",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8719,
+								8719
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										9267,
+										9268
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										8718,
+										8719
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/MavensMate/sublime/lang/Visualforce.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/classes/TicketPDFExtension.cls",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2688,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								456,
+								456
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										2687,
+										2688
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										45,
+										46
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 655,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										210,
+										228
+									],
+									[
+										243,
+										261
+									],
+									[
+										493,
+										511
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								91,
+								91
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/classes/CreateTicketAndCallendarTest.cls",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17190,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4494,
+								4494
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+									"1":
+									[
+										5499,
+										5500
+									]
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 987.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.MavensMate-OutputPanel":
+	{
+		"height": 197.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "GSA-SANDBOX.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 372.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

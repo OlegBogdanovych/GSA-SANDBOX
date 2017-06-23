@@ -1,0 +1,372 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 2
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "BuildingTicketUtil",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p2400000Cr9rQAAR",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p2400000Cr9rQAAR",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 5
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "entry",
+            "parameters": [
+                {
+                    "name": "triggerParams",
+                    "type": "TriggerParams"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 22
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "setName",
+            "parameters": [
+                {
+                    "name": "tickets",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 54
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "shareToForceUsers",
+            "parameters": [
+                {
+                    "name": "ticketsById",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "BuildingTicketUtil",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 30,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "without sharing"
+        ],
+        "name": "BuildingTicketUtil",
+        "references": [],
+        "type": "BuildingTicketUtil"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "triggerParams",
+            "references": [],
+            "type": "TriggerParams"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "triggerNew",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "triggerOld",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "oldMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "newMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 59,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "tickets",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "uniqueNumbers",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "unForToday",
+            "references": [],
+            "type": "UniqueNumber__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "hubsIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "ticket",
+            "references": [],
+            "type": "Building_Ticket__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "hubsById",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "ticket",
+            "references": [],
+            "type": "Building_Ticket__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 72,
+                "line": 54
+            },
+            "modifiers": [],
+            "name": "ticketsById",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "tickets",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "accIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "t",
+            "references": [],
+            "type": "Building_Ticket__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "users",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "sharingTicket",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 73
+            },
+            "modifiers": [],
+            "name": "shareByUserByTicket",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 74
+            },
+            "modifiers": [],
+            "name": "sh",
+            "references": [],
+            "type": "Building_Ticket__Share"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "shByUser",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "newSharings",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "t",
+            "references": [],
+            "type": "Building_Ticket__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 85
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        }
+    ]
+}

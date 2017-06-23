@@ -1,0 +1,5 @@
+<apex:page showHeader="true" sidebar="true" standardController="WWW_Detail__c">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <c:QRCode sId="{!WWW_Detail__c.Id}" />
+</apex:page>

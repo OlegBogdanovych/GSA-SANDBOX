@@ -1,0 +1,421 @@
+<apex:page showHeader="true" sidebar="true" standardController="Building_Ticket__c" extensions="CreateTicketExtension" standardStylesheets="false"   docType="html-5.0" action="{!getComponentData}">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <head>
+            <apex:includeScript value="{!URLFOR($Resource.calendar, '/fullcalendar-2.6.1/lib/jquery.min.js')}"/>
+            <apex:includeLightning />
+            <apex:stylesheet value="{!URLFOR($Resource.SLDS080, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+            <apex:stylesheet value="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css"  />
+        </head>
+
+        <apex:remoteObjects >
+            <apex:remoteObjectModel name="Building_Ticket__c" fields="Id,Name,Location__c"/>
+        </apex:remoteObjects>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+
+        <style>
+            .slds-form-element__control, .slds-form-element__row {
+                width:50% !important;
+            }
+
+            .slds-col, .slds-size--2-of-2 {
+                width:50% !important;
+            }
+
+            .slds .slds-container--medium {
+                max-width: 50% !important;
+            }
+
+            .js-example-basic-single {
+            }
+
+            .select2-container .select2-selection--single, .select2-hidden-accessible, .select2-container--open {
+                border: 1px solid #d8dde6;
+            }
+
+            span [aria-expanded="true"] {
+                border: 1px solid #d8dde6;
+            }
+
+            .select2-container--open .select2-dropdown--below, .select2-container--open .select2-dropdown--above {
+                left: 9px;
+                border: 1px solid #d8dde6;
+            }
+
+            .select2-search__field {
+                border: 1px solid #d8dde6;
+            }
+
+            input:required {
+                content: '<span >This is required</span>';
+            }
+
+            input:invalid {
+                background: #ffdddd;
+            }
+
+            .slds-is-required {
+                background-color: #fff;
+                border-color: #c23934;
+                box-shadow: #c23934 0 0 0 1px inset;
+                background-clip: padding-box;
+            }
+
+            .requiredLabel:before{
+                content: '*';
+                color: #c23934;
+            }
+
+            .requiredError {
+                color:red;
+            }
+
+            .fullclass {
+                border-radius: 4px 0 0 4px;
+                border-left: 1px solid #d8dde6;
+                background: transparent;
+                line-height: 34px;
+                float:right;
+                color:#0070d2;
+                margin-right:10%;
+            }
+
+            .fullclass:hover{
+                background: #d8dde6;
+            }
+
+            .hide-class {
+                display: none!important;
+            }
+        </style>
+
+        <body>
+            <div class="slds">
+
+                <div class = "slds-grid" style="padding-bottom: 10px; background: #f4f6f9; padding-left: 20px; padding-top: 13px;">
+                    <div class="slds-col">
+                        <p class="slds-text-heading--label">{!$Label.BuldingTicket}</p>
+                        <h1 class="slds-text-heading--medium">{!$label.NewTicket}: {!hubNameById[hubSelected]}</h1>
+                    </div>
+
+                    <div class="slds-col">
+                        <buttom class="slds-button slds-button--brand slds-m-right--xx-large save-ticket-button" onclick="return false;">{!$Label.Save}</buttom>
+                        <button class="slds-button slds-button--neutral no-button--delete-confirmation cancel-ticket-button" onclick="return false;">{!$Label.Cancel}</button>
+                    </div>
+                </div>
+
+                <div class="custom-height" >
+                    <div class="slds-scrollable--y">
+                        <apex:form styleClass="slds-form--stacked" id="form">
+                            <!--{!locationSelected}-->
+
+                            <apex:pageMessages id="messages"/>
+
+                            <apex:actionFunction name="setTicketInfo" action="{!setInfo}" reRender="calendarInfo"/>
+                            <apex:actionFunction name="saveTicket" action="{!saveTicket}" />
+                            <apex:actionFunction name="goBack" action="{!customReturn}" />
+
+                            <div class="slds">
+
+                                <div class="slds-page-header" role = "banner">
+
+                                    <div class="slds-grid">
+                                        <div class="slds-col slds-container--medium">
+                                            <label class="slds-form-element__label" for="gate">{!$ObjectType.Building_Ticket__c.Fields.Account__c.Label}</label>
+                                            <div class="slds-form-element__control">
+                                                <apex:outputPanel rendered="{!!forceUser}">
+                                                    <apex:selectList value="{!ticket.Account__c}" styleClass="slds-select js-example-basic-single" size="1" title="{!$ObjectType.Building_Ticket__c.fields.Account__c.InlineHelpText}">
+                                                        <apex:selectOptions value="{!accounts}"/>
+                                                    </apex:selectList>
+                                                </apex:outputPanel>
+
+                                                <apex:outputPanel rendered="{!forceUser}" >
+                                                     <apex:outputField value="{!ticket.Account__c}" />
+                                                </apex:outputPanel>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slds-grid">
+                                        <div class="slds-col slds-container--medium">
+                                            <label class="slds-form-element__label" for="gate">{!$ObjectType.Building_Ticket__c.Fields.Transporteur__c.Label}</label>
+                                            <div class="slds-form-element__control">
+                                                <apex:inputField value="{!ticket.Transporteur__c}" styleclass="slds-input"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slds-grid">
+                                        <div class="slds-col slds-container--medium">
+                                            <span class="requiredLabel"></span><label class="slds-form-element__label" for="datepicker">{!$ObjectType.Building_Ticket__c.Fields.Delivery_Date__c.Label}</label>
+
+                                            <div class="slds-form-element__control">
+                                                <div class="slds-datepicker"></div>
+
+                                                <input id="datepicker" name = "deliveryTime" class="slds-input" type="date"  value="{!ticket.Delivery_Date__c}" onchange="setTicketInfo();"  title="{!$ObjectType.Building_Ticket__c.fields.Delivery_Date__c.InlineHelpText} " />
+
+
+
+
+                                                <apex:outputText value="{!errorMessageDelTime}" styleClass="errorMsg" rendered="{!LEN(errorMessageDelTime)>0}"/>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="slds-grid">
+                                        <div class="slds-col slds-size--2-of-2">
+                                            <label class="slds-form-element__label" for="location">{!$ObjectType.Building_Ticket__c.Fields.Location__c.Label}</label>
+
+                                            <div class="slds-form-element__control">
+                                                <apex:selectList value="{!locationSelected}" styleClass="slds-select js-example-basic-single" size="1" title="{!$ObjectType.Building_Ticket__c.fields.Location__c.InlineHelpText}">
+                                                    <apex:selectOptions value="{!locations}"/>
+                                                </apex:selectList>
+                                            </div>
+                                        </div>
+
+                                        <div class="slds-col slds-container--medium">
+                                            <span class="requiredLabel"></span><label class="slds-form-element__label" for="loadingAndUnloadingTime">Laad-en lostijd (uren en minuten)</label>
+
+                                            <div class="slds-form-element__row">
+                                                <apex:selectList value="{!lAuTimeHours}" size="1" id="hoursLoad" styleclass="slds-select" style="width:25%">
+                                                    <apex:selectOptions value="{!hours}"> </apex:selectOptions>
+                                                </apex:selectList>
+
+                                                <apex:selectList value="{!lAuTime}" size="1" id="loadingAndUnloadingTime" styleclass="slds-select" style="width:25%">
+                                                    <apex:selectOptions value="{!minutes}"> </apex:selectOptions>
+                                                </apex:selectList>
+                                                <apex:outputText value="{!errorMessageLAUTime}" styleClass="errorMsg" rendered="{!LEN(errorMessageLAUTime)>0}"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slds-grid">
+                                        <div class="slds-col slds-size--1-of-2">
+                                            <label class="slds-form-element__label " for="gate">{!$ObjectType.Building_Ticket__c.Fields.Gate__c.Label}</label>
+
+                                            <div class="slds-form-element__control">
+                                                <apex:selectList value="{!gateSelected}" styleClass="slds-select js-example-basic-single" size="1" title="{!$ObjectType.Building_Ticket__c.fields.Gate__c.InlineHelpText}">
+                                                    <apex:selectOptions value="{!gates}"/>
+                                                </apex:selectList>
+                                            </div>
+                                        </div>
+
+                                        <div class="slds-col slds-container--medium">
+                                            <span class="requiredLabel"></span><label class="slds-form-element__label" for="arrivalTime">{!$ObjectType.Building_Ticket__c.Fields.Arrival_Time__c.Label}</label>
+
+                                            <div class="slds-form-element__row">
+                                                <apex:selectList value="{!arrivalTimeHours}" size="1"  styleclass="slds-select" style="width:25%">
+                                                    <apex:selectOptions value="{!hours}"> </apex:selectOptions>
+                                                </apex:selectList>
+
+                                                <apex:selectList value="{!arrivalTime}" size="1"  styleclass="slds-select" style="width:25%">
+                                                    <apex:selectOptions value="{!minutes}"> </apex:selectOptions>
+                                                </apex:selectList>
+                                                <apex:outputText value="{!errorMessageArrivTime}" styleClass="errorMsg" rendered="{!LEN(errorMessageArrivTime)>0}"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slds-grid">
+                                        <div class="slds-col slds-size--1-of-2">
+                                            <label class="slds-form-element__label" for="gate">{!$Label.Project_Manager}</label>
+
+                                            <div class="slds-form-element__control">
+                                                <apex:selectList value="{!managerSelected}" styleClass="slds-select js-example-basic-single" size="1" title="{!$ObjectType.Building_Ticket__c.fields.Projectmember__c.InlineHelpText}">
+                                                    <apex:selectOptions value="{!managers}"> </apex:selectOptions>
+                                                </apex:selectList>
+                                            </div>
+                                        </div>
+
+                                        <!-- <div class="slds-col slds-size--2-of-2"></div> -->
+                                        <div class="slds-col slds-container--medium">
+                                            <span class="requiredLabel"></span><label class="slds-form-element__label " for="{!$Component.seftSolving}">{!$ObjectType.Building_Ticket__c.Fields.Self_solving__c.Label}</label>
+
+                                            <div class="slds-form-element__control">
+                                                <apex:inputCheckbox value="{!ticket.Self_solving__c}" required="true" id="seftSolving"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slds-grid">
+                                        <div class="slds-col slds-container--medium" >
+                                            <label class="slds-form-element__label">{!$ObjectType.Building_Ticket__c.Fields.End_Point__c.Label}</label>
+
+                                            <div class="slds-form-element__control">
+                                                <!-- <input id="endPoint" class="slds-input" type="text" value="{!ticket.End_Point__c}" name="endPoint" title="{!$ObjectType.Building_Ticket__c.fields.End_Point__c.InlineHelpText} "/> -->
+                                                <apex:selectList value="{!destinatioId}" styleClass="slds-select js-example-basic-single" size="1">
+                                                    <apex:selectOptions value="{!destinations}"/>
+                                                </apex:selectList>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slds-grid">
+                                        <div class="slds-col slds-container--medium" >
+                                            <label class="slds-form-element__label" for="endPoint">Toelichting/specificatie bestemming</label>
+
+                                            <div class="slds-form-element__control">
+                                                <input id="endPoint" class="slds-input" type="text" value="{!ticket.End_Point__c}" name="endPoint" title="{!$ObjectType.Building_Ticket__c.fields.End_Point__c.InlineHelpText} "/>
+                                            </div>
+                                        </div>
+
+                                        <div class="slds-col slds-container--medium">
+                                            <label class="slds-form-element__label"  for="descriptionOfDelivery">{!$ObjectType.Building_Ticket__c.Fields.Description_Of_Delivery__c.Label}</label>
+
+                                            <div class="slds-form-element__control">
+                                                 <textarea id="descriptionOfDelivery"  class="slds-textarea" value="{!ticket.Description_Of_Delivery__c}" name="descrOfDelivery" title="{!$ObjectType.Building_Ticket__c.fields.Description_Of_Delivery__c.InlineHelpText} " style="height: 100px;" maxlength="255"></textarea>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="slds">
+                                    <div class="slds-page-header" role="banner">
+
+                                        <div class="slds-grid">
+                                            <div class="slds-col">
+                                                <p class="slds-text-heading--label">{!$Label.Vertical_Transport}</p>
+                                                <h1 class="slds-text-heading--medium"></h1>
+                                            </div>
+                                        </div>
+
+                                        <div class="slds-grid">
+                                            <div class="slds-col slds-container--medium" >
+                                                <label class="slds-form-element__label" for="vt">{!$ObjectType.Building_Ticket__c.Fields.Vertical_Transport__c.Label}</label>
+                                                <div class="slds-form-element__control">
+                                                    <apex:selectList value="{!vTSelected}" styleClass="slds-select js-example-basic-single" size="1" id="vTrans" onchange="showDescrOfActivityBlock();">
+                                                        <apex:selectOptions value="{!verticalTransports}"/>
+                                                    </apex:selectList>
+                                                </div>
+                                            </div>
+
+                                            <div class="slds-col slds-container--medium" id="descrOfActivityBlock">
+                                                <label class="slds-form-element__label hide-class" id="actLabel" for="descriptionOfActivity">{!$ObjectType.Building_Ticket__c.Fields.Description_Of_Activity__c.Label}</label>
+
+                                                <div class="slds-form-element__control">
+                                                    <textarea id="descriptionOfActivity"  class="slds-textarea hide-class" value="{!ticket.Description_Of_Activity__c}" name="descrOfActivity" title="{!$ObjectType.Building_Ticket__c.fields.Description_Of_Activity__c.InlineHelpText} " style="height: 100px;" maxlength="255"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <script>
+                                    $(document).ready(function() {
+                                        console.log('{!locationSelected}');
+                                        $(".js-example-basic-single").select2();
+                                    });
+
+                                    $(window).on('load resize', function(){
+                                        $('.custom-height').height($(this).height()*0.8);
+                                    });
+
+                                    $("[id$='vTrans']").change(function(){.
+                                        var currVal = $(this).val();
+                                        console.log('vTrans value -->> ', currVal);
+                                        if (currVal = '') {
+                                            $('#descrOfActivityBlock').removeAttr('style');
+                                        } else {
+                                            $('#descrOfActivityBlock').hide();
+                                        }
+                                    });
+
+                                    $("[id$='arrivalTime']").change(function(){
+                                        var num = $(this).val();
+                                        console.log(num);
+                                        if (num > 0 && num <= 15) {
+                                            num = 15;
+                                        } else if (num>15 && num <=30) {
+                                            num = 30;
+                                        } else if (num>30 && num <=45) {
+                                            num = 45;
+                                        } else if (num > 0){
+                                            num = 0;
+                                            var hoursNum = parseInt($("[id$='arrHours']").val()) + 1;
+                                            $("[id$='arrHours']").val(hoursNum);
+                                        }
+                                        $("[id$='arrivalTime']").val(num);
+                                    });
+
+                                    $("[id$='loadingAndUnloadingTime']").change(function(){
+                                        var num = $(this).val();
+                                        console.log(num);
+                                        if (num > 0 && num <= 15) {
+                                            num = 15;
+                                        } else if (num>15 && num <=30) {
+                                            num = 30;
+                                        } else if (num>30 && num <=45) {
+                                            num = 45;
+                                        } else if (num > 0) {
+                                            num = 0;
+                                            var hoursNum = parseInt($("[id$='hoursLoad']").val()) + 1;
+                                            $("[id$='hoursLoad']").val(hoursNum);
+                                        }
+                                        $("[id$='loadingAndUnloadingTime']").val(num);
+                                    });
+
+                                    $("[id$='arrHours']").change(function(){
+                                        var num = $(this).val();
+                                        console.log(num);
+                                        if (num <= 0) {
+                                            num = 0;
+                                        } else if (num >= 24) {
+                                            num = 24;
+                                        }
+                                        $("[id$='arrHours']").val(num);
+                                    });
+                                </script>
+                            </div>
+
+                            <br/>
+                        </apex:form>
+
+                        <apex:outputPanel id="calendarInfo">
+                            <c:Calendar date="{!normalFormatDate}" buildingSite="{!ticket.Hub_Building_Site__c}" compData="{!compData}" />
+                        </apex:outputPanel>
+
+                    </div><!-- END SCROLLABLE  -->
+                </div>
+            </div><!-- END SLDS  -->
+        </body>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".save-ticket-button").click(function(e){
+                    e.preventDefault();
+                    saveTicket();
+                });
+
+                $(".cancel-ticket-button").click(function(e){
+                    e.preventDefault();
+                    goBack();
+                });
+            });
+
+            function showDescrOfActivityBlock() {
+                var myPicklistElement = document.getElementById('{!$Component.form.vTrans}');
+                var myPicklistValue = myPicklistElement.options[myPicklistElement.selectedIndex].value;
+                
+                var label = document.getElementById('actLabel');
+                var element = document.getElementById('descriptionOfActivity');
+                if (myPicklistValue != '') {
+                    showElement(element, label);
+                } else {
+                    hideElement(element, label);
+                }
+            }
+
+            function showElement(elementName, elementLabel) {
+                $(elementName).removeClass('hide-class');
+                $(elementLabel).removeClass('hide-class');
+            }
+
+            function hideElement(elementName, elementLabel) {
+                $(elementName).addClass('hide-class');
+                $(elementLabel).addClass('hide-class');
+            }
+        </script>
+    </html>
+</apex:page>

@@ -1,0 +1,615 @@
+38.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+15:37:26.0 (53372)|USER_INFO|[EXTERNAL]|00524000001e3Uj|bedrijfsbureau@gsa.nl.sandbox|Midden-Europese standaardtijd|GMT+02:00
+15:37:26.0 (75620)|EXECUTION_STARTED
+15:37:26.0 (78877)|CODE_UNIT_STARTED|[EXTERNAL]|06624000003h0Dg|VF: /apex/New_delivered_detail
+15:37:26.0 (199952)|VF_DESERIALIZE_VIEWSTATE_BEGIN|06624000003h0Dg
+15:37:26.0 (7940745)|VF_DESERIALIZE_VIEWSTATE_END
+15:37:26.8 (8617022)|SYSTEM_MODE_ENTER|true
+15:37:26.9 (9279176)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (9539057)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (9795153)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (9855197)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (9905654)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (9993861)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (19084312)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (21010711)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (21119747)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (31807381)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (31984462)|USER_DEBUG|[300]|DEBUG|a0t9E0000001c7AQAQ Delivered_2_Hub
+15:37:26.0 (32790444)|SOQL_EXECUTE_BEGIN|[305]|Aggregations:0|SELECT Id, Location__c, Location__r.Name FROM WWW_detail__c WHERE (WWW__c = :tmpVar1 AND RecordType.DeveloperName = 'Delivered_2_Hub')
+15:37:26.0 (38753762)|SOQL_EXECUTE_END|[305]|Rows:1
+15:37:26.0 (40266069)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (41626911)|SYSTEM_MODE_ENTER|true
+15:37:26.44 (44211986)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (44788679)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (44837676)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (45096020)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (45153189)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (45967997)|USER_DEBUG|[335]|DEBUG|detail WWW_Detail__c:{WWW__c=a0t9E0000001c7AQAQ, Project__c=a0q9E0000006AJvQAM, RecordTypeId=01224000000Sn4NAAS, Number_Of_Items__c=4, Toelichting__c=null, Location__c=a0B9E000000RDeTUAW, Compleet_klaargezet__c=Ja}
+15:37:26.0 (46562040)|USER_DEBUG|[426]|DEBUG|  detail.Arrival_Truck_On_Hub__cnull
+15:37:26.0 (47083859)|USER_DEBUG|[492]|DEBUG|OBDEB locationWithSubs -->> 00A1 CA
+15:37:26.0 (47170924)|USER_DEBUG|[496]|DEBUG|OBDEB subLocsSelected -->> true
+15:37:26.0 (47550608)|SOQL_EXECUTE_BEGIN|[500]|Aggregations:0|SELECT Id, Location__c, WWW_Detail__c, WWW_Detail_r_RecordType_DeveloperName__c, WWWid__c, Number_of_items__c FROM SublocationDetail__c WHERE WWWid__c = :tmpVar1
+15:37:26.0 (57764171)|SOQL_EXECUTE_END|[500]|Rows:4
+15:37:26.0 (58873743)|DML_BEGIN|[570]|Op:Insert|Type:WWW_Detail__c|Rows:1
+15:37:26.0 (120617766)|CODE_UNIT_STARTED|[EXTERNAL]|01q2400000133Bx|WWWDetailTrigger on WWW_Detail trigger event BeforeInsert for [new]
+15:37:26.0 (157070658)|SOQL_EXECUTE_BEGIN|[298]|Aggregations:0|SELECT Id FROM RecordType WHERE (DeveloperName = 'Invoked' AND SobjectType = 'WWW_detail__c')
+15:37:26.0 (175221605)|SOQL_EXECUTE_END|[298]|Rows:1
+15:37:26.0 (175735073)|SOQL_EXECUTE_BEGIN|[299]|Aggregations:0|SELECT Id, Curr_Items_To_Be_Delivered_On_Hub__c, Curr_Items_To_Be_Delivered_On_Project__c, Curr_Items_To_Invoke__c, Curr_Items_To_Invoke_Incl_Rejected__c FROM WWW__c WHERE id = :tmpVar1
+15:37:26.0 (186042134)|SOQL_EXECUTE_END|[299]|Rows:1
+15:37:26.186 (186411651)|CUMULATIVE_LIMIT_USAGE
+15:37:26.186 (186411651)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 7 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:37:26.186 (186411651)|CUMULATIVE_LIMIT_USAGE_END
+
+15:37:26.0 (187438871)|CODE_UNIT_FINISHED|WWWDetailTrigger on WWW_Detail trigger event BeforeInsert for [new]
+15:37:26.0 (202872819)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:WWW_Detail:new
+15:37:26.0 (202887052)|VALIDATION_RULE|03d24000000aMzu|Afleveren_if_Compleet_Nee_set_mandatory
+15:37:26.0 (203239803)|VALIDATION_FORMULA|IF( AND(RecordType.Name = '5 Delivered to Project',   ISPICKVAL(Compleet_klaargezet__c , 'Nee'),  ISBLANK(TEXT( Reden_niet_compleet_uigevoerd__c ))),true,false)|Reden_niet_compleet_uigevoerd__c=null , RecordType.Name=Afleveren , Compleet_klaargezet__c=Ja
+15:37:26.0 (203249504)|VALIDATION_PASS
+15:37:26.0 (203252267)|VALIDATION_RULE|03d9E0000008jMe|Set_WWW_required
+15:37:26.0 (203532139)|VALIDATION_FORMULA|AND(
+  OR(
+      $RecordType.Name = "Delivered_2_Project",
+      $RecordType.Name = "Invoked",
+      $RecordType.Name = "Rejected",
+      $RecordType.Name = "Delivered_2_Hub"
+  ),
+  
+  ISBLANK(WWW__c)
+)|$RecordType.Name=Afleveren , WWW__c=a0t9E0000001c7A
+15:37:26.0 (203537719)|VALIDATION_PASS
+15:37:26.0 (203568476)|CODE_UNIT_FINISHED|Validation:WWW_Detail:new
+15:37:26.0 (238305519)|CODE_UNIT_STARTED|[EXTERNAL]|01q2400000133Bx|WWWDetailTrigger on WWW_Detail trigger event AfterInsert for [a0s9E0000001De8]
+15:37:26.0 (253103994)|SYSTEM_MODE_ENTER|false
+15:37:26.0 (253126585)|SYSTEM_MODE_EXIT|false
+15:37:26.0 (253430183)|SOQL_EXECUTE_BEGIN|[99]|Aggregations:0|SELECT Id, developerName FROM RecordType WHERE sObjectType = 'WWW_detail__c'
+15:37:26.0 (256411026)|SOQL_EXECUTE_END|[99]|Rows:5
+15:37:26.0 (257152367)|SOQL_EXECUTE_BEGIN|[112]|Aggregations:0|SELECT Id, Toename_Aantal_palletplaatsen1__c, Total_Items_Invoked__c, Total_Items_Delivered_Hub__c, Total_Items_Delivered_Project__c, Total_Items_Rejected_Hub__c, Total_Items_Rejected_Project__c, Total_Items_Reserved__c, Totale_afname_aantal_palletplaatsen1__c, Total1__c FROM WWW__c WHERE id = :tmpVar1
+15:37:26.0 (261035701)|SOQL_EXECUTE_END|[112]|Rows:1
+15:37:26.0 (262189937)|DML_BEGIN|[285]|Op:Update|Type:WWW__c|Rows:1
+15:37:26.0 (279315551)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:01I24000001DBlX
+15:37:26.0 (288693446)|WF_RULE_EVAL_BEGIN|Workflow
+15:37:26.0 (288733011)|WF_CRITERIA_BEGIN|[WWW: WWW-13998 a0t9E0000001c7A]|Set unique field|01Q24000000bj9y|ON_ALL_CHANGES|0
+15:37:26.0 (290934044)|WF_RULE_FILTER|[WWW : Created By not equal to ]
+15:37:26.0 (290954657)|WF_RULE_EVAL_VALUE|00524000001e3Uj
+15:37:26.0 (290958209)|WF_CRITERIA_END|true
+15:37:26.0 (291365549)|WF_SPOOL_ACTION_BEGIN|Workflow
+15:37:26.0 (291778964)|WF_ACTION| Field Update: 1;
+15:37:26.0 (291782724)|WF_RULE_EVAL_END
+15:37:26.0 (291845529)|WF_ACTIONS_END| Field Update: 1;
+15:37:26.0 (291851388)|CODE_UNIT_FINISHED|Workflow:01I24000001DBlX
+15:37:26.0 (298707992)|DML_END|[285]
+15:37:26.0 (299253340)|SYSTEM_MODE_ENTER|false
+15:37:26.0 (299276113)|SYSTEM_MODE_EXIT|false
+15:37:26.299 (299300373)|CUMULATIVE_LIMIT_USAGE
+15:37:26.299 (299300373)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 6 out of 100
+  Number of query rows: 13 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:37:26.299 (299300373)|CUMULATIVE_LIMIT_USAGE_END
+
+15:37:26.0 (300403775)|CODE_UNIT_FINISHED|WWWDetailTrigger on WWW_Detail trigger event AfterInsert for [a0s9E0000001De8]
+15:37:26.0 (300702617)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:01I24000001DBlW
+15:37:26.0 (304790230)|WF_RULE_EVAL_BEGIN|Workflow
+15:37:26.0 (304810298)|WF_CRITERIA_BEGIN|[WWW-Detail: WWW-D-12552 a0s9E0000001De8]|Update_WWW_detail_1301240000002ByZ|01Q24000000bis4|ON_CREATE_ONLY|0
+15:37:26.0 (304880217)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]true|Values:
+15:37:26.0 (304883858)|WF_CRITERIA_END|true
+15:37:26.0 (305379151)|WF_CRITERIA_BEGIN|[WWW-Detail: WWW-D-12552 a0s9E0000001De8]|Change_number_of_items3012400000029op|01Q24000000bis9|ON_ALL_CHANGES|0
+15:37:26.0 (305414866)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]true|Values:
+15:37:26.0 (305417361)|WF_CRITERIA_END|true
+15:37:26.0 (305441116)|WF_SPOOL_ACTION_BEGIN|Workflow
+15:37:26.0 (305457818)|WF_ACTION| Flow Trigger: 2;
+15:37:26.0 (305460469)|WF_RULE_EVAL_END
+15:37:26.0 (305870042)|WF_FLOW_ACTION_BEGIN|09L24000000TtyF
+15:37:26.305 (305936395)|FLOW_CREATE_INTERVIEW_BEGIN|00D9E000000D6H4|300240000004gz9|301240000002ByZ
+15:37:26.305 (307462083)|FLOW_CREATE_INTERVIEW_END|4458e19748ceeceea7ad266ed38815b1f5e4711-1eff|Update WWW detail 1
+15:37:26.307 (307732211)|FLOW_START_INTERVIEWS_BEGIN|1
+15:37:26.307 (308459353)|FLOW_START_INTERVIEW_BEGIN|4458e19748ceeceea7ad266ed38815b1f5e4711-1eff|Update WWW detail 1
+15:37:26.307 (325473564)|FLOW_START_INTERVIEW_END|4458e19748ceeceea7ad266ed38815b1f5e4711-1eff|Update WWW detail 1
+15:37:26.360 (360461983)|CODE_UNIT_STARTED|[EXTERNAL]|01q2400000133Bx|WWWDetailTrigger on WWW_Detail trigger event BeforeUpdate for [a0s9E0000001De8]
+15:37:26.360 (361187761)|SOQL_EXECUTE_BEGIN|[298]|Aggregations:0|SELECT Id FROM RecordType WHERE (DeveloperName = 'Invoked' AND SobjectType = 'WWW_detail__c')
+15:37:26.360 (363969506)|SOQL_EXECUTE_END|[298]|Rows:1
+15:37:26.360 (364394327)|SOQL_EXECUTE_BEGIN|[299]|Aggregations:0|SELECT Id, Curr_Items_To_Be_Delivered_On_Hub__c, Curr_Items_To_Be_Delivered_On_Project__c, Curr_Items_To_Invoke__c, Curr_Items_To_Invoke_Incl_Rejected__c FROM WWW__c WHERE id = :tmpVar1
+15:37:26.360 (368267532)|SOQL_EXECUTE_END|[299]|Rows:1
+15:37:26.368 (368518070)|CUMULATIVE_LIMIT_USAGE
+15:37:26.368 (368518070)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 9 out of 100
+  Number of query rows: 16 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 3 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:37:26.368 (368518070)|CUMULATIVE_LIMIT_USAGE_END
+
+15:37:26.360 (369716240)|CODE_UNIT_FINISHED|WWWDetailTrigger on WWW_Detail trigger event BeforeUpdate for [a0s9E0000001De8]
+15:37:26.371 (371049245)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:WWW_Detail:a0s9E0000001De8
+15:37:26.371 (371065680)|VALIDATION_RULE|03d24000000aMzu|Afleveren_if_Compleet_Nee_set_mandatory
+15:37:26.371 (371567036)|VALIDATION_FORMULA|IF( AND(RecordType.Name = '5 Delivered to Project',   ISPICKVAL(Compleet_klaargezet__c , 'Nee'),  ISBLANK(TEXT( Reden_niet_compleet_uigevoerd__c ))),true,false)|Reden_niet_compleet_uigevoerd__c=null , RecordType.Name=Afleveren , Compleet_klaargezet__c=Ja
+15:37:26.371 (371576949)|VALIDATION_PASS
+15:37:26.371 (371579437)|VALIDATION_RULE|03d9E0000008jMe|Set_WWW_required
+15:37:26.371 (371796890)|VALIDATION_FORMULA|AND(
+  OR(
+      $RecordType.Name = "Delivered_2_Project",
+      $RecordType.Name = "Invoked",
+      $RecordType.Name = "Rejected",
+      $RecordType.Name = "Delivered_2_Hub"
+  ),
+  
+  ISBLANK(WWW__c)
+)|$RecordType.Name=Afleveren , WWW__c=a0t9E0000001c7A
+15:37:26.371 (371801582)|VALIDATION_PASS
+15:37:26.371 (371827371)|CODE_UNIT_FINISHED|Validation:WWW_Detail:a0s9E0000001De8
+15:37:26.397 (397336906)|CODE_UNIT_STARTED|[EXTERNAL]|01q2400000133Bx|WWWDetailTrigger on WWW_Detail trigger event AfterUpdate for [a0s9E0000001De8]
+15:37:26.397 (397590497)|CUMULATIVE_LIMIT_USAGE
+15:37:26.397 (397590497)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 9 out of 100
+  Number of query rows: 16 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 3 out of 150
+  Number of DML rows: 3 out of 10000
+  Maximum CPU time: 114 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:37:26.397 (397590497)|CUMULATIVE_LIMIT_USAGE_END
+
+15:37:26.397 (398388292)|CODE_UNIT_FINISHED|WWWDetailTrigger on WWW_Detail trigger event AfterUpdate for [a0s9E0000001De8]
+15:37:26.425 (425686490)|CODE_UNIT_STARTED|[EXTERNAL]|01q2400000133Bx|WWWDetailTrigger on WWW_Detail trigger event BeforeUpdate for [a0s9E0000001De8]
+15:37:26.425 (426246341)|SOQL_EXECUTE_BEGIN|[298]|Aggregations:0|SELECT Id FROM RecordType WHERE (DeveloperName = 'Invoked' AND SobjectType = 'WWW_detail__c')
+15:37:26.425 (428249652)|SOQL_EXECUTE_END|[298]|Rows:1
+15:37:26.425 (428636335)|SOQL_EXECUTE_BEGIN|[299]|Aggregations:0|SELECT Id, Curr_Items_To_Be_Delivered_On_Hub__c, Curr_Items_To_Be_Delivered_On_Project__c, Curr_Items_To_Invoke__c, Curr_Items_To_Invoke_Incl_Rejected__c FROM WWW__c WHERE id = :tmpVar1
+15:37:26.425 (431855640)|SOQL_EXECUTE_END|[299]|Rows:1
+15:37:26.432 (432010829)|CUMULATIVE_LIMIT_USAGE
+15:37:26.432 (432010829)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 12 out of 100
+  Number of query rows: 19 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 4 out of 150
+  Number of DML rows: 4 out of 10000
+  Maximum CPU time: 114 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:37:26.432 (432010829)|CUMULATIVE_LIMIT_USAGE_END
+
+15:37:26.425 (432813162)|CODE_UNIT_FINISHED|WWWDetailTrigger on WWW_Detail trigger event BeforeUpdate for [a0s9E0000001De8]
+15:37:26.433 (433831006)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:WWW_Detail:a0s9E0000001De8
+15:37:26.433 (433844865)|VALIDATION_RULE|03d24000000aMzu|Afleveren_if_Compleet_Nee_set_mandatory
+15:37:26.433 (434176673)|VALIDATION_FORMULA|IF( AND(RecordType.Name = '5 Delivered to Project',   ISPICKVAL(Compleet_klaargezet__c , 'Nee'),  ISBLANK(TEXT( Reden_niet_compleet_uigevoerd__c ))),true,false)|Reden_niet_compleet_uigevoerd__c=null , RecordType.Name=Afleveren , Compleet_klaargezet__c=Ja
+15:37:26.433 (434184663)|VALIDATION_PASS
+15:37:26.433 (434186579)|VALIDATION_RULE|03d9E0000008jMe|Set_WWW_required
+15:37:26.433 (434370593)|VALIDATION_FORMULA|AND(
+  OR(
+      $RecordType.Name = "Delivered_2_Project",
+      $RecordType.Name = "Invoked",
+      $RecordType.Name = "Rejected",
+      $RecordType.Name = "Delivered_2_Hub"
+  ),
+  
+  ISBLANK(WWW__c)
+)|$RecordType.Name=Afleveren , WWW__c=a0t9E0000001c7A
+15:37:26.433 (434375113)|VALIDATION_PASS
+15:37:26.433 (434402018)|CODE_UNIT_FINISHED|Validation:WWW_Detail:a0s9E0000001De8
+15:37:26.441 (441479047)|CODE_UNIT_STARTED|[EXTERNAL]|01q2400000133Bx|WWWDetailTrigger on WWW_Detail trigger event AfterUpdate for [a0s9E0000001De8]
+15:37:26.441 (441731167)|CUMULATIVE_LIMIT_USAGE
+15:37:26.441 (441731167)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 12 out of 100
+  Number of query rows: 19 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 4 out of 150
+  Number of DML rows: 4 out of 10000
+  Maximum CPU time: 114 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:37:26.441 (441731167)|CUMULATIVE_LIMIT_USAGE_END
+
+15:37:26.441 (442485141)|CODE_UNIT_FINISHED|WWWDetailTrigger on WWW_Detail trigger event AfterUpdate for [a0s9E0000001De8]
+15:37:26.467 (467948884)|CODE_UNIT_STARTED|[EXTERNAL]|01q2400000133Bx|WWWDetailTrigger on WWW_Detail trigger event BeforeUpdate for [a0s9E0000001De8]
+15:37:26.467 (468485870)|SOQL_EXECUTE_BEGIN|[298]|Aggregations:0|SELECT Id FROM RecordType WHERE (DeveloperName = 'Invoked' AND SobjectType = 'WWW_detail__c')
+15:37:26.467 (470613711)|SOQL_EXECUTE_END|[298]|Rows:1
+15:37:26.467 (470917533)|SOQL_EXECUTE_BEGIN|[299]|Aggregations:0|SELECT Id, Curr_Items_To_Be_Delivered_On_Hub__c, Curr_Items_To_Be_Delivered_On_Project__c, Curr_Items_To_Invoke__c, Curr_Items_To_Invoke_Incl_Rejected__c FROM WWW__c WHERE id = :tmpVar1
+15:37:26.467 (492159199)|SOQL_EXECUTE_END|[299]|Rows:1
+15:37:26.492 (492349930)|CUMULATIVE_LIMIT_USAGE
+15:37:26.492 (492349930)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 15 out of 100
+  Number of query rows: 22 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 5 out of 150
+  Number of DML rows: 5 out of 10000
+  Maximum CPU time: 114 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:37:26.492 (492349930)|CUMULATIVE_LIMIT_USAGE_END
+
+15:37:26.467 (493342665)|CODE_UNIT_FINISHED|WWWDetailTrigger on WWW_Detail trigger event BeforeUpdate for [a0s9E0000001De8]
+15:37:26.494 (494659384)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:WWW_Detail:a0s9E0000001De8
+15:37:26.494 (494672615)|VALIDATION_RULE|03d24000000aMzu|Afleveren_if_Compleet_Nee_set_mandatory
+15:37:26.494 (495035996)|VALIDATION_FORMULA|IF( AND(RecordType.Name = '5 Delivered to Project',   ISPICKVAL(Compleet_klaargezet__c , 'Nee'),  ISBLANK(TEXT( Reden_niet_compleet_uigevoerd__c ))),true,false)|Reden_niet_compleet_uigevoerd__c=null , RecordType.Name=Afleveren , Compleet_klaargezet__c=Ja
+15:37:26.494 (495044330)|VALIDATION_PASS
+15:37:26.494 (495046247)|VALIDATION_RULE|03d9E0000008jMe|Set_WWW_required
+15:37:26.494 (495236207)|VALIDATION_FORMULA|AND(
+  OR(
+      $RecordType.Name = "Delivered_2_Project",
+      $RecordType.Name = "Invoked",
+      $RecordType.Name = "Rejected",
+      $RecordType.Name = "Delivered_2_Hub"
+  ),
+  
+  ISBLANK(WWW__c)
+)|$RecordType.Name=Afleveren , WWW__c=a0t9E0000001c7A
+15:37:26.494 (495240985)|VALIDATION_PASS
+15:37:26.494 (495265366)|CODE_UNIT_FINISHED|Validation:WWW_Detail:a0s9E0000001De8
+15:37:26.502 (502379698)|CODE_UNIT_STARTED|[EXTERNAL]|01q2400000133Bx|WWWDetailTrigger on WWW_Detail trigger event AfterUpdate for [a0s9E0000001De8]
+15:37:26.502 (502740450)|CUMULATIVE_LIMIT_USAGE
+15:37:26.502 (502740450)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 15 out of 100
+  Number of query rows: 22 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 5 out of 150
+  Number of DML rows: 5 out of 10000
+  Maximum CPU time: 114 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:37:26.502 (502740450)|CUMULATIVE_LIMIT_USAGE_END
+
+15:37:26.502 (503561580)|CODE_UNIT_FINISHED|WWWDetailTrigger on WWW_Detail trigger event AfterUpdate for [a0s9E0000001De8]
+15:37:26.307 (503999779)|FLOW_START_INTERVIEWS_END|1
+15:37:26.0 (504987874)|WF_FLOW_ACTION_END|09L24000000TtyF
+15:37:26.0 (505006054)|WF_FLOW_ACTION_BEGIN|09L24000000TtyK
+15:37:26.505 (505079086)|FLOW_CREATE_INTERVIEW_BEGIN|00D9E000000D6H4|300240000004gW2|3012400000029op
+15:37:26.505 (506557363)|FLOW_CREATE_INTERVIEW_END|4459e19748ceeceea7ad266ed38815b1f5e4711-1f00|Change number of items
+15:37:26.506 (506839681)|FLOW_START_INTERVIEWS_BEGIN|1
+15:37:26.506 (507803117)|FLOW_START_INTERVIEW_BEGIN|4459e19748ceeceea7ad266ed38815b1f5e4711-1f00|Change number of items
+15:37:26.506 (510445455)|FLOW_START_INTERVIEW_END|4459e19748ceeceea7ad266ed38815b1f5e4711-1f00|Change number of items
+15:37:26.506 (510455813)|FLOW_START_INTERVIEWS_END|1
+15:37:26.0 (511086756)|WF_FLOW_ACTION_END|09L24000000TtyK
+15:37:26.0 (511129209)|WF_RULE_EVAL_BEGIN|Workflow
+15:37:26.0 (511139421)|WF_SPOOL_ACTION_BEGIN|Workflow
+15:37:26.0 (511145955)|WF_ACTION| None
+15:37:26.0 (511148668)|WF_RULE_EVAL_END
+15:37:26.0 (511214046)|WF_ACTIONS_END| Flow Trigger: 2;
+15:37:26.0 (511219560)|CODE_UNIT_FINISHED|Workflow:01I24000001DBlW
+15:37:26.0 (511331071)|DML_END|[570]
+15:37:26.0 (511664992)|USER_DEBUG|[571]|DEBUG|sublocations1 2 (SubLocation:[isChecked=true, sub=Location__c:{Name=00A1C, Id=a0B9E000000RDesUAG, Current_amount__c=10, RecordTypeId=01224000000B1zdAAC}], SubLocation:[isChecked=true, sub=Location__c:{Name=00A1A, Id=a0B9E000000RDeiUAG, Current_amount__c=10, RecordTypeId=01224000000B1zdAAC}])
+15:37:26.0 (512250203)|USER_DEBUG|[578]|DEBUG|Sublocation 2 (SublocationDetail__c:{WWW_Detail__c=a0s9E0000001De8QAE, Location__c=a0B9E000000RDesUAG}, SublocationDetail__c:{WWW_Detail__c=a0s9E0000001De8QAE, Location__c=a0B9E000000RDeiUAG})
+15:37:26.0 (512294421)|DML_BEGIN|[579]|Op:Insert|Type:SublocationDetail__c|Rows:2
+15:37:26.0 (549683461)|CODE_UNIT_STARTED|[EXTERNAL]|01q2400000131KI|SubLocationDetailTrigger on SublocationDetail trigger event BeforeInsert for [new, new]
+15:37:26.0 (550370005)|SYSTEM_MODE_ENTER|false
+15:37:26.0 (550377822)|SYSTEM_MODE_EXIT|false
+15:37:26.0 (550394386)|SYSTEM_MODE_ENTER|false
+15:37:26.0 (550434663)|SYSTEM_MODE_EXIT|false
+15:37:26.550 (550443481)|CUMULATIVE_LIMIT_USAGE
+15:37:26.550 (550443481)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 15 out of 100
+  Number of query rows: 22 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 6 out of 150
+  Number of DML rows: 7 out of 10000
+  Maximum CPU time: 114 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:37:26.550 (550443481)|CUMULATIVE_LIMIT_USAGE_END
+
+15:37:26.0 (551558663)|CODE_UNIT_FINISHED|SubLocationDetailTrigger on SublocationDetail trigger event BeforeInsert for [new, new]
+15:37:26.0 (572803729)|CODE_UNIT_STARTED|[EXTERNAL]|01q2400000131KI|SubLocationDetailTrigger on SublocationDetail trigger event AfterInsert for [a089E000000YidA, a089E000000YidB]
+15:37:26.0 (573621127)|SYSTEM_MODE_ENTER|false
+15:37:26.0 (573736582)|USER_DEBUG|[38]|DEBUG|[****] upateSubLocation
+15:37:26.0 (574587421)|SOQL_EXECUTE_BEGIN|[50]|Aggregations:0|SELECT Id FROM Location__c WHERE id = :tmpVar1
+15:37:26.0 (577511185)|SOQL_EXECUTE_END|[50]|Rows:2
+15:37:26.0 (577868759)|SOQL_EXECUTE_BEGIN|[51]|Aggregations:0|SELECT Id, Name, Location__c, Reserved__c, To_Sum__c, Number_of_items__c FROM SubLocationDetail__c WHERE Location__c = :tmpVar1
+15:37:26.0 (581919965)|SOQL_EXECUTE_END|[51]|Rows:6
+15:37:26.0 (582941901)|USER_DEBUG|[122]|DEBUG|upateSubLocation locationsToUpdate(Location__c:{Id=a0B9E000000RDeiUAG, RecordTypeId=01224000000B1zdAAC, Current_amount__c=10, Available_amount__c=4}, Location__c:{Id=a0B9E000000RDesUAG, RecordTypeId=01224000000B1zdAAC, Current_amount__c=10, Available_amount__c=4})
+15:37:26.0 (582977063)|DML_BEGIN|[123]|Op:Update|Type:Location__c|Rows:2
+15:37:26.0 (634038497)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000PhJS|LocationTrigger on Location trigger event BeforeUpdate for [a0B9E000000RDei, a0B9E000000RDes]
+15:37:26.0 (634328448)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (634364148)|SYSTEM_MODE_EXIT|true
+15:37:26.634 (634501937)|CUMULATIVE_LIMIT_USAGE
+15:37:26.634 (634501937)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 17 out of 100
+  Number of query rows: 30 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 7 out of 150
+  Number of DML rows: 9 out of 10000
+  Maximum CPU time: 114 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:37:26.634 (634501937)|CUMULATIVE_LIMIT_USAGE_END
+
+15:37:26.0 (635254808)|CODE_UNIT_FINISHED|LocationTrigger on Location trigger event BeforeUpdate for [a0B9E000000RDei, a0B9E000000RDes]
+15:37:26.0 (635904219)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Location:a0B9E000000RDei
+15:37:26.0 (635911170)|VALIDATION_RULE|03d24000000aMAV|Amount_can_t_be_less_then_0
+15:37:26.0 (636034529)|VALIDATION_FORMULA|OR( Available_amount__c <0,  Current_amount__c <0)|Current_amount__c=10 , Available_amount__c=4
+15:37:26.0 (636044168)|VALIDATION_PASS
+15:37:26.0 (636077058)|CODE_UNIT_FINISHED|Validation:Location:a0B9E000000RDei
+15:37:26.0 (636103985)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Location:a0B9E000000RDes
+15:37:26.0 (636109378)|VALIDATION_RULE|03d24000000aMAV|Amount_can_t_be_less_then_0
+15:37:26.0 (636258556)|VALIDATION_FORMULA|OR( Available_amount__c <0,  Current_amount__c <0)|Current_amount__c=10 , Available_amount__c=4
+15:37:26.0 (636263169)|VALIDATION_PASS
+15:37:26.0 (636282480)|CODE_UNIT_FINISHED|Validation:Location:a0B9E000000RDes
+15:37:26.0 (648348990)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000PhJS|LocationTrigger on Location trigger event AfterUpdate for [a0B9E000000RDei, a0B9E000000RDes]
+15:37:26.0 (648475783)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (648499826)|SYSTEM_MODE_EXIT|true
+15:37:26.0 (648903759)|SOQL_EXECUTE_BEGIN|[88]|Aggregations:0|SELECT Id FROM Location__c WHERE id = :tmpVar1
+15:37:26.0 (651711455)|SOQL_EXECUTE_END|[88]|Rows:1
+15:37:26.0 (652204389)|SOQL_EXECUTE_BEGIN|[89]|Aggregations:0|SELECT Id, RecordType.DeveloperName, Location__c, Number_Of_Items__c FROM WWW_Detail__c WHERE ((RecordType.DeveloperName = 'Delivered_2_Hub' OR RecordType.DeveloperName = 'Delivered_2_Project') AND Location__c = :tmpVar1 AND IsDeleted = FALSE)
+15:37:26.0 (656492086)|SOQL_EXECUTE_END|[89]|Rows:3
+15:37:26.0 (657400916)|USER_DEBUG|[129]|DEBUG|parentLocations 1 {a0B9E000000RDeTUAW=Location__c:{Id=a0B9E000000RDeTUAW, RecordTypeId=01224000000B1zdAAC, Current_amount__c=10, Available_amount__c=7}}
+15:37:26.0 (657452262)|DML_BEGIN|[130]|Op:Update|Type:Location__c|Rows:1
+15:37:26.0 (661771513)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000PhJS|LocationTrigger on Location trigger event BeforeUpdate for [a0B9E000000RDeT]
+15:37:26.0 (661905154)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (661928810)|SYSTEM_MODE_EXIT|true
+15:37:26.661 (661948176)|CUMULATIVE_LIMIT_USAGE
+15:37:26.661 (661948176)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 19 out of 100
+  Number of query rows: 34 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 8 out of 150
+  Number of DML rows: 10 out of 10000
+  Maximum CPU time: 183 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:37:26.661 (661948176)|CUMULATIVE_LIMIT_USAGE_END
+
+15:37:26.0 (662697282)|CODE_UNIT_FINISHED|LocationTrigger on Location trigger event BeforeUpdate for [a0B9E000000RDeT]
+15:37:26.0 (663033249)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Location:a0B9E000000RDeT
+15:37:26.0 (663040120)|VALIDATION_RULE|03d24000000aMAV|Amount_can_t_be_less_then_0
+15:37:26.0 (663143802)|VALIDATION_FORMULA|OR( Available_amount__c <0,  Current_amount__c <0)|Current_amount__c=10 , Available_amount__c=7
+15:37:26.0 (663147841)|VALIDATION_PASS
+15:37:26.0 (663171449)|CODE_UNIT_FINISHED|Validation:Location:a0B9E000000RDeT
+15:37:26.0 (670592925)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000PhJS|LocationTrigger on Location trigger event AfterUpdate for [a0B9E000000RDeT]
+15:37:26.0 (670736195)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (670759319)|SYSTEM_MODE_EXIT|true
+15:37:26.0 (670988211)|SOQL_EXECUTE_BEGIN|[88]|Aggregations:0|SELECT Id FROM Location__c WHERE id = :tmpVar1
+15:37:26.0 (672427947)|SOQL_EXECUTE_END|[88]|Rows:0
+15:37:26.0 (672833443)|SOQL_EXECUTE_BEGIN|[89]|Aggregations:0|SELECT Id, RecordType.DeveloperName, Location__c, Number_Of_Items__c FROM WWW_Detail__c WHERE ((RecordType.DeveloperName = 'Delivered_2_Hub' OR RecordType.DeveloperName = 'Delivered_2_Project') AND Location__c = :tmpVar1 AND IsDeleted = FALSE)
+15:37:26.0 (674135366)|SOQL_EXECUTE_END|[89]|Rows:0
+15:37:26.0 (674309208)|USER_DEBUG|[129]|DEBUG|parentLocations 0 {}
+15:37:26.0 (674859591)|SOQL_EXECUTE_BEGIN|[33]|Aggregations:0|SELECT Id, Hub_Building_Site__r.Project__r.Account__c, OwnerId, Hub_Building_Site__c FROM Location__c WHERE id = :tmpVar1
+15:37:26.0 (678643187)|SOQL_EXECUTE_END|[33]|Rows:1
+15:37:26.0 (679100642)|SOQL_EXECUTE_BEGIN|[39]|Aggregations:0|SELECT Id, Account__c FROM AccountHub__c WHERE Hub_Building_Site__c = :tmpVar1
+15:37:26.0 (681568254)|SOQL_EXECUTE_END|[39]|Rows:0
+15:37:26.0 (682209794)|USER_DEBUG|[51]|DEBUG|accs {}
+15:37:26.0 (682468752)|SOQL_EXECUTE_BEGIN|[52]|Aggregations:0|SELECT isActive, Id FROM User WHERE (AccountId__c = :tmpVar1 AND isActive = TRUE)
+15:37:26.0 (684406542)|SOQL_EXECUTE_END|[52]|Rows:0
+15:37:26.0 (684624548)|USER_DEBUG|[54]|DEBUG|users0 ()
+15:37:26.0 (684889017)|SOQL_EXECUTE_BEGIN|[55]|Aggregations:0|SELECT ParentId, Id, UserOrGroupId FROM Location__Share WHERE ParentId = :tmpVar1
+15:37:26.0 (687678912)|SOQL_EXECUTE_END|[55]|Rows:1
+15:37:26.0 (687875215)|USER_DEBUG|[57]|DEBUG|1 (Location__Share:{ParentId=a0B9E000000RDeTUAW, Id=02c9E00000FUGF1QAP, UserOrGroupId=00524000001e3UjAAI})
+15:37:26.0 (688215959)|USER_DEBUG|[67]|DEBUG|shareByUserByTicket1 {a0B9E000000RDeTUAW={}}
+15:37:26.0 (688356556)|USER_DEBUG|[77]|DEBUG|add sharings 0 ()
+15:37:26.0 (689338270)|SOQL_EXECUTE_BEGIN|[187]|Aggregations:0|SELECT Id, Name, Location__c, Location__r.Occupied__c, Location__r.Parent_Location__c, WWW_Detail__c FROM SublocationDetail__c WHERE Location__c = :tmpVar1
+15:37:26.0 (690450194)|SOQL_EXECUTE_END|[187]|Rows:0
+15:37:26.0 (690843257)|SOQL_EXECUTE_BEGIN|[141]|Aggregations:0|SELECT Id, Name, Project__c FROM WWW_Detail__c WHERE Id = :tmpVar1
+15:37:26.0 (691810416)|SOQL_EXECUTE_END|[141]|Rows:0
+15:37:26.691 (691992860)|CUMULATIVE_LIMIT_USAGE
+15:37:26.691 (691992860)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 27 out of 100
+  Number of query rows: 36 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 8 out of 150
+  Number of DML rows: 10 out of 10000
+  Maximum CPU time: 183 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:37:26.691 (691992860)|CUMULATIVE_LIMIT_USAGE_END
+
+15:37:26.0 (693024508)|CODE_UNIT_FINISHED|LocationTrigger on Location trigger event AfterUpdate for [a0B9E000000RDeT]
+15:37:26.0 (693797376)|DML_END|[130]
+15:37:26.0 (694234538)|SOQL_EXECUTE_BEGIN|[33]|Aggregations:0|SELECT Id, Hub_Building_Site__r.Project__r.Account__c, OwnerId, Hub_Building_Site__c FROM Location__c WHERE id = :tmpVar1
+15:37:26.0 (697460164)|SOQL_EXECUTE_END|[33]|Rows:2
+15:37:26.0 (697809020)|SOQL_EXECUTE_BEGIN|[39]|Aggregations:0|SELECT Id, Account__c FROM AccountHub__c WHERE Hub_Building_Site__c = :tmpVar1
+15:37:26.0 (699910123)|SOQL_EXECUTE_END|[39]|Rows:0
+15:37:26.0 (700078666)|USER_DEBUG|[51]|DEBUG|accs {}
+15:37:26.0 (700297947)|SOQL_EXECUTE_BEGIN|[52]|Aggregations:0|SELECT isActive, Id FROM User WHERE (AccountId__c = :tmpVar1 AND isActive = TRUE)
+15:37:26.0 (701607251)|SOQL_EXECUTE_END|[52]|Rows:0
+15:37:26.0 (701684523)|USER_DEBUG|[54]|DEBUG|users0 ()
+15:37:26.0 (701908512)|SOQL_EXECUTE_BEGIN|[55]|Aggregations:0|SELECT ParentId, Id, UserOrGroupId FROM Location__Share WHERE ParentId = :tmpVar1
+15:37:26.0 (704264995)|SOQL_EXECUTE_END|[55]|Rows:2
+15:37:26.0 (704386547)|USER_DEBUG|[57]|DEBUG|2 (Location__Share:{ParentId=a0B9E000000RDeiUAG, Id=02c9E00000FUH2hQAH, UserOrGroupId=00524000001e3UjAAI}, Location__Share:{ParentId=a0B9E000000RDesUAG, Id=02c9E00000FUH3LQAX, UserOrGroupId=00524000001e3UjAAI})
+15:37:26.0 (704530893)|USER_DEBUG|[67]|DEBUG|shareByUserByTicket2 {a0B9E000000RDeiUAG={}, a0B9E000000RDesUAG={}}
+15:37:26.0 (704600411)|USER_DEBUG|[77]|DEBUG|add sharings 0 ()
+15:37:26.0 (705251640)|SOQL_EXECUTE_BEGIN|[187]|Aggregations:0|SELECT Id, Name, Location__c, Location__r.Occupied__c, Location__r.Parent_Location__c, WWW_Detail__c FROM SublocationDetail__c WHERE Location__c = :tmpVar1
+15:37:26.0 (708350465)|SOQL_EXECUTE_END|[187]|Rows:0
+15:37:26.0 (708797321)|SOQL_EXECUTE_BEGIN|[141]|Aggregations:0|SELECT Id, Name, Project__c FROM WWW_Detail__c WHERE Id = :tmpVar1
+15:37:26.0 (709830100)|SOQL_EXECUTE_END|[141]|Rows:0
+15:37:26.709 (709952930)|CUMULATIVE_LIMIT_USAGE
+15:37:26.709 (709952930)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 33 out of 100
+  Number of query rows: 40 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 8 out of 150
+  Number of DML rows: 10 out of 10000
+  Maximum CPU time: 183 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:37:26.709 (709952930)|CUMULATIVE_LIMIT_USAGE_END
+
+15:37:26.0 (710801630)|CODE_UNIT_FINISHED|LocationTrigger on Location trigger event AfterUpdate for [a0B9E000000RDei, a0B9E000000RDes]
+15:37:26.0 (710991121)|DML_END|[123]
+15:37:26.0 (711404316)|SOQL_EXECUTE_BEGIN|[141]|Aggregations:0|SELECT Id, Name, Project__c FROM WWW_Detail__c WHERE Id = :tmpVar1
+15:37:26.0 (713173198)|SOQL_EXECUTE_END|[141]|Rows:1
+15:37:26.0 (713492667)|SOQL_EXECUTE_BEGIN|[148]|Aggregations:0|SELECT Id, Name FROM Projecten__c WHERE Id = :tmpVar1
+15:37:26.0 (714996734)|SOQL_EXECUTE_END|[148]|Rows:1
+15:37:26.0 (715252574)|SOQL_EXECUTE_BEGIN|[149]|Aggregations:0|SELECT Id, Name, Project__c FROM WWW_Detail__c WHERE Project__c = :tmpVar1
+15:37:26.0 (717697631)|SOQL_EXECUTE_END|[149]|Rows:4
+15:37:26.0 (718613971)|SOQL_EXECUTE_BEGIN|[164]|Aggregations:0|SELECT Id, Name, Location__r.Occupied__c, Location__r.Parent_Location__c, WWW_Detail__c FROM SublocationDetail__c WHERE (Location__r.Occupied__c = TRUE AND Location__r.Parent_Location__c = NULL AND WWW_Detail__c = :tmpVar1)
+15:37:26.0 (723373462)|SOQL_EXECUTE_END|[164]|Rows:0
+15:37:26.0 (723731526)|USER_DEBUG|[191]|DEBUG|OBdeb subLocCount -->> 0
+15:37:26.0 (723773330)|DML_BEGIN|[194]|Op:Update|Type:Projecten__c|Rows:1
+15:37:26.0 (750979249)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000qIfI|ProjectTrigger on Projecten trigger event BeforeUpdate for [a0q9E0000006AJv]
+15:37:26.0 (751366980)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (751410289)|SYSTEM_MODE_EXIT|true
+15:37:26.0 (752170181)|SOQL_EXECUTE_BEGIN|[89]|Aggregations:0|SELECT Name FROM Projecten__c WHERE Name = :tmpVar1
+15:37:26.0 (755368644)|SOQL_EXECUTE_END|[89]|Rows:1
+15:37:26.755 (755635933)|CUMULATIVE_LIMIT_USAGE
+15:37:26.755 (755635933)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 38 out of 100
+  Number of query rows: 47 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 9 out of 150
+  Number of DML rows: 11 out of 10000
+  Maximum CPU time: 183 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:37:26.755 (755635933)|CUMULATIVE_LIMIT_USAGE_END
+
+15:37:26.0 (756422709)|CODE_UNIT_FINISHED|ProjectTrigger on Projecten trigger event BeforeUpdate for [a0q9E0000006AJv]
+15:37:26.0 (763911001)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000qIfI|ProjectTrigger on Projecten trigger event AfterUpdate for [a0q9E0000006AJv]
+15:37:26.0 (764079796)|SYSTEM_MODE_ENTER|true
+15:37:26.0 (764111215)|SYSTEM_MODE_EXIT|true
+15:37:26.0 (777017140)|USER_DEBUG|[45]|DEBUG|(Projecten__c:{Id=a0q9E0000006AJvQAM, OwnerId=00524000001e3UjAAI, IsDeleted=false, Name=Test Project, CreatedDate=2017-03-27 10:58:22, CreatedById=00524000001e3UjAAI, LastModifiedDate=2017-03-30 13:37:27, LastModifiedById=00524000001e3UjAAI, SystemModstamp=2017-03-30 13:37:27, LastActivityDate=null, LastViewedDate=null, LastReferencedDate=null, Account__c=0019E000007H080QAC, Project_omschrijving__c=Test Oleg, SF_ID__c=null, Actueel_aantal_palletplaatsen__c=0, Aantal_palletplaatsen__c=0, Projectleider__c=Jessica Sietsema, Project_amscheyving__c=null})
+15:37:26.0 (777430708)|SOQL_EXECUTE_BEGIN|[57]|Aggregations:0|SELECT Id, Actueel_aantal_palletplaatsen1__c FROM Account WHERE id = :tmpVar1
+15:37:26.0 (779688955)|SOQL_EXECUTE_END|[57]|Rows:1
+15:37:26.0 (780119633)|USER_DEBUG|[80]|DEBUG|(Account:{Id=0019E000007H080QAC, Actueel_aantal_palletplaatsen1__c=0, RecordTypeId=01224000000Sn4JAAS})
+15:37:26.0 (780167938)|DML_BEGIN|[81]|Op:Update|Type:Account|Rows:1
+15:37:26.0 (799258855)|DML_END|[81]
+15:37:26.799 (799313904)|CUMULATIVE_LIMIT_USAGE
+15:37:26.799 (799313904)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 39 out of 100
+  Number of query rows: 48 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 10 out of 150
+  Number of DML rows: 12 out of 10000
+  Maximum CPU time: 183 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 1 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:37:26.799 (799313904)|CUMULATIVE_LIMIT_USAGE_END
+
+15:37:26.0 (800328737)|CODE_UNIT_FINISHED|ProjectTrigger on Projecten trigger event AfterUpdate for [a0q9E0000006AJv]
+15:37:26.0 (800890037)|DML_END|[194]
+15:37:26.0 (801024883)|USER_DEBUG|[272]|DEBUG|RUN manageRecordsForReport
+15:37:26.0 (803557075)|USER_DEBUG|[295]|DEBUG|OBDEB sublocDetailByWwwDetailId -->> {a0s9E0000001De8QAE=(SublocationDetail__c:{Id=a089E000000YidAQAS, IsDeleted=false, Name=SD-9115, CreatedDate=2017-03-30 13:37:27, CreatedById=00524000001e3UjAAI, LastModifiedDate=2017-03-30 13:37:27, LastModifiedById=00524000001e3UjAAI, SystemModstamp=2017-03-30 13:37:27, Location__c=a0B9E000000RDesUAG, Number_of_items__c=4, Number_of_items_work__c=null, Reserved__c=false, To_sum__c=false, WWW_Detail__c=a0s9E0000001De8QAE, WWW_Detail_r_RecordType_DeveloperName__c=Delivered_2_Project, ProjectId__c=a0q9E0000006AJv, ProjectCode__c=Test Project, WWWid__c=a0t9E0000001c7A}, SublocationDetail__c:{Id=a089E000000YidBQAS, IsDeleted=false, Name=SD-9116, CreatedDate=2017-03-30 13:37:27, CreatedById=00524000001e3UjAAI, LastModifiedDate=2017-03-30 13:37:27, LastModifiedById=00524000001e3UjAAI, SystemModstamp=2017-03-30 13:37:27, Location__c=a0B9E000000RDeiUAG, Number_of_items__c=4, Number_of_items_work__c=null, Reserved__c=false, To_sum__c=false, WWW_Detail__c=a0s9E0000001De8QAE, WWW_Detail_r_RecordType_DeveloperName__c=Delivered_2_Project, ProjectId__c=a0q9E0000006AJv, ProjectCode__c=Test Project, WWWid__c=a0t9E0000001c7A})}
+15:37:26.0 (803878792)|SOQL_EXECUTE_BEGIN|[297]|Aggregations:0|SELECT Id, Name, Project__c FROM WWW_Detail__c WHERE Id = :tmpVar1
+15:37:26.0 (806022675)|SOQL_EXECUTE_END|[297]|Rows:1
+15:37:26.0 (806284641)|USER_DEBUG|[310]|DEBUG|OBDEB wwwDetailsByProjectId -->> {a0q9E0000006AJvQAM=(WWW_Detail__c:{Id=a0s9E0000001De8QAE, Name=WWW-D-12552, Project__c=a0q9E0000006AJvQAM, RecordTypeId=01224000000Sn4NAAS})}
+15:37:26.0 (806583885)|USER_DEBUG|[327]|DEBUG|OBDEB locationIdsByProjectId -->> {a0q9E0000006AJvQAM={a0B9E000000RDeiUAG, a0B9E000000RDesUAG}}
+15:37:26.0 (807001521)|SOQL_EXECUTE_BEGIN|[332]|Aggregations:0|SELECT Project__c, Location__c FROM ProjectLocation__c WHERE Project__c = :tmpVar1
+15:37:26.0 (810096673)|SOQL_EXECUTE_END|[332]|Rows:2
+15:37:26.0 (810933778)|USER_DEBUG|[370]|DEBUG|OBDEB plToCreate -->> ()
+15:37:26.0 (810975371)|SYSTEM_MODE_EXIT|false
+15:37:26.810 (810990543)|CUMULATIVE_LIMIT_USAGE
+15:37:26.810 (810990543)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 41 out of 100
+  Number of query rows: 51 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 10 out of 150
+  Number of DML rows: 12 out of 10000
+  Maximum CPU time: 183 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 1 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:37:26.810 (810990543)|CUMULATIVE_LIMIT_USAGE_END
+
+15:37:26.0 (812314306)|CODE_UNIT_FINISHED|SubLocationDetailTrigger on SublocationDetail trigger event AfterInsert for [a089E000000YidA, a089E000000YidB]
+15:37:26.0 (813044904)|DML_END|[579]
+15:37:26.833 (833867296)|CUMULATIVE_LIMIT_USAGE
+15:37:26.833 (833867296)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 41 out of 100
+  Number of query rows: 51 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 10 out of 150
+  Number of DML rows: 12 out of 10000
+  Maximum CPU time: 183 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 1 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:37:26.833 (833867296)|CUMULATIVE_LIMIT_USAGE_END
+
+15:37:26.0 (833904527)|CODE_UNIT_FINISHED|VF: /apex/New_delivered_detail
+15:37:26.0 (834692676)|EXECUTION_FINISHED

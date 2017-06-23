@@ -1,0 +1,69 @@
+38.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+15:37:51.0 (318782)|USER_INFO|[EXTERNAL]|00524000001e3Uj|bedrijfsbureau@gsa.nl.sandbox|Midden-Europese standaardtijd|GMT+02:00
+15:37:51.0 (342279)|EXECUTION_STARTED
+15:37:51.0 (345517)|CODE_UNIT_STARTED|[EXTERNAL]|TRIGGERS
+15:37:51.0 (1071694)|CODE_UNIT_STARTED|[EXTERNAL]|01q2400000133Bx|WWWDetailTrigger on WWW_Detail trigger event BeforeDelete for [a0s9E0000001DU8]
+15:37:51.0 (8885757)|SOQL_EXECUTE_BEGIN|[99]|Aggregations:0|SELECT Id, developerName FROM RecordType WHERE sObjectType = 'WWW_detail__c'
+15:37:51.0 (15317047)|SOQL_EXECUTE_END|[99]|Rows:5
+15:37:51.0 (16199580)|SOQL_EXECUTE_BEGIN|[112]|Aggregations:0|SELECT Id, Toename_Aantal_palletplaatsen1__c, Total_Items_Invoked__c, Total_Items_Delivered_Hub__c, Total_Items_Delivered_Project__c, Total_Items_Rejected_Hub__c, Total_Items_Rejected_Project__c, Total_Items_Reserved__c, Totale_afname_aantal_palletplaatsen1__c, Total1__c FROM WWW__c WHERE id = :tmpVar1
+15:37:51.0 (20999003)|SOQL_EXECUTE_END|[112]|Rows:1
+15:37:51.0 (22498027)|DML_BEGIN|[285]|Op:Update|Type:WWW__c|Rows:1
+15:37:51.0 (44713115)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:01I24000001DBlX
+15:37:51.0 (55332074)|WF_RULE_EVAL_BEGIN|Workflow
+15:37:51.0 (55370839)|WF_CRITERIA_BEGIN|[WWW: WWW-13998 a0t9E0000001c7A]|Set unique field|01Q24000000bj9y|ON_ALL_CHANGES|0
+15:37:51.0 (57603819)|WF_RULE_FILTER|[WWW : Created By not equal to ]
+15:37:51.0 (57624099)|WF_RULE_EVAL_VALUE|00524000001e3Uj
+15:37:51.0 (57627447)|WF_CRITERIA_END|true
+15:37:51.0 (58126621)|WF_SPOOL_ACTION_BEGIN|Workflow
+15:37:51.0 (58742828)|WF_ACTION| Field Update: 1;
+15:37:51.0 (58746874)|WF_RULE_EVAL_END
+15:37:51.0 (58795989)|WF_ACTIONS_END| Field Update: 1;
+15:37:51.0 (58801402)|CODE_UNIT_FINISHED|Workflow:01I24000001DBlX
+15:37:51.0 (67056229)|DML_END|[285]
+15:37:51.0 (68439638)|SOQL_EXECUTE_BEGIN|[323]|Aggregations:0|SELECT Id, WWW_Detail__c FROM SubLocationDetail__c WHERE WWW_Detail__c = :tmpVar1
+15:37:51.0 (82975610)|SOQL_EXECUTE_END|[323]|Rows:0
+15:37:51.0 (83152563)|USER_DEBUG|[313]|DEBUG|[***] SubDetToDelete +()
+15:37:51.83 (83238111)|CUMULATIVE_LIMIT_USAGE
+15:37:51.83 (83238111)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 3 out of 100
+  Number of query rows: 6 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:37:51.83 (83238111)|CUMULATIVE_LIMIT_USAGE_END
+
+15:37:51.0 (84222970)|CODE_UNIT_FINISHED|WWWDetailTrigger on WWW_Detail trigger event BeforeDelete for [a0s9E0000001DU8]
+15:37:51.0 (187233471)|CODE_UNIT_STARTED|[EXTERNAL]|01q2400000133Bx|WWWDetailTrigger on WWW_Detail trigger event AfterDelete for [a0s9E0000001DU8]
+15:37:51.0 (188042782)|SOQL_EXECUTE_BEGIN|[52]|Aggregations:0|SELECT Id FROM Location__c WHERE id = :tmpVar1
+15:37:51.0 (190757513)|SOQL_EXECUTE_END|[52]|Rows:0
+15:37:51.0 (191371003)|SOQL_EXECUTE_BEGIN|[53]|Aggregations:0|SELECT Id, RecordType.DeveloperName, Location__c, Number_Of_Items__c FROM WWW_Detail__c WHERE ((RecordType.DeveloperName = 'Delivered_2_Hub' OR RecordType.DeveloperName = 'Delivered_2_Project') AND Location__c = :tmpVar1 AND IsDeleted = FALSE)
+15:37:51.0 (193487468)|SOQL_EXECUTE_END|[53]|Rows:0
+15:37:51.0 (193856367)|USER_DEBUG|[94]|DEBUG|parentLocations 0 {}
+15:37:51.193 (193922569)|CUMULATIVE_LIMIT_USAGE
+15:37:51.193 (193922569)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 5 out of 100
+  Number of query rows: 6 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:37:51.193 (193922569)|CUMULATIVE_LIMIT_USAGE_END
+
+15:37:51.0 (195201253)|CODE_UNIT_FINISHED|WWWDetailTrigger on WWW_Detail trigger event AfterDelete for [a0s9E0000001DU8]
+15:37:51.0 (205225437)|CODE_UNIT_FINISHED|TRIGGERS
+15:37:51.0 (205231803)|EXECUTION_FINISHED

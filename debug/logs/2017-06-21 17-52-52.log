@@ -1,0 +1,56 @@
+31.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+16:52:51.0 (331332)|USER_INFO|[EXTERNAL]|00524000001e3Uj|bedrijfsbureau@gsa.nl.sandbox|Midden-Europese standaardtijd|GMT+02:00
+16:52:51.0 (366744)|EXECUTION_STARTED
+16:52:51.0 (369745)|CODE_UNIT_STARTED|[EXTERNAL]|TRIGGERS
+16:52:51.0 (1119505)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000PhJT|UserTrigger on User trigger event BeforeUpdate for [00524000001e3Uj]
+16:52:51.0 (37878600)|SYSTEM_MODE_ENTER|false
+16:52:51.0 (37903722)|SYSTEM_MODE_EXIT|false
+16:52:51.0 (37941078)|SYSTEM_MODE_ENTER|false
+16:52:51.0 (37964824)|SYSTEM_MODE_EXIT|false
+16:52:51.37 (37981764)|CUMULATIVE_LIMIT_USAGE
+16:52:51.37 (37981764)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+16:52:51.37 (37981764)|CUMULATIVE_LIMIT_USAGE_END
+
+16:52:51.0 (39296541)|CODE_UNIT_FINISHED|UserTrigger on User trigger event BeforeUpdate for [00524000001e3Uj]
+16:52:51.0 (149352186)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000PhJT|UserTrigger on User trigger event AfterUpdate for [00524000001e3Uj]
+16:52:51.0 (149964017)|SYSTEM_MODE_ENTER|false
+16:52:51.0 (150344888)|SOQL_EXECUTE_BEGIN|[11]|Aggregations:0|SELECT Id FROM Profile WHERE (Name = 'Bouwticket account' OR Name = 'Bouwmanager')
+16:52:51.0 (159119060)|SOQL_EXECUTE_END|[11]|Rows:2
+16:52:51.0 (159486753)|USER_DEBUG|[13]|DEBUG|profilesById {00e24000000YX5iAAG=Profile:{Id=00e24000000YX5iAAG}, 00e24000000YX5jAAG=Profile:{Id=00e24000000YX5jAAG}}
+16:52:51.0 (159844489)|USER_DEBUG|[15]|DEBUG|00e240000016RjAAAU
+16:52:51.0 (159983392)|USER_DEBUG|[16]|DEBUG|true
+16:52:51.0 (160060288)|USER_DEBUG|[17]|DEBUG|false
+16:52:51.0 (160131341)|SYSTEM_MODE_EXIT|false
+16:52:51.160 (160148653)|CUMULATIVE_LIMIT_USAGE
+16:52:51.160 (160148653)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+16:52:51.160 (160148653)|CUMULATIVE_LIMIT_USAGE_END
+
+16:52:51.0 (161340334)|CODE_UNIT_FINISHED|UserTrigger on User trigger event AfterUpdate for [00524000001e3Uj]
+16:52:51.0 (186902074)|CODE_UNIT_FINISHED|TRIGGERS
+16:52:51.0 (186915865)|EXECUTION_FINISHED

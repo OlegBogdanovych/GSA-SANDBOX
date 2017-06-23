@@ -1,0 +1,517 @@
+38.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+15:11:45.0 (290158)|USER_INFO|[EXTERNAL]|00524000001e3Uj|bedrijfsbureau@gsa.nl.sandbox|Midden-Europese standaardtijd|GMT+01:00
+15:11:45.0 (310141)|EXECUTION_STARTED
+15:11:45.0 (313633)|CODE_UNIT_STARTED|[EXTERNAL]|TRIGGERS
+15:11:45.0 (1005193)|CODE_UNIT_STARTED|[EXTERNAL]|01q2400000133Bx|WWWDetailTrigger on WWW_Detail trigger event BeforeDelete for [a0s0E0000004KP6]
+15:11:45.0 (1051221)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+15:11:45.0 (1432713)|HEAP_ALLOCATE|[72]|Bytes:3
+15:11:45.0 (1468942)|HEAP_ALLOCATE|[77]|Bytes:152
+15:11:45.0 (1481777)|HEAP_ALLOCATE|[342]|Bytes:408
+15:11:45.0 (1495642)|HEAP_ALLOCATE|[355]|Bytes:408
+15:11:45.0 (1508325)|HEAP_ALLOCATE|[467]|Bytes:48
+15:11:45.0 (1533798)|HEAP_ALLOCATE|[139]|Bytes:6
+15:11:45.0 (1554752)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:11:45.0 (1560905)|VARIABLE_SCOPE_BEGIN|[1]|this|WWWDetailTrigger|true|false
+15:11:45.0 (1595566)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x6c6df7ae
+15:11:45.0 (1630850)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:11:45.0 (1635679)|VARIABLE_SCOPE_BEGIN|[1]|this|WWWDetailTrigger|true|false
+15:11:45.0 (1642060)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x6c6df7ae
+15:11:45.0 (1646143)|STATEMENT_EXECUTE|[1]
+15:11:45.0 (1647892)|STATEMENT_EXECUTE|[3]
+15:11:45.0 (3014348)|HEAP_ALLOCATE|[3]|Bytes:2
+15:11:45.0 (3045509)|METHOD_ENTRY|[1]|01p2400000Cr9rX|TriggerParams.TriggerParams()
+15:11:45.0 (3048705)|STATEMENT_EXECUTE|[1]
+15:11:45.0 (3052276)|STATEMENT_EXECUTE|[1]
+15:11:45.0 (3086015)|HEAP_ALLOCATE|[50]|Bytes:5
+15:11:45.0 (3107681)|HEAP_ALLOCATE|[56]|Bytes:5
+15:11:45.0 (3114468)|HEAP_ALLOCATE|[64]|Bytes:7
+15:11:45.0 (3133533)|HEAP_ALLOCATE|[3]|Bytes:5
+15:11:45.0 (3141912)|METHOD_EXIT|[1]|TriggerParams
+15:11:45.0 (3178881)|HEAP_ALLOCATE|[3]|Bytes:44
+15:11:45.0 (3314344)|CONSTRUCTOR_ENTRY|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+15:11:45.0 (3344808)|VARIABLE_SCOPE_BEGIN|[13]|this|TriggerParams|true|false
+15:11:45.0 (3373448)|VARIABLE_ASSIGNMENT|[13]|this|{}|0x2b0d70bd
+15:11:45.0 (3383613)|VARIABLE_SCOPE_BEGIN|[13]|isBefore|Boolean|false|false
+15:11:45.0 (3388864)|VARIABLE_ASSIGNMENT|[13]|isBefore|true
+15:11:45.0 (3391385)|VARIABLE_SCOPE_BEGIN|[13]|isAfter|Boolean|false|false
+15:11:45.0 (3393925)|VARIABLE_ASSIGNMENT|[13]|isAfter|false
+15:11:45.0 (3395801)|VARIABLE_SCOPE_BEGIN|[13]|isInsert|Boolean|false|false
+15:11:45.0 (3397820)|VARIABLE_ASSIGNMENT|[13]|isInsert|false
+15:11:45.0 (3399690)|VARIABLE_SCOPE_BEGIN|[13]|isUpdate|Boolean|false|false
+15:11:45.0 (3401576)|VARIABLE_ASSIGNMENT|[13]|isUpdate|false
+15:11:45.0 (3403382)|VARIABLE_SCOPE_BEGIN|[13]|isDelete|Boolean|false|false
+15:11:45.0 (3405548)|VARIABLE_ASSIGNMENT|[13]|isDelete|true
+15:11:45.0 (3407461)|VARIABLE_SCOPE_BEGIN|[13]|isUndelete|Boolean|false|false
+15:11:45.0 (3410145)|VARIABLE_ASSIGNMENT|[13]|isUndelete|false
+15:11:45.0 (3412259)|VARIABLE_SCOPE_BEGIN|[13]|triggerNew|List<SObject>|true|false
+15:11:45.0 (3415350)|VARIABLE_ASSIGNMENT|[13]|triggerNew|null|
+15:11:45.0 (3417066)|VARIABLE_SCOPE_BEGIN|[13]|triggerOld|List<SObject>|true|false
+15:11:45.0 (25864303)|VARIABLE_ASSIGNMENT|[13]|triggerOld|[{"LastModifiedDate":"2017-02-16T14:01:28.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUNQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bedrijfsbureau","Project__c":"a0q0E0000008S3WQAU","Transporter__c":"0010E000003GsxBQAS","Name":"WWW-D-10108","Preferred_Delivery_T (6 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4OAAS","Location__c":"a0B0E0000009MiwUAE","Number_Of_Items__c":15,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Glasbok Staal","Project_Number__c":"Opslag security asse (2 more) ...","Foto__c":false,"SystemModstamp":"2017-02-16T14:01:28.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:01:28.000Z","Id":"a0s0E0000004KP6QAM","Projectbeschrijving_ (2 more) ...":"Opslag security asse (2 more) ...","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Schiphol Airport Car (31 more) ...","LastModifiedById":"00524000001e3UjAAI"}]|0x67d79eba
+15:11:45.0 (25879941)|VARIABLE_SCOPE_BEGIN|[13]|newMap|Map<Id,SObject>|true|false
+15:11:45.0 (25884509)|VARIABLE_ASSIGNMENT|[13]|newMap|null|
+15:11:45.0 (25886583)|VARIABLE_SCOPE_BEGIN|[13]|oldMap|Map<Id,SObject>|true|false
+15:11:45.0 (26934904)|VARIABLE_ASSIGNMENT|[13]|oldMap|{"a0s0E0000004KP6QAM":{"LastModifiedDate":"2017-02-16T14:01:28.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUNQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bedrijfsbureau","Project__c":"a0q0E0000008S3WQAU","Transporter__c":"0010E000003GsxBQAS","Name":"WWW-D-10108","Preferred_Delivery_T (6 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4OAAS","Location__c":"a0B0E0000009MiwUAE","Number_Of_Items__c":15,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Glasbok Staal","Project_Number__c":"Opslag security asse (2 more) ...","Foto__c":false,"SystemModstamp":"2017-02-16T14:01:28.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:01:28.000Z","Id":"a0s0E0000004KP6QAM","Projectbeschrijving_ (2 more) ...":"Opslag security asse (2 more) ...","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Schiphol Airport Car (31 more) ...","LastModifiedById":"00524000001e3UjAAI"}}|0x37278bb1
+15:11:45.0 (26951309)|HEAP_ALLOCATE|[16]|Bytes:5
+15:11:45.0 (26955887)|STATEMENT_EXECUTE|[1]
+15:11:45.0 (26958779)|HEAP_ALLOCATE|[16]|Bytes:5
+15:11:45.0 (26960228)|STATEMENT_EXECUTE|[2]
+15:11:45.0 (26961423)|STATEMENT_EXECUTE|[3]
+15:11:45.0 (26962395)|STATEMENT_EXECUTE|[4]
+15:11:45.0 (26963332)|STATEMENT_EXECUTE|[5]
+15:11:45.0 (26964241)|STATEMENT_EXECUTE|[6]
+15:11:45.0 (26965193)|STATEMENT_EXECUTE|[7]
+15:11:45.0 (26966111)|STATEMENT_EXECUTE|[8]
+15:11:45.0 (26967087)|STATEMENT_EXECUTE|[9]
+15:11:45.0 (26968007)|STATEMENT_EXECUTE|[10]
+15:11:45.0 (26969253)|STATEMENT_EXECUTE|[11]
+15:11:45.0 (26979290)|HEAP_ALLOCATE|[16]|Bytes:6
+15:11:45.0 (27000685)|STATEMENT_EXECUTE|[15]
+15:11:45.0 (27002604)|STATEMENT_EXECUTE|[16]
+15:11:45.0 (27006206)|HEAP_ALLOCATE|[16]|Bytes:5
+15:11:45.0 (27016170)|VARIABLE_ASSIGNMENT|[16]|this.isBefore|true|0x2b0d70bd
+15:11:45.0 (27017995)|STATEMENT_EXECUTE|[17]
+15:11:45.0 (27020125)|HEAP_ALLOCATE|[17]|Bytes:5
+15:11:45.0 (27023609)|VARIABLE_ASSIGNMENT|[17]|this.isAfter|false|0x2b0d70bd
+15:11:45.0 (27024921)|STATEMENT_EXECUTE|[18]
+15:11:45.0 (27026717)|HEAP_ALLOCATE|[18]|Bytes:5
+15:11:45.0 (27030104)|VARIABLE_ASSIGNMENT|[18]|this.isInsert|false|0x2b0d70bd
+15:11:45.0 (27031458)|STATEMENT_EXECUTE|[19]
+15:11:45.0 (27033144)|HEAP_ALLOCATE|[19]|Bytes:5
+15:11:45.0 (27036291)|VARIABLE_ASSIGNMENT|[19]|this.isUpdate|false|0x2b0d70bd
+15:11:45.0 (27037412)|STATEMENT_EXECUTE|[20]
+15:11:45.0 (27039167)|HEAP_ALLOCATE|[20]|Bytes:5
+15:11:45.0 (27041934)|VARIABLE_ASSIGNMENT|[20]|this.isDelete|true|0x2b0d70bd
+15:11:45.0 (27043080)|STATEMENT_EXECUTE|[21]
+15:11:45.0 (27044985)|HEAP_ALLOCATE|[21]|Bytes:5
+15:11:45.0 (27047958)|VARIABLE_ASSIGNMENT|[21]|this.isUndelete|false|0x2b0d70bd
+15:11:45.0 (27049600)|STATEMENT_EXECUTE|[22]
+15:11:45.0 (27053603)|VARIABLE_ASSIGNMENT|[22]|this.triggerNew|null|0x2b0d70bd
+15:11:45.0 (27054984)|STATEMENT_EXECUTE|[23]
+15:11:45.0 (28049907)|VARIABLE_ASSIGNMENT|[23]|this.triggerOld|[{"LastModifiedDate":"2017-02-16T14:01:28.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUNQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bedrijfsbureau","Project__c":"a0q0E0000008S3WQAU","Transporter__c":"0010E000003GsxBQAS","Name":"WWW-D-10108","Preferred_Delivery_T (6 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4OAAS","Location__c":"a0B0E0000009MiwUAE","Number_Of_Items__c":15,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Glasbok Staal","Project_Number__c":"Opslag security asse (2 more) ...","Foto__c":false,"SystemModstamp":"2017-02-16T14:01:28.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:01:28.000Z","Id":"a0s0E0000004KP6QAM","Projectbeschrijving_ (2 more) ...":"Opslag security asse (2 more) ...","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Schiphol Airport Car (31 more) ...","LastModifiedById":"00524000001e3UjAAI"}]|0x2b0d70bd
+15:11:45.0 (28059723)|STATEMENT_EXECUTE|[24]
+15:11:45.0 (28068664)|VARIABLE_ASSIGNMENT|[24]|this.newMap|null|0x2b0d70bd
+15:11:45.0 (28070251)|STATEMENT_EXECUTE|[25]
+15:11:45.0 (29066957)|VARIABLE_ASSIGNMENT|[25]|this.oldMap|{"a0s0E0000004KP6QAM":{"LastModifiedDate":"2017-02-16T14:01:28.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUNQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bedrijfsbureau","Project__c":"a0q0E0000008S3WQAU","Transporter__c":"0010E000003GsxBQAS","Name":"WWW-D-10108","Preferred_Delivery_T (6 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4OAAS","Location__c":"a0B0E0000009MiwUAE","Number_Of_Items__c":15,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Glasbok Staal","Project_Number__c":"Opslag security asse (2 more) ...","Foto__c":false,"SystemModstamp":"2017-02-16T14:01:28.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:01:28.000Z","Id":"a0s0E0000004KP6QAM","Projectbeschrijving_ (2 more) ...":"Opslag security asse (2 more) ...","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Schiphol Airport Car (31 more) ...","LastModifiedById":"00524000001e3UjAAI"}}|0x2b0d70bd
+15:11:45.0 (29096494)|CONSTRUCTOR_EXIT|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+15:11:45.0 (32871851)|VARIABLE_SCOPE_BEGIN|[2]|WWWDetailUtil.subLocDet|List<SublocationDetail__c>|true|true
+15:11:45.0 (32883667)|HEAP_ALLOCATE|[3]|Bytes:16
+15:11:45.0 (32889037)|HEAP_ALLOCATE|[3]|Bytes:61
+15:11:45.0 (32899360)|METHOD_ENTRY|[1]|01p2400000DV2tl|WWWDetailUtil.WWWDetailUtil()
+15:11:45.0 (32902130)|STATEMENT_EXECUTE|[1]
+15:11:45.0 (32905212)|STATEMENT_EXECUTE|[1]
+15:11:45.0 (32906419)|STATEMENT_EXECUTE|[2]
+15:11:45.0 (32912187)|HEAP_ALLOCATE|[2]|Bytes:4
+15:11:45.0 (32964037)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:11:45.0 (32973601)|VARIABLE_ASSIGNMENT|[2]|WWWDetailUtil.subLocDet|[]|0x2cd0cdde
+15:11:45.0 (32979087)|METHOD_EXIT|[1]|WWWDetailUtil
+15:11:45.0 (32998443)|METHOD_ENTRY|[3]|01p2400000DV2tl|WWWDetailUtil.entry(TriggerParams)
+15:11:45.0 (33003595)|VARIABLE_SCOPE_BEGIN|[4]|triggerParams|TriggerParams|true|false
+15:11:45.0 (33031425)|VARIABLE_ASSIGNMENT|[4]|triggerParams|{"isAfter":false,"isBefore":true,"isDelete":true,"isInsert":false,"isUndelete":false,"isUpdate":false,"oldMap":"0x37278bb1","triggerOld":"0x67d79eba"}|0x2b0d70bd
+15:11:45.0 (33038089)|STATEMENT_EXECUTE|[4]
+15:11:45.0 (33039449)|STATEMENT_EXECUTE|[5]
+15:11:45.0 (33047724)|VARIABLE_SCOPE_BEGIN|[5]|triggerNew|List<WWW_Detail__c>|true|false
+15:11:45.0 (33052320)|VARIABLE_ASSIGNMENT|[5]|triggerNew|null|
+15:11:45.0 (33054131)|STATEMENT_EXECUTE|[6]
+15:11:45.0 (33058340)|VARIABLE_SCOPE_BEGIN|[6]|triggerOld|List<WWW_Detail__c>|true|false
+15:11:45.0 (34181122)|VARIABLE_ASSIGNMENT|[6]|triggerOld|[{"LastModifiedDate":"2017-02-16T14:01:28.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUNQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bedrijfsbureau","Project__c":"a0q0E0000008S3WQAU","Transporter__c":"0010E000003GsxBQAS","Name":"WWW-D-10108","Preferred_Delivery_T (6 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4OAAS","Location__c":"a0B0E0000009MiwUAE","Number_Of_Items__c":15,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Glasbok Staal","Project_Number__c":"Opslag security asse (2 more) ...","Foto__c":false,"SystemModstamp":"2017-02-16T14:01:28.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:01:28.000Z","Id":"a0s0E0000004KP6QAM","Projectbeschrijving_ (2 more) ...":"Opslag security asse (2 more) ...","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Schiphol Airport Car (31 more) ...","LastModifiedById":"00524000001e3UjAAI"}]|0x67d79eba
+15:11:45.0 (34191200)|STATEMENT_EXECUTE|[7]
+15:11:45.0 (34202258)|VARIABLE_SCOPE_BEGIN|[7]|oldMap|Map<Id,WWW_Detail__c>|true|false
+15:11:45.0 (35189992)|VARIABLE_ASSIGNMENT|[7]|oldMap|{"a0s0E0000004KP6QAM":{"LastModifiedDate":"2017-02-16T14:01:28.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUNQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bedrijfsbureau","Project__c":"a0q0E0000008S3WQAU","Transporter__c":"0010E000003GsxBQAS","Name":"WWW-D-10108","Preferred_Delivery_T (6 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4OAAS","Location__c":"a0B0E0000009MiwUAE","Number_Of_Items__c":15,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Glasbok Staal","Project_Number__c":"Opslag security asse (2 more) ...","Foto__c":false,"SystemModstamp":"2017-02-16T14:01:28.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:01:28.000Z","Id":"a0s0E0000004KP6QAM","Projectbeschrijving_ (2 more) ...":"Opslag security asse (2 more) ...","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Schiphol Airport Car (31 more) ...","LastModifiedById":"00524000001e3UjAAI"}}|0x37278bb1
+15:11:45.0 (35200021)|STATEMENT_EXECUTE|[8]
+15:11:45.0 (35207211)|VARIABLE_SCOPE_BEGIN|[8]|newMap|Map<Id,WWW_Detail__c>|true|false
+15:11:45.0 (35212410)|VARIABLE_ASSIGNMENT|[8]|newMap|null|
+15:11:45.0 (35216781)|STATEMENT_EXECUTE|[11]
+15:11:45.0 (35221454)|STATEMENT_EXECUTE|[12]
+15:11:45.0 (35223198)|STATEMENT_EXECUTE|[16]
+15:11:45.0 (35224137)|STATEMENT_EXECUTE|[17]
+15:11:45.0 (35228537)|HEAP_ALLOCATE|[17]|Bytes:4
+15:11:45.0 (35302295)|METHOD_ENTRY|[17]|01p2400000DV2tl|WWWDetailUtil.calculateRollupSum(List<WWW_Detail__c>, List<WWW_Detail__c>, TriggerParams)
+15:11:45.0 (35309727)|VARIABLE_SCOPE_BEGIN|[44]|newDetails|List<WWW_Detail__c>|true|false
+15:11:45.0 (35314244)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:11:45.0 (35319756)|VARIABLE_ASSIGNMENT|[44]|newDetails|[]|0x1b666f52
+15:11:45.0 (35322326)|VARIABLE_SCOPE_BEGIN|[44]|oldDetails|List<WWW_Detail__c>|true|false
+15:11:45.0 (36314478)|VARIABLE_ASSIGNMENT|[44]|oldDetails|[{"LastModifiedDate":"2017-02-16T14:01:28.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUNQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bedrijfsbureau","Project__c":"a0q0E0000008S3WQAU","Transporter__c":"0010E000003GsxBQAS","Name":"WWW-D-10108","Preferred_Delivery_T (6 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4OAAS","Location__c":"a0B0E0000009MiwUAE","Number_Of_Items__c":15,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Glasbok Staal","Project_Number__c":"Opslag security asse (2 more) ...","Foto__c":false,"SystemModstamp":"2017-02-16T14:01:28.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:01:28.000Z","Id":"a0s0E0000004KP6QAM","Projectbeschrijving_ (2 more) ...":"Opslag security asse (2 more) ...","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Schiphol Airport Car (31 more) ...","LastModifiedById":"00524000001e3UjAAI"}]|0x67d79eba
+15:11:45.0 (36326623)|VARIABLE_SCOPE_BEGIN|[44]|triggerParams|TriggerParams|true|false
+15:11:45.0 (36350528)|VARIABLE_ASSIGNMENT|[44]|triggerParams|{"isAfter":false,"isBefore":true,"isDelete":true,"isInsert":false,"isUndelete":false,"isUpdate":false,"oldMap":"0x37278bb1","triggerOld":"0x67d79eba"}|0x2b0d70bd
+15:11:45.0 (36355799)|STATEMENT_EXECUTE|[44]
+15:11:45.0 (36357452)|STATEMENT_EXECUTE|[45]
+15:11:45.0 (36404038)|HEAP_ALLOCATE|[45]|Bytes:4
+15:11:45.0 (36409516)|HEAP_ALLOCATE|[45]|Bytes:76
+15:11:45.0 (36413561)|HEAP_ALLOCATE|[45]|Bytes:4
+15:11:45.0 (36603230)|SOQL_EXECUTE_BEGIN|[45]|Aggregations:0|SELECT Id, developerName FROM RecordType WHERE sObjectType = 'WWW_detail__c'
+15:11:45.0 (45385386)|SOQL_EXECUTE_END|[45]|Rows:5
+15:11:45.0 (45399730)|HEAP_ALLOCATE|[45]|Bytes:24
+15:11:45.0 (45419777)|HEAP_ALLOCATE|[45]|Bytes:287
+15:11:45.0 (45453067)|HEAP_ALLOCATE|[45]|Bytes:24
+15:11:45.0 (45497863)|HEAP_ALLOCATE|[45]|Bytes:12
+15:11:45.0 (45505688)|HEAP_ALLOCATE|[45]|Bytes:4
+15:11:45.0 (45512396)|HEAP_ALLOCATE|[45]|Bytes:12
+15:11:45.0 (45515502)|HEAP_ALLOCATE|[45]|Bytes:4
+15:11:45.0 (45519237)|HEAP_ALLOCATE|[45]|Bytes:12
+15:11:45.0 (45522184)|HEAP_ALLOCATE|[45]|Bytes:4
+15:11:45.0 (45525580)|HEAP_ALLOCATE|[45]|Bytes:12
+15:11:45.0 (45528700)|HEAP_ALLOCATE|[45]|Bytes:4
+15:11:45.0 (45532186)|HEAP_ALLOCATE|[45]|Bytes:12
+15:11:45.0 (45534904)|HEAP_ALLOCATE|[45]|Bytes:4
+15:11:45.0 (45541113)|VARIABLE_SCOPE_BEGIN|[45]|recordTypes|Map<Id,RecordType>|true|false
+15:11:45.0 (45569690)|VARIABLE_ASSIGNMENT|[45]|recordTypes|{"01224000000Sn4NAAS":{"Id":"01224000000Sn4NAAS","DeveloperName":"Delivered_2_Project"},"01224000000Sn4OAAS":{"Id":"01224000000Sn4OAAS","DeveloperName":"Invoked"},"01224000000Sn4PAAS":{"Id":"01224000000Sn4PAAS","DeveloperName":"Rejected"},"01224000000Sn4MAAS":{"Id":"01224000000Sn4MAAS","DeveloperName":"Delivered_2_Hub"},"01224000000Sn4QAAS":{"Id":"01224000000Sn4QAAS","DeveloperName":"Reserved"}}|0x77a036e8
+15:11:45.0 (45574297)|STATEMENT_EXECUTE|[46]
+15:11:45.0 (45583354)|HEAP_ALLOCATE|[46]|Bytes:4
+15:11:45.0 (45610798)|VARIABLE_SCOPE_BEGIN|[46]|wwwIds|Set<Id>|true|false
+15:11:45.0 (45631831)|VARIABLE_ASSIGNMENT|[46]|wwwIds|[]|0x161bfc68
+15:11:45.0 (45634071)|STATEMENT_EXECUTE|[47]
+15:11:45.0 (45637047)|HEAP_ALLOCATE|[47]|Bytes:35
+15:11:45.0 (45669858)|USER_DEBUG|[47]|DEBUG|*** - - IS ENTER calculateRollupSum
+15:11:45.0 (45809875)|HEAP_ALLOCATE|[49]|Bytes:5
+15:11:45.0 (45824015)|VARIABLE_ASSIGNMENT|[49]|detail|null|
+15:11:45.0 (45827064)|STATEMENT_EXECUTE|[49]
+15:11:45.0 (45829131)|STATEMENT_EXECUTE|[52]
+15:11:45.0 (45850351)|HEAP_ALLOCATE|[53]|Bytes:5
+15:11:45.0 (45864946)|VARIABLE_SCOPE_BEGIN|[53]|detail|WWW_Detail__c|true|false
+15:11:45.0 (46921072)|VARIABLE_ASSIGNMENT|[53]|detail|{"LastModifiedDate":"2017-02-16T14:01:28.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUNQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bedrijfsbureau","Project__c":"a0q0E0000008S3WQAU","Transporter__c":"0010E000003GsxBQAS","Name":"WWW-D-10108","Preferred_Delivery_T (6 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4OAAS","Location__c":"a0B0E0000009MiwUAE","Number_Of_Items__c":15,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Glasbok Staal","Project_Number__c":"Opslag security asse (2 more) ...","Foto__c":false,"SystemModstamp":"2017-02-16T14:01:28.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:01:28.000Z","Id":"a0s0E0000004KP6QAM","Projectbeschrijving_ (2 more) ...":"Opslag security asse (2 more) ...","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Schiphol Airport Car (31 more) ...","LastModifiedById":"00524000001e3UjAAI"}|0x4c42e84
+15:11:45.0 (46931918)|STATEMENT_EXECUTE|[53]
+15:11:45.0 (46933578)|STATEMENT_EXECUTE|[54]
+15:11:45.0 (46994637)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:11:45.0 (47010622)|HEAP_ALLOCATE|[53]|Bytes:5
+15:11:45.0 (47023457)|VARIABLE_ASSIGNMENT|[53]|detail|null|
+15:11:45.0 (47026227)|STATEMENT_EXECUTE|[58]
+15:11:45.0 (47063656)|HEAP_ALLOCATE|[58]|Bytes:4
+15:11:45.0 (47068277)|HEAP_ALLOCATE|[58]|Bytes:303
+15:11:45.0 (47071146)|HEAP_ALLOCATE|[58]|Bytes:4
+15:11:45.0 (47075862)|HEAP_ALLOCATE|[58]|Bytes:7
+15:11:45.0 (47098097)|HEAP_ALLOCATE|[58]|Bytes:8
+15:11:45.0 (47103059)|HEAP_ALLOCATE|[58]|Bytes:8
+15:11:45.0 (47374355)|SOQL_EXECUTE_BEGIN|[58]|Aggregations:0|SELECT Id, Toename_Aantal_palletplaatsen1__c, Total_Items_Invoked__c, Total_Items_Delivered_Hub__c, Total_Items_Delivered_Project__c, Total_Items_Rejected_Hub__c, Total_Items_Rejected_Project__c, Total_Items_Reserved__c, Totale_afname_aantal_palletplaatsen1__c, Total1__c FROM WWW__c WHERE id = :tmpVar1
+15:11:45.0 (49135510)|SOQL_EXECUTE_END|[58]|Rows:1
+15:11:45.0 (49148508)|HEAP_ALLOCATE|[58]|Bytes:8
+15:11:45.0 (49162003)|HEAP_ALLOCATE|[58]|Bytes:633
+15:11:45.0 (49191887)|HEAP_ALLOCATE|[58]|Bytes:8
+15:11:45.0 (49226842)|HEAP_ALLOCATE|[58]|Bytes:44
+15:11:45.0 (49234086)|HEAP_ALLOCATE|[58]|Bytes:4
+15:11:45.0 (49240920)|VARIABLE_SCOPE_BEGIN|[58]|wwwById|Map<Id,WWW__c>|true|false
+15:11:45.0 (49268639)|VARIABLE_ASSIGNMENT|[58]|wwwById|{"a0t0E0000004UUNQA2":{"Id":"a0t0E0000004UUNQA2","Toename_Aantal_palle (13 more) ...":0,"Total_Items_Invoked_ (2 more) ...":15,"Total_Items_Delivere (8 more) ...":0,"Total_Items_Delivere (12 more) ...":0,"Total_Items_Rejected (7 more) ...":0,"Total_Items_Rejected (11 more) ...":0,"Total_Items_Reserved (3 more) ...":0,"Totale_afname_aantal (19 more) ...":0,"Total1__c":0}}|0x52303127
+15:11:45.0 (49273319)|STATEMENT_EXECUTE|[63]
+15:11:45.0 (49276217)|HEAP_ALLOCATE|[63]|Bytes:35
+15:11:45.0 (49323604)|HEAP_ALLOCATE|[63]|Bytes:4
+15:11:45.0 (49338948)|HEAP_ALLOCATE|[63]|Bytes:39
+15:11:45.0 (49349422)|USER_DEBUG|[63]|DEBUG|*** - - triggerParams.isDelete - - true
+15:11:45.0 (49356610)|STATEMENT_EXECUTE|[64]
+15:11:45.0 (49385731)|HEAP_ALLOCATE|[65]|Bytes:5
+15:11:45.0 (49398990)|VARIABLE_SCOPE_BEGIN|[65]|detail|WWW_Detail__c|true|false
+15:11:45.0 (50457906)|VARIABLE_ASSIGNMENT|[65]|detail|{"LastModifiedDate":"2017-02-16T14:01:28.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUNQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bedrijfsbureau","Project__c":"a0q0E0000008S3WQAU","Transporter__c":"0010E000003GsxBQAS","Name":"WWW-D-10108","Preferred_Delivery_T (6 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4OAAS","Location__c":"a0B0E0000009MiwUAE","Number_Of_Items__c":15,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Glasbok Staal","Project_Number__c":"Opslag security asse (2 more) ...","Foto__c":false,"SystemModstamp":"2017-02-16T14:01:28.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:01:28.000Z","Id":"a0s0E0000004KP6QAM","Projectbeschrijving_ (2 more) ...":"Opslag security asse (2 more) ...","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Schiphol Airport Car (31 more) ...","LastModifiedById":"00524000001e3UjAAI"}|0x4c42e84
+15:11:45.0 (50470164)|STATEMENT_EXECUTE|[65]
+15:11:45.0 (50471913)|STATEMENT_EXECUTE|[66]
+15:11:45.0 (50475359)|HEAP_ALLOCATE|[66]|Bytes:17
+15:11:45.0 (50500202)|USER_DEBUG|[66]|DEBUG|*** - - IS DELETE
+15:11:45.0 (50539829)|STATEMENT_EXECUTE|[67]
+15:11:45.0 (50551615)|STATEMENT_EXECUTE|[69]
+15:11:45.0 (50615238)|HEAP_ALLOCATE|[72]|Bytes:15
+15:11:45.0 (50632211)|STATEMENT_EXECUTE|[72]
+15:11:45.0 (50666970)|HEAP_ALLOCATE|[75]|Bytes:19
+15:11:45.0 (50675478)|STATEMENT_EXECUTE|[75]
+15:11:45.0 (50700819)|HEAP_ALLOCATE|[78]|Bytes:7
+15:11:45.0 (50710236)|STATEMENT_EXECUTE|[78]
+15:11:45.0 (50711460)|STATEMENT_EXECUTE|[79]
+15:11:45.0 (50790217)|HEAP_ALLOCATE|[79]|Bytes:28
+15:11:45.0 (50793405)|HEAP_ALLOCATE|[79]|Bytes:28
+15:11:45.0 (50843597)|VARIABLE_ASSIGNMENT|[79]|this.Total_Items_Invoked__c|0|0x5f1dd0c7
+15:11:45.0 (50880067)|HEAP_ALLOCATE|[81]|Bytes:8
+15:11:45.0 (50890276)|STATEMENT_EXECUTE|[81]
+15:11:45.0 (50918585)|STATEMENT_EXECUTE|[84]
+15:11:45.0 (50941269)|HEAP_ALLOCATE|[87]|Bytes:8
+15:11:45.0 (50947786)|STATEMENT_EXECUTE|[87]
+15:11:45.0 (50963780)|STATEMENT_EXECUTE|[90]
+15:11:45.0 (50970166)|STATEMENT_EXECUTE|[93]
+15:11:45.0 (50971499)|STATEMENT_EXECUTE|[97]
+15:11:45.0 (50973657)|HEAP_ALLOCATE|[97]|Bytes:40
+15:11:45.0 (51011277)|HEAP_ALLOCATE|[97]|Bytes:28
+15:11:45.0 (51023020)|HEAP_ALLOCATE|[97]|Bytes:1
+15:11:45.0 (51030523)|HEAP_ALLOCATE|[97]|Bytes:41
+15:11:45.0 (51038780)|USER_DEBUG|[97]|DEBUG| *** - Total_Items_Delivered_Hub__c 1 + 0
+15:11:45.0 (51043227)|STATEMENT_EXECUTE|[98]
+15:11:45.0 (51045176)|HEAP_ALLOCATE|[98]|Bytes:34
+15:11:45.0 (51071728)|HEAP_ALLOCATE|[98]|Bytes:28
+15:11:45.0 (51080390)|HEAP_ALLOCATE|[98]|Bytes:1
+15:11:45.0 (51086499)|HEAP_ALLOCATE|[98]|Bytes:35
+15:11:45.0 (51093089)|USER_DEBUG|[98]|DEBUG| *** - Total_Items_Invoked__c 1 + 0
+15:11:45.0 (51096578)|STATEMENT_EXECUTE|[99]
+15:11:45.0 (51098282)|HEAP_ALLOCATE|[99]|Bytes:39
+15:11:45.0 (51130645)|HEAP_ALLOCATE|[99]|Bytes:28
+15:11:45.0 (51140020)|HEAP_ALLOCATE|[99]|Bytes:1
+15:11:45.0 (51146268)|HEAP_ALLOCATE|[99]|Bytes:40
+15:11:45.0 (51152310)|USER_DEBUG|[99]|DEBUG| *** - Total_Items_Rejected_Hub__c 1 + 0
+15:11:45.0 (51162308)|HEAP_ALLOCATE|[65]|Bytes:5
+15:11:45.0 (51173007)|VARIABLE_ASSIGNMENT|[65]|detail|null|
+15:11:45.0 (51198505)|HEAP_ALLOCATE|[103]|Bytes:5
+15:11:45.0 (51209174)|VARIABLE_SCOPE_BEGIN|[103]|detail|WWW_Detail__c|true|false
+15:11:45.0 (52406316)|VARIABLE_ASSIGNMENT|[103]|detail|{"LastModifiedDate":"2017-02-16T14:01:28.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUNQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bedrijfsbureau","Project__c":"a0q0E0000008S3WQAU","Transporter__c":"0010E000003GsxBQAS","Name":"WWW-D-10108","Preferred_Delivery_T (6 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4OAAS","Location__c":"a0B0E0000009MiwUAE","Number_Of_Items__c":15,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Glasbok Staal","Project_Number__c":"Opslag security asse (2 more) ...","Foto__c":false,"SystemModstamp":"2017-02-16T14:01:28.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:01:28.000Z","Id":"a0s0E0000004KP6QAM","Projectbeschrijving_ (2 more) ...":"Opslag security asse (2 more) ...","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Schiphol Airport Car (31 more) ...","LastModifiedById":"00524000001e3UjAAI"}|0x4c42e84
+15:11:45.0 (52417170)|STATEMENT_EXECUTE|[103]
+15:11:45.0 (52481563)|HEAP_ALLOCATE|[104]|Bytes:28
+15:11:45.0 (52493995)|HEAP_ALLOCATE|[104]|Bytes:28
+15:11:45.0 (52495899)|HEAP_ALLOCATE|[104]|Bytes:28
+15:11:45.0 (52517844)|STATEMENT_EXECUTE|[104]
+15:11:45.0 (52549821)|HEAP_ALLOCATE|[107]|Bytes:28
+15:11:45.0 (52556540)|HEAP_ALLOCATE|[107]|Bytes:28
+15:11:45.0 (52558085)|HEAP_ALLOCATE|[107]|Bytes:28
+15:11:45.0 (52571081)|STATEMENT_EXECUTE|[107]
+15:11:45.0 (52594425)|HEAP_ALLOCATE|[111]|Bytes:28
+15:11:45.0 (52599628)|HEAP_ALLOCATE|[111]|Bytes:28
+15:11:45.0 (52601186)|HEAP_ALLOCATE|[111]|Bytes:28
+15:11:45.0 (52613169)|STATEMENT_EXECUTE|[111]
+15:11:45.0 (52634718)|HEAP_ALLOCATE|[116]|Bytes:28
+15:11:45.0 (52639396)|HEAP_ALLOCATE|[116]|Bytes:28
+15:11:45.0 (52640819)|HEAP_ALLOCATE|[116]|Bytes:28
+15:11:45.0 (52652036)|STATEMENT_EXECUTE|[116]
+15:11:45.0 (52672625)|HEAP_ALLOCATE|[119]|Bytes:28
+15:11:45.0 (52677444)|HEAP_ALLOCATE|[119]|Bytes:28
+15:11:45.0 (52678867)|HEAP_ALLOCATE|[119]|Bytes:28
+15:11:45.0 (52690053)|STATEMENT_EXECUTE|[119]
+15:11:45.0 (52722077)|HEAP_ALLOCATE|[122]|Bytes:28
+15:11:45.0 (52727890)|HEAP_ALLOCATE|[122]|Bytes:28
+15:11:45.0 (52729287)|HEAP_ALLOCATE|[122]|Bytes:28
+15:11:45.0 (52741960)|STATEMENT_EXECUTE|[122]
+15:11:45.0 (52773013)|HEAP_ALLOCATE|[125]|Bytes:28
+15:11:45.0 (52779086)|HEAP_ALLOCATE|[125]|Bytes:28
+15:11:45.0 (52780586)|HEAP_ALLOCATE|[125]|Bytes:28
+15:11:45.0 (52792624)|STATEMENT_EXECUTE|[125]
+15:11:45.0 (52823038)|HEAP_ALLOCATE|[128]|Bytes:28
+15:11:45.0 (52828603)|HEAP_ALLOCATE|[128]|Bytes:28
+15:11:45.0 (52830029)|HEAP_ALLOCATE|[128]|Bytes:28
+15:11:45.0 (52842084)|STATEMENT_EXECUTE|[128]
+15:11:45.0 (52871966)|HEAP_ALLOCATE|[131]|Bytes:28
+15:11:45.0 (52877352)|HEAP_ALLOCATE|[131]|Bytes:28
+15:11:45.0 (52878721)|HEAP_ALLOCATE|[131]|Bytes:28
+15:11:45.0 (52891154)|STATEMENT_EXECUTE|[131]
+15:11:45.0 (52892677)|STATEMENT_EXECUTE|[134]
+15:11:45.0 (52894877)|HEAP_ALLOCATE|[134]|Bytes:40
+15:11:45.0 (52917931)|HEAP_ALLOCATE|[134]|Bytes:28
+15:11:45.0 (52926490)|HEAP_ALLOCATE|[134]|Bytes:1
+15:11:45.0 (52933238)|HEAP_ALLOCATE|[134]|Bytes:41
+15:11:45.0 (52942733)|USER_DEBUG|[134]|DEBUG| *** - Total_Items_Delivered_Hub__c 2 + 0
+15:11:45.0 (52947492)|STATEMENT_EXECUTE|[135]
+15:11:45.0 (52949394)|HEAP_ALLOCATE|[135]|Bytes:34
+15:11:45.0 (52972100)|HEAP_ALLOCATE|[135]|Bytes:28
+15:11:45.0 (52980012)|HEAP_ALLOCATE|[135]|Bytes:1
+15:11:45.0 (52986048)|HEAP_ALLOCATE|[135]|Bytes:35
+15:11:45.0 (52992063)|USER_DEBUG|[135]|DEBUG| *** - Total_Items_Invoked__c 2 + 0
+15:11:45.0 (52995637)|STATEMENT_EXECUTE|[136]
+15:11:45.0 (52997395)|HEAP_ALLOCATE|[136]|Bytes:39
+15:11:45.0 (53019080)|HEAP_ALLOCATE|[136]|Bytes:28
+15:11:45.0 (53027296)|HEAP_ALLOCATE|[136]|Bytes:1
+15:11:45.0 (53033147)|HEAP_ALLOCATE|[136]|Bytes:40
+15:11:45.0 (53038629)|USER_DEBUG|[136]|DEBUG| *** - Total_Items_Rejected_Hub__c 2 + 0
+15:11:45.0 (53048155)|HEAP_ALLOCATE|[103]|Bytes:5
+15:11:45.0 (53058961)|VARIABLE_ASSIGNMENT|[103]|detail|null|
+15:11:45.0 (53089439)|HEAP_ALLOCATE|[141]|Bytes:5
+15:11:45.0 (53101975)|VARIABLE_ASSIGNMENT|[141]|detail|null|
+15:11:45.0 (53105038)|STATEMENT_EXECUTE|[141]
+15:11:45.0 (53135520)|HEAP_ALLOCATE|[173]|Bytes:5
+15:11:45.0 (53143533)|VARIABLE_ASSIGNMENT|[173]|detail|null|
+15:11:45.0 (53145361)|STATEMENT_EXECUTE|[173]
+15:11:45.0 (53159347)|STATEMENT_EXECUTE|[243]
+15:11:45.0 (53172816)|HEAP_ALLOCATE|[244]|Bytes:5
+15:11:45.0 (53179332)|VARIABLE_ASSIGNMENT|[244]|oldDetail|null|
+15:11:45.0 (53181475)|STATEMENT_EXECUTE|[244]
+15:11:45.0 (53182999)|STATEMENT_EXECUTE|[276]
+15:11:45.0 (53184016)|STATEMENT_EXECUTE|[277]
+15:11:45.0 (53184976)|STATEMENT_EXECUTE|[278]
+15:11:45.0 (53201490)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+15:11:45.0 (53209842)|HEAP_ALLOCATE|[278]|Bytes:640
+15:11:45.0 (53245261)|DML_BEGIN|[278]|Op:Update|Type:WWW__c|Rows:1
+15:11:45.0 (53265470)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+15:11:45.0 (74907304)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:01I24000001DBlX
+15:11:45.0 (83698261)|WF_RULE_EVAL_BEGIN|Workflow
+15:11:45.0 (83719685)|WF_CRITERIA_BEGIN|[WWW: WWW-13540 a0t0E0000004UUN]|Set unique field|01Q24000000bj9y|ON_ALL_CHANGES|0
+15:11:45.0 (85193834)|WF_RULE_FILTER|[WWW : Created By not equal to ]
+15:11:45.0 (85211390)|WF_RULE_EVAL_VALUE|00524000001e3Uj
+15:11:45.0 (85214567)|WF_CRITERIA_END|true
+15:11:45.0 (85601082)|WF_SPOOL_ACTION_BEGIN|Workflow
+15:11:45.0 (85919197)|WF_ACTION| Field Update: 1;
+15:11:45.0 (85922325)|WF_RULE_EVAL_END
+15:11:45.0 (85964273)|WF_ACTIONS_END| Field Update: 1;
+15:11:45.0 (85970564)|CODE_UNIT_FINISHED|Workflow:01I24000001DBlX
+15:11:45.0 (93013146)|DML_END|[278]
+15:11:45.0 (93061346)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+15:11:45.0 (93080998)|METHOD_EXIT|[17]|01p2400000DV2tl|WWWDetailUtil.calculateRollupSum(List<WWW_Detail__c>, List<WWW_Detail__c>, TriggerParams)
+15:11:45.0 (93087367)|STATEMENT_EXECUTE|[18]
+15:11:45.0 (93108658)|METHOD_ENTRY|[18]|01p2400000DV2tl|WWWDetailUtil.getSubLocDet(List<WWW_Detail__c>)
+15:11:45.0 (93132570)|VARIABLE_SCOPE_BEGIN|[311]|triggerOld|List<WWW_Detail__c>|true|false
+15:11:45.0 (94996938)|VARIABLE_ASSIGNMENT|[311]|triggerOld|[{"LastModifiedDate":"2017-02-16T14:01:28.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUNQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bedrijfsbureau","Project__c":"a0q0E0000008S3WQAU","Transporter__c":"0010E000003GsxBQAS","Name":"WWW-D-10108","Preferred_Delivery_T (6 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4OAAS","Location__c":"a0B0E0000009MiwUAE","Number_Of_Items__c":15,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Glasbok Staal","Project_Number__c":"Opslag security asse (2 more) ...","Foto__c":false,"SystemModstamp":"2017-02-16T14:01:28.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:01:28.000Z","Id":"a0s0E0000004KP6QAM","Projectbeschrijving_ (2 more) ...":"Opslag security asse (2 more) ...","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Schiphol Airport Car (31 more) ...","LastModifiedById":"00524000001e3UjAAI"}]|0x67d79eba
+15:11:45.0 (95014985)|STATEMENT_EXECUTE|[311]
+15:11:45.0 (95018016)|STATEMENT_EXECUTE|[312]
+15:11:45.0 (95027598)|HEAP_ALLOCATE|[312]|Bytes:4
+15:11:45.0 (95070044)|VARIABLE_SCOPE_BEGIN|[312]|wwwDetIds|Set<Id>|true|false
+15:11:45.0 (95091788)|VARIABLE_ASSIGNMENT|[312]|wwwDetIds|[]|0x11cceb6d
+15:11:45.0 (95144795)|HEAP_ALLOCATE|[314]|Bytes:5
+15:11:45.0 (95170323)|VARIABLE_SCOPE_BEGIN|[314]|wwwd|WWW_Detail__c|true|false
+15:11:45.0 (96312197)|VARIABLE_ASSIGNMENT|[314]|wwwd|{"LastModifiedDate":"2017-02-16T14:01:28.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUNQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bedrijfsbureau","Project__c":"a0q0E0000008S3WQAU","Transporter__c":"0010E000003GsxBQAS","Name":"WWW-D-10108","Preferred_Delivery_T (6 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4OAAS","Location__c":"a0B0E0000009MiwUAE","Number_Of_Items__c":15,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Glasbok Staal","Project_Number__c":"Opslag security asse (2 more) ...","Foto__c":false,"SystemModstamp":"2017-02-16T14:01:28.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:01:28.000Z","Id":"a0s0E0000004KP6QAM","Projectbeschrijving_ (2 more) ...":"Opslag security asse (2 more) ...","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Schiphol Airport Car (31 more) ...","LastModifiedById":"00524000001e3UjAAI"}|0x4c42e84
+15:11:45.0 (96323228)|STATEMENT_EXECUTE|[314]
+15:11:45.0 (96325047)|STATEMENT_EXECUTE|[315]
+15:11:45.0 (96385148)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:11:45.0 (96404591)|HEAP_ALLOCATE|[314]|Bytes:5
+15:11:45.0 (96417018)|VARIABLE_ASSIGNMENT|[314]|wwwd|null|
+15:11:45.0 (96420090)|STATEMENT_EXECUTE|[317]
+15:11:45.0 (96423577)|HEAP_ALLOCATE|[317]|Bytes:81
+15:11:45.0 (96430501)|HEAP_ALLOCATE|[317]|Bytes:4
+15:11:45.0 (96461797)|HEAP_ALLOCATE|[317]|Bytes:8
+15:11:45.0 (96468369)|HEAP_ALLOCATE|[317]|Bytes:8
+15:11:45.0 (97788305)|SOQL_EXECUTE_BEGIN|[317]|Aggregations:0|SELECT Id, WWW_Detail__c FROM SubLocationDetail__c WHERE WWW_Detail__c = :tmpVar1
+15:11:45.0 (100009075)|SOQL_EXECUTE_END|[317]|Rows:0
+15:11:45.0 (100027204)|HEAP_ALLOCATE|[317]|Bytes:4
+15:11:45.0 (100035389)|HEAP_ALLOCATE|[317]|Bytes:0
+15:11:45.0 (100056117)|HEAP_ALLOCATE|[317]|Bytes:4
+15:11:45.0 (100063482)|VARIABLE_SCOPE_BEGIN|[317]|subLocDet2|List<SublocationDetail__c>|true|false
+15:11:45.0 (100073675)|VARIABLE_ASSIGNMENT|[317]|subLocDet2|[]|0x74a381a5
+15:11:45.0 (100076375)|STATEMENT_EXECUTE|[318]
+15:11:45.0 (100083198)|METHOD_EXIT|[18]|01p2400000DV2tl|WWWDetailUtil.getSubLocDet(List<WWW_Detail__c>)
+15:11:45.0 (100098576)|VARIABLE_ASSIGNMENT|[18]|WWWDetailUtil.subLocDet|[]|0x74a381a5
+15:11:45.0 (100103269)|STATEMENT_EXECUTE|[19]
+15:11:45.0 (100104596)|STATEMENT_EXECUTE|[20]
+15:11:45.0 (100116118)|METHOD_ENTRY|[20]|01p2400000DV2tl|WWWDetailUtil.deleteSubD(List<SublocationDetail__c>)
+15:11:45.0 (100135588)|VARIABLE_SCOPE_BEGIN|[306]|SubDetToDelete|List<SublocationDetail__c>|true|false
+15:11:45.0 (100141193)|VARIABLE_ASSIGNMENT|[306]|SubDetToDelete|[]|0x74a381a5
+15:11:45.0 (100145163)|STATEMENT_EXECUTE|[306]
+15:11:45.0 (100146499)|STATEMENT_EXECUTE|[307]
+15:11:45.0 (100149902)|HEAP_ALLOCATE|[307]|Bytes:22
+15:11:45.0 (100182417)|HEAP_ALLOCATE|[307]|Bytes:2
+15:11:45.0 (100193375)|HEAP_ALLOCATE|[307]|Bytes:24
+15:11:45.0 (100208012)|USER_DEBUG|[307]|DEBUG|[***] SubDetToDelete +()
+15:11:45.0 (100212517)|STATEMENT_EXECUTE|[308]
+15:11:45.0 (100270809)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:11:45.0 (100278203)|METHOD_EXIT|[20]|01p2400000DV2tl|WWWDetailUtil.deleteSubD(List<SublocationDetail__c>)
+15:11:45.0 (100287942)|STATEMENT_EXECUTE|[25]
+15:11:45.0 (100292383)|METHOD_EXIT|[3]|01p2400000DV2tl|WWWDetailUtil.entry(TriggerParams)
+15:11:45.100 (100301492)|CUMULATIVE_LIMIT_USAGE
+15:11:45.100 (100301492)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 3 out of 100
+  Number of query rows: 6 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:11:45.100 (100301492)|CUMULATIVE_LIMIT_USAGE_END
+
+15:11:45.0 (101092547)|CODE_UNIT_FINISHED|WWWDetailTrigger on WWW_Detail trigger event BeforeDelete for [a0s0E0000004KP6]
+15:11:45.0 (185250057)|CODE_UNIT_STARTED|[EXTERNAL]|01q2400000133Bx|WWWDetailTrigger on WWW_Detail trigger event AfterDelete for [a0s0E0000004KP6]
+15:11:45.0 (185277510)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+15:11:45.0 (185360683)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:11:45.0 (185369821)|VARIABLE_SCOPE_BEGIN|[1]|this|WWWDetailTrigger|true|false
+15:11:45.0 (185397333)|VARIABLE_ASSIGNMENT|[1]|this|{}|0xf28d778
+15:11:45.0 (185419734)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:11:45.0 (185424505)|VARIABLE_SCOPE_BEGIN|[1]|this|WWWDetailTrigger|true|false
+15:11:45.0 (185429791)|VARIABLE_ASSIGNMENT|[1]|this|{}|0xf28d778
+15:11:45.0 (185433691)|STATEMENT_EXECUTE|[1]
+15:11:45.0 (185435406)|STATEMENT_EXECUTE|[3]
+15:11:45.0 (185442336)|HEAP_ALLOCATE|[3]|Bytes:44
+15:11:45.0 (185510172)|CONSTRUCTOR_ENTRY|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+15:11:45.0 (185517585)|VARIABLE_SCOPE_BEGIN|[13]|this|TriggerParams|true|false
+15:11:45.0 (185537950)|VARIABLE_ASSIGNMENT|[13]|this|{}|0x676ec191
+15:11:45.0 (185546179)|VARIABLE_SCOPE_BEGIN|[13]|isBefore|Boolean|false|false
+15:11:45.0 (185550855)|VARIABLE_ASSIGNMENT|[13]|isBefore|false
+15:11:45.0 (185553141)|VARIABLE_SCOPE_BEGIN|[13]|isAfter|Boolean|false|false
+15:11:45.0 (185555268)|VARIABLE_ASSIGNMENT|[13]|isAfter|true
+15:11:45.0 (185557455)|VARIABLE_SCOPE_BEGIN|[13]|isInsert|Boolean|false|false
+15:11:45.0 (185559527)|VARIABLE_ASSIGNMENT|[13]|isInsert|false
+15:11:45.0 (185561514)|VARIABLE_SCOPE_BEGIN|[13]|isUpdate|Boolean|false|false
+15:11:45.0 (185563602)|VARIABLE_ASSIGNMENT|[13]|isUpdate|false
+15:11:45.0 (185565559)|VARIABLE_SCOPE_BEGIN|[13]|isDelete|Boolean|false|false
+15:11:45.0 (185567399)|VARIABLE_ASSIGNMENT|[13]|isDelete|true
+15:11:45.0 (185569445)|VARIABLE_SCOPE_BEGIN|[13]|isUndelete|Boolean|false|false
+15:11:45.0 (185571463)|VARIABLE_ASSIGNMENT|[13]|isUndelete|false
+15:11:45.0 (185573113)|VARIABLE_SCOPE_BEGIN|[13]|triggerNew|List<SObject>|true|false
+15:11:45.0 (185576056)|VARIABLE_ASSIGNMENT|[13]|triggerNew|null|
+15:11:45.0 (185577797)|VARIABLE_SCOPE_BEGIN|[13]|triggerOld|List<SObject>|true|false
+15:11:45.0 (187453964)|VARIABLE_ASSIGNMENT|[13]|triggerOld|[{"LastModifiedDate":"2017-02-16T14:01:28.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUNQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bedrijfsbureau","Project__c":"a0q0E0000008S3WQAU","Transporter__c":"0010E000003GsxBQAS","Name":"WWW-D-10108","Preferred_Delivery_T (6 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4OAAS","Location__c":"a0B0E0000009MiwUAE","Number_Of_Items__c":15,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Glasbok Staal","Project_Number__c":"Opslag security asse (2 more) ...","Foto__c":false,"SystemModstamp":"2017-02-16T14:01:28.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:01:28.000Z","Id":"a0s0E0000004KP6QAM","Projectbeschrijving_ (2 more) ...":"Opslag security asse (2 more) ...","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Schiphol Airport Car (31 more) ...","LastModifiedById":"00524000001e3UjAAI"}]|0x42c3738c
+15:11:45.0 (187465021)|VARIABLE_SCOPE_BEGIN|[13]|newMap|Map<Id,SObject>|true|false
+15:11:45.0 (187469692)|VARIABLE_ASSIGNMENT|[13]|newMap|null|
+15:11:45.0 (187471938)|VARIABLE_SCOPE_BEGIN|[13]|oldMap|Map<Id,SObject>|true|false
+15:11:45.0 (188450271)|VARIABLE_ASSIGNMENT|[13]|oldMap|{"a0s0E0000004KP6QAM":{"LastModifiedDate":"2017-02-16T14:01:28.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUNQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bedrijfsbureau","Project__c":"a0q0E0000008S3WQAU","Transporter__c":"0010E000003GsxBQAS","Name":"WWW-D-10108","Preferred_Delivery_T (6 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4OAAS","Location__c":"a0B0E0000009MiwUAE","Number_Of_Items__c":15,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Glasbok Staal","Project_Number__c":"Opslag security asse (2 more) ...","Foto__c":false,"SystemModstamp":"2017-02-16T14:01:28.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:01:28.000Z","Id":"a0s0E0000004KP6QAM","Projectbeschrijving_ (2 more) ...":"Opslag security asse (2 more) ...","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Schiphol Airport Car (31 more) ...","LastModifiedById":"00524000001e3UjAAI"}}|0x25fcad55
+15:11:45.0 (188467781)|HEAP_ALLOCATE|[16]|Bytes:5
+15:11:45.0 (188472474)|STATEMENT_EXECUTE|[1]
+15:11:45.0 (188475081)|HEAP_ALLOCATE|[16]|Bytes:5
+15:11:45.0 (188476445)|STATEMENT_EXECUTE|[2]
+15:11:45.0 (188477665)|STATEMENT_EXECUTE|[3]
+15:11:45.0 (188478765)|STATEMENT_EXECUTE|[4]
+15:11:45.0 (188479813)|STATEMENT_EXECUTE|[5]
+15:11:45.0 (188480837)|STATEMENT_EXECUTE|[6]
+15:11:45.0 (188482287)|STATEMENT_EXECUTE|[7]
+15:11:45.0 (188483377)|STATEMENT_EXECUTE|[8]
+15:11:45.0 (188484423)|STATEMENT_EXECUTE|[9]
+15:11:45.0 (188485441)|STATEMENT_EXECUTE|[10]
+15:11:45.0 (188486524)|STATEMENT_EXECUTE|[11]
+15:11:45.0 (188510318)|STATEMENT_EXECUTE|[15]
+15:11:45.0 (188511635)|STATEMENT_EXECUTE|[16]
+15:11:45.0 (188515042)|HEAP_ALLOCATE|[16]|Bytes:5
+15:11:45.0 (188524110)|VARIABLE_ASSIGNMENT|[16]|this.isBefore|false|0x676ec191
+15:11:45.0 (188525960)|STATEMENT_EXECUTE|[17]
+15:11:45.0 (188528054)|HEAP_ALLOCATE|[17]|Bytes:5
+15:11:45.0 (188531217)|VARIABLE_ASSIGNMENT|[17]|this.isAfter|true|0x676ec191
+15:11:45.0 (188532860)|STATEMENT_EXECUTE|[18]
+15:11:45.0 (188534906)|HEAP_ALLOCATE|[18]|Bytes:5
+15:11:45.0 (188537928)|VARIABLE_ASSIGNMENT|[18]|this.isInsert|false|0x676ec191
+15:11:45.0 (188539189)|STATEMENT_EXECUTE|[19]
+15:11:45.0 (188541059)|HEAP_ALLOCATE|[19]|Bytes:5
+15:11:45.0 (188544022)|VARIABLE_ASSIGNMENT|[19]|this.isUpdate|false|0x676ec191
+15:11:45.0 (188545157)|STATEMENT_EXECUTE|[20]
+15:11:45.0 (188547271)|HEAP_ALLOCATE|[20]|Bytes:5
+15:11:45.0 (188549741)|VARIABLE_ASSIGNMENT|[20]|this.isDelete|true|0x676ec191
+15:11:45.0 (188551020)|STATEMENT_EXECUTE|[21]
+15:11:45.0 (188552932)|HEAP_ALLOCATE|[21]|Bytes:5
+15:11:45.0 (188555635)|VARIABLE_ASSIGNMENT|[21]|this.isUndelete|false|0x676ec191
+15:11:45.0 (188557032)|STATEMENT_EXECUTE|[22]
+15:11:45.0 (188560648)|VARIABLE_ASSIGNMENT|[22]|this.triggerNew|null|0x676ec191
+15:11:45.0 (188561863)|STATEMENT_EXECUTE|[23]
+15:11:45.0 (189570683)|VARIABLE_ASSIGNMENT|[23]|this.triggerOld|[{"LastModifiedDate":"2017-02-16T14:01:28.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUNQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bedrijfsbureau","Project__c":"a0q0E0000008S3WQAU","Transporter__c":"0010E000003GsxBQAS","Name":"WWW-D-10108","Preferred_Delivery_T (6 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4OAAS","Location__c":"a0B0E0000009MiwUAE","Number_Of_Items__c":15,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Glasbok Staal","Project_Number__c":"Opslag security asse (2 more) ...","Foto__c":false,"SystemModstamp":"2017-02-16T14:01:28.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:01:28.000Z","Id":"a0s0E0000004KP6QAM","Projectbeschrijving_ (2 more) ...":"Opslag security asse (2 more) ...","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Schiphol Airport Car (31 more) ...","LastModifiedById":"00524000001e3UjAAI"}]|0x676ec191
+15:11:45.0 (189580252)|STATEMENT_EXECUTE|[24]
+15:11:45.0 (189588771)|VARIABLE_ASSIGNMENT|[24]|this.newMap|null|0x676ec191
+15:11:45.0 (189590628)|STATEMENT_EXECUTE|[25]
+15:11:45.0 (190563015)|VARIABLE_ASSIGNMENT|[25]|this.oldMap|{"a0s0E0000004KP6QAM":{"LastModifiedDate":"2017-02-16T14:01:28.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUNQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bedrijfsbureau","Project__c":"a0q0E0000008S3WQAU","Transporter__c":"0010E000003GsxBQAS","Name":"WWW-D-10108","Preferred_Delivery_T (6 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4OAAS","Location__c":"a0B0E0000009MiwUAE","Number_Of_Items__c":15,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Glasbok Staal","Project_Number__c":"Opslag security asse (2 more) ...","Foto__c":false,"SystemModstamp":"2017-02-16T14:01:28.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:01:28.000Z","Id":"a0s0E0000004KP6QAM","Projectbeschrijving_ (2 more) ...":"Opslag security asse (2 more) ...","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Schiphol Airport Car (31 more) ...","LastModifiedById":"00524000001e3UjAAI"}}|0x676ec191
+15:11:45.0 (190590060)|CONSTRUCTOR_EXIT|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+15:11:45.0 (190601768)|METHOD_ENTRY|[3]|01p2400000DV2tl|WWWDetailUtil.entry(TriggerParams)
+15:11:45.0 (190606632)|VARIABLE_SCOPE_BEGIN|[4]|triggerParams|TriggerParams|true|false
+15:11:45.0 (190631338)|VARIABLE_ASSIGNMENT|[4]|triggerParams|{"isAfter":true,"isBefore":false,"isDelete":true,"isInsert":false,"isUndelete":false,"isUpdate":false,"oldMap":"0x25fcad55","triggerOld":"0x42c3738c"}|0x676ec191
+15:11:45.0 (190637698)|STATEMENT_EXECUTE|[4]
+15:11:45.0 (190639111)|STATEMENT_EXECUTE|[5]
+15:11:45.0 (190644931)|VARIABLE_SCOPE_BEGIN|[5]|triggerNew|List<WWW_Detail__c>|true|false
+15:11:45.0 (190649603)|VARIABLE_ASSIGNMENT|[5]|triggerNew|null|
+15:11:45.0 (190651225)|STATEMENT_EXECUTE|[6]
+15:11:45.0 (190655197)|VARIABLE_SCOPE_BEGIN|[6]|triggerOld|List<WWW_Detail__c>|true|false
+15:11:45.0 (191642601)|VARIABLE_ASSIGNMENT|[6]|triggerOld|[{"LastModifiedDate":"2017-02-16T14:01:28.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUNQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bedrijfsbureau","Project__c":"a0q0E0000008S3WQAU","Transporter__c":"0010E000003GsxBQAS","Name":"WWW-D-10108","Preferred_Delivery_T (6 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4OAAS","Location__c":"a0B0E0000009MiwUAE","Number_Of_Items__c":15,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Glasbok Staal","Project_Number__c":"Opslag security asse (2 more) ...","Foto__c":false,"SystemModstamp":"2017-02-16T14:01:28.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:01:28.000Z","Id":"a0s0E0000004KP6QAM","Projectbeschrijving_ (2 more) ...":"Opslag security asse (2 more) ...","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Schiphol Airport Car (31 more) ...","LastModifiedById":"00524000001e3UjAAI"}]|0x42c3738c
+15:11:45.0 (191652764)|STATEMENT_EXECUTE|[7]
+15:11:45.0 (191660181)|VARIABLE_SCOPE_BEGIN|[7]|oldMap|Map<Id,WWW_Detail__c>|true|false
+15:11:45.0 (192644695)|VARIABLE_ASSIGNMENT|[7]|oldMap|{"a0s0E0000004KP6QAM":{"LastModifiedDate":"2017-02-16T14:01:28.000Z","Square_Meters__c":0,"WWW__c":"a0t0E0000004UUNQA2","Building_Company_Pos (10 more) ...":"WWW__r.Project__r.Ac (27 more) ...","Building_Company_Str (6 more) ...":"WWW__r.Project__r.Ac (23 more) ...","Project_leider__c":"Bedrijfsbureau","Project__c":"a0q0E0000008S3WQAU","Transporter__c":"0010E000003GsxBQAS","Name":"WWW-D-10108","Preferred_Delivery_T (6 more) ...":"2017-02-16T07:00:00.000Z","Weight__c":0.00,"Number_Of_Units_Per_ (10 more) ...":0.00,"Projectmember_Compan (4 more) ...":"Projectmember__r.Con (20 more) ...","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","RecordTypeId":"01224000000Sn4OAAS","Location__c":"a0B0E0000009MiwUAE","Number_Of_Items__c":15,"IsDeleted":false,"Projectmember_Name__ (1 more) ...":" ","Kind_Of_Packages__c":"Glasbok Staal","Project_Number__c":"Opslag security asse (2 more) ...","Foto__c":false,"SystemModstamp":"2017-02-16T14:01:28.000Z","Transporter_Contact_ (8 more) ...":"Phone:  Mobile: ","Projectmember_Phone_ (2 more) ...":"Phone:  Mobile: ","Sizes__c":"L:  x W:  x H: ","CreatedDate":"2017-02-16T14:01:28.000Z","Id":"a0s0E0000004KP6QAM","Projectbeschrijving_ (2 more) ...":"Opslag security asse (2 more) ...","Building_Company_Cit (4 more) ...":"WWW__r.Project__r.Ac (21 more) ...","Building_Company__c":"AAS","Item_Name__c":"Schiphol Airport Car (31 more) ...","LastModifiedById":"00524000001e3UjAAI"}}|0x25fcad55
+15:11:45.0 (192654409)|STATEMENT_EXECUTE|[8]
+15:11:45.0 (192660443)|VARIABLE_SCOPE_BEGIN|[8]|newMap|Map<Id,WWW_Detail__c>|true|false
+15:11:45.0 (192665399)|VARIABLE_ASSIGNMENT|[8]|newMap|null|
+15:11:45.0 (192669137)|STATEMENT_EXECUTE|[11]
+15:11:45.0 (192671273)|STATEMENT_EXECUTE|[25]
+15:11:45.0 (192679287)|STATEMENT_EXECUTE|[26]
+15:11:45.0 (192681778)|STATEMENT_EXECUTE|[37]
+15:11:45.0 (192688657)|METHOD_EXIT|[3]|01p2400000DV2tl|WWWDetailUtil.entry(TriggerParams)
+15:11:45.192 (192697314)|CUMULATIVE_LIMIT_USAGE
+15:11:45.192 (192697314)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 3 out of 100
+  Number of query rows: 6 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:11:45.192 (192697314)|CUMULATIVE_LIMIT_USAGE_END
+
+15:11:45.0 (193484624)|CODE_UNIT_FINISHED|WWWDetailTrigger on WWW_Detail trigger event AfterDelete for [a0s0E0000004KP6]
+15:11:45.0 (202662789)|CODE_UNIT_FINISHED|TRIGGERS
+15:11:45.0 (202669614)|EXECUTION_FINISHED

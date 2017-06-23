@@ -1,0 +1,150 @@
+31.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+16:08:57.0 (55528)|USER_INFO|[EXTERNAL]|00524000001e3Uj|bedrijfsbureau@gsa.nl.sandbox|Midden-Europese standaardtijd|GMT+02:00
+16:08:57.0 (81016)|EXECUTION_STARTED
+16:08:57.0 (84962)|CODE_UNIT_STARTED|[EXTERNAL]|066240000040k2S|VF: /apex/SelectHub
+16:08:57.0 (182138)|VF_DESERIALIZE_VIEWSTATE_BEGIN|066240000040k2S
+16:08:57.0 (5434157)|VF_DESERIALIZE_VIEWSTATE_END
+16:08:57.0 (5993944)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (6242693)|SYSTEM_MODE_ENTER|false
+16:08:57.0 (6249168)|SYSTEM_MODE_EXIT|false
+16:08:57.0 (6259492)|SYSTEM_MODE_ENTER|false
+16:08:57.0 (7079926)|SOQL_EXECUTE_BEGIN|[237]|Aggregations:0|SELECT City__c, CreatedById, CreatedDate, IsDeleted, Description_Hub__c, Name, LastActivityDate, LastModifiedById, LastModifiedDate, OwnerId, Postalcode__c, Id, RecordTypeId, SF_ID__c, Street__c, SystemModstamp FROM Hub_Building_Site__c WHERE RecordType.Name = 'Building Site'
+16:08:57.0 (11039940)|SOQL_EXECUTE_END|[237]|Rows:1
+16:08:57.0 (11517231)|SYSTEM_MODE_EXIT|false
+16:08:57.0 (11669268)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (11881369)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (12085089)|SYSTEM_MODE_ENTER|false
+16:08:57.0 (12175750)|SYSTEM_MODE_EXIT|false
+16:08:57.0 (238918961)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (238997560)|SYSTEM_MODE_ENTER|false
+16:08:57.0 (239003959)|SYSTEM_MODE_EXIT|false
+16:08:57.0 (239150108)|SYSTEM_MODE_ENTER|false
+16:08:57.0 (239184591)|SYSTEM_MODE_EXIT|false
+16:08:57.0 (240300425)|SYSTEM_MODE_ENTER|false
+16:08:57.0 (240527759)|USER_DEBUG|[52]|DEBUG|compDataComponentData:[dateSelected=null, hubSelected=a029E000001X3J1QAK, wrap=()]
+16:08:57.0 (240549952)|USER_DEBUG|[53]|DEBUG|hubSelecteda029E000001X3J1QAK
+16:08:57.0 (240554716)|SYSTEM_MODE_EXIT|false
+16:08:57.241 (241132275)|SYSTEM_MODE_ENTER|true
+16:08:57.241 (241269844)|SYSTEM_MODE_ENTER|true
+16:08:57.241 (241421335)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (242038209)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (242073100)|SYSTEM_MODE_ENTER|false
+16:08:57.0 (244835269)|SOQL_EXECUTE_BEGIN|[66]|Aggregations:0|SELECT Id, AccountId__c, Profile.Name FROM User WHERE id = :tmpVar1
+16:08:57.0 (249011275)|SOQL_EXECUTE_END|[66]|Rows:1
+16:08:57.0 (249229807)|SYSTEM_MODE_EXIT|false
+16:08:57.0 (249361380)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (249400698)|SYSTEM_MODE_ENTER|false
+16:08:57.0 (249503942)|SYSTEM_MODE_EXIT|false
+16:08:57.0 (250153058)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (250297575)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (250395574)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (250548065)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (250572773)|SYSTEM_MODE_ENTER|false
+16:08:57.0 (250587630)|SYSTEM_MODE_EXIT|false
+16:08:57.0 (250785500)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (250850955)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (250917412)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (250987159)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (251025816)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (251139757)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (251173018)|SYSTEM_MODE_ENTER|false
+16:08:57.0 (251205747)|SYSTEM_MODE_EXIT|false
+16:08:57.0 (254906314)|SYSTEM_MODE_ENTER|true
+16:08:57.255 (255029136)|SYSTEM_MODE_ENTER|true
+16:08:57.255 (255167571)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (255810554)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (255873537)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (256694823)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (256733290)|SYSTEM_MODE_ENTER|false
+16:08:57.0 (257114992)|SOQL_EXECUTE_BEGIN|[207]|Aggregations:0|SELECT Id, Name FROM Account
+16:08:57.0 (258781008)|SOQL_EXECUTE_END|[207]|Rows:1
+16:08:57.0 (259207383)|SYSTEM_MODE_EXIT|false
+16:08:57.0 (261366734)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (261405296)|SYSTEM_MODE_ENTER|false
+16:08:57.0 (262142477)|SOQL_EXECUTE_BEGIN|[175]|Aggregations:0|SELECT Activity_Description__c, Box_Number__c, CreatedById, CreatedDate, IsDeleted, Depth__c, M2_Height__c, Hub_Building_Site__c, LastActivityDate, LastModifiedById, LastModifiedDate, Level__c, Name, Max_Weight_p_m2__c, OwnerId, Pallet_Place__c, Id, RecordTypeId, SF_ID__c, Section__c, Shelving_Subdivision__c, SystemModstamp, Warehouse__c, Width__c FROM Location__c WHERE (RecordType.Name = 'Site Location' AND Hub_Building_Site__c = :tmpVar1)
+16:08:57.0 (265636911)|SOQL_EXECUTE_END|[175]|Rows:0
+16:08:57.0 (265878403)|SYSTEM_MODE_EXIT|false
+16:08:57.0 (266245878)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (266286937)|SYSTEM_MODE_ENTER|false
+16:08:57.0 (266953232)|SYSTEM_MODE_EXIT|false
+16:08:57.0 (267113576)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (267429242)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (267462253)|SYSTEM_MODE_ENTER|false
+16:08:57.0 (267577235)|SYSTEM_MODE_EXIT|false
+16:08:57.0 (267714069)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (268191115)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (268226496)|SYSTEM_MODE_ENTER|false
+16:08:57.0 (268770316)|SOQL_EXECUTE_BEGIN|[217]|Aggregations:0|SELECT Activity_Description__c, Box_Number__c, CreatedById, CreatedDate, IsDeleted, Depth__c, M2_Height__c, Hub_Building_Site__c, LastActivityDate, LastModifiedById, LastModifiedDate, Level__c, Name, Max_Weight_p_m2__c, OwnerId, Pallet_Place__c, Id, RecordTypeId, SF_ID__c, Section__c, Shelving_Subdivision__c, SystemModstamp, Warehouse__c, Width__c FROM Location__c WHERE (RecordType.Name = 'Gate' AND Hub_Building_Site__c = :tmpVar1)
+16:08:57.0 (272157675)|SOQL_EXECUTE_END|[217]|Rows:0
+16:08:57.0 (272279695)|SYSTEM_MODE_EXIT|false
+16:08:57.0 (272581982)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (273053001)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (273443824)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (273615434)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (273654349)|SYSTEM_MODE_ENTER|false
+16:08:57.0 (273928871)|SOQL_EXECUTE_BEGIN|[193]|Aggregations:0|SELECT Project__c FROM Hub_Building_Site__c WHERE id = :tmpVar1
+16:08:57.0 (275414364)|SOQL_EXECUTE_END|[193]|Rows:1
+16:08:57.0 (276962533)|SOQL_EXECUTE_BEGIN|[195]|Aggregations:0|SELECT Id, Project_Member_Name__c FROM Projectmember__c WHERE Project__c = :tmpVar1
+16:08:57.0 (284244526)|SOQL_EXECUTE_END|[195]|Rows:0
+16:08:57.0 (284538800)|SYSTEM_MODE_EXIT|false
+16:08:57.0 (285088795)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (286553781)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (286598593)|SYSTEM_MODE_ENTER|false
+16:08:57.0 (287172511)|SOQL_EXECUTE_BEGIN|[253]|Aggregations:0|SELECT Activity_Description__c, Box_Number__c, CreatedById, CreatedDate, IsDeleted, Depth__c, M2_Height__c, Hub_Building_Site__c, LastActivityDate, LastModifiedById, LastModifiedDate, Level__c, Name, Max_Weight_p_m2__c, OwnerId, Pallet_Place__c, Id, RecordTypeId, SF_ID__c, Section__c, Shelving_Subdivision__c, SystemModstamp, Warehouse__c, Width__c FROM Location__c WHERE (RecordType.Name = 'Vertical Transport' AND Hub_Building_Site__c = :tmpVar1)
+16:08:57.0 (290498288)|SOQL_EXECUTE_END|[253]|Rows:0
+16:08:57.0 (290805968)|SYSTEM_MODE_EXIT|false
+16:08:57.0 (291059274)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (292260575)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (292409030)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (292519683)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (292674814)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (292819609)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (292953481)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (293006696)|SYSTEM_MODE_ENTER|false
+16:08:57.0 (293578347)|SOQL_EXECUTE_BEGIN|[70]|Aggregations:0|SELECT Id, Name, Hub_Building_Site__c, RecordType.Name FROM Location__c WHERE Hub_Building_Site__c = :tmpVar1
+16:08:57.0 (296440969)|SOQL_EXECUTE_END|[70]|Rows:0
+16:08:57.0 (299934774)|SOQL_EXECUTE_BEGIN|[128]|Aggregations:0|SELECT Id, Name, Location__c, Vertical_Transport__c, Delivery_Date__c, Arrival_Time__c, End_Point__c, Location__r.Name, Loading_And_Unloading_Time__c, Status__c, Hub_Building_Site__c, Content_Delivery__c, Requestor__c, Vertical_Transport__r.Name, Gate__c, Account__r.Name, CreatedBy.Name, Hub_Building_Site__r.Name, Description_Of_Delivery__c FROM Building_Ticket__c WHERE (Hub_Building_Site__c = :tmpVar1 AND (Location__c = :tmpVar2 OR Gate__c = :tmpVar3 OR Vertical_Transport__c = :tmpVar4) AND Status__c != 'Rejected' AND Status__c != 'Afgewezen' AND Status__c != 'Cancelled')
+16:08:57.0 (304077039)|SOQL_EXECUTE_END|[128]|Rows:0
+16:08:57.0 (304609214)|SOQL_EXECUTE_BEGIN|[141]|Aggregations:0|SELECT Id, Name, CompanyName FROM User WHERE id = :tmpVar1
+16:08:57.0 (306020178)|SOQL_EXECUTE_END|[141]|Rows:0
+16:08:57.0 (306453691)|SYSTEM_MODE_EXIT|false
+16:08:57.0 (306604763)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (306657049)|SYSTEM_MODE_ENTER|false
+16:08:57.0 (308504592)|SOQL_EXECUTE_BEGIN|[316]|Aggregations:0|SELECT Id, Name, Location__c, Vertical_Transport__c, Delivery_Date__c, Arrival_Time__c, End_Point__c, Location__r.Name, Loading_And_Unloading_Time__c, Status__c, Hub_Building_Site__c, Content_Delivery__c, Requestor__c, Vertical_Transport__r.Name, Gate__c, Account__r.Name FROM Building_Ticket__c WHERE (Hub_Building_Site__c = :tmpVar1 AND (Location__c = :tmpVar2 OR Gate__c = :tmpVar3 OR Vertical_Transport__c = :tmpVar4) AND Status__c != 'Rejected' AND Status__c != 'Afgewezen' AND Status__c != 'Cancelled' AND Delivery_Date__c = :tmpVar5) ORDER BY Location__c DESC NULLS FIRST
+16:08:57.0 (309874914)|SOQL_EXECUTE_END|[316]|Rows:0
+16:08:57.0 (310181047)|SOQL_EXECUTE_BEGIN|[341]|Aggregations:0|SELECT Id, Name, CompanyName FROM User WHERE id = :tmpVar1
+16:08:57.0 (311307802)|SOQL_EXECUTE_END|[341]|Rows:0
+16:08:57.0 (311581456)|SOQL_EXECUTE_BEGIN|[342]|Aggregations:0|SELECT Id, Name, Hub_Building_Site__c, RecordType.Name FROM Location__c WHERE Hub_Building_Site__c = :tmpVar1
+16:08:57.0 (313997438)|SOQL_EXECUTE_END|[342]|Rows:0
+16:08:57.0 (314357882)|SOQL_EXECUTE_BEGIN|[378]|Aggregations:0|SELECT Id, Name FROM Location__c WHERE id = :tmpVar1
+16:08:57.0 (315316455)|SOQL_EXECUTE_END|[378]|Rows:0
+16:08:57.0 (322685978)|USER_DEBUG|[646]|DEBUG|body <table class="dayColTable" width="80%" align="center"><caption style="text-align: right;" width="100%"><input value="<&nbsp;" onclick="minusDay();" type="button"/>&nbsp;<input value="&nbsp;>" onclick="addDay();" type="button"/></caption><tr><td width="10%"><b>2017-03-30</b></td></tr> <tr><td style="background-color:#ddd !important">00:00</td></tr><tr><td>00:15</td></tr><tr><td>00:30</td></tr><tr><td>00:45</td></tr><tr><td style="background-color:#ddd !important">01:00</td></tr><tr><td>01:15</td></tr><tr><td>01:30</td></tr><tr><td>01:45</td></tr><tr><td style="background-color:#ddd !important">02:00</td></tr><tr><td>02:15</td></tr><tr><td>02:30</td></tr><tr><td>02:45</td></tr><tr><td style="background-color:#ddd !important">03:00</td></tr><tr><td>03:15</td></tr><tr><td>03:30</td></tr><tr><td>03:45</td></tr><tr><td style="background-color:#ddd !important">04:00</td></tr><tr><td>04:15</td></tr><tr><td>04:30</td></tr><tr><td>04:45</td></tr><tr><td style="background-color:#ddd !important">05:00</td></tr><tr><td>05:15</td></tr><tr><td>05:30</td></tr><tr><td>05:45</td></tr><tr><td style="background-color:#ddd !important">06:00</td></tr><tr><td>06:15</td></tr><tr><td>06:30</td></tr><tr><td>06:45</td></tr><tr><td style="background-color:#ddd !important">07:00</td></tr><tr><td>07:15</td></tr><tr><td>07:30</td></tr><tr><td>07:45</td></tr><tr><td style="background-color:#ddd !important">08:00</td></tr><tr><td>08:15</td></tr><tr><td>08:30</td></tr><tr><td>08:45</td></tr><tr><td style="background-color:#ddd !important">09:00</td></tr><tr><td>09:15</td></tr><tr><td>09:30</td></tr><tr><td>09:45</td></tr><tr><td style="background-color:#ddd !important">10:00</td></tr><tr><td>10:15</td></tr><tr><td>10:30</td></tr><tr><td>10:45</td></tr><tr><td style="background-color:#ddd !important">11:00</td></tr><tr><td>11:15</td></tr><tr><td>11:30</td></tr><tr><td>11:45</td></tr><tr><td style="background-color:#ddd !important">12:00</td></tr><tr><td>12:15</td></tr><tr><td>12:30</td></tr><tr><td>12:45</td></tr><tr><td style="background-color:#ddd !important">13:00</td></tr><tr><td>13:15</td></tr><tr><td>13:30</td></tr><tr><td>13:45</td></tr><tr><td style="background-color:#ddd !important">14:00</td></tr><tr><td>14:15</td></tr><tr><td>14:30</td></tr><tr><td>14:45</td></tr><tr><td style="background-color:#ddd !important">15:00</td></tr><tr><td>15:15</td></tr><tr><td>15:30</td></tr><tr><td>15:45</td></tr><tr><td style="background-color:#ddd !important">16:00</td></tr><tr><td>16:15</td></tr><tr><td>16:30</td></tr><tr><td>16:45</td></tr><tr><td style="background-color:#ddd !important">17:00</td></tr><tr><td>17:15</td></tr><tr><td>17:30</td></tr><tr><td>17:45</td></tr><tr><td style="background-color:#ddd !important">18:00</td></tr><tr><td>18:15</td></tr><tr><td>18:30</td></tr><tr><td>18:45</td></tr><tr><td style="background-color:#ddd !important">19:00</td></tr><tr><td>19:15</td></tr><tr><td>19:30</td></tr><tr><td>19:45</td></tr><tr><td style="background-color:#ddd !important">20:00</td></tr><tr><td>20:15</td></tr><tr><td>20:30</td></tr><tr><td>20:45</td></tr><tr><td style="background-color:#ddd !important">21:00</td></tr><tr><td>21:15</td></tr><tr><td>21:30</td></tr><tr><td>21:45</td></tr><tr><td style="background-color:#ddd !important">22:00</td></tr><tr><td>22:15</td></tr><tr><td>22:30</td></tr><tr><td>22:45</td></tr><tr><td style="background-color:#ddd !important">23:00</td></tr><tr><td>23:15</td></tr><tr><td>23:30</td></tr><tr><td>23:45</td></tr></table>
+16:08:57.0 (322762498)|SYSTEM_MODE_EXIT|false
+16:08:57.0 (323324599)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (323392210)|SYSTEM_MODE_ENTER|false
+16:08:57.0 (323401519)|SYSTEM_MODE_EXIT|false
+16:08:57.0 (324162790)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (324412127)|SYSTEM_MODE_ENTER|true
+16:08:57.0 (324442688)|SYSTEM_MODE_ENTER|false
+16:08:57.0 (324448687)|SYSTEM_MODE_EXIT|false
+16:08:57.0 (325539570)|VF_SERIALIZE_VIEWSTATE_BEGIN|066240000040k2S
+16:08:57.0 (329852867)|VF_SERIALIZE_VIEWSTATE_END
+16:08:57.342 (342117415)|CUMULATIVE_LIMIT_USAGE
+16:08:57.342 (342117415)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 15 out of 100
+  Number of query rows: 4 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+16:08:57.342 (342117415)|CUMULATIVE_LIMIT_USAGE_END
+
+16:08:57.0 (342161319)|CODE_UNIT_FINISHED|VF: /apex/SelectHub
+16:08:57.0 (343024806)|EXECUTION_FINISHED

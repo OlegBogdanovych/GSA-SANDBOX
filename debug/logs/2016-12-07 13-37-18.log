@@ -1,0 +1,631 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+12:37:07.1 (1001069)|USER_INFO|[EXTERNAL]|00524000001e3Uj|bedrijfsbureau@gsa.nl.sandbox|Midden-Europese standaardtijd|GMT+01:00
+12:37:07.1 (1051529)|EXECUTION_STARTED
+12:37:07.1 (1056217)|CODE_UNIT_STARTED|[EXTERNAL]|01p2400000Cr5V8|MyProfilePageControllerTest.testSave
+12:37:07.1 (1983074)|HEAP_ALLOCATE|[72]|Bytes:3
+12:37:07.1 (2051795)|HEAP_ALLOCATE|[77]|Bytes:152
+12:37:07.1 (2073942)|HEAP_ALLOCATE|[342]|Bytes:408
+12:37:07.1 (2095310)|HEAP_ALLOCATE|[355]|Bytes:408
+12:37:07.1 (2114951)|HEAP_ALLOCATE|[467]|Bytes:48
+12:37:07.1 (2161993)|HEAP_ALLOCATE|[139]|Bytes:6
+12:37:07.1 (2180798)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:147
+12:37:07.1 (2224035)|METHOD_ENTRY|[5]|01p2400000Cr5V8|MyProfilePageControllerTest.MyProfilePageControllerTest()
+12:37:07.1 (2228340)|STATEMENT_EXECUTE|[5]
+12:37:07.1 (2234353)|STATEMENT_EXECUTE|[5]
+12:37:07.1 (2270565)|HEAP_ALLOCATE|[50]|Bytes:5
+12:37:07.1 (2297090)|HEAP_ALLOCATE|[56]|Bytes:5
+12:37:07.1 (2305703)|HEAP_ALLOCATE|[64]|Bytes:7
+12:37:07.1 (3304808)|SYSTEM_MODE_ENTER|false
+12:37:07.1 (3324794)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+12:37:07.1 (3334487)|SYSTEM_MODE_EXIT|false
+12:37:07.1 (3362581)|METHOD_EXIT|[5]|MyProfilePageControllerTest
+12:37:07.1 (3421161)|SYSTEM_MODE_ENTER|false
+12:37:07.1 (3427053)|HEAP_ALLOCATE|[19]|Bytes:5
+12:37:07.1 (3430881)|STATEMENT_EXECUTE|[17]
+12:37:07.1 (3432343)|STATEMENT_EXECUTE|[19]
+12:37:07.1 (3435937)|HEAP_ALLOCATE|[19]|Bytes:102
+12:37:07.1 (3448299)|HEAP_ALLOCATE|[19]|Bytes:4
+12:37:07.1 (4012392)|SOQL_EXECUTE_BEGIN|[19]|Aggregations:0|SELECT id, profileId, userRoleId FROM User WHERE (UserRoleId != NULL AND UserType = 'CustomerSuccess')
+12:37:07.1 (16797107)|SOQL_EXECUTE_END|[19]|Rows:0
+12:37:07.1 (16836352)|HEAP_ALLOCATE|[19]|Bytes:4
+12:37:07.1 (16851670)|HEAP_ALLOCATE|[19]|Bytes:0
+12:37:07.1 (17041275)|HEAP_ALLOCATE|[19]|Bytes:4
+12:37:07.1 (17071434)|VARIABLE_SCOPE_BEGIN|[19]|existingPortalUsers|List<User>|true|false
+12:37:07.1 (17117860)|VARIABLE_ASSIGNMENT|[19]|existingPortalUsers|{"s":1,"v":[]}|0x1c552186
+12:37:07.1 (17224090)|STATEMENT_EXECUTE|[21]
+12:37:07.1 (17227138)|STATEMENT_EXECUTE|[22]
+12:37:07.1 (17235732)|HEAP_ALLOCATE|[22]|Bytes:141
+12:37:07.1 (17247499)|HEAP_ALLOCATE|[22]|Bytes:4
+12:37:07.1 (17258784)|HEAP_ALLOCATE|[22]|Bytes:7
+12:37:07.1 (17303229)|HEAP_ALLOCATE|[23]|Bytes:85
+12:37:07.1 (17320480)|SYSTEM_METHOD_ENTRY|[1]|UserInfo.UserInfo()
+12:37:07.1 (17323040)|STATEMENT_EXECUTE|[1]
+12:37:07.1 (17338142)|SYSTEM_METHOD_EXIT|[1]|UserInfo
+12:37:07.1 (17353112)|METHOD_ENTRY|[23]||System.UserInfo.getUserId()
+12:37:07.1 (17416922)|METHOD_EXIT|[23]||System.UserInfo.getUserId()
+12:37:07.1 (17814536)|SOQL_EXECUTE_BEGIN|[22]|Aggregations:0|SELECT id, title, firstname, lastname, email, phone, mobilephone, fax, street, city, state, postalcode, country FROM User WHERE id = :tmpVar1
+12:37:07.1 (28777972)|SOQL_EXECUTE_END|[22]|Rows:1
+12:37:07.1 (28811482)|HEAP_ALLOCATE|[22]|Bytes:8
+12:37:07.1 (28834138)|HEAP_ALLOCATE|[22]|Bytes:117
+12:37:07.1 (28872837)|HEAP_ALLOCATE|[22]|Bytes:8
+12:37:07.1 (28901618)|HEAP_ALLOCATE|[22]|Bytes:30
+12:37:07.1 (28959796)|HEAP_ALLOCATE|[22]|Bytes:24
+12:37:07.1 (28973284)|VARIABLE_SCOPE_BEGIN|[22]|currentUser|User|true|false
+12:37:07.1 (29022380)|VARIABLE_ASSIGNMENT|[22]|currentUser|{"s":1,"v":{"Id":"00524000001e3UjAAI","FirstName":"Bedrijfs","LastName":"Bureau","Email":"gerwin.tromp@growtiv (7 more) ...","Country":"NL"}}|0x56a1d1a4
+12:37:07.1 (29029066)|STATEMENT_EXECUTE|[24]
+12:37:07.1 (38642957)|HEAP_ALLOCATE|[24]|Bytes:23
+12:37:07.1 (38686384)|METHOD_ENTRY|[5]|01p2400000Cr5V7|MyProfilePageController.MyProfilePageController()
+12:37:07.1 (38691503)|STATEMENT_EXECUTE|[5]
+12:37:07.1 (38701722)|STATEMENT_EXECUTE|[5]
+12:37:07.1 (38719621)|HEAP_ALLOCATE|[24]|Bytes:5
+12:37:07.1 (38739247)|METHOD_EXIT|[5]|MyProfilePageController
+12:37:07.1 (38767124)|HEAP_ALLOCATE|[24]|Bytes:12
+12:37:07.1 (38787961)|CONSTRUCTOR_ENTRY|[24]|01p2400000Cr5V7|<init>()
+12:37:07.1 (38831132)|VARIABLE_SCOPE_BEGIN|[14]|this|MyProfilePageController|true|false
+12:37:07.1 (38888428)|VARIABLE_ASSIGNMENT|[14]|this|{}|0x7a41efe4
+12:37:07.1 (38901250)|HEAP_ALLOCATE|[8]|Bytes:5
+12:37:07.1 (38905442)|STATEMENT_EXECUTE|[5]
+12:37:07.1 (38908281)|HEAP_ALLOCATE|[8]|Bytes:5
+12:37:07.1 (38910033)|STATEMENT_EXECUTE|[7]
+12:37:07.1 (38911732)|STATEMENT_EXECUTE|[8]
+12:37:07.1 (38917861)|HEAP_ALLOCATE|[8]|Bytes:5
+12:37:07.1 (38950377)|VARIABLE_ASSIGNMENT|[8]|this.isEdit|false|0x7a41efe4
+12:37:07.1 (38962609)|HEAP_ALLOCATE|[8]|Bytes:6
+12:37:07.1 (38995965)|STATEMENT_EXECUTE|[14]
+12:37:07.1 (38998098)|STATEMENT_EXECUTE|[15]
+12:37:07.1 (39002716)|HEAP_ALLOCATE|[15]|Bytes:255
+12:37:07.1 (39014767)|HEAP_ALLOCATE|[15]|Bytes:4
+12:37:07.1 (39036846)|METHOD_ENTRY|[18]||System.UserInfo.getUserId()
+12:37:07.1 (39124629)|METHOD_EXIT|[18]||System.UserInfo.getUserId()
+12:37:07.1 (39688087)|SOQL_EXECUTE_BEGIN|[15]|Aggregations:0|SELECT id, email, username, usertype, communitynickname, timezonesidkey, languagelocalekey, firstname, lastname, phone, title, street, city, country, postalcode, state, localesidkey, mobilephone, extension, fax, contact.email FROM User WHERE id = :tmpVar1
+12:37:07.1 (53890183)|SOQL_EXECUTE_END|[15]|Rows:1
+12:37:07.1 (53923764)|HEAP_ALLOCATE|[15]|Bytes:8
+12:37:07.1 (53950596)|HEAP_ALLOCATE|[15]|Bytes:298
+12:37:07.1 (53989222)|HEAP_ALLOCATE|[15]|Bytes:8
+12:37:07.1 (54060511)|HEAP_ALLOCATE|[15]|Bytes:48
+12:37:07.1 (54137892)|VARIABLE_ASSIGNMENT|[15]|this.user|{"s":1,"v":{"Id":"00524000001e3UjAAI","Email":"gerwin.tromp@growtiv (7 more) ...","Username":"bedrijfsbureau@gsa.n (9 more) ...","UserType":"Standard","CommunityNickname":"GSA Bedrijfsbureau","TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","FirstName":"Bedrijfs","LastName":"Bureau","Country":"NL","LocaleSidKey":"nl_NL"}}|0x7a41efe4
+12:37:07.1 (54188100)|HEAP_ALLOCATE|[20]|Bytes:5
+12:37:07.1 (54228499)|STATEMENT_EXECUTE|[20]
+12:37:07.1 (54251485)|CONSTRUCTOR_EXIT|[24]|01p2400000Cr5V7|<init>()
+12:37:07.1 (54258215)|VARIABLE_SCOPE_BEGIN|[24]|controller|MyProfilePageController|true|false
+12:37:07.1 (54294845)|VARIABLE_ASSIGNMENT|[24]|controller|{"isEdit":false,"user":"0x4f795859"}|0x7a41efe4
+12:37:07.1 (54298579)|STATEMENT_EXECUTE|[25]
+12:37:07.1 (54356514)|METHOD_ENTRY|[25]|01p2400000Cr5V7|MyProfilePageController.getUser()
+12:37:07.1 (54398422)|VARIABLE_SCOPE_BEGIN|[10]|this|MyProfilePageController|true|false
+12:37:07.1 (54416898)|VARIABLE_ASSIGNMENT|[10]|this|{"isEdit":false,"user":"0x4f795859"}|0x7a41efe4
+12:37:07.1 (54451284)|HEAP_ALLOCATE|[11]|Bytes:5
+12:37:07.1 (54455317)|STATEMENT_EXECUTE|[10]
+12:37:07.1 (54456621)|STATEMENT_EXECUTE|[11]
+12:37:07.1 (54467553)|METHOD_EXIT|[25]|01p2400000Cr5V7|MyProfilePageController.getUser()
+12:37:07.1 (54477324)|HEAP_ALLOCATE|[25]|Bytes:42
+12:37:07.1 (54524721)|STATEMENT_EXECUTE|[26]
+12:37:07.1 (54534022)|METHOD_ENTRY|[26]|01p2400000Cr5V7|MyProfilePageController.getIsEdit()
+12:37:07.1 (54556267)|VARIABLE_SCOPE_BEGIN|[25]|this|MyProfilePageController|true|false
+12:37:07.1 (54573681)|VARIABLE_ASSIGNMENT|[25]|this|{"isEdit":false,"user":"0x4f795859"}|0x7a41efe4
+12:37:07.1 (54587472)|HEAP_ALLOCATE|[26]|Bytes:5
+12:37:07.1 (54591583)|STATEMENT_EXECUTE|[25]
+12:37:07.1 (54592758)|STATEMENT_EXECUTE|[26]
+12:37:07.1 (54601615)|METHOD_EXIT|[26]|01p2400000Cr5V7|MyProfilePageController.getIsEdit()
+12:37:07.1 (54611720)|HEAP_ALLOCATE|[26]|Bytes:30
+12:37:07.1 (54634064)|STATEMENT_EXECUTE|[27]
+12:37:07.1 (54641885)|METHOD_ENTRY|[27]|01p2400000Cr5V7|MyProfilePageController.edit()
+12:37:07.1 (54672785)|VARIABLE_SCOPE_BEGIN|[29]|this|MyProfilePageController|true|false
+12:37:07.1 (54688915)|VARIABLE_ASSIGNMENT|[29]|this|{"isEdit":false,"user":"0x4f795859"}|0x7a41efe4
+12:37:07.1 (54702209)|HEAP_ALLOCATE|[30]|Bytes:5
+12:37:07.1 (54706627)|STATEMENT_EXECUTE|[29]
+12:37:07.1 (54708652)|STATEMENT_EXECUTE|[30]
+12:37:07.1 (54713590)|HEAP_ALLOCATE|[30]|Bytes:5
+12:37:07.1 (54721227)|VARIABLE_ASSIGNMENT|[30]|this.isEdit|true|0x7a41efe4
+12:37:07.1 (54729146)|METHOD_EXIT|[27]|01p2400000Cr5V7|MyProfilePageController.edit()
+12:37:07.1 (54732352)|STATEMENT_EXECUTE|[28]
+12:37:07.1 (54738333)|METHOD_ENTRY|[28]|01p2400000Cr5V7|MyProfilePageController.getIsEdit()
+12:37:07.1 (54751632)|VARIABLE_SCOPE_BEGIN|[25]|this|MyProfilePageController|true|false
+12:37:07.1 (54766959)|VARIABLE_ASSIGNMENT|[25]|this|{"isEdit":true,"user":"0x4f795859"}|0x7a41efe4
+12:37:07.1 (54779239)|HEAP_ALLOCATE|[26]|Bytes:5
+12:37:07.1 (54782533)|STATEMENT_EXECUTE|[25]
+12:37:07.1 (54783668)|STATEMENT_EXECUTE|[26]
+12:37:07.1 (54790291)|METHOD_EXIT|[28]|01p2400000Cr5V7|MyProfilePageController.getIsEdit()
+12:37:07.1 (54808399)|STATEMENT_EXECUTE|[29]
+12:37:07.1 (54815896)|METHOD_ENTRY|[29]|01p2400000Cr5V7|MyProfilePageController.cancel()
+12:37:07.1 (54834661)|VARIABLE_SCOPE_BEGIN|[53]|this|MyProfilePageController|true|false
+12:37:07.1 (54850235)|VARIABLE_ASSIGNMENT|[53]|this|{"isEdit":true,"user":"0x4f795859"}|0x7a41efe4
+12:37:07.1 (54863652)|HEAP_ALLOCATE|[54]|Bytes:5
+12:37:07.1 (54867273)|STATEMENT_EXECUTE|[53]
+12:37:07.1 (54868658)|STATEMENT_EXECUTE|[54]
+12:37:07.1 (54872260)|HEAP_ALLOCATE|[54]|Bytes:5
+12:37:07.1 (54879152)|VARIABLE_ASSIGNMENT|[54]|this.isEdit|false|0x7a41efe4
+12:37:07.1 (54881416)|STATEMENT_EXECUTE|[55]
+12:37:07.1 (54884822)|HEAP_ALLOCATE|[55]|Bytes:245
+12:37:07.1 (54896286)|HEAP_ALLOCATE|[55]|Bytes:4
+12:37:07.1 (54914930)|METHOD_ENTRY|[58]||System.UserInfo.getUserId()
+12:37:07.1 (54951945)|METHOD_EXIT|[58]||System.UserInfo.getUserId()
+12:37:07.1 (55423372)|SOQL_EXECUTE_BEGIN|[55]|Aggregations:0|SELECT id, email, username, communitynickname, timezonesidkey, languagelocalekey, firstname, lastname, phone, title, street, city, country, postalcode, state, localesidkey, mobilephone, extension, fax, contact.email FROM User WHERE id = :tmpVar1
+12:37:07.1 (66790357)|SOQL_EXECUTE_END|[55]|Rows:1
+12:37:07.1 (66825028)|HEAP_ALLOCATE|[55]|Bytes:8
+12:37:07.1 (66851119)|HEAP_ALLOCATE|[55]|Bytes:278
+12:37:07.1 (66889165)|HEAP_ALLOCATE|[55]|Bytes:8
+12:37:07.1 (66955387)|HEAP_ALLOCATE|[55]|Bytes:44
+12:37:07.1 (67030644)|VARIABLE_ASSIGNMENT|[55]|this.user|{"s":1,"v":{"Id":"00524000001e3UjAAI","Email":"gerwin.tromp@growtiv (7 more) ...","Username":"bedrijfsbureau@gsa.n (9 more) ...","CommunityNickname":"GSA Bedrijfsbureau","TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","FirstName":"Bedrijfs","LastName":"Bureau","Country":"NL","LocaleSidKey":"nl_NL"}}|0x7a41efe4
+12:37:07.1 (67058957)|METHOD_EXIT|[29]|01p2400000Cr5V7|MyProfilePageController.cancel()
+12:37:07.1 (67066980)|STATEMENT_EXECUTE|[30]
+12:37:07.1 (67083876)|METHOD_ENTRY|[30]|01p2400000Cr5V7|MyProfilePageController.getIsEdit()
+12:37:07.1 (67117569)|VARIABLE_SCOPE_BEGIN|[25]|this|MyProfilePageController|true|false
+12:37:07.1 (67154097)|VARIABLE_ASSIGNMENT|[25]|this|{"isEdit":false,"user":"0x2e3a3d0d"}|0x7a41efe4
+12:37:07.1 (67187742)|HEAP_ALLOCATE|[26]|Bytes:5
+12:37:07.1 (67191898)|STATEMENT_EXECUTE|[25]
+12:37:07.1 (67193200)|STATEMENT_EXECUTE|[26]
+12:37:07.1 (67202726)|METHOD_EXIT|[30]|01p2400000Cr5V7|MyProfilePageController.getIsEdit()
+12:37:07.1 (67236130)|STATEMENT_EXECUTE|[32]
+12:37:07.1 (67284880)|HEAP_ALLOCATE|[32]|Bytes:4
+12:37:07.1 (67423855)|VARIABLE_SCOPE_BEGIN|[32]|c|Contact|true|false
+12:37:07.1 (67439745)|VARIABLE_ASSIGNMENT|[32]|c|{}|0x2663759a
+12:37:07.1 (67442453)|STATEMENT_EXECUTE|[33]
+12:37:07.1 (67448948)|HEAP_ALLOCATE|[33]|Bytes:11
+12:37:07.1 (67546931)|VARIABLE_ASSIGNMENT|[33]|this.LastName|"TestContact"|0x2663759a
+12:37:07.1 (67550906)|STATEMENT_EXECUTE|[34]
+12:37:07.1 (67583499)|HEAP_ALLOCATE|[34]|Bytes:8
+12:37:07.1 (67594536)|DML_BEGIN|[34]|Op:Insert|Type:Contact|Rows:1
+12:37:07.1 (67616983)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:37:07.1 (515231747)|DML_END|[34]
+12:37:07.1 (515268959)|STATEMENT_EXECUTE|[36]
+12:37:07.1 (515355255)|VARIABLE_ASSIGNMENT|[36]|this.Title|null|0x2663759a
+12:37:07.1 (515359206)|STATEMENT_EXECUTE|[37]
+12:37:07.1 (515412491)|VARIABLE_ASSIGNMENT|[37]|this.FirstName|"Bedrijfs"|0x2663759a
+12:37:07.1 (515415630)|STATEMENT_EXECUTE|[38]
+12:37:07.1 (515447597)|VARIABLE_ASSIGNMENT|[38]|this.LastName|"Bureau"|0x2663759a
+12:37:07.1 (515450429)|STATEMENT_EXECUTE|[39]
+12:37:07.1 (515492552)|VARIABLE_ASSIGNMENT|[39]|this.Email|"gerwin.tromp@growtiv (7 more) ..."|0x2663759a
+12:37:07.1 (515496807)|STATEMENT_EXECUTE|[40]
+12:37:07.1 (515521437)|VARIABLE_ASSIGNMENT|[40]|this.Phone|null|0x2663759a
+12:37:07.1 (515524087)|STATEMENT_EXECUTE|[41]
+12:37:07.1 (515546949)|VARIABLE_ASSIGNMENT|[41]|this.MobilePhone|null|0x2663759a
+12:37:07.1 (515549547)|STATEMENT_EXECUTE|[42]
+12:37:07.1 (515571270)|VARIABLE_ASSIGNMENT|[42]|this.Fax|null|0x2663759a
+12:37:07.1 (515573861)|STATEMENT_EXECUTE|[43]
+12:37:07.1 (515597482)|VARIABLE_ASSIGNMENT|[43]|this.MailingStreet|null|0x2663759a
+12:37:07.1 (515600010)|STATEMENT_EXECUTE|[44]
+12:37:07.1 (515622574)|VARIABLE_ASSIGNMENT|[44]|this.MailingCity|null|0x2663759a
+12:37:07.1 (515625029)|STATEMENT_EXECUTE|[45]
+12:37:07.1 (515653024)|VARIABLE_ASSIGNMENT|[45]|this.MailingState|null|0x2663759a
+12:37:07.1 (515655917)|STATEMENT_EXECUTE|[46]
+12:37:07.1 (515681062)|VARIABLE_ASSIGNMENT|[46]|this.MailingPostalCode|null|0x2663759a
+12:37:07.1 (515683600)|STATEMENT_EXECUTE|[47]
+12:37:07.1 (515717636)|VARIABLE_ASSIGNMENT|[47]|this.MailingCountry|"NL"|0x2663759a
+12:37:07.1 (515720833)|STATEMENT_EXECUTE|[48]
+12:37:07.1 (515750553)|METHOD_ENTRY|[48]|01p2400000Cr5V7|MyProfilePageController.save()
+12:37:07.1 (515805065)|VARIABLE_SCOPE_BEGIN|[33]|this|MyProfilePageController|true|false
+12:37:07.1 (515847827)|VARIABLE_ASSIGNMENT|[33]|this|{"isEdit":false,"user":"0x2e3a3d0d"}|0x7a41efe4
+12:37:07.1 (515885365)|HEAP_ALLOCATE|[34]|Bytes:5
+12:37:07.1 (515891914)|STATEMENT_EXECUTE|[33]
+12:37:07.1 (515927903)|STATEMENT_EXECUTE|[34]
+12:37:07.1 (515929914)|STATEMENT_EXECUTE|[38]
+12:37:07.1 (515930910)|STATEMENT_EXECUTE|[38]
+12:37:07.1 (515931767)|STATEMENT_EXECUTE|[39]
+12:37:07.1 (515964844)|HEAP_ALLOCATE|[39]|Bytes:8
+12:37:07.1 (515971165)|DML_BEGIN|[39]|Op:Update|Type:User|Rows:1
+12:37:07.1 (515993120)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:37:07.1 (618230427)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000PhJT|UserTrigger on User trigger event BeforeUpdate for [00524000001e3Uj]
+12:37:07.1 (618292795)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:37:07.1 (618319872)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:37:07.1 (618417023)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+12:37:07.1 (618430140)|VARIABLE_SCOPE_BEGIN|[1]|this|UserTrigger|true|false
+12:37:07.1 (618477933)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x32f7832e
+12:37:07.1 (618517324)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+12:37:07.1 (618525420)|VARIABLE_SCOPE_BEGIN|[1]|this|UserTrigger|true|false
+12:37:07.1 (618535818)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x32f7832e
+12:37:07.1 (618542049)|STATEMENT_EXECUTE|[1]
+12:37:07.1 (618544162)|STATEMENT_EXECUTE|[3]
+12:37:07.1 (620422588)|HEAP_ALLOCATE|[3]|Bytes:2
+12:37:07.1 (620465745)|METHOD_ENTRY|[1]|01p2400000Cr9rX|TriggerParams.TriggerParams()
+12:37:07.1 (620469388)|STATEMENT_EXECUTE|[1]
+12:37:07.1 (620474546)|STATEMENT_EXECUTE|[1]
+12:37:07.1 (620484753)|HEAP_ALLOCATE|[3]|Bytes:5
+12:37:07.1 (620497883)|METHOD_EXIT|[1]|TriggerParams
+12:37:07.1 (620516543)|HEAP_ALLOCATE|[3]|Bytes:44
+12:37:07.1 (620632996)|CONSTRUCTOR_ENTRY|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+12:37:07.1 (620671373)|VARIABLE_SCOPE_BEGIN|[13]|this|TriggerParams|true|false
+12:37:07.1 (620703882)|VARIABLE_ASSIGNMENT|[13]|this|{}|0x1337beb5
+12:37:07.1 (620709947)|VARIABLE_SCOPE_BEGIN|[13]|isBefore|Boolean|false|false
+12:37:07.1 (620715239)|VARIABLE_ASSIGNMENT|[13]|isBefore|true
+12:37:07.1 (620717871)|VARIABLE_SCOPE_BEGIN|[13]|isAfter|Boolean|false|false
+12:37:07.1 (620720284)|VARIABLE_ASSIGNMENT|[13]|isAfter|false
+12:37:07.1 (620722554)|VARIABLE_SCOPE_BEGIN|[13]|isInsert|Boolean|false|false
+12:37:07.1 (620724670)|VARIABLE_ASSIGNMENT|[13]|isInsert|false
+12:37:07.1 (620726827)|VARIABLE_SCOPE_BEGIN|[13]|isUpdate|Boolean|false|false
+12:37:07.1 (620729008)|VARIABLE_ASSIGNMENT|[13]|isUpdate|true
+12:37:07.1 (620731199)|VARIABLE_SCOPE_BEGIN|[13]|isDelete|Boolean|false|false
+12:37:07.1 (620733136)|VARIABLE_ASSIGNMENT|[13]|isDelete|false
+12:37:07.1 (620735208)|VARIABLE_SCOPE_BEGIN|[13]|isUndelete|Boolean|false|false
+12:37:07.1 (620737384)|VARIABLE_ASSIGNMENT|[13]|isUndelete|false
+12:37:07.1 (620739474)|VARIABLE_SCOPE_BEGIN|[13]|triggerNew|List<SObject>|true|false
+12:37:07.1 (622817027)|VARIABLE_ASSIGNMENT|[13]|triggerNew|{"s":1,"v":[{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:34:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:34:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}]}|0x385106cf
+12:37:07.1 (622831160)|VARIABLE_SCOPE_BEGIN|[13]|triggerOld|List<SObject>|true|false
+12:37:07.1 (623600491)|VARIABLE_ASSIGNMENT|[13]|triggerOld|{"s":1,"v":[{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:34:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:34:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}]}|0x6650fad5
+12:37:07.1 (623611928)|VARIABLE_SCOPE_BEGIN|[13]|newMap|Map<Id,SObject>|true|false
+12:37:07.1 (624078836)|VARIABLE_ASSIGNMENT|[13]|newMap|{"s":1,"v":{"00524000001e3UjAAI":{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:34:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:34:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}}}|0x5607ffae
+12:37:07.1 (624090451)|VARIABLE_SCOPE_BEGIN|[13]|oldMap|Map<Id,SObject>|true|false
+12:37:07.1 (624553453)|VARIABLE_ASSIGNMENT|[13]|oldMap|{"s":1,"v":{"00524000001e3UjAAI":{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:34:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:34:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}}}|0x2195dd33
+12:37:07.1 (624573126)|HEAP_ALLOCATE|[16]|Bytes:5
+12:37:07.1 (624581456)|STATEMENT_EXECUTE|[1]
+12:37:07.1 (624584857)|HEAP_ALLOCATE|[16]|Bytes:5
+12:37:07.1 (624587056)|STATEMENT_EXECUTE|[2]
+12:37:07.1 (624589015)|STATEMENT_EXECUTE|[3]
+12:37:07.1 (624590167)|STATEMENT_EXECUTE|[4]
+12:37:07.1 (624591151)|STATEMENT_EXECUTE|[5]
+12:37:07.1 (624592330)|STATEMENT_EXECUTE|[6]
+12:37:07.1 (624593216)|STATEMENT_EXECUTE|[7]
+12:37:07.1 (624594130)|STATEMENT_EXECUTE|[8]
+12:37:07.1 (624594992)|STATEMENT_EXECUTE|[9]
+12:37:07.1 (624595864)|STATEMENT_EXECUTE|[10]
+12:37:07.1 (624596900)|STATEMENT_EXECUTE|[11]
+12:37:07.1 (624624618)|STATEMENT_EXECUTE|[15]
+12:37:07.1 (624626270)|STATEMENT_EXECUTE|[16]
+12:37:07.1 (624631016)|HEAP_ALLOCATE|[16]|Bytes:5
+12:37:07.1 (624643553)|VARIABLE_ASSIGNMENT|[16]|this.isBefore|true|0x1337beb5
+12:37:07.1 (624645741)|STATEMENT_EXECUTE|[17]
+12:37:07.1 (624648549)|HEAP_ALLOCATE|[17]|Bytes:5
+12:37:07.1 (624653369)|VARIABLE_ASSIGNMENT|[17]|this.isAfter|false|0x1337beb5
+12:37:07.1 (624655072)|STATEMENT_EXECUTE|[18]
+12:37:07.1 (624657468)|HEAP_ALLOCATE|[18]|Bytes:5
+12:37:07.1 (624662553)|VARIABLE_ASSIGNMENT|[18]|this.isInsert|false|0x1337beb5
+12:37:07.1 (624664377)|STATEMENT_EXECUTE|[19]
+12:37:07.1 (624666832)|HEAP_ALLOCATE|[19]|Bytes:5
+12:37:07.1 (624671699)|VARIABLE_ASSIGNMENT|[19]|this.isUpdate|true|0x1337beb5
+12:37:07.1 (624673281)|STATEMENT_EXECUTE|[20]
+12:37:07.1 (624678577)|HEAP_ALLOCATE|[20]|Bytes:5
+12:37:07.1 (624682998)|VARIABLE_ASSIGNMENT|[20]|this.isDelete|false|0x1337beb5
+12:37:07.1 (624684735)|STATEMENT_EXECUTE|[21]
+12:37:07.1 (624687080)|HEAP_ALLOCATE|[21]|Bytes:5
+12:37:07.1 (624691307)|VARIABLE_ASSIGNMENT|[21]|this.isUndelete|false|0x1337beb5
+12:37:07.1 (624692970)|STATEMENT_EXECUTE|[22]
+12:37:07.1 (625148421)|VARIABLE_ASSIGNMENT|[22]|this.triggerNew|{"s":1,"v":[{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:34:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:34:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}]}|0x1337beb5
+12:37:07.1 (625156981)|STATEMENT_EXECUTE|[23]
+12:37:07.1 (625610224)|VARIABLE_ASSIGNMENT|[23]|this.triggerOld|{"s":1,"v":[{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:34:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:34:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}]}|0x1337beb5
+12:37:07.1 (625626786)|STATEMENT_EXECUTE|[24]
+12:37:07.1 (626099337)|VARIABLE_ASSIGNMENT|[24]|this.newMap|{"s":1,"v":{"00524000001e3UjAAI":{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:34:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:34:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}}}|0x1337beb5
+12:37:07.1 (626108414)|STATEMENT_EXECUTE|[25]
+12:37:07.1 (626583805)|VARIABLE_ASSIGNMENT|[25]|this.oldMap|{"s":1,"v":{"00524000001e3UjAAI":{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:34:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:34:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}}}|0x1337beb5
+12:37:07.1 (626622316)|CONSTRUCTOR_EXIT|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+12:37:07.1 (630792388)|HEAP_ALLOCATE|[3]|Bytes:4
+12:37:07.1 (630814501)|HEAP_ALLOCATE|[3]|Bytes:69
+12:37:07.1 (630843077)|METHOD_ENTRY|[1]|01p2400000DMxSj|UserUtil.UserUtil()
+12:37:07.1 (630847393)|STATEMENT_EXECUTE|[1]
+12:37:07.1 (630857590)|STATEMENT_EXECUTE|[1]
+12:37:07.1 (631883278)|SYSTEM_MODE_ENTER|false
+12:37:07.1 (631901775)|HEAP_ALLOCATE|[3]|Bytes:5
+12:37:07.1 (631910323)|SYSTEM_MODE_EXIT|false
+12:37:07.1 (631923055)|METHOD_EXIT|[1]|UserUtil
+12:37:07.1 (631965115)|METHOD_ENTRY|[3]|01p2400000DMxSj|UserUtil.entry(TriggerParams)
+12:37:07.1 (631978695)|VARIABLE_SCOPE_BEGIN|[2]|triggerParams|TriggerParams|true|false
+12:37:07.1 (632044020)|VARIABLE_ASSIGNMENT|[2]|triggerParams|{"isAfter":false,"isBefore":true,"isDelete":false,"isInsert":false,"isUndelete":false,"isUpdate":true,"newMap":"0x5607ffae","oldMap":"0x2195dd33","triggerNew":"0x385106cf","triggerOld":"0x6650fad5"}|0x1337beb5
+12:37:07.1 (632071080)|SYSTEM_MODE_ENTER|false
+12:37:07.1 (632077320)|HEAP_ALLOCATE|[3]|Bytes:5
+12:37:07.1 (632081812)|STATEMENT_EXECUTE|[2]
+12:37:07.1 (632083102)|STATEMENT_EXECUTE|[3]
+12:37:07.1 (632096048)|VARIABLE_SCOPE_BEGIN|[3]|triggerNew|List<User>|true|false
+12:37:07.1 (633476774)|VARIABLE_ASSIGNMENT|[3]|triggerNew|{"s":1,"v":[{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:34:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:34:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}]}|0x385106cf
+12:37:07.1 (633486226)|STATEMENT_EXECUTE|[4]
+12:37:07.1 (633496139)|VARIABLE_SCOPE_BEGIN|[4]|triggerOld|List<User>|true|false
+12:37:07.1 (633991226)|VARIABLE_ASSIGNMENT|[4]|triggerOld|{"s":1,"v":[{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:34:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:34:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}]}|0x6650fad5
+12:37:07.1 (633999467)|STATEMENT_EXECUTE|[5]
+12:37:07.1 (634012833)|VARIABLE_SCOPE_BEGIN|[5]|oldMap|Map<Id,User>|true|false
+12:37:07.1 (634475481)|VARIABLE_ASSIGNMENT|[5]|oldMap|{"s":1,"v":{"00524000001e3UjAAI":{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:34:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:34:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}}}|0x2195dd33
+12:37:07.1 (634483632)|STATEMENT_EXECUTE|[6]
+12:37:07.1 (634492107)|VARIABLE_SCOPE_BEGIN|[6]|newMap|Map<Id,User>|true|false
+12:37:07.1 (634960740)|VARIABLE_ASSIGNMENT|[6]|newMap|{"s":1,"v":{"00524000001e3UjAAI":{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:34:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:34:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}}}|0x5607ffae
+12:37:07.1 (634974675)|STATEMENT_EXECUTE|[9]
+12:37:07.1 (634979611)|SYSTEM_MODE_EXIT|false
+12:37:07.1 (634994860)|METHOD_EXIT|[3]|01p2400000DMxSj|UserUtil.entry(TriggerParams)
+12:37:07.635 (635006829)|CUMULATIVE_LIMIT_USAGE
+12:37:07.635 (635006829)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 3 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:37:07.635 (635006829)|CUMULATIVE_LIMIT_USAGE_END
+
+12:37:07.1 (637113181)|CODE_UNIT_FINISHED|UserTrigger on User trigger event BeforeUpdate for [00524000001e3Uj]
+12:37:07.1 (739208076)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000PhJT|UserTrigger on User trigger event AfterUpdate for [00524000001e3Uj]
+12:37:07.1 (739261880)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:37:07.1 (739300171)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:37:07.1 (739387703)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+12:37:07.1 (739402818)|VARIABLE_SCOPE_BEGIN|[1]|this|UserTrigger|true|false
+12:37:07.1 (739453309)|VARIABLE_ASSIGNMENT|[1]|this|{}|0xcc6b1af
+12:37:07.1 (739564304)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+12:37:07.1 (739574333)|VARIABLE_SCOPE_BEGIN|[1]|this|UserTrigger|true|false
+12:37:07.1 (739593296)|VARIABLE_ASSIGNMENT|[1]|this|{}|0xcc6b1af
+12:37:07.1 (739603446)|STATEMENT_EXECUTE|[1]
+12:37:07.1 (739606655)|STATEMENT_EXECUTE|[3]
+12:37:07.1 (739616308)|HEAP_ALLOCATE|[3]|Bytes:44
+12:37:07.1 (739738475)|CONSTRUCTOR_ENTRY|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+12:37:07.1 (739751529)|VARIABLE_SCOPE_BEGIN|[13]|this|TriggerParams|true|false
+12:37:07.1 (739786150)|VARIABLE_ASSIGNMENT|[13]|this|{}|0x388a0576
+12:37:07.1 (739796837)|VARIABLE_SCOPE_BEGIN|[13]|isBefore|Boolean|false|false
+12:37:07.1 (739805636)|VARIABLE_ASSIGNMENT|[13]|isBefore|false
+12:37:07.1 (739810097)|VARIABLE_SCOPE_BEGIN|[13]|isAfter|Boolean|false|false
+12:37:07.1 (739814414)|VARIABLE_ASSIGNMENT|[13]|isAfter|true
+12:37:07.1 (739817865)|VARIABLE_SCOPE_BEGIN|[13]|isInsert|Boolean|false|false
+12:37:07.1 (739821572)|VARIABLE_ASSIGNMENT|[13]|isInsert|false
+12:37:07.1 (739824839)|VARIABLE_SCOPE_BEGIN|[13]|isUpdate|Boolean|false|false
+12:37:07.1 (739828730)|VARIABLE_ASSIGNMENT|[13]|isUpdate|true
+12:37:07.1 (739832589)|VARIABLE_SCOPE_BEGIN|[13]|isDelete|Boolean|false|false
+12:37:07.1 (739836735)|VARIABLE_ASSIGNMENT|[13]|isDelete|false
+12:37:07.1 (739839896)|VARIABLE_SCOPE_BEGIN|[13]|isUndelete|Boolean|false|false
+12:37:07.1 (739844039)|VARIABLE_ASSIGNMENT|[13]|isUndelete|false
+12:37:07.1 (739846679)|VARIABLE_SCOPE_BEGIN|[13]|triggerNew|List<SObject>|true|false
+12:37:07.1 (741661676)|VARIABLE_ASSIGNMENT|[13]|triggerNew|{"s":1,"v":[{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:37:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:37:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}]}|0x42e202c6
+12:37:07.1 (741675190)|VARIABLE_SCOPE_BEGIN|[13]|triggerOld|List<SObject>|true|false
+12:37:07.1 (743017925)|VARIABLE_ASSIGNMENT|[13]|triggerOld|{"s":1,"v":[{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:34:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:34:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}]}|0x182baca3
+12:37:07.1 (743033247)|VARIABLE_SCOPE_BEGIN|[13]|newMap|Map<Id,SObject>|true|false
+12:37:07.1 (744064832)|VARIABLE_ASSIGNMENT|[13]|newMap|{"s":1,"v":{"00524000001e3UjAAI":{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:37:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:37:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}}}|0x21592dc0
+12:37:07.1 (744078108)|VARIABLE_SCOPE_BEGIN|[13]|oldMap|Map<Id,SObject>|true|false
+12:37:07.1 (744630791)|VARIABLE_ASSIGNMENT|[13]|oldMap|{"s":1,"v":{"00524000001e3UjAAI":{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:34:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:34:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}}}|0x49103d28
+12:37:07.1 (744648205)|HEAP_ALLOCATE|[16]|Bytes:5
+12:37:07.1 (744656625)|STATEMENT_EXECUTE|[1]
+12:37:07.1 (744660187)|HEAP_ALLOCATE|[16]|Bytes:5
+12:37:07.1 (744662112)|STATEMENT_EXECUTE|[2]
+12:37:07.1 (744663745)|STATEMENT_EXECUTE|[3]
+12:37:07.1 (744664914)|STATEMENT_EXECUTE|[4]
+12:37:07.1 (744665887)|STATEMENT_EXECUTE|[5]
+12:37:07.1 (744667383)|STATEMENT_EXECUTE|[6]
+12:37:07.1 (744669170)|STATEMENT_EXECUTE|[7]
+12:37:07.1 (744670960)|STATEMENT_EXECUTE|[8]
+12:37:07.1 (744673113)|STATEMENT_EXECUTE|[9]
+12:37:07.1 (744675073)|STATEMENT_EXECUTE|[10]
+12:37:07.1 (744677065)|STATEMENT_EXECUTE|[11]
+12:37:07.1 (744710196)|STATEMENT_EXECUTE|[15]
+12:37:07.1 (744713684)|STATEMENT_EXECUTE|[16]
+12:37:07.1 (744720801)|HEAP_ALLOCATE|[16]|Bytes:5
+12:37:07.1 (744735606)|VARIABLE_ASSIGNMENT|[16]|this.isBefore|false|0x388a0576
+12:37:07.1 (744737670)|STATEMENT_EXECUTE|[17]
+12:37:07.1 (744740569)|HEAP_ALLOCATE|[17]|Bytes:5
+12:37:07.1 (744745076)|VARIABLE_ASSIGNMENT|[17]|this.isAfter|true|0x388a0576
+12:37:07.1 (744747074)|STATEMENT_EXECUTE|[18]
+12:37:07.1 (744749528)|HEAP_ALLOCATE|[18]|Bytes:5
+12:37:07.1 (744754357)|VARIABLE_ASSIGNMENT|[18]|this.isInsert|false|0x388a0576
+12:37:07.1 (744756064)|STATEMENT_EXECUTE|[19]
+12:37:07.1 (744758406)|HEAP_ALLOCATE|[19]|Bytes:5
+12:37:07.1 (744762889)|VARIABLE_ASSIGNMENT|[19]|this.isUpdate|true|0x388a0576
+12:37:07.1 (744764434)|STATEMENT_EXECUTE|[20]
+12:37:07.1 (744766837)|HEAP_ALLOCATE|[20]|Bytes:5
+12:37:07.1 (744770390)|VARIABLE_ASSIGNMENT|[20]|this.isDelete|false|0x388a0576
+12:37:07.1 (744772122)|STATEMENT_EXECUTE|[21]
+12:37:07.1 (744774487)|HEAP_ALLOCATE|[21]|Bytes:5
+12:37:07.1 (744778599)|VARIABLE_ASSIGNMENT|[21]|this.isUndelete|false|0x388a0576
+12:37:07.1 (744780249)|STATEMENT_EXECUTE|[22]
+12:37:07.1 (745254491)|VARIABLE_ASSIGNMENT|[22]|this.triggerNew|{"s":1,"v":[{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:37:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:37:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}]}|0x388a0576
+12:37:07.1 (745263219)|STATEMENT_EXECUTE|[23]
+12:37:07.1 (745809832)|VARIABLE_ASSIGNMENT|[23]|this.triggerOld|{"s":1,"v":[{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:34:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:34:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}]}|0x388a0576
+12:37:07.1 (745820220)|STATEMENT_EXECUTE|[24]
+12:37:07.1 (746377231)|VARIABLE_ASSIGNMENT|[24]|this.newMap|{"s":1,"v":{"00524000001e3UjAAI":{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:37:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:37:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}}}|0x388a0576
+12:37:07.1 (746385874)|STATEMENT_EXECUTE|[25]
+12:37:07.1 (747110852)|VARIABLE_ASSIGNMENT|[25]|this.oldMap|{"s":1,"v":{"00524000001e3UjAAI":{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:34:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:34:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}}}|0x388a0576
+12:37:07.1 (747154315)|CONSTRUCTOR_EXIT|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+12:37:07.1 (747175170)|METHOD_ENTRY|[3]|01p2400000DMxSj|UserUtil.entry(TriggerParams)
+12:37:07.1 (747185424)|VARIABLE_SCOPE_BEGIN|[2]|triggerParams|TriggerParams|true|false
+12:37:07.1 (747229539)|VARIABLE_ASSIGNMENT|[2]|triggerParams|{"isAfter":true,"isBefore":false,"isDelete":false,"isInsert":false,"isUndelete":false,"isUpdate":true,"newMap":"0x21592dc0","oldMap":"0x49103d28","triggerNew":"0x42e202c6","triggerOld":"0x182baca3"}|0x388a0576
+12:37:07.1 (748571653)|SYSTEM_MODE_ENTER|false
+12:37:07.1 (748582625)|HEAP_ALLOCATE|[3]|Bytes:5
+12:37:07.1 (748588138)|STATEMENT_EXECUTE|[2]
+12:37:07.1 (748589827)|STATEMENT_EXECUTE|[3]
+12:37:07.1 (748598497)|VARIABLE_SCOPE_BEGIN|[3]|triggerNew|List<User>|true|false
+12:37:07.1 (749138198)|VARIABLE_ASSIGNMENT|[3]|triggerNew|{"s":1,"v":[{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:37:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:37:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}]}|0x42e202c6
+12:37:07.1 (749147010)|STATEMENT_EXECUTE|[4]
+12:37:07.1 (749154129)|VARIABLE_SCOPE_BEGIN|[4]|triggerOld|List<User>|true|false
+12:37:07.1 (749666862)|VARIABLE_ASSIGNMENT|[4]|triggerOld|{"s":1,"v":[{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:34:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:34:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}]}|0x182baca3
+12:37:07.1 (749674907)|STATEMENT_EXECUTE|[5]
+12:37:07.1 (749682676)|VARIABLE_SCOPE_BEGIN|[5]|oldMap|Map<Id,User>|true|false
+12:37:07.1 (750142039)|VARIABLE_ASSIGNMENT|[5]|oldMap|{"s":1,"v":{"00524000001e3UjAAI":{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:34:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:34:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}}}|0x49103d28
+12:37:07.1 (750150808)|STATEMENT_EXECUTE|[6]
+12:37:07.1 (750157835)|VARIABLE_SCOPE_BEGIN|[6]|newMap|Map<Id,User>|true|false
+12:37:07.1 (750628522)|VARIABLE_ASSIGNMENT|[6]|newMap|{"s":1,"v":{"00524000001e3UjAAI":{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:37:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:37:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}}}|0x21592dc0
+12:37:07.1 (750639092)|STATEMENT_EXECUTE|[9]
+12:37:07.1 (750646845)|STATEMENT_EXECUTE|[10]
+12:37:07.1 (750648103)|STATEMENT_EXECUTE|[11]
+12:37:07.1 (750739600)|HEAP_ALLOCATE|[11]|Bytes:4
+12:37:07.1 (750750438)|HEAP_ALLOCATE|[11]|Bytes:82
+12:37:07.1 (750755713)|HEAP_ALLOCATE|[11]|Bytes:4
+12:37:07.1 (753047888)|SOQL_EXECUTE_BEGIN|[11]|Aggregations:0|SELECT Id FROM Profile WHERE (Name = 'Bouwticket account' OR Name = 'Bouwmanager')
+12:37:07.1 (757617527)|SOQL_EXECUTE_END|[11]|Rows:2
+12:37:07.1 (757660139)|HEAP_ALLOCATE|[11]|Bytes:12
+12:37:07.1 (757677298)|HEAP_ALLOCATE|[11]|Bytes:58
+12:37:07.1 (757783958)|HEAP_ALLOCATE|[11]|Bytes:12
+12:37:07.1 (757889918)|HEAP_ALLOCATE|[11]|Bytes:8
+12:37:07.1 (757908575)|HEAP_ALLOCATE|[11]|Bytes:4
+12:37:07.1 (757927009)|HEAP_ALLOCATE|[11]|Bytes:8
+12:37:07.1 (757939539)|HEAP_ALLOCATE|[11]|Bytes:4
+12:37:07.1 (757958264)|VARIABLE_SCOPE_BEGIN|[11]|profilesById|Map<Id,Profile>|true|false
+12:37:07.1 (758030786)|VARIABLE_ASSIGNMENT|[11]|profilesById|{"s":1,"v":{"00e24000000YX5iAAG":{"s":2,"v":{"Id":"00e24000000YX5iAAG"}},"00e24000000YX5jAAG":{"s":3,"v":{"Id":"00e24000000YX5jAAG"}}}}|0x2099cc06
+12:37:07.1 (758041912)|STATEMENT_EXECUTE|[13]
+12:37:07.1 (758050557)|HEAP_ALLOCATE|[13]|Bytes:13
+12:37:07.1 (758202905)|HEAP_ALLOCATE|[13]|Bytes:104
+12:37:07.1 (758235362)|HEAP_ALLOCATE|[13]|Bytes:117
+12:37:07.1 (758274081)|USER_DEBUG|[13]|DEBUG|profilesById {00e24000000YX5iAAG=Profile:{Id=00e24000000YX5iAAG}, 00e24000000YX5jAAG=Profile:{Id=00e24000000YX5jAAG}}
+12:37:07.1 (758557603)|HEAP_ALLOCATE|[14]|Bytes:5
+12:37:07.1 (758633526)|VARIABLE_SCOPE_BEGIN|[14]|user|User|true|false
+12:37:07.1 (760033915)|VARIABLE_ASSIGNMENT|[14]|user|{"ProfileId":"00e240000016RjAAAU","LastModifiedDate":"2016-12-07T11:37:08.000Z","ReceivesAdminInfoEma (3 more) ...":true,"Email":"gerwin.tromp@growtiv (7 more) ...","IsBadged":false,"TimeZoneSidKey":"Europe/Amsterdam","LanguageLocaleKey":"en_US","UserRoleId":"00E24000000MLU5EAO","IsActive":true,"LastLoginDate":"2016-12-07T08:40:34.000Z","ForecastEnabled":false,"DigestFrequency":"D","CompanyName":"GSA","CommunityNickname":"GSA Bedrijfsbureau","CreatedById":"00524000001e3T5AAI","LastPasswordChangeDa (2 more) ...":"2016-11-17T08:32:25.000Z","LocaleSidKey":"nl_NL","FirstName":"Bedrijfs","EmailEncodingKey":"ISO-8859-1","ReceivesInfoEmails":false,"SystemModstamp":"2016-12-07T11:37:08.000Z","IsPortalEnabled":false,"Username":"bedrijfsbureau@gsa.n (9 more) ...","Alias":"BBGSA","DefaultGroupNotifica (13 more) ...":"N","CreatedDate":"2015-10-12T08:15:46.000Z","Country":"NL","LastName":"Bureau","TIMBASURVEYS__remind (15 more) ...":0,"Id":"00524000001e3UjAAI","UserType":"Standard","LastModifiedById":"00524000001e3UjAAI"}|0x1549707d
+12:37:07.1 (760049421)|STATEMENT_EXECUTE|[14]
+12:37:07.1 (760052425)|STATEMENT_EXECUTE|[15]
+12:37:07.1 (760340251)|USER_DEBUG|[15]|DEBUG|00e240000016RjAAAU
+12:37:07.1 (760355380)|STATEMENT_EXECUTE|[16]
+12:37:07.1 (760515086)|USER_DEBUG|[16]|DEBUG|true
+12:37:07.1 (760524376)|STATEMENT_EXECUTE|[17]
+12:37:07.1 (760669415)|USER_DEBUG|[17]|DEBUG|false
+12:37:07.1 (760797325)|STATEMENT_EXECUTE|[18]
+12:37:07.1 (760821143)|HEAP_ALLOCATE|[14]|Bytes:5
+12:37:07.1 (760850113)|VARIABLE_ASSIGNMENT|[14]|user|null|
+12:37:07.1 (760862567)|SYSTEM_MODE_EXIT|false
+12:37:07.1 (760882785)|METHOD_EXIT|[3]|01p2400000DMxSj|UserUtil.entry(TriggerParams)
+12:37:07.760 (760900458)|CUMULATIVE_LIMIT_USAGE
+12:37:07.760 (760900458)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 5 out of 100
+  Number of query rows: 5 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:37:07.760 (760900458)|CUMULATIVE_LIMIT_USAGE_END
+
+12:37:07.1 (763554308)|CODE_UNIT_FINISHED|UserTrigger on User trigger event AfterUpdate for [00524000001e3Uj]
+12:37:07.1 (765215119)|DML_END|[39]
+12:37:07.1 (765272255)|STATEMENT_EXECUTE|[40]
+12:37:07.1 (765277227)|STATEMENT_EXECUTE|[43]
+12:37:07.1 (765297446)|HEAP_ALLOCATE|[43]|Bytes:5
+12:37:07.1 (765329950)|VARIABLE_ASSIGNMENT|[43]|this.isEdit|false|0x7a41efe4
+12:37:07.1 (765355545)|METHOD_EXIT|[48]|01p2400000Cr5V7|MyProfilePageController.save()
+12:37:07.1 (765361286)|STATEMENT_EXECUTE|[49]
+12:37:07.1 (765384568)|HEAP_ALLOCATE|[49]|Bytes:20
+12:37:07.1 (765519715)|HEAP_ALLOCATE|[49]|Bytes:20
+12:37:07.1 (765545690)|METHOD_ENTRY|[49]|01p2400000Cr5V7|MyProfilePageController.changePassword()
+12:37:07.1 (765563970)|VARIABLE_SCOPE_BEGIN|[49]|this|MyProfilePageController|true|false
+12:37:07.1 (765616714)|VARIABLE_ASSIGNMENT|[49]|this|{"isEdit":false,"user":"0x2e3a3d0d"}|0x7a41efe4
+12:37:07.1 (765659116)|HEAP_ALLOCATE|[50]|Bytes:5
+12:37:07.1 (765665772)|STATEMENT_EXECUTE|[49]
+12:37:07.1 (765668254)|STATEMENT_EXECUTE|[50]
+12:37:07.1 (765705641)|METHOD_EXIT|[49]|01p2400000Cr5V7|MyProfilePageController.changePassword()
+12:37:07.1 (765723196)|HEAP_ALLOCATE|[49]|Bytes:20
+12:37:07.1 (765806107)|SYSTEM_MODE_EXIT|false
+12:37:07.765 (765820152)|CUMULATIVE_LIMIT_USAGE
+12:37:07.765 (765820152)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 5 out of 100
+  Number of query rows: 5 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:37:07.765 (765820152)|CUMULATIVE_LIMIT_USAGE_END
+
+12:37:07.1 (765853095)|CODE_UNIT_FINISHED|MyProfilePageControllerTest.testSave
+12:37:07.1 (768325137)|EXECUTION_FINISHED
+12:37:08.6 (1006575653)|USER_INFO|[EXTERNAL]|00524000001e3Uj|bedrijfsbureau@gsa.nl.sandbox|Midden-Europese standaardtijd|GMT+01:00
+12:37:08.6 (1006587663)|EXECUTION_STARTED
+12:37:08.6 (1006590510)|CODE_UNIT_STARTED|[EXTERNAL]|01p2400000Cr5V8|MyProfilePageControllerTest.testSetContactFields
+12:37:08.6 (1006737384)|HEAP_ALLOCATE|[72]|Bytes:3
+12:37:08.6 (1006780783)|HEAP_ALLOCATE|[77]|Bytes:152
+12:37:08.6 (1006803057)|HEAP_ALLOCATE|[342]|Bytes:408
+12:37:08.6 (1006824633)|HEAP_ALLOCATE|[355]|Bytes:408
+12:37:08.6 (1006844386)|HEAP_ALLOCATE|[467]|Bytes:48
+12:37:08.6 (1006873962)|HEAP_ALLOCATE|[139]|Bytes:6
+12:37:08.6 (1006890305)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:147
+12:37:08.6 (1006900749)|METHOD_ENTRY|[5]|01p2400000Cr5V8|MyProfilePageControllerTest.MyProfilePageControllerTest()
+12:37:08.6 (1006904593)|STATEMENT_EXECUTE|[5]
+12:37:08.6 (1006910716)|STATEMENT_EXECUTE|[5]
+12:37:08.6 (1008214843)|SYSTEM_MODE_ENTER|false
+12:37:08.6 (1008250066)|HEAP_ALLOCATE|[50]|Bytes:5
+12:37:08.6 (1008273523)|HEAP_ALLOCATE|[56]|Bytes:5
+12:37:08.6 (1008286151)|HEAP_ALLOCATE|[64]|Bytes:7
+12:37:08.6 (1008304721)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+12:37:08.6 (1008315366)|SYSTEM_MODE_EXIT|false
+12:37:08.6 (1008329427)|METHOD_EXIT|[5]|MyProfilePageControllerTest
+12:37:08.6 (1008379310)|SYSTEM_MODE_ENTER|false
+12:37:08.6 (1008386967)|HEAP_ALLOCATE|[7]|Bytes:5
+12:37:08.6 (1008392545)|STATEMENT_EXECUTE|[6]
+12:37:08.6 (1008395404)|STATEMENT_EXECUTE|[7]
+12:37:08.6 (1008400449)|HEAP_ALLOCATE|[7]|Bytes:137
+12:37:08.6 (1008409221)|HEAP_ALLOCATE|[7]|Bytes:4
+12:37:08.6 (1008420528)|HEAP_ALLOCATE|[7]|Bytes:7
+12:37:08.6 (1008439276)|HEAP_ALLOCATE|[8]|Bytes:85
+12:37:08.6 (1008448453)|SYSTEM_METHOD_ENTRY|[1]|UserInfo.UserInfo()
+12:37:08.6 (1008451521)|STATEMENT_EXECUTE|[1]
+12:37:08.6 (1008465429)|SYSTEM_METHOD_EXIT|[1]|UserInfo
+12:37:08.6 (1008477069)|METHOD_ENTRY|[8]||System.UserInfo.getUserId()
+12:37:08.6 (1008538413)|METHOD_EXIT|[8]||System.UserInfo.getUserId()
+12:37:08.6 (1009024212)|SOQL_EXECUTE_BEGIN|[7]|Aggregations:0|SELECT title, firstname, lastname, email, phone, mobilephone, fax, street, city, state, postalcode, country FROM User WHERE id = :tmpVar1
+12:37:08.6 (1025979279)|SOQL_EXECUTE_END|[7]|Rows:1
+12:37:08.6 (1026015455)|HEAP_ALLOCATE|[7]|Bytes:8
+12:37:08.6 (1026035021)|HEAP_ALLOCATE|[7]|Bytes:117
+12:37:08.6 (1026074217)|HEAP_ALLOCATE|[7]|Bytes:8
+12:37:08.6 (1026099136)|HEAP_ALLOCATE|[7]|Bytes:30
+12:37:08.6 (1026149484)|HEAP_ALLOCATE|[7]|Bytes:24
+12:37:08.6 (1026164352)|VARIABLE_SCOPE_BEGIN|[7]|u|User|true|false
+12:37:08.6 (1026233845)|VARIABLE_ASSIGNMENT|[7]|u|{"s":1,"v":{"FirstName":"Bedrijfs","LastName":"Bureau","Email":"gerwin.tromp@growtiv (7 more) ...","Country":"NL","Id":"00524000001e3UjAAI"}}|0x7233d8d7
+12:37:08.6 (1026244482)|STATEMENT_EXECUTE|[10]
+12:37:08.6 (1026273854)|HEAP_ALLOCATE|[10]|Bytes:4
+12:37:08.6 (1026333734)|VARIABLE_SCOPE_BEGIN|[10]|c|Contact|true|false
+12:37:08.6 (1026349673)|VARIABLE_ASSIGNMENT|[10]|c|{}|0xd994308
+12:37:08.6 (1026352410)|STATEMENT_EXECUTE|[12]
+12:37:08.6 (1026377015)|HEAP_ALLOCATE|[12]|Bytes:23
+12:37:08.6 (1026392743)|METHOD_ENTRY|[5]|01p2400000Cr5V7|MyProfilePageController.MyProfilePageController()
+12:37:08.6 (1026395297)|STATEMENT_EXECUTE|[5]
+12:37:08.6 (1026398324)|STATEMENT_EXECUTE|[5]
+12:37:08.6 (1026408905)|HEAP_ALLOCATE|[12]|Bytes:5
+12:37:08.6 (1026425007)|METHOD_EXIT|[5]|MyProfilePageController
+12:37:08.6 (1026448191)|METHOD_ENTRY|[12]|01p2400000Cr5V7|MyProfilePageController.setContactFields(Contact, User)
+12:37:08.6 (1026500924)|VARIABLE_SCOPE_BEGIN|[61]|c|Contact|true|false
+12:37:08.6 (1026510336)|VARIABLE_ASSIGNMENT|[61]|c|{}|0xd994308
+12:37:08.6 (1026513294)|VARIABLE_SCOPE_BEGIN|[61]|u|User|true|false
+12:37:08.6 (1026526319)|VARIABLE_ASSIGNMENT|[61]|u|{"s":1,"v":{"FirstName":"Bedrijfs","LastName":"Bureau","Email":"gerwin.tromp@growtiv (7 more) ...","Country":"NL","Id":"00524000001e3UjAAI"}}|0x7233d8d7
+12:37:08.6 (1026551433)|HEAP_ALLOCATE|[62]|Bytes:5
+12:37:08.6 (1026556200)|STATEMENT_EXECUTE|[61]
+12:37:08.6 (1026557942)|STATEMENT_EXECUTE|[62]
+12:37:08.6 (1026630139)|VARIABLE_ASSIGNMENT|[62]|this.Title|null|0xd994308
+12:37:08.6 (1026635154)|STATEMENT_EXECUTE|[63]
+12:37:08.6 (1026678975)|VARIABLE_ASSIGNMENT|[63]|this.FirstName|"Bedrijfs"|0xd994308
+12:37:08.6 (1026682292)|STATEMENT_EXECUTE|[64]
+12:37:08.6 (1026715292)|VARIABLE_ASSIGNMENT|[64]|this.LastName|"Bureau"|0xd994308
+12:37:08.6 (1026718284)|STATEMENT_EXECUTE|[65]
+12:37:08.6 (1026752596)|VARIABLE_ASSIGNMENT|[65]|this.Email|"gerwin.tromp@growtiv (7 more) ..."|0xd994308
+12:37:08.6 (1026755606)|STATEMENT_EXECUTE|[66]
+12:37:08.6 (1026784880)|VARIABLE_ASSIGNMENT|[66]|this.Phone|null|0xd994308
+12:37:08.6 (1026787684)|STATEMENT_EXECUTE|[67]
+12:37:08.6 (1026815809)|VARIABLE_ASSIGNMENT|[67]|this.MobilePhone|null|0xd994308
+12:37:08.6 (1026818589)|STATEMENT_EXECUTE|[68]
+12:37:08.6 (1026846028)|VARIABLE_ASSIGNMENT|[68]|this.Fax|null|0xd994308
+12:37:08.6 (1026848970)|STATEMENT_EXECUTE|[69]
+12:37:08.6 (1026878759)|VARIABLE_ASSIGNMENT|[69]|this.MailingStreet|null|0xd994308
+12:37:08.6 (1026882041)|STATEMENT_EXECUTE|[70]
+12:37:08.6 (1026910530)|VARIABLE_ASSIGNMENT|[70]|this.MailingCity|null|0xd994308
+12:37:08.6 (1026913505)|STATEMENT_EXECUTE|[71]
+12:37:08.6 (1026941803)|VARIABLE_ASSIGNMENT|[71]|this.MailingState|null|0xd994308
+12:37:08.6 (1026944611)|STATEMENT_EXECUTE|[72]
+12:37:08.6 (1026972494)|VARIABLE_ASSIGNMENT|[72]|this.MailingPostalCode|null|0xd994308
+12:37:08.6 (1026975473)|STATEMENT_EXECUTE|[73]
+12:37:08.6 (1027008224)|VARIABLE_ASSIGNMENT|[73]|this.MailingCountry|"NL"|0xd994308
+12:37:08.6 (1027022866)|METHOD_EXIT|[12]|01p2400000Cr5V7|MyProfilePageController.setContactFields(Contact, User)
+12:37:08.6 (1027026828)|STATEMENT_EXECUTE|[13]
+12:37:08.6 (1027080993)|HEAP_ALLOCATE|[13]|Bytes:75
+12:37:08.6 (1027136752)|STATEMENT_EXECUTE|[14]
+12:37:08.6 (1027169192)|HEAP_ALLOCATE|[14]|Bytes:73
+12:37:08.6 (1027197943)|SYSTEM_MODE_EXIT|false
+12:37:08.27 (1027214130)|CUMULATIVE_LIMIT_USAGE
+12:37:08.27 (1027214130)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:37:08.27 (1027214130)|CUMULATIVE_LIMIT_USAGE_END
+
+12:37:08.6 (1027250800)|CODE_UNIT_FINISHED|MyProfilePageControllerTest.testSetContactFields
+12:37:08.6 (1029777403)|EXECUTION_FINISHED

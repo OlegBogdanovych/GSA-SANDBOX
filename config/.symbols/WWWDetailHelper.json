@@ -1,0 +1,2082 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 2
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "WWWDetailHelper",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p9E000000EAUeQAO",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p9E000000EAUeQAO",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 5
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getWwwRecordById",
+            "parameters": [
+                {
+                    "name": "recordId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "WWW__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 15
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getRecordTypesBySobjectName",
+            "parameters": [
+                {
+                    "name": "sObjName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 21
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "fillRecordTypesSelectListBySobject",
+            "parameters": [
+                {
+                    "name": "sObjName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 44
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "fillMapWwwRecordsById",
+            "parameters": [],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 50
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "cutErrorMessage",
+            "parameters": [
+                {
+                    "name": "m",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 62
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getSublocations",
+            "parameters": [
+                {
+                    "name": "locationId",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 78
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "madeDateFromNewDatepicker",
+            "parameters": [
+                {
+                    "name": "dateStr",
+                    "type": "String"
+                },
+                {
+                    "name": "timeStr",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Datetime",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 92
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "fillTimesSelectList",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 108
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getLocationsForAfleveren",
+            "parameters": [
+                {
+                    "name": "wwwId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 150
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getSublocationsForAfleveren",
+            "parameters": [
+                {
+                    "name": "locationId",
+                    "type": "Id"
+                },
+                {
+                    "name": "wwRecordId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 237
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "makeSublocationStringForDelToHub",
+            "parameters": [
+                {
+                    "name": "subLocations",
+                    "type": "LIST"
+                },
+                {
+                    "name": "occupiedSublocs",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 262
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "generateSublocationDetailsToInsert",
+            "parameters": [
+                {
+                    "name": "detail",
+                    "type": "WWW_Detail__c"
+                },
+                {
+                    "name": "delToProj",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "occupiedSublocs",
+                    "type": "LIST"
+                },
+                {
+                    "name": "subLocations",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 284
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "customValidation",
+            "parameters": [
+                {
+                    "name": "detail",
+                    "type": "WWW_Detail__c"
+                },
+                {
+                    "name": "subLocations",
+                    "type": "LIST"
+                },
+                {
+                    "name": "occupiedSublocs",
+                    "type": "LIST"
+                },
+                {
+                    "name": "www",
+                    "type": "WWW__c"
+                },
+                {
+                    "name": "delToHub",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "delToProj",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "invoked",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "reserved",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 329
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "validateSublocationSelectedForDelToProj",
+            "parameters": [
+                {
+                    "name": "occupiedSublocs",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 345
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "validateEnteredAmountForSubLOcationOnDelToProj",
+            "parameters": [
+                {
+                    "name": "detail",
+                    "type": "WWW_Detail__c"
+                },
+                {
+                    "name": "occupiedSublocs",
+                    "type": "LIST"
+                },
+                {
+                    "name": "www",
+                    "type": "WWW__c"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 390
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "validateSublocationSelectedForDelToHub",
+            "parameters": [
+                {
+                    "name": "subLocations",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 407
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "validateWwwSelected",
+            "parameters": [
+                {
+                    "name": "detail",
+                    "type": "WWW_Detail__c"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 417
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "validateNumberOfItemsFilled",
+            "parameters": [
+                {
+                    "name": "detail",
+                    "type": "WWW_Detail__c"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 427
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "validateNumberOfItemsInvoked",
+            "parameters": [
+                {
+                    "name": "detail",
+                    "type": "WWW_Detail__c"
+                },
+                {
+                    "name": "www",
+                    "type": "WWW__c"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 439
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "validateAfleverenDateHigerOntvangen",
+            "parameters": [
+                {
+                    "name": "detail",
+                    "type": "WWW_Detail__c"
+                },
+                {
+                    "name": "www",
+                    "type": "WWW__c"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 465
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "validateNumberOfItemsDeliveredToProject",
+            "parameters": [
+                {
+                    "name": "detail",
+                    "type": "WWW_Detail__c"
+                },
+                {
+                    "name": "www",
+                    "type": "WWW__c"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 477
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "validateLocationFilled",
+            "parameters": [
+                {
+                    "name": "detail",
+                    "type": "WWW_Detail__c"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 487
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "validateArrivalTruckOnHub",
+            "parameters": [
+                {
+                    "name": "detail",
+                    "type": "WWW_Detail__c"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 497
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "validateDamagePackage",
+            "parameters": [
+                {
+                    "name": "detail",
+                    "type": "WWW_Detail__c"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 507
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "validateCompleetKlaargezet",
+            "parameters": [
+                {
+                    "name": "detail",
+                    "type": "WWW_Detail__c"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 517
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "validateOpmerkingen",
+            "parameters": [
+                {
+                    "name": "detail",
+                    "type": "WWW_Detail__c"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 529
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "validateOpmerkingenOnOntvangen",
+            "parameters": [
+                {
+                    "name": "detail",
+                    "type": "WWW_Detail__c"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "WWWDetailHelper",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "WWWDetailHelper",
+        "references": [],
+        "type": "WWWDetailHelper"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "recordId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "www",
+            "references": [],
+            "type": "WWW__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "sObjName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "recordTypes",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "sObjName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "options",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "recTypesById",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "rec",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "m",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 51
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 62
+            },
+            "modifiers": [],
+            "name": "locationId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "options",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "loc",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "dateStr",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 74,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "timeStr",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 82
+            },
+            "modifiers": [],
+            "name": "hours",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "min",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 93
+            },
+            "modifiers": [],
+            "name": "options",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 95
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "j",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 108
+            },
+            "modifiers": [],
+            "name": "wwwId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "options",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 112
+            },
+            "modifiers": [],
+            "name": "detailsDelToHub",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 115
+            },
+            "modifiers": [],
+            "name": "detailsDelTo",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 118
+            },
+            "modifiers": [],
+            "name": "valueByLocId",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "det",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 124
+            },
+            "modifiers": [],
+            "name": "currVal",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 128
+            },
+            "modifiers": [],
+            "name": "currVal",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 134
+            },
+            "modifiers": [],
+            "name": "locationsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 135
+            },
+            "modifiers": [],
+            "name": "det",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 142
+            },
+            "modifiers": [],
+            "name": "lcId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 70,
+                "line": 150
+            },
+            "modifiers": [],
+            "name": "locationId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 85,
+                "line": 150
+            },
+            "modifiers": [],
+            "name": "wwRecordId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 151
+            },
+            "modifiers": [],
+            "name": "occupiedSublocs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 154
+            },
+            "modifiers": [],
+            "name": "wwwId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 159
+            },
+            "modifiers": [],
+            "name": "wwwDs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 163
+            },
+            "modifiers": [],
+            "name": "wwwdIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 164
+            },
+            "modifiers": [],
+            "name": "wwwdById",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 165
+            },
+            "modifiers": [],
+            "name": "wwwdsByLocations",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 167
+            },
+            "modifiers": [],
+            "name": "wd",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 177
+            },
+            "modifiers": [],
+            "name": "sublocsToCheck",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 181
+            },
+            "modifiers": [],
+            "name": "subLocDetsByWwwdId",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 182
+            },
+            "modifiers": [],
+            "name": "locationAmountByLocationId",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 184
+            },
+            "modifiers": [],
+            "name": "sd",
+            "references": [],
+            "type": "SublocationDetail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 195
+            },
+            "modifiers": [],
+            "name": "currVal",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 199
+            },
+            "modifiers": [],
+            "name": "currVal",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 205
+            },
+            "modifiers": [],
+            "name": "locationById",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 207
+            },
+            "modifiers": [],
+            "name": "locationsByAbbr",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 208
+            },
+            "modifiers": [],
+            "name": "locAbbr",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 209
+            },
+            "modifiers": [],
+            "name": "locsIdToAdd",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 211
+            },
+            "modifiers": [],
+            "name": "wd",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 212
+            },
+            "modifiers": [],
+            "name": "sd",
+            "references": [],
+            "type": "SublocationDetail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 219
+            },
+            "modifiers": [],
+            "name": "subStr",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 221
+            },
+            "modifiers": [],
+            "name": "ls",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 222
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 229
+            },
+            "modifiers": [],
+            "name": "lAbbr",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 74,
+                "line": 237
+            },
+            "modifiers": [],
+            "name": "subLocations",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 111,
+                "line": 237
+            },
+            "modifiers": [],
+            "name": "occupiedSublocs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 238
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 241
+            },
+            "modifiers": [],
+            "name": "subLocation",
+            "references": [],
+            "type": "SubLocation"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 252
+            },
+            "modifiers": [],
+            "name": "aflSubLoc",
+            "references": [],
+            "type": "AfleverenSublocs"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 92,
+                "line": 262
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 108,
+                "line": 262
+            },
+            "modifiers": [],
+            "name": "delToProj",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 142,
+                "line": 262
+            },
+            "modifiers": [],
+            "name": "occupiedSublocs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 177,
+                "line": 262
+            },
+            "modifiers": [],
+            "name": "subLocations",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 263
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 266
+            },
+            "modifiers": [],
+            "name": "subLocation",
+            "references": [],
+            "type": "AfleverenSublocs"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 268
+            },
+            "modifiers": [],
+            "name": "loc",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 274
+            },
+            "modifiers": [],
+            "name": "subLocation",
+            "references": [],
+            "type": "SubLocation"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 54,
+                "line": 284
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 80,
+                "line": 284
+            },
+            "modifiers": [],
+            "name": "subLocations",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 117,
+                "line": 284
+            },
+            "modifiers": [],
+            "name": "occupiedSublocs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 141,
+                "line": 284
+            },
+            "modifiers": [],
+            "name": "www",
+            "references": [],
+            "type": "WWW__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 154,
+                "line": 284
+            },
+            "modifiers": [],
+            "name": "delToHub",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 172,
+                "line": 284
+            },
+            "modifiers": [],
+            "name": "delToProj",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 191,
+                "line": 284
+            },
+            "modifiers": [],
+            "name": "invoked",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 208,
+                "line": 284
+            },
+            "modifiers": [],
+            "name": "reserved",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 285
+            },
+            "modifiers": [],
+            "name": "errorMessage",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 86,
+                "line": 329
+            },
+            "modifiers": [],
+            "name": "occupiedSublocs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 330
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 331
+            },
+            "modifiers": [],
+            "name": "selectedSubs",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 332
+            },
+            "modifiers": [],
+            "name": "subLocation",
+            "references": [],
+            "type": "AfleverenSublocs"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 84,
+                "line": 345
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 115,
+                "line": 345
+            },
+            "modifiers": [],
+            "name": "occupiedSublocs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 139,
+                "line": 345
+            },
+            "modifiers": [],
+            "name": "www",
+            "references": [],
+            "type": "WWW__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 346
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 352
+            },
+            "modifiers": [],
+            "name": "wwwId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 357
+            },
+            "modifiers": [],
+            "name": "sublocsToCheck",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 361
+            },
+            "modifiers": [],
+            "name": "locationAmountByLocationId",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 362
+            },
+            "modifiers": [],
+            "name": "sld",
+            "references": [],
+            "type": "SublocationDetail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 367
+            },
+            "modifiers": [],
+            "name": "currVal",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 371
+            },
+            "modifiers": [],
+            "name": "currVal",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 377
+            },
+            "modifiers": [],
+            "name": "subLocation",
+            "references": [],
+            "type": "AfleverenSublocs"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 379
+            },
+            "modifiers": [],
+            "name": "loc",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 80,
+                "line": 390
+            },
+            "modifiers": [],
+            "name": "subLocations",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 391
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 393
+            },
+            "modifiers": [],
+            "name": "isSelected",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 394
+            },
+            "modifiers": [],
+            "name": "subLocation",
+            "references": [],
+            "type": "SubLocation"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 407
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 408
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 417
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 418
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 427
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 81,
+                "line": 427
+            },
+            "modifiers": [],
+            "name": "www",
+            "references": [],
+            "type": "WWW__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 428
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 73,
+                "line": 439
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 88,
+                "line": 439
+            },
+            "modifiers": [],
+            "name": "www",
+            "references": [],
+            "type": "WWW__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 440
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 442
+            },
+            "modifiers": [],
+            "name": "ontvangenDetails",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 445
+            },
+            "modifiers": [],
+            "name": "lowerDate",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 447
+            },
+            "modifiers": [],
+            "name": "det",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 465
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 92,
+                "line": 465
+            },
+            "modifiers": [],
+            "name": "www",
+            "references": [],
+            "type": "WWW__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 466
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 477
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 478
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 487
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 488
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 59,
+                "line": 497
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 498
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 507
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 508
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 517
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 518
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 529
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 530
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

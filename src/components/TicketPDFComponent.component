@@ -1,0 +1,317 @@
+<apex:component layout="none" access="global" controller="TicketPDFExtension" allowDML="true">
+	<apex:attribute name="ticket" assignTo="{!ticketRecord}" description="Building ticket record" type="Building_Ticket__c" />
+	<apex:attribute name="showPrint" assignTo="{!showPrintButton}" description="Show print button on PDF" type="String" />
+
+	<head>
+		<apex:includeScript value="{!URLFOR($Resource.qrcode, 'jquery.min.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.qrcode, 'qrcode.js')}" />
+
+        <style>
+            body {
+                font-family: 'sans-serif';
+                font-size: 12px;
+            }
+
+            table thead  {
+                background-color: #CCC;
+                font-weight: bold!important;
+                font-size: 16px;
+            }
+
+            .names {
+                font-weight: bold;
+                width: 50%;
+            }
+
+            h1 {
+              font-size:20px;
+            }
+
+            hr {
+                -webkit-margin-after: 0em;
+                -webkit-margin-before: 0em;
+            }
+        </style>
+    </head>
+
+    <form>
+    	<apex:outputText rendered='{!init}' />
+
+        <apex:outputPanel rendered="{!showPrintButton == '1'}">
+        	<br/>
+	        <div id="divButtons" name="divButtons" style="align:right;">
+	            <input type="button" value = "Print" onclick="printPage()" style="position:absolute;" class="slds-button slds-button--neutral slds-not-selected"/>
+	        </div>
+	    </apex:outputPanel>
+
+        <br/><br/>
+
+        <h1>BOUWTICKET - TICKETNUMMER <b>{!ticket.Name}</b></h1>
+
+        <br/><hr/>
+
+        <table width="100%">
+            <thead>
+                <tr>
+                	<td colspan="2">Ticketinformatie</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="names">
+                        Project
+                    </td>
+                    <td>
+                        {!ticket.Hub_Building_Site__r.Name}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="names">
+                        Project manager
+                    </td>
+                    <td>
+                        <apex:outputText value="{!ticket.Projectmember__r.Name}"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="names">
+                    	Datuum aanvrager
+                    </td>
+                    <td>
+                        <apex:outputText value="{0, date, dd'-'MM'-'yyyy}">
+                            <apex:param value="{!ticket.CreatedDate}" />
+                        </apex:outputText>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="names">
+                    	Status
+                    </td>
+                    <td>
+                        {!ticket.Status__c}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="names">
+                    	Behandeld door
+                    </td>
+                    <td>
+                        {!user.Name}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <hr/>
+
+        <table width="100%">
+            <thead>
+                <tr>
+                	<td colspan="2">Leverancier</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="names">
+                        Leverancier
+                    </td>
+                    <td>
+                        {!ticket.Account__r.Name}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="names">
+                    	Contactpersoon leverancier
+                    </td>
+                    <td>
+                        {!ticket.Requestor__r.Name}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr/>
+
+        <table width="100%">
+            <thead>
+                <tr>
+                	<td colspan="2">Leveringsinformatie</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="names">
+                        Datum
+                    </td>
+                    <td>
+                        <apex:outputText value="{0, date, dd'-'MM'-'yyyy}">
+                            <apex:param value="{!ticket.Delivery_Date__c}" />
+                        </apex:outputText>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="names">
+                        Aankomsttijd
+                    </td>
+                    <td>
+                       {!excpectedTime}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="names">
+                    	Uiterlijke vertrektijd
+                    </td>
+                    <td>
+                        {!excpectedDateTime}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="names">
+                        Poort
+                    </td>
+                    <td>
+                        {!ticket.Gate__r.Name}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="names">
+                        Vertical Transport
+                    </td>
+                    <td>
+                        {!ticket.Vertical_Transport__r.Name}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="names">
+                        Opstelplaats
+                    </td>
+                    <td>
+                        {!ticket.Location__r.Name}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="names">
+                    Eindbestemming
+                    </td>
+                    <td>
+                        {!ticket.End_Point__c}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="names">
+                    Informatie over de levering
+                    </td>
+                    <td>
+                        {!ticket.Description_Of_Delivery__c}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr/>
+
+        <table width="100%">
+            <thead>
+                <tr>
+                	<td colspan="2">Bouwplaats</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="names">
+                        Uitvoeder bouwplaats
+                    </td>
+                    <td>
+                        <apex:outputText value="{!ticket.Hub_Building_Site__r.Name}"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="names">
+                    	Adres bouwplaats
+                    </td>
+                    <td>
+                        <apex:outputText value="{!ticket.Hub_Building_Site__r.Street__c} {!ticket.Hub_Building_Site__r.Postalcode__c}{!ticket.Hub_Building_Site__r.City__c}"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="names">
+                    	Telefoonnummer contactpersoon bouwplaats
+                    </td>
+                    <td>
+                        <apex:outputText value="{!ticket.Hub_Building_Site__r.Telefoonnummer_contactpersoon_bouwplaats__c}" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <hr/>
+
+        <p>
+            Mocht het onverhoopt voorkomen dat de transporteur niet op het afgesproken tijdstip aankomt, dan wordt de gehele levering of afvoer niet toegelaten tot de bouwplaats. Neem contact op om een nieuw tijdstip af te spreken.
+        </p>
+
+        <p class="names">
+            Zonder gestempeld goedgekeurd bouwticket geen toegang tot de bouwplaats of hub.
+        </p>
+
+        <hr/>
+
+        <apex:outputPanel rendered="{!showPrintButton == '1'}">
+	        <table width="100%">
+	            <thead>
+	                <tr>
+	                	<td>Stempel</td>
+	                </tr>
+	            </thead>
+
+	            <tbody>
+	                <tr>
+	                    <td height="150px" style="border:1px solid; min-height:150px; ">
+	                        <c:QRCode sId="{!ticketRecord.Id}" />
+	                    </td>
+	                </tr>
+	            </tbody>
+	        </table>
+        </apex:outputPanel>
+    </form>
+
+    <apex:outputPanel rendered="{!showPrintButton == '1'}">
+	    <script language="JavaScript">
+	        function printPage() {
+	            if (document.all) {
+	                document.all.divButtons.style.visibility = 'hidden';
+	                window.print();
+	                document.all.divButtons.style.visibility = 'visible';
+	            } else {
+	                document.getElementById('divButtons').style.visibility = 'hidden';
+	                $("[id$='filter']").hide();
+
+	                window.print();
+	                document.getElementById('divButtons').style.visibility = 'visible';
+
+	                $("[id$='filter']").show();
+	            }
+	        }
+	    </script>
+    </apex:outputPanel>
+</apex:component>

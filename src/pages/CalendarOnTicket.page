@@ -1,0 +1,11 @@
+<apex:page showHeader="true" sidebar="true" standardController="Building_Ticket__c" standardStylesheets="false" applyBodyTag="false" extensions="CalendarOnTicketExtension">
+    <apex:includeScript value="{!URLFOR($Resource.calendar, '/fullcalendar-2.5.0/lib/jquery.min.js')}"/>
+    
+     <apex:outputPanel id="calendarInfo" >
+        <c:Calendar date="{!Building_Ticket__c.Delivery_Date__c}" buildingSite="{!Building_Ticket__c.Hub_Building_Site__c}" compData="{!componentData}"/>
+    </apex:outputPanel>
+     <script type="text/javascript">
+        $("[id$='btnClose']").hide();
+        $("[id$='btnFull']").hide();
+    </script>
+</apex:page>

@@ -1,0 +1,636 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 14
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "ItemsList",
+            "parameters": [
+                {
+                    "name": "www",
+                    "type": "WWW__c"
+                },
+                {
+                    "name": "show",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p9E0000005lzTQAQ",
+    "innerClasses": [],
+    "interfaces": [
+        "System.Comparable"
+    ],
+    "key": "01p9E0000005lzTQAQ",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 24
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "compareTo",
+            "parameters": [
+                {
+                    "name": "compareTo",
+                    "type": "Object"
+                }
+            ],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 70
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "compareToName",
+            "parameters": [
+                {
+                    "name": "obj",
+                    "type": "Object"
+                }
+            ],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 92
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "compareToStaat",
+            "parameters": [
+                {
+                    "name": "obj",
+                    "type": "Object"
+                }
+            ],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 114
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "compareToMaten",
+            "parameters": [
+                {
+                    "name": "obj",
+                    "type": "Object"
+                }
+            ],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 136
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "compareToDiameter",
+            "parameters": [
+                {
+                    "name": "obj",
+                    "type": "Object"
+                }
+            ],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 158
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "compareToMerk",
+            "parameters": [
+                {
+                    "name": "obj",
+                    "type": "Object"
+                }
+            ],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 180
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "compareToMaterial",
+            "parameters": [
+                {
+                    "name": "obj",
+                    "type": "Object"
+                }
+            ],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 202
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "compareToKleur",
+            "parameters": [
+                {
+                    "name": "obj",
+                    "type": "Object"
+                }
+            ],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 224
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "compareToTypeVerpakking",
+            "parameters": [
+                {
+                    "name": "obj",
+                    "type": "Object"
+                }
+            ],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 246
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "compareToItemsLeft",
+            "parameters": [
+                {
+                    "name": "obj",
+                    "type": "Object"
+                }
+            ],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 268
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "compareToHub",
+            "parameters": [
+                {
+                    "name": "obj",
+                    "type": "Object"
+                }
+            ],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        }
+    ],
+    "name": "ItemsList",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 9
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "isSelected",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 10
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "wwwRecord",
+            "references": [],
+            "type": "WWW__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 11
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "itemsToInvoke",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 12
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "show",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 20
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "final"
+            ],
+            "name": "ASCENDING",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 21
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "SortDirection",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 22
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "SortField",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 8
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "ItemsList",
+        "references": [],
+        "type": "ItemsList"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "www",
+            "references": [],
+            "type": "WWW__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "show",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "compareTo",
+            "references": [],
+            "type": "Object"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "compateToItem",
+            "references": [],
+            "type": "ItemsList"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "Object"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "item",
+            "references": [],
+            "type": "ItemsList"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 92
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "Object"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 93
+            },
+            "modifiers": [],
+            "name": "item",
+            "references": [],
+            "type": "ItemsList"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 114
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "Object"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 115
+            },
+            "modifiers": [],
+            "name": "item",
+            "references": [],
+            "type": "ItemsList"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 136
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "Object"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 137
+            },
+            "modifiers": [],
+            "name": "item",
+            "references": [],
+            "type": "ItemsList"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 158
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "Object"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 159
+            },
+            "modifiers": [],
+            "name": "item",
+            "references": [],
+            "type": "ItemsList"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 180
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "Object"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 181
+            },
+            "modifiers": [],
+            "name": "item",
+            "references": [],
+            "type": "ItemsList"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 202
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "Object"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 203
+            },
+            "modifiers": [],
+            "name": "item",
+            "references": [],
+            "type": "ItemsList"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 224
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "Object"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 225
+            },
+            "modifiers": [],
+            "name": "item",
+            "references": [],
+            "type": "ItemsList"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 246
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "Object"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 247
+            },
+            "modifiers": [],
+            "name": "item",
+            "references": [],
+            "type": "ItemsList"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 268
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "Object"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 269
+            },
+            "modifiers": [],
+            "name": "item",
+            "references": [],
+            "type": "ItemsList"
+        }
+    ]
+}

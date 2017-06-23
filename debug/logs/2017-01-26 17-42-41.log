@@ -1,0 +1,23 @@
+37.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+16:42:38.1 (1919914)|USER_INFO|[EXTERNAL]|00524000001e3Uj|bedrijfsbureau@gsa.nl.sandbox|Midden-Europese standaardtijd|GMT+01:00
+16:42:38.1 (1946851)|EXECUTION_STARTED
+16:42:38.1 (1949986)|CODE_UNIT_STARTED|[EXTERNAL]|06624000003p4fv|VF: /apex/WWWQRCode
+16:42:38.20 (20982417)|CUMULATIVE_LIMIT_USAGE
+16:42:38.20 (20982417)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+16:42:38.20 (20982417)|CUMULATIVE_LIMIT_USAGE_END
+
+16:42:38.1 (21012401)|CODE_UNIT_FINISHED|VF: /apex/WWWQRCode
+16:42:38.1 (21804806)|EXECUTION_FINISHED

@@ -1,0 +1,1424 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 2
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "TestDataGenerator",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p9E000000E4XDQA0",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p9E000000E4XDQA0",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 6
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "fillTriggerSwitcherValues",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 31
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestWwwDetailOntvangen",
+            "parameters": [
+                {
+                    "name": "www",
+                    "type": "WWW__c"
+                },
+                {
+                    "name": "location",
+                    "type": "Location__c"
+                },
+                {
+                    "name": "numberOfItems",
+                    "type": "Decimal"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 56
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestBouwticketUser",
+            "parameters": [
+                {
+                    "name": "acc",
+                    "type": "Account"
+                }
+            ],
+            "references": [],
+            "returnType": "User",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 80
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createBouwticketAccount",
+            "parameters": [
+                {
+                    "name": "accName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Account",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 89
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestItem",
+            "parameters": [
+                {
+                    "name": "itemName",
+                    "type": "String"
+                },
+                {
+                    "name": "itemsPerPackage",
+                    "type": "Decimal"
+                }
+            ],
+            "references": [],
+            "returnType": "Item__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 100
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestContact",
+            "parameters": [
+                {
+                    "name": "acc",
+                    "type": "Account"
+                }
+            ],
+            "references": [],
+            "returnType": "Contact",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 107
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestProject",
+            "parameters": [
+                {
+                    "name": "acc",
+                    "type": "Account"
+                },
+                {
+                    "name": "name",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Projecten__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 114
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestProjectMember",
+            "parameters": [
+                {
+                    "name": "proj",
+                    "type": "Projecten__c"
+                },
+                {
+                    "name": "cont",
+                    "type": "Contact"
+                }
+            ],
+            "references": [],
+            "returnType": "Projectmember__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 121
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestHub",
+            "parameters": [
+                {
+                    "name": "name",
+                    "type": "String"
+                },
+                {
+                    "name": "proj",
+                    "type": "Projecten__c"
+                }
+            ],
+            "references": [],
+            "returnType": "Hub_Building_Site__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 136
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestHubBuildingSite",
+            "parameters": [
+                {
+                    "name": "name",
+                    "type": "String"
+                },
+                {
+                    "name": "proj",
+                    "type": "Projecten__c"
+                }
+            ],
+            "references": [],
+            "returnType": "Hub_Building_Site__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 151
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestWww",
+            "parameters": [
+                {
+                    "name": "project",
+                    "type": "Projecten__c"
+                },
+                {
+                    "name": "item",
+                    "type": "Item__c"
+                },
+                {
+                    "name": "hub",
+                    "type": "Hub_Building_Site__c"
+                }
+            ],
+            "references": [],
+            "returnType": "WWW__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 163
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestGateLocation",
+            "parameters": [
+                {
+                    "name": "name",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Location__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 172
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestHublocationParent",
+            "parameters": [
+                {
+                    "name": "name",
+                    "type": "String"
+                },
+                {
+                    "name": "hub",
+                    "type": "Hub_Building_Site__c"
+                }
+            ],
+            "references": [],
+            "returnType": "Location__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 181
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestHublocationChildren",
+            "parameters": [
+                {
+                    "name": "hub",
+                    "type": "Hub_Building_Site__c"
+                },
+                {
+                    "name": "parent",
+                    "type": "Location__c"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 201
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestMassGateLocationWithHub",
+            "parameters": [
+                {
+                    "name": "name",
+                    "type": "String"
+                },
+                {
+                    "name": "count",
+                    "type": "Integer"
+                },
+                {
+                    "name": "hub",
+                    "type": "Hub_Building_Site__c"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 214
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestSiteLocation",
+            "parameters": [
+                {
+                    "name": "buldingSite",
+                    "type": "Hub_Building_Site__c"
+                },
+                {
+                    "name": "name",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Location__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 223
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestMassSiteLocationWithHub",
+            "parameters": [
+                {
+                    "name": "name",
+                    "type": "String"
+                },
+                {
+                    "name": "count",
+                    "type": "Integer"
+                },
+                {
+                    "name": "hub",
+                    "type": "Hub_Building_Site__c"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 236
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestVerticalTransport",
+            "parameters": [
+                {
+                    "name": "name",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Location__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 245
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestMassVerticalTransportWithHub",
+            "parameters": [
+                {
+                    "name": "name",
+                    "type": "String"
+                },
+                {
+                    "name": "count",
+                    "type": "Integer"
+                },
+                {
+                    "name": "hub",
+                    "type": "Hub_Building_Site__c"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "TestDataGenerator",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "TestDataGenerator",
+        "references": [],
+        "type": "TestDataGenerator"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "triggerNames",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "toInsert",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "str",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "activeTrigger",
+            "references": [],
+            "type": "ActiveTrigger__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "www",
+            "references": [],
+            "type": "WWW__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 74,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "location",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 92,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "numberOfItems",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "rcTp",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "detail",
+            "references": [],
+            "type": "WWW_Detail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "subLocs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "sublocsToInsert",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "loc",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 54,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "profile",
+            "references": [],
+            "type": "Profile"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 80
+            },
+            "modifiers": [],
+            "name": "accName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 81
+            },
+            "modifiers": [],
+            "name": "accRT",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 89
+            },
+            "modifiers": [],
+            "name": "itemName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 89
+            },
+            "modifiers": [],
+            "name": "itemsPerPackage",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 90
+            },
+            "modifiers": [],
+            "name": "item",
+            "references": [],
+            "type": "Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 100
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "cont",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 107
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 107
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 108
+            },
+            "modifiers": [],
+            "name": "pr",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 70,
+                "line": 114
+            },
+            "modifiers": [],
+            "name": "proj",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 84,
+                "line": 114
+            },
+            "modifiers": [],
+            "name": "cont",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 115
+            },
+            "modifiers": [],
+            "name": "member",
+            "references": [],
+            "type": "Projectmember__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 121
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 121
+            },
+            "modifiers": [],
+            "name": "proj",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 122
+            },
+            "modifiers": [],
+            "name": "hRT",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 124
+            },
+            "modifiers": [],
+            "name": "buldingSite",
+            "references": [],
+            "type": "Hub_Building_Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 70,
+                "line": 136
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 89,
+                "line": 136
+            },
+            "modifiers": [],
+            "name": "proj",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 137
+            },
+            "modifiers": [],
+            "name": "bsRT",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 139
+            },
+            "modifiers": [],
+            "name": "buldingSite",
+            "references": [],
+            "type": "Hub_Building_Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 151
+            },
+            "modifiers": [],
+            "name": "project",
+            "references": [],
+            "type": "Projecten__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 151
+            },
+            "modifiers": [],
+            "name": "item",
+            "references": [],
+            "type": "Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 94,
+                "line": 151
+            },
+            "modifiers": [],
+            "name": "hub",
+            "references": [],
+            "type": "Hub_Building_Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 152
+            },
+            "modifiers": [],
+            "name": "www",
+            "references": [],
+            "type": "WWW__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 163
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 164
+            },
+            "modifiers": [],
+            "name": "gateRT",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 166
+            },
+            "modifiers": [],
+            "name": "gate",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 172
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 90,
+                "line": 172
+            },
+            "modifiers": [],
+            "name": "hub",
+            "references": [],
+            "type": "Hub_Building_Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 173
+            },
+            "modifiers": [],
+            "name": "hublRT",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 175
+            },
+            "modifiers": [],
+            "name": "hubl",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 85,
+                "line": 181
+            },
+            "modifiers": [],
+            "name": "hub",
+            "references": [],
+            "type": "Hub_Building_Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 102,
+                "line": 181
+            },
+            "modifiers": [],
+            "name": "parent",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 182
+            },
+            "modifiers": [],
+            "name": "sublocsNames",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 183
+            },
+            "modifiers": [],
+            "name": "hublRT",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 185
+            },
+            "modifiers": [],
+            "name": "toReturn",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 186
+            },
+            "modifiers": [],
+            "name": "str",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 187
+            },
+            "modifiers": [],
+            "name": "loc",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 75,
+                "line": 201
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 89,
+                "line": 201
+            },
+            "modifiers": [],
+            "name": "count",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 117,
+                "line": 201
+            },
+            "modifiers": [],
+            "name": "hub",
+            "references": [],
+            "type": "Hub_Building_Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 202
+            },
+            "modifiers": [],
+            "name": "gateRT",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 204
+            },
+            "modifiers": [],
+            "name": "locs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 205
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 206
+            },
+            "modifiers": [],
+            "name": "gate",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 72,
+                "line": 214
+            },
+            "modifiers": [],
+            "name": "buldingSite",
+            "references": [],
+            "type": "Hub_Building_Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 92,
+                "line": 214
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 215
+            },
+            "modifiers": [],
+            "name": "siteRT",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 217
+            },
+            "modifiers": [],
+            "name": "siteL",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 75,
+                "line": 223
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 89,
+                "line": 223
+            },
+            "modifiers": [],
+            "name": "count",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 117,
+                "line": 223
+            },
+            "modifiers": [],
+            "name": "hub",
+            "references": [],
+            "type": "Hub_Building_Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 224
+            },
+            "modifiers": [],
+            "name": "siteRT",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 226
+            },
+            "modifiers": [],
+            "name": "locs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 227
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 228
+            },
+            "modifiers": [],
+            "name": "gate",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 236
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 237
+            },
+            "modifiers": [],
+            "name": "verRT",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 239
+            },
+            "modifiers": [],
+            "name": "verTr",
+            "references": [],
+            "type": "Location__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 80,
+                "line": 245
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 94,
+                "line": 245
+            },
+            "modifiers": [],
+            "name": "count",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 122,
+                "line": 245
+            },
+            "modifiers": [],
+            "name": "hub",
+            "references": [],
+            "type": "Hub_Building_Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 246
+            },
+            "modifiers": [],
+            "name": "verRT",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 248
+            },
+            "modifiers": [],
+            "name": "locs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 249
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 250
+            },
+            "modifiers": [],
+            "name": "gate",
+            "references": [],
+            "type": "Location__c"
+        }
+    ]
+}

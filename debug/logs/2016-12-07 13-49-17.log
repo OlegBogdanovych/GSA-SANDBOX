@@ -1,0 +1,30 @@
+38.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+12:49:05.0 (800526)|USER_INFO|[EXTERNAL]|00524000001e3Uj|bedrijfsbureau@gsa.nl.sandbox|Midden-Europese standaardtijd|GMT+01:00
+12:49:05.0 (836897)|EXECUTION_STARTED
+12:49:05.0 (841747)|CODE_UNIT_STARTED|[EXTERNAL]|VisualForce View State
+12:49:05.0 (12378348)|HEAP_ALLOCATE|[72]|Bytes:3
+12:49:05.0 (12421590)|HEAP_ALLOCATE|[77]|Bytes:152
+12:49:05.0 (12438993)|HEAP_ALLOCATE|[342]|Bytes:408
+12:49:05.0 (12457540)|HEAP_ALLOCATE|[355]|Bytes:408
+12:49:05.0 (12475201)|HEAP_ALLOCATE|[467]|Bytes:48
+12:49:05.0 (12503869)|HEAP_ALLOCATE|[139]|Bytes:6
+12:49:05.0 (14250518)|CODE_UNIT_FINISHED|VisualForce View State
+12:49:05.0 (16222880)|EXECUTION_FINISHED
+12:49:06.870 (1870107106)|USER_INFO|[EXTERNAL]|00524000001e3Uj|bedrijfsbureau@gsa.nl.sandbox|Midden-Europese standaardtijd|GMT+01:00
+12:49:06.905 (1905410315)|CUMULATIVE_LIMIT_USAGE
+12:49:06.905 (1905410315)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:49:06.905 (1905410315)|CUMULATIVE_LIMIT_USAGE_END
+

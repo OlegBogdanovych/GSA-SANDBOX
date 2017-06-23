@@ -1,0 +1,179 @@
+<apex:page showHeader="true" sidebar="true" standardController="WWW__c" >
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+     <apex:includeScript value="{!URLFOR($Resource.qrcode, 'jquery.min.js')}" />
+    <style>
+        body {
+            font-size: 12px;
+        }
+        .names {
+            font-weight: bold;
+            
+        }
+        .section {
+            background-color: #ccc;
+        }
+        .pbButton, .pbButtonb, .pageDescription, .pageType {
+            display:none;
+        }
+        .content, .mainTitle, .links {
+            display:none !important;
+        }
+        tr td{
+            //border-bottom:1pt solid black;
+        }
+        .Custom24Tab .tertiaryPalette, .individualPalette .Custom24Block .tertiaryPalette, .layoutEdit .individualPalette .Custom24Block .tertiaryPalette {
+            border-color:black !important;
+        }
+        
+    </style>
+    <div id="divButtons" name="divButtons" style="align:right;">
+        <input type="button" value = "Print" onclick="printPage()" style="position:absolute;" class="slds-button slds-button--neutral slds-not-selected"/>
+    </div>
+    <br/>
+    <br/>
+    <!--table width="100%">
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Supplier__c.Label}"/>
+            </td>
+            <td>{!WWW__c.Supplier__r.Name}
+            </td>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Project__c.Label}"/>
+            </td>
+            <td >{!WWW__c.Project__r.Name}
+            </td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Item__c.Label}"/>
+            </td>
+            <td>{!WWW__c.Item__r.Name}
+            </td >
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Projectmember__c.Label}"/>
+            </td>
+            <td>{!WWW__c.Projectmember__r.Name}
+            </td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Hub__c.Label}"/>
+            </td>
+            <td>{!WWW__c.Hub__r.Name}
+            </td>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Name.Label}"/>
+            </td>
+            <td>{!WWW__c.Name}
+            </td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.SF_ID__c.Label}"/>
+            </td>
+            <td>{!WWW__c.SF_ID__c}
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <Td  class="section" colspan="4">
+                <h2>External ID</h2>
+            </Td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Ticket_Number_ILIPS__c.Label}"/>
+            </td>
+            <td>{!WWW__c.Ticket_Number_ILIPS__c}
+            </td>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Filecardnumber__c.Label}"/>
+            </td>
+            <td>{!WWW__c.Filecardnumber__c}
+            </td>
+        </tr>
+        <tr>
+            <Td  class="section" colspan="4">
+                <h2>WWW-Detail</h2>
+            </Td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Total_Number_Of_Items_Reserved__c.Label}"/>
+            </td>
+            <td>{!WWW__c.Total_Number_Of_Items_Reserved__c}
+            </td>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Curr_Items_To_Be_Delivered_On_Hub__c.Label}"/>
+            </td>
+            <td>{!WWW__c.Curr_Items_To_Be_Delivered_On_Hub__c}
+            </td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Total_Number_Of_Items_Delivered_To_Hub__c.Label}"/>
+            </td>
+            <td>{!WWW__c.Total_Number_Of_Items_Delivered_To_Hub__c}
+            </td>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Curr_Items_To_Invoke__c.Label}"/>
+            </td>
+            <td>{!WWW__c.Curr_Items_To_Invoke__c}
+            </td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Total_Number_Of_Items_Invoked__c.Label}"/>
+            </td>
+            <td>{!WWW__c.Total_Number_Of_Items_Invoked__c}
+            </td>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Curr_Items_To_Be_Delivered_On_Project__c.Label}"/>
+            </td>
+            <td>{!WWW__c.Curr_Items_To_Be_Delivered_On_Project__c}
+            </td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Total_Number_Of_Items_Delivered_Project__c.Label}"/>
+            </td>
+            <td>{!WWW__c.Total_Number_Of_Items_Delivered_Project__c}
+            </td>
+            <td class="names">
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <Td  class="section" colspan="4">
+                <h2>Rejected</h2>
+            </Td>
+        </tr>
+        
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Total_Number_Of_Items_Rejected_On_Hub__c.Label}"/>
+            </td>
+            <td>{!WWW__c.Total_Number_Of_Items_Rejected_On_Hub__c}
+            </td>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Curr_Items_To_Invoke_Incl_Rejected__c.Label}"/>
+            </td>
+            <td>{!WWW__c.Curr_Items_To_Invoke_Incl_Rejected__c}
+            </td>
+        </tr>
+        <tr>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Total_Number_Of_Items_Rejected_On_Projec__c.Label}"/>
+            </td>
+            <td>{!WWW__c.Total_Number_Of_Items_Rejected_On_Projec__c}
+            </td>
+            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Items_Delivered_On_Project_Incl_Rejected__c.Label}"/>
+            </td>
+            <td>{!WWW__c.Items_Delivered_On_Project_Incl_Rejected__c}
+            </td>
+        </tr>
+    </table>
+    <c:QRCode sId="{!WWW__c.Id}" /--><apex:detail relatedList="false"/>
+    <script language="JavaScript">
+        function printPage() {
+            if(document.all) {
+                document.all.divButtons.style.visibility = 'hidden';
+                window.print();
+                document.all.divButtons.style.visibility = 'visible';
+            } else {
+                document.getElementById('divButtons').style.visibility = 'hidden';
+                $("[id$='filter']").hide();
+                window.print();
+                document.getElementById('divButtons').style.visibility = 'visible';
+                $("[id$='filter']").show();
+            }
+        }
+    </script>
+</apex:page>

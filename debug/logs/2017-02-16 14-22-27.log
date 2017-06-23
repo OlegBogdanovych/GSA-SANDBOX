@@ -1,0 +1,393 @@
+37.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+13:22:25.0 (69590)|USER_INFO|[EXTERNAL]|00524000001e3Uj|bedrijfsbureau@gsa.nl.sandbox|Midden-Europese standaardtijd|GMT+01:00
+13:22:25.0 (97071)|EXECUTION_STARTED
+13:22:25.0 (100484)|CODE_UNIT_STARTED|[EXTERNAL]|TRIGGERS
+13:22:25.0 (812269)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000qIfI|ProjectTrigger on Projecten trigger event BeforeUpdate for [a0q0E0000008S3W]
+13:22:25.0 (845253)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+13:22:25.0 (886906)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+13:22:25.0 (1211253)|HEAP_ALLOCATE|[72]|Bytes:3
+13:22:25.0 (1242704)|HEAP_ALLOCATE|[77]|Bytes:152
+13:22:25.0 (1256266)|HEAP_ALLOCATE|[342]|Bytes:408
+13:22:25.0 (1271329)|HEAP_ALLOCATE|[355]|Bytes:408
+13:22:25.0 (1285556)|HEAP_ALLOCATE|[467]|Bytes:48
+13:22:25.0 (1314048)|HEAP_ALLOCATE|[139]|Bytes:6
+13:22:25.0 (1333769)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+13:22:25.0 (1340210)|VARIABLE_SCOPE_BEGIN|[1]|this|ProjectTrigger|true|false
+13:22:25.0 (1373923)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x2f7896a0
+13:22:25.0 (1409329)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+13:22:25.0 (1413996)|VARIABLE_SCOPE_BEGIN|[1]|this|ProjectTrigger|true|false
+13:22:25.0 (1421013)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x2f7896a0
+13:22:25.0 (1425539)|STATEMENT_EXECUTE|[1]
+13:22:25.0 (1427071)|STATEMENT_EXECUTE|[3]
+13:22:25.0 (2502239)|HEAP_ALLOCATE|[3]|Bytes:2
+13:22:25.0 (2534408)|METHOD_ENTRY|[1]|01p2400000Cr9rX|TriggerParams.TriggerParams()
+13:22:25.0 (2537912)|STATEMENT_EXECUTE|[1]
+13:22:25.0 (2541568)|STATEMENT_EXECUTE|[1]
+13:22:25.0 (2570685)|HEAP_ALLOCATE|[50]|Bytes:5
+13:22:25.0 (2589693)|HEAP_ALLOCATE|[56]|Bytes:5
+13:22:25.0 (2596039)|HEAP_ALLOCATE|[64]|Bytes:7
+13:22:25.0 (2612979)|HEAP_ALLOCATE|[3]|Bytes:5
+13:22:25.0 (2620755)|METHOD_EXIT|[1]|TriggerParams
+13:22:25.0 (2657647)|HEAP_ALLOCATE|[3]|Bytes:44
+13:22:25.0 (2798068)|CONSTRUCTOR_ENTRY|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+13:22:25.0 (2830202)|VARIABLE_SCOPE_BEGIN|[13]|this|TriggerParams|true|false
+13:22:25.0 (2858973)|VARIABLE_ASSIGNMENT|[13]|this|{}|0x9e061bc
+13:22:25.0 (2864015)|VARIABLE_SCOPE_BEGIN|[13]|isBefore|Boolean|false|false
+13:22:25.0 (2869550)|VARIABLE_ASSIGNMENT|[13]|isBefore|true
+13:22:25.0 (2871651)|VARIABLE_SCOPE_BEGIN|[13]|isAfter|Boolean|false|false
+13:22:25.0 (2874017)|VARIABLE_ASSIGNMENT|[13]|isAfter|false
+13:22:25.0 (2875872)|VARIABLE_SCOPE_BEGIN|[13]|isInsert|Boolean|false|false
+13:22:25.0 (2877722)|VARIABLE_ASSIGNMENT|[13]|isInsert|false
+13:22:25.0 (2879528)|VARIABLE_SCOPE_BEGIN|[13]|isUpdate|Boolean|false|false
+13:22:25.0 (2881444)|VARIABLE_ASSIGNMENT|[13]|isUpdate|true
+13:22:25.0 (2883191)|VARIABLE_SCOPE_BEGIN|[13]|isDelete|Boolean|false|false
+13:22:25.0 (2884971)|VARIABLE_ASSIGNMENT|[13]|isDelete|false
+13:22:25.0 (2887077)|VARIABLE_SCOPE_BEGIN|[13]|isUndelete|Boolean|false|false
+13:22:25.0 (2889106)|VARIABLE_ASSIGNMENT|[13]|isUndelete|false
+13:22:25.0 (2891132)|VARIABLE_SCOPE_BEGIN|[13]|triggerNew|List<SObject>|true|false
+13:22:25.0 (3492150)|VARIABLE_ASSIGNMENT|[13]|triggerNew|[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]|0x5fb036f1
+13:22:25.0 (3501945)|VARIABLE_SCOPE_BEGIN|[13]|triggerOld|List<SObject>|true|false
+13:22:25.0 (3632875)|VARIABLE_ASSIGNMENT|[13]|triggerOld|[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]|0x4fd28338
+13:22:25.0 (3639660)|VARIABLE_SCOPE_BEGIN|[13]|newMap|Map<Id,SObject>|true|false
+13:22:25.0 (3722668)|VARIABLE_ASSIGNMENT|[13]|newMap|{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}|0x1c715c26
+13:22:25.0 (3729041)|VARIABLE_SCOPE_BEGIN|[13]|oldMap|Map<Id,SObject>|true|false
+13:22:25.0 (3798436)|VARIABLE_ASSIGNMENT|[13]|oldMap|{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}|0x16963395
+13:22:25.0 (3809197)|HEAP_ALLOCATE|[16]|Bytes:5
+13:22:25.0 (3812886)|STATEMENT_EXECUTE|[1]
+13:22:25.0 (3815087)|HEAP_ALLOCATE|[16]|Bytes:5
+13:22:25.0 (3816526)|STATEMENT_EXECUTE|[2]
+13:22:25.0 (3817575)|STATEMENT_EXECUTE|[3]
+13:22:25.0 (3818770)|STATEMENT_EXECUTE|[4]
+13:22:25.0 (3819970)|STATEMENT_EXECUTE|[5]
+13:22:25.0 (3820864)|STATEMENT_EXECUTE|[6]
+13:22:25.0 (3821781)|STATEMENT_EXECUTE|[7]
+13:22:25.0 (3822863)|STATEMENT_EXECUTE|[8]
+13:22:25.0 (3823793)|STATEMENT_EXECUTE|[9]
+13:22:25.0 (3824669)|STATEMENT_EXECUTE|[10]
+13:22:25.0 (3825651)|STATEMENT_EXECUTE|[11]
+13:22:25.0 (3835031)|HEAP_ALLOCATE|[16]|Bytes:6
+13:22:25.0 (3854849)|STATEMENT_EXECUTE|[15]
+13:22:25.0 (3856115)|STATEMENT_EXECUTE|[16]
+13:22:25.0 (3859353)|HEAP_ALLOCATE|[16]|Bytes:5
+13:22:25.0 (3867537)|VARIABLE_ASSIGNMENT|[16]|this.isBefore|true|0x9e061bc
+13:22:25.0 (3869289)|STATEMENT_EXECUTE|[17]
+13:22:25.0 (3871350)|HEAP_ALLOCATE|[17]|Bytes:5
+13:22:25.0 (3874794)|VARIABLE_ASSIGNMENT|[17]|this.isAfter|false|0x9e061bc
+13:22:25.0 (3876275)|STATEMENT_EXECUTE|[18]
+13:22:25.0 (3878118)|HEAP_ALLOCATE|[18]|Bytes:5
+13:22:25.0 (3881656)|VARIABLE_ASSIGNMENT|[18]|this.isInsert|false|0x9e061bc
+13:22:25.0 (3883001)|STATEMENT_EXECUTE|[19]
+13:22:25.0 (3884640)|HEAP_ALLOCATE|[19]|Bytes:5
+13:22:25.0 (3888112)|VARIABLE_ASSIGNMENT|[19]|this.isUpdate|true|0x9e061bc
+13:22:25.0 (3889339)|STATEMENT_EXECUTE|[20]
+13:22:25.0 (3891036)|HEAP_ALLOCATE|[20]|Bytes:5
+13:22:25.0 (3894130)|VARIABLE_ASSIGNMENT|[20]|this.isDelete|false|0x9e061bc
+13:22:25.0 (3895414)|STATEMENT_EXECUTE|[21]
+13:22:25.0 (3897052)|HEAP_ALLOCATE|[21]|Bytes:5
+13:22:25.0 (3900041)|VARIABLE_ASSIGNMENT|[21]|this.isUndelete|false|0x9e061bc
+13:22:25.0 (3901441)|STATEMENT_EXECUTE|[22]
+13:22:25.0 (3987487)|VARIABLE_ASSIGNMENT|[22]|this.triggerNew|[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]|0x9e061bc
+13:22:25.0 (3992679)|STATEMENT_EXECUTE|[23]
+13:22:25.0 (4123457)|VARIABLE_ASSIGNMENT|[23]|this.triggerOld|[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]|0x9e061bc
+13:22:25.0 (4131649)|STATEMENT_EXECUTE|[24]
+13:22:25.0 (4282191)|VARIABLE_ASSIGNMENT|[24]|this.newMap|{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}|0x9e061bc
+13:22:25.0 (4290357)|STATEMENT_EXECUTE|[25]
+13:22:25.0 (4392242)|VARIABLE_ASSIGNMENT|[25]|this.oldMap|{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}|0x9e061bc
+13:22:25.0 (4415398)|CONSTRUCTOR_EXIT|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+13:22:25.0 (4486320)|HEAP_ALLOCATE|[3]|Bytes:14
+13:22:25.0 (4492457)|HEAP_ALLOCATE|[3]|Bytes:23
+13:22:25.0 (4500378)|METHOD_ENTRY|[1]|01p2400000DcTyQ|ProjectUtil.ProjectUtil()
+13:22:25.0 (4503442)|STATEMENT_EXECUTE|[1]
+13:22:25.0 (4507159)|STATEMENT_EXECUTE|[1]
+13:22:25.0 (4511760)|METHOD_EXIT|[1]|ProjectUtil
+13:22:25.0 (4526807)|METHOD_ENTRY|[3]|01p2400000DcTyQ|ProjectUtil.entry(TriggerParams)
+13:22:25.0 (4533476)|VARIABLE_SCOPE_BEGIN|[2]|triggerParams|TriggerParams|true|false
+13:22:25.0 (4570464)|VARIABLE_ASSIGNMENT|[2]|triggerParams|{"isAfter":false,"isBefore":true,"isDelete":false,"isInsert":false,"isUndelete":false,"isUpdate":true,"newMap":"0x1c715c26","oldMap":"0x16963395","triggerNew":"0x5fb036f1","triggerOld":"0x4fd28338"}|0x9e061bc
+13:22:25.0 (4578979)|STATEMENT_EXECUTE|[2]
+13:22:25.0 (4580144)|STATEMENT_EXECUTE|[3]
+13:22:25.0 (4589750)|VARIABLE_SCOPE_BEGIN|[3]|triggerNew|List<Projecten__c>|true|false
+13:22:25.0 (4704282)|VARIABLE_ASSIGNMENT|[3]|triggerNew|[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]|0x5fb036f1
+13:22:25.0 (4709719)|STATEMENT_EXECUTE|[4]
+13:22:25.0 (4715011)|VARIABLE_SCOPE_BEGIN|[4]|triggerOld|List<Projecten__c>|true|false
+13:22:25.0 (4791582)|VARIABLE_ASSIGNMENT|[4]|triggerOld|[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]|0x4fd28338
+13:22:25.0 (4795997)|STATEMENT_EXECUTE|[5]
+13:22:25.0 (4802267)|VARIABLE_SCOPE_BEGIN|[5]|oldMap|Map<Id,Projecten__c>|true|false
+13:22:25.0 (4877613)|VARIABLE_ASSIGNMENT|[5]|oldMap|{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}|0x16963395
+13:22:25.0 (4882264)|STATEMENT_EXECUTE|[6]
+13:22:25.0 (4886249)|VARIABLE_SCOPE_BEGIN|[6]|newMap|Map<Id,Projecten__c>|true|false
+13:22:25.0 (4958253)|VARIABLE_ASSIGNMENT|[6]|newMap|{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}|0x1c715c26
+13:22:25.0 (4966282)|STATEMENT_EXECUTE|[9]
+13:22:25.0 (4969311)|STATEMENT_EXECUTE|[10]
+13:22:25.0 (4970459)|STATEMENT_EXECUTE|[11]
+13:22:25.0 (4982690)|METHOD_ENTRY|[11]|01p2400000DcTyQ|ProjectUtil.checkName(List<Projecten__c>)
+13:22:25.0 (4997953)|VARIABLE_SCOPE_BEGIN|[84]|projects|List<Projecten__c>|true|false
+13:22:25.0 (5077042)|VARIABLE_ASSIGNMENT|[84]|projects|[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]|0x5fb036f1
+13:22:25.0 (5084482)|STATEMENT_EXECUTE|[84]
+13:22:25.0 (5085800)|STATEMENT_EXECUTE|[85]
+13:22:25.0 (5095040)|HEAP_ALLOCATE|[85]|Bytes:4
+13:22:25.0 (5123653)|VARIABLE_SCOPE_BEGIN|[85]|names|Set<String>|true|false
+13:22:25.0 (5147403)|VARIABLE_ASSIGNMENT|[85]|names|[]|0x48cf8808
+13:22:25.0 (5329644)|HEAP_ALLOCATE|[86]|Bytes:5
+13:22:25.0 (5346408)|HEAP_ALLOCATE|[86]|Bytes:4
+13:22:25.0 (5353099)|VARIABLE_SCOPE_BEGIN|[86]|p|Projecten__c|true|false
+13:22:25.0 (5449454)|VARIABLE_ASSIGNMENT|[86]|p|{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}|0x227476ee
+13:22:25.0 (5455632)|STATEMENT_EXECUTE|[86]
+13:22:25.0 (5457003)|STATEMENT_EXECUTE|[87]
+13:22:25.0 (5505955)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+13:22:25.0 (5519732)|HEAP_ALLOCATE|[86]|Bytes:5
+13:22:25.0 (5529817)|VARIABLE_ASSIGNMENT|[86]|p|null|
+13:22:25.0 (5532459)|STATEMENT_EXECUTE|[89]
+13:22:25.0 (5535184)|HEAP_ALLOCATE|[89]|Bytes:51
+13:22:25.0 (5543050)|HEAP_ALLOCATE|[89]|Bytes:4
+13:22:25.0 (5551078)|HEAP_ALLOCATE|[89]|Bytes:7
+13:22:25.0 (5581094)|HEAP_ALLOCATE|[89]|Bytes:8
+13:22:25.0 (5585538)|HEAP_ALLOCATE|[89]|Bytes:8
+13:22:25.0 (5713440)|SOQL_EXECUTE_BEGIN|[89]|Aggregations:0|SELECT Name FROM Projecten__c WHERE Name = :tmpVar1
+13:22:25.0 (8570183)|SOQL_EXECUTE_END|[89]|Rows:1
+13:22:25.0 (8583972)|HEAP_ALLOCATE|[89]|Bytes:8
+13:22:25.0 (8599359)|HEAP_ALLOCATE|[89]|Bytes:41
+13:22:25.0 (8611345)|HEAP_ALLOCATE|[89]|Bytes:8
+13:22:25.0 (8619327)|VARIABLE_SCOPE_BEGIN|[89]|oldprojects|List<Projecten__c>|true|false
+13:22:25.0 (8635598)|VARIABLE_ASSIGNMENT|[89]|oldprojects|[{"Name":"5700","Id":"a0q0E0000008S3WQAU"}]|0x7ff519b4
+13:22:25.0 (8638527)|STATEMENT_EXECUTE|[90]
+13:22:25.0 (8662381)|HEAP_ALLOCATE|[90]|Bytes:4
+13:22:25.0 (8691584)|VARIABLE_SCOPE_BEGIN|[90]|byName|Map<String,Projecten__c>|true|false
+13:22:25.0 (8701904)|VARIABLE_ASSIGNMENT|[90]|byName|{}|0x5f50512
+13:22:25.0 (8735182)|HEAP_ALLOCATE|[91]|Bytes:5
+13:22:25.0 (8761725)|HEAP_ALLOCATE|[91]|Bytes:12
+13:22:25.0 (8768373)|VARIABLE_SCOPE_BEGIN|[91]|pr|Projecten__c|true|false
+13:22:25.0 (8778675)|VARIABLE_ASSIGNMENT|[91]|pr|{"Name":"5700","Id":"a0q0E0000008S3WQAU"}|0x53ffcbdc
+13:22:25.0 (8781282)|STATEMENT_EXECUTE|[91]
+13:22:25.0 (8782656)|STATEMENT_EXECUTE|[92]
+13:22:25.0 (8821646)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+13:22:25.0 (8833927)|HEAP_ALLOCATE|[91]|Bytes:5
+13:22:25.0 (8842621)|VARIABLE_ASSIGNMENT|[91]|pr|null|
+13:22:25.0 (8860926)|HEAP_ALLOCATE|[94]|Bytes:5
+13:22:25.0 (8868181)|HEAP_ALLOCATE|[94]|Bytes:4
+13:22:25.0 (8872306)|VARIABLE_SCOPE_BEGIN|[94]|p|Projecten__c|true|false
+13:22:25.0 (8984710)|VARIABLE_ASSIGNMENT|[94]|p|{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}|0x227476ee
+13:22:25.0 (8990517)|STATEMENT_EXECUTE|[94]
+13:22:25.0 (9073116)|STATEMENT_EXECUTE|[95]
+13:22:25.0 (9082630)|HEAP_ALLOCATE|[94]|Bytes:5
+13:22:25.0 (9091829)|VARIABLE_ASSIGNMENT|[94]|p|null|
+13:22:25.0 (9098498)|METHOD_EXIT|[11]|01p2400000DcTyQ|ProjectUtil.checkName(List<Projecten__c>)
+13:22:25.0 (9103450)|STATEMENT_EXECUTE|[13]
+13:22:25.0 (9106726)|METHOD_EXIT|[3]|01p2400000DcTyQ|ProjectUtil.entry(TriggerParams)
+13:22:25.9 (9112853)|CUMULATIVE_LIMIT_USAGE
+13:22:25.9 (9112853)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:22:25.9 (9112853)|CUMULATIVE_LIMIT_USAGE_END
+
+13:22:25.0 (9895066)|CODE_UNIT_FINISHED|ProjectTrigger on Projecten trigger event BeforeUpdate for [a0q0E0000008S3W]
+13:22:25.0 (32247028)|CODE_UNIT_STARTED|[EXTERNAL]|01q24000000qIfI|ProjectTrigger on Projecten trigger event AfterUpdate for [a0q0E0000008S3W]
+13:22:25.0 (32261705)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+13:22:25.0 (32284112)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+13:22:25.0 (32321232)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+13:22:25.0 (32325881)|VARIABLE_SCOPE_BEGIN|[1]|this|ProjectTrigger|true|false
+13:22:25.0 (32338728)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x62d80e1c
+13:22:25.0 (32355002)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+13:22:25.0 (32358188)|VARIABLE_SCOPE_BEGIN|[1]|this|ProjectTrigger|true|false
+13:22:25.0 (32363515)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x62d80e1c
+13:22:25.0 (32366475)|STATEMENT_EXECUTE|[1]
+13:22:25.0 (32367760)|STATEMENT_EXECUTE|[3]
+13:22:25.0 (32371321)|HEAP_ALLOCATE|[3]|Bytes:44
+13:22:25.0 (32415202)|CONSTRUCTOR_ENTRY|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+13:22:25.0 (32419607)|VARIABLE_SCOPE_BEGIN|[13]|this|TriggerParams|true|false
+13:22:25.0 (32432534)|VARIABLE_ASSIGNMENT|[13]|this|{}|0x5d450826
+13:22:25.0 (32436920)|VARIABLE_SCOPE_BEGIN|[13]|isBefore|Boolean|false|false
+13:22:25.0 (32440703)|VARIABLE_ASSIGNMENT|[13]|isBefore|false
+13:22:25.0 (32442569)|VARIABLE_SCOPE_BEGIN|[13]|isAfter|Boolean|false|false
+13:22:25.0 (32444638)|VARIABLE_ASSIGNMENT|[13]|isAfter|true
+13:22:25.0 (32446259)|VARIABLE_SCOPE_BEGIN|[13]|isInsert|Boolean|false|false
+13:22:25.0 (32448269)|VARIABLE_ASSIGNMENT|[13]|isInsert|false
+13:22:25.0 (32449815)|VARIABLE_SCOPE_BEGIN|[13]|isUpdate|Boolean|false|false
+13:22:25.0 (32451557)|VARIABLE_ASSIGNMENT|[13]|isUpdate|true
+13:22:25.0 (32453096)|VARIABLE_SCOPE_BEGIN|[13]|isDelete|Boolean|false|false
+13:22:25.0 (32454878)|VARIABLE_ASSIGNMENT|[13]|isDelete|false
+13:22:25.0 (32456320)|VARIABLE_SCOPE_BEGIN|[13]|isUndelete|Boolean|false|false
+13:22:25.0 (32458329)|VARIABLE_ASSIGNMENT|[13]|isUndelete|false
+13:22:25.0 (32459614)|VARIABLE_SCOPE_BEGIN|[13]|triggerNew|List<SObject>|true|false
+13:22:25.0 (32618966)|VARIABLE_ASSIGNMENT|[13]|triggerNew|[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:22:25.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:22:25.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]|0x79806a52
+13:22:25.0 (32624722)|VARIABLE_SCOPE_BEGIN|[13]|triggerOld|List<SObject>|true|false
+13:22:25.0 (32747426)|VARIABLE_ASSIGNMENT|[13]|triggerOld|[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]|0x48411229
+13:22:25.0 (32752285)|VARIABLE_SCOPE_BEGIN|[13]|newMap|Map<Id,SObject>|true|false
+13:22:25.0 (32832464)|VARIABLE_ASSIGNMENT|[13]|newMap|{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:22:25.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:22:25.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}|0x6acb4dd3
+13:22:25.0 (32836763)|VARIABLE_SCOPE_BEGIN|[13]|oldMap|Map<Id,SObject>|true|false
+13:22:25.0 (32907024)|VARIABLE_ASSIGNMENT|[13]|oldMap|{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}|0x1f3a6c94
+13:22:25.0 (32917105)|HEAP_ALLOCATE|[16]|Bytes:5
+13:22:25.0 (32920739)|STATEMENT_EXECUTE|[1]
+13:22:25.0 (32922750)|HEAP_ALLOCATE|[16]|Bytes:5
+13:22:25.0 (32924054)|STATEMENT_EXECUTE|[2]
+13:22:25.0 (32925131)|STATEMENT_EXECUTE|[3]
+13:22:25.0 (32926070)|STATEMENT_EXECUTE|[4]
+13:22:25.0 (32927026)|STATEMENT_EXECUTE|[5]
+13:22:25.0 (32927917)|STATEMENT_EXECUTE|[6]
+13:22:25.0 (32928852)|STATEMENT_EXECUTE|[7]
+13:22:25.0 (32929769)|STATEMENT_EXECUTE|[8]
+13:22:25.0 (32930706)|STATEMENT_EXECUTE|[9]
+13:22:25.0 (32931774)|STATEMENT_EXECUTE|[10]
+13:22:25.0 (32932810)|STATEMENT_EXECUTE|[11]
+13:22:25.0 (32947557)|STATEMENT_EXECUTE|[15]
+13:22:25.0 (32948797)|STATEMENT_EXECUTE|[16]
+13:22:25.0 (32951336)|HEAP_ALLOCATE|[16]|Bytes:5
+13:22:25.0 (32957909)|VARIABLE_ASSIGNMENT|[16]|this.isBefore|false|0x5d450826
+13:22:25.0 (32959519)|STATEMENT_EXECUTE|[17]
+13:22:25.0 (32961308)|HEAP_ALLOCATE|[17]|Bytes:5
+13:22:25.0 (32964348)|VARIABLE_ASSIGNMENT|[17]|this.isAfter|true|0x5d450826
+13:22:25.0 (32965911)|STATEMENT_EXECUTE|[18]
+13:22:25.0 (32967597)|HEAP_ALLOCATE|[18]|Bytes:5
+13:22:25.0 (32970999)|VARIABLE_ASSIGNMENT|[18]|this.isInsert|false|0x5d450826
+13:22:25.0 (32972221)|STATEMENT_EXECUTE|[19]
+13:22:25.0 (32973836)|HEAP_ALLOCATE|[19]|Bytes:5
+13:22:25.0 (32977089)|VARIABLE_ASSIGNMENT|[19]|this.isUpdate|true|0x5d450826
+13:22:25.0 (32978417)|STATEMENT_EXECUTE|[20]
+13:22:25.0 (32980036)|HEAP_ALLOCATE|[20]|Bytes:5
+13:22:25.0 (32982670)|VARIABLE_ASSIGNMENT|[20]|this.isDelete|false|0x5d450826
+13:22:25.0 (32983882)|STATEMENT_EXECUTE|[21]
+13:22:25.0 (32985703)|HEAP_ALLOCATE|[21]|Bytes:5
+13:22:25.0 (32988587)|VARIABLE_ASSIGNMENT|[21]|this.isUndelete|false|0x5d450826
+13:22:25.0 (32989962)|STATEMENT_EXECUTE|[22]
+13:22:25.0 (33071798)|VARIABLE_ASSIGNMENT|[22]|this.triggerNew|[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:22:25.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:22:25.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]|0x5d450826
+13:22:25.0 (33077403)|STATEMENT_EXECUTE|[23]
+13:22:25.0 (33150668)|VARIABLE_ASSIGNMENT|[23]|this.triggerOld|[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]|0x5d450826
+13:22:25.0 (33156521)|STATEMENT_EXECUTE|[24]
+13:22:25.0 (33230766)|VARIABLE_ASSIGNMENT|[24]|this.newMap|{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:22:25.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:22:25.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}|0x5d450826
+13:22:25.0 (33236186)|STATEMENT_EXECUTE|[25]
+13:22:25.0 (33311728)|VARIABLE_ASSIGNMENT|[25]|this.oldMap|{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}|0x5d450826
+13:22:25.0 (33331298)|CONSTRUCTOR_EXIT|[3]|01p2400000Cr9rX|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,List<SObject>,Map<Id,SObject>,Map<Id,SObject>)
+13:22:25.0 (33339707)|METHOD_ENTRY|[3]|01p2400000DcTyQ|ProjectUtil.entry(TriggerParams)
+13:22:25.0 (33343271)|VARIABLE_SCOPE_BEGIN|[2]|triggerParams|TriggerParams|true|false
+13:22:25.0 (33366137)|VARIABLE_ASSIGNMENT|[2]|triggerParams|{"isAfter":true,"isBefore":false,"isDelete":false,"isInsert":false,"isUndelete":false,"isUpdate":true,"newMap":"0x6acb4dd3","oldMap":"0x1f3a6c94","triggerNew":"0x79806a52","triggerOld":"0x48411229"}|0x5d450826
+13:22:25.0 (33370957)|STATEMENT_EXECUTE|[2]
+13:22:25.0 (33372236)|STATEMENT_EXECUTE|[3]
+13:22:25.0 (33377267)|VARIABLE_SCOPE_BEGIN|[3]|triggerNew|List<Projecten__c>|true|false
+13:22:25.0 (33460328)|VARIABLE_ASSIGNMENT|[3]|triggerNew|[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:22:25.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:22:25.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]|0x79806a52
+13:22:25.0 (33465188)|STATEMENT_EXECUTE|[4]
+13:22:25.0 (33469530)|VARIABLE_SCOPE_BEGIN|[4]|triggerOld|List<Projecten__c>|true|false
+13:22:25.0 (33539836)|VARIABLE_ASSIGNMENT|[4]|triggerOld|[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]|0x48411229
+13:22:25.0 (33544623)|STATEMENT_EXECUTE|[5]
+13:22:25.0 (33548915)|VARIABLE_SCOPE_BEGIN|[5]|oldMap|Map<Id,Projecten__c>|true|false
+13:22:25.0 (33619703)|VARIABLE_ASSIGNMENT|[5]|oldMap|{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}|0x1f3a6c94
+13:22:25.0 (33624477)|STATEMENT_EXECUTE|[6]
+13:22:25.0 (33627731)|VARIABLE_SCOPE_BEGIN|[6]|newMap|Map<Id,Projecten__c>|true|false
+13:22:25.0 (33697720)|VARIABLE_ASSIGNMENT|[6]|newMap|{"a0q0E0000008S3WQAU":{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:22:25.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:22:25.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}}|0x6acb4dd3
+13:22:25.0 (33704673)|STATEMENT_EXECUTE|[16]
+13:22:25.0 (33707092)|STATEMENT_EXECUTE|[17]
+13:22:25.0 (33708076)|STATEMENT_EXECUTE|[18]
+13:22:25.0 (33711657)|HEAP_ALLOCATE|[18]|Bytes:11
+13:22:25.0 (33715328)|HEAP_ALLOCATE|[18]|Bytes:9
+13:22:25.0 (33723850)|HEAP_ALLOCATE|[18]|Bytes:4
+13:22:25.0 (33795520)|HEAP_ALLOCATE|[18]|Bytes:26
+13:22:25.0 (33809222)|HEAP_ALLOCATE|[18]|Bytes:4
+13:22:25.0 (33816796)|HEAP_ALLOCATE|[18]|Bytes:7
+13:22:25.0 (33842140)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+13:22:25.0 (33849351)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+13:22:25.0 (46793610)|STATEMENT_EXECUTE|[19]
+13:22:25.0 (46810700)|METHOD_ENTRY|[19]|01p2400000DcTyQ|ProjectUtil.calculateRollupSum(List<Projecten__c>, List<Projecten__c>)
+13:22:25.0 (46825479)|VARIABLE_SCOPE_BEGIN|[44]|newPr|List<Projecten__c>|true|false
+13:22:25.0 (46943364)|VARIABLE_ASSIGNMENT|[44]|newPr|[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:22:25.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:22:25.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]|0x79806a52
+13:22:25.0 (46948976)|VARIABLE_SCOPE_BEGIN|[44]|oldPr|List<Projecten__c>|true|false
+13:22:25.0 (47029449)|VARIABLE_ASSIGNMENT|[44]|oldPr|[{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}]|0x48411229
+13:22:25.0 (47037417)|STATEMENT_EXECUTE|[44]
+13:22:25.0 (47038893)|STATEMENT_EXECUTE|[45]
+13:22:25.0 (47218091)|USER_DEBUG|[45]|DEBUG|(Projecten__c:{Id=a0q0E0000008S3WQAU, OwnerId=00524000001e3UjAAI, IsDeleted=false, Name=5700, CreatedDate=2017-01-10 12:22:32, CreatedById=00524000001e3UjAAI, LastModifiedDate=2017-02-16 12:22:25, LastModifiedById=00524000001e3UjAAI, SystemModstamp=2017-02-16 12:22:25, LastActivityDate=null, LastViewedDate=null, LastReferencedDate=null, Account__c=0010E000002eEwIQAU, Project_omschrijving__c=Opslag security assets, SF_ID__c=null, Actueel_aantal_palletplaatsen__c=0, Aantal_palletplaatsen__c=0, Projectleider__c=Bedrijfsbureau, Project_amscheyving__c=null})
+13:22:25.0 (47229034)|STATEMENT_EXECUTE|[46]
+13:22:25.0 (47235004)|HEAP_ALLOCATE|[46]|Bytes:4
+13:22:25.0 (47261758)|VARIABLE_SCOPE_BEGIN|[46]|accIds|Set<Id>|true|false
+13:22:25.0 (47284266)|VARIABLE_ASSIGNMENT|[46]|accIds|[]|0x245d1e27
+13:22:25.0 (47325828)|HEAP_ALLOCATE|[48]|Bytes:5
+13:22:25.0 (47340704)|VARIABLE_SCOPE_BEGIN|[48]|pr|Projecten__c|true|false
+13:22:25.0 (47437896)|VARIABLE_ASSIGNMENT|[48]|pr|{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:22:25.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:22:25.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}|0x1ce27603
+13:22:25.0 (47443620)|STATEMENT_EXECUTE|[48]
+13:22:25.0 (47444983)|STATEMENT_EXECUTE|[49]
+13:22:25.0 (47489608)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+13:22:25.0 (47503065)|HEAP_ALLOCATE|[48]|Bytes:5
+13:22:25.0 (47513313)|VARIABLE_ASSIGNMENT|[48]|pr|null|
+13:22:25.0 (47516539)|STATEMENT_EXECUTE|[51]
+13:22:25.0 (47534940)|HEAP_ALLOCATE|[52]|Bytes:5
+13:22:25.0 (47544952)|VARIABLE_SCOPE_BEGIN|[52]|pr|Projecten__c|true|false
+13:22:25.0 (47632409)|VARIABLE_ASSIGNMENT|[52]|pr|{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:18:46.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:18:46.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}|0x70b04074
+13:22:25.0 (47638253)|STATEMENT_EXECUTE|[52]
+13:22:25.0 (47639757)|STATEMENT_EXECUTE|[53]
+13:22:25.0 (47664139)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+13:22:25.0 (47675940)|HEAP_ALLOCATE|[52]|Bytes:5
+13:22:25.0 (47685601)|VARIABLE_ASSIGNMENT|[52]|pr|null|
+13:22:25.0 (47688313)|STATEMENT_EXECUTE|[57]
+13:22:25.0 (47730658)|HEAP_ALLOCATE|[57]|Bytes:4
+13:22:25.0 (47735284)|HEAP_ALLOCATE|[57]|Bytes:77
+13:22:25.0 (47738210)|HEAP_ALLOCATE|[57]|Bytes:4
+13:22:25.0 (47765051)|HEAP_ALLOCATE|[57]|Bytes:8
+13:22:25.0 (47769926)|HEAP_ALLOCATE|[57]|Bytes:8
+13:22:25.0 (47926832)|SOQL_EXECUTE_BEGIN|[57]|Aggregations:0|SELECT Id, Actueel_aantal_palletplaatsen1__c FROM Account WHERE id = :tmpVar1
+13:22:25.0 (49502283)|SOQL_EXECUTE_END|[57]|Rows:1
+13:22:25.0 (49515695)|HEAP_ALLOCATE|[57]|Bytes:8
+13:22:25.0 (49530166)|HEAP_ALLOCATE|[57]|Bytes:102
+13:22:25.0 (49563764)|HEAP_ALLOCATE|[57]|Bytes:8
+13:22:25.0 (49606446)|HEAP_ALLOCATE|[57]|Bytes:12
+13:22:25.0 (49614032)|HEAP_ALLOCATE|[57]|Bytes:4
+13:22:25.0 (49621505)|VARIABLE_SCOPE_BEGIN|[57]|accById|Map<Id,Account>|true|false
+13:22:25.0 (49642030)|VARIABLE_ASSIGNMENT|[57]|accById|{"0010E000002eEwIQAU":{"Id":"0010E000002eEwIQAU","Actueel_aantal_palle (13 more) ...":-80}}|0x5b239680
+13:22:25.0 (49677588)|HEAP_ALLOCATE|[59]|Bytes:5
+13:22:25.0 (49691126)|VARIABLE_SCOPE_BEGIN|[59]|pr|Projecten__c|true|false
+13:22:25.0 (49803434)|VARIABLE_ASSIGNMENT|[59]|pr|{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:22:25.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:22:25.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}|0x1ce27603
+13:22:25.0 (49810178)|STATEMENT_EXECUTE|[59]
+13:22:25.0 (49881404)|STATEMENT_EXECUTE|[60]
+13:22:25.0 (49891331)|HEAP_ALLOCATE|[59]|Bytes:5
+13:22:25.0 (49901971)|VARIABLE_ASSIGNMENT|[59]|pr|null|
+13:22:25.0 (49923119)|HEAP_ALLOCATE|[65]|Bytes:5
+13:22:25.0 (49932976)|VARIABLE_SCOPE_BEGIN|[65]|pr|Projecten__c|true|false
+13:22:25.0 (50028052)|VARIABLE_ASSIGNMENT|[65]|pr|{"Aantal_palletplaatse (4 more) ...":0,"LastModifiedDate":"2017-02-16T12:22:25.000Z","IsDeleted":false,"Project_omschrijving (3 more) ...":"Opslag security asse (2 more) ...","Name":"5700","SystemModstamp":"2017-02-16T12:22:25.000Z","OwnerId":"00524000001e3UjAAI","CreatedById":"00524000001e3UjAAI","Projectleider__c":"Bedrijfsbureau","CreatedDate":"2017-01-10T12:22:32.000Z","Account__c":"0010E000002eEwIQAU","Id":"a0q0E0000008S3WQAU","LastModifiedById":"00524000001e3UjAAI","Actueel_aantal_palle (12 more) ...":0}|0x1ce27603
+13:22:25.0 (50033856)|STATEMENT_EXECUTE|[65]
+13:22:25.0 (50052706)|STATEMENT_EXECUTE|[66]
+13:22:25.0 (50054157)|STATEMENT_EXECUTE|[67]
+13:22:25.0 (50123898)|HEAP_ALLOCATE|[67]|Bytes:28
+13:22:25.0 (50177947)|VARIABLE_ASSIGNMENT|[67]|this.Actueel_aantal_palletplaatsen1__c|-80|0x2879c0c6
+13:22:25.0 (50189901)|HEAP_ALLOCATE|[65]|Bytes:5
+13:22:25.0 (50200237)|VARIABLE_ASSIGNMENT|[65]|pr|null|
+13:22:25.0 (50220523)|STATEMENT_EXECUTE|[72]
+13:22:25.0 (50222074)|STATEMENT_EXECUTE|[80]
+13:22:25.0 (50236426)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+13:22:25.0 (50243538)|HEAP_ALLOCATE|[80]|Bytes:109
+13:22:25.0 (50280484)|USER_DEBUG|[80]|DEBUG|(Account:{Id=0010E000002eEwIQAU, Actueel_aantal_palletplaatsen1__c=-80})
+13:22:25.0 (50285973)|STATEMENT_EXECUTE|[81]
+13:22:25.0 (50306366)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+13:22:25.0 (50311753)|HEAP_ALLOCATE|[81]|Bytes:109
+13:22:25.0 (50343230)|DML_BEGIN|[81]|Op:Update|Type:Account|Rows:1
+13:22:25.0 (50363929)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+13:22:25.0 (70046876)|DML_END|[81]
+13:22:25.0 (70101362)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+13:22:25.0 (70115558)|METHOD_EXIT|[19]|01p2400000DcTyQ|ProjectUtil.calculateRollupSum(List<Projecten__c>, List<Projecten__c>)
+13:22:25.0 (70133841)|STATEMENT_EXECUTE|[22]
+13:22:25.0 (70139556)|METHOD_EXIT|[3]|01p2400000DcTyQ|ProjectUtil.entry(TriggerParams)
+13:22:25.70 (70146853)|CUMULATIVE_LIMIT_USAGE
+13:22:25.70 (70146853)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 1 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:22:25.70 (70146853)|CUMULATIVE_LIMIT_USAGE_END
+
+13:22:25.0 (71002419)|CODE_UNIT_FINISHED|ProjectTrigger on Projecten trigger event AfterUpdate for [a0q0E0000008S3W]
+13:22:25.0 (79779884)|CODE_UNIT_FINISHED|TRIGGERS
+13:22:25.0 (79786863)|EXECUTION_FINISHED

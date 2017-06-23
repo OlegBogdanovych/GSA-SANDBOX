@@ -1,0 +1,180 @@
+<apex:page showHeader="false" sidebar="true" controller="LocationsPrintController" action="{!loadData}" standardStylesheets="false"  applyHtmlTag="false" applyBodyTag="false" >
+    <style>
+        img {
+            width: 189px !important;
+            height: 189px !important;
+            margin: 30px !important; 
+
+            margin-bottom:0px !important; 
+            margin-top:0px !important;       
+        }
+        .textClass {
+           // margin-top: 35px !important; 
+            margin-left: 35px !important; 
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        @page {
+            margin:0.5cm;
+           margin-bottom:3.5cm;
+           page-break-before: always;
+        }
+        select {
+            //position:absolute;
+        }
+        .slds-select_container {
+            position: relative;
+        }
+        .skiplink {
+            display:none !important;
+        }
+        .slds-select_container:after, .slds-select_container:before {
+            box-sizing: border-box;
+        }
+        .slds-select_container:before {
+            border-bottom: 5px solid #061c3f;
+            //top: 15%;
+        }
+        .slds-select_container:after, .slds-select_container:before {
+            position: absolute !important;
+            content: '';
+            display: block;
+            right: 51%;
+            width: 0;
+            height: 0;
+            border-left: 3px solid transparent;
+            border-right: 3px solid transparent;
+        }
+        .slds-select_container:after {
+            border-top: 5px solid #061c3f;
+            bottom: 20%;
+        }
+        .slds-form-element__label {
+            display: inline-block;
+            color: #54698d;
+            font-size: .75rem;
+            line-height: 1.5;
+            margin-right: .75rem;
+            margin-bottom: .25rem;
+        }
+        .slds-select_container .slds-select {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            padding-left: .5rem;
+            padding-right: 1.5rem;
+        }
+        .slds-select {
+            background-color: #fff;
+            color: #16325c;
+            border: 1px solid #d8dde6;
+            border-radius: .25rem;
+            width: 50%;
+            transition: border .1s linear,background-color .1s linear;
+            height: calc(1.875rem + (1px * 2));
+        }
+        button, select {
+            text-transform: none;
+        }
+    </style>
+        <apex:stylesheet value="{!URLFOR($Resource.SLDS080, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+     
+        <apex:includeScript value="{!URLFOR($Resource.qrcode, 'jquery.min.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.qrcode, 'qrcode.js')}" />
+
+        <div id="divButtons" name="divButtons" style="align:right;">
+            <input type="button" value = "Print" onclick="printPage()" style="position:absolute;" class="slds-button slds-button--neutral slds-not-selected"/>
+        </div>
+        <br/><br/>
+            <div id="divButtons1" name="divButtons" style="align:left;float:left;">
+                <a href="#"  onclick = "counter();">Prev</a>
+                <a href="#"  onclick = "counter1();">Next</a>
+                <br/>
+            </div>
+        <br/><br/>
+        <apex:form >
+            <apex:actionFunction action="{!loadData}" name="setClicks" rerender="allcodes" >
+                <APEX:PARAM name="clicks" assignTo="{!offsetNumbSet}" value=""/>
+            </apex:actionFunction>
+            <apex:outputPanel id="filter">
+                <div class="slds-form-element">
+                  <label class="slds-form-element__label" for="select-01">Select HUB</label>
+                  <div class="slds-form-element__control">
+                    <div class="slds-select_container">
+                      
+                        <apex:selectList value="{!hubSelected}" size="1" styleClass="slds-select" onchange="loadScr();">
+                            <apex:selectOptions value="{!hubs}"/>
+                        </apex:selectList>
+                    </div>
+                  </div>
+                </div>
+            </apex:outputPanel>
+            <br/><br/><br/>
+            <apex:actionFunction action="{!init}" name="rerenderComponentAct" rerender="comp" />
+            
+            <apex:actionFunction action="{!loadData}" name="loadAct"  />
+            <apex:outputPanel id="allcodes">
+                <apex:variable value="{!1}" var="rowNum"/>
+                
+
+                <apex:repeat value="{!locations}" var="loc" >
+                    <div style="display:inline-block; height:25%; width: 30%;">
+                    <br/><br/>
+                    
+                        <apex:outputText value="{!loc.Name}" id="locId" styleClass="textClass">
+                            
+                        </apex:outputText>
+                        <br/>
+                        <apex:outputPanel id="comp" styleClass="compClass">
+                            <c:QRCode sId="{!loc.Id}" />
+                        </apex:outputPanel>
+                        
+                    </div>
+                    <apex:variable var="rowNum" value="{!rowNum + 1}"/>
+                    <apex:outputPanel rendered="{!rowNum == 4}">
+                            <br/><br/><br/>
+                            <apex:variable var="rowNum" value="{!1}"/>
+                    </apex:outputPanel>
+                       
+                </apex:repeat>
+            </apex:outputPanel>
+            <br/><br/>
+        </apex:form>
+    <script language="JavaScript">
+        function printPage() {
+            if(document.all) {
+                document.all.divButtons.style.visibility = 'hidden';
+                window.print();
+                document.all.divButtons.style.visibility = 'visible';
+                
+            } else {
+                document.getElementById('divButtons').style.visibility = 'hidden';
+                $("[id$='filter']").hide();
+                document.getElementById('divButtons1').style.visibility = 'hidden';
+                window.print();
+                document.getElementById('divButtons').style.visibility = 'visible';
+                document.getElementById('divButtons1').style.visibility = 'visible';
+                $("[id$='filter']").show();
+                
+            }
+        }
+        var clicks = 0;
+        function counter () {
+            clicks -= 1;
+            if (clicks < 0) {
+                clicks = 0;
+            }
+            console.log(clicks);
+            setClicks(clicks);
+        }
+        function counter1 () {
+            clicks += 1;
+            console.log(clicks);
+            setClicks(clicks);
+        }
+        function loadScr () {
+            loadAct();
+        }
+    </script>
+    
+</apex:page>
