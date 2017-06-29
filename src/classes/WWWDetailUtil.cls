@@ -390,7 +390,7 @@ public class WWWDetailUtil{
                     if (detail.Number_Of_Items__c > items) {
                         detail.addError(Label.Too_much_packages);
                     }
-                } else if (detail.RecordTypeId == rTdelToHub.Id) {
+                } else if (detail.RecordTypeId == rTdelToHub.Id && oldMap != null) {
                     if (detail.Number_Of_Items__c < wwwsById.get(detail.WWW__c).Total_Items_Delivered_Project__c 
                             || detail.Number_Of_Items__c < wwwsById.get(detail.WWW__c).Total_Items_Invoked__c) {
                         detail.addError(Label.Too_much_packages);

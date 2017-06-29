@@ -139,6 +139,19 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Destination__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Destination</label>
+        <referenceTo>Destination__c</referenceTo>
+        <relationshipLabel>Bouwticket</relationshipLabel>
+        <relationshipName>Bouwticket</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>End_Point__c</fullName>
         <externalId>false</externalId>
         <label>End Point</label>
@@ -334,6 +347,15 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Self_solving__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Self-solving?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Status__c</fullName>

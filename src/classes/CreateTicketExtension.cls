@@ -46,7 +46,6 @@ public with sharing class CreateTicketExtension {
     public static String dOfDelivery {get; set;}
     @AuraEnabled
     public static String dOfActivity {get; set;}
-    
 
     public static Map<String, String> hubNameById {get; set;}
 
@@ -59,6 +58,7 @@ public with sharing class CreateTicketExtension {
     public String arrivalTimeHours{get; set;}
     public String arrivalTime{get; set;}
     public String destinatioId {get; set;}
+    public String selfChecked {get; set;}
 
     private ApexPages.StandardController contr;
 
@@ -117,6 +117,12 @@ public with sharing class CreateTicketExtension {
         ticket.Projectmember__c = managerSelected;
         ticket.Project__c = project;
         ticket.Destination__c = destinatioId;
+
+        if (selfChecked == 'yes') {
+            ticket.Self_solving__c = true;
+        } else if (selfChecked == 'no') {
+            ticket.Self_solving__c = false;
+        }
 
         if (ApexPages.currentPage().getParameters().get('deliveryTime') != '') {
             ticket.Delivery_Date__c =  Date.valueOf(ApexPages.currentPage().getParameters().get('deliveryTime'));
@@ -382,6 +388,14 @@ public with sharing class CreateTicketExtension {
                 options.add(new SelectOption(dest.Id, dest.Name));
             }
         }
+
+        return options;
+    }
+
+    public List<SelectOption> getSelfCheckedValues() {
+        List<SelectOption> options = new List<SelectOption>();
+        options.add(new SelectOption('yes', 'Ja'));
+        options.add(new SelectOption('no', 'Nee'));
 
         return options;
     }

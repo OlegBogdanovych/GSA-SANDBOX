@@ -233,7 +233,10 @@
                                             <span class="requiredLabel"></span><label class="slds-form-element__label " for="{!$Component.seftSolving}">{!$ObjectType.Building_Ticket__c.Fields.Self_solving__c.Label}</label>
 
                                             <div class="slds-form-element__control">
-                                                <apex:inputCheckbox value="{!ticket.Self_solving__c}" required="true" id="seftSolving"/>
+                                                <!-- <apex:inputCheckbox value="{!ticket.Self_solving__c}" required="true" id="seftSolving"/> -->
+                                                <apex:selectRadio value="{!selfChecked}" required="true" id="selfSolving">
+                                                    <apex:selectOptions value="{!selfCheckedValues}"/>
+                                                </apex:selectRadio>
                                             </div>
                                         </div>
                                     </div>

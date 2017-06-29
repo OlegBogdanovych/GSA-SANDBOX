@@ -35,7 +35,7 @@
     </head>
 
     <form>
-    	<apex:outputText rendered='{!init}' />
+    	<apex:outputText rendered="{!init}" />
 
         <apex:outputPanel rendered="{!showPrintButton == '1'}">
         	<br/>
