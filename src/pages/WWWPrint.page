@@ -1,177 +1,146 @@
 <apex:page showHeader="true" sidebar="true" standardController="WWW__c" >
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
-     <apex:includeScript value="{!URLFOR($Resource.qrcode, 'jquery.min.js')}" />
+
+    <apex:includeScript value="{!URLFOR($Resource.qrcode, 'jquery.min.js')}" />
+    <!-- <apex:stylesheet value="{!URLFOR($Resource.SLDS080, 'assets/styles/salesforce-lightning-design-system-vf.css')}" /> -->
+    <apex:slds />
+
     <style>
         body {
-            font-size: 12px;
+            font-size: 14px!important;
         }
-        .names {
-            font-weight: bold;
-            
+
+        .slds-scope:not(html) {
+            font-size: 0.9125rem!important;
         }
-        .section {
-            background-color: #ccc;
+
+        .slds-scope .qrcode-img img {
+            max-width: initial;
         }
-        .pbButton, .pbButtonb, .pageDescription, .pageType {
-            display:none;
-        }
-        .content, .mainTitle, .links {
-            display:none !important;
-        }
-        tr td{
-            //border-bottom:1pt solid black;
-        }
-        .Custom24Tab .tertiaryPalette, .individualPalette .Custom24Block .tertiaryPalette, .layoutEdit .individualPalette .Custom24Block .tertiaryPalette {
-            border-color:black !important;
-        }
-        
     </style>
-    <div id="divButtons" name="divButtons" style="align:right;">
-        <input type="button" value = "Print" onclick="printPage()" style="position:absolute;" class="slds-button slds-button--neutral slds-not-selected"/>
+
+    <div class="slds-scope">
+
+        <div class="slds-container_large" style="margin: 0 auto">
+
+            <div id="divButtons" name="divButtons" class="slds-m-bottom_large slds-m-top_large slds-grid slds-wrap slds-grid_pull-padded">
+                <input type="button" value = "Print" onclick="printPage()" class="slds-m-left_small slds-button slds-button--brand slds-not-selected"/>
+            </div>
+
+            <div class="slds-box slds-box_x-small">
+                <p class="slds-p-left_large" style="text-align: left; font-weight: bold;">Vervangen door</p>
+            </div>
+            <div class="slds-grid slds-wrap slds-grid_pull-padded slds-m-bottom_x-large">
+                <div class="slds-p-left_xx-large slds-p-top_medium slds-p-horizontal_large slds-size_1-of-2 slds-medium-size_1-of-2 slds-large-size_1-of-2">
+                    <b><apex:outputText value="{!$ObjectType.WWW__c.fields.Name.Label}:"/></b> &nbsp;&nbsp; {!WWW__c.Name}
+                </div>
+
+                <div class="slds-p-left_xx-large slds-p-top_medium slds-p-horizontal_large slds-size_1-of-2 slds-medium-size_1-of-2 slds-large-size_1-of-2">
+                    <!-- <b><apex:outputText value="{!$ObjectType.WWW__c.fields.Item__c.Label}:"/></b> &nbsp;&nbsp; {!WWW__c.Item__r.Name} -->
+                </div>
+
+                <div class="slds-p-left_xx-large slds-p-top_medium slds-p-horizontal_large slds-size_1-of-2 slds-medium-size_1-of-2 slds-large-size_1-of-2">
+                    <b><apex:outputText value="{!$ObjectType.WWW__c.fields.Item__c.Label}:"/></b> &nbsp;&nbsp; {!WWW__c.Item__r.Name}
+                </div>
+
+                <div class="slds-p-left_xx-large slds-p-top_medium slds-p-horizontal_large slds-size_1-of-2 slds-medium-size_1-of-2 slds-large-size_1-of-2">
+                    <b><apex:outputText value="{!$ObjectType.WWW__c.fields.Project__c.Label}:"/></b> &nbsp;&nbsp; {!WWW__c.Project__r.Name}
+                </div>
+
+                <div class="slds-p-left_xx-large slds-p-top_medium slds-p-horizontal_large slds-size_1-of-2 slds-medium-size_1-of-2 slds-large-size_1-of-2">
+                    <b><apex:outputText value="{!$ObjectType.Item__c.fields.Merk__c.Label}:"/></b> &nbsp;&nbsp; {!WWW__c.Item__r.Merk__c}
+                </div>
+
+                <div class="slds-p-left_xx-large slds-p-top_medium slds-p-horizontal_large slds-size_1-of-2 slds-medium-size_1-of-2 slds-large-size_1-of-2">
+                    <b><apex:outputText value="{!$ObjectType.WWW__c.fields.Hub_Building_Site__c.Label}:"/></b> &nbsp;&nbsp; {!WWW__c.Hub_Building_Site__r.Name}
+                </div>
+
+                <div class="slds-p-left_xx-large slds-p-top_medium slds-p-horizontal_large slds-size_1-of-2 slds-medium-size_1-of-2 slds-large-size_1-of-2">
+                    <b><apex:outputText value="{!$ObjectType.Item__c.fields.T__c.Label}:"/></b> &nbsp;&nbsp; {!WWW__c.Item__r.T__c}
+                </div>
+
+                <div class="slds-p-left_xx-large slds-p-top_medium slds-p-horizontal_large slds-size_1-of-2 slds-medium-size_1-of-2 slds-large-size_1-of-2">
+                    <!-- <b><apex:outputText value="{!$ObjectType.Item__c.fields.T__c.Label}:"/></b> &nbsp;&nbsp; {!WWW__c.Item__r.T__c} -->
+                    <b><apex:outputText value="SOME FIELD:"/></b>
+                </div>
+
+                <div class="slds-p-left_xx-large slds-p-top_medium slds-p-horizontal_large slds-size_1-of-2 slds-medium-size_1-of-2 slds-large-size_1-of-2">
+                    <b><apex:outputText value="{!$ObjectType.Item__c.fields.Kleur__c.Label}:"/></b> &nbsp;&nbsp; {!WWW__c.Item__r.Kleur__c}
+                </div>
+
+                <div class="slds-p-left_xx-large slds-p-top_medium slds-p-horizontal_large slds-size_1-of-2 slds-medium-size_1-of-2 slds-large-size_1-of-2">
+                    <!-- <b><apex:outputText value="{!$ObjectType.Item__c.fields.T__c.Label}:"/></b> &nbsp;&nbsp; {!WWW__c.Item__r.T__c} -->
+                    <b><apex:outputText value="SOME FIELD:"/></b>
+                </div>
+
+                <div class="slds-p-left_xx-large slds-p-top_medium slds-p-horizontal_large slds-size_1-of-2 slds-medium-size_1-of-2 slds-large-size_1-of-2">
+                    <b><apex:outputText value="{!$ObjectType.Item__c.fields.Materiaal__c.Label}:"/></b> &nbsp;&nbsp; {!WWW__c.Item__r.Materiaal__c}
+                </div>
+
+                <div class="slds-p-left_xx-large slds-p-top_medium slds-p-horizontal_large slds-size_1-of-2 slds-medium-size_1-of-2 slds-large-size_1-of-2">
+                    <!-- <b><apex:outputText value="{!$ObjectType.Item__c.fields.T__c.Label}:"/></b> &nbsp;&nbsp; {!WWW__c.Item__r.T__c} -->
+                    <b><apex:outputText value="SOME FIELD:"/></b>
+                </div>
+
+                <div class="slds-p-left_xx-large slds-p-top_medium slds-p-horizontal_large slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1 slds-col_bump-left">
+                    <b><apex:outputText value="{!$ObjectType.Item__c.fields.Article_Number__c.Label}:"/></b> &nbsp;&nbsp; {!WWW__c.Item__r.Article_Number__c}
+                </div>
+
+                <div class="slds-p-left_xx-large slds-p-top_medium slds-p-horizontal_large slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1 slds-col_bump-left">
+                    <b><apex:outputText value="{!$ObjectType.Item__c.fields.Kind_Of_Packages__c.Label}:"/></b> &nbsp;&nbsp; {!WWW__c.Item__r.Kind_Of_Packages__c}
+                </div>
+
+                <div class="slds-p-left_xx-large slds-p-top_medium slds-p-horizontal_large slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1 slds-col_bump-left">
+                    <b><apex:outputText value="{!$ObjectType.Item__c.fields.Staat__c.Label}:"/></b> &nbsp;&nbsp; {!WWW__c.Item__r.Staat__c}
+                </div>
+
+                <div class="slds-p-left_xx-large slds-p-top_medium slds-p-horizontal_large slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1 slds-col_bump-left">
+                    <b><apex:outputText value="{!$ObjectType.Item__c.fields.Sizes__c.Label}:"/></b> &nbsp;&nbsp; {!WWW__c.Item__r.Sizes__c}
+                </div>
+
+                <div class="slds-p-left_xx-large slds-p-top_medium slds-p-horizontal_large slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1 slds-col_bump-left">
+                    <b><apex:outputText value="{!$ObjectType.Item__c.fields.Breakable__c.Label}:"/></b> &nbsp;&nbsp; {!WWW__c.Item__r.Breakable__c}
+                </div>
+
+                <div class="slds-p-left_xx-large slds-p-top_medium slds-p-horizontal_large slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1 slds-col_bump-left">
+                    <b><apex:outputText value="{!$ObjectType.Item__c.fields.Opmerkingen__c.Label}:"/></b> &nbsp;&nbsp; {!WWW__c.Item__r.Opmerkingen__c}
+                </div>
+            </div>
+
+            <div class="slds-box slds-box_x-small">
+                <p class="slds-p-left_large" style="text-align: left; font-weight: bold;">QR code</p>
+            </div>
+
+            <div class="slds-grid slds-wrap slds-grid_pull-padded qrcode-img">
+                 <div class="slds-p-left_xx-large slds-p-horizontal_large slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1 slds-col_bump-left">
+                    <c:QRCode sId="{!WWW__c.Id}" />
+                 </div>
+            </div>
+        </div>
+
+        <!-- <apex:detail relatedList="false"/> -->
     </div>
-    <br/>
-    <br/>
-    <!--table width="100%">
-        <tr>
-            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Supplier__c.Label}"/>
-            </td>
-            <td>{!WWW__c.Supplier__r.Name}
-            </td>
-            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Project__c.Label}"/>
-            </td>
-            <td >{!WWW__c.Project__r.Name}
-            </td>
-        </tr>
-        <tr>
-            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Item__c.Label}"/>
-            </td>
-            <td>{!WWW__c.Item__r.Name}
-            </td >
-            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Projectmember__c.Label}"/>
-            </td>
-            <td>{!WWW__c.Projectmember__r.Name}
-            </td>
-        </tr>
-        <tr>
-            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Hub__c.Label}"/>
-            </td>
-            <td>{!WWW__c.Hub__r.Name}
-            </td>
-            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Name.Label}"/>
-            </td>
-            <td>{!WWW__c.Name}
-            </td>
-        </tr>
-        <tr>
-            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.SF_ID__c.Label}"/>
-            </td>
-            <td>{!WWW__c.SF_ID__c}
-            </td>
-            <td>
-            </td>
-            <td>
-            </td>
-        </tr>
-        <tr>
-            <Td  class="section" colspan="4">
-                <h2>External ID</h2>
-            </Td>
-        </tr>
-        <tr>
-            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Ticket_Number_ILIPS__c.Label}"/>
-            </td>
-            <td>{!WWW__c.Ticket_Number_ILIPS__c}
-            </td>
-            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Filecardnumber__c.Label}"/>
-            </td>
-            <td>{!WWW__c.Filecardnumber__c}
-            </td>
-        </tr>
-        <tr>
-            <Td  class="section" colspan="4">
-                <h2>WWW-Detail</h2>
-            </Td>
-        </tr>
-        <tr>
-            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Total_Number_Of_Items_Reserved__c.Label}"/>
-            </td>
-            <td>{!WWW__c.Total_Number_Of_Items_Reserved__c}
-            </td>
-            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Curr_Items_To_Be_Delivered_On_Hub__c.Label}"/>
-            </td>
-            <td>{!WWW__c.Curr_Items_To_Be_Delivered_On_Hub__c}
-            </td>
-        </tr>
-        <tr>
-            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Total_Number_Of_Items_Delivered_To_Hub__c.Label}"/>
-            </td>
-            <td>{!WWW__c.Total_Number_Of_Items_Delivered_To_Hub__c}
-            </td>
-            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Curr_Items_To_Invoke__c.Label}"/>
-            </td>
-            <td>{!WWW__c.Curr_Items_To_Invoke__c}
-            </td>
-        </tr>
-        <tr>
-            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Total_Number_Of_Items_Invoked__c.Label}"/>
-            </td>
-            <td>{!WWW__c.Total_Number_Of_Items_Invoked__c}
-            </td>
-            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Curr_Items_To_Be_Delivered_On_Project__c.Label}"/>
-            </td>
-            <td>{!WWW__c.Curr_Items_To_Be_Delivered_On_Project__c}
-            </td>
-        </tr>
-        <tr>
-            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Total_Number_Of_Items_Delivered_Project__c.Label}"/>
-            </td>
-            <td>{!WWW__c.Total_Number_Of_Items_Delivered_Project__c}
-            </td>
-            <td class="names">
-            </td>
-            <td>
-            </td>
-        </tr>
-        <tr>
-            <Td  class="section" colspan="4">
-                <h2>Rejected</h2>
-            </Td>
-        </tr>
-        
-        <tr>
-            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Total_Number_Of_Items_Rejected_On_Hub__c.Label}"/>
-            </td>
-            <td>{!WWW__c.Total_Number_Of_Items_Rejected_On_Hub__c}
-            </td>
-            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Curr_Items_To_Invoke_Incl_Rejected__c.Label}"/>
-            </td>
-            <td>{!WWW__c.Curr_Items_To_Invoke_Incl_Rejected__c}
-            </td>
-        </tr>
-        <tr>
-            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Total_Number_Of_Items_Rejected_On_Projec__c.Label}"/>
-            </td>
-            <td>{!WWW__c.Total_Number_Of_Items_Rejected_On_Projec__c}
-            </td>
-            <td class="names"><apex:outputText value="{!$ObjectType.WWW__c.fields.Items_Delivered_On_Project_Incl_Rejected__c.Label}"/>
-            </td>
-            <td>{!WWW__c.Items_Delivered_On_Project_Incl_Rejected__c}
-            </td>
-        </tr>
-    </table>
-    <c:QRCode sId="{!WWW__c.Id}" /--><apex:detail relatedList="false"/>
+
     <script language="JavaScript">
+        $(document).ready(function(){
+            $('img').attr("width", 350);
+        });
+
         function printPage() {
-            if(document.all) {
-                document.all.divButtons.style.visibility = 'hidden';
+            if (document.all) {
+                // document.all.divButtons.style.visibility = 'hidden';
+                $('#divButtons').addClass('slds-hidden');
                 window.print();
-                document.all.divButtons.style.visibility = 'visible';
+                $('#divButtons').removeClass('slds-hidden');
+                // document.all.divButtons.style.visibility = 'visible';
             } else {
-                document.getElementById('divButtons').style.visibility = 'hidden';
+                // document.getElementById('divButtons').style.visibility = 'hidden';
+                $('#divButtons').addClass('slds-hidden');
                 $("[id$='filter']").hide();
                 window.print();
-                document.getElementById('divButtons').style.visibility = 'visible';
+                // document.getElementById('divButtons').style.visibility = 'visible';
+                $('#divButtons').removeClass('slds-hidden');
                 $("[id$='filter']").show();
             }
         }

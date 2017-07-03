@@ -224,15 +224,17 @@
         "mmState": "clean"
     },
     "WWWPrint.page": {
-        "createdById": "00524000001e3UjAAI",
-        "createdByName": "Bedrijfsbureau",
-        "createdDate": "2016-07-04T08:21:19.000Z",
-        "fileName": "unpackaged/pages/WWWPrint.page",
-        "fullName": "WWWPrint",
         "id": "06624000003p4fKAAQ",
+        "name": "WWWPrint",
+        "createdDate": "2016-07-04T08:21:19.000+0000",
+        "createdById": "00524000001e3UjAAI",
+        "namespacePrefix": null,
         "lastModifiedById": "00524000001e3UjAAI",
+        "lastModifiedDate": "2017-06-30T17:50:59.000+0000",
+        "fullName": "WWWPrint",
+        "fileName": "unpackaged/pages/WWWPrint.page",
+        "createdByName": "Bedrijfsbureau",
         "lastModifiedByName": "Bedrijfsbureau",
-        "lastModifiedDate": "2016-07-04T08:43:13.000Z",
         "manageableState": "unmanaged",
         "type": "ApexPage",
         "mmState": "clean"
@@ -2589,6 +2591,20 @@
         "lastModifiedDate": "2017-03-31T08:06:39.000Z",
         "manageableState": "unmanaged",
         "type": "ApexTrigger",
+        "mmState": "clean"
+    },
+    "SetMessage/SetMessage.evt.undefined": {
+        "createdById": "00524000001e3UjAAI",
+        "createdByName": "Bedrijfsbureau",
+        "createdDate": "2017-06-29T12:12:47.000Z",
+        "fileName": "unpackaged/aura/SetMessage/SetMessage.evt",
+        "fullName": "SetMessage/SetMessage.evt",
+        "id": "0Ad9E0000000ke9SAA",
+        "lastModifiedById": "00524000001e3UjAAI",
+        "lastModifiedByName": "Bedrijfsbureau",
+        "lastModifiedDate": "2017-06-29T12:12:47.000Z",
+        "manageableState": "unmanaged",
+        "type": "AuraDefinitionBundle",
         "mmState": "clean"
     }
 }
